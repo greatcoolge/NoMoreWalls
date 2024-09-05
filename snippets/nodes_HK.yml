@@ -2,7 +2,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 10|🇭🇰 香港|@ripaojiedian
+  name: 9|🇭🇰 香港|@ripaojiedian
   port: 45020
   server: 183.236.51.23
   skip-cert-verify: false
@@ -13,7 +13,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 10,11|香港2|@ripaojiedian
+  name: 9,10|香港2|@ripaojiedian
   network: ws
   port: '30068'
   server: 220.246.57.161
@@ -27,17 +27,34 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,10|香港3|@ripaojiedian
+  network: ws
+  port: '10001'
+  server: 62.72.163.54
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3dddcee7-2cb3-4260-81da-83d8b926840f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - client-fingerprint: chrome
-  name: 10,11|香港4|@ripaojiedian
+  name: 9,10|香港4|@ripaojiedian
   network: tcp
-  password: bDDJrvVT
-  port: 5395
-  server: 223.113.54.185
+  password: lNOcIAxy
+  port: 51377
+  server: 36.151.195.24
   skip-cert-verify: true
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 11|香港|@ripaojiedian
+  name: 10|香港|@ripaojiedian
   network: tcp
   port: '45020'
   server: 183.236.51.23
