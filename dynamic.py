@@ -73,7 +73,7 @@ def w1770946466():
     return subs
 
 def peasoft():
-    return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
+    return session.get("https://gist.ithubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
 AUTOURLS = []
 AUTOFETCH = [peasoft]
