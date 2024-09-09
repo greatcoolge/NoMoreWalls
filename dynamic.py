@@ -7,7 +7,7 @@ from fetch import raw2fastly, session, LOCAL
 
 
 def kkzui():
-    res = session.get("https://kkzui.com/jd?orderby=modified")
+    res = session.get("https://kkzui.om/jd?orderby=modified")
     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
     res = session.get(article_url)
     sub = res.text.split('<pre')[1].split('</pre>')[0]
@@ -19,7 +19,7 @@ def kkzui():
 
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
-        'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master')).json()
+        'https://api.ithub.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master')).json()
     res = session.get(raw2fastly(res_json[-1]['download_url']))
     nodes = set()
     for line in res.text.split('\n'):
@@ -30,13 +30,13 @@ def sharkdoor():
 def changfengoss():
     # Unused
     res = session.get(datetime.datetime.now().strftime(
-        "https://api.github.com/repos/changfengoss/pub/contents/data/%Y_%m_%d?ref=main")).json()
+        "https://api.ithub.com/repos/changfengoss/pub/contents/data/%Y_%m_%d?ref=main")).json()
     return [_['download_url'] for _ in res]
 
 def vpn_fail():
     # The site has been closed
     # if LOCAL: return
-    response = session.get("https://vpn.fail/free-proxy/type/v2ray").text
+    response = session.get("https://vpn.ail/free-proxy/type/v2ray").text
     lines = re.findall(r'<article(.*?)</article', response, re.DOTALL)
     links = set()
     ips = set()
@@ -57,7 +57,7 @@ def vpn_fail():
 
 def w1770946466():
     if LOCAL: return
-    res = session.get(raw2fastly("https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/README.md")).text
+    res = session.get(raw2fastly("https://raw.ithubusercontent.com/w1770946466/Auto_proxy/main/README.md")).text
     subs = set()
     for line in res.strip().split('\n'):
         if line.startswith("`http"):
