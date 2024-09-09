@@ -2,9 +2,20 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 10|🇯🇵 日本|@ripaojiedian
+  name: 10|🇯🇵 日本3|@ripaojiedian
+  port: 16718
+  server: relay.gz.flyidc.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 10|🇯🇵 日本4|@ripaojiedian
   port: 11767
-  server: 212.50.255.109
+  server: 212.50.253.146
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -12,27 +23,20 @@ proxies:
   uuid: 7269ac36-82da-43f9-86b8-ea57bef8f1e7
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,11|日本3|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 103.238.129.205
+  name: 11|日本3|@ripaojiedian
+  network: tcp
+  port: '16718'
+  server: relay.gz.flyidc.top
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-  ws-opts:
-    headers:
-      Host: syjsq.jp2.flyidc.top
-    path: /syjsq/data
 - alterId: 0
   cipher: auto
-  name: 11|日本|@ripaojiedian
+  name: 11|日本4|@ripaojiedian
   network: tcp
   port: '11767'
-  server: 212.50.255.109
+  server: 212.50.253.146
   servername: ''
   tls: false
   type: vmess
