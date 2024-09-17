@@ -1,9 +1,35 @@
 proxies:
-- cipher: aes-128-gcm
+- client-fingerprint: chrome
+  name: 13,14|台湾|@ripaojiedian
+  network: tcp
+  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 13|🇹🇼 台湾|@ripaojiedian
-  password: 901309dd-566b-4725-8877-11901fba992f
-  port: 11009
-  server: group-south-01.nutbit-node.lat
+  name: 13,14|台湾2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 75781b8f-db32-44b5-936c-0065a3064a98
+  ws-opts:
+    headers:
+      Host: tw1eskJpKcA.inivtrak.xyz
+    path: /video/WNMicnDh
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇹🇼 台湾3|@ripaojiedian
+  password: 05174439-6643-4c44-b16c-2fd7d700f1ba
+  port: 52430
+  server: ct2.xcone.xyz
   tfo: false
   type: ss
