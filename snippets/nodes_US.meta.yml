@@ -1,21 +1,13 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
-  network: ws
-  port: '2086'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
+  network: tcp
+  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
+  port: 13025
+  server: naiu-us.05vr9nyqg5.download
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 01dee9d8-7147-44b4-b3df-b4fe053d18d5
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -44,24 +36,17 @@ proxies:
   tls: false
   type: vmess
   uuid: dccf6c2c-1daa-4000-bc2d-2c716c77bb1c
-- client-fingerprint: chrome
-  name: 13,14|美国4|@ripaojiedian
-  network: tcp
-  password: DaYaplOl83F0CeS43DEZ692Cxx3DqFyaewNAKCujAIn5ZypgSRT3R7XYBOcz8S
-  port: 18331
-  server: citylife.freetrade.link
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  port: 43484
+  server: 45.155.223.83
   skip-cert-verify: false
-  sni: citylife.freetrade.link
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14|美国5|@ripaojiedian
-  network: tcp
-  password: z8lCAl8SOAe53DSxEDNZSyx4wFKBuacYTFRD2pCy39aOjYq30pgICRnZ73e6Xa
-  port: 443
-  server: deliver.missionsec.io
-  skip-cert-verify: false
-  sni: deliver.missionsec.io
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 67ac2316-e6cf-4c56-91a9-6bcbcb3be4d9
 - alterId: 0
   cipher: auto
   name: 14|美国3|@ripaojiedian
@@ -72,6 +57,16 @@ proxies:
   tls: false
   type: vmess
   uuid: dccf6c2c-1daa-4000-bc2d-2c716c77bb1c
+- alterId: 0
+  cipher: auto
+  name: 14|美国4|@ripaojiedian
+  network: tcp
+  port: '43484'
+  server: 45.155.223.83
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 67ac2316-e6cf-4c56-91a9-6bcbcb3be4d9
 - name: 15|US_speednode_0278
   network: ws
   port: 19527
