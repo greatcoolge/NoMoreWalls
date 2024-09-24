@@ -1,13 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
-  port: 13025
-  server: naiu-us.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国|@ripaojiedian
+  password: 592d0884-c322-43a0-abbd-f3e421e420f5
+  port: 12770
+  server: gsnn69xvke6t.uxzbpycs.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -39,14 +38,20 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国4|@ripaojiedian
-  port: 43484
-  server: 45.155.223.83
+  name: 13,14|美国4|@ripaojiedian
+  network: ws
+  port: '2095'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 67ac2316-e6cf-4c56-91a9-6bcbcb3be4d9
+  uuid: 20c2af39-b0ef-498e-ac2f-6d8861e8b798
+  ws-opts:
+    headers:
+      Host: us82pRzxDMb.fzbqfrse.xyz
+    path: /video/qYZue4zaWS
 - alterId: 0
   cipher: auto
   name: 14|美国3|@ripaojiedian
@@ -57,18 +62,8 @@ proxies:
   tls: false
   type: vmess
   uuid: dccf6c2c-1daa-4000-bc2d-2c716c77bb1c
-- alterId: 0
-  cipher: auto
-  name: 14|美国4|@ripaojiedian
-  network: tcp
-  port: '43484'
-  server: 45.155.223.83
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 67ac2316-e6cf-4c56-91a9-6bcbcb3be4d9
 - client-fingerprint: chrome
-  name: 15|US_speednode_0455
+  name: 15|US_speednode_0401
   network: ws
   password: 95b
   port: 443
@@ -81,20 +76,8 @@ proxies:
     headers:
       Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- name: 15|US_speednode_0325
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /
 - client-fingerprint: chrome
-  name: 15|US_speednode_0462
+  name: 15|US_speednode_0402
   network: ws
   password: 95b
   port: 37070
@@ -108,33 +91,7 @@ proxies:
       Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - client-fingerprint: chrome
-  name: 15|US_speednode_0327
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /?ed=2048
-- name: 15|US_speednode_0460
-  network: ws
-  password: 95b
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- client-fingerprint: chrome
-  name: 15|US_speednode_0486
+  name: 15|US_speednode_0412
   network: ws
   password: 95b
   port: 10511

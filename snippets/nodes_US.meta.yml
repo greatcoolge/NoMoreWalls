@@ -1,13 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
-  port: 13025
-  server: naiu-us.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国|@ripaojiedian
+  password: 592d0884-c322-43a0-abbd-f3e421e420f5
+  port: 12770
+  server: gsnn69xvke6t.uxzbpycs.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -39,14 +38,20 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国4|@ripaojiedian
-  port: 43484
-  server: 45.155.223.83
+  name: 13,14|美国4|@ripaojiedian
+  network: ws
+  port: '2095'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 67ac2316-e6cf-4c56-91a9-6bcbcb3be4d9
+  uuid: 20c2af39-b0ef-498e-ac2f-6d8861e8b798
+  ws-opts:
+    headers:
+      Host: us82pRzxDMb.fzbqfrse.xyz
+    path: /video/qYZue4zaWS
 - alterId: 0
   cipher: auto
   name: 14|美国3|@ripaojiedian
@@ -57,20 +62,10 @@ proxies:
   tls: false
   type: vmess
   uuid: dccf6c2c-1daa-4000-bc2d-2c716c77bb1c
-- alterId: 0
-  cipher: auto
-  name: 14|美国4|@ripaojiedian
-  network: tcp
-  port: '43484'
-  server: 45.155.223.83
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 67ac2316-e6cf-4c56-91a9-6bcbcb3be4d9
-- name: 15|US_speednode_0305
+- name: 15|US_speednode_0293
   network: ws
-  port: 19527
-  server: 45.87.103.78
+  port: 23391
+  server: 154.17.21.37
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -81,49 +76,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0306
-  network: ws
-  port: 443
-  server: 38.143.0.91
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0308
-  network: ws
-  port: 9443
-  server: 154.40.32.15
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0309
-  network: ws
-  port: 34237
-  server: 23.236.68.152
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0310
+- name: 15|US_speednode_0294
   network: ws
   port: 50003
   server: 23.165.40.187
@@ -137,10 +90,10 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0311
+- name: 15|US_speednode_0295
   network: ws
-  port: 443
-  server: 43.153.103.203
+  port: 22389
+  server: 23.165.248.56
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -150,10 +103,39 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 15|US_speednode_0402
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0296
   network: ws
+  port: 56421
+  server: 172.84.92.86
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0297
+  network: ws
+  port: 34237
+  server: 23.236.68.152
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0366
+  network: ws
+  packet-encoding: ''
   port: 80
   server: 45.159.216.99
   servername: a.ssll.gay
@@ -167,10 +149,79 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodesfp=chrome
-- name: 15|US_speednode_0313
+- client-fingerprint: chrome
+  name: 15|US_speednode_0401
   network: ws
-  port: 2083
-  server: 89.116.161.139
+  password: 95b
+  port: 443
+  server: 43.153.103.203
+  skip-cert-verify: true
+  sni: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- name: 15|US_speednode_0309
+  network: ws
+  packet-encoding: ''
+  port: 8443
+  server: 185.148.105.225
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0302
+  network: ws
+  port: 80
+  server: 34.160.118.77
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳
+- name: 15|US_speednode_0303
+  network: ws
+  port: 80
+  server: 34.36.183.121
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 15|US_speednode_0304
+  network: ws
+  port: 80
+  server: 34.111.135.19
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳
+- name: 15|US_speednode_0305
+  network: ws
+  port: 443
+  server: 43.153.103.203
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -181,61 +232,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 15|US_speednode_0314
-  network: ws
-  port: 443
-  server: 198.62.62.226
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0316
-  network: ws
-  port: 2083
-  server: 216.205.52.109
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- name: 15|US_speednode_0317
-  network: ws
-  port: 2053
-  server: 216.116.134.43
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- name: 15|US_speednode_0318
-  network: ws
-  port: 443
-  server: 69.84.182.147
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0320
+- name: 15|US_speednode_0313
   network: ws
   packet-encoding: ''
   port: 8443
@@ -250,73 +247,49 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 15|US_speednode_0321
+- name: 15|US_speednode_0307
   network: ws
-  port: 8443
-  server: 89.116.161.250
-  servername: juzibaipiao.5112233.xyz
+  port: 443
+  server: 167.68.11.191
+  servername: cfed.tgzdyz2.top
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
   ws-opts:
     headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 15|US_speednode_0455
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
+- name: 15|US_speednode_0308
   network: ws
-  password: 95b
   port: 443
-  server: 43.153.103.203
-  skip-cert-verify: true
-  sni: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- name: 15|US_speednode_0323
-  network: ws
-  port: 80
-  server: 91.149.239.252
+  server: 147.185.161.35
+  servername: a.ssll.gay
   skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0324
+    path: /?ed=2048
+- name: 15|US_speednode_0310
   network: ws
   port: 443
-  server: 198.62.62.236
-  servername: kq.ylks.xyz
+  server: 198.62.62.226
+  servername: yq.ylks.us.kg
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0325
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /
+      Host: yq.ylks.us.kg
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 15|US_speednode_0462
+  name: 15|US_speednode_0402
   network: ws
   password: 95b
   port: 37070
@@ -330,88 +303,7 @@ proxies:
       Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - client-fingerprint: chrome
-  name: 15|US_speednode_0327
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /?ed=2048
-- name: 15|US_speednode_0328
-  network: ws
-  port: 443
-  server: 69.84.182.90
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0329
-  network: ws
-  port: 443
-  server: 198.62.62.198
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0330
-  network: ws
-  port: 443
-  server: 198.62.62.73
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0331
-  network: ws
-  port: 443
-  server: 69.84.182.21
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- client-fingerprint: chrome
-  name: 15|US_speednode_0469
-  network: ws
-  port: 443
-  server: 167.68.11.95
-  servername: cfed.tgzdyz2.top
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2fp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0333
+  name: 15|US_speednode_0312
   network: ws
   port: 443
   server: 167.68.11.253
@@ -425,24 +317,24 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
-- name: 15|US_speednode_0334
+- name: 15|US_speednode_0314
   network: ws
   port: 443
-  server: 69.84.182.144
-  servername: jq.ylks01.eu.org
+  server: 167.68.11.106
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
   ws-opts:
     headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- client-fingerprint: chrome
-  name: 15|US_speednode_0440
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
+- name: 15|US_speednode_0315
   network: ws
-  port: 443
-  server: 45.159.217.21
+  port: 2053
+  server: 216.116.134.43
   servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
   tls: true
@@ -452,125 +344,11 @@ proxies:
   ws-opts:
     headers:
       Host: juzibaipiao.5112233.xyz
-    path: /
-- name: 15|US_speednode_0336
+    path: /?ed=2048
+- name: 15|US_speednode_0316
   network: ws
   port: 443
-  server: 69.84.182.211
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0337
-  network: ws
-  port: 443
-  server: 69.84.182.71
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0338
-  network: ws
-  port: 443
-  server: 69.84.182.140
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0339
-  network: ws
-  port: 443
-  server: 69.84.182.101
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0340
-  network: ws
-  port: 80
-  server: 91.149.239.206
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0342
-  network: ws
-  port: 80
-  server: 91.149.239.64
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0343
-  network: ws
-  port: 2096
-  server: 130.250.137.70
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed
-- name: 15|US_speednode_0344
-  network: ws
-  port: 443
-  server: 69.84.182.186
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0345
-  network: ws
-  port: 80
-  server: 91.149.239.145
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0346
-  network: ws
-  port: 443
-  server: 69.84.182.44
+  server: 198.62.62.236
   servername: kq.ylks.xyz
   tls: true
   type: vless
@@ -580,123 +358,7 @@ proxies:
     headers:
       Host: kq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0347
-  network: ws
-  port: 443
-  server: 69.84.182.196
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0348
-  network: ws
-  port: 443
-  server: 198.62.62.204
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0349
-  network: ws
-  port: 443
-  server: 198.62.62.49
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0350
-  network: ws
-  port: 443
-  server: 198.62.62.132
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0351
-  network: ws
-  port: 443
-  server: 69.84.182.52
-  servername: yq.ylka.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0352
-  network: ws
-  port: 80
-  server: 91.149.239.122
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0353
-  network: ws
-  port: 443
-  server: 69.84.182.15
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0354
-  network: ws
-  port: 443
-  server: 69.84.182.110
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0355
-  network: ws
-  port: 443
-  server: 69.84.182.127
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0356
+- name: 15|US_speednode_0317
   network: ws
   port: 443
   server: 167.68.11.106
@@ -710,10 +372,64 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /
-- name: 15|US_speednode_0357
+- name: 15|US_speednode_0318
   network: ws
   port: 443
-  server: 198.62.62.144
+  server: 69.84.182.147
+  servername: yq.ylks.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: yq.ylks.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0319
+  network: ws
+  port: 443
+  server: 69.84.182.90
+  servername: kq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kq.ylks.xyz
+    path: /blue
+- client-fingerprint: chrome
+  name: 15|US_speednode_0406
+  network: ws
+  port: 2083
+  server: 185.148.106.44
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- name: 15|US_speednode_0321
+  network: ws
+  port: 443
+  server: 69.84.182.144
+  servername: jq.ylks01.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: jq.ylks01.eu.org
+    path: /blue
+- name: 15|US_speednode_0322
+  network: ws
+  port: 443
+  server: 69.84.182.101
   servername: hq.ylks.xyz
   tls: true
   type: vless
@@ -723,7 +439,59 @@ proxies:
     headers:
       Host: hq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0358
+- name: 15|US_speednode_0323
+  network: ws
+  port: 2096
+  server: 130.250.137.70
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed
+- name: 15|US_speednode_0324
+  network: ws
+  port: 443
+  server: 69.84.182.71
+  servername: hq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0325
+  network: ws
+  port: 443
+  server: 198.62.62.204
+  servername: hq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0326
+  network: ws
+  port: 443
+  server: 69.84.182.44
+  servername: kq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0327
   network: ws
   port: 443
   server: 69.84.182.134
@@ -736,71 +504,20 @@ proxies:
     headers:
       Host: kq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0359
+- name: 15|US_speednode_0328
   network: ws
   port: 443
-  server: 69.84.182.88
-  servername: kq.ylks.xyz
+  server: 69.84.182.15
+  servername: hq.ylks.xyz
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: kq.ylks.xyz
+      Host: hq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0360
-  network: ws
-  port: 80
-  server: 91.149.239.62
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0361
-  network: ws
-  port: 443
-  server: 69.84.182.218
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0362
-  network: ws
-  port: 443
-  server: 69.84.182.94
-  servername: xp.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xp.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0363
-  network: ws
-  port: 443
-  server: 69.84.182.116
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0364
+- name: 15|US_speednode_0329
   network: ws
   port: 443
   server: 69.84.182.143
@@ -813,48 +530,85 @@ proxies:
     headers:
       Host: kq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0365
+- name: 15|US_speednode_0330
   network: ws
   port: 443
-  server: 198.62.62.185
-  servername: hq.kpcloud.eu.org
+  server: 69.84.182.140
+  servername: hq.ylks.xyz
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: hq.kpcloud.eu.org
+      Host: hq.ylks.xyz
     path: /blue
-- client-fingerprint: chrome
-  name: 15|US_speednode_0481
+- name: 15|US_speednode_0331
   network: ws
   port: 443
-  server: 45.159.217.220
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
+  server: 108.165.216.167
+  servername: cfed.tgzdyz2.top
   tls: true
   type: vless
   udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
   ws-opts:
     headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /
-- name: 15|US_speednode_0367
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
+- name: 15|US_speednode_0332
   network: ws
   port: 443
-  server: 69.84.182.104
-  servername: yq.ylka.us.kg
+  server: 69.84.182.196
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0333
+  network: ws
+  port: 443
+  server: 69.84.182.218
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0334
+  network: ws
+  port: 443
+  server: 198.62.62.144
+  servername: hq.ylks.xyz
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0368
+      Host: hq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0335
+  network: ws
+  port: 443
+  server: 69.84.182.85
+  servername: kq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0336
   network: ws
   port: 443
   server: 45.159.218.244
@@ -867,33 +621,7 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: twitterfreecodestg@zdyz2
-- name: 15|US_speednode_0369
-  network: ws
-  port: 443
-  server: 69.84.182.133
-  servername: jq.ylks01.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 15|US_speednode_0370
-  network: ws
-  port: 443
-  server: 146.235.197.123
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0371
+- name: 15|US_speednode_0337
   network: ws
   port: 443
   server: 198.62.62.60
@@ -906,71 +634,20 @@ proxies:
     headers:
       Host: kq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0372
+- name: 15|US_speednode_0338
   network: ws
   port: 443
-  server: 69.84.182.31
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0373
-  network: ws
-  port: 443
-  server: 198.62.62.48
-  servername: jq.ylks01.eu.org
+  server: 69.84.182.127
+  servername: yq.ylks.us.kg
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 15|US_speednode_0374
-  network: ws
-  port: 80
-  server: 91.149.239.234
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 15|US_speednode_0375
-  network: ws
-  port: 443
-  server: 198.62.62.70
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
+      Host: yq.ylks.us.kg
     path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0376
-  network: ws
-  port: 443
-  server: 69.84.182.128
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0377
+- name: 15|US_speednode_0339
   network: ws
   port: 443
   server: 155.46.213.9
@@ -983,20 +660,7 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2fp
-- name: 15|US_speednode_0378
-  network: ws
-  port: 443
-  server: 69.84.182.131
-  servername: xp.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xp.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0379
+- name: 15|US_speednode_0340
   network: ws
   port: 443
   server: 69.84.182.27
@@ -1009,59 +673,7 @@ proxies:
     headers:
       Host: hq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0380
-  network: ws
-  port: 443
-  server: 69.84.182.53
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0381
-  network: ws
-  port: 443
-  server: 198.62.62.42
-  servername: jq.ylks01.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 15|US_speednode_0382
-  network: ws
-  port: 443
-  server: 199.181.197.78
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- name: 15|US_speednode_0383
-  network: ws
-  port: 443
-  server: 150.230.47.3
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0384
+- name: 15|US_speednode_0341
   network: ws
   port: 443
   server: 69.84.182.138
@@ -1074,111 +686,7 @@ proxies:
     headers:
       Host: xq.ylks.xyz
     path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0385
-  network: ws
-  port: 443
-  server: 69.84.182.81
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0386
-  network: ws
-  port: 443
-  server: 69.84.182.187
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0387
-  network: ws
-  port: 443
-  server: 198.62.62.233
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0388
-  network: ws
-  port: 443
-  server: 69.84.182.48
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0389
-  network: ws
-  port: 443
-  server: 69.84.182.119
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0390
-  network: ws
-  port: 443
-  server: 69.84.182.97
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0391
-  network: ws
-  port: 443
-  server: 155.46.213.32
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: /tg@zdyz2security
-- name: 15|US_speednode_0392
-  network: ws
-  port: 443
-  server: 69.84.182.70
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0393
+- name: 15|US_speednode_0342
   network: ws
   port: 443
   server: 198.62.62.91
@@ -1191,36 +699,10 @@ proxies:
     headers:
       Host: xq.ylks.xyz
     path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0394
+- name: 15|US_speednode_0343
   network: ws
   port: 443
-  server: 198.62.62.245
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0395
-  network: ws
-  port: 443
-  server: 198.62.62.217
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0396
-  network: ws
-  port: 443
-  server: 69.84.182.109
+  server: 198.62.62.70
   servername: xq.ylks.xyz
   tls: true
   type: vless
@@ -1229,47 +711,47 @@ proxies:
   ws-opts:
     headers:
       Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0344
+  network: ws
+  port: 443
+  server: 69.84.182.53
+  servername: kq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0397
+- name: 15|US_speednode_0345
   network: ws
   port: 443
-  server: 198.62.62.151
-  servername: yq.ylka.us.kg
+  server: 198.62.62.48
+  servername: jq.ylks01.eu.org
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0398
+      Host: jq.ylks01.eu.org
+    path: /blue
+- name: 15|US_speednode_0346
   network: ws
   port: 443
-  server: 69.84.182.209
-  servername: yq.ylka.us.kg
+  server: 69.84.182.97
+  servername: hq.kpcloud.eu.org
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0399
-  network: ws
-  port: 443
-  server: 216.221.213.149
-  servername: xp.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xp.ylks.xyz
-    path: /?proxyip
-- name: 15|US_speednode_0400
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0347
   network: ws
   port: 443
   server: 198.62.62.183
@@ -1282,189 +764,33 @@ proxies:
     headers:
       Host: xq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0401
+- name: 15|US_speednode_0348
   network: ws
   port: 443
-  server: 69.84.182.172
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0403
-  network: ws
-  port: 443
-  server: 69.84.182.75
-  servername: hq.kpcloud.eu.org
+  server: 198.62.62.217
+  servername: hq.ylks.xyz
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: hq.kpcloud.eu.org
+      Host: hq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0404
+- name: 15|US_speednode_0349
   network: ws
   port: 443
-  server: 198.62.62.47
-  servername: kq.ylks.xyz
+  server: 69.84.182.119
+  servername: hq.ylks.xyz
   tls: true
   type: vless
   udp: true
   uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: kq.ylks.xyz
+      Host: hq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0405
-  network: ws
-  port: 443
-  server: 198.62.62.9
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0406
-  network: ws
-  port: 443
-  server: 198.62.62.53
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0407
-  network: ws
-  port: 443
-  server: 198.62.62.6
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0408
-  network: ws
-  port: 443
-  server: 198.62.62.10
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0409
-  network: ws
-  port: 443
-  server: 198.62.62.163
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0410
-  network: ws
-  port: 443
-  server: 63.141.128.219
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0411
-  network: ws
-  port: 443
-  server: 69.84.182.32
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0412
-  network: ws
-  port: 443
-  server: 66.81.247.16
-  servername: toujiediansigema.5112233.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
-  ws-opts:
-    headers:
-      Host: toujiediansigema.5112233.xyz
-    path: /tg@juzibaipiao偷节点死吗
-- name: 15|US_speednode_0413
-  network: ws
-  port: 443
-  server: 69.84.182.225
-  servername: jq.ylks01.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 15|US_speednode_0414
-  network: ws
-  port: 443
-  server: 167.68.11.253
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2fp
-- name: 15|US_speednode_0415
-  network: ws
-  port: 443
-  server: 198.62.62.152
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0416
+- name: 15|US_speednode_0350
   network: ws
   port: 443
   server: 69.84.182.185
@@ -1477,23 +803,10 @@ proxies:
     headers:
       Host: hq.ylks.xyz
     path: /blue
-- name: 15|US_speednode_0417
+- name: 15|US_speednode_0351
   network: ws
   port: 443
-  server: 69.84.182.247
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0418
-  network: ws
-  port: 443
-  server: 45.159.216.227
+  server: 167.68.11.106
   servername: cfed.tgzdyz2.top
   tls: true
   type: vless
@@ -1502,24 +815,11 @@ proxies:
   ws-opts:
     headers:
       Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- name: 15|US_speednode_0419
+    path: tg@zdyz2security
+- name: 15|US_speednode_0352
   network: ws
   port: 443
-  server: 63.141.128.103
-  servername: xp.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xp.ylks.xyz
-    path: /
-- name: 15|US_speednode_0420
-  network: ws
-  port: 443
-  server: 63.141.128.98
+  server: 198.62.62.6
   servername: xq.ylks.xyz
   tls: true
   type: vless
@@ -1529,63 +829,10 @@ proxies:
     headers:
       Host: xq.ylks.xyz
     path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0421
+- name: 15|US_speednode_0353
   network: ws
   port: 443
-  server: 69.84.182.43
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0422
-  network: ws
-  port: 443
-  server: 198.62.62.59
-  servername: xp.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xp.ylks.xyz
-    path: /?proxyip
-- name: 15|US_speednode_0423
-  network: ws
-  port: 443
-  server: 69.84.182.232
-  servername: yq.ylka.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0424
-  network: ws
-  port: 443
-  server: 170.114.45.25
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- name: 15|US_speednode_0425
-  network: ws
-  port: 443
-  server: 160.79.105.51
+  server: 69.84.182.70
   servername: hq.kpcloud.eu.org
   tls: true
   type: vless
@@ -1595,7 +842,111 @@ proxies:
     headers:
       Host: hq.kpcloud.eu.org
     path: /blue
-- name: 15|US_speednode_0426
+- name: 15|US_speednode_0354
+  network: ws
+  port: 443
+  server: 198.62.62.9
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0355
+  network: ws
+  port: 443
+  server: 69.84.182.172
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0356
+  network: ws
+  port: 443
+  server: 160.79.105.38
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0357
+  network: ws
+  port: 443
+  server: 198.62.62.163
+  servername: kq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0358
+  network: ws
+  port: 443
+  server: 63.141.128.219
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0359
+  network: ws
+  port: 443
+  server: 66.81.247.16
+  servername: toujiediansigema.5112233.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
+  ws-opts:
+    headers:
+      Host: toujiediansigema.5112233.xyz
+    path: /tg@juzibaipiao偷节点死吗
+- name: 15|US_speednode_0360
+  network: ws
+  port: 443
+  server: 167.68.11.253
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2fp
+- name: 15|US_speednode_0361
+  network: ws
+  port: 443
+  server: 69.84.182.225
+  servername: jq.ylks01.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: jq.ylks01.eu.org
+    path: /blue
+- name: 15|US_speednode_0362
   network: ws
   port: 443
   server: 198.62.62.106
@@ -1608,49 +959,10 @@ proxies:
     headers:
       Host: hq.kpcloud.eu.org
     path: /blue
-- name: 15|US_speednode_0427
+- name: 15|US_speednode_0363
   network: ws
   port: 443
-  server: 69.84.182.213
-  servername: yq.ylka.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0428
-  network: ws
-  port: 443
-  server: 170.114.45.25
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed
-- name: 15|US_speednode_0429
-  network: ws
-  port: 443
-  server: 135.84.76.152
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0430
-  network: ws
-  port: 443
-  server: 69.84.182.78
+  server: 63.141.128.103
   servername: xp.ylks.xyz
   tls: true
   type: vless
@@ -1659,21 +971,8 @@ proxies:
   ws-opts:
     headers:
       Host: xp.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0431
-  network: ws
-  port: 443
-  server: 198.62.62.239
-  servername: jq.ylks01.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 15|US_speednode_0432
+    path: /
+- name: 15|US_speednode_0364
   network: ws
   port: 443
   server: 205.233.181.242
@@ -1686,7 +985,355 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
-- name: 15|US_speednode_0433
+- name: 15|US_speednode_0365
+  network: ws
+  port: 443
+  server: 69.84.182.95
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0367
+  network: ws
+  port: 443
+  server: 185.148.107.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- name: 15|US_speednode_0368
+  network: ws
+  port: 34237
+  server: 23.236.68.152
+  servername: global2.ccdd.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed
+- name: 15|US_speednode_0369
+  network: ws
+  port: 443
+  server: 69.84.182.78
+  servername: xp.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xp.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0370
+  network: ws
+  port: 443
+  server: 69.84.182.89
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0371
+  network: ws
+  port: 443
+  server: 198.62.62.152
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0372
+  network: ws
+  port: 443
+  server: 198.62.62.211
+  servername: kq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0373
+  network: ws
+  port: 80
+  server: 91.149.239.198
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0374
+  network: ws
+  port: 80
+  server: 91.149.239.252
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0375
+  network: ws
+  port: 443
+  server: 69.84.182.232
+  servername: yq.ylka.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: yq.ylka.us.kg
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0376
+  network: ws
+  port: 443
+  server: 198.62.62.243
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0377
+  network: ws
+  port: 443
+  server: 69.84.182.175
+  servername: hq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0378
+  network: ws
+  port: 443
+  server: 69.84.182.234
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0379
+  network: ws
+  port: 443
+  server: 69.84.182.213
+  servername: yq.ylka.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: yq.ylka.us.kg
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0380
+  network: ws
+  port: 443
+  server: 160.79.105.241
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0381
+  network: ws
+  port: 443
+  server: 69.84.182.216
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0382
+  network: ws
+  port: 443
+  server: 69.84.182.179
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: 15|US_speednode_0383
+  network: ws
+  port: 443
+  server: 192.200.160.201
+  servername: xp.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xp.ylks.xyz
+    path: /?proxyip
+- name: 15|US_speednode_0384
+  network: ws
+  port: 443
+  server: 185.148.105.23
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- name: 15|US_speednode_0385
+  network: ws
+  port: 80
+  server: 91.149.239.72
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0386
+  network: ws
+  port: 80
+  server: 91.149.239.70
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0387
+  network: ws
+  port: 443
+  server: 69.84.182.82
+  servername: yq.ylks.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: yq.ylks.us.kg
+    path: /?ed
+- name: 15|US_speednode_0388
+  network: ws
+  port: 38454
+  server: 43.153.103.203
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0389
+  network: ws
+  port: 80
+  server: 91.149.239.238
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0390
+  network: ws
+  port: 2083
+  server: 185.148.106.44
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /fp=chrome
+- name: 15|US_speednode_0391
+  network: ws
+  port: 443
+  server: 198.62.62.110
+  servername: yq.ylka.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: yq.ylka.us.kg
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: 15|US_speednode_0392
+  network: ws
+  port: 443
+  server: 69.84.182.23
+  servername: hq.kpcloud.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: hq.kpcloud.eu.org
+    path: /blue
+- name: 15|US_speednode_0393
   network: ws
   port: 34237
   server: 23.236.68.152
@@ -1700,128 +1347,22 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- name: 15|US_speednode_0434
+- name: 15|US_speednode_0394
   network: ws
-  port: 443
-  server: 69.84.182.234
-  servername: hq.kpcloud.eu.org
-  tls: true
+  port: 80
+  server: 91.149.239.145
+  skip-cert-verify: false
   type: vless
   udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0435
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 15|US_speednode_0395
   network: ws
-  port: 443
-  server: 129.153.126.67
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0436
-  network: ws
-  port: 443
-  server: 198.62.62.166
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0437
-  network: ws
-  port: 443
-  server: 69.84.182.216
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0438
-  network: ws
-  port: 443
-  server: 198.62.62.78
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0439
-  network: ws
-  port: 443
-  server: 69.84.182.250
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0441
-  network: ws
-  port: 443
-  server: 160.79.105.241
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0442
-  network: ws
-  port: 443
-  server: 198.62.62.110
-  servername: yq.ylka.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0443
-  network: ws
-  port: 443
-  server: 69.84.182.112
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- client-fingerprint: chrome
-  name: 15|US_speednode_0444
-  network: ws
-  port: 443
-  server: 69.84.182.102
+  port: 52415
+  server: 104.234.102.72
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -1831,204 +1372,9 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-- name: 15|US_speednode_0445
-  network: ws
-  port: 443
-  server: 198.62.62.211
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0447
-  network: ws
-  port: 443
-  server: 198.62.62.243
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0448
-  network: ws
-  port: 443
-  server: 69.84.182.89
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0449
-  network: ws
-  port: 443
-  server: 69.84.182.231
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0450
-  network: ws
-  port: 38454
-  server: 43.153.103.203
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
-- name: 15|US_speednode_0451
-  network: ws
-  port: 443
-  server: 43.153.80.208
-  servername: jq.ylks01.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 15|US_speednode_0452
-  network: ws
-  port: 2083
-  server: 89.116.161.139
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed
-- name: 15|US_speednode_0453
-  network: ws
-  port: 443
-  server: 192.200.160.201
-  servername: xp.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xp.ylks.xyz
-    path: /?proxyip
-- name: 15|US_speednode_0454
-  network: ws
-  port: 443
-  server: 69.84.182.175
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0456
-  network: ws
-  port: 443
-  server: 69.84.182.100
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0457
-  network: ws
-  port: 443
-  server: 69.84.182.82
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed
-- name: 15|US_speednode_0460
-  network: ws
-  password: 95b
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- name: 15|US_speednode_0461
-  network: ws
-  port: 443
-  server: 69.84.182.198
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0463
-  network: ws
-  port: 80
-  server: 204.110.220.1
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0464
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: yq.ylka.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylka.us.kg
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - client-fingerprint: chrome
-  name: 15|US_speednode_0465
+  name: 15|US_speednode_0398
   network: ws
   port: 8443
   server: 159.112.235.14
@@ -2042,23 +1388,24 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chrome
-- name: 15|US_speednode_0466
+- name: 15|US_speednode_0399
   network: ws
-  port: 443
-  server: 69.84.182.145
-  servername: xq.ylks.xyz
+  port: 80
+  server: 204.110.220.1
+  servername: kq.ylks.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- name: 15|US_speednode_0467
+      Host: kq.ylks.xyz
+    path: /blue
+- client-fingerprint: chrome
+  name: 15|US_speednode_0400
   network: ws
-  port: 2053
-  server: 130.250.137.196
+  port: 443
+  server: 69.84.182.102
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -2068,40 +1415,40 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Twitterfreecodes
-- name: 15|US_speednode_0468
-  network: ws
-  port: 443
-  server: 135.84.76.97
-  servername: hq.kpcloud.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.kpcloud.eu.org
-    path: /blue
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
 - client-fingerprint: chrome
-  name: 15|US_speednode_0480
+  name: 15|US_speednode_0412
   network: ws
-  port: 443
-  server: 167.68.11.253
-  servername: cfed.tgzdyz2.top
+  password: 95b
+  port: 10511
+  server: 65.75.194.43
+  skip-cert-verify: true
+  sni: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- name: 15|US_speednode_0404
+  network: ws
+  port: 2096
+  server: 14.102.228.210
+  servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2fp=chrome
-- name: 15|US_speednode_0471
+      Host: juzibaipiao.5112233.xyz
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0405
   network: ws
-  port: 2053
-  server: 130.250.137.196
+  port: 8443
+  server: 89.116.161.250
   servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
   tls: true
@@ -2113,77 +1460,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /
 - client-fingerprint: chrome
-  name: 15|US_speednode_0472
-  network: ws
-  port: 8443
-  server: 159.112.235.14
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed
-- name: 15|US_speednode_0473
-  network: ws
-  port: 443
-  server: 69.84.182.179
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0474
-  network: ws
-  port: 443
-  server: 198.62.62.28
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 15|US_speednode_0475
-  network: ws
-  port: 2083
-  server: 66.81.247.19
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitter苏小柠
-- client-fingerprint: chrome
-  name: 15|US_speednode_0476
-  network: ws
-  port: 443
-  server: 167.68.11.95
-  servername: cfed.tgzdyz2.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0477
+  name: 15|US_speednode_0407
   network: ws
   port: 443
   server: 185.148.106.134
@@ -2197,69 +1474,40 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
-- client-fingerprint: chrome
-  name: 15|US_speednode_0478
+- name: 15|US_speednode_0408
   network: ws
-  port: 443
-  server: 45.159.217.21
-  servername: juzibaipiao.5112233.xyz
+  port: 38908
+  server: 45.59.184.16
+  servername: a.ssll.gay
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /fp=chrome
-- name: 15|US_speednode_0479
-  network: ws
-  port: 443
-  server: 173.249.197.84
-  servername: xq.ylks.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
-- client-fingerprint: chrome
-  name: 15|US_speednode_0482
-  network: ws
-  port: 443
-  server: 69.84.182.102
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳 @WangCai_8 /?ed=2048fp=chrome
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - client-fingerprint: chrome
-  name: 15|US_speednode_0483
+  name: 15|US_speednode_0409
   network: ws
-  port: 8443
-  server: 89.116.161.250
-  servername: juzibaipiao.5112233.xyz
+  port: 443
+  server: 167.68.11.253
+  servername: cfed.tgzdyz2.top
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
   ws-opts:
     headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /fp=chrome
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2fp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0484
+  name: 15|US_speednode_0410
   network: ws
   port: 8443
-  server: 89.116.161.250
+  server: 159.112.235.14
   servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
   tls: true
@@ -2269,18 +1517,33 @@ proxies:
   ws-opts:
     headers:
       Host: juzibaipiao.5112233.xyz
-    path: /
-- client-fingerprint: chrome
-  name: 15|US_speednode_0486
+    path: /?ed
+- name: 15|US_speednode_0411
   network: ws
-  password: 95b
-  port: 10511
-  server: 65.75.194.43
-  skip-cert-verify: true
-  sni: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-  type: trojan
-  udp: false
+  port: 443
+  server: 167.68.11.247
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
   ws-opts:
     headers:
-      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
+- client-fingerprint: chrome
+  name: 15|US_speednode_0413
+  network: ws
+  port: 443
+  server: 45.159.218.7
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: twitterfreecodestg@zdyz2
