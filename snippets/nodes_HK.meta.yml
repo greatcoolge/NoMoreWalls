@@ -1,13 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  name: 13,14|香港|@ripaojiedian
-  network: tcp
-  password: c471ef32-798d-40a0-a57c-acf3475a204e
-  port: 13007
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港|@ripaojiedian
+  password: ddfeaada-fcd6-4e8d-be0c-d4a847725d02
+  port: 25991
+  server: whcm.v6v.eu
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   name: 13,14|香港2|@ripaojiedian
   network: tcp
@@ -17,6 +16,23 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|香港3|@ripaojiedian
+  network: ws
+  port: '59501'
+  server: cm.laoliu.live
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 454e1e97-2dab-4abb-b770-adfa92be4d19
+  ws-opts:
+    headers:
+      Host: hk22.laoliu.store
+    path: /downloads_hk22
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -28,6 +44,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  port: 44826
+  server: ambxxid02hk.dorabbb.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ff6588e1-b3dd-42e8-8f5c-ff90bfbd935d
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇭🇰 香港R|@ripaojiedian
@@ -46,6 +73,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|香港5|@ripaojiedian
+  network: tcp
+  port: '44826'
+  server: ambxxid02hk.dorabbb.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff6588e1-b3dd-42e8-8f5c-ff90bfbd935d
 - client-fingerprint: chrome
   name: 15|HK_speednode_0144
   network: ws
