@@ -1,12 +1,43 @@
 proxies:
+- client-fingerprint: chrome
+  name: 13|🇸🇬 新加坡|@ripaojiedian
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: champion-dog.lab300.lat
+  skip-cert-verify: false
+  sni: champion-dog.lab300.lat
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|新加坡2|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 3L6E2.c6tu5uwk9.buzz
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  ws-opts:
+    headers:
+      Host: sg02.knt6y4bjx.buzz
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.125.235.88
+  server: 13.125.222.81
   tfo: false
   type: ss
+- name: 14|新加坡|@ripaojiedian
+  network: tcp
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: champion-dog.lab300.lat
+  type: trojan
 - name: 15|SG_speednode_0260
   network: ws
   port: 443
