@@ -1,41 +1,12 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-1
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)ca5bef9:175503
-    mode: tls
-  port: 2377
-  server: 18.176.215.63
-  type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
+  name: 0|-https://t.me/MrXbin-2
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0,13,14|韩国|@ripaojiedian
-  network: ws
-  port: '30003'
-  server: shouer2112.12123.org
-  servername: www.baidu.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4ae987a9-f9e6-49f0-95ad-e8f375678d62
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /12123.org
 - alterId: 0
   cipher: auto
   name: 13,14|香港|@ripaojiedian
@@ -142,6 +113,22 @@ proxies:
   server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 13,14|韩国|@ripaojiedian
+  network: ws
+  port: '30003'
+  server: shouer2112.12123.org
+  servername: www.baidu.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 4ae987a9-f9e6-49f0-95ad-e8f375678d62
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /12123.org
 - alterId: 0
   cipher: auto
   name: 13,14|新加坡|@ripaojiedian
