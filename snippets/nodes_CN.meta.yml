@@ -1,5 +1,13 @@
 proxies:
-- name: 15|CN_speednode_0021
+- client-fingerprint: chrome
+  name: 15|CN_speednode_0019
+  port: 7890
+  server: 110.41.32.204
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- name: 15|CN_speednode_0022
   password: af46f520-a6a1-4207-b3c4-062493fb71d1
   port: 12011
   server: cn1.cdn.xfltd-cdn.top
@@ -7,11 +15,21 @@ proxies:
   sni: cdn.alibaba.com
   type: trojan
   udp: true
-- name: 15|CN_speednode_0031
-  password: c5971db7-a8ee-4c44-9408-4c8950d19e0b
-  port: 12025
-  server: cn2.cdn.xfltd-cdn.top
+- alterId: -1
+  client-fingerprint: chrome
+  name: 15|CN_speednode_0027
+  port: 7890
+  server: 47.123.4.164
   skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
+  tls: false
+  type: http
+  udp: true
+- alterId: -1
+  client-fingerprint: chrome
+  name: 15|CN_speednode_0033
+  port: 7890
+  server: 182.92.216.171
+  skip-cert-verify: true
+  tls: false
+  type: http
   udp: true
