@@ -1,33 +1,53 @@
 proxies:
+- client-fingerprint: chrome
+  name: 13|🇰🇷 韩国|@ripaojiedian
+  password: 1dfba761-c1e0-422e-98b6-062da56afb53
+  port: 443
+  server: jkrf1.969799.xyz
+  skip-cert-verify: false
+  sni: jkrf1.969799.xyz
+  type: trojan
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国2|@ripaojiedian
+  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
+  port: 11789
+  server: pj.shakalaka.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇰🇷 韩国|@ripaojiedian
-  port: 51262
-  server: 45.141.136.221
+  name: 13,14|韩国3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: cU9jf.c6tu5uwk9.buzz
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: a6495bea-1970-431d-80cb-3c3911bb2c39
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  ws-opts:
+    headers:
+      Host: kr01.1761d77fead15f193490a0f11b83f3a4.buzz
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国4|@ripaojiedian
+  password: 7f5d080e-8dde-4b47-abf7-0b4402510fc7
+  port: 40032
+  server: soonkr.soon.guru
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.229.81.137
+  server: 3.36.69.3
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|韩国|@ripaojiedian
-  network: tcp
-  port: '51262'
-  server: 45.141.136.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a6495bea-1970-431d-80cb-3c3911bb2c39
 - name: 15|KR_speednode_0074
   network: ws
   password: CMLiu
