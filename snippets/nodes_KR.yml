@@ -1,4 +1,12 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国|@ripaojiedian
+  password: ea541b1a-b823-4e91-8cd4-42ac6d4d4569
+  port: 40032
+  server: soonkr.soon.guru
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
@@ -7,20 +15,3 @@ proxies:
   server: 43.207.71.110
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,14|韩国|@ripaojiedian
-  network: ws
-  port: '80'
-  server: strw4.c6tu5uwk9.buzz
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
-  ws-opts:
-    headers:
-      Host: kr03.1761d77fead15f193490a0f11b83f3a4.buzz
-    path: /
