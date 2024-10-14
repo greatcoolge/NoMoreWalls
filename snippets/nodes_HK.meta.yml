@@ -1,40 +1,31 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
-  password: ea541b1a-b823-4e91-8cd4-42ac6d4d4569
-  port: 40000
-  server: soonhk.soon.guru
+  password: 26f959e3-1a5e-3b3d-b4cd-fe04c80902bd
+  port: 10004
+  server: cdn.node1.lilisi.link
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  password: 030b7ede-55e5-4e1f-b509-efcacc1877e1
+  port: 21017
+  server: tt07.51feitu.com
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港2|@ripaojiedian
-  port: 14247
-  server: 103.75.117.78
+  name: 13|🇭🇰 香港3|@ripaojiedian
+  port: 51272
+  server: 38.147.188.98
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 56d6f1a9-b26a-4f9b-a95a-ff59de60ee51
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,14|香港3|@ripaojiedian
-  network: ws
-  port: '443'
-  server: hkcft01.xqc.best
-  servername: d1zonq30ul7iu8.cloudfront.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 86bf5667-081c-46a6-8030-6b50787723d6
-  ws-opts:
-    headers:
-      Host: d1zonq30ul7iu8.cloudfront.net
-    path: /stream
+  uuid: cd7c66cf-aad9-4646-b979-7555aa124b93
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -50,13 +41,13 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港5|@ripaojiedian
-  port: 44826
-  server: ambxxid02hk.dorabbb.top
+  port: 2902
+  server: 143.92.42.65
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 5f01c154-4137-4ffc-bf6d-801352a20d7a
+  uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -69,15 +60,15 @@ proxies:
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 0
-  cipher: none
-  name: 14|香港2|@ripaojiedian
+  cipher: auto
+  name: 14|香港3|@ripaojiedian
   network: tcp
-  port: '14247'
-  server: 103.75.117.78
+  port: '51272'
+  server: 38.147.188.98
   servername: ''
   tls: false
   type: vmess
-  uuid: 56d6f1a9-b26a-4f9b-a95a-ff59de60ee51
+  uuid: cd7c66cf-aad9-4646-b979-7555aa124b93
 - alterId: 64
   cipher: auto
   name: 14|香港4|@ripaojiedian
@@ -92,12 +83,12 @@ proxies:
   cipher: auto
   name: 14|香港5|@ripaojiedian
   network: tcp
-  port: '44826'
-  server: ambxxid02hk.dorabbb.top
+  port: '2902'
+  server: 143.92.42.65
   servername: ''
   tls: false
   type: vmess
-  uuid: 5f01c154-4137-4ffc-bf6d-801352a20d7a
+  uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
   name: 14|香港6|@ripaojiedian
@@ -108,3 +99,23 @@ proxies:
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: -1
+  name: 15|HK_speednode_0061
+  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+  port: 443
+  server: hknode07.oportal.cc
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 15|HK_speednode_0062
+  network: ws
+  port: 443
+  server: 219.76.13.169
+  servername: ll.ylks.us.kg
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: ll.ylks.us.kg
+    path: /?ed=2560
