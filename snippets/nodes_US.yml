@@ -20,27 +20,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 4df8aa8f-1fd6-414d-8d2b-66b6a01ba2a8
-- name: 15|US_speednode_0125
-  password: c52596bf-eecb-3ef9-ae6b-6b4f6ad83a11
-  port: 5524
-  server: 103.136.185.27
-  skip-cert-verify: true
-  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
-  type: trojan
-  udp: true
-- name: 15|US_speednode_0126
-  password: c52596bf-eecb-3ef9-ae6b-6b4f6ad83a11
-  port: 3508
-  server: 103.136.185.28
-  skip-cert-verify: true
-  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
-  type: trojan
-  udp: true
-- name: 15|US_speednode_0140
-  password: '!!str 3672449442956713984'
+- name: 15|US_speednode_0114
+  network: ws
+  password: auto
   port: 443
-  server: sure-mutt.sunbeam921.monster
+  server: 159.246.55.132
   skip-cert-verify: true
-  sni: sure-mutt.sunbeam921.monster
+  sni: vip.123789.pp.ua
   type: trojan
-  udp: true
+  udp: false
+  ws-opts:
+    headers:
+      Host: vip.123789.pp.ua
+    path: /
