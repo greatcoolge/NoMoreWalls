@@ -1,42 +1,31 @@
 proxies:
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
-  password: 26f959e3-1a5e-3b3d-b4cd-fe04c80902bd
-  port: 10004
-  server: cdn.node1.lilisi.link
+  port: 50021
+  server: 50021.baidu-cdn.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 4df8aa8f-1fd6-414d-8d2b-66b6a01ba2a8
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  password: 69b103f6-2db0-452b-999e-06cb77b8021b
+  port: 29527
+  server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港2|@ripaojiedian
-  password: 030b7ede-55e5-4e1f-b509-efcacc1877e1
-  port: 21017
-  server: tt07.51feitu.com
+  name: 13|🇭🇰 香港3|@ripaojiedian
+  password: b6979cfa-bab9-4303-b10c-cd350fbea326
+  port: 27263
+  server: gtm1.ktmwan.com
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港3|@ripaojiedian
-  port: 51272
-  server: 38.147.188.98
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cd7c66cf-aad9-4646-b979-7555aa124b93
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -61,24 +50,14 @@ proxies:
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 0
   cipher: auto
-  name: 14|香港3|@ripaojiedian
+  name: 14|香港|@ripaojiedian
   network: tcp
-  port: '51272'
-  server: 38.147.188.98
+  port: '50021'
+  server: 50021.baidu-cdn.top
   servername: ''
   tls: false
   type: vmess
-  uuid: cd7c66cf-aad9-4646-b979-7555aa124b93
-- alterId: 64
-  cipher: auto
-  name: 14|香港4|@ripaojiedian
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 4df8aa8f-1fd6-414d-8d2b-66b6a01ba2a8
 - alterId: 0
   cipher: auto
   name: 14|香港5|@ripaojiedian
@@ -99,3 +78,11 @@ proxies:
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: -1
+  name: 15|HK_speednode_0061
+  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+  port: 443
+  server: hknode07.oportal.cc
+  skip-cert-verify: true
+  type: trojan
+  udp: true

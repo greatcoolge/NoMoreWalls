@@ -1,53 +1,25 @@
 proxies:
-- client-fingerprint: chrome
-  name: 13|🇺🇸 美国|@ripaojiedian
-  password: b382cb9d7924e76112ab30ad4e45b430
-  port: 38091
-  server: ba3l.thchroute.club
-  skip-cert-verify: false
-  sni: ba3l.thchroute.club
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14,15|US_speednode_0140
-  network: tcp
-  password: '!!str 3672449442956713984'
-  port: 443
-  server: sure-mutt.sunbeam921.monster
-  skip-cert-verify: true
-  sni: sure-mutt.sunbeam921.monster
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '13,14|美国2|@ripaojiedian #1'
-  network: ws
-  port: '443'
-  server: ddd.zcr07.cloudns.biz
-  servername: ddd.zcr07.cloudns.biz
+  name: 13|🇺🇸 美国|@ripaojiedian
+  port: 50004
+  server: 50004.baidu-cdn.top
   skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: ddd.zcr07.cloudns.biz
-    path: /hms19.best-tizi.top:443/linkws
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  password: 5cp9Z3iWnJZ2
-  port: 443
-  server: 205.134.180.150
-  tfo: false
-  type: ss
-- name: 14|美国|@ripaojiedian
+  uuid: 4df8aa8f-1fd6-414d-8d2b-66b6a01ba2a8
+- alterId: 0
+  cipher: auto
+  name: 14|美国|@ripaojiedian
   network: tcp
-  password: b382cb9d7924e76112ab30ad4e45b430
-  port: 38091
-  server: ba3l.thchroute.club
-  type: trojan
+  port: '50004'
+  server: 50004.baidu-cdn.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4df8aa8f-1fd6-414d-8d2b-66b6a01ba2a8
 - name: 15|US_speednode_0125
   password: c52596bf-eecb-3ef9-ae6b-6b4f6ad83a11
   port: 5524
@@ -62,5 +34,13 @@ proxies:
   server: 103.136.185.28
   skip-cert-verify: true
   sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0140
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: sure-mutt.sunbeam921.monster
+  skip-cert-verify: true
+  sni: sure-mutt.sunbeam921.monster
   type: trojan
   udp: true
