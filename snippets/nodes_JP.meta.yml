@@ -10,67 +10,48 @@ proxies:
 - client-fingerprint: chrome
   name: 13,14|日本2|@ripaojiedian
   network: tcp
-  password: 5OZS3AXSpw9DOEc6x83D3uIYCZBDCFFSjqz24NyaxeelCKn3TyA8p0Y7RgaRal
+  password: AaS7EXZSZ0CY933ApSTN4gxlF3DORl8jyD6pwKBIYDunq23ezeyCa85cxaFCRO
   port: 18333
-  server: 154.31.115.26
+  server: pretty.meijireform.com
   skip-cert-verify: false
-  sni: caterpie.superpokemon.com
+  sni: pretty.meijireform.com
   type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇯🇵 日本3|@ripaojiedian
-  port: 50032
-  server: 50032.baidu-cdn.top
-  skip-cert-verify: false
+  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
+  port: 40015
+  server: hzhz2.sssyun.xyz
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 0900abc9-29a4-4f70-98de-336b5d4b79d6
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇯🇵 日本4|@ripaojiedian
-  password: 04f8339c-2aa2-489b-bd74-e666714f9d49
+  password: 9bfad321-59c2-42dc-be43-6985c6f84bba
   port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 13|🇯🇵 日本5|@ripaojiedian
-  port: 35976
-  server: 5.104.82.173
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: deciding-mantis.opossum872.cfd
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: dccaf5fa-5482-49cb-8519-5434af52ccbc
+  sni: deciding-mantis.opossum872.cfd
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.112.45.212
+  server: 13.231.124.247
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|日本3|@ripaojiedian
+- name: 14|日本5|@ripaojiedian
   network: tcp
-  port: '50032'
-  server: 50032.baidu-cdn.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0900abc9-29a4-4f70-98de-336b5d4b79d6
-- alterId: 0
-  cipher: none
-  name: 14|日本5|@ripaojiedian
-  network: tcp
-  port: '35976'
-  server: 5.104.82.173
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dccaf5fa-5482-49cb-8519-5434af52ccbc
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: deciding-mantis.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
