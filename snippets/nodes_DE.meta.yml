@@ -20,3 +20,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- name: 15|DE_speednode_0011
+  network: ws
+  port: 443
+  server: uk.officeov.com
+  servername: uk.officeov.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ffcc114-b231-4582-9dcd-d32bcf261f0f
+  ws-opts:
+    headers:
+      Host: uk.officeov.com
+    path: /bing
