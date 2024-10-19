@@ -7,7 +7,23 @@ proxies:
   server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
-- name: 15|US_speednode_0088
+- name: 15|US_speednode_0104
+  password: ca5333cc-60bb-37a6-9084-1fd38120063f
+  port: 3509
+  server: 103.136.185.28
+  skip-cert-verify: true
+  sni: steampipe-kr.akamaized.net
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0106
+  password: ca5333cc-60bb-37a6-9084-1fd38120063f
+  port: 5526
+  server: 103.136.185.27
+  skip-cert-verify: true
+  sni: fastly.cdn.steampipe.steamcontent.com
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0129
   network: ws
   password: bpb-trojan
   port: 8443
@@ -15,18 +31,16 @@ proxies:
   skip-cert-verify: true
   sni: AZaDneT-Hwt.pAGES.dev
   type: trojan
-  udp: false
+  udp: true
   ws-opts:
     headers:
       Host: AZaDneT-Hwt.pAGES.dev
     path: /trJVqjkRZ0POGhfThT/MTUyLjcwLjkwLjE2OA==?ed=2560
-- name: 15|US_speednode_0490
-  network: ws
-  password: f2191442-1436-3d79-801e-80d8de896c73
+- name: 15|US_speednode_0154
+  password: ca5333cc-60bb-37a6-9084-1fd38120063f
   port: 443
-  server: fr3-july.88888802.xyz
+  server: 35.93.203.243
   skip-cert-verify: true
+  sni: steampipe.akamaized.net
   type: trojan
-  udp: false
-  ws-opts:
-    path: /91838f3b905c42c7aa5b664b27d8193b
+  udp: true
