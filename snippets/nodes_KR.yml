@@ -1,17 +1,30 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国|@ripaojiedian
-  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
-  port: 40016
-  server: hzhz2.sssyun.xyz
+  port: 9060
+  server: select-kr.0000000000.download
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: ac59a7cd-11af-3e35-a098-b785688ec627
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.238.227.113
+  server: 54.179.92.61
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|韩国|@ripaojiedian
+  network: tcp
+  port: '9060'
+  server: select-kr.0000000000.download
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac59a7cd-11af-3e35-a098-b785688ec627
