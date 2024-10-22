@@ -1,10 +1,19 @@
 proxies:
+- client-fingerprint: chrome
+  name: 13,14|新加坡|@ripaojiedian
+  network: tcp
+  password: 8d4a8689-e8fd-4405-9834-3f812c528db0
+  port: 13027
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|🇸🇬 新加坡|@ripaojiedian
-  password: 1baf9dfa-8faf-4218-a0d2-428111b7cd55
-  port: 11008
-  server: hk.bazhuayujiasu.cc
+  name: 13|🇸🇬 新加坡2|@ripaojiedian
+  password: 5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38
+  port: 40005
+  server: soonsgp.soon.guru
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -12,6 +21,6 @@ proxies:
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.207.113.185
+  server: 47.128.233.58
   tfo: false
   type: ss
