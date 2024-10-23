@@ -1,31 +1,71 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 13|🇰🇷 韩国|@ripaojiedian
-  password: 9ddd5a1c-2d57-4c68-9f3d-b39ea2b8b698
-  port: 40016
-  server: hzhz2.sssyun.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇰🇷 韩国2|@ripaojiedian
-  port: 24463
-  server: 45.94.68.210
+  name: 13|🇰🇷 韩国|@ripaojiedian
+  port: 40166
+  server: 45.94.68.173
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: be4d5bca-0551-4a51-a965-25eaba7ac811
+  uuid: c061522e-67dd-43b7-bd84-20ef3c954c35
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|韩国2|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 104.37.215.79
+  servername: www.77992842.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.77992842.xyz
+    path: /path/011410073331
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国3|@ripaojiedian
+  port: 35008
+  server: tanz-kr.01byx31qzn.download
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.213.30.242
+  server: 52.198.194.170
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|韩国|@ripaojiedian
+  network: tcp
+  port: '40166'
+  server: 45.94.68.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c061522e-67dd-43b7-bd84-20ef3c954c35
+- alterId: 0
+  cipher: auto
+  name: 14|韩国3|@ripaojiedian
+  network: tcp
+  port: '35008'
+  server: tanz-kr.01byx31qzn.download
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
 - name: 15|KR_speednode_0058
   network: ws
   port: 32900
