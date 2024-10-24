@@ -1,33 +1,27 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本2|@ripaojiedian
-  port: 56916
-  server: 45.159.50.165
+- client-fingerprint: chrome
+  name: 13|🇯🇵 日本|@ripaojiedian
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: central-minnow.opossum872.cfd
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: edcc6b8f-bcf5-4d2a-9026-c58967fb2b5d
+  sni: central-minnow.opossum872.cfd
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.176.53.132
+  server: 13.212.252.162
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|日本2|@ripaojiedian
+- name: 14|日本|@ripaojiedian
   network: tcp
-  port: '56916'
-  server: 45.159.50.165
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: edcc6b8f-bcf5-4d2a-9026-c58967fb2b5d
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: central-minnow.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
 - name: 15|JP_speednode_0065
   password: 64e0ee38-2874-3f3f-b7d2-34f5a03cbaab
   port: 443
