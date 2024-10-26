@@ -1,21 +1,56 @@
 proxies:
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
-  password: shadowsocks
+  password: '!!str 3690911436885991424'
   port: 443
-  server: 37.19.198.244
+  server: careful-platypus.opossum872.cfd
+  skip-cert-verify: false
+  sni: careful-platypus.opossum872.cfd
+  type: trojan
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 137.175.97.159
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 13,14|美国2|@ripaojiedian
-  network: tcp
-  password: 5b4becce-5739-483f-97ec-68b81a855d68
-  port: 13021
-  server: naiu-us.05vr9nyqg5.download
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  port: 9023
+  server: select-us.0000000000.download
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ac59a7cd-11af-3e35-a098-b785688ec627
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 107.148.95.104
+  tfo: false
+  type: ss
+- name: 14|美国|@ripaojiedian
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: careful-platypus.opossum872.cfd
+  skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 14|美国3|@ripaojiedian
+  network: tcp
+  port: '9023'
+  server: select-us.0000000000.download
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac59a7cd-11af-3e35-a098-b785688ec627
 - name: 15|US_speednode_0273
   network: ws
   password: auto
