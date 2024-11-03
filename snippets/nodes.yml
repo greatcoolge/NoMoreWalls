@@ -1,18 +1,12 @@
 proxies:
-- cipher: aes-128-gcm
-  name: 0|-https://t.me/MrXbin-2
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-3
+  name: 0|-https://t.me/MrXbin-2
   password: faBAoD54k87UJG7
   port: 2376
   server: 38.75.136.117
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-14
+  name: 0|-https://t.me/MrXbin-15
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -23,26 +17,10 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-19
-  network: ws
-  port: 2095
-  server: 172.64.166.2
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip12.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-21
+  name: 0|-https://t.me/MrXbin-18
   network: ws
   port: 2082
-  server: 172.64.175.88
+  server: 172.64.166.2
   servername: ip18.6929198.xyz
   type: vmess
   udp: true
@@ -57,8 +35,22 @@ proxies:
   http-opts: {}
   name: 0|-https://t.me/MrXbin-22
   network: ws
+  port: 2095
+  server: 172.64.166.9
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip11.6016725.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-23
+  network: ws
   port: 2082
-  server: 172.64.167.22
+  server: 172.64.166.12
   servername: ip18.6929198.xyz
   type: vmess
   udp: true
@@ -66,27 +58,31 @@ proxies:
   ws-opts:
     headers:
       Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-25
+  network: ws
+  port: 2095
+  server: 172.64.175.213
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip9.6016725.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
   name: 0|-https://t.me/MrXbin-29
-  network: tcp
-  port: 443
-  server: 185.231.181.46
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 95a69849-23c4-4669-91ed-cec32ad1341c
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-33
   network: ws
   port: 2082
-  server: 172.64.99.22
+  server: 172.64.175.88
   servername: ip18.6929198.xyz
   type: vmess
   udp: true
@@ -95,24 +91,6 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-35
-  network: ws
-  port: 8080
-  server: n002.kovmk.website
-  servername: n002.kovmk.website
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 6dde3b3f-0a00-448a-a406-26d0960d1655
-  ws-opts:
-    headers:
-      Host: daohang.kovmk.website
-    path: /xyz
 - alterId: 0
   cipher: auto
   name: '3,4,5|d*********g.com_0 #2'
@@ -444,19 +422,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- name: 15|CA_speednode_0002
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 23.227.60.8
-  skip-cert-verify: true
-  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
-    path: /trZkJgi4MLAtl7SrU9
-- name: 15|ES_speednode_0008
+- name: 15|ES_speednode_0006
   network: ws
   password: bpb-trojan
   port: 443
@@ -468,7 +434,7 @@ proxies:
     headers:
       Host: 403b3611-99bc-43b7-88D7-26Ed5D0825a9-3.PAgeS.dEv
     path: /trLb1imnrxPEhfzfwk
-- name: 15|RU_speednode_0018
+- name: 15|RU_speednode_0013
   network: ws
   password: bpb-trojan
   port: 2096
@@ -480,43 +446,7 @@ proxies:
     headers:
       Host: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV
     path: /troUbg9Q3QgD0TJRfy
-- name: 15|US_speednode_0042
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.67.180.238
-  skip-cert-verify: true
-  sni: 403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV
-    path: /trep2km0aVhJcl29WO
-- name: 15|US_speednode_0043
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.66.44.203
-  skip-cert-verify: true
-  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
-    path: /trSo3btsDgOHHUM6Nb
-- name: 15|US_speednode_0044
-  network: ws
-  password: bpb-trojan
-  port: 2083
-  server: 159.112.235.48
-  skip-cert-verify: true
-  sni: 403b3611-99bC-43B7-88d7-26ed5d0825A9-3.PAGes.dEv
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 403b3611-99bC-43B7-88d7-26ed5d0825A9-3.PAGes.dEv
-    path: /trZTKk76m0W1AxpNcC
-- name: 15|US_speednode_0045
+- name: 15|US_speednode_0036
   network: ws
   password: bpb-trojan
   port: 443
@@ -528,35 +458,17 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL
-- name: 15|US_speednode_0046
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.66.47.53
-  skip-cert-verify: true
-  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
-    path: /trSo3btsDgOHHUM6Nb
-- name: 15|VN_speednode_0048
+- name: 15|VN_speednode_0037
   password: 94d219c9-1afc-4d42-b090-8b3794764380
   port: 443
   server: std1.loadingip.com
   skip-cert-verify: true
   type: trojan
   udp: false
-- name: 15|VN_speednode_0049
+- name: 15|VN_speednode_0038
   password: 94d219c9-1afc-4d42-b090-8b3794764380
   port: 443
   server: 36.50.134.26
-  skip-cert-verify: true
-  type: trojan
-- name: 15|VN_speednode_0050
-  password: 94d219c9-1afc-4d42-b090-8b3794764380
-  port: 443
-  server: 36.50.134.29
   skip-cert-verify: true
   type: trojan
 - alterId: 0
