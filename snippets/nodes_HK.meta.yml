@@ -21,20 +21,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港3|@ripaojiedian
-  password: 813e5b6e-76c7-4ed3-a913-7cfcb7490424
-  port: 11001
-  server: 183.240.255.75
+  port: 17806
+  server: 38.147.189.182
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 9f3d1af9-855a-4ba1-861a-4588240500a7
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇭🇰 香港4|@ripaojiedian
-  password: 01ec0aea-686e-4c3a-8276-cf3f145b5304
-  port: 31672
-  server: gdcub.yunnode.win
+  password: 1a9abdcb-57de-4027-8d00-d00efbfc4888
+  port: 11001
+  server: 183.240.255.75
   tfo: false
   type: ss
 - alterId: 0
@@ -48,23 +51,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 13|🇭🇰 香港6|@ripaojiedian
-  password: 50dd31ce-2e8c-45e2-be8b-cba8a6eee621
-  port: 35631
-  server: gdcub.yunnode.win
+  password: asd123456
+  port: 8388
+  server: 154.197.98.64
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 13,14|香港7|@ripaojiedian
-  network: tcp
-  password: de45945e-65ea-4d13-b29d-1835a4281023
-  port: 35002
-  server: ak2.firewoodzz.com
-  skip-cert-verify: false
-  sni: updates.sub-nthu.com
-  type: trojan
 - alterId: 64
   cipher: auto
   name: 14|香港|@ripaojiedian
@@ -87,6 +81,16 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 14|香港3|@ripaojiedian
+  network: tcp
+  port: '17806'
+  server: 38.147.189.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f3d1af9-855a-4ba1-861a-4588240500a7
+- alterId: 0
+  cipher: auto
   name: 14|香港5|@ripaojiedian
   network: tcp
   port: '2902'
@@ -96,10 +100,10 @@ proxies:
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0025
+  name: 15|HK_speednode_0008
   network: ws
   port: 587
-  server: 152.32.129.97
+  server: 47.243.91.39
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -111,37 +115,7 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0026
-  network: ws
-  port: 587
-  server: 47.76.154.53
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0027
-  network: ws
-  port: 587
-  server: 8.210.76.17
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0028
+  name: 15|HK_speednode_0009
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -155,22 +129,7 @@ proxies:
       Host: juzi8186.5112233.xyz
     path: /?ed=2560fp=random
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0029
-  network: ws
-  port: 587
-  server: 47.76.77.127
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0030
+  name: 15|HK_speednode_0010
   network: ws
   port: 6666
   server: 124.156.129.206
@@ -185,7 +144,7 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0031
+  name: 15|HK_speednode_0011
   network: ws
   port: 587
   server: 206.237.5.205
@@ -200,40 +159,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0032
+  name: 15|HK_speednode_0012
   network: ws
   port: 587
   server: 103.41.65.161
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0033
-  network: ws
-  port: 587
-  server: 206.237.3.187
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0034
-  network: ws
-  port: 587
-  server: 47.243.91.39
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
