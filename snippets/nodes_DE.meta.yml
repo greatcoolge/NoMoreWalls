@@ -1,9 +1,45 @@
 proxies:
+- grpc-opts:
+    grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
+  name: 15|DE_speednode_0002
+  network: grpc
+  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
+  port: 443
+  server: 31.172.87.116
+  skip-cert-verify: true
+  sni: uni.fi
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
+  name: 15|DE_speednode_0003
+  network: grpc
+  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
+  port: 443
+  server: 31.172.87.116
+  skip-cert-verify: true
+  sni: testak.dd.msk.suh2
+  type: trojan
+- client-fingerprint: chrome
+  name: 15|DE_speednode_0004
+  network: ws
+  port: 2003
+  server: 89.185.85.53
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 15|DE_speednode_0005
   network: ws
   port: 2003
-  server: 2.59.134.248
+  server: 152.53.13.241
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -18,7 +54,7 @@ proxies:
   name: 15|DE_speednode_0006
   network: ws
   port: 2003
-  server: 89.185.85.53
+  server: 152.53.14.225
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -38,54 +74,8 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|DE_speednode_0008
-  network: ws
-  port: 2003
-  server: 152.53.13.241
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|DE_speednode_0009
-  network: ws
-  port: 55555
-  server: 163.171.128.232
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|DE_speednode_0010
-  network: ws
-  port: 8080
-  server: 213.139.72.80
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
+    path: /?ed=2560fp=chrome

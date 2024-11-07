@@ -1,15 +1,27 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-2
+  password: amazonskr05
+  port: 443
+  server: 54.187.244.22
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-1
+  name: 0|-https://t.me/MrXbin-3
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.157
   type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
-  password: amazonskr05
-  port: 443
-  server: 54.187.244.22
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-4
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-6
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
   type: ss
 - cipher: aes-128-gcm
   name: 0,13|🇺🇸 美国3|@ripaojiedian
@@ -18,17 +30,8 @@ proxies:
   server: 156.146.38.168
   tfo: false
   type: ss
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-18
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13183
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: z5is.cdn.node.a.tddns-ounk.com
-  type: ssr
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-21
+  name: 0|-https://t.me/MrXbin-14
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -39,20 +42,65 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-30
+  name: 0|-https://t.me/MrXbin-23
   network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  port: 2082
+  server: 172.64.175.88
+  servername: ip18.6929198.xyz
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-25
+  network: ws
+  port: 2082
+  server: 172.64.167.22
+  servername: ip18.6929198.xyz
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-32
+  network: ws
+  port: 2095
+  server: 172.64.166.28
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip11.6016725.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-36
+  network: ws
+  port: 8080
+  server: m003.mmzhk.website
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: c3d1b53d-8cbe-4455-a009-bfa08e55f11d
   ws-opts:
     headers:
-      Host: f.khilei.com
-    path: /linkvws
+      Host: daohang.mmzhk.website
+    path: /xyz
 - alterId: 0
   cipher: auto
   name: '3,4,5|d*********g.com_0 #2'
@@ -381,38 +429,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|AU_speednode_0001
-  network: ws
-  port: 1001
-  server: 82.115.20.250
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
+- grpc-opts:
+    grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
+  name: 15|DE_speednode_0002
+  network: grpc
+  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
+  port: 443
+  server: 31.172.87.116
+  skip-cert-verify: true
+  sni: uni.fi
+  type: trojan
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|CN_speednode_0002
+- grpc-opts:
+    grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
+  name: 15|DE_speednode_0003
+  network: grpc
+  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
+  port: 443
+  server: 31.172.87.116
+  skip-cert-verify: true
+  sni: testak.dd.msk.suh2
+  type: trojan
+- name: 15|DE_speednode_0004
   network: ws
-  port: 587
-  server: 103.112.184.7
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|CY_speednode_0004
-  network: ws
-  port: 2501
-  server: 45.82.254.35
+  port: 2003
+  server: 89.185.85.53
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -426,7 +467,7 @@ proxies:
 - name: 15|DE_speednode_0005
   network: ws
   port: 2003
-  server: 2.59.134.248
+  server: 152.53.13.241
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -440,7 +481,7 @@ proxies:
 - name: 15|DE_speednode_0006
   network: ws
   port: 2003
-  server: 89.185.85.53
+  server: 152.53.14.225
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -459,83 +500,12 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|DE_speednode_0008
-  network: ws
-  port: 2003
-  server: 152.53.13.241
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|DE_speednode_0009
-  network: ws
-  port: 55555
-  server: 163.171.128.232
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|DE_speednode_0010
-  network: ws
-  port: 8080
-  server: 213.139.72.80
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|ES_speednode_0011
-  network: ws
-  port: 8080
-  server: 185.214.101.159
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|FI_speednode_0012
-  network: ws
-  port: 2222
-  server: 65.21.158.255
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|GB_speednode_0014
+    path: /?ed=2560fp=chrome
+- name: 15|GB_speednode_0008
   network: ws
   port: 587
   server: 149.5.52.121
@@ -549,49 +519,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|GB_speednode_0015
-  network: ws
-  port: 587
-  server: 8.211.207.185
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|GB_speednode_0016
-  network: ws
-  port: 587
-  server: 149.5.52.90
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|HK_speednode_0017
-  network: ws
-  port: 587
-  server: 107.150.119.240
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|HK_speednode_0018
+- name: 15|HK_speednode_0009
   network: ws
   port: 587
   server: 47.238.74.134
@@ -605,7 +533,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|HK_speednode_0019
+- name: 15|HK_speednode_0010
   network: ws
   port: 11001
   server: 47.76.83.114
@@ -619,49 +547,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|HK_speednode_0020
-  network: ws
-  port: 587
-  server: 47.76.165.252
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|HK_speednode_0021
-  network: ws
-  port: 587
-  server: 47.76.111.33
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 15|HK_speednode_0022
-  network: tcp
-  port: 19280
-  reality-opts:
-    public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo
-    short-id: a8bd783f
-  server: 103.17.99.54
-  servername: cdn-dynmedia-1.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b90001-4206-4871-a99d-1744d48f215b
-- name: 15|HK_speednode_0023
+- name: 15|HK_speednode_0011
   network: ws
   port: 54321
   server: 59.149.204.218
@@ -675,21 +561,20 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|HK_speednode_0024
+- name: 15|HK_speednode_0012
   network: ws
-  port: 587
-  server: 103.41.65.161
-  servername: vless.ifx.us.kg
+  port: 23555
+  server: 219.77.65.212
+  servername: juzi8186.5112233.xyz
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|HK_speednode_0025
+      Host: juzi8186.5112233.xyz
+    path: /?ed=2560fp=random
+- name: 15|HK_speednode_0013
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -702,23 +587,35 @@ proxies:
     headers:
       Host: juzi8186.5112233.xyz
     path: /?ed=2560fp=randomfp=chrome
-- http-opts:
-    headers:
-      Host:
-      - doostihaa.com
-    method: GET
-    path:
-    - /
-  name: 15|IR_speednode_0026
-  network: http
-  port: 2083
-  server: 79.127.70.123
-  servername: doostihaa.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 15|HK_speednode_0014
+  network: tcp
+  port: 19280
+  reality-opts:
+    public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo
+    short-id: a8bd783f
+  server: 103.17.99.54
+  servername: cdn-dynmedia-1.microsoft.com
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
-  uuid: ec94daf9-442f-4a6b-9633-70c90006dfdd
-- name: 15|JP_speednode_0027
+  uuid: 89b90001-4206-4871-a99d-1744d48f215b
+- name: 15|IR_speednode_0015
+  network: ws
+  port: 3001
+  server: 2.189.242.35
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|JP_speednode_0016
   network: ws
   port: 54321
   server: 34.146.31.202
@@ -732,21 +629,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0028
-  network: ws
-  port: 11001
-  server: 218.38.36.6
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|KR_speednode_0029
+- name: 15|KR_speednode_0017
   network: ws
   port: 33889
   server: 218.152.205.205
@@ -760,7 +643,21 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0030
+- name: 15|KR_speednode_0018
+  network: ws
+  port: 11001
+  server: 218.38.36.6
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|KR_speednode_0019
   network: ws
   port: 11310
   server: 175.198.94.206
@@ -774,7 +671,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0031
+- name: 15|KR_speednode_0020
   network: ws
   port: 28006
   server: 59.30.29.64
@@ -788,7 +685,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0032
+- name: 15|KR_speednode_0021
   network: ws
   port: 28006
   server: 59.15.240.231
@@ -802,7 +699,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0033
+- name: 15|KR_speednode_0022
   network: ws
   port: 33890
   server: 221.166.163.61
@@ -816,35 +713,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0034
-  network: ws
-  port: 33889
-  server: 118.39.97.156
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|KR_speednode_0035
-  network: ws
-  port: 28006
-  server: 220.81.169.216
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|KR_speednode_0036
+- name: 15|KR_speednode_0023
   network: ws
   port: 28006
   server: 210.126.67.51
@@ -858,7 +727,21 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0037
+- name: 15|KR_speednode_0024
+  network: ws
+  port: 33889
+  server: 118.39.97.156
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|KR_speednode_0025
   network: ws
   port: 28006
   server: 218.152.195.182
@@ -872,7 +755,21 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|KR_speednode_0038
+- name: 15|KR_speednode_0026
+  network: ws
+  port: 28006
+  server: 220.81.169.216
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|KR_speednode_0027
   network: ws
   port: 28006
   server: 220.124.232.109
@@ -886,76 +783,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|NL_speednode_0039
-  network: ws
-  port: 1001
-  server: 192.210.160.163
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|NL_speednode_0040
-  network: ws
-  port: 2501
-  server: 194.246.81.62
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|NL_speednode_0041
-  network: ws
-  port: 2501
-  server: 89.110.102.115
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|NL_speednode_0042
-  network: ws
-  port: 1001
-  server: 45.94.31.75
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|NL_speednode_0043
-  network: ws
-  port: 1001
-  server: 45.94.31.75
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- name: 15|NL_speednode_0044
+- name: 15|NL_speednode_0028
   network: ws
   port: 1001
   server: 2.58.56.31
@@ -969,10 +797,10 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|PT_speednode_0045
+- name: 15|NL_speednode_0029
   network: ws
-  port: 8080
-  server: 5.206.224.223
+  port: 2501
+  server: 194.246.81.62
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -983,7 +811,48 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|RO_speednode_0046
+- name: 15|NL_speednode_0030
+  network: ws
+  port: 1001
+  server: 45.94.31.75
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|NL_speednode_0031
+  network: ws
+  port: 2501
+  server: 89.110.102.115
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|NL_speednode_0032
+  network: ws
+  port: 1001
+  server: 45.94.31.75
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- name: 15|RO_speednode_0033
   network: ws
   port: 587
   server: 89.33.44.22
@@ -997,7 +866,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|RU_speednode_0047
+- name: 15|RU_speednode_0034
   network: ws
   port: 8080
   server: 91.219.150.221
@@ -1011,7 +880,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|RU_speednode_0048
+- name: 15|RU_speednode_0035
   network: ws
   port: 8080
   server: 91.219.150.221
@@ -1024,49 +893,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
-- name: 15|SC_speednode_0049
-  network: ws
-  port: 587
-  server: 156.247.9.119
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|SE_speednode_0050
-  network: ws
-  port: 8080
-  server: 13.48.195.102
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|SE_speednode_0051
-  network: ws
-  port: 8080
-  server: 13.60.87.228
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|SE_speednode_0052
+- name: 15|SE_speednode_0036
   network: ws
   port: 2501
   server: 95.164.51.24
@@ -1080,21 +907,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|SG_speednode_0053
-  network: ws
-  port: 587
-  server: 103.180.161.69
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|SG_speednode_0054
+- name: 15|SG_speednode_0037
   network: ws
   port: 587
   server: 103.180.161.123
@@ -1108,24 +921,10 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|TR_speednode_0055
-  network: ws
-  port: 999
-  server: 185.226.92.168
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|TW_speednode_0056
+- name: 15|SG_speednode_0038
   network: ws
   port: 587
-  server: 123.58.196.181
+  server: 103.180.161.69
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -1136,8 +935,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- client-fingerprint: ios
-  name: 15|US_speednode_0068
+- name: 15|US_speednode_0040
   network: ws
   port: 80
   server: 167.82.30.71
@@ -1150,49 +948,47 @@ proxies:
     headers:
       Host: samane.ir
     path: /4u7lAS4nPLtz0xPz?ed=2560
-- name: 15|US_speednode_0058
+- name: 15|US_speednode_0041
   network: ws
-  port: 587
-  server: 154.12.45.244
-  servername: vless.ifx.us.kg
+  port: 80
+  server: 167.82.30.71
+  servername: samane.ir
   skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: samane.ir
+    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chrome
+- name: 15|US_speednode_0042
+  network: ws
+  port: 443
+  server: 199.232.5.79
+  servername: mefa.ir
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0059
+      Host: mefa.ir
+    path: /H?ed=2560
+- name: 15|US_speednode_0043
   network: ws
-  port: 587
-  server: 154.12.39.181
-  servername: vless.ifx.us.kg
+  port: 80
+  server: 151.101.3.10
+  servername: uni.fi
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
   ws-opts:
     headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0060
-  network: ws
-  port: 587
-  server: 154.64.228.114
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0061
+      Host: uni.fi
+    path: /?ed=2048fp=chromefp=chrome
+- name: 15|US_speednode_0044
   network: ws
   port: 587
   server: 206.223.84.99
@@ -1206,46 +1002,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|US_speednode_0062
-  network: ws
-  port: 80
-  server: 167.82.30.71
-  servername: samane.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: samane.ir
-    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chrome
-- name: 15|US_speednode_0073
-  network: ws
-  port: 80
-  server: 167.82.30.71
-  servername: samane.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: samane.ir
-    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome
-- name: 15|US_speednode_0066
-  network: ws
-  port: 80
-  server: 151.101.3.10
-  servername: uni.fi
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
-  ws-opts:
-    headers:
-      Host: uni.fi
-    path: /?ed=2048fp=chromefp=chrome
-- name: 15|US_speednode_0067
+- name: 15|US_speednode_0046
   network: ws
   port: 80
   server: 199.232.37.15
@@ -1259,7 +1016,20 @@ proxies:
     headers:
       Host: sara193.ir
     path: /BCXzvAcvSB7JzMWj?ed=2560
-- name: 15|US_speednode_0069
+- name: 15|US_speednode_0048
+  network: ws
+  port: 80
+  server: 167.82.30.71
+  servername: samane.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: samane.ir
+    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome
+- name: 15|US_speednode_0049
   network: ws
   port: 443
   server: 199.232.5.101
@@ -1273,131 +1043,20 @@ proxies:
     headers:
       Host: mefa.ir
     path: /H?ed=2560
-- name: 15|US_speednode_0070
-  network: ws
-  port: 55555
-  server: 38.145.210.77
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0071
+- name: 15|US_speednode_0053
   network: ws
   port: 80
-  server: 104.17.147.22
-  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+  server: 151.101.3.10
+  servername: uni.fi
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
+  uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
   ws-opts:
     headers:
-      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    path: /Telegram-Xv2ry2?ed=512
-- name: 15|US_speednode_0078
-  network: ws
-  port: 587
-  server: 206.237.113.231
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chromefp=chrome
-  name: 15|US_speednode_0088
-  network: ws
-  port: 80
-  server: 162.159.129.60
-  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    path: /Telegram-Xv2ry2?ed=512fp=chromefp=chrome
-- name: 15|US_speednode_0080
-  network: ws
-  port: 10001
-  server: 142.11.216.214
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0083
-  network: ws
-  port: 54321
-  server: 35.212.206.193
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0085
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    path: /Telegram-Xv2ry2?ed=512fp=chrome
-- name: 15|US_speednode_0086
-  network: ws
-  port: 587
-  server: 165.154.163.236
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0089
-  network: ws
-  port: 587
-  server: 157.254.227.37
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0090
+      Host: uni.fi
+    path: /?ed=2048fp=chrome
+- name: 15|US_speednode_0057
   network: ws
   port: 587
   server: 165.154.206.81
@@ -1412,20 +1071,47 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560
 - client-fingerprint: chromefp=chrome
-  name: 15|US_speednode_0091
+  name: 15|US_speednode_0065
   network: ws
   port: 80
-  server: 199.232.37.15
-  servername: sara193.ir
+  server: 162.159.129.60
+  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
   ws-opts:
     headers:
-      Host: sara193.ir
-    path: /BCXzvAcvSB7JzMWj?ed=2560fp=chromefp=chrome
-- name: 15|US_speednode_0093
+      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+    path: /Telegram-Xv2ry2?ed=512fp=chromefp=chrome
+- name: 15|US_speednode_0064
+  network: ws
+  port: 587
+  server: 165.154.163.236
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0066
+  network: ws
+  port: 80
+  server: 104.17.147.22
+  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+    path: /Telegram-Xv2ry2?ed=512
+- name: 15|US_speednode_0067
   network: ws
   port: 80
   server: 199.232.37.15
@@ -1438,7 +1124,48 @@ proxies:
     headers:
       Host: sara193.ir
     path: /BCXzvAcvSB7JzMWj?ed=2560fp=chrome
-- name: 15|US_speednode_0094
+- client-fingerprint: chromefp=chrome
+  name: 15|US_speednode_0068
+  network: ws
+  port: 80
+  server: 199.232.37.15
+  servername: sara193.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: sara193.ir
+    path: /BCXzvAcvSB7JzMWj?ed=2560fp=chromefp=chrome
+- name: 15|US_speednode_0069
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+    path: /Telegram-Xv2ry2?ed=512fp=chrome
+- name: 15|US_speednode_0070
+  network: ws
+  port: 587
+  server: 157.254.227.37
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0072
   network: ws
   port: 587
   server: 157.254.227.37
@@ -1451,35 +1178,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
-- name: 15|US_speednode_0095
-  network: ws
-  port: 55555
-  server: 162.244.208.120
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0096
-  network: ws
-  port: 55555
-  server: 162.244.208.173
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: 15|US_speednode_0097
+- name: 15|US_speednode_0073
   network: ws
   port: 2052
   server: www.speedtest.net
