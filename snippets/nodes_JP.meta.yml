@@ -44,11 +44,35 @@ proxies:
   tls: false
   type: vmess
   uuid: e1218e34-80a3-4a65-8524-88ca51e79191
-- name: 15|JP_speednode_0004
-  password: 8e4248f7-aae5-3a38-b99d-88bf1cd37e0d
+- name: 15|JP_speednode_0064
+  network: ws
   port: 443
-  server: 35.75.8.137
+  server: zmaoz.faculty.ucdavis.edu
+  servername: zmaoz.faculty.ucdavis.edu
   skip-cert-verify: true
-  sni: fastly.cdn.steampipe.steamcontent.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
+  ws-opts:
+    headers:
+      Host: Falcunargo.net
+    path: /5Ve373mPjKg4vceF?ed
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '15,16|d*********g.com_3 #3'
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: false
+  sni: www.zitian.cn
+  tls: true
   type: trojan
   udp: true
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
