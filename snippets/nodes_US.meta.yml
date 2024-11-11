@@ -1,4 +1,12 @@
 proxies:
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国|@ripaojiedian
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.131
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -20,6 +28,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|US_speednode_0042
+  network: ws
+  port: 443
+  server: 151.101.130.228
+  servername: zmaoz.faculty.ucdavis.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
+  ws-opts:
+    headers:
+      Host: Falcunargo.net
+    path: /Telegram@V2ray_Alpha/?ed=2087
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -38,22 +60,8 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 15|US_speednode_0047
-  network: ws
-  port: 443
-  server: 151.101.130.228
-  servername: zmaoz.faculty.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
-  ws-opts:
-    headers:
-      Host: Falcunargo.net
-    path: /Telegram@V2ray_Alpha/?ed=2087
 - client-fingerprint: ios
-  name: 15|US_speednode_0051
+  name: 15|US_speednode_0047
   network: ws
   port: 80
   server: 167.82.30.71
@@ -67,21 +75,8 @@ proxies:
     headers:
       Host: samane.ir
     path: /4u7lAS4nPLtz0xPz?ed=2560
-- name: 15|US_speednode_0053
-  network: ws
-  port: 80
-  server: 167.82.30.71
-  servername: samane.ir
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: samane.ir
-    path: /4u7lAS4nPLtz0xPz?ed=2560fp=ios
 - client-fingerprint: chrome
-  name: 15|US_speednode_0060
+  name: 15|US_speednode_0054
   network: ws
   port: 443
   server: 199.232.5.79
@@ -96,21 +91,7 @@ proxies:
       Host: mefa.ir
     path: /H?ed=2560
 - client-fingerprint: chrome
-  name: 15|US_speednode_0057
-  network: ws
-  port: 80
-  server: 167.82.30.71
-  servername: samane.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: samane.ir
-    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0064
+  name: 15|US_speednode_0068
   network: ws
   port: 80
   server: 167.82.30.71
@@ -124,7 +105,34 @@ proxies:
     headers:
       Host: samane.ir
     path: /4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome
-- name: 15|US_speednode_0067
+- name: 15|US_speednode_0049
+  network: ws
+  port: 80
+  server: 167.82.30.71
+  servername: samane.ir
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: samane.ir
+    path: /4u7lAS4nPLtz0xPz?ed=2560fp=ios
+- client-fingerprint: chrome
+  name: 15|US_speednode_0053
+  network: ws
+  port: 80
+  server: 167.82.30.71
+  servername: samane.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: samane.ir
+    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chrome
+- name: 15|US_speednode_0060
   network: ws
   port: 80
   server: 167.82.30.71
@@ -138,7 +146,7 @@ proxies:
       Host: samane.ir
     path: /4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chromefp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0070
+  name: 15|US_speednode_0064
   network: ws
   port: 443
   server: 199.232.5.101
@@ -152,21 +160,7 @@ proxies:
     headers:
       Host: mefa.ir
     path: /H?ed=2560
-- name: 15|US_speednode_0072
-  network: ws
-  port: 8443
-  server: 199.34.228.182
-  servername: bPb005.paGes.DEV
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
-  ws-opts:
-    headers:
-      Host: bPb005.paGes.DEV
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- name: 15|US_speednode_0073
+- name: 15|US_speednode_0063
   network: ws
   port: 443
   server: 199.34.228.168
@@ -180,7 +174,7 @@ proxies:
     headers:
       Host: bpB005.paGeS.DEv
     path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0080
+- name: 15|US_speednode_0070
   network: ws
   port: 443
   server: 199.34.228.171
@@ -194,19 +188,21 @@ proxies:
     headers:
       Host: bpB005.paGeS.DEv
     path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0076
+- name: 15|US_speednode_0066
   network: ws
   port: 8443
-  server: 199.34.228.161
+  server: 199.34.228.182
   servername: bPb005.paGes.DEV
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
   ws-opts:
     headers:
       Host: bPb005.paGes.DEV
-    path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0077
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- name: 15|US_speednode_0067
   network: ws
   port: 443
   server: 199.34.228.182
@@ -220,47 +216,19 @@ proxies:
     headers:
       Host: bpB005.paGeS.DEv
     path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0078
+- name: 15|US_speednode_0069
   network: ws
-  port: 2096
-  server: 199.34.228.171
-  servername: Bpb005.pageS.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
-  ws-opts:
-    headers:
-      Host: Bpb005.pageS.dev
-    path: /hzhfpw9gkziupyad/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0079
-  network: ws
-  port: 443
-  server: 199.34.228.173
-  servername: bpB005.paGeS.DEv
+  port: 8443
+  server: 199.34.228.161
+  servername: bPb005.paGes.DEV
   tls: true
   type: vless
   uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
   ws-opts:
     headers:
-      Host: bpB005.paGeS.DEv
-    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0081
-  network: ws
-  port: 443
-  server: 199.34.228.167
-  servername: bpB005.paGeS.DEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
-  ws-opts:
-    headers:
-      Host: bpB005.paGeS.DEv
-    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0082
+      Host: bPb005.paGes.DEV
+    path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560
+- name: 15|US_speednode_0071
   network: ws
   port: 8443
   server: 199.34.228.71
@@ -274,7 +242,47 @@ proxies:
     headers:
       Host: bPb005.paGes.DEV
     path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0083
+- name: 15|US_speednode_0072
+  network: ws
+  port: 2096
+  server: 199.34.228.171
+  servername: Bpb005.pageS.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  ws-opts:
+    headers:
+      Host: Bpb005.pageS.dev
+    path: /hzhfpw9gkziupyad/mtuyljy3ljiznc40oq==?ed=2560
+- name: 15|US_speednode_0073
+  network: ws
+  port: 443
+  server: 199.34.228.173
+  servername: bpB005.paGeS.DEv
+  tls: true
+  type: vless
+  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  ws-opts:
+    headers:
+      Host: bpB005.paGeS.DEv
+    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
+- name: 15|US_speednode_0074
+  network: ws
+  port: 443
+  server: 199.34.228.167
+  servername: bpB005.paGeS.DEv
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  ws-opts:
+    headers:
+      Host: bpB005.paGeS.DEv
+    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
+- name: 15|US_speednode_0075
   network: ws
   port: 443
   server: 199.34.228.135
@@ -288,7 +296,7 @@ proxies:
     headers:
       Host: bpB005.paGeS.DEv
     path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0084
+- name: 15|US_speednode_0076
   network: ws
   port: 443
   server: 69.84.182.177
@@ -302,7 +310,21 @@ proxies:
     headers:
       Host: lp.ylka.us.kg
     path: /?ed=2560
-- name: 15|US_speednode_0088
+- name: 15|US_speednode_0077
+  network: ws
+  port: 443
+  server: 199.34.228.181
+  servername: bpB005.paGeS.DEv
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  ws-opts:
+    headers:
+      Host: bpB005.paGeS.DEv
+    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
+- name: 15|US_speednode_0080
   network: ws
   port: 587
   server: 150.136.230.175
@@ -315,7 +337,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|US_speednode_0106
+- name: 15|US_speednode_0093
   network: ws
   port: 443
   server: 199.34.228.162
@@ -330,7 +352,7 @@ proxies:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
 - alterId: -1
-  name: 15|US_speednode_0104
+  name: 15|US_speednode_0094
   network: ws
   password: bpb-trojan
   port: 443
@@ -343,33 +365,7 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL?ed=2560
-- name: 15|US_speednode_0091
-  network: ws
-  port: 443
-  server: 199.34.228.181
-  servername: bpB005.paGeS.DEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
-  ws-opts:
-    headers:
-      Host: bpB005.paGeS.DEv
-    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0092
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.18.37.111
-  skip-cert-verify: true
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL
-- name: 15|US_speednode_0093
+- name: 15|US_speednode_0082
   network: ws
   password: bpb-trojan
   port: 443
@@ -381,7 +377,7 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL
-- name: 15|US_speednode_0094
+- name: 15|US_speednode_0083
   network: ws
   port: 8080
   server: 5.161.222.137
@@ -394,8 +390,32 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
+- name: 15|US_speednode_0084
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.18.37.111
+  skip-cert-verify: true
+  sni: mindrOOm-5cz.pAgEs.dEV
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mindrOOm-5cz.pAgEs.dEV
+    path: /trC8BM8bTsAF0AnLYL
+- name: 15|US_speednode_0085
+  network: ws
+  port: 8443
+  server: 66.235.200.146
+  servername: bPb005.paGes.DEV
+  tls: true
+  type: vless
+  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  ws-opts:
+    headers:
+      Host: bPb005.paGes.DEV
+    path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560
 - alterId: -1
-  name: 15|US_speednode_0099
+  name: 15|US_speednode_0089
   network: ws
   password: bpb-trojan
   port: 443
@@ -408,7 +428,7 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL?ed=2560
-- name: 15|US_speednode_0102
+- name: 15|US_speednode_0096
   network: ws
   port: 587
   server: 172.232.23.86
@@ -421,7 +441,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 15|US_speednode_0098
+- name: 15|US_speednode_0090
   network: ws
   port: 443
   server: 199.34.228.177
@@ -435,7 +455,7 @@ proxies:
     headers:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
-- name: 15|US_speednode_0100
+- name: 15|US_speednode_0091
   network: ws
   port: 443
   server: 199.34.228.71
@@ -449,7 +469,7 @@ proxies:
     headers:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
-- name: 15|US_speednode_0101
+- name: 15|US_speednode_0092
   network: ws
   port: 443
   server: 199.34.228.184
@@ -463,19 +483,7 @@ proxies:
     headers:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
-- name: 15|US_speednode_0103
-  network: ws
-  port: 8443
-  server: 66.235.200.146
-  servername: bPb005.paGes.DEV
-  tls: true
-  type: vless
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
-  ws-opts:
-    headers:
-      Host: bPb005.paGes.DEV
-    path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560
-- name: 15|US_speednode_0105
+- name: 15|US_speednode_0095
   network: ws
   port: 443
   server: 199.34.228.70
@@ -489,7 +497,7 @@ proxies:
     headers:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
-- name: 15|US_speednode_0108
+- name: 15|US_speednode_0098
   network: ws
   port: 443
   server: 107.174.39.112
