@@ -2,36 +2,50 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
-  password: 372c936f-acce-4859-92fe-4286bb9d1e17
+  password: d14e846e-18ae-4d2d-ba54-c21ee5daf376
   port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本2|@ripaojiedian
-  password: 7DJY7GZN9AQ2AURN
-  port: 18001
-  server: 120.241.45.50
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 13,14|日本3|@ripaojiedian
-  network: tcp
-  password: d90e5504-a42b-44c1-8289-3543471bf55a
-  port: 8443
-  server: n3.jp4589871.top
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+  port: 443
+  server: plowman.meijireform.com
   skip-cert-verify: false
-  sni: n3.jp4589871.top
+  sni: plowman.meijireform.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|日本4|@ripaojiedian
+  network: tcp
+  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
+  port: 27001
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.79.157.153
+  server: 52.192.66.69
   tfo: false
   type: ss
+- name: 14|日本3|@ripaojiedian
+  network: tcp
+  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+  port: 443
+  server: plowman.meijireform.com
+  type: trojan
 - name: 15|JP_speednode_0023
   network: ws
   port: 443
