@@ -1,56 +1,43 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: amazonskr05
-  port: 443
-  server: 54.187.244.22
-  type: ss
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-4
+  name: 0|-https://t.me/MrXbin-5
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.51
   type: ss
-- cipher: aes-128-gcm
-  name: 0,13|🇺🇸 美国3|@ripaojiedian
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-6
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.110.1.107
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.121.43.204
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-7
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.110.1.107
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-14
+  name: 0|-https://t.me/MrXbin-8
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 38.121.43.204
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-25
+  name: 0|-https://t.me/MrXbin-9
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 38.110.1.51
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-27
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.121.43.204
+  name: 0|-https://t.me/MrXbin-10
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.110.1.107
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-22
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.110.1.107
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-34
+  name: 0|-https://t.me/MrXbin-27
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -61,7 +48,39 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-44
+  name: 0|-https://t.me/MrXbin-41
+  network: ws
+  port: 2082
+  server: 172.64.198.249
+  servername: ip18.6929198.xyz
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-47
+  network: ws
+  port: 2095
+  server: 172.64.166.22
+  servername: ip20.6016725.xyz
+  type: vmess
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip20.6016725.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-50
   network: ws
   port: 443
   server: speedtest.net
@@ -277,6 +296,13 @@ proxies:
   server: 212.102.47.131
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 13|🇺🇸 美国4|@ripaojiedian
@@ -378,13 +404,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|KR_speednode_0022
-  password: xjN4xcuPGg
-  port: 45101
-  server: a.522226.xyz
-  skip-cert-verify: true
-  type: trojan
-- name: 15|US_speednode_0086
+- name: 15|US_speednode_0055
   network: ws
   password: auto
   port: 27051
@@ -397,19 +417,7 @@ proxies:
     headers:
       Host: trojanfree-76s.pages.dev
     path: /
-- name: 15|US_speednode_0089
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.64.150.145
-  skip-cert-verify: true
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL
-- name: 15|US_speednode_0091
+- name: 15|US_speednode_0057
   network: ws
   password: bpb-trojan
   port: 443
@@ -422,11 +430,11 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL?ed=2560
-- name: 15|US_speednode_0097
+- name: 15|US_speednode_0058
   network: ws
   password: bpb-trojan
   port: 443
-  server: 104.18.37.111
+  server: 172.64.150.145
   skip-cert-verify: true
   sni: mindrOOm-5cz.pAgEs.dEV
   type: trojan
@@ -434,7 +442,7 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL
-- name: 15|US_speednode_0104
+- name: 15|US_speednode_0061
   network: ws
   password: bpb-trojan
   port: 2083
@@ -447,7 +455,7 @@ proxies:
     headers:
       Host: fB0887ca.BPB-WorkEr-pAnel-e3c.paGes.DeV
     path: /trMK2zs2naPJSgJ7Pr?ed=2560
-- name: 15|US_speednode_0106
+- name: 15|US_speednode_0067
   network: ws
   password: bpb-trojan
   port: 443
