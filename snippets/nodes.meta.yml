@@ -1,10 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-1
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 69.50.92.99
-  type: ss
 - cipher: aes-128-gcm
   name: 0,13|🇺🇸 美国|@ripaojiedian
   password: shadowsocks
@@ -12,26 +6,71 @@ proxies:
   server: 212.102.47.131
   tfo: false
   type: ss
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-3
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.51
+- cipher: aes-128-gcm
+  name: 0|-https://t.me/MrXbin-6
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-7
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 211.22.161.134
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-8
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 211.22.161.135
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|-https://t.me/MrXbin-9
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-10
+  password: amazonskr05
+  port: 443
+  server: 54.187.244.22
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-4
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.68.134.202
+  name: 0|-https://t.me/MrXbin-11
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.121.43.204
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-5
+  name: 0|-https://t.me/MrXbin-14
   password: faBAoD54k87UJG7
   port: 2376
   server: 38.75.136.117
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-6
+  name: 0|-https://t.me/MrXbin-18
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 69.50.92.99
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|-https://t.me/MrXbin-21
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-22
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 38.121.43.204
@@ -43,33 +82,26 @@ proxies:
   server: 156.146.38.168
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: 0|-https://t.me/MrXbin-13
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-24
-  password: e4FCWrgpkji3QY
-  port: 9102
+  name: 0|-https://t.me/MrXbin-25
+  password: kDWvXYZoTBcGkC4
+  port: 8881
   server: 69.50.92.99
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-25
+  name: 0|-https://t.me/MrXbin-31
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 69.50.92.99
   type: ss
-- cipher: aes-128-gcm
-  name: 0|-https://t.me/MrXbin-28
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-32
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.51
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-36
+  name: 0|-https://t.me/MrXbin-50
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -80,37 +112,20 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-53
+  name: 0|-https://t.me/MrXbin-57
   network: ws
   port: 443
-  server: 188.114.97.2
-  servername: obdii.cfd
+  server: speedtest.net
+  servername: mehrjavan.ir
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
   ws-opts:
     headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-54
-  network: ws
-  port: 443
-  server: 185.146.173.59
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
+      Host: mehrjavan.ir
+    path: /m28jcoZZUhkqg6pk11
 - alterId: 1
   cipher: auto
   h2-opts: {}
@@ -129,56 +144,6 @@ proxies:
     headers:
       Host: 38.75.137.121
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-60
-  network: ws
-  port: 443
-  server: 188.114.96.3
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-61
-  network: ws
-  port: 443
-  server: 172.67.175.56
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-63
-  network: ws
-  port: 443
-  server: speedtest.net
-  servername: mehrjavan.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
-  ws-opts:
-    headers:
-      Host: mehrjavan.ir
-    path: /m28jcoZZUhkqg6pk11
 - alterId: 0
   cipher: auto
   name: '3,4,5|d*********g.com_0 #2'
