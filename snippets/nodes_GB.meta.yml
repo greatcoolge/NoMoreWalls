@@ -1,9 +1,11 @@
 proxies:
-- name: 15|GB_speednode_0018
+- client-fingerprint: chrome
+  name: 15|GB_speednode_0015
   network: ws
   port: 8080
   server: 13.41.222.150
   servername: vless.ifx.us.kg
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -11,4 +13,19 @@ proxies:
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 15|GB_speednode_0016
+  network: ws
+  port: 443
+  server: 217.163.76.65
+  servername: lo.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: lo.ylks.us.kg
     path: /?ed=2560
