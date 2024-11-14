@@ -1,21 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-1
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-2
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.192
+  server: 45.87.175.188
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-3
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.192
+  server: 45.87.175.188
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-4
@@ -24,63 +19,48 @@ proxies:
   server: 45.87.175.178
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-5
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.157.40.113
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-6
-  password: amazonskr05
-  port: 443
-  server: 54.187.244.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-7
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-10
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.192
   type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-6
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.75.136.117
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-18
+  name: 0|-https://t.me/MrXbin-7
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.178
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-23
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: 0|-https://t.me/MrXbin-11
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-28
+  name: 0|-https://t.me/MrXbin-13
   password: qwerREWQ@@
   port: 54345
   server: 221.139.79.57
   type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-30
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 169.197.141.84
-  type: ss
-- cipher: aes-128-gcm
-  name: 0,13|🇺🇸 美国3|@ripaojiedian
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-14
+  password: 5cp9Z3iWnJZ2
   port: 443
-  server: 156.146.38.168
-  tfo: false
+  server: 205.134.180.150
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-22
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.192
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-33
@@ -90,24 +70,30 @@ proxies:
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-46
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13206
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: xrbsy1.cdn.node.a.tddns-ounk.com
-  type: ssr
-- alterId: 1
+- alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
   name: 0|-https://t.me/MrXbin-49
   network: ws
   port: 443
-  server: 38.75.137.121
-  servername: 38.75.137.121
+  server: 188.114.96.3
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 1
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-50
+  network: ws
+  port: 443
+  server: 23.158.56.39
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -115,29 +101,27 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 38.75.137.121
+      Host: 23.158.56.39
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-51
+  network: ws
+  port: 443
+  server: 149.7.16.194
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
     path: /linkvws
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
   name: 0|-https://t.me/MrXbin-52
-  network: ws
-  port: 2082
-  server: 172.64.167.15
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip16.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-53
   network: ws
   port: 443
   server: speedtest.net
@@ -155,60 +139,10 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-55
+  name: 0|-https://t.me/MrXbin-57
   network: ws
   port: 443
-  server: 188.114.96.3
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-58
-  network: ws
-  port: 443
-  server: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-61
-  network: ws
-  port: 443
-  server: 188.114.97.2
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-62
-  network: ws
-  port: 443
-  server: 185.146.173.59
+  server: 172.67.71.160
   servername: obdii.cfd
   skip-cert-verify: true
   tls: true
@@ -222,7 +156,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-63
+  name: 0|-https://t.me/MrXbin-60
   network: ws
   port: 443
   server: 172.67.175.56
@@ -238,33 +172,69 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-64
+  name: 0|-https://t.me/MrXbin-61
   network: ws
-  port: 2082
-  server: 172.64.198.249
-  servername: ip18.6929198.xyz
+  port: 443
+  server: 45.149.12.84
+  tls: true
   type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
+      Host: obdii.cfd
+    path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-66
+  name: 0|-https://t.me/MrXbin-63
   network: ws
-  port: 2095
-  server: 172.64.166.20
+  port: 443
+  server: obdii.cfd
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      Host: ip11.6016725.xyz
-    path: /github.com/Alvin9999
-- name: 0|-https://t.me/MrXbin-67
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-64
+  network: ws
+  port: 443
+  server: 185.146.173.59
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 1
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-65
+  network: ws
+  port: 443
+  server: 38.75.137.121
+  servername: 38.75.137.121
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 38.75.137.121
+    path: /linkvws
+- name: 0|-https://t.me/MrXbin-68
   password: wkmY1R4EcP
   port: 443
   server: 216.128.147.13
@@ -504,6 +474,13 @@ proxies:
   server: 38.114.114.143
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 13|🇺🇸 美国4|@ripaojiedian
@@ -611,95 +588,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|CN_speednode_0007
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 20301
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z301.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0009
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 59021
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x100.flybar.work
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0010
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 22741
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0013
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 41767
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x114.flybar.work
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0014
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 21970
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x41.flybar.work
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0015
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 20076
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x76.flybar.work
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0016
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0017
-  password: 6b679df8-c45c-394f-a4a3-db2721aae730
-  port: 20304
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z304.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0035
-  password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3
-  port: 443
-  server: 54.238.135.78
-  skip-cert-verify: true
-  sni: edge.steam-dns.top.comcast.net
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0036
-  password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3
-  port: 443
-  server: 35.75.8.137
-  skip-cert-verify: true
-  sni: fastly.cdn.steampipe.steamcontent.com
-  type: trojan
-  udp: true
-- name: 15|US_speednode_0081
-  password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3
-  port: 443
-  server: 54.187.91.40
-  skip-cert-verify: true
-  sni: fastly.cdn.steampipe.steamcontent.com
-  type: trojan
-  udp: true
-- name: 15|US_speednode_0095
+- name: 15|US_speednode_0060
   network: ws
   password: bpb-trojan
   port: 443
@@ -711,45 +600,6 @@ proxies:
     headers:
       Host: mindrOOm-5cz.pAgEs.dEV
     path: /trC8BM8bTsAF0AnLYL
-- name: 15|US_speednode_0105
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.64.150.145
-  skip-cert-verify: true
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL?ed=2560
-- name: 15|US_speednode_0131
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.18.37.111
-  skip-cert-verify: true
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL?ed=2560
-- name: 15|VN_speednode_0176
-  password: 94d219c9-1afc-4d42-b090-8b3794764380
-  port: 443
-  server: 160.30.21.105
-  skip-cert-verify: true
-  sni: std1.loadingip.com
-  type: trojan
-- name: 15|VN_speednode_0177
-  password: 94d219c9-1afc-4d42-b090-8b3794764380
-  port: 443
-  server: std1.loadingip.com
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '16|d*********g.com_2 #3'
