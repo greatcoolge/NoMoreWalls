@@ -12,85 +12,66 @@ proxies:
   port: 8080
   server: 45.87.175.188
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-4
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-5
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.192
+  password: Y6R9pAtvxxzmGC
+  port: 9090
+  server: 169.197.141.84
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-6
+  name: 0|-https://t.me/MrXbin-5
   password: faBAoD54k87UJG7
   port: 2376
   server: 38.75.136.117
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-7
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-11
+  name: 0|-https://t.me/MrXbin-10
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
   type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-13
-  password: qwerREWQ@@
-  port: 54345
-  server: 221.139.79.57
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-14
-  password: 5cp9Z3iWnJZ2
-  port: 443
-  server: 205.134.180.150
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-22
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.192
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-11
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.136.117
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-33
+  name: 0|-https://t.me/MrXbin-27
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-34
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13545
+  protocol: auth_aes128_md5
+  protocol-param: 524959:5u4MZ6
+  server: tata12.cdn.node.a.tddns-ounk.com
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-49
+  name: 0|-https://t.me/MrXbin-42
   network: ws
-  port: 443
-  server: 188.114.96.3
-  tls: true
+  port: 2095
+  server: 172.64.166.20
   type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: obdii.cfd
-    path: /linkws
+      Host: ip11.6016725.xyz
+    path: /github.com/Alvin9999
 - alterId: 1
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-50
+  name: 0|-https://t.me/MrXbin-43
   network: ws
   port: 443
   server: 23.158.56.39
@@ -103,138 +84,23 @@ proxies:
     headers:
       Host: 23.158.56.39
     path: /linkvws
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-51
-  network: ws
-  port: 443
-  server: 149.7.16.194
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-52
+  name: 0|-https://t.me/MrXbin-44
   network: ws
-  port: 443
-  server: speedtest.net
-  servername: mehrjavan.ir
+  port: 2082
+  server: 172.64.167.15
   skip-cert-verify: true
-  tls: true
   type: vmess
   udp: true
-  uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: mehrjavan.ir
-    path: /m28jcoZZUhkqg6pk11
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-57
-  network: ws
-  port: 443
-  server: 172.67.71.160
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-60
-  network: ws
-  port: 443
-  server: 172.67.175.56
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-61
-  network: ws
-  port: 443
-  server: 45.149.12.84
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-63
-  network: ws
-  port: 443
-  server: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-64
-  network: ws
-  port: 443
-  server: 185.146.173.59
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-65
-  network: ws
-  port: 443
-  server: 38.75.137.121
-  servername: 38.75.137.121
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 38.75.137.121
-    path: /linkvws
-- name: 0|-https://t.me/MrXbin-68
+      Host: ip16.6929198.xyz
+    path: /github.com/Alvin9999
+- name: 0|-https://t.me/MrXbin-53
   password: wkmY1R4EcP
   port: 443
   server: 216.128.147.13
@@ -314,7 +180,143 @@ proxies:
     path: github.com/Alvin9999
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
-- name: 8|🇷@ConfigV2RayNG
+- name: 8|🇫🇷ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 129.151.254.139
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 130.162.250.164
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|ConfigV2RayNG #1'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 138.2.28.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇪ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 139.185.36.59
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|ConfigV2RayNG #2'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 140.245.47.111
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇸🇬ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 140.245.57.42
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|ConfigV2RayNG #3'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 140.84.168.166
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|ConfigV2RayNG #4'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 141.148.208.213
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇳ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 144.24.153.219
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇦ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 159.13.34.59
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇸ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 192.9.130.218
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇺ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 192.9.164.54
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|🇸ConfigV2RayNG #1'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 207.211.166.131
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇺🇸ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 207.211.175.16
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇵ConfigV2RayNG
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 217.142.225.38
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|🇦ConfigV2RayNG #1'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 40.233.91.166
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '8|ConfigV2RayNG #5'
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 64.181.236.144
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇷+ConfigV2RayNG+⚡
   password: 782efefcaac2a7f26e2be42f7bc5d75a
   port: 443
   server: quran.mci.ai
