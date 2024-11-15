@@ -7,8 +7,36 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: 15|FR_speednode_0014
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.36.216.142
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 15|FR_speednode_0015
+  network: tcp
+  port: 8080
+  server: 95.182.98.207
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 55d021c0-53fa-488a-b223-d4a49aa8f2f2
+- name: 15|FR_speednode_0016
+  network: ws
+  port: 22222
+  server: 13.37.253.85
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - client-fingerprint: chrome
-  name: 15|FR_speednode_0012
+  name: 15|FR_speednode_0017
   network: ws
   port: 2501
   server: 77.221.152.41
