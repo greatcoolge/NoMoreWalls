@@ -1,44 +1,32 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-1
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-2
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-3
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 142.202.48.105
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-4
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: beesyar.org
+  server: 45.87.175.157
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-5
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
-  server: 45.87.175.188
+  server: 45.87.175.178
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-7
+  name: 0|-https://t.me/MrXbin-6
   password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-8
-  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.178
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-16
+  name: 0|-https://t.me/MrXbin-15
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -46,18 +34,48 @@ proxies:
   server: us-am3.eqnode.net
   type: ssr
 - cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-19
+  name: 0|-https://t.me/MrXbin-18
   obfs: plain
   password: shadowsocks
   port: 443
   protocol: origin
   server: 109.201.152.181
   type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-23
+  network: ws
+  port: 2095
+  server: 172.64.166.20
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip11.6016725.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-25
+  network: ws
+  port: 443
+  server: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
 - alterId: 1
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-24
+  name: 0|-https://t.me/MrXbin-27
   network: ws
   port: 443
   server: 172.105.172.209
