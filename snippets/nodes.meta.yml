@@ -6,80 +6,60 @@ proxies:
   server: 45.87.175.178
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-3
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-4
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-5
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-6
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-8
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-9
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-10
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-15
-  obfs: tls1.2_ticket_auth
-  password: fou8MBGij
-  port: 8081
-  protocol: origin
-  server: us-am3.eqnode.net
-  type: ssr
 - cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-19
+  name: 0|-https://t.me/MrXbin-12
   obfs: plain
   password: shadowsocks
   port: 443
   protocol: origin
   server: 109.201.152.181
   type: ssr
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-18
+  obfs: tls1.2_ticket_auth
+  password: fou8MBGij
+  port: 8081
+  protocol: origin
+  server: us-am3.eqnode.net
+  type: ssr
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-19
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13302
+  protocol: auth_aes128_md5
+  protocol-param: 524959:5u4MZ6
+  server: mjk6.cdn.node.a.tddns-ounk.com
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-28
+  name: 0|-https://t.me/MrXbin-21
   network: ws
   port: 2095
-  server: 172.64.166.22
-  servername: ip20.6016725.xyz
+  server: 172.64.166.20
   type: vmess
-  udp: true
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip20.6016725.xyz
+      Host: ip11.6016725.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-24
+  network: ws
+  port: 2082
+  server: 172.64.198.249
+  servername: ip18.6929198.xyz
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -153,116 +133,42 @@ proxies:
     path: github.com/Alvin9999
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
-- name: 8|🇯🇵@ConfigV2RayNG
-  password: 59df7208-e1f6-4e0c-ab8c-fc8d4d2608e0
-  port: 8080
-  server: 23.26.34.209
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 8|@ConfigV2RayNG
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: ae1.wish.ml
-  skip-cert-verify: true
-  sni: du.wish.ml
-  tls: false
-  type: hysteria2
-- name: 8|🇦🇪ConfigV2RayNG
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: ae2.wish.ml
-  skip-cert-verify: true
-  sni: du.wish.ml
-  tls: false
-  type: hysteria2
-- name: 8|🇧🇷ConfigV2RayNG
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: br2.wish.ml
-  skip-cert-verify: true
-  sni: br2.wish.ml
-  tls: false
-  type: hysteria2
-- name: '8|🇧🇷ConfigV2RayNG #1'
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: br3.wish.ml
-  skip-cert-verify: true
-  sni: br3.wish.ml
-  tls: false
-  type: hysteria2
-- name: 8|🇦ConfigV2RayNG
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: ca11.wish.ml
-  skip-cert-verify: true
-  sni: du.wish.ml
-  tls: false
-  type: hysteria2
-- name: '8|🇦ConfigV2RayNG #1'
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: ca12.wish.ml
-  skip-cert-verify: true
-  sni: du.wish.ml
-  tls: false
-  type: hysteria2
-- name: '8|@ConfigV2RayNG #1'
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: in4.wish.ml
-  skip-cert-verify: true
-  sni: in4.wish.ml
-  tls: false
-  type: hysteria2
-- name: 8|🇮🇳ConfigV2RayNG
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: in5.wish.ml
-  skip-cert-verify: true
-  sni: in5.wish.ml
-  tls: false
-  type: hysteria2
 - name: 8|ConfigV2RayNG
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: us11.wish.ml
+  obfs: salamander
+  obfs-password: 0pjlRGR3tjhXtMs
+  password: 7bcb0e26-eb0a-4658-abfc-b808c3744c9d
+  port: 53040
+  server: 94.131.122.35
   skip-cert-verify: true
-  sni: us11.wish.ml
+  sni: myket.ir
   tls: false
   type: hysteria2
-- name: 8|🇺🇸ConfigV2RayNG
+- name: '8|ConfigV2RayNG #1'
   password: 7d417084-d308-4b35-96c8-99dfb2547ec2
   port: 30102
-  server: us12.wish.ml
+  server: 46.17.40.42
   skip-cert-verify: true
-  sni: us12.wish.ml
+  sni: du.wish.ml
   tls: false
   type: hysteria2
-- name: '8|🇺🇸ConfigV2RayNG #1'
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: us13.wish.ml
+- name: '8|ConfigV2RayNG #2'
+  obfs: salamander
+  obfs-password: 0pjlRGR3tjhXtMs
+  password: a04705ec-afe0-47d7-99f9-856caaed6a96
+  port: 53038
+  server: 45.8.147.250
   skip-cert-verify: true
-  sni: us13.wish.ml
+  sni: mobile.ir
   tls: false
   type: hysteria2
-- name: '8|🇺🇸ConfigV2RayNG #2'
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: us6.wish.ml
+- name: 8|🇸ConfigV2RayNG
+  obfs: salamander
+  obfs-password: 0pjlRGR3tjhXtMs
+  password: a04705ec-afe0-47d7-99f9-856caaed6a96
+  port: 53041
+  server: 80.92.205.219
   skip-cert-verify: true
-  sni: us6.wish.ml
-  tls: false
-  type: hysteria2
-- name: '8|🇺🇸ConfigV2RayNG #3'
-  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  port: 30102
-  server: us9.wish.ml
-  skip-cert-verify: true
-  sni: us9.wish.ml
+  sni: jobvision.ir
   tls: false
   type: hysteria2
 - name: 8|IR-@V2ray_Raha-1
@@ -319,6 +225,16 @@ proxies:
   server: 64.181.236.144
   skip-cert-verify: true
   sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|🇪ConfigV2RayNG
+  obfs: salamander
+  obfs-password: 0pjlRGR3tjhXtMs
+  password: f8b7a2af-7fae-4853-a91f-b430257648f0
+  port: 53039
+  server: 85.209.154.74
+  skip-cert-verify: true
+  sni: alibaba.ir
   tls: false
   type: hysteria2
 - name: 12|akile
