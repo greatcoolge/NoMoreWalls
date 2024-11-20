@@ -26,32 +26,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 13,14|香港4|@ripaojiedian
-  network: tcp
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13008
-  server: naiu-hk.05vr9nyqg5.download
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港4|@ripaojiedian
+  port: 39949
+  server: 185.207.155.123
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 0899b23d-fbd2-42b8-8e48-b057cf45e24e
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 194.41.59.80
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港6|@ripaojiedian
   port: 58002
   server: 120.232.153.27
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港7|@ripaojiedian
-  port: 30565
-  server: 183.240.253.26
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -67,6 +66,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|香港4|@ripaojiedian
+  network: tcp
+  port: '39949'
+  server: 185.207.155.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0899b23d-fbd2-42b8-8e48-b057cf45e24e
 - alterId: 64
   cipher: auto
   name: 14|香港6|@ripaojiedian
@@ -77,13 +86,81 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 14|香港7|@ripaojiedian
-  network: tcp
-  port: '30565'
-  server: 183.240.253.26
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|HK_speednode_0030
+  network: ws
+  port: 587
+  server: 8.217.29.82
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|HK_speednode_0031
+  network: ws
+  port: 587
+  server: 8.218.153.62
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|HK_speednode_0032
+  network: ws
+  port: 587
+  server: 8.218.132.79
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|HK_speednode_0033
+  network: ws
+  port: 587
+  server: 8.218.152.147
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|HK_speednode_0034
+  network: ws
+  port: 587
+  server: 107.150.119.240
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|HK_speednode_0035
+  network: ws
+  port: 54321
+  server: 59.149.204.218
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
