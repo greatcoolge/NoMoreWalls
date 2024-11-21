@@ -7,20 +7,28 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 13,14|日本2|@ripaojiedian
-  network: tcp
-  password: 0ff8c310-3191-4071-925e-1f7be8f1f94f
-  port: 443
-  server: n2.jp4589871.top
+  network: ws
+  port: '25758'
+  server: twriyfjhhhh1.hfhfb.homes
+  servername: ''
   skip-cert-verify: false
-  sni: n2.jp4589871.top
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
+  ws-opts:
+    headers:
+      Host: app.dingtalk.com
+    path: /?ed
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.36.115.124
+  server: 3.35.137.32
   tfo: false
   type: ss
