@@ -1,9 +1,10 @@
 proxies:
-- name: 15|SE_speednode_0067
+- name: 15|SE_speednode_0061
   network: ws
   port: 2501
   server: 95.164.51.24
   servername: a.mifeng.us.kg
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -12,3 +13,16 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
+- name: 15|SE_speednode_0062
+  network: ws
+  port: 8080
+  server: 185.146.173.58
+  servername: lc80.lebasnoo.ir.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 26757718-95ee-406d-8c9a-bb5c4cfdd9ac
+  ws-opts:
+    headers:
+      Host: lc80.lebasnoo.ir.
+    path: /servernett

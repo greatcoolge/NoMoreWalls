@@ -19,6 +19,17 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  port: 38692
+  server: 38.147.165.185
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: decde5b9-cc9c-4622-9ee6-723378429f4e
 - alterId: 64
   cipher: auto
   name: 14|美国|@ripaojiedian
@@ -29,3 +40,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|美国3|@ripaojiedian
+  network: tcp
+  port: '38692'
+  server: 38.147.165.185
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: decde5b9-cc9c-4622-9ee6-723378429f4e
+- name: 15|US_speednode_0102
+  network: ws
+  password: dns68
+  port: 443
+  server: 104.21.92.73
+  skip-cert-verify: true
+  sni: trojan.putata.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.putata.us.kg
+    path: /
