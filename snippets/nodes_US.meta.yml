@@ -20,7 +20,7 @@ proxies:
   tls: false
   type: vmess
   uuid: decde5b9-cc9c-4622-9ee6-723378429f4e
-- name: 15|US_speednode_0031
+- name: 15|US_speednode_0023
   network: ws
   port: 80
   server: 151.101.194.165
@@ -50,20 +50,23 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 15|US_speednode_0046
-  network: ws
-  port: 80
-  server: NUFiLTER.fastly80-2.hosting-ip.com
-  servername: api.nhl5.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 8442cec0-51b9-4b7a-9d72-ae8a1621314a
-  ws-opts:
-    headers:
-      Host: api.nhl5.ir
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2048
-- name: 15|US_speednode_0055
+- name: 15|US_speednode_0047
+  password: 637308bc-fd52-343d-b573-7693835b8e20
+  port: 5535
+  server: 103.136.185.27
+  skip-cert-verify: true
+  sni: steampipe.akamaized.net
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0049
+  password: 637308bc-fd52-343d-b573-7693835b8e20
+  port: 3516
+  server: 103.136.185.28
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0051
   network: ws
   port: 443
   server: 172.66.45.10
@@ -76,20 +79,20 @@ proxies:
     headers:
       Host: newtunnel-2xm.pages.dev
     path: /vless
-- name: 15|US_speednode_0076
+- name: 15|US_speednode_0058
   network: ws
-  port: 2087
-  server: 45.159.217.54
-  servername: fq521.6789.cloudns.be
+  port: 80
+  server: NUFiLTER.fastly80-2.hosting-ip.com
+  servername: api.nhl5.ir
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  uuid: 8442cec0-51b9-4b7a-9d72-ae8a1621314a
   ws-opts:
     headers:
-      Host: fq521.6789.cloudns.be
-    path: /Twitter苏小柠
-- name: 15|US_speednode_0084
+      Host: api.nhl5.ir
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2048
+- name: 15|US_speednode_0063
   network: ws
   port: 2053
   server: 162.159.141.36
@@ -102,72 +105,7 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0085
-  network: ws
-  port: 8080
-  server: 104.17.234.128
-  servername: join.bede.unlimiteddev.www.speedtest.net.de.abrha.co.unlimiteddev.community.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 825e491b-ea38-4f77-c7c7-2b678ef03785
-  ws-opts:
-    headers:
-      Host: join.bede.unlimiteddev.www.speedtest.net.de.abrha.co.unlimiteddev.community.
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=8880
-- name: 15|US_speednode_0086
-  network: ws
-  port: 8443
-  server: 209.46.30.217
-  servername: fq521.6789.cloudns.be
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
-  ws-opts:
-    headers:
-      Host: fq521.6789.cloudns.be
-    path: /Twitter苏小柠
-- name: 15|US_speednode_0087
-  network: ws
-  port: 8080
-  server: 172.67.155.241
-  servername: shahed2.novintecc.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 85f1516e-688b-40db-997a-05c7c25e0e93
-  ws-opts:
-    headers:
-      Host: shahed2.novintecc.org
-    path: /
-- name: 15|US_speednode_0088
-  network: ws
-  port: 443
-  server: 104.19.197.130
-  servername: lv.ylks01.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
-  ws-opts:
-    headers:
-      Host: lv.ylks01.eu.org
-    path: /?ed=2560
-- name: 15|US_speednode_0089
-  network: ws
-  port: 443
-  server: 173.245.59.62
-  servername: lv.ylks01.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
-  ws-opts:
-    headers:
-      Host: lv.ylks01.eu.org
-    path: /?ed=2560
-- name: 15|US_speednode_0090
+- name: 15|US_speednode_0071
   network: ws
   port: 443
   server: 162.159.25.108
@@ -180,7 +118,41 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0094
+- name: 15|US_speednode_0072
+  network: ws
+  port: 443
+  server: 104.19.197.130
+  servername: lv.ylks01.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
+  ws-opts:
+    headers:
+      Host: lv.ylks01.eu.org
+    path: /?ed=2560
+- name: 15|US_speednode_0073
+  network: ws
+  port: 443
+  server: 173.245.59.62
+  servername: lv.ylks01.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
+  ws-opts:
+    headers:
+      Host: lv.ylks01.eu.org
+    path: /?ed=2560
+- name: 15|US_speednode_0076
+  password: 637308bc-fd52-343d-b573-7693835b8e20
+  port: 443
+  server: 35.88.22.65
+  skip-cert-verify: true
+  sni: origin-a.akamaihd.net
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0077
   network: ws
   port: 443
   server: 108.162.196.197
@@ -193,7 +165,7 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0096
+- name: 15|US_speednode_0078
   network: ws
   port: 443
   server: 173.245.59.220
@@ -206,7 +178,20 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0098
+- name: 15|US_speednode_0081
+  network: ws
+  port: 8080
+  server: 172.67.155.241
+  servername: shahed2.novintecc.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 85f1516e-688b-40db-997a-05c7c25e0e93
+  ws-opts:
+    headers:
+      Host: shahed2.novintecc.org
+    path: /
+- name: 15|US_speednode_0082
   network: ws
   port: 443
   server: 172.67.36.235
@@ -219,7 +204,20 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0104
+- name: 15|US_speednode_0084
+  network: ws
+  port: 2087
+  server: 45.159.217.54
+  servername: fq521.6789.cloudns.be
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  ws-opts:
+    headers:
+      Host: fq521.6789.cloudns.be
+    path: /Twitter苏小柠
+- name: 15|US_speednode_0085
   network: ws
   port: 443
   server: 141.101.114.126
@@ -232,20 +230,7 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0106
-  network: ws
-  port: 443
-  server: 188.114.97.174
-  servername: lv.ylks01.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
-  ws-opts:
-    headers:
-      Host: lv.ylks01.eu.org
-    path: /?ed=2560
-- name: 15|US_speednode_0108
+- name: 15|US_speednode_0086
   network: ws
   port: 2053
   server: 104.22.60.240
@@ -258,21 +243,47 @@ proxies:
     headers:
       Host: lv.ylks01.eu.org
     path: /?ed=2560
-- name: 15|US_speednode_0112
+- name: 15|US_speednode_0087
   network: ws
-  port: 8880
-  server: www.speedtest.net
-  servername: ch.我的名字伊斯梅洛.site.
+  port: 8080
+  server: 104.17.234.128
+  servername: join.bede.unlimiteddev.www.speedtest.net.de.abrha.co.unlimiteddev.community.
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 25414e23-82a0-4441-e8f3-1792a4a0817b
+  uuid: 825e491b-ea38-4f77-c7c7-2b678ef03785
   ws-opts:
     headers:
-      Host: ch.我的名字伊斯梅洛.site.
-    path: /melo/
+      Host: join.bede.unlimiteddev.www.speedtest.net.de.abrha.co.unlimiteddev.community.
+    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=8880
+- name: 15|US_speednode_0089
+  network: ws
+  port: 8443
+  server: 209.46.30.217
+  servername: fq521.6789.cloudns.be
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  ws-opts:
+    headers:
+      Host: fq521.6789.cloudns.be
+    path: /Twitter苏小柠
+- name: 15|US_speednode_0090
+  network: ws
+  port: 443
+  server: 188.114.97.174
+  servername: lv.ylks01.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
+  ws-opts:
+    headers:
+      Host: lv.ylks01.eu.org
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 15|US_speednode_0127
+  name: 15|US_speednode_0118
   network: ws
   port: 80
   server: 104.22.52.235
