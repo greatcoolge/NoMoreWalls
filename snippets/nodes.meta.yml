@@ -1,62 +1,52 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-1
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.178
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-2
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 142.202.48.105
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-3
-  password: 4a2rfixophdjffa8KVA4Aa
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.178
+  server: 45.87.175.157
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-4
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-5
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-6
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-7
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-8
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: beesyar.org
+  server: 45.87.175.157
   type: ss
 - cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-9
+  name: 0|-https://t.me/MrXbin-5
   password: zDNVedRFPQexG9v
   port: 6379
   server: 38.110.1.46
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-6
+  password: 2fwufOmJ9ELfN4umzcHBfV
+  port: 12224
+  server: 194.87.82.28
+  type: ss
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-11
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13229
+  protocol: auth_aes128_md5
+  protocol-param: 524959:5u4MZ6
+  server: xrbsy1.cdn.node.a.tddns-ounk.com
+  type: ssr
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-18
+  name: 0|-https://t.me/MrXbin-17
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -334,6 +324,13 @@ proxies:
   port: 10429
   server: gpt.nai3.cc
   sni: gpt.nai3.cc
+  tls: false
+  type: hysteria2
+- name: 12|CHANEL@v2rayngzendegimamad_Aq
+  password: 3a10983a-d8b3-4b16-b3d5-fe3ed7ec724c
+  port: 80
+  server: ru.mochizuki.top
+  sni: ru.mochizuki.top
   tls: false
   type: hysteria2
 - name: 12|@ToYoTA_PRoXY
