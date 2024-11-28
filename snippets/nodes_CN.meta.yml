@@ -1,1 +1,37 @@
-proxies: []
+proxies:
+- name: 15|CN_speednode_0002
+  password: 55e6d4ab-e382-33ef-96d4-7a475bde8732
+  port: 20309
+  server: gyl.58n.net
+  skip-cert-verify: true
+  sni: z309.hongkongnode.top
+  type: trojan
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: bOaxFgn83JABlLyQgf
+  name: '15,16|d*********g.com_3 #1'
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: false
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- name: 15|CN_speednode_0006
+  password: QwwHvrnN
+  port: 44673
+  server: 36.151.192.203
+  skip-cert-verify: true
+  sni: 36.151.192.203
+  type: trojan
+  udp: true
