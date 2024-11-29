@@ -9,33 +9,38 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  password: 6ed66cb3-734d-4cc9-918f-88b3f9e28249
-  port: 11002
+  name: 13|🇯🇵 日本2|@ripaojiedian
+  password: 8d0f3729-0c01-4a94-9b57-6ec8e352ddb6
+  port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  port: 47118
+  server: 45.159.51.28
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.250.148.116
+  server: 52.196.65.55
   tfo: false
   type: ss
-- name: 15|JP_speednode_0011
-  password: 6b7ec37b-96e7-37a1-9c9f-80399b8e7256
-  port: 443
-  server: 43.206.140.241
-  skip-cert-verify: true
-  sni: akamai.cdn.steampipe.steamcontent.com
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0013
-  password: 6b7ec37b-96e7-37a1-9c9f-80399b8e7256
-  port: 443
-  server: 18.179.44.127
-  skip-cert-verify: true
-  sni: steampipe.akamaized.net
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 14|日本3|@ripaojiedian
+  network: tcp
+  port: '47118'
+  server: 45.159.51.28
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
