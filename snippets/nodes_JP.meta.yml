@@ -44,3 +44,33 @@ proxies:
   tls: false
   type: vmess
   uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
+- name: 15|JP_speednode_0025
+  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+  port: 443
+  server: 43.206.140.241
+  skip-cert-verify: true
+  sni: origin-a.akamaihd.net
+  type: trojan
+  udp: true
+- name: 15|JP_speednode_0026
+  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+  port: 443
+  server: 18.179.44.127
+  skip-cert-verify: true
+  sni: steamcdn-a.akamaihd.net
+  type: trojan
+  udp: true
+- name: 15|JP_speednode_0027
+  network: ws
+  port: 587
+  server: 64.110.103.142
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
