@@ -2,13 +2,16 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: bOaxFgn83JABlLyQgf
   name: '15,16|d*********g.com_3 #1'
   network: tcp
   password: fuck
   port: 443
   server: 42.236.73.72
   servername: www.zitian.cn
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.zitian.cn
   tls: true
   type: trojan
