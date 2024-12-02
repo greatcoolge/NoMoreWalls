@@ -1,6 +1,36 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-2
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-4
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-5
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-6
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-7
+  password: dongtaiwang.com
+  port: 32233
+  server: 185.22.152.125
+  type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-13
+  name: 0|-https://t.me/MrXbin-16
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -11,17 +41,30 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-21
+  name: 0|-https://t.me/MrXbin-49
   network: ws
-  port: 2095
-  server: 172.64.99.22
-  skip-cert-verify: true
+  port: 443
+  server: irvideo.cfd
+  tls: true
   type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      Host: ip12.6016725.xyz
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-56
+  network: ws
+  port: 2082
+  server: 190.93.245.103
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -178,7 +221,7 @@ proxies:
   server: soontw.soon.guru
   tfo: false
   type: ss
-- name: 13,14|日本|@ripaojiedian
+- name: 13,14,15|CN_speednode_0003
   network: tcp
   password: QwwHvrnN
   port: 27381
@@ -192,7 +235,7 @@ proxies:
   server: 61.172.235.22
   tfo: false
   type: ss
-- name: 13,14|韩国|@ripaojiedian
+- name: 13,14,15|CN_speednode_0006
   network: tcp
   password: 1f962f36-f751-40c3-91b3-cb6d2360b450
   port: 39593

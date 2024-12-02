@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 13,14|日本|@ripaojiedian
+  name: 13,14,15|CN_speednode_0003
   network: tcp
   password: QwwHvrnN
   port: 27381
@@ -23,7 +23,7 @@ proxies:
   server: 47.129.236.42
   tfo: false
   type: ss
-- name: 15|JP_speednode_0011
+- name: 15|JP_speednode_0018
   network: ws
   port: 587
   server: 45.14.64.185
@@ -36,23 +36,16 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: bOaxFgn83JABlLyQgf
-  name: '15,16|d*********g.com_3 #1'
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
+- name: 15|JP_speednode_0019
+  network: ws
+  port: 587
+  server: 150.230.202.26
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
-  sni: www.zitian.cn
   tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: www.zitian.cn
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
