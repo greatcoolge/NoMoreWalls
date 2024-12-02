@@ -1,31 +1,27 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-13
+  obfs: tls1.2_ticket_auth
+  password: fou8MBGij
+  port: 8081
+  protocol: origin
+  server: us-am3.eqnode.net
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-42
+  name: 0|-https://t.me/MrXbin-21
   network: ws
-  port: 2082
-  server: 190.93.245.174
+  port: 2095
+  server: 172.64.99.22
+  skip-cert-verify: true
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-48
-  network: ws
-  port: 2082
-  server: 190.93.245.103
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
+      Host: ip12.6016725.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -578,69 +574,120 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|AU_speednode_0002
+- name: 15|AU_speednode_0001
   network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 192.65.217.110
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|BR_speednode_0003
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.159.247.167
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|CA_speednode_0004
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: pvg.aghabeiki.homes
+  port: 1001
+  server: 82.115.20.250
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|CH_speednode_0005
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|BG_speednode_0002
   network: ws
-  port: 443
-  server: 140.238.214.247
-  servername: pvg.aghabeiki.homes
+  port: 11001
+  server: 77.77.14.46
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|CH_speednode_0006
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|DE_speednode_0005
   network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: pvg.aghabeiki.homes
+  port: 587
+  server: 45.159.51.42
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|DE_speednode_0006
+  network: ws
+  port: 587
+  server: 45.159.51.42
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /
+- name: 15|DE_speednode_0007
+  network: ws
+  port: 443
+  server: 45.63.117.50
+  servername: cpanel3.sassanidempire.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: fcf99985-147b-4c71-c3f2-f448e5a379f1
+  ws-opts:
+    headers:
+      Host: cpanel3.sassanidempire.com
+    path: /ws
+- name: 15|ES_speednode_0008
+  network: ws
+  port: 8080
+  server: 94.250.246.200
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|FR_speednode_0009
+  network: ws
+  port: 22952
+  server: 94.23.121.119
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: a93dcd5e-b048-4736-b6c7-21d9dc2bb8a4
+  ws-opts:
+    path: /
+- name: 15|IR_speednode_0010
+  network: ws
+  port: 2222
+  server: 94.182.136.181
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|JP_speednode_0011
+  network: ws
+  port: 587
+  server: 45.14.64.185
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
 - alpn:
   - http/1.1
   grpc-opts:
@@ -660,486 +707,36 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 15|CY_speednode_0012
+- name: 15|KR_speednode_0014
   network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 213.109.205.159
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|DE_speednode_0013
-  network: ws
-  port: 443
-  server: 130.162.53.148
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0014
-  network: ws
-  port: 443
-  server: 141.144.246.225
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0015
-  network: ws
-  port: 443
-  server: 141.147.0.69
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0016
-  network: ws
-  port: 443
-  server: 132.226.199.230
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0017
-  network: ws
-  port: 443
-  server: 152.70.22.131
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0018
-  network: ws
-  port: 443
-  server: 138.3.254.39
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0019
-  network: ws
-  port: 443
-  server: 193.122.58.158
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0020
-  network: ws
-  port: 443
-  server: 130.162.238.94
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0021
-  network: ws
-  port: 443
-  server: 150.230.144.242
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0022
-  network: ws
-  port: 443
-  server: 130.61.170.78
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0023
-  network: ws
-  port: 443
-  server: 152.70.16.10
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0024
-  network: ws
-  port: 443
-  server: 141.147.63.206
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0025
-  network: ws
-  port: 443
-  server: 129.159.29.120
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0026
-  network: ws
-  port: 443
-  server: 193.122.55.63
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0027
-  network: ws
-  port: 443
-  server: 141.147.20.110
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0028
-  network: ws
-  port: 443
-  server: 132.145.254.162
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0029
-  network: ws
-  port: 443
-  server: 130.162.238.157
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|DE_speednode_0030
-  network: ws
-  port: 443
-  server: 132.145.248.34
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|EE_speednode_0031
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 45.80.108.245
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|FR_speednode_0032
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 141.11.203.203
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|FR_speednode_0033
-  network: ws
-  port: 443
-  server: 144.24.200.164
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0034
-  network: ws
-  port: 443
-  server: 130.162.190.177
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0035
-  network: ws
-  port: 443
-  server: 141.147.73.232
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0036
-  network: ws
-  port: 443
-  server: 141.147.93.181
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0037
-  network: ws
-  port: 443
-  server: 141.147.72.41
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0038
-  network: ws
-  port: 587
-  server: 8.208.94.35
-  servername: a.mifeng.us.kg
+  port: 33889
+  server: 121.176.166.69
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
+      Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- name: 15|GB_speednode_0039
+- name: 15|KR_speednode_0015
   network: ws
-  port: 443
-  server: 152.67.130.49
-  servername: pvg.aghabeiki.homes
+  port: 11310
+  server: 118.37.231.34
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0040
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|KR_speednode_0016
   network: ws
-  port: 443
-  server: 144.21.53.157
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0041
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 194.36.55.28
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|GB_speednode_0042
-  network: ws
-  port: 443
-  server: 144.21.61.147
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0043
-  network: ws
-  port: 443
-  server: 132.226.215.79
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0044
-  network: ws
-  port: 443
-  server: 141.147.76.126
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0045
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 77.75.199.86
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|GB_speednode_0046
-  network: ws
-  port: 443
-  server: 130.162.184.22
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0047
-  network: ws
-  port: 443
-  server: 150.230.120.206
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|GB_speednode_0048
-  network: ws
-  port: 443
-  server: 130.162.164.201
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|HK_speednode_0049
-  network: ws
-  port: 12345
-  server: 42.98.167.229
+  port: 50000
+  server: 211.38.177.17
   servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
@@ -1148,383 +745,245 @@ proxies:
   ws-opts:
     headers:
       Host: edgetunnel.xiaomayi.nyc.mn
-    path: /telegram🇨🇳+@wangcai2+/?ed=2048
-- name: 15|HK_speednode_0050
+    path: /telegram🇨🇳 @wangcai2 /?ed=2048
+- name: 15|KR_speednode_0017
   network: ws
-  port: 443
-  server: 8.218.148.106
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 121.146.123.154
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|IT_speednode_0051
+      Host: test2.ccdd.site
+    path: /?ed=2560
+- name: 15|KR_speednode_0018
   network: ws
-  port: 443
-  server: 158.180.231.216
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 14.38.253.135
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JO_speednode_0052
+      Host: test2.ccdd.site
+    path: /?ed=2560
+- name: 15|KR_speednode_0019
   network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 62.72.166.57
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|JP_speednode_0053
-  network: ws
-  port: 443
-  server: 47.91.18.127
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 168.126.205.5
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0054
+      Host: test2.ccdd.site
+    path: /?ed=2560
+- name: 15|KR_speednode_0020
   network: ws
-  port: 443
-  server: 140.83.36.122
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 211.39.65.170
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0055
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /telegram🇨🇳 @wangcai2 /?ed=2048
+- name: 15|KR_speednode_0021
   network: ws
-  port: 443
-  server: 132.226.7.222
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 222.108.252.112
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0056
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0022
   network: ws
-  port: 8889
-  server: 160.16.242.208
-  servername: a.mifeng.us.kg
+  port: 50000
+  server: 218.152.197.93
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0023
+  network: ws
+  port: 50000
+  server: 218.159.236.206
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0024
+  network: ws
+  port: 50000
+  server: 183.105.48.110
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0025
+  network: ws
+  port: 50000
+  server: 61.74.55.112
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0026
+  network: ws
+  port: 50000
+  server: 61.81.13.82
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0027
+  network: ws
+  port: 10000
+  server: 119.192.167.123
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0028
+  network: ws
+  port: 33889
+  server: 121.180.243.59
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
+      Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- name: 15|JP_speednode_0057
+- name: 15|KR_speednode_0029
   network: ws
-  port: 443
-  server: 141.147.161.58
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 119.197.35.190
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0059
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0030
   network: ws
-  port: 443
-  server: 152.69.197.102
-  servername: pvg.aghabeiki.homes
+  port: 33889
+  server: 121.178.21.146
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0061
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|KR_speednode_0031
   network: ws
-  port: 443
-  server: 168.138.55.208
-  servername: pvg.aghabeiki.homes
+  port: 33889
+  server: 121.178.21.146
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0062
-  network: ws
-  port: 443
-  server: 141.147.154.214
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|JP_speednode_0063
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0064
-  network: ws
-  port: 443
-  server: 130.162.144.85
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0065
-  network: ws
-  port: 443
-  server: 150.230.248.166
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0066
-  network: ws
-  port: 443
-  server: 144.24.78.162
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0067
-  network: ws
-  port: 443
-  server: 146.56.153.6
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0068
-  network: ws
-  port: 443
-  server: 146.56.41.215
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0069
-  network: ws
-  port: 443
-  server: 140.238.23.148
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0070
-  network: ws
-  port: 443
-  server: 152.70.88.98
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0071
-  network: ws
-  port: 443
-  server: 131.186.17.132
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0072
-  network: ws
-  port: 443
-  server: 144.24.90.107
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0073
-  network: ws
-  port: 443
-  server: 152.70.232.151
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0074
-  network: ws
-  port: 443
-  server: 132.145.80.224
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|KR_speednode_0075
-  network: ws
-  port: 443
-  server: 146.56.161.138
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|LU_speednode_0076
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 94.242.230.245
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|LU_speednode_0077
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 94.242.229.89
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|LU_speednode_0078
-  network: ws
-  port: 443
-  server: 188.42.88.78
-  servername: g1.youyuan.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
-  ws-opts:
-    headers:
-      Host: g1.youyuan.us.kg
+      Host: a.xn--i-sx6a60i.us.kg
     path: /
-- name: 15|LU_speednode_0079
+- name: 15|KR_speednode_0032
   network: ws
-  password: NISHIKUITAN111
   port: 443
-  server: 188.42.88.52
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
+  server: 52.141.25.42
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|MT_speednode_0080
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0033
   network: ws
-  password: NISHIKUITAN111
   port: 443
-  server: 193.227.99.60
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
+  server: 4.230.9.53
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|NL_speednode_0082
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0034
   network: ws
-  port: 7000
-  server: 5.2.73.137
+  port: 443
+  server: 20.41.104.196
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 15|KR_speednode_0035
+  network: ws
+  port: 19150
+  server: 121.184.130.110
   servername: a.mifeng.us.kg
   skip-cert-verify: false
   tls: true
@@ -1534,72 +993,10 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|NL_speednode_0083
-  network: ws
-  port: 1001
-  server: 45.94.31.75
-  servername: a.mifeng.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
-- name: 15|NL_speednode_0084
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 45.131.209.89
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|NL_speednode_0085
-  network: ws
-  port: 443
-  server: 152.70.49.115
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0086
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.10.245.142
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|NL_speednode_0087
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 156.229.48.127
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|NL_speednode_0088
+- name: 15|MD_speednode_0036
   network: ws
   port: 2003
-  server: 2.58.56.31
+  server: 95.164.22.239
   servername: a.mifeng.us.kg
   skip-cert-verify: false
   tls: true
@@ -1609,36 +1006,10 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|NL_speednode_0089
+- name: 15|MD_speednode_0037
   network: ws
-  port: 443
-  server: 152.70.57.182
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0090
-  network: ws
-  port: 443
-  server: 141.144.205.14
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0091
-  network: ws
-  port: 3001
-  server: 93.185.163.186
+  port: 2501
+  server: 95.164.22.239
   servername: a.mifeng.us.kg
   skip-cert-verify: false
   tls: true
@@ -1648,222 +1019,72 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|NL_speednode_0092
+- name: 15|NL_speednode_0038
   network: ws
-  port: 443
-  server: 144.21.43.48
-  servername: pvg.aghabeiki.homes
+  port: 8000
+  server: 46.17.98.54
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0093
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 156.229.48.169
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|NL_speednode_0094
-  network: ws
-  port: 443
-  server: 141.148.232.202
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0095
-  network: ws
-  port: 443
-  server: 144.21.38.93
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0096
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 45.131.208.126
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|NL_speednode_0097
-  network: ws
-  port: 443
-  server: 141.148.233.106
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0098
-  network: ws
-  port: 443
-  server: 141.148.229.106
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0099
-  network: ws
-  port: 443
-  server: 143.47.187.243
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0100
-  network: ws
-  port: 443
-  server: 158.101.218.58
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0101
-  network: ws
-  port: 443
-  server: 158.101.201.46
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|NL_speednode_0102
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|NL_speednode_0039
   network: ws
   port: 1001
-  server: 45.94.31.75
-  servername: a.mifeng.us.kg
+  server: 192.210.160.163
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560security=tls
-- name: 15|RU_speednode_0104
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|NL_speednode_0040
+  network: ws
+  port: 2501
+  server: 46.30.42.248
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|NL_speednode_0041
+  network: ws
+  port: 2501
+  server: 212.34.155.210
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /
+- name: 15|RU_speednode_0042
   network: ws
   port: 587
   server: 185.22.155.139
-  servername: a.mifeng.us.kg
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
+      Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- name: 15|RU_speednode_0105
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.182.85.93
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|RU_speednode_0106
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 46.254.92.112
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|RU_speednode_0107
-  network: ws
-  port: 443
-  server: 188.42.145.140
-  servername: g1.youyuan.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
-  ws-opts:
-    headers:
-      Host: g1.youyuan.us.kg
-    path: /telegram.v2ray_apha.spacefp
-- name: 15|RU_speednode_0108
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 194.53.53.140
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|SC_speednode_0109
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 154.197.121.175
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|SE_speednode_0110
+- name: 15|SE_speednode_0043
   network: ws
   port: 2501
   server: 95.164.51.24
@@ -1876,45 +1097,7 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|SG_speednode_0111
-  network: ws
-  port: 587
-  server: 138.2.109.23
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
-- name: 15|SI_speednode_0113
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 92.53.190.218
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|TH_speednode_0114
-  network: ws
-  port: 443
-  server: 8.213.212.96
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|TR_speednode_0115
+- name: 15|TR_speednode_0044
   network: ws
   port: 2501
   server: 95.164.116.22
@@ -1927,113 +1110,192 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|TR_speednode_0116
+- name: 15|TR_speednode_0045
   network: ws
-  port: 2501
-  server: 95.164.116.22
-  servername: a.mifeng.us.kg
-  skip-cert-verify: true
+  port: 8080
+  server: 213.238.167.21
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /
-- name: 15|TW_speednode_0117
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|TW_speednode_0046
+  network: ws
+  port: 10004
+  server: 114.34.202.224
+  servername: test2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: test2.ccdd.site
+    path: /?ed=2560
+- client-fingerprint: safari
+  name: 15|US_speednode_0048
   network: ws
   port: 443
-  server: 103.137.63.2
-  servername: pvg.aghabeiki.homes
+  server: 199.232.76.82
+  servername: TEHRANARGO.io
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e617de1c-9e81-42fe-8c63-0f01b1027bcf
+  ws-opts:
+    headers:
+      Host: TEHRANARGO.io
+    path: /@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-?ed=2560
+- name: 15|US_speednode_0049
+  network: ws
+  port: 443
+  server: v2ngfast-jcr.pages.dev
+  servername: v2nGfaSt-Jcr.pagEs.Dev
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- client-fingerprint: firefox
-  name: 15|US_speednode_0119
+      Host: v2nGfaSt-Jcr.pagEs.Dev
+    path: /iGEuUkpVCbbe4l6w?ed=2560
+- name: 15|US_speednode_0050
   network: ws
-  port: 443
-  server: 151.101.65.210
-  servername: pooleno.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pooleno.ir
-    path: /GGPPfZ3NKyOoKNiK?ed=2560
-- client-fingerprint: firefox
-  name: 15|US_speednode_0120
-  network: ws
-  port: 443
-  server: 151.101.65.210
-  servername: pooleno.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pooleno.ir
-    path: /GGPPfZ3NKyOoKNiK?ed=2560fp=firefox
-- name: 15|US_speednode_0123
-  network: ws
-  port: 443
-  server: 151.101.65.210
-  servername: pooleno.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pooleno.ir
-    path: /
-- name: 15|US_speednode_0128
-  network: ws
-  port: 443
-  server: 167.82.97.49
-  servername: cosmocare.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: cosmocare.ir
-    path: /
-- name: 15|US_speednode_0132
-  network: ws
-  port: 443
-  server: 172.66.47.98
-  servername: Elena-v.pageS.dEv
+  port: 34237
+  server: 155.248.192.204
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: Elena-v.pageS.dEv
-    path: /elenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelenaelena?ed=2560
-- name: 15|US_speednode_0133
+      Host: test2.ccdd.site
+    path: /?ed=2560
+- name: 15|US_speednode_0051
   network: ws
   port: 443
-  server: 152.67.231.219
-  servername: pvg.aghabeiki.homes
+  server: 104.18.40.206
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|US_speednode_0134
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0052
+  network: ws
+  port: 443
+  server: dfgdfgdzfgdfzgdrgdgertd.pages.dev
+  servername: dfgdfgdzfgdfzgdrgdgertd.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0d9c223d-5dca-49cc-94c5-850ef59a3c8a
+  ws-opts:
+    headers:
+      Host: dfgdfgdzfgdfzgdrgdgertd.pages.dev
+    path: /?ed=2048
+- client-fingerprint: randomized
+  name: 15|US_speednode_0053
+  network: ws
+  port: 443
+  server: 199.232.86.82
+  servername: TEHRANARGO.io
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e617de1c-9e81-42fe-8c63-0f01b1027bcf
+  ws-opts:
+    headers:
+      Host: TEHRANARGO.io
+    path: /@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-?ed=2560
+- client-fingerprint: qq
+  name: 15|US_speednode_0054
+  network: ws
+  port: 443
+  server: 199.232.86.55
+  servername: www.teh.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: fa0c39fe-1c37-491b-afc8-d8538057b990
+  ws-opts:
+    headers:
+      Host: www.teh.ir
+    path: /VLESS?TehranArgo-TehranArgo-TehranArgo?ed=2560
+- name: 15|US_speednode_0055
+  network: ws
+  port: 443
+  server: 172.64.147.50
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0056
+  network: ws
+  port: 7000
+  server: 74.48.186.122
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0060
+  network: ws
+  port: 2003
+  server: 150.241.96.14
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0061
+  network: ws
+  port: 80
+  server: 140.248.139.207
+  servername: ADOLF-ELENA.IR
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 16c95530-8276-5477-9e61-799542e502c7
+  ws-opts:
+    headers:
+      Host: ADOLF-ELENA.IR
+    path: /
+- name: 15|US_speednode_0065
+  network: ws
+  port: 80
+  server: 151.101.192.155
+  servername: testfast7.v2fast7.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 6e963169-be52-461d-91df-641c4af8fb3b
+  ws-opts:
+    headers:
+      Host: testfast7.v2fast7.com
+    path: /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7
+- name: 15|US_speednode_0066
   network: ws
   port: 8080
   server: 104.17.234.128
@@ -2041,175 +1303,11 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: ac954fc8-fdf6-4894-b01a-7ba7ec46f312
+  uuid: dc3837aa-704d-4732-a7ec-049bda54fe6a
   ws-opts:
     headers:
       Host: join.bede.unlimiteddev.www.speedtest.net.de.abrha.co.unlimiteddev.community.
     path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=8880
-- name: 15|US_speednode_0135
-  network: ws
-  port: 443
-  server: 172.66.47.98
-  servername: elena-v.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: elena-v.pages.dev
-    path: /V2RAYNPLUS-|-V2RAYNPLUS-|-V2RAYNPLUS-|-V2RAYNPLUS-|-V2RAYNPLUS-|-V2RAYNPLUS-|-V2RAYNPLUS-|-V2RAYNPLUS-|?ed=2560
-- name: 15|US_speednode_0136
-  network: ws
-  port: 8080
-  server: 104.17.234.128
-  servername: join.bede.UNLIMITEDDEV.www.speedtest.net.de.Abrha.co.sabadyt.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ac954fc8-fdf6-4894-b01a-7ba7ec46f312
-  ws-opts:
-    headers:
-      Host: join.bede.UNLIMITEDDEV.www.speedtest.net.de.Abrha.co.sabadyt.ir
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=8880
-- name: 15|US_speednode_0137
-  network: ws
-  port: 443
-  server: 172.66.47.98
-  servername: elena-v.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: elena-v.pages.dev
-    path: /@V2RAYNPLUS-|-@V2RAYNPLUS-|-@V2RAYNPLUS-|-@V2RAYNPLUS-|-@V2RAYNPLUS-|-@V2RAYNPLUS-|-@V2RAYNPLUS-|-@V2RAYNPLUS-|?ed=2560
-- name: 15|US_speednode_0138
-  network: ws
-  port: 443
-  server: 129.159.84.71
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|US_speednode_0139
-  network: ws
-  port: 443
-  server: 129.213.136.180
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|US_speednode_0140
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 45.159.218.103
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|US_speednode_0141
-  network: ws
-  port: 443
-  server: 150.230.42.80
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: 15|US_speednode_0142
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.148.106.44
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|US_speednode_0143
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 216.205.52.233
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|US_speednode_0144
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.148.104.114
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|US_speednode_0145
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 69.48.218.190
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /%2F
-- name: 15|US_speednode_0146
-  network: ws
-  port: 443
-  server: hajlab.ucdavis.edu
-  servername: hajlab.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cf34165b-4383-4768-a795-af90f3b56617
-  ws-opts:
-    headers:
-      Host: joinshhproxybedeeeee.ir
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
-- name: 15|US_speednode_0148
-  network: ws
-  port: 80
-  server: 151.101.64.155
-  servername: 5776.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 0cda2421-8ea5-46e6-98ce-f2bdc057f532
-  ws-opts:
-    headers:
-      Host: 5776.ir
-    path: /VLESS?ed=80
 - alterId: 0
   cipher: auto
   name: '16|d*********g.com_2 #1'
