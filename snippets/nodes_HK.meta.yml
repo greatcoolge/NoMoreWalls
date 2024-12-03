@@ -4,15 +4,15 @@ proxies:
   network: tcp
   password: DNUMdmnJ
   port: 51377
-  server: 36.151.192.201
+  server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
   name: 13,14|香港2|@ripaojiedian
   network: tcp
   password: QwwHvrnN
-  port: 42395
-  server: 36.151.192.239
+  port: 17956
+  server: 223.113.54.144
   skip-cert-verify: true
   type: trojan
 - alterId: 64
@@ -73,6 +73,14 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港9|@ripaojiedian
+  password: 6b475a32-8065-4407-b852-c9e26da30ef4
+  port: 11001
+  server: 183.240.255.75
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 14|香港3|@ripaojiedian

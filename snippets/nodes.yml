@@ -1,12 +1,30 @@
 proxies:
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-2
+  password: amazonskr05
+  port: 443
+  server: 18.143.178.37
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
+  server: 18.236.89.178
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-5
   password: dongtaiwang.com
   port: 32233
   server: 185.22.152.125
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-11
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 34.221.162.56
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-15
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -14,32 +32,14 @@ proxies:
   server: us-am3.eqnode.net
   type: ssr
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-15
+  name: 0|-https://t.me/MrXbin-16
   obfs: tls1.2_ticket_auth
   password: Cskw6d
-  port: 13448
+  port: 13226
   protocol: auth_aes128_md5
   protocol-param: 524959:5u4MZ6
-  server: sjgysy.cdn.node.a.tddns-ounk.com
+  server: xrbsy1.cdn.node.a.tddns-ounk.com
   type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-34
-  network: ws
-  port: 443
-  server: 38.75.137.21
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: harriscity.com
-    path: /linkvws
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -58,21 +58,6 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-38
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
   name: 0|-https://t.me/MrXbin-40
   network: ws
   port: 2082
@@ -87,16 +72,94 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-41
+  name: 0|-https://t.me/MrXbin-44
   network: ws
-  port: 2082
-  server: 190.93.245.80
+  port: 443
+  server: irvideo.cfd
+  tls: true
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
+      Host: irvideo.cfd
+    path: /linkws
+- name: 0,15|HK_speednode_0025
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 45051
+  server: 43.199.160.241
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0018
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 44560
+  server: 43.198.105.43
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0023
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 45051
+  server: 43.198.105.43
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0024
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 45051
+  server: 43.198.187.75
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0019
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 44560
+  server: 43.198.187.75
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0015
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 40091
+  server: 16.162.89.173
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0017
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 40091
+  server: 18.163.208.26
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0021
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 44560
+  server: 16.162.89.173
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0020
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 44560
+  server: 18.163.208.26
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0022
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 44560
+  server: 18.167.172.191
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0016
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 40091
+  server: 18.167.172.191
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|d*********g.com_0
@@ -173,14 +236,14 @@ proxies:
   network: tcp
   password: DNUMdmnJ
   port: 51377
-  server: 36.151.192.201
+  server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
 - name: 13,14|香港2|@ripaojiedian
   network: tcp
   password: QwwHvrnN
-  port: 42395
-  server: 36.151.192.239
+  port: 17956
+  server: 223.113.54.144
   skip-cert-verify: true
   type: trojan
 - alterId: 64
@@ -235,16 +298,21 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 13|🇹🇼 台湾|@ripaojiedian
-  port: 45077
-  server: xdd.dashuai.cyou
-  skip-cert-verify: false
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港9|@ripaojiedian
+  password: 6b475a32-8065-4407-b852-c9e26da30ef4
+  port: 11001
+  server: 183.240.255.75
   tfo: false
-  tls: false
-  type: vmess
-  uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
+  type: ss
+- name: 13,14|台湾|@ripaojiedian
+  network: tcp
+  password: 5e2ce79c-170e-484a-8802-40584a1a3a12
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 13|🇹🇼 台湾2|@ripaojiedian
   password: f0e7fd1e-0469-415f-95da-774021f16f36
@@ -252,7 +320,7 @@ proxies:
   server: soontw.soon.guru
   tfo: false
   type: ss
-- name: 13,14,15|CN_speednode_0003
+- name: 13,14|日本|@ripaojiedian
   network: tcp
   password: QwwHvrnN
   port: 27381
@@ -261,19 +329,25 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 13|🇯🇵 日本2|@ripaojiedian
-  password: b3d05306-e5ae-46ca-9deb-40dc2232912b
-  port: 11001
-  server: 61.172.235.22
+  password: f0e7fd1e-0469-415f-95da-774021f16f36
+  port: 40003
+  server: soonjp.soon.guru
   tfo: false
   type: ss
-- name: 13,14,15|CN_speednode_0006
-  network: tcp
-  password: 1f962f36-f751-40c3-91b3-cb6d2360b450
-  port: 39593
-  server: lmgj.hongxingdl.vip
-  skip-cert-verify: false
-  sni: mmbiz10.redapricotcloud.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  password: aaf875c9-d3cf-41d2-9698-365d66fd257a
+  port: 20004
+  server: gy.666666222.shop
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇸🇬 新加坡|@ripaojiedian
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54030
+  server: s-g04.loveroise.com
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 13|🇰🇷 韩国2|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
@@ -281,22 +355,6 @@ proxies:
   server: k-r03.loveroise.com
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 13,14|美国|@ripaojiedian
-  network: ws
-  port: '2095'
-  server: 104.26.0.91
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
 - alterId: 64
   cipher: auto
   name: 13|🇺🇸 美国2|@ripaojiedian
@@ -358,16 +416,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 14|台湾|@ripaojiedian
-  network: tcp
-  port: '45077'
-  server: xdd.dashuai.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
 - alterId: 64
   cipher: auto
   name: 14|美国2|@ripaojiedian
@@ -378,6 +426,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|CN_speednode_0005
+  password: 5e2ce79c-170e-484a-8802-40584a1a3a12
+  port: 13028
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- name: 15|SE_speednode_0041
+  password: wkmY1R4EcP
+  port: 443
+  server: 65.20.115.19
+  skip-cert-verify: true
+  sni: myket.io
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '16|d*********g.com_2 #1'
