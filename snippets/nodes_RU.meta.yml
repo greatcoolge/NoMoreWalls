@@ -1,14 +1,25 @@
 proxies:
-- name: 15|RU_speednode_0032
+- name: 15|RU_speednode_0090
   network: ws
-  port: 587
-  server: 185.22.155.139
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  password: bpb-trojan
+  port: 443
+  server: 45.8.211.242
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  type: trojan
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /?ed=2560
+      Host: bpb.my79801.com
+    path: /tr
+- name: 15|RU_speednode_0091
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 185.174.138.239
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr
