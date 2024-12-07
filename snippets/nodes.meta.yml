@@ -1,70 +1,90 @@
 proxies:
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-1
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.75.136.21
+  password: 171pEaFf5HJtdAAI3L7r6A
+  port: 1080
+  server: 46.32.186.234
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-4
-  password: amazonskr05
-  port: 443
-  server: 52.195.205.31
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-5
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.75.136.21
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-7
-  password: amazonskr05
-  port: 443
-  server: 47.128.225.94
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
+  name: 0|-https://t.me/MrXbin-2
   password: amazonskr05
   port: 443
   server: 18.141.184.102
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
+  server: 34.208.196.91
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-5
+  password: amazonskr05
+  port: 443
+  server: 44.244.25.243
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 54.185.18.43
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-7
+  password: amazonskr05
+  port: 443
+  server: 34.222.145.191
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-8
+  password: amazonskr05
+  port: 443
+  server: 13.212.36.13
+  type: ss
+- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-9
   password: amazonskr05
   port: 443
-  server: 34.219.118.99
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-10
-  password: amazonskr05
-  port: 443
-  server: 3.1.195.116
+  server: 52.195.205.31
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-11
   password: amazonskr05
   port: 443
-  server: 54.199.12.31
+  server: 47.128.225.94
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-12
   password: amazonskr05
   port: 443
-  server: 34.215.84.62
+  server: 3.1.195.116
   type: ss
-- cipher: rc4-md5
+- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-14
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13621
+  password: amazonskr05
+  port: 443
+  server: 34.219.118.99
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-15
+  password: amazonskr05
+  port: 443
+  server: 54.169.5.182
+  type: ss
+  udp: true
+- cipher: aes-128-cfb
+  name: 0|-https://t.me/MrXbin-30
+  obfs: http_post
+  password: +asd6a5s5df+
+  port: 443
   protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: hfa1.cdn.node.a.tddns-ounk.com
+  server: nsus3.irundns.net
   type: ssr
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-25
+  name: 0|-https://t.me/MrXbin-32
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -75,45 +95,18 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-46
+  name: 0|-https://t.me/MrXbin-91
   network: ws
-  port: 2082
-  server: 190.93.245.174
+  port: 2095
+  server: 172.64.166.8
+  skip-cert-verify: true
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip18.6929198.xyz
+      Host: ip12.6016725.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-64
-  network: ws
-  port: 2082
-  server: 190.93.245.103
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-69
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 5|d*********g.com_0
@@ -306,12 +299,28 @@ proxies:
   sni: us3.xiaoliyu.us
   tls: false
   type: hysteria2
+- name: 8|@meli_proxyy
+  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
+  port: 30102
+  server: 193.123.76.141
+  skip-cert-verify: true
+  sni: joinBede.ELiV2ray.net
+  tls: false
+  type: hysteria2
 - name: 8|+_+@freeconfig01
   password: 7d417084-d308-4b35-96c8-99dfb2547ec2
   port: 30102
   server: 40.233.76.38
   skip-cert-verify: true
   sni: du.wish.ml
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #1'
+  password: 7d417084-d308-4b35-96c8-99dfb2547ec2
+  port: 30102
+  server: 46.17.40.42
+  skip-cert-verify: true
+  sni: elena.ru
   tls: false
   type: hysteria2
 - name: 8|MCi-@V2ray_Raha-06
@@ -612,13 +621,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 8|🌰50@ConfigV2RayNG
-  password: sysadmin.sysadmin
-  port: 443
-  server: 23.94.2.137
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
 - name: 8|MCi-@V2ray_Alpha-17
   password: sysadmin.sysadmin
   port: 446
@@ -912,6 +914,36 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|CN_speednode_0003
+  network: ws
+  port: 443
+  server: 103.44.255.81
+  servername: v2.yunchun.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: v2.yunchun.top
+    path: /?ed=2048security=tls
+- name: 15|DE_speednode_0009
+  network: tcp
+  port: 14628
+  server: 157.230.20.98
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 8456babd-3b6e-4127-af39-e4cb8edda48f
+- name: 15|DE_speednode_0010
+  network: tcp
+  port: 8443
+  server: 89.187.169.71
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
 - alpn:
   - http/1.1
   name: '15,16|d*********g.com_3 #1'
@@ -928,50 +960,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 15|CN_speednode_0002
-  network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: v2.yunchun.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: v2.yunchun.top
-    path: /?ed=2048
-- name: 15|CN_speednode_0005
-  network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: v2.yunchun.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: v2.yunchun.top
-    path: /?ed=2048security=tls
-- name: 15|DE_speednode_0015
-  network: tcp
-  port: 14628
-  server: 157.230.20.98
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 8456babd-3b6e-4127-af39-e4cb8edda48f
-- name: 15|DE_speednode_0016
-  network: tcp
-  port: 8443
-  server: 89.187.169.71
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-- name: 15|US_speednode_0097
+- name: 15|US_speednode_0038
   network: ws
   port: 80
   server: 199.232.8.123
@@ -984,7 +973,7 @@ proxies:
     headers:
       Host: IRANINGOAT2.IR
     path: /RsAMasAPMX5yb1YZ?ed=2560
-- name: 15|US_speednode_0215
+- name: 15|US_speednode_0183
   network: ws
   port: 80
   server: 140.248.139.207
@@ -997,137 +986,7 @@ proxies:
     headers:
       Host: ELiV2--ELENA.COM
     path: /
-- name: 15|US_speednode_0022
-  network: ws
-  port: 443
-  server: 172.66.47.181
-  servername: v2nGfaSt-Jcr.pagEs.Dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: v2nGfaSt-Jcr.pagEs.Dev
-    path: /iGEuUkpVCbbe4l6w?ed=2560
-- name: 15|US_speednode_0041
-  network: ws
-  port: 443
-  server: hajlab.ucdavis.edu
-  servername: hajlab.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 73078e76-c7cf-4b47-aafc-80683741aa4a
-  ws-opts:
-    headers:
-      Host: joinshhproxybedeeeee.ir
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
-- name: 15|US_speednode_0045
-  network: ws
-  port: 80
-  server: speedtest.net
-  servername: Tehranc1.Org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b7b5990f-cd48-45ad-b1d9-ce88b5010961
-  ws-opts:
-    headers:
-      Host: Tehranc1.Org
-    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
-- name: 15|US_speednode_0083
-  network: ws
-  port: 80
-  server: NUFiLTER.fastly80-3.hosting-ip.com
-  servername: Basheberim49aa.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 04fd6f81-fa9d-42ca-bb29-9032e685a0e6
-  ws-opts:
-    headers:
-      Host: Basheberim49aa.net
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80
-- name: 15|US_speednode_0155
-  network: ws
-  port: 8880
-  server: 104.18.14.19
-  servername: falcunargo.d369616395.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: cffb6eba-a33e-469f-9be0-b68cfec018e4
-  ws-opts:
-    headers:
-      Host: falcunargo.d369616395.workers.dev
-    path: /?ed=2048
-- name: 15|US_speednode_0162
-  network: ws
-  port: 8880
-  server: 104.18.15.19
-  servername: falcunargo.d369616395.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: cffb6eba-a33e-469f-9be0-b68cfec018e4
-  ws-opts:
-    headers:
-      Host: falcunargo.d369616395.workers.dev
-    path: /?ed=2048
-- name: 15|US_speednode_0231
-  network: ws
-  port: 8880
-  server: 188.114.97.3
-  servername: falcunargo-channel.be3374a836.workers.Dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
-  ws-opts:
-    headers:
-      Host: falcunargo-channel.be3374a836.workers.Dev
-    path: /?ed=2048
-- name: 15|US_speednode_0260
-  network: ws
-  port: 80
-  server: 104.18.17.170
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
-- name: 15|US_speednode_0263
-  network: ws
-  port: 80
-  server: 104.18.26.94
-  servername: sedalat.tatexe3807.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
-  ws-opts:
-    headers:
-      Host: sedalat.tatexe3807.workers.dev
-    path: /
-- name: 15|US_speednode_0264
-  network: ws
-  port: 80
-  server: 162.159.254.222
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
-- name: 15|US_speednode_0265
+- name: 15|US_speednode_0220
   network: ws
   port: 2086
   server: 104.18.10.128
@@ -1140,111 +999,7 @@ proxies:
     headers:
       Host: v2raynselling.kir-rasol-kir.workers.dev
     path: /
-- name: 15|US_speednode_0267
-  network: ws
-  port: 80
-  server: 104.18.27.94
-  servername: sedalat.tatexe3807.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
-  ws-opts:
-    headers:
-      Host: sedalat.tatexe3807.workers.dev
-    path: /
-- name: 15|US_speednode_0269
-  network: ws
-  port: 80
-  server: 162.159.249.15
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
-- name: 15|US_speednode_0270
-  network: ws
-  port: 80
-  server: 172.64.40.169
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
-- name: 15|US_speednode_0272
-  network: ws
-  port: 80
-  server: 172.64.229.27
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
-- name: 15|US_speednode_0277
-  network: ws
-  port: 80
-  server: 151.101.2.219
-  servername: Tehranc3.Org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9cf16370-7cb1-4d3c-aa56-7f45747939db
-  ws-opts:
-    headers:
-      Host: Tehranc3.Org
-    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
-- name: 15|US_speednode_0279
-  network: ws
-  port: 80
-  server: 151.101.194.219
-  servername: Tehranc1.Org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b7b5990f-cd48-45ad-b1d9-ce88b5010961
-  ws-opts:
-    headers:
-      Host: Tehranc1.Org
-    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
-- name: 15|US_speednode_0281
-  network: ws
-  port: 80
-  server: 151.101.130.219
-  servername: Tehranc1.Org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b7b5990f-cd48-45ad-b1d9-ce88b5010961
-  ws-opts:
-    headers:
-      Host: Tehranc1.Org
-    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
-- name: 15|US_speednode_0282
-  network: ws
-  port: 80
-  server: 151.101.130.219
-  servername: Tehranc2.Org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 932ea1e5-7d88-463d-8bb4-63408e173e9d
-  ws-opts:
-    headers:
-      Host: Tehranc2.Org
-    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
-- name: 15|US_speednode_0283
+- name: 15|US_speednode_0245
   network: ws
   port: 8080
   server: 188.114.97.3
@@ -1257,84 +1012,6 @@ proxies:
     headers:
       Host: ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev
     path: /0URHFxBSQcqVmgqm
-- name: 15|US_speednode_0285
-  network: ws
-  port: 80
-  server: 151.101.130.219
-  servername: Tehranc3.Org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9cf16370-7cb1-4d3c-aa56-7f45747939db
-  ws-opts:
-    headers:
-      Host: Tehranc3.Org
-    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
-- name: 15|US_speednode_0286
-  network: ws
-  port: 80
-  server: 104.19.154.58
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
-- name: 15|US_speednode_0290
-  network: ws
-  port: 80
-  server: 151.101.194.165
-  servername: UNLIMITEDDEV.channel-telegram-1.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 4578fed6-8a28-44b1-b853-c2e4a5b020be
-  ws-opts:
-    headers:
-      Host: UNLIMITEDDEV.channel-telegram-1.ir
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
-- name: 15|US_speednode_0292
-  network: ws
-  port: 80
-  server: 151.101.194.165
-  servername: TEL.VMESSORG.http.www.speedtest.net.fast.com.vmessorgg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 27bbb35d-017e-44b9-896c-6e210ab88418
-  ws-opts:
-    headers:
-      Host: TEL.VMESSORG.http.www.speedtest.net.fast.com.vmessorgg.ir
-    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
-- name: 15|US_speednode_0293
-  network: ws
-  port: 80
-  server: vmessorg.fastly80-3.hosting-ip.com
-  servername: TEL.VMESSORG.http.www.speedtest.net.fast.com.vmessorgg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 27bbb35d-017e-44b9-896c-6e210ab88418
-  ws-opts:
-    headers:
-      Host: TEL.VMESSORG.http.www.speedtest.net.fast.com.vmessorgg.ir
-    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
-- name: 15|US_speednode_0297
-  network: ws
-  port: 80
-  server: 104.16.58.162
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-    path: /
 - alterId: 0
   cipher: auto
   name: '16|d*********g.com_2 #1'
