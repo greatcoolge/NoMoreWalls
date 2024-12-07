@@ -3,9 +3,14 @@ proxies:
   name: 0|-https://t.me/MrXbin-1
   password: amazonskr05
   port: 443
-  server: 18.141.184.102
+  server: 34.208.196.91
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-2
+  password: amazonskr05
+  port: 443
+  server: 3.1.195.116
+  type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-3
   password: amazonskr05
@@ -14,24 +19,49 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-4
-  password: 171pEaFf5HJtdAAI3L7r6A
-  port: 1080
-  server: 46.32.186.234
+  password: 6OAGLD+DOA6UcFp5Udf0r/UzyjwHV+yheNkoFDk6uL8=
+  port: 38753
+  server: 213.108.22.109
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-5
   password: amazonskr05
   port: 443
-  server: 47.128.225.94
+  server: 52.193.184.18
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-6
   password: amazonskr05
   port: 443
-  server: 54.199.12.31
+  server: 54.185.18.43
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-8
+  password: amazonskr05
+  port: 443
+  server: 54.169.5.182
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-9
+  password: amazonskr05
+  port: 443
+  server: 34.215.84.62
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-10
+  password: amazonskr05
+  port: 443
+  server: 13.212.36.13
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-11
+  password: amazonskr05
+  port: 443
+  server: 54.199.12.31
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-18
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -42,7 +72,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-20
+  name: 0|-https://t.me/MrXbin-56
   network: ws
   port: 2082
   server: 190.93.245.80
@@ -56,30 +86,17 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-36
+  name: 0|-https://t.me/MrXbin-63
   network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
+  port: 2095
+  server: 172.64.166.33
+  skip-cert-verify: true
   type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-55
-  network: ws
-  port: 2082
-  server: 190.93.245.103
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
+      Host: ip12.6016725.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -397,58 +414,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|HK_speednode_0035
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 40913
-  server: 16ab1c69cdfdbf898aa6c5c5131dfa99.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0036
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 49468
-  server: e365c3a06d49e21c6027fce9ee36f181.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: us1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0037
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 48385
-  server: eef72d13ad096a6703aabd5bae809848.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: de1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0038
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 47580
-  server: 26f3c1fb8b12d3dcbc594b4e5cad3f1a.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0039
-  password: d75a2b07-34f4-454e-84ba-0de806c51b6d
-  port: 46509
-  server: dab1c8faaa893fecbc1e055db0894883.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|SE_speednode_0042
-  network: ws
-  password: 542f66d8-6b06-4340-a829-76d23db7ca80
-  port: 443
-  server: 185.146.173.42
-  skip-cert-verify: true
-  sni: fr1.trojanvpn.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: fr1.trojanvpn.xyz
-    path: /%2F
 - alterId: 0
   cipher: auto
   name: '16|d*********g.com_2 #1'
