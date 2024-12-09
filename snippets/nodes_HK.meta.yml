@@ -3,16 +3,16 @@ proxies:
   name: 13,14|香港|@ripaojiedian
   network: tcp
   password: DNUMdmnJ
-  port: 51377
-  server: 36.151.192.242
+  port: 42395
+  server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
   name: 13,14|香港2|@ripaojiedian
   network: tcp
   password: QwwHvrnN
-  port: 18682
-  server: 36.151.192.242
+  port: 25241
+  server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
 - alterId: 64
@@ -77,15 +77,17 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 13,14|香港9|@ripaojiedian
-  network: tcp
-  password: c41771a6-7c16-4015-80b4-de5ebdec2595
-  port: 32029
-  server: lbso.bnnodeservice.com
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港9|@ripaojiedian
+  port: 50052
+  server: 183.236.48.158
   skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -127,3 +129,13 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
+- alterId: 64
+  cipher: auto
+  name: 14|香港9|@ripaojiedian
+  network: tcp
+  port: '50052'
+  server: 183.236.48.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
