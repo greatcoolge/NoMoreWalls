@@ -3,38 +3,49 @@ proxies:
   name: 0|-https://t.me/MrXbin-1
   password: amazonskr05
   port: 443
+  server: 18.141.184.102
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 0|-https://t.me/MrXbin-2
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
   server: 43.206.233.92
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-2
+  name: 0|-https://t.me/MrXbin-5
   password: amazonskr05
   port: 443
-  server: 54.169.5.182
+  server: 54.200.220.184
   type: ss
-  udp: true
-- cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-10
-  obfs: http_post
-  password: $$Turb0VPN$$
-  port: 443
-  protocol: auth_aes128_md5
-  server: ssca.irundns.net
-  type: ssr
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-15
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 34.215.84.62
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-16
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
-- name: 0,15|US_speednode_0078
-  password: ypDt8RkT7J
-  port: 43118
-  server: 89.187.181.172
-  skip-cert-verify: true
-  sni: egcmi.phooeyunfold.com
-  type: trojan
+- cipher: aes-128-cfb
+  name: 0|-https://t.me/MrXbin-17
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: DNUMdmnJ
@@ -272,6 +283,13 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
+- name: 15|US_speednode_0078
+  password: ypDt8RkT7J
+  port: 43118
+  server: 89.187.181.172
+  skip-cert-verify: true
+  sni: egcmi.phooeyunfold.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 16|d*********g.com_2
