@@ -15,17 +15,14 @@ proxies:
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
-- alterId: 64
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇭🇰 香港3|@ripaojiedian
-  port: 50052
-  server: 183.236.48.158
-  skip-cert-verify: false
+  password: 0e91a29a-989d-4934-a1fb-7b653319397f
+  port: 61008
+  server: 120.240.88.37
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇭🇰 香港4|@ripaojiedian
@@ -85,16 +82,6 @@ proxies:
   server: 183.236.48.143
   skip-cert-verify: false
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 14|香港3|@ripaojiedian
-  network: tcp
-  port: '50052'
-  server: 183.236.48.158
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
