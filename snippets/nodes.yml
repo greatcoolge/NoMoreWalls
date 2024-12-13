@@ -1,69 +1,71 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-2
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
-  password: amazonskr05
-  port: 443
-  server: 54.202.63.77
-  type: ss
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-4
+  name: 0|-https://t.me/MrXbin-2
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.11
   type: ss
   udp: true
 - cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-4
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  type: ss
+  udp: true
+- cipher: rc4-md5
   name: 0|-https://t.me/MrXbin-5
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 193.108.119.230
+  server: 23.251.121.242
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 54.203.0.206
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-7
+  password: amazonskr05
+  port: 443
+  server: 35.91.173.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-8
+  password: amazonskr05
+  port: 443
+  server: 18.237.72.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-9
+  password: amazonskr05
+  port: 443
+  server: 54.169.221.38
   type: ss
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-12
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13620
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: hfa1.cdn.node.a.tddns-ounk.com
-  type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-37
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- name: 0|-https://t.me/MrXbin-121
+  name: 0|-https://t.me/MrXbin-10
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 194.5.215.59
+  type: ss
+  udp: true
+- name: 0|-https://t.me/MrXbin-115
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49782
+  server: 7c0bb8d8872425b41520a1a9ad77fa89.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0|-https://t.me/MrXbin-118
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 48539
   server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- name: 0|-https://t.me/MrXbin-122
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 49089
-  server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: jp12.bilibili.com
-  type: trojan
-  udp: true
-- name: 0,15|HK_speednode_0005
+- name: 0,15|HK_speednode_0011
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 44991
   server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green
@@ -71,13 +73,21 @@ proxies:
   sni: us1.bilibili.com
   type: trojan
   udp: true
-- name: 0,15|HK_speednode_0004
+- name: 0,15|HK_speednode_0010
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 41790
-  server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
+  port: 41288
+  server: 218.190.230.207
   skip-cert-verify: true
-  sni: us1.bilibili.com
+  sni: hk12.bilibili.com
   type: trojan
+- name: 0|-https://t.me/MrXbin-131
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49089
+  server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+  udp: true
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: DNUMdmnJ
@@ -85,7 +95,7 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
-- name: 13,14|香港2|@ripaojiedian
+- name: 13,14,15|CN_speednode_0004
   network: tcp
   password: QwwHvrnN
   port: 25241
@@ -166,7 +176,7 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: /?ed=2560
-- name: 13,14|日本|@ripaojiedian
+- name: 13,14,15|CN_speednode_0003
   network: tcp
   password: QwwHvrnN
   port: 31071
@@ -338,12 +348,11 @@ proxies:
   tls: false
   type: vmess
   uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
-- name: 15|HK_speednode_0003
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 48539
-  server: 43.199.143.90
+- name: 15|CN_speednode_0005
+  password: DNUMdmnJ
+  port: 51377
+  server: 36.151.192.242
   skip-cert-verify: true
-  sni: hk12.bilibili.com
   type: trojan
 - alterId: 0
   cipher: auto

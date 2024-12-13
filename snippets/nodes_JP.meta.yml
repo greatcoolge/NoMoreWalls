@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 13,14|日本|@ripaojiedian
+  name: 13,14,15|CN_speednode_0003
   network: tcp
   password: QwwHvrnN
   port: 31071
@@ -60,42 +60,20 @@ proxies:
   tls: false
   type: vmess
   uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
-- name: 15|JP_speednode_0007
-  network: ws
-  port: 80
-  server: pscresearch.faculty.ucdavis.edu
-  servername: harifet-manam-6.com
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: harifet-manam-6.com
-    path: /?ed=2560
-- name: 15|JP_speednode_0008
-  network: ws
-  port: 80
-  server: zmaoz.faculty.ucdavis.edu
-  servername: harifet-manam-9.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-  ws-opts:
-    headers:
-      Host: harifet-manam-9.com
-    path: /?ed=2560
-- name: 15|JP_speednode_0009
-  network: ws
-  port: 80
-  server: bwdraper.faculty.ucdavis.edu
-  servername: harifet-manam-8.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-  ws-opts:
-    headers:
-      Host: harifet-manam-8.com
-    path: /?ed=2560
+      Host: www.zitian.cn

@@ -1,69 +1,71 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-2
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
-  password: amazonskr05
-  port: 443
-  server: 54.202.63.77
-  type: ss
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-4
+  name: 0|-https://t.me/MrXbin-2
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.11
   type: ss
   udp: true
 - cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-4
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  type: ss
+  udp: true
+- cipher: rc4-md5
   name: 0|-https://t.me/MrXbin-5
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 193.108.119.230
+  server: 23.251.121.242
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 54.203.0.206
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-7
+  password: amazonskr05
+  port: 443
+  server: 35.91.173.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-8
+  password: amazonskr05
+  port: 443
+  server: 18.237.72.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-9
+  password: amazonskr05
+  port: 443
+  server: 54.169.221.38
   type: ss
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-12
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13620
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: hfa1.cdn.node.a.tddns-ounk.com
-  type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-37
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- name: 0|-https://t.me/MrXbin-121
+  name: 0|-https://t.me/MrXbin-10
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 194.5.215.59
+  type: ss
+  udp: true
+- name: 0|-https://t.me/MrXbin-115
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49782
+  server: 7c0bb8d8872425b41520a1a9ad77fa89.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0|-https://t.me/MrXbin-118
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 48539
   server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- name: 0|-https://t.me/MrXbin-122
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 49089
-  server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: jp12.bilibili.com
-  type: trojan
-  udp: true
-- name: 0,15|HK_speednode_0005
+- name: 0,15|HK_speednode_0011
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 44991
   server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green
@@ -71,13 +73,21 @@ proxies:
   sni: us1.bilibili.com
   type: trojan
   udp: true
-- name: 0,15|HK_speednode_0004
+- name: 0,15|HK_speednode_0010
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 41790
-  server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
+  port: 41288
+  server: 218.190.230.207
   skip-cert-verify: true
-  sni: us1.bilibili.com
+  sni: hk12.bilibili.com
   type: trojan
+- name: 0|-https://t.me/MrXbin-131
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49089
+  server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+  udp: true
 - name: '7,8,12|@v2rayCrow #9'
   password: 2d347be7-909b-4410-af92-95a1abf7e531
   port: 35000
@@ -240,6 +250,14 @@ proxies:
   sni: us3.xiaoliyu.us
   tls: false
   type: hysteria2
+- name: 8|Mci-@V2ray_Raha-05
+  password: 59560185-e1e5-49a0-b2c6-1f8a60505e99
+  port: 8080
+  server: 45.140.169.231
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 8|WiFi-@V2ray_Raha-8
   password: 5cdeddf6-0c70-4655-b875-810670cec256
   port: 443
@@ -252,6 +270,14 @@ proxies:
   port: 443
   server: jiumaojiu-lu.legeth.xyz
   skip-cert-verify: false
+  tls: false
+  type: hysteria2
+- name: 8|Mci-@V2ray_Raha-04
+  password: 67d6bf94-9eb9-488b-aeec-baace20433d1
+  port: 8080
+  server: 45.140.169.231
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: 8|MCI-@V2ray_Raha-7
@@ -310,14 +336,6 @@ proxies:
   sni: du.wish.ml
   tls: false
   type: hysteria2
-- name: 8|IR-@V2ray_Alpha-04
-  password: 84854B66-8478-4B87-8C0D-CD1699426C41
-  port: 9270
-  server: 43.199.156.119
-  skip-cert-verify: false
-  sni: hk5.ddns-link-b5.uk
-  tls: false
-  type: hysteria2
 - name: 8|IR-@V2ray_Alpha-01
   password: 8ea05545-2dc7-4487-8005-b7d581169945
   port: 55215
@@ -368,14 +386,6 @@ proxies:
   sni: kevin.serverv.net
   tls: false
   type: hysteria2
-- name: 8|IR-@V2ray_Alpha-05
-  password: a51c8701-ae69-4976-9b23-cafb8d12ef60
-  port: 8080
-  server: 45.140.169.231
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: 8|IR-@V2ray_Raha-3
   password: bc97f674-c578-4940-9234-0a1da46041b9
   port: 24662
@@ -384,7 +394,15 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '8|IR-@V2ray_Alpha-05 #1'
+- name: 8|Mci-@V2ray_Raha-06
+  password: ksGeWd8r9Rz8
+  port: 16424
+  server: 107.175.70.80
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|IR-@V2ray_Alpha-05
   obfs: salamander
   obfs-password: 6u33lecx372cssb22nzgu5l5fpdhom4ivqwg4fqby133lzsv3q
   password: nRSmYP828VP1UwxlAnWEbmEtlLSH5SE7
@@ -553,7 +571,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '8|IR-@V2ray_Alpha-04 #1'
+- name: 8|IR-@V2ray_Alpha-04
   password: sysadmin.sysadmin
   port: 443
   server: 37.123.193.73
@@ -618,7 +636,7 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
-- name: 13,14|香港2|@ripaojiedian
+- name: 13,14,15|CN_speednode_0004
   network: tcp
   password: QwwHvrnN
   port: 25241
@@ -699,7 +717,7 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: /?ed=2560
-- name: 13,14|日本|@ripaojiedian
+- name: 13,14,15|CN_speednode_0003
   network: tcp
   password: QwwHvrnN
   port: 31071
@@ -871,13 +889,30 @@ proxies:
   tls: false
   type: vmess
   uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
-- name: 15|HK_speednode_0003
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 48539
-  server: 43.199.143.90
+- name: 15|CN_speednode_0005
+  password: DNUMdmnJ
+  port: 51377
+  server: 36.151.192.242
   skip-cert-verify: true
-  sni: hk12.bilibili.com
   type: trojan
+- name: 15|DE_speednode_0007
+  network: ws
+  port: 443
+  server: 57.129.55.94
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 8e6c2e8d-3574-4cea-bb03-118e5cb9cc13
+  ws-opts:
+    path: /
+- name: 15|FI_speednode_0008
+  network: tcp
+  port: 38142
+  server: 212.237.218.123
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 26721978-890e-4946-bafa-cb03c9ff7f4a
 - alpn:
   - http/1.1
   name: 15,16|d*********g.com_3
@@ -894,59 +929,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 15|JP_speednode_0007
-  network: ws
-  port: 80
-  server: pscresearch.faculty.ucdavis.edu
-  servername: harifet-manam-6.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-  ws-opts:
-    headers:
-      Host: harifet-manam-6.com
-    path: /?ed=2560
-- name: 15|JP_speednode_0008
-  network: ws
-  port: 80
-  server: zmaoz.faculty.ucdavis.edu
-  servername: harifet-manam-9.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-  ws-opts:
-    headers:
-      Host: harifet-manam-9.com
-    path: /?ed=2560
-- name: 15|JP_speednode_0009
-  network: ws
-  port: 80
-  server: bwdraper.faculty.ucdavis.edu
-  servername: harifet-manam-8.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-  ws-opts:
-    headers:
-      Host: harifet-manam-8.com
-    path: /?ed=2560
-- name: 15|US_speednode_0034
-  network: ws
-  port: 443
-  server: 165.1.74.145
-  servername: cc.aimercc.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9df625ba-7d04-405d-9d54-2c8c1e5fbccb
-  ws-opts:
-    headers:
-      Host: cc.aimercc.filegear-sg.me
-    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
-- name: 15|US_speednode_0057
+- name: 15|US_speednode_0015
   network: ws
   port: 80
   server: 151.101.192.155
@@ -959,7 +942,7 @@ proxies:
     headers:
       Host: iranvpn.com.
     path: /?ed=1024
-- name: 15|US_speednode_0103
+- name: 15|US_speednode_0017
   network: ws
   port: 80
   server: hajlab.ucdavis.edu
@@ -971,6 +954,306 @@ proxies:
   ws-opts:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v02.TzZLiMitTNeWz.NeT
+    path: /
+- name: 15|US_speednode_0018
+  network: ws
+  port: 443
+  server: 69.84.182.234
+  servername: cc.aimercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 9df625ba-7d04-405d-9d54-2c8c1e5fbccb
+  ws-opts:
+    headers:
+      Host: cc.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 15|US_speednode_0019
+  network: ws
+  port: 443
+  server: 69.84.182.164
+  servername: cc.aimercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 9df625ba-7d04-405d-9d54-2c8c1e5fbccb
+  ws-opts:
+    headers:
+      Host: cc.aimercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: safari
+  name: 15|US_speednode_0022
+  network: ws
+  port: 443
+  server: 199.232.125.59
+  servername: JOiN--E-L-I-V-2-R-A-Y.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 9a2eeb28-0baa-5f9a-9926-ac3189543551
+  ws-opts:
+    headers:
+      Host: JOiN--E-L-I-V-2-R-A-Y.net
+    path: /
+- name: 15|US_speednode_0023
+  network: ws
+  port: 443
+  server: 69.84.182.90
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0024
+  network: ws
+  port: 443
+  server: 198.62.62.193
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
+- name: 15|US_speednode_0025
+  network: ws
+  port: 443
+  server: 198.62.62.254
+  servername: cc.aimercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 9df625ba-7d04-405d-9d54-2c8c1e5fbccb
+  ws-opts:
+    headers:
+      Host: cc.aimercc.filegear-sg.me
+    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
+- name: 15|US_speednode_0026
+  network: ws
+  port: 443
+  server: 198.62.62.171
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0028
+  network: ws
+  port: 443
+  server: 198.62.62.139
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0029
+  network: ws
+  port: 443
+  server: 198.62.62.203
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0030
+  network: ws
+  port: 443
+  server: 198.62.62.209
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0031
+  network: ws
+  port: 443
+  server: 198.62.62.170
+  servername: cc.aimercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 9df625ba-7d04-405d-9d54-2c8c1e5fbccb
+  ws-opts:
+    headers:
+      Host: cc.aimercc.filegear-sg.me
+    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
+- name: 15|US_speednode_0032
+  network: ws
+  port: 80
+  server: 151.101.3.8
+  servername: c2.tehran.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 3db9e150-3ce2-46e0-9075-3adc1fa06a18
+  ws-opts:
+    headers:
+      Host: c2.tehran.org
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=443
+- name: 15|US_speednode_0033
+  network: ws
+  port: 443
+  server: 198.62.62.227
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0034
+  network: ws
+  port: 80
+  server: 151.101.3.8
+  servername: c3.tehran.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 1dd834f8-326f-48e6-96ce-113e816ad69d
+  ws-opts:
+    headers:
+      Host: c3.tehran.org
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=443
+- name: 15|US_speednode_0035
+  network: ws
+  port: 80
+  server: vmessorg.fastly80-3.hosting-ip.com
+  servername: TEL.VMESSORG.http.www.speedtest.net.fast.com.1vmessorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e5cb801c-4f18-4f02-bfb9-5b6ada462e8d
+  ws-opts:
+    headers:
+      Host: TEL.VMESSORG.http.www.speedtest.net.fast.com.1vmessorg.ir
+    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
+- name: 15|US_speednode_0036
+  network: ws
+  port: 443
+  server: 69.84.182.70
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
+- name: 15|US_speednode_0037
+  network: ws
+  port: 443
+  server: 198.62.62.142
+  servername: aba.zhuk.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: aba.zhuk.us.kg
+    path: /youlingkaishi
+- name: 15|US_speednode_0038
+  network: ws
+  port: 80
+  server: 151.101.3.8
+  servername: c1.tehran.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: c22e74d5-578d-4578-8daf-14e10961f83a
+  ws-opts:
+    headers:
+      Host: c1.tehran.org
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=443
+- name: 15|US_speednode_0040
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  servername: iranvpn.com.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 59260bc4-8672-4573-b805-a372efc200b8
+  ws-opts:
+    headers:
+      Host: iranvpn.com.
+    path: /?ed=1024
+- name: 15|US_speednode_0045
+  network: ws
+  port: 443
+  server: hajlab.ucdavis.edu
+  servername: hajlab.ucdavis.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 51b73dc1-a711-49ea-8d9c-9ddf428b7cd2
+  ws-opts:
+    headers:
+      Host: joinshhproxybedeeeee.ir
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
+- name: 15|US_speednode_0047
+  network: ws
+  port: 8080
+  server: 104.19.54.231
+  servername: joinbedevmessorg.xn--54qv00ez5ar77g.co.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: afda0083-5380-4a2f-9076-e9aba3958946
+  ws-opts:
+    headers:
+      Host: joinbedevmessorg.xn--54qv00ez5ar77g.co.
+    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=8080
+- name: 15|US_speednode_0048
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  servername: join-bede-CONFIGT.OrG
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ab99638d-1d04-451c-92a4-89364d0570f4
+  ws-opts:
+    headers:
+      Host: join-bede-CONFIGT.OrG
+    path: /lW0tvTq4oSbHyKeRM?ed=2560
+- name: 15|US_speednode_0053
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: PABLO-MOSTAFAA.COM
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 605599ea-5656-5292-9314-5a313cbce920
+  ws-opts:
+    headers:
+      Host: PABLO-MOSTAFAA.COM
     path: /
 - alterId: 0
   cipher: auto
