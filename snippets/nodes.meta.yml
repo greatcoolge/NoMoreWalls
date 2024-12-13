@@ -1,21 +1,15 @@
 proxies:
 - cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-1
+  name: 0|-https://t.me/MrXbin-2
   password: asd123456
   port: 8388
   server: 103.36.91.32
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-2
-  password: amazonskr05
-  port: 443
-  server: 34.215.84.62
-  type: ss
-- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-3
   password: amazonskr05
   port: 443
-  server: 54.200.220.184
+  server: 54.202.63.77
   type: ss
 - cipher: rc4-md5
   name: 0|-https://t.me/MrXbin-4
@@ -24,13 +18,44 @@ proxies:
   server: 107.155.57.11
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: rc4-md5
   name: 0|-https://t.me/MrXbin-5
-  password: amazonskr05
-  port: 443
-  server: 54.202.63.77
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
-- name: 0|-https://t.me/MrXbin-94
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-12
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13620
+  protocol: auth_aes128_md5
+  protocol-param: 524959:5u4MZ6
+  server: hfa1.cdn.node.a.tddns-ounk.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-37
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- name: 0|-https://t.me/MrXbin-121
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 48539
+  server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- name: 0|-https://t.me/MrXbin-122
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 49089
   server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
@@ -52,20 +77,6 @@ proxies:
   server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
   skip-cert-verify: true
   sni: us1.bilibili.com
-  type: trojan
-- name: 0|-https://t.me/MrXbin-100
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 49782
-  server: 7c0bb8d8872425b41520a1a9ad77fa89.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: jp12.bilibili.com
-  type: trojan
-- name: 0|-https://t.me/MrXbin-101
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 48539
-  server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
   type: trojan
 - name: '7,8,12|@v2rayCrow #9'
   password: 2d347be7-909b-4410-af92-95a1abf7e531
