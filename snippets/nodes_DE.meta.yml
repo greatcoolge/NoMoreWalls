@@ -1,1 +1,27 @@
-proxies: []
+proxies:
+- http-opts:
+    headers:
+      Host:
+      - Telewebion.com
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0006
+  network: http
+  port: 19984
+  server: 188.245.215.46
+  servername: Telewebion.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 13e15bfe-73f7-4bfe-a386-136451137fc3
+- client-fingerprint: chrome
+  name: 15|DE_speednode_0008
+  network: tcp
+  port: 8443
+  server: 89.187.169.71
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
