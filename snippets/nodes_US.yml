@@ -1,21 +1,39 @@
 proxies:
 - client-fingerprint: chrome
-  name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: usla.mjt000.com
+  name: 13|🇺🇸 美国|@ripaojiedian
+  password: xjN4xcuPGg55
+  port: 45800
+  server: h.522226.xyz
   skip-cert-verify: false
-  sni: usla.mjt000.com
+  sni: h.522226.xyz
   type: trojan
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇺🇸 美国2|@ripaojiedian
-  password: 89b90001-4206-4871-a99d-1744d48f215b
-  port: 4001
-  server: 31.59.111.4
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 5f60da64-5a9a-4fe3-925d-4dd45084816e
+- name: 14|美国|@ripaojiedian
+  network: tcp
+  password: xjN4xcuPGg55
+  port: 45800
+  server: h.522226.xyz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 14|美国2|@ripaojiedian
+  network: tcp
+  port: '45053'
+  server: xdd.dashuai.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5f60da64-5a9a-4fe3-925d-4dd45084816e
 - name: 15|US_speednode_0031
   network: ws
   password: tg-fq521free
