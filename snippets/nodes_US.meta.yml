@@ -34,7 +34,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 5f60da64-5a9a-4fe3-925d-4dd45084816e
-- name: 15|US_speednode_0029
+- name: 15|US_speednode_0022
+  network: ws
+  port: 8080
+  server: xn--b6gac.eu.org
+  servername: wwwvisacomsg.mshcgb8q.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 464d644c-9c10-4c02-9117-4c75b0c347cd
+  ws-opts:
+    headers:
+      Host: wwwvisacomsg.mshcgb8q.workers.dev
+    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
+- name: 15|US_speednode_0023
   network: ws
   port: 443
   server: 199.232.125.43
@@ -47,19 +60,7 @@ proxies:
     headers:
       Host: ELI-V2-RAY.COM
     path: /
-- name: 15|US_speednode_0031
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: true
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 15|US_speednode_0040
+- name: 15|US_speednode_0024
   network: ws
   password: tg-fq521free
   port: 443
@@ -71,3 +72,41 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
+- name: 15|US_speednode_0026
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: true
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 15|US_speednode_0027
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5ca4947a-3a0e-458e-9701-11e6805dae8f
+  ws-opts:
+    headers:
+      Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
+    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
+- name: 15|US_speednode_0029
+  network: ws
+  port: 22222
+  server: 98.85.198.21
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
