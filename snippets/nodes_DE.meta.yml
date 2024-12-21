@@ -1,17 +1,29 @@
 proxies:
-- http-opts:
-    headers:
-      Host:
-      - Telewebion.com
-    method: GET
-    path:
-    - /
-  name: 15|DE_speednode_0005
-  network: http
-  port: 19984
-  server: 188.245.215.46
-  servername: Telewebion.com
+- name: 15|DE_speednode_0004
+  network: ws
+  port: 2053
+  server: 141.147.47.32
+  servername: 1223-9ux.pages.dev
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
-  uuid: 13e15bfe-73f7-4bfe-a386-136451137fc3
+  udp: true
+  uuid: 6285e567-0c25-4ce2-a2fa-80517c1345e1
+  ws-opts:
+    headers:
+      Host: 1223-9ux.pages.dev
+    path: /?ed=2048
+- name: 15|DE_speednode_0005
+  network: ws
+  port: 2053
+  server: 141.147.61.116
+  servername: 1223-9ux.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6285e567-0c25-4ce2-a2fa-80517c1345e1
+  ws-opts:
+    headers:
+      Host: 1223-9ux.pages.dev
+    path: /?ed=2048

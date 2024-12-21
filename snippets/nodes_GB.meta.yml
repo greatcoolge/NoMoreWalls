@@ -1,8 +1,15 @@
 proxies:
-- name: 15|GB_speednode_0006
-  password: 419298f0-bf0c-11ef-bc6c-1239d0255272
+- name: 15|GB_speednode_0007
+  network: ws
   port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: speedtest.net
-  type: trojan
+  server: 130.162.161.208
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
