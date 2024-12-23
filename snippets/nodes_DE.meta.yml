@@ -8,20 +8,16 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 15,16|d*********g.com_3
-  network: tcp
-  password: fuck
+- name: 15|DE_speednode_0013
+  network: ws
   port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
+  server: 193.122.58.158
+  servername: de.bolagskontaktstockholm.se
   skip-cert-verify: false
-  sni: www.zitian.cn
   tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  type: vless
+  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
   ws-opts:
     headers:
-      Host: www.zitian.cn
+      Host: de.bolagskontaktstockholm.se
+    path: /ws
