@@ -8,32 +8,20 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- http-opts:
-    headers:
-      Host:
-      - Telewebion.com
-    method: GET
-    path:
-    - /
-  name: 15|DE_speednode_0002
-  network: http
-  port: 19984
-  server: 188.245.215.46
-  servername: Telewebion.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 13e15bfe-73f7-4bfe-a386-136451137fc3
-- name: 15|DE_speednode_0004
-  network: ws
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
   port: 443
-  server: 212.224.93.93
-  servername: blog.codegethub.org
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: false
+  sni: www.zitian.cn
   tls: true
-  type: vless
-  uuid: 14ba4514-3846-45c0-aec6-444e5451b95c
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: blog.codegethub.org
-    path: /ws@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel
+      Host: www.zitian.cn
