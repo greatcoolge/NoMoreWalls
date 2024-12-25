@@ -49,14 +49,18 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 13,14|香港6|@ripaojiedian
-  network: tcp
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13005
-  server: naiu-hk.05vr9nyqg5.download
+  name: 13|🇭🇰 香港6|@ripaojiedian
+  network: ws
+  password: TGCitizenScyu
+  port: 443
+  server: cf.zhetengsha.eu.org
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  sni: maikeaxiang.me
   type: trojan
+  ws-opts:
+    headers:
+      Host: maikeaxiang.me
+    path: /?ed=2560
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -68,6 +72,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 13,14|香港8|@ripaojiedian
+  network: tcp
+  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
+  port: 13005
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -98,6 +111,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 14|香港6|@ripaojiedian
+  network: ws
+  password: TGCitizenScyu
+  port: 443
+  server: cf.zhetengsha.eu.org
+  sni: maikeaxiang.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: maikeaxiang.me
+    path: '%2F%3Fed%3D2560'
 - alterId: 64
   cipher: auto
   name: 14|香港7|@ripaojiedian
