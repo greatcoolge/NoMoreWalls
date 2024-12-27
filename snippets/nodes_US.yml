@@ -1,33 +1,19 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
+- client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
-  network: grpc
-  port: '443'
-  server: America.com
-  servername: us.anycast.us.kg
+  network: tcp
+  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
+  port: 13021
+  server: naiu-us.05vr9nyqg5.download
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '13,14|美国|@ripaojiedian #1'
-  network: ws
-  port: '10004'
-  server: 45.154.207.99
-  servername: ''
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|美国2|@ripaojiedian
+  network: tcp
+  password: 2add6241-8fe8-3922-8347-da25e8ced601
+  port: 50062
+  server: 125.88.149.205
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 0084b5d0-8966-4398-87f8-d5d8b64aa356
-  ws-opts:
-    headers:
-      Host: ''
-    path: github.com/Alvin9999
+  sni: sjc.doubledou.icu
+  type: trojan
