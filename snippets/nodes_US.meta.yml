@@ -1,22 +1,25 @@
 proxies:
-- client-fingerprint: chrome
-  name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13021
-  server: naiu-us.05vr9nyqg5.download
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国|@ripaojiedian
+  port: 30895
+  server: 156.251.189.225
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14|美国2|@ripaojiedian
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5f011b57-a456-45ae-aa2c-f976780e56c3
+- alterId: 0
+  cipher: auto
+  name: 14|美国|@ripaojiedian
   network: tcp
-  password: 2add6241-8fe8-3922-8347-da25e8ced601
-  port: 50062
-  server: 125.88.149.205
-  skip-cert-verify: false
-  sni: sjc.doubledou.icu
-  type: trojan
+  port: '30895'
+  server: 156.251.189.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5f011b57-a456-45ae-aa2c-f976780e56c3
 - name: 15|US_speednode_0039
   network: ws
   port: 8880

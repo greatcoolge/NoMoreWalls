@@ -48,14 +48,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 154.197.26.120
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 13,14|香港6|@ripaojiedian
+  network: tcp
+  password: 2add6241-8fe8-3922-8347-da25e8ced601
+  port: 12345
+  server: 120.233.26.140
+  skip-cert-verify: false
+  sni: bestbgp.doubledou.icu
+  type: trojan
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -67,15 +68,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 13,14|香港8|@ripaojiedian
-  network: tcp
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13005
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
 - alterId: 64
   cipher: auto
   name: 14|香港3|@ripaojiedian
