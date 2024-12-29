@@ -1,14 +1,12 @@
 proxies:
-- name: 15|DE_speednode_0035
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15|DE_speednode_0007
+  network: tcp
   port: 443
-  server: 45.63.117.50
-  servername: cpanel3.sassanidempire.com
+  server: us-w-s3.riot-cdn.com
+  servername: contents.riot-cdn.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: fcf99985-147b-4c71-c3f2-f448e5a379f1
-  ws-opts:
-    headers:
-      Host: cpanel3.sassanidempire.com
-    path: /ws
+  uuid: 61eb66a8-bc41-491e-a8dc-270874140f41
