@@ -31,8 +31,48 @@ proxies:
   tls: true
   type: vmess
   uuid: 2c610eac-882d-3944-a7c4-674c033f0073
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- client-fingerprint: safari
+  name: 15|US_speednode_0046
+  network: tcp
+  port: 18443
+  reality-opts:
+    public-key: 8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s
+    short-id: e6658462
+  server: phx-plus-1ddns.faforex.eu.org
+  servername: www.tesla.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 311faab5-5e89-4f41-b2a4-ca4452508cc6
+- name: 15|US_speednode_0047
+  network: tcp
+  port: 443
+  server: 147.135.4.2
+  servername: 147135004002.sec20org.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
 - client-fingerprint: ios
-  name: 15|US_speednode_0020
+  name: 15|US_speednode_0048
   network: tcp
   port: 18443
   reality-opts:
@@ -44,14 +84,3 @@ proxies:
   tls: true
   type: vless
   uuid: 86206c88-b8e3-4cb3-8932-3ca6ea1b6033
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|US_speednode_0021
-  network: tcp
-  port: 443
-  server: 209.141.53.75
-  servername: contents.riot-cdn.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 61eb66a8-bc41-491e-a8dc-270874140f41
