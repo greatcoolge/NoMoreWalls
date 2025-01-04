@@ -1,1 +1,33 @@
-proxies: []
+proxies:
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /@lombo_channel@lombo_channel@lombo_channel@lombo_channel@lombo_channel
+  name: 15|DE_speednode_0029
+  network: http
+  port: 48397
+  server: 209.38.190.74
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 4c7512e3-d919-4dcb-a9ad-7c24cf933259
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0039
+  network: http
+  port: 80
+  server: 2na9noed62ec.dopraxrocks.com
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5c4f6ca8-b824-48de-8f33-ec3c9eda1c5e
