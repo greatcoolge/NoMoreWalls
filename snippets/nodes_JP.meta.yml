@@ -1,10 +1,36 @@
 proxies:
+- client-fingerprint: chrome
+  name: 13,14|日本|@ripaojiedian
+  network: tcp
+  password: 4687b1d7-dbc4-49f4-95d7-74b5048696de
+  port: 28721
+  server: wb.kaiqsz.com
+  skip-cert-verify: false
+  sni: mmbiz1.redapricotcloud.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|日本2|@ripaojiedian
+  network: ws
+  port: '21001'
+  server: csct.xxxxxx.one
+  servername: jp1.runjustfast.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 437c6b4b-d508-4662-a508-cf3337b836b3
+  ws-opts:
+    headers:
+      Host: jp1.runjustfast.com
+    path: /21a64xdea04c
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.249.152.9
+  server: 122.248.193.242
   tfo: false
   type: ss
 - name: 15|JP_speednode_0044
