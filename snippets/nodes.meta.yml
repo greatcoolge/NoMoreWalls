@@ -1,98 +1,37 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-2
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
+  password: qwerREWQ@@
+  port: 40915
+  server: 168.126.234.233
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-4
+  name: 0|-https://t.me/MrXbin-3
   password: amazonskr05
   port: 443
-  server: 57.180.61.213
+  server: 35.88.145.21
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-4
+  password: qwerREWQ@@
+  port: 7544
+  server: 125.141.26.12
+  type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-5
   password: amazonskr05
   port: 443
-  server: 35.85.54.63
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-6
-  password: J0lgxy4mb52CIJ8UUcEgts
-  port: 3089
-  server: 51.13.182.231
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
-  password: amazonskr05
-  port: 443
   server: 43.203.122.162
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-9
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-10
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.199
-  type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-13
+  name: 0|-https://t.me/MrXbin-11
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-15
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13227
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: xrbsy1.cdn.node.a.tddns-ounk.com
-  type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-18
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13497
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: xrbsy1.cdn.node.a.tddns-ounk.com
-  type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-19
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13221
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: xrbsy1.cdn.node.a.tddns-ounk.com
-  type: ssr
-- name: 0|-https://t.me/MrXbin-30
-  password: wkmY1R4EcP
-  port: 443
-  server: 216.128.147.13
-  skip-cert-verify: true
-  sni: z-v2-003274.kailib.com
-  type: trojan
-  udp: true
 - name: '7,12|@vpnv2rayNGv #2'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -454,73 +393,77 @@ proxies:
   port: 443
   server: sg02.trojanyyds.xyz
   type: trojan
-- name: 15|CN_speednode_0003
+- name: 15|AM_speednode_0001
+  network: ws
+  password: SSorg
+  port: 2083
+  server: 188.164.159.91
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|CN_speednode_0004
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21332
   server: 120.232.217.96
   skip-cert-verify: true
   sni: 120.232.217.96
   type: trojan
-- http-opts:
+- name: 15|CN_speednode_0005
+  password: lovemm.23
+  port: 22889
+  server: 42.192.52.227
+  type: socks5
+  username: zeaslity
+- alpn:
+  - http/1.1
+  http-opts:
     headers:
       Host:
-      - fast.com
+      - m-net.speedtestcustom.com
     method: GET
     path:
     - /
-  name: 15|IR_speednode_0005
-  network: http
-  port: 33410
-  server: p2.daryashopvip.site
-  servername: fast.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 3398ed24-c8dc-4c10-b998-56f607aa0db5
-- http-opts:
-    headers:
-      Host:
-      - fast.com
-    method: GET
-    path:
-    - /
-  name: 15|IR_speednode_0006
-  network: http
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
   port: 443
-  server: p1.daryashopvip.site
-  servername: fast.com
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 944c6cec-9763-4852-bb7c-023ca7d8603d
-- http-opts:
-    headers:
-      Host:
-      - fast.com
-    method: GET
-    path:
-    - /
-  name: 15|IR_speednode_0007
-  network: http
-  port: 34854
-  server: p3.daryashopvip.site
-  servername: fast.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9ef8c0be-084c-4c57-bdba-ac888a5f3ade
-- name: 15|JP_speednode_0008
-  network: ws
-  port: 443
-  server: 34.146.42.164
-  servername: jp.liulisanwan.cn
-  skip-cert-verify: false
+  sni: www.zitian.cn
   tls: true
-  type: vless
-  uuid: 75c4925b-0afb-478e-b474-eb83411341a1
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: jp.liulisanwan.cn
+      Host: www.zitian.cn
+- name: 15|FR_speednode_0007
+  network: ws
+  password: SSorg
+  port: 8443
+  server: 88.218.78.95
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|JP_speednode_0008
+  network: ws
+  password: SSorg
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
     path: /
 - http-opts:
     headers:
@@ -538,6 +481,42 @@ proxies:
   tls: false
   type: vless
   uuid: 677a41e5-dbe6-429b-8f91-cc014b1ae1bd
+- name: 15|NL_speednode_0010
+  network: ws
+  password: SSorg
+  port: 8443
+  server: 185.204.109.190
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|SC_speednode_0012
+  network: ws
+  password: SSorg
+  port: 443
+  server: 154.197.64.67
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|SC_speednode_0013
+  network: ws
+  password: SSorg
+  port: 8443
+  server: 154.197.64.248
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
 - name: 15|SE_speednode_0014
   network: ws
   port: 2501
@@ -551,7 +530,32 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|US_speednode_0016
+- name: 15|SG_speednode_0015
+  network: ws
+  password: SSorg
+  port: 443
+  server: 206.238.236.134
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|TR_speednode_0016
+  network: ws
+  port: 2501
+  server: 95.164.116.22
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0017
   network: ws
   port: 80
   server: 167.82.0.147
@@ -564,7 +568,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0017
+- name: 15|US_speednode_0018
   network: ws
   port: 80
   server: 167.82.0.37
@@ -577,23 +581,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- alpn:
-  - http/1.1
-  name: 15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: false
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- name: 15|US_speednode_0019
+- name: 15|US_speednode_0021
   network: ws
   port: 80
   server: 167.82.1.102
@@ -606,7 +594,7 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /?ed=2048
-- name: 15|US_speednode_0021
+- name: 15|US_speednode_0022
   network: ws
   port: 80
   server: 167.82.0.141
@@ -619,20 +607,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0022
-  network: ws
-  port: 80
-  server: 167.82.1.103
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /?ed=2560
-- name: 15|US_speednode_0024
+- name: 15|US_speednode_0023
   network: ws
   port: 80
   server: 167.82.0.103
@@ -648,19 +623,6 @@ proxies:
 - name: 15|US_speednode_0025
   network: ws
   port: 80
-  server: 167.82.0.1
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayja1?ed=2560
-- name: 15|US_speednode_0026
-  network: ws
-  port: 80
   server: 167.82.0.46
   servername: edge.validbv3528.ir
   skip-cert-verify: false
@@ -671,7 +633,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0027
+- name: 15|US_speednode_0026
   network: ws
   port: 80
   server: 167.82.0.9
@@ -684,7 +646,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0028
+- name: 15|US_speednode_0027
   network: ws
   port: 80
   server: 167.82.0.14
@@ -697,10 +659,23 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0028
+  network: ws
+  port: 80
+  server: 167.82.0.1
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayja1?ed=2560
 - name: 15|US_speednode_0029
   network: ws
   port: 80
-  server: 167.82.0.103
+  server: 167.82.1.103
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -709,112 +684,8 @@ proxies:
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
-    path: /
+    path: /?ed=2560
 - name: 15|US_speednode_0030
-  network: ws
-  port: 80
-  server: 167.82.69.101
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0031
-  network: ws
-  port: 80
-  server: 167.82.65.8
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0032
-  network: ws
-  port: 80
-  server: 167.82.71.3
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0033
-  network: ws
-  port: 80
-  server: 167.82.72.38
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0034
-  network: ws
-  port: 80
-  server: 167.82.65.80
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0035
-  network: ws
-  port: 80
-  server: 167.82.65.71
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0036
-  network: ws
-  port: 80
-  server: 167.82.70.214
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 15|US_speednode_0037
-  network: ws
-  port: 80
-  server: 167.82.0.47
-  servername: teleirani.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560
-- name: 15|US_speednode_0038
   network: ws
   port: 80
   server: 167.82.0.242
@@ -827,7 +698,7 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560
-- name: 15|US_speednode_0039
+- name: 15|US_speednode_0031
   network: ws
   port: 80
   server: 167.82.0.226
@@ -840,10 +711,10 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560
-- name: 15|US_speednode_0040
+- name: 15|US_speednode_0032
   network: ws
   port: 80
-  server: 167.82.66.165
+  server: 167.82.0.47
   servername: teleirani.ir
   skip-cert-verify: false
   tls: false
@@ -853,7 +724,20 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560
-- name: 15|US_speednode_0041
+- name: 15|US_speednode_0033
+  network: ws
+  port: 80
+  server: 167.82.0.103
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /
+- name: 15|US_speednode_0034
   network: ws
   port: 80
   server: 167.82.1.121
@@ -866,7 +750,7 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560
-- name: 15|US_speednode_0042
+- name: 15|US_speednode_0035
   network: ws
   port: 80
   server: 167.82.72.38
@@ -878,8 +762,60 @@ proxies:
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
-    path: /
-- name: 15|US_speednode_0046
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0036
+  network: ws
+  port: 80
+  server: 167.82.66.165
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560
+- name: 15|US_speednode_0037
+  network: ws
+  port: 80
+  server: 167.82.65.71
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0038
+  network: ws
+  port: 80
+  server: 167.82.71.3
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0039
+  network: ws
+  port: 80
+  server: 167.82.70.214
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0040
   network: ws
   port: 80
   server: 198.41.216.118
@@ -892,7 +828,20 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 15|US_speednode_0050
+- name: 15|US_speednode_0041
+  network: ws
+  port: 80
+  server: 167.82.65.80
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0042
   network: ws
   port: 80
   server: 151.101.3.8
@@ -905,27 +854,20 @@ proxies:
     headers:
       Host: 49.org
     path: /telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee?ed=2095
-- name: 15|US_speednode_0052
-  port: 30944
-  server: 107.172.157.148
+- name: 15|US_speednode_0043
+  network: ws
+  port: 80
+  server: 167.82.72.38
+  servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 819664e1-26f2-49db-8025-b18adee8fd2c
-- name: 15|US_speednode_0053
-  network: ws
-  port: 443
-  server: fishlab.ucdavis.edu
-  servername: fishlab.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 57624c33-1ab8-405e-9358-03bec36f0642
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
   ws-opts:
     headers:
-      Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
-- name: 15|US_speednode_0054
+      Host: edge.validbv3528.ir
+    path: /
+- name: 15|US_speednode_0044
   network: ws
   port: 80
   server: 151.101.3.8
@@ -938,33 +880,7 @@ proxies:
     headers:
       Host: VpnWedbaz-VpnWedbaz.SS
     path: /@VpnWedbaz-----@VpnWedbaz?ed=2560
-- name: 15|US_speednode_0055
-  network: ws
-  port: 80
-  server: NUFiLTER.fastly80.hosting-ip.com
-  servername: Germany2-nufilter.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 1917caae-f3d3-47d6-bfaa-d863a9ee941e
-  ws-opts:
-    headers:
-      Host: Germany2-nufilter.com
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=888
-- name: 15|US_speednode_0056
-  network: ws
-  port: 443
-  server: bestcf.liuli3wan2.me
-  servername: orsj1.1541241.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e042ac3d-6de5-49c6-984c-beaf976f8242
-  ws-opts:
-    headers:
-      Host: orsj1.1541241.xyz
-    path: /ymmzws
-- name: 15|US_speednode_0057
+- name: 15|US_speednode_0045
   network: ws
   port: 443
   server: 198.41.192.239
@@ -977,21 +893,7 @@ proxies:
     headers:
       Host: usb.warpo.me
     path: /bing
-- client-fingerprint: ios
-  name: 15|US_speednode_0058
-  network: ws
-  port: 2052
-  server: bbq2.kuailejc.xyz
-  servername: dddomg.kuailejc.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 6657eaa4-6e21-4fd1-9a7f-157b23236aa4
-  ws-opts:
-    headers:
-      Host: dddomg.kuailejc.xyz
-    path: /kuaile2024
-- name: 15|US_speednode_0059
+- name: 15|US_speednode_0046
   network: ws
   port: 443
   server: 141.101.123.208
@@ -1003,6 +905,173 @@ proxies:
   ws-opts:
     headers:
       Host: usa.warpo.me
+    path: /bing
+- name: 15|US_speednode_0047
+  network: ws
+  port: 80
+  server: 167.82.0.242
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0049
+  network: ws
+  password: SSorg
+  port: 2096
+  server: 108.165.152.29
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|US_speednode_0050
+  network: ws
+  password: SSorg
+  port: 2083
+  server: 108.165.152.80
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
+- name: 15|US_speednode_0052
+  network: ws
+  port: 80
+  server: 167.82.0.0
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /
+- name: 15|US_speednode_0053
+  network: ws
+  port: 80
+  server: 167.82.65.119
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- name: 15|US_speednode_0054
+  network: ws
+  port: 443
+  server: 151.101.130.133
+  servername: www.sunshinecity.co.jp
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 81e5d802-a1ad-4639-9ea0-f2ad4265effb
+  ws-opts:
+    headers:
+      Host: externalch.org
+    path: /---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net?ed=2048
+- name: 15|US_speednode_0055
+  network: ws
+  port: 80
+  server: 151.101.3.8
+  servername: External_Net.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 81e5d802-a1ad-4639-9ea0-f2ad4265effb
+  ws-opts:
+    headers:
+      Host: External_Net.org
+    path: /
+- name: 15|US_speednode_0056
+  network: ws
+  port: 80
+  server: 167.82.1.136
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed=2048
+- name: 15|US_speednode_0057
+  network: ws
+  port: 80
+  server: 167.82.1.111
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed=2048
+- name: 15|US_speednode_0058
+  network: ws
+  port: 80
+  server: 173.245.49.53
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 15|US_speednode_0059
+  network: ws
+  port: 80
+  server: 103.21.244.190
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 15|US_speednode_0060
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: foffmelo.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fddedb06-250c-46e1-eca7-5df2e361192f
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: /olem/ws?ed=1024
+- name: 15|US_speednode_0063
+  network: ws
+  port: 443
+  server: 154.17.229.206
+  servername: dousa.monv.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f232ea17-b79f-4e64-d130-d3ce92b8e5b1
+  ws-opts:
+    headers:
+      Host: dousa.monv.me
     path: /bing
 - alterId: 0
   cipher: auto
