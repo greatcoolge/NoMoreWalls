@@ -8,14 +8,12 @@ proxies:
   skip-cert-verify: false
   sni: tw01.trojanyyds.xyz
   type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|🇹🇼 台湾2|@ripaojiedian
-  obfs: http_simple
-  obfs-param: download.microsoft.com
-  password: HUAHE
-  port: 1014
-  protocol: auth_aes128_md5
-  protocol-param: 149588:T0Nf4D5TYESB56Zp
-  server: v2-mixing.dnsluote.com
-  type: ssr
+- client-fingerprint: chrome
+  name: 13,14|台湾2|@ripaojiedian
+  network: tcp
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: false
+  sni: tw02.trojanyyds.xyz
+  type: trojan
