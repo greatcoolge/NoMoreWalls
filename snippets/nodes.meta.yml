@@ -1,31 +1,33 @@
 proxies:
-- cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-3
-  password: ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=
-  port: 54748
-  server: 195.15.254.25
-  type: ss
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-4
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.42.68
-  type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-5
+  name: 0|-https://t.me/MrXbin-1
   password: amazonskr05
   port: 443
-  server: 47.129.162.86
+  server: 35.90.11.23
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-12
+  name: 0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
+  server: 57.180.61.213
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-5
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 35.88.145.21
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-13
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -35,29 +37,16 @@ proxies:
 - alterId: 0
   cipher: auto
   h2-opts: {}
-  http-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
   name: 0|-https://t.me/MrXbin-16
-  network: ws
-  port: 55899
-  server: 5.39.252.204
+  network: http
+  port: 40866
+  server: 45.159.50.143
   type: vmess
-  uuid: 791a9aad-1a8b-435d-862e-627f41025d73
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-23
-  network: ws
-  port: 443
-  server: 163.5.159.231
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
+  uuid: 68227ff4-28f8-4564-9eef-8d3d3dacaf57
 - name: '7,12|@vpnv2rayNGv #2'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -164,7 +153,7 @@ proxies:
   server: ftq.ink
   tls: true
   type: http
-- name: 13,14,15|CN_speednode_0003
+- name: 13,14|香港|@ripaojiedian
   network: tcp
   password: vzhXXZVw
   port: 36442
@@ -381,93 +370,14 @@ proxies:
   port: 443
   server: sg02.trojanyyds.xyz
   type: trojan
-- name: 15|CN_speednode_0002
+- name: 15|CN_speednode_0001
   password: vzhXXZVw
   port: 12524
   server: 36.150.215.222
   skip-cert-verify: true
   type: trojan
-- name: 15|CN_speednode_0010
-  password: 7daf833c-37b9-4afc-8495-96590f03f781
-  port: 21332
-  server: 120.232.217.96
-  skip-cert-verify: true
-  sni: 120.232.217.96
-  type: trojan
-- name: 15|CN_speednode_0011
-  password: lovemm.23
-  port: 22889
-  server: 42.192.52.227
-  type: socks5
-  username: zeaslity
-- name: 15|DE_speednode_0013
-  password: '3723507166611775488'
-  port: 443
-  server: ample-cockatoo.boa152.lol
-  skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
-  type: trojan
-- name: 15|DE_speednode_0014
-  password: '3723507166611775488'
-  port: 443
-  server: 80.240.112.167
-  skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
-  type: trojan
-- http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    method: GET
-    path:
-    - /
-  name: 15|DE_speednode_0017
-  network: http
-  port: 80
-  server: 2na9noed62ec.dopraxrocks.com
-  servername: speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
-- http-opts:
-    headers:
-      Host:
-      - Speedtest.net
-    method: GET
-    path:
-    - /
-  name: 15|DE_speednode_0018
-  network: http
-  port: 1010
-  server: 159.69.35.198
-  servername: Speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
-- name: 15|ES_speednode_0019
-  network: ws
-  port: 8080
-  server: 94.250.246.200
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
 - alpn:
   - http/1.1
-  http-opts:
-    headers:
-      Host:
-      - tunnel-pro.yoooka.lol
-    method: GET
-    path:
-    - /
   name: 15,16|d*********g.com_3
   network: tcp
   password: fuck
@@ -482,6 +392,85 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- name: 15|DE_speednode_0006
+  password: Oe5CMj3tiO
+  port: 1935
+  server: 3.127.116.35
+  skip-cert-verify: false
+  sni: x2ger-amazon.devefun.net
+  type: trojan
+- name: 15|DE_speednode_0007
+  network: ws
+  port: 8443
+  server: xpnteam-chanell-join.jaricopen.sbs
+  servername: Upload.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d4317213-4c8b-4af6-b8ee-fb6ceba4a3b3
+  ws-opts:
+    headers:
+      Host: Upload.ir
+    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
+- http-opts:
+    headers:
+      Host:
+      - Speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0008
+  network: http
+  port: 1010
+  server: 159.69.35.198
+  servername: Speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0009
+  network: http
+  port: 80
+  server: 2na9noed62ec.dopraxrocks.com
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
+- name: 15|ES_speednode_0010
+  password: 9Bb6wjlTOA
+  port: 1935
+  server: 93.189.94.159
+  skip-cert-verify: false
+  sni: x14spain.devefun.net
+  type: trojan
+- name: 15|ES_speednode_0011
+  network: ws
+  port: 8080
+  server: 94.250.246.200
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|FR_speednode_0012
+  password: JFchk1TxFG
+  port: 1935
+  server: 13.39.244.105
+  skip-cert-verify: false
+  sni: x1fr-amazon.devefun.net
+  type: trojan
 - http-opts:
     headers:
       Host:
@@ -489,7 +478,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|FR_speednode_0021
+  name: 15|FR_speednode_0013
   network: http
   port: 22671
   server: 91.134.66.21
@@ -498,7 +487,7 @@ proxies:
   tls: false
   type: vless
   uuid: ebc5660f-bb9b-415c-94ab-d3630189ceb9
-- name: 15|HK_speednode_0022
+- name: 15|HK_speednode_0014
   port: 4000
   server: hk9.ftq.ink
   tls: true
@@ -510,7 +499,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|IR_speednode_0023
+  name: 15|IR_speednode_0015
   network: http
   port: 443
   server: p1.daryashopvip.site
@@ -519,34 +508,45 @@ proxies:
   tls: false
   type: vless
   uuid: 944c6cec-9763-4852-bb7c-023ca7d8603d
-- name: 15|JP_speednode_0024
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
+- http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
+  name: 15|IR_speednode_0016
+  network: http
+  port: 34854
+  server: p3.daryashopvip.site
+  servername: fast.com
   skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
-- name: 15|JP_speednode_0025
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
+  tls: false
+  type: vless
+  uuid: 9ef8c0be-084c-4c57-bdba-ac888a5f3ade
+- http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
+  name: 15|IR_speednode_0017
+  network: http
+  port: 33410
+  server: p2.daryashopvip.site
+  servername: fast.com
   skip-cert-verify: false
-  sni: us01.trojanyyds.xyz
-  type: trojan
-- name: 15|JP_speednode_0026
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
+  tls: false
+  type: vless
+  uuid: 3398ed24-c8dc-4c10-b998-56f607aa0db5
+- name: 15|JP_speednode_0020
+  port: 39353
+  server: 46.51.241.212
   skip-cert-verify: false
-  sni: us02.trojanyyds.xyz
-  type: trojan
-- name: 15|JP_speednode_0027
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: false
+  type: vless
+  uuid: 94884860-51d0-40dc-8e37-8090249edc5f
 - http-opts:
     headers:
       Host:
@@ -554,7 +554,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|NL_speednode_0028
+  name: 15|NL_speednode_0036
   network: http
   port: 23701
   server: 146.190.16.108
@@ -563,20 +563,14 @@ proxies:
   tls: false
   type: vless
   uuid: 677a41e5-dbe6-429b-8f91-cc014b1ae1bd
-- name: 15|NL_speednode_0029
-  network: ws
-  port: 8080
-  server: 45.149.12.205
-  servername: empty-tree-6008.jobaf49186.workers.dev
+- name: 15|RU_speednode_0039
+  port: 20011
+  server: 95.142.37.74
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 11f0eadd-9a8d-4791-ada3-4789ac3ff7ca
-  ws-opts:
-    headers:
-      Host: empty-tree-6008.jobaf49186.workers.dev
-    path: /vless-ws/@Azarbayjab1+@Azarbayjab1+@Azarbayjab1+@Azarbayjab1?ed=2560
-- name: 15|SE_speednode_0030
+  uuid: c26181b5-b49e-480e-a3d5-eb1583a1f38d
+- name: 15|SE_speednode_0040
   network: ws
   port: 2501
   server: 95.164.51.24
@@ -589,18 +583,31 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
-- name: 15|US_speednode_0031
+- name: 15|TR_speednode_0050
   network: ws
-  port: 443
-  server: 154.17.229.206
-  servername: dousa.monv.me
+  port: 2501
+  server: 95.164.116.22
+  servername: a.mifeng.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f232ea17-b79f-4e64-d130-d3ce92b8e5b1
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: dousa.monv.me
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 15|US_speednode_0054
+  network: ws
+  port: 443
+  server: 198.41.192.239
+  servername: usb.warpo.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e7934134-5395-47a7-bd90-f68a467e3971
+  ws-opts:
+    headers:
+      Host: usb.warpo.me
     path: /bing
 - alterId: 0
   cipher: auto

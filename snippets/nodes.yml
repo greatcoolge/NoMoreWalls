@@ -1,31 +1,33 @@
 proxies:
-- cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-3
-  password: ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=
-  port: 54748
-  server: 195.15.254.25
-  type: ss
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-4
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.42.68
-  type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-5
+  name: 0|-https://t.me/MrXbin-1
   password: amazonskr05
   port: 443
-  server: 47.129.162.86
+  server: 35.90.11.23
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-12
+  name: 0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
+  server: 57.180.61.213
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-5
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 35.88.145.21
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-13
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -35,30 +37,17 @@ proxies:
 - alterId: 0
   cipher: auto
   h2-opts: {}
-  http-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
   name: 0|-https://t.me/MrXbin-16
-  network: ws
-  port: 55899
-  server: 5.39.252.204
+  network: http
+  port: 40866
+  server: 45.159.50.143
   type: vmess
-  uuid: 791a9aad-1a8b-435d-862e-627f41025d73
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-23
-  network: ws
-  port: 443
-  server: 163.5.159.231
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- name: 13,14,15|CN_speednode_0003
+  uuid: 68227ff4-28f8-4564-9eef-8d3d3dacaf57
+- name: 13,14|香港|@ripaojiedian
   network: tcp
   password: vzhXXZVw
   port: 36442
@@ -275,61 +264,33 @@ proxies:
   port: 443
   server: sg02.trojanyyds.xyz
   type: trojan
-- name: 15|CN_speednode_0002
+- name: 15|CN_speednode_0001
   password: vzhXXZVw
   port: 12524
   server: 36.150.215.222
   skip-cert-verify: true
   type: trojan
-- name: 15|CN_speednode_0010
-  password: 7daf833c-37b9-4afc-8495-96590f03f781
-  port: 21332
-  server: 120.232.217.96
-  skip-cert-verify: true
-  sni: 120.232.217.96
-  type: trojan
-- name: 15|DE_speednode_0013
-  password: '3723507166611775488'
-  port: 443
-  server: ample-cockatoo.boa152.lol
+- name: 15|DE_speednode_0006
+  password: Oe5CMj3tiO
+  port: 1935
+  server: 3.127.116.35
   skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
+  sni: x2ger-amazon.devefun.net
   type: trojan
-- name: 15|DE_speednode_0014
-  password: '3723507166611775488'
-  port: 443
-  server: 80.240.112.167
+- name: 15|ES_speednode_0010
+  password: 9Bb6wjlTOA
+  port: 1935
+  server: 93.189.94.159
   skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
+  sni: x14spain.devefun.net
   type: trojan
-- name: 15|JP_speednode_0024
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
+- name: 15|FR_speednode_0012
+  password: JFchk1TxFG
+  port: 1935
+  server: 13.39.244.105
   skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
+  sni: x1fr-amazon.devefun.net
   type: trojan
-- name: 15|JP_speednode_0025
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: us01.trojanyyds.xyz
-  type: trojan
-- name: 15|JP_speednode_0026
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: us02.trojanyyds.xyz
-  type: trojan
-- name: 15|JP_speednode_0027
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 16|d*********g.com_2

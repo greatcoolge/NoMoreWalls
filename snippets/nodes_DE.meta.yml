@@ -1,34 +1,24 @@
 proxies:
-- name: 15|DE_speednode_0013
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: ample-cockatoo.boa152.lol
+- name: 15|DE_speednode_0006
+  password: Oe5CMj3tiO
+  port: 1935
+  server: 3.127.116.35
   skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
+  sni: x2ger-amazon.devefun.net
   type: trojan
-- name: 15|DE_speednode_0014
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: 80.240.112.167
-  skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
-  type: trojan
-- http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    method: GET
-    path:
-    - /
-  name: 15|DE_speednode_0017
-  network: http
-  port: 80
-  server: 2na9noed62ec.dopraxrocks.com
-  servername: speedtest.net
+- name: 15|DE_speednode_0007
+  network: ws
+  port: 8443
+  server: xpnteam-chanell-join.jaricopen.sbs
+  servername: Upload.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
+  uuid: d4317213-4c8b-4af6-b8ee-fb6ceba4a3b3
+  ws-opts:
+    headers:
+      Host: Upload.ir
+    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
 - http-opts:
     headers:
       Host:
@@ -36,7 +26,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|DE_speednode_0018
+  name: 15|DE_speednode_0008
   network: http
   port: 1010
   server: 159.69.35.198
@@ -45,3 +35,19 @@ proxies:
   tls: false
   type: vless
   uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0009
+  network: http
+  port: 80
+  server: 2na9noed62ec.dopraxrocks.com
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
