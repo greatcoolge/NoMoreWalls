@@ -1,25 +1,47 @@
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  http-opts:
+- name: 15|DE_speednode_0013
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: ample-cockatoo.boa152.lol
+  skip-cert-verify: false
+  sni: ample-cockatoo.boa152.lol
+  type: trojan
+- name: 15|DE_speednode_0014
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: 80.240.112.167
+  skip-cert-verify: false
+  sni: ample-cockatoo.boa152.lol
+  type: trojan
+- http-opts:
     headers:
       Host:
-      - m-net.speedtestcustom.com
+      - speedtest.net
     method: GET
     path:
     - /
-  name: 15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
+  name: 15|DE_speednode_0017
+  network: http
+  port: 80
+  server: 2na9noed62ec.dopraxrocks.com
+  servername: speedtest.net
   skip-cert-verify: false
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
+  tls: false
+  type: vless
+  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
+- http-opts:
     headers:
-      Host: www.zitian.cn
+      Host:
+      - Speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0018
+  network: http
+  port: 1010
+  server: 159.69.35.198
+  servername: Speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
