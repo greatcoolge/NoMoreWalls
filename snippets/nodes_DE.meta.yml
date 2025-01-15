@@ -2,11 +2,27 @@ proxies:
 - http-opts:
     headers:
       Host:
+      - Speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0011
+  network: http
+  port: 1010
+  server: 159.69.35.198
+  servername: Speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
+- http-opts:
+    headers:
+      Host:
       - speedtest.net
     method: GET
     path:
     - /
-  name: 15|DE_speednode_0005
+  name: 15|DE_speednode_0012
   network: http
   port: 80
   server: 2na9noed62ec.dopraxrocks.com
@@ -15,19 +31,6 @@ proxies:
   tls: false
   type: vless
   uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
-- name: 15|DE_speednode_0006
-  network: ws
-  port: 2053
-  server: tify-binex-join.espikernajafi.ir
-  servername: chess.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a6394e36-aa83-4613-f5af-9cb14d9488d5
-  ws-opts:
-    headers:
-      Host: chess.com
-    path: /telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560
 - alpn:
   - http/1.1
   client-fingerprint: chrome
