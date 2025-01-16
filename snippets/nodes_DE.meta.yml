@@ -2,27 +2,11 @@ proxies:
 - http-opts:
     headers:
       Host:
-      - Speedtest.net
-    method: GET
-    path:
-    - /
-  name: 15|DE_speednode_0012
-  network: http
-  port: 1010
-  server: 159.69.35.198
-  servername: Speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
-- http-opts:
-    headers:
-      Host:
       - speedtest.net
     method: GET
     path:
     - /
-  name: 15|DE_speednode_0013
+  name: 15|DE_speednode_0012
   network: http
   port: 80
   server: 2na9noed62ec.dopraxrocks.com
@@ -31,20 +15,19 @@ proxies:
   tls: false
   type: vless
   uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: false
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
+- http-opts:
     headers:
-      Host: www.zitian.cn
+      Host:
+      - Speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0013
+  network: http
+  port: 1010
+  server: 159.69.35.198
+  servername: Speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d2ab7136-f995-40b8-8b59-4f2ef0c5d590
