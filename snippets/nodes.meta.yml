@@ -1,21 +1,10 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-1
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)df1fab2:16569
-    mode: tls
-  port: 2377
-  server: 54.64.148.82
-  type: ss
-- cipher: chacha20-ietf
+- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-2
-  password: asd123456
-  port: 8388
-  server: 202.162.109.169
+  password: amazonskr05
+  port: 443
+  server: 34.222.155.226
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-3
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -27,17 +16,17 @@ proxies:
   server: 43.207.207.206
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-5
+  name: 0|-https://t.me/MrXbin-4
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
     host: (TG @WangCai2)df1fab2:16569
     mode: tls
   port: 2377
-  server: 23.247.137.165
+  server: 95.174.71.28
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-6
+  name: 0|-https://t.me/MrXbin-5
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -47,6 +36,16 @@ proxies:
   server: 95.174.71.29
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-6
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)df1fab2:16569
+    mode: tls
+  port: 2377
+  server: 54.64.148.82
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-7
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
@@ -54,52 +53,26 @@ proxies:
     host: (TG @WangCai2)df1fab2:16569
     mode: tls
   port: 2377
-  server: 95.174.71.28
+  server: 23.247.137.165
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
+  name: 0|-https://t.me/MrXbin-12
   password: qwerREWQ@@
-  port: 31066
-  server: 218.237.185.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-11
-  password: amazonskr05
-  port: 443
-  server: 54.199.222.156
+  port: 17725
+  server: 125.141.31.100
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-14
   password: amazonskr05
   port: 443
-  server: 34.222.155.226
+  server: 54.95.11.184
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-15
+  name: 0|-https://t.me/MrXbin-16
   password: amazonskr05
   port: 443
-  server: 13.125.6.123
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,13|🇰🇷 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: 43104
-  server: p221.panda001.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-17
-  password: qwerREWQ@@
-  port: 43104
-  server: 125.141.31.103
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-18
-  password: qwerREWQ@@
-  port: 34847
-  server: 218.50.149.114
+  server: 35.94.25.109
   type: ss
   udp: true
 - name: '7,12|@vpnv2rayNGv #2'
@@ -120,15 +93,31 @@ proxies:
   sni: www.eliv2ray.net
   tls: false
   type: hysteria2
-- name: 8|Ir-@V2ray_Raha-3
-  password: 1c0b8d7b-5617-4a07-acd2-315da2340ec9
+- name: 8|@meli_proxyy
+  password: 01a4c9b1-7a34-469d-ba13-f763bf21f6f9
   port: 443
-  server: 209.141.42.49
-  skip-cert-verify: true
-  sni: www.bing.com
+  server: meiyou-us.jiumaojiu.org
+  skip-cert-verify: false
+  sni: meiyou-us.jiumaojiu.org
   tls: false
   type: hysteria2
-- name: 8|@V2ray1_Ng
+- name: '8|@meli_proxyy #1'
+  password: '123456'
+  port: 443
+  server: 192.3.85.237
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 8|MCI-@V2ray_Raha-13
+  password: 15cca331-9e92-449d-93b0-25f82203595f
+  port: 20309
+  server: gb.gomeow.online
+  skip-cert-verify: false
+  sni: gb.gomeow.online
+  tls: false
+  type: hysteria2
+- name: 8|MCI-@V2ray_Raha-12
   obfs: salamander
   obfs-password: de8287cd33b05fa3
   password: 22f2c759db51b3d0
@@ -136,6 +125,75 @@ proxies:
   server: 109.120.135.123
   skip-cert-verify: true
   sni: www.google.com
+  tls: false
+  type: hysteria2
+- name: 8|IR-@V2ray_Raha-13
+  password: 28d2b75b-22d2-4643-97bd-01bebfbaf29c
+  port: 50000
+  server: akdg.hssl8088.icu
+  skip-cert-verify: true
+  sni: akdg.hssl8088.icu
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #5'
+  password: 28d2b75b-22d2-4643-97bd-01bebfbaf29c
+  port: 50000
+  server: lsmg.hssl8088.icu
+  skip-cert-verify: true
+  sni: lsmg.hssl8088.icu
+  tls: false
+  type: hysteria2
+- name: 8|IR-@V2ray_Raha-14
+  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  port: 443
+  server: meiyou-sg.jiumaojiu.org
+  skip-cert-verify: false
+  sni: meiyou-sg.jiumaojiu.org
+  tls: false
+  type: hysteria2
+- name: '8|@V2rayNG3 #3'
+  password: 75577117-ABCD-DCBA-AAAA-CC777775577B
+  port: 7777
+  server: s15.serv00.com
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 8|IR-@V2ray_Raha-10
+  obfs: salamander
+  obfs-password: '@azadi_az_inja_migzare'
+  password: '@azadi_az_inja_migzare'
+  port: 443
+  server: all-v4.dgi000.store
+  skip-cert-verify: false
+  sni: all-v4.dgi000.store
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #8'
+  obfs: salamander
+  obfs-password: bipbip
+  password: AtTK3tiEA0
+  port: 19037
+  server: p1.punchline.ir
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #9'
+  obfs: salamander
+  obfs-password: bleepbloop
+  password: AtTK3tiEA0
+  port: 2087
+  server: p1.punchline.ir
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 8|MCI-@V2ray_Raha-14
+  obfs: salamander
+  obfs-password: bluhbluh
+  password: AtTK3tiEA0
+  port: 44929
+  server: p1.punchline.ir
+  skip-cert-verify: true
   tls: false
   type: hysteria2
 - name: 8|KevinVPN
@@ -162,12 +220,30 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
+- name: 8|IR-@V2ray_Raha-16
+  password: dongtaiwang.com
+  port: 50717
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 8|All-@V2ray_Raha-1
   password: e1c77eb5-eacd-4afd-8da3-9fd2c1d3b499
   port: 1001
   server: br.1010520.xyz
   skip-cert-verify: false
   sni: br.1010520.xyz
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #12'
+  obfs: salamander
+  obfs-password: dbc688df29e582d3
+  password: f8e40931bbb827df
+  port: 12123
+  server: 62.60.231.189
+  skip-cert-verify: true
+  sni: www.google.com
   tls: false
   type: hysteria2
 - name: 8|IR-@V2ray_Raha-3
@@ -261,6 +337,13 @@ proxies:
   password: 2T2TOL67SAUD3SME
   port: 18012
   server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇰🇷 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: 43104
+  server: p221.panda001.net
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
