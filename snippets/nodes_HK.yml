@@ -16,15 +16,23 @@ proxies:
   server: 36.150.215.219
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 13,14|香港3|@ripaojiedian
-  network: tcp
-  password: e279c494-c426-443a-a034-a04516409242
-  port: 13004
-  server: naiu-hk.05vr9nyqg5.download
+  network: ws
+  port: '8226'
+  server: 89.185.31.75
+  servername: ''
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v12.emovpn.buzz
+    path: /
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
