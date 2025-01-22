@@ -42,15 +42,33 @@ proxies:
   type: vmess
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - client-fingerprint: chrome
-  name: 15|DE_speednode_0096
-  port: 9000
+  flow: xtls-rprx-vision
+  name: 15|DE_speednode_0017
+  port: 1633
   reality-opts:
-    public-key: VYR3W3-F-JYDJCaVSAwOF6HJlo5-4dsQg_Ue_pn6ZXo
-    short-id: e0c501d2e61f
-  server: api.bekharim.icu
-  servername: mega.de
+    public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
+    short-id: 9bc0a55a5379c0ed
+  server: 185.161.251.211
+  servername: stackoverflow.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 515cf730-c24e-4279-9241-fd6e37ac9be5
+  uuid: b0946f8f-7b76-4eaf-8c9f-ca6175360dd9
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 15|DE_speednode_0018
+  network: http
+  port: 80
+  server: 2na9noed62ec.dopraxrocks.com
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: a52dd329-acad-413b-aa8f-713686ad690c

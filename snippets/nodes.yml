@@ -1,78 +1,85 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-2
-  password: asd123456
-  port: 8388
-  server: 107.148.6.121
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-3
+  password: amazonskr05
+  port: 443
+  server: 54.187.174.202
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
+  name: 0|-https://t.me/MrXbin-5
   password: qwerREWQ@@
   port: 28290
-  server: 125.141.31.74
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-5
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.189
+  server: p220.panda001.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-6
   password: amazonskr05
   port: 443
-  server: 54.187.174.202
+  server: 3.34.189.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|-https://t.me/MrXbin-7
+  password: asd123456
+  port: 8388
+  server: 202.162.109.169
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-7
+  name: 0|-https://t.me/MrXbin-9
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.11
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
-  password: amazonskr05
-  port: 443
-  server: 54.179.54.70
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-10
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-9
+  name: 0|-https://t.me/MrXbin-11
   password: qwerREWQ@@
   port: 27973
   server: 221.168.44.72
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-10
+  name: 0|-https://t.me/MrXbin-12
   password: qwerREWQ@@
   port: 28290
-  server: p220.panda001.net
+  server: 125.141.31.74
   type: ss
-  udp: true
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-12
+  name: 0|-https://t.me/MrXbin-17
   obfs: tls1.2_ticket_auth
   password: Cskw6d
-  port: 13636
+  port: 13501
+  protocol: auth_aes128_md5
+  protocol-param: 524959:5u4MZ6
+  server: tata12.cdn.node.a.tddns-ounk.com
+  type: ssr
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-18
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13629
   protocol: auth_aes128_md5
   protocol-param: 524959:5u4MZ6
   server: bb29cs.cdn.node.a.tddns-ounk.com
   type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-30
-  port: 80
-  server: 94.182.150.231
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-19
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13637
+  protocol: auth_aes128_md5
+  protocol-param: 524959:5u4MZ6
+  server: bb29cs.cdn.node.a.tddns-ounk.com
+  type: ssr
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: phXKwfrd
@@ -294,44 +301,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- name: 15|IN_speednode_0106
-  password: '3648425794742788096'
-  port: 443
-  server: 5.8.35.208
+- name: 15|FR_speednode_0019
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.37.125.197
   skip-cert-verify: false
-  sni: loving-boa.treefrog761.one
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0109
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: tw02.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0110
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: sg02.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg02.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0111
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: hk03.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 15|JP_speednode_0112
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: true
-  sni: sg02.trojanyyds.xyz
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - alterId: 0
