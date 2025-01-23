@@ -1,1 +1,23 @@
-proxies: []
+proxies:
+- name: 15|GB_speednode_0041
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.24.50.148
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 15|GB_speednode_0043
+  network: ws
+  port: 22222
+  server: 13.43.125.134
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
