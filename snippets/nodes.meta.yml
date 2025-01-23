@@ -1,69 +1,15 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: qwerREWQ@@
-  port: 34847
-  server: 218.50.149.114
-  type: ss
-  udp: true
 - cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-3
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-5
-  password: amazonskr05
-  port: 443
-  server: 54.179.54.70
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-6
-  password: amazonskr05
-  port: 443
-  server: 54.190.19.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-9
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-10
-  password: amazonskr05
-  port: 443
-  server: 54.185.31.212
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 0|-https://t.me/MrXbin-11
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.82
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-12
-  password: EOk/bIj8XER6b0kjVQxuM/iLMTE7P8h/PT/RCI2Z2wg=
-  port: 37904
-  server: 45.150.32.46
-  type: ss
-  udp: true
-- cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-18
-  obfs: http_post
-  password: +asd6a5s5df+
-  port: 443
+  name: 0|-https://t.me/MrXbin-13
+  obfs: tls1.2_ticket_auth
+  password: Cskw6d
+  port: 13317
   protocol: auth_aes128_md5
-  server: nsus3.irundns.net
+  protocol-param: 524959:5u4MZ6
+  server: lld9k6.cdn.node.a.tddns-ounk.com
   type: ssr
 - cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-19
+  name: 0|-https://t.me/MrXbin-14
   obfs: http_post
   password: $$Turb0VPN$$
   port: 443
@@ -71,85 +17,31 @@ proxies:
   server: ssca.irundns.net
   type: ssr
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-21
+  name: 0|-https://t.me/MrXbin-15
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 0|-https://t.me/MrXbin-36
-  network: http
-  port: 2082
-  server: 64.225.109.206
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-53
-  network: ws
-  port: 17926
-  server: 212.192.12.70
-  type: vmess
-  udp: true
-  uuid: dae301f8-eeda-473f-aa6c-306b5061c48d
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-55
-  network: ws
+- cipher: aes-128-cfb
+  name: 0|-https://t.me/MrXbin-16
+  obfs: http_post
+  password: +asd6a5s5df+
   port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- name: 0|-https://t.me/MrXbin-59
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.50.148
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 0|-https://t.me/MrXbin-61
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw02.trojanyyds.xyz
-  sni: tw02.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 0|-https://t.me/MrXbin-62
+  protocol: auth_aes128_md5
+  server: nsus3.irundns.net
+  type: ssr
+- name: 0|-https://t.me/MrXbin-51
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: tw01.trojanyyds.xyz
   sni: tw01.trojanyyds.xyz
   type: trojan
-- name: 0|-https://t.me/MrXbin-63
+- name: 0|-https://t.me/MrXbin-53
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: sg02.trojanyyds.xyz
-  type: trojan
-- name: 0|-https://t.me/MrXbin-64
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: in01.trojanyyds.xyz
-  sni: in01.trojanyyds.xyz
   type: trojan
 - name: '7,12|@vpnv2rayNGv #2'
   obfs: salamander
@@ -358,13 +250,14 @@ proxies:
   sni: www.google.com
   tls: false
   type: hysteria2
-- name: '8|@meli_proxyy #6'
+- name: 8,15|DE_speednode_0028
   password: mSIusSz2Ku3YUWxB85cQa
   port: 18880
   server: c.2513142.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: hysteria2
+  udp: true
 - name: '8|@meli_proxyy #7'
   password: mSIusSz2Ku3YUWxB85cQa
   port: 18881
@@ -372,7 +265,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 8,15|DE_speednode_0021
+- name: 8,15|DE_speednode_0030
   password: mSIusSz2Ku3YUWxB85cQa
   port: 18882
   server: c.2513142.xyz
@@ -609,6 +502,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+- name: 15|CN_speednode_0012
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17728
+  server: in.pptv-tv.store
+  skip-cert-verify: false
+  sni: data.52daishu.life
+  type: trojan
+  udp: true
 - http-opts:
     headers:
       Host:
@@ -616,7 +517,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|DE_speednode_0025
+  name: 15|DE_speednode_0032
   network: http
   port: 80
   server: 2na9noed62ec.dopraxrocks.com
@@ -633,7 +534,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|FR_speednode_0028
+  name: 15|FR_speednode_0035
   network: http
   port: 22671
   server: 91.134.102.128
@@ -643,68 +544,35 @@ proxies:
   type: vless
   udp: true
   uuid: 91989253-37d6-4d28-83fe-8ffd0c3de0f7
-- name: 15|HK_speednode_0035
+- name: 15|HK_speednode_0037
   port: 4000
   server: hk9.ftq.ink
   tls: true
   type: http
   udp: true
-- http-opts:
-    headers:
-      Host:
-      - www.speedtest.net
-    method: GET
-    path:
-    - /
-  name: 15|IR_speednode_0036
-  network: http
-  port: 1010
-  server: 92.114.20.12
-  servername: www.speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 5f0baf2f-733e-455c-aaff-0620ecd4bba8
-- alpn:
-  - http/1.1
-  name: 15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: false
-  sni: www.zitian.cn
-  tls: true
+- name: 15|IN_speednode_0038
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17728
+  server: 150.230.139.203
+  skip-cert-verify: true
+  sni: data.52daishu.life
   type: trojan
   udp: true
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- name: 15|KR_speednode_0040
-  password: 5fb2bc8c-e2d2-41bf-8478-aa16723c23f4
-  port: 30000
-  server: kr1.helloco.xyz
-  skip-cert-verify: false
-  sni: kr1.helloco.xyz
-  type: hysteria2
-  udp: true
-- client-fingerprint: random
-  name: 15|TR_speednode_0047
-  port: 5780
-  reality-opts:
-    public-key: WP6WZCYxeV_2NOjLVUXF90U-KzCMi3B6YVRX5TE74TY
-    short-id: ca6e55
-  server: 38.180.105.84
-  servername: refersion.com
+- name: 15|RU_speednode_0043
+  network: ws
+  port: 443
+  server: 46.254.92.33
+  servername: mmdserver.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 51a6c5c7-1ab2-416e-b4f9-ce8c39abff96
-- name: 15|US_speednode_0048
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
+- name: 15|US_speednode_0045
   network: ws
   port: 80
   server: 167.82.0.0
@@ -718,7 +586,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 15|US_speednode_0049
+- name: 15|US_speednode_0046
   network: ws
   port: 80
   server: 167.82.0.46
@@ -732,7 +600,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws
-- name: 15|US_speednode_0050
+- name: 15|US_speednode_0047
   network: ws
   port: 80
   server: 167.82.0.1
@@ -746,7 +614,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 15|US_speednode_0051
+- name: 15|US_speednode_0048
   network: ws
   port: 80
   server: 167.82.0.37
@@ -760,10 +628,66 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws
-- name: 15|US_speednode_0053
+- name: 15|US_speednode_0049
   network: ws
   port: 80
   server: 167.82.99.180
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws
+- name: 15|US_speednode_0050
+  network: ws
+  port: 80
+  server: 167.82.102.107
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /
+- name: 15|US_speednode_0051
+  network: ws
+  port: 80
+  server: 167.82.70.214
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws
+- name: 15|US_speednode_0052
+  network: ws
+  port: 80
+  server: 167.82.101.100
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws
+- name: 15|US_speednode_0053
+  network: ws
+  port: 80
+  server: 167.82.102.100
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -791,76 +715,6 @@ proxies:
 - name: 15|US_speednode_0055
   network: ws
   port: 80
-  server: 167.82.65.8
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0056
-  network: ws
-  port: 80
-  server: 167.82.101.76
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0057
-  network: ws
-  port: 80
-  server: 167.82.102.107
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /
-- name: 15|US_speednode_0058
-  network: ws
-  port: 80
-  server: 167.82.70.214
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0059
-  network: ws
-  port: 80
-  server: 167.82.101.100
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0061
-  network: ws
-  port: 80
   server: 167.82.72.38
   servername: edge.validbv3528.ir
   skip-cert-verify: false
@@ -872,35 +726,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 15|US_speednode_0062
-  network: ws
-  port: 80
-  server: 167.82.65.80
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0063
-  network: ws
-  port: 80
-  server: 167.82.102.100
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0064
+- name: 15|US_speednode_0056
   network: ws
   port: 80
   server: 167.82.65.119
@@ -914,10 +740,10 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws
-- name: 15|US_speednode_0065
+- name: 15|US_speednode_0057
   network: ws
   port: 80
-  server: 167.82.101.43
+  server: 167.82.65.80
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -928,21 +754,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws
-- name: 15|US_speednode_0066
-  network: ws
-  port: 80
-  server: 167.82.99.4
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 15|US_speednode_0067
+- name: 15|US_speednode_0058
   network: ws
   port: 80
   server: 151.101.3.8
@@ -956,20 +768,62 @@ proxies:
     headers:
       Host: 49.org
     path: /telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee?ed=2095
-- name: 15|US_speednode_0068
+- name: 15|US_speednode_0059
   network: ws
   port: 443
-  server: 141.101.123.208
-  servername: usa.warpo.me
+  server: 192.0.54.235
+  servername: mmdserver.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 8e63cfe4-8855-4334-9619-a5d403bf2b8e
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
   ws-opts:
     headers:
-      Host: usa.warpo.me
-    path: /bing
+      Host: mmdserver.us.kg
+    path: /?ed=2048
+- name: 15|US_speednode_0061
+  network: ws
+  port: 443
+  server: 192.0.54.235
+  servername: mmdserver.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /
+- name: 15|US_speednode_0062
+  network: ws
+  port: 8443
+  server: 107.172.89.210
+  servername: rnsj.1541241.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 489daefa-214c-450c-ae8a-f71e9d9c74b5
+  ws-opts:
+    headers:
+      Host: rnsj.1541241.xyz
+    path: /
+- name: 15|US_speednode_0063
+  network: ws
+  port: 2053
+  server: 107.172.89.210
+  servername: rnsj.1541241.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 562f680e-095a-4548-91f9-a009d30f3a3b
+  ws-opts:
+    headers:
+      Host: rnsj.1541241.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 16|d*********g.com_2
@@ -980,3 +834,18 @@ proxies:
   tls: true
   type: vmess
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+- alpn:
+  - http/1.1
+  name: 16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
