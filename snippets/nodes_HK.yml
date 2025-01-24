@@ -1,28 +1,39 @@
 proxies:
 - client-fingerprint: chrome
-  name: 13,14|香港|@ripaojiedian
-  network: tcp
-  password: phXKwfrd
-  port: 36442
-  server: 223.113.54.145
-  skip-cert-verify: true
+  name: 13|🇭🇰 香港|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 443
+  server: 103.44.255.81
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
   type: trojan
-- client-fingerprint: chrome
-  name: 13,14|香港2|@ripaojiedian
-  network: tcp
-  password: phXKwfrd
-  port: 18681
-  server: 36.150.215.196
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  port: 48109
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港3|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
+  port: 54104
+  server: 183.236.51.23
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -53,25 +64,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港7|@ripaojiedian
-  port: 49301
-  server: yoyo.cmyiphone.top
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 061d42d5-4e6a-4661-be04-80dcfb15b08f
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港8|@ripaojiedian
-  password: F2KVLB8XGXPPA7OX
-  port: 15006
-  server: 219.135.227.210
-  tfo: false
-  type: ss
+- name: 14|香港|@ripaojiedian
+  network: tcp
+  password: phXKwfrd
+  port: 36442
+  server: 223.113.54.145
+  skip-cert-verify: true
+  type: trojan
+- name: 14|香港2|@ripaojiedian
+  network: tcp
+  password: phXKwfrd
+  port: 18681
+  server: 36.150.215.196
+  skip-cert-verify: true
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 14|香港4|@ripaojiedian
