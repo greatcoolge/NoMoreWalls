@@ -1,22 +1,39 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-12
+  name: 0|-https://t.me/MrXbin-1
   password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
+  port: 51199
+  server: 221.139.79.20
   type: ss
   udp: true
-- cipher: rc4-md5
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-6
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-7
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-10
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-22
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13488
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: sjgysy.cdn.node.a.tddns-ounk.com
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 195.154.169.198
   type: ssr
 - cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-27
+  name: 0|-https://t.me/MrXbin-25
   obfs: http_post
   password: +asd6a5s5df+
   port: 443
@@ -27,36 +44,19 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-32
+  name: 0|-https://t.me/MrXbin-35
   network: ws
-  port: 443
-  server: 00.likelike.us.kg
-  servername: 00.likelike.us.kg
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 680e91d7-01ff-4082-b71a-472d5236adee
-  ws-opts:
-    headers:
-      Host: 00.likelike.us.kg
-    path: /serv00?ed=2048
-- alterId: 64
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-33
-  network: ws
-  port: 38007
-  server: 142.4.108.141
+  port: 8443
+  server: 172.67.133.78
+  servername: lax2.ibgfw.top
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   ws-opts:
     headers:
-      Host: www.66827194.xyz
-    path: /path/1723457615032
+      Host: lax2.ibgfw.top
+    path: /dyajvws
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -64,7 +64,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 0|-https://t.me/MrXbin-46
+  name: 0|-https://t.me/MrXbin-36
   network: http
   port: 2082
   server: 64.225.109.206
@@ -72,17 +72,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-48
-  port: 80
-  server: 94.182.150.230
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - name: '7,12|@vpnv2rayNGv #2'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -110,6 +99,14 @@ proxies:
   tls: false
   type: hysteria2
 - name: '8|@V2rayNG3 #1'
+  password: 15cca331-9e92-449d-93b0-25f82203595f
+  port: 20309
+  server: gb.gomeow.online
+  skip-cert-verify: false
+  sni: gb.gomeow.online
+  tls: false
+  type: hysteria2
+- name: '8|@V2rayNG3 #2'
   obfs: salamander
   obfs-password: de8287cd33b05fa3
   password: 22f2c759db51b3d0
@@ -135,7 +132,7 @@ proxies:
   sni: sg2.ktmurl.club
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #2'
+- name: '8|@V2rayNG3 #3'
   password: 75577117-ABCD-DCBA-AAAA-CC777775577B
   port: 7777
   server: s15.serv00.com
@@ -143,7 +140,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #3'
+- name: '8|@V2rayNG3 #4'
   obfs: salamander
   obfs-password: '@azadi_az_inja_migzare'
   password: '@azadi_az_inja_migzare'
@@ -153,7 +150,7 @@ proxies:
   sni: all-v4.dgi000.store
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #4'
+- name: '8|@V2rayNG3 #5'
   obfs: salamander
   obfs-password: bipbip
   password: AtTK3tiEA0
@@ -162,7 +159,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #5'
+- name: '8|@V2rayNG3 #6'
   obfs: salamander
   obfs-password: bleepbloop
   password: AtTK3tiEA0
@@ -171,7 +168,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #6'
+- name: '8|@V2rayNG3 #7'
   obfs: salamander
   obfs-password: bluhbluh
   password: AtTK3tiEA0
@@ -213,6 +210,22 @@ proxies:
   sni: xireiki.com
   tls: false
   type: hysteria2
+- name: 8|@meli_proxyy
+  password: ad32894d-b3dd-4c3d-973c-eda2738f51af
+  port: 443
+  server: meiyou-lu.jiumaojiu.org
+  skip-cert-verify: false
+  sni: meiyou-lu.jiumaojiu.org
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #1'
+  password: ad32894d-b3dd-4c3d-973c-eda2738f51af
+  port: 443
+  server: meiyou-us.jiumaojiu.org
+  skip-cert-verify: false
+  sni: meiyou-us.jiumaojiu.org
+  tls: false
+  type: hysteria2
 - name: 8|IR-@V2ray_Raha-5
   password: ddfa9dc7-9155-4c39-8f23-97371a707444
   port: 443
@@ -220,7 +233,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #7'
+- name: '8|@V2rayNG3 #8'
   password: dongtaiwang.com
   port: 50717
   server: 46.17.41.189
@@ -236,7 +249,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '8|@V2rayNG3 #8'
+- name: '8|@V2rayNG3 #9'
   obfs: salamander
   obfs-password: dbc688df29e582d3
   password: f8e40931bbb827df
@@ -244,6 +257,14 @@ proxies:
   server: 62.60.231.189
   skip-cert-verify: true
   sni: www.google.com
+  tls: false
+  type: hysteria2
+- name: '8|@meli_proxyy #2'
+  password: mSIusSz2Ku3YUWxB85cQa
+  port: 18880
+  server: a.2513142.xyz
+  skip-cert-verify: true
+  sni: a.2513142.xyz
   tls: false
   type: hysteria2
 - name: 8|IR-@V2ray_Raha-6
