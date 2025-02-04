@@ -1,82 +1,41 @@
 proxies:
-- alterId: 0
+- cipher: aes-256-cfb
+  name: 0|🇺🇸2 |  4.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.36.115.19
+  type: ss
+- alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 0,13|🇯🇵 日本2|@ripaojiedian
-  port: 60717
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
+  name: 0|🇺🇸3 |  5.8MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
   tls: false
   type: vmess
-  uuid: a51ed25d-d878-472b-8a5c-4f2f53ddc2ac
-- name: 0|🇺🇸2 |  3.5MB/s
-  password: 333d4654-cab4-3726-9c6c-06a9c27ae680
-  port: 28678
+  udp: true
+  uuid: c55cfbfc-b936-353a-b2b7-1366b86c5fde
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- name: 0|🇺🇸4 |  4.6MB/s
+  password: ad1fa8bb-b0bb-36d3-99ae-479f575b8e0c
+  port: 43337
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z143.hongkongnode.top
+  sni: z102.hongkongnode.top
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 0|🇺🇸3 |  5.8MB/s
+  client-fingerprint: chrome
+  name: 0|🇺🇸5 |  5.8MB/s
   password: amazonskr05
   port: 443
-  server: 54.71.17.51
+  server: 52.195.218.219
   type: ss
-- name: 0|🇺🇸4 |  1.2MB/s
-  password: 333d4654-cab4-3726-9c6c-06a9c27ae680
-  port: 20279
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z279.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸6 |  1.7MB/s
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: us-ashburn-virginia.keenvpn.me
-  type: ss
-  udp: true
-- name: 0|🇺🇸7 |  1.3MB/s
-  password: 333d4654-cab4-3726-9c6c-06a9c27ae680
-  port: 20303
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z303.hongkongnode.top
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸8 |  4.5MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c55cfbfc-b936-353a-b2b7-1366b86c5fde
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸9 |  4.9MB/s
-  network: ws
-  port: 23605
-  server: 5.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c55cfbfc-b936-353a-b2b7-1366b86c5fde
-  ws-opts:
-    headers:
-      Host: 5.mamamajd.site
-    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
