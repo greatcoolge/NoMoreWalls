@@ -1,33 +1,36 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇸🇬1 |  16.3MB/s
+  name: 0|🇸🇬1 |  17.0MB/s
   password: amazonskr05
   port: 443
-  server: 52.74.90.75
+  server: 54.254.233.138
   type: ss
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 0|🇸🇬2 |  11.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.249.95
-  type: ss
+  name: 0,13|🇸🇬 新加坡2|@ripaojiedian
+  port: 50012
+  server: 50012.baidu-cdn.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cdb49a9b-6e23-4d90-b2a8-5c158b437cf2
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇸🇬3 |  9.0MB/s
+  name: 0|🇸🇬3 |  6.5MB/s
   password: amazonskr05
   port: 443
   server: 13.229.90.203
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0,13|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.255.198.143
-  tfo: false
-  type: ss
+- name: 0|🇸🇬4 |  4.9MB/s
+  password: 7ff719d4-cad1-3fbb-bdbe-cb090d5ace97
+  port: 17806
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x65.flybar.work
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 13|🇸🇬 新加坡|@ripaojiedian
@@ -39,17 +42,6 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇸🇬 新加坡2|@ripaojiedian
-  port: 50012
-  server: 50012.baidu-cdn.top
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cdb49a9b-6e23-4d90-b2a8-5c158b437cf2
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 13|🇸🇬 新加坡3|@ripaojiedian
   port: 50792
   server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
@@ -58,6 +50,14 @@ proxies:
   tls: false
   type: vmess
   uuid: a51ed25d-d878-472b-8a5c-4f2f53ddc2ac
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.192.75.193
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 14|新加坡2|@ripaojiedian
