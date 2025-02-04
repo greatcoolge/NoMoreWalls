@@ -1,58 +1,133 @@
 proxies:
-- name: 0|🇺🇸1 |  3.0MB/s
-  password: f6f037b8-d6f5-4892-9bb5-0f915cac5b3b
-  port: 443
-  server: pop.e2e6e30c-9832-4092-a925-034ef112f346.heima360.cc
-  skip-cert-verify: false
-  sni: pop.e2e6e30c-9832-4092-a925-034ef112f346.heima360.cc
-  type: trojan
 - cipher: aes-256-cfb
-  name: 0|🇷🇺1 |  5.2MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.173
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬1 |  5.8MB/s
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: singapore-6.keenvpn.me
-  type: ss
-  udp: true
-- name: 0|🇺🇸3 |  1.3MB/s
-  password: 5d499973-9b33-3919-8424-27d2460b074b
-  port: 20306
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z306.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵2 |  1.0MB/s
-  password: 5d499973-9b33-3919-8424-27d2460b074b
-  port: 20298
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z298.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇨🇦1 |  6.0MB/s
+  name: 0|🇯🇵1 |  5.9MB/s
   password: amazonskr05
   port: 443
-  server: 47.129.255.141
+  server: 54.250.238.74
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇯🇵3 |  5.4MB/s
+  name: 0|🇯🇵2 |  5.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.201.102.200
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇹🇼1 |  6.1MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f0469b3b-9228-36b3-bf8f-84d6a266c91e
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- cipher: aes-256-cfb
+  name: 0|🇯🇵3 |  1.7MB/s
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  type: ss
+- name: 0|🇺🇸3 |  2.7MB/s
+  password: d6d2e7a5-43f6-3132-9839-c5954b89f81c
+  port: 20305
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z305.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 0|🇷🇺1 |  17.0MB/s
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇺🇸4 |  5.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.190.43.178
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 0|🇹🇼2 |  3.2MB/s
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: vps.200566.xyz
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🌀1- |  2.6MB/s
+  network: ws
+  port: 23611
+  server: 11.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f0469b3b-9228-36b3-bf8f-84d6a266c91e
+  ws-opts:
+    headers:
+      Host: 11.mamamajd.site
+    path: /
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  1.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.118.124
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵5 |  1.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.168.25.210
+  type: ss
+- name: 0|🇯🇵6 |  2.8MB/s
+  password: d6d2e7a5-43f6-3132-9839-c5954b89f81c
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇸🇬1 |  3.0MB/s
+  password: d6d2e7a5-43f6-3132-9839-c5954b89f81c
+  port: 20129
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x129.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵7 |  6.0MB/s
   password: amazonskr05
   port: 443
   server: 3.112.1.143
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🌀3- |  2.1MB/s
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: us-ashburn-virginia.keenvpn.me
-  type: ss
+- name: 0|🇺🇸7 |  6.0MB/s
+  password: d6d2e7a5-43f6-3132-9839-c5954b89f81c
+  port: 24603
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z259.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵8 |  6.1MB/s
+  password: d6d2e7a5-43f6-3132-9839-c5954b89f81c
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 13|🇭🇰 香港|@ripaojiedian
   password: cbf3d234-6d24-47ec-a9cb-2c2692c5dcf1
