@@ -1,102 +1,108 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.249.95
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.168.25.210
-  type: ss
-- name: 0|🇯🇵2 |  5.4MB/s
-  password: e109f24e-673e-3403-8cf0-d40a5b2874de
-  port: 20071
+- name: 0|🇹🇼1 |  5.5MB/s
+  password: 09e6689e-8dd3-332f-9655-ff09803e64d5
+  port: 59021
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x71.flybar.work
+  sni: x100.flybar.work
+  tfo: true
   type: trojan
   udp: true
-- name: 0|🇯🇵3 |  5.9MB/s
-  password: e109f24e-673e-3403-8cf0-d40a5b2874de
-  port: 20059
+- cipher: aes-256-cfb
+  name: 0|🇺🇸1 |  5.2MB/s
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 52.37.136.134
+  type: ssr
+- name: 0|🇯🇵1 |  5.9MB/s
+  password: 09e6689e-8dd3-332f-9655-ff09803e64d5
+  port: 20141
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x59.flybar.work
+  sni: z141.hongkongnode.top
+  tfo: true
   type: trojan
   udp: true
+- name: 0|🇺🇸2 |  5.1MB/s
+  password: 09e6689e-8dd3-332f-9655-ff09803e64d5
+  port: 20308
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z308.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 0|🇷🇺1 |  3.3MB/s
+  password: myszy28811
+  port: 28811
+  server: pipi.myddns.me
+  type: socks5
+  udp: true
+  username: myszy
+- cipher: aes-256-cfb
+  name: 0|🇺🇦1 |  1.3MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 176.103.53.105
+  type: ss
+- name: 0|🇺🇸3 |  6.7MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp3-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: usgp3-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇺🇸4 |  4.4MB/s
+  password: f6f037b8-d6f5-4892-9bb5-0f915cac5b3b
+  port: 158
+  server: 107.149.254.26
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇳CN
+  delay: 1479
+  name: 0|🇹🇼2 |  1.9MB/s
+  password: b577cffa-34c6-4ebd-9546-f957e126e24a
+  port: 30002
+  server: gdgs.tarioblink.me
+  type: ss
+- name: 0|🇸🇬1 |  3.1MB/s
+  password: 09e6689e-8dd3-332f-9655-ff09803e64d5
+  port: 20299
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x299.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: '0,8|@V2rayNG3 #3'
+  password: 75577117-ABCD-DCBA-AAAA-CC777775577B
+  port: 7777
+  server: s15.serv00.com
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸1 |  1.3MB/s
+  name: 0|🌀1- |  5.0MB/s
   network: ws
-  port: 23617
-  server: 17.mamamajd.site
+  port: 23615
+  server: 15.mamamajd.site
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 09c25516-64e0-3b3e-b15c-361def5edf28
+  uuid: 05339454-308d-36f3-9d75-95fa117a8de4
   ws-opts:
     headers:
-      Host: 17.mamamajd.site
+      Host: 15.mamamajd.site
     path: /
-- name: 0|🇹🇼1 |  28.8MB/s
-  password: e109f24e-673e-3403-8cf0-d40a5b2874de
-  port: 36821
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z262.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵4 |  2.6MB/s
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: south-korea-2.keenvpn.me
-  type: ss
-  udp: true
-- auth: 2cfdd0c8-43c5-4119-8379-fa7a323ce4b4
-  name: 0|🌀1- |  2.1MB/s
-  password: 2cfdd0c8-43c5-4119-8379-fa7a323ce4b4
-  port: 35600
-  server: dddoyd.naisicloud.xyz
-  skip-cert-verify: true
-  sni: dddoyd.naisicloud.xyz
-  type: hysteria2
-- name: 0|🇺🇸2 |  2.4MB/s
-  password: e109f24e-673e-3403-8cf0-d40a5b2874de
-  port: 20307
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z307.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇯🇵5 |  2.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.207.138.233
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  delay: 479
-  name: 0|🇷🇺1 |  2.7MB/s
-  password: e3a183f4-1f0f-42ea-842a-f22195f67d09
-  port: 30003
-  server: gdgs.tarioblink.me
-  type: ss
-- name: 0|🇺🇸3 |  2.9MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇺🇸4 |  2.6MB/s
+- name: 0|🇺🇸5 |  2.2MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: usgp2-cdn-route.couldflare-cdn.com
@@ -105,53 +111,59 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  5.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.74.90.75
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🌀2- |  2.4MB/s
-  password: 06f67158-54c8-4cd2-8be0-08c3b7b84690
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸5 |  5.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.185.251.195
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵6 |  10.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.231.129.236
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸6 |  5.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.245.146.74
-  type: ss
-- auth: 0881ddb9-b292-4d08-8275-bda697d7e6fd
-  name: 0|🌀3- |  4.1MB/s
-  password: 0881ddb9-b292-4d08-8275-bda697d7e6fd
-  port: 35600
-  server: fffwkl.naisicloud.xyz
+- name: 0|🇯🇵2 |  5.2MB/s
+  password: 09e6689e-8dd3-332f-9655-ff09803e64d5
+  port: 54178
+  server: gy.58n.net
   skip-cert-verify: true
-  sni: fffwkl.naisicloud.xyz
-  type: hysteria2
-- name: 0|🇺🇸7 |  2.5MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
+  sni: x115.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇸🇬2 |  1.1MB/s
+  password: amazonskr05
   port: 443
-  server: usgp1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: usgp1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  server: 13.229.90.203
+  type: ss
+- auth: 2cfdd0c8-43c5-4119-8379-fa7a323ce4b4
+  name: 0|🌀2- |  3.2MB/s
+  password: 2cfdd0c8-43c5-4119-8379-fa7a323ce4b4
+  port: 35600
+  server: dddoyd.naisicloud.xyz
+  skip-cert-verify: true
+  sni: dddoyd.naisicloud.xyz
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸6 |  4.5MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 05339454-308d-36f3-9d75-95fa117a8de4
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- name: 0|🇺🇸7 |  1.1MB/s
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 80
+  server: br.huafei888.site
+  skip-cert-verify: true
+  sni: br.huafei888.site
+  type: hysteria2
+- name: 0,8|@V2rayNG3
+  password: '123456'
+  port: 443
+  server: 192.3.85.237
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -168,14 +180,6 @@ proxies:
   server: 45.140.169.231
   skip-cert-verify: true
   sni: www.eliv2ray.net
-  tls: false
-  type: hysteria2
-- name: 8|@V2rayNG3
-  password: '123456'
-  port: 443
-  server: 192.3.85.237
-  skip-cert-verify: true
-  sni: bing.com
   tls: false
   type: hysteria2
 - name: '8|@V2rayNG3 #1'
@@ -208,14 +212,6 @@ proxies:
   port: 443
   server: yukuai-us.jiumaojiu.org
   skip-cert-verify: false
-  tls: false
-  type: hysteria2
-- name: '8|@V2rayNG3 #3'
-  password: 75577117-ABCD-DCBA-AAAA-CC777775577B
-  port: 7777
-  server: s15.serv00.com
-  skip-cert-verify: true
-  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: '8|@meli_proxyy #2'

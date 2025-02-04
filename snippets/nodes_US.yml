@@ -1,39 +1,42 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 0|🇺🇸1 |  5.2MB/s
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 52.37.136.134
+  type: ssr
+- name: 0|🇺🇸2 |  5.1MB/s
+  password: 09e6689e-8dd3-332f-9655-ff09803e64d5
+  port: 20308
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z308.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 0|🇺🇸4 |  4.4MB/s
+  password: f6f037b8-d6f5-4892-9bb5-0f915cac5b3b
+  port: 158
+  server: 107.149.254.26
+  skip-cert-verify: true
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸1 |  1.3MB/s
+  name: 0|🇺🇸6 |  4.5MB/s
   network: ws
-  port: 23617
-  server: 17.mamamajd.site
+  port: 23613
+  server: 13.mamamajd.site
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 09c25516-64e0-3b3e-b15c-361def5edf28
+  uuid: 05339454-308d-36f3-9d75-95fa117a8de4
   ws-opts:
     headers:
-      Host: 17.mamamajd.site
+      Host: 13.mamamajd.site
     path: /
-- name: 0|🇺🇸2 |  2.4MB/s
-  password: e109f24e-673e-3403-8cf0-d40a5b2874de
-  port: 20307
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z307.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇺🇸5 |  5.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.185.251.195
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸6 |  5.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.245.146.74
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
