@@ -1,29 +1,44 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  1.2MB/s
+  name: 0|🇯🇵1 |  6.1MB/s
   password: amazonskr05
   port: 443
-  server: 18.181.167.251
+  server: 54.168.25.210
   type: ss
-- name: 0|🇯🇵2 |  2.9MB/s
-  password: ad1fa8bb-b0bb-36d3-99ae-479f575b8e0c
-  port: 54178
+- name: 0|🇯🇵2 |  5.4MB/s
+  password: e109f24e-673e-3403-8cf0-d40a5b2874de
+  port: 20071
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x115.flybar.work
+  sni: x71.flybar.work
   type: trojan
   udp: true
+- name: 0|🇯🇵3 |  5.9MB/s
+  password: e109f24e-673e-3403-8cf0-d40a5b2874de
+  port: 20059
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x59.flybar.work
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵4 |  2.6MB/s
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: south-korea-2.keenvpn.me
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇯🇵3 |  5.8MB/s
+  name: 0|🇯🇵5 |  2.7MB/s
   password: amazonskr05
   port: 443
-  server: 3.112.149.177
+  server: 43.207.138.233
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇯🇵4 |  5.7MB/s
+  name: 0|🇯🇵6 |  10.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.250.238.74
+  server: 13.231.129.236
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
