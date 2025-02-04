@@ -1,16 +1,48 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  5.3MB/s
+  name: 0|🇯🇵1 |  6.0MB/s
   password: amazonskr05
   port: 443
   server: 13.231.129.236
   type: ss
-- name: 0|🇯🇵2 |  8.5MB/s
-  password: 7ff719d4-cad1-3fbb-bdbe-cb090d5ace97
-  port: 20059
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  3.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.250.238.74
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵3 |  2.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.168.25.210
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  11.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.68.124.236
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵5 |  3.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.149.177
+  type: ss
+- name: 0|🇯🇵6 |  1.8MB/s
+  password: 333d4654-cab4-3726-9c6c-06a9c27ae680
+  port: 20300
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x59.flybar.work
+  sni: z300.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵7 |  3.4MB/s
+  password: 333d4654-cab4-3726-9c6c-06a9c27ae680
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -21,17 +53,6 @@ proxies:
   server: 183.214.197.27
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本2|@ripaojiedian
-  port: 60717
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a51ed25d-d878-472b-8a5c-4f2f53ddc2ac
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
