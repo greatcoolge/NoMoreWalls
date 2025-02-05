@@ -1,24 +1,43 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 0|🇹🇼1 |  6.1MB/s
-  network: ws
-  port: 23619
-  server: 19.mamamajd.site
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f0469b3b-9228-36b3-bf8f-84d6a266c91e
-  ws-opts:
-    headers:
-      Host: 19.mamamajd.site
-    path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 0|🇹🇼2 |  3.2MB/s
-  password: 79739832-b888-415a-a454-8b53911c944a
-  port: 30332
-  server: vps.200566.xyz
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼1 |  3.6MB/s
+  password: 61de59c4-4c7a-43a4-be79-e1f2c43b22e1
+  port: 36243
+  server: free.2weradf.xyz
   type: ss
+- auth: 79739832-b888-415a-a454-8b53911c944a
+  client-fingerprint: chrome
+  name: 0|🇹🇼2 |  5.8MB/s
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30329
+  server: vps.200566.xyz
+  skip-cert-verify: true
+  sni: vps.200566.xyz
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 13,14|台湾|@ripaojiedian
+  network: tcp
+  password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|台湾2|@ripaojiedian
+  network: tcp
+  password: f1df4c41-0e78-400b-8588-eaa24bd8fd21
+  port: 18147
+  server: 120.198.71.173
+  skip-cert-verify: false
+  sni: mm2.redapricotcloud.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|台湾3|@ripaojiedian
+  network: tcp
+  password: 7cd29891-fe78-4f8f-8844-abb31b9d9a75
+  port: 18147
+  server: nb_ae7a7.kaiqsz.com
+  skip-cert-verify: false
+  sni: mm2.redapricotcloud.com
+  type: trojan

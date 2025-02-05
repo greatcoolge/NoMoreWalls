@@ -1,32 +1,23 @@
 proxies:
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇷🇺1 |  17.0MB/s
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  server: 217.30.10.18
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇷🇺1 |  5.1MB/s
+  password: 85be2424-2b4b-46bf-a46e-539c2fb9df50
+  port: 58822
+  server: southvip1.pkyun.xyz
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  obfs: dongtaiwang.com
-  password: fuck
-  port: 443
-  ports: 30000-40000
-  server: 42.236.73.72
-  servername: www.zitian.cn
+- client-fingerprint: chrome
+  name: 0,8|Mci@V2ray_Raha-4
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 80
+  server: 176.124.202.137
   skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  up: 11 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇷🇺3 |  14.4MB/s
+  password: 85be2424-2b4b-46bf-a46e-539c2fb9df50
+  port: 58838
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
