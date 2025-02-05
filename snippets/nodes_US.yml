@@ -1,26 +1,70 @@
 proxies:
-- name: 0|🇺🇸2 |  5.5MB/s
-  password: 372c3834-4166-3ab4-bfbb-ebab353b6e99
-  port: 24603
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸1 |  1.1MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a990638-15e4-34f2-9866-9bfdd556d638
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- name: 0|🇺🇸3 |  2.5MB/s
+  password: f0b00f01-c9b3-352b-84e6-00bb2a719662
+  port: 20278
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z259.hongkongnode.top
+  sni: z278.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: 0|🇺🇸4 |  21.0MB/s
+  password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
+  port: 23733
+  server: cu1.guguyun.xyz
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸5 |  1.1MB/s
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- name: 0|🇺🇸6 |  5.1MB/s
+  password: f0b00f01-c9b3-352b-84e6-00bb2a719662
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇺🇸7 |  1.3MB/s
+  password: f0b00f01-c9b3-352b-84e6-00bb2a719662
+  port: 20307
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z307.hongkongnode.top
   type: trojan
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 0|🇺🇸3 |  4.4MB/s
+  name: 0|🇺🇸8 |  5.4MB/s
   password: 2f3cd3b3-6ebe-4a32-99d7-2479086fb5fc
   port: 49201
   server: south.sf0jm.xyz
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0,13|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 18.143.78.171
-  tfo: false
   type: ss
 - client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
