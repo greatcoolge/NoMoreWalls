@@ -1,85 +1,85 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸1 |  2.3MB/s
+  password: fe197ce2-2b1c-466d-b89e-a3cd986712ac
+  port: 36721
+  server: free.2weradf.xyz
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸2 |  4.9MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9d80610e-cdb4-321b-b469-33d955caa518
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
+- auth: 50463abf-32e2-47c9-a205-b7894c40e2af
+  client-fingerprint: chrome
+  name: 0|🇺🇸3 |  2.7MB/s
+  password: 50463abf-32e2-47c9-a205-b7894c40e2af
+  port: 5001
+  server: jp-linode.aikunapp.com
+  skip-cert-verify: true
+  sni: d1--cn-gotcha204-4.bilivideo.com
+  type: hysteria2
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  ports: 10000-20000
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0|🇺🇸6 |  1.3MB/s
+  port: 44614
+  server: 120.198.71.219
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 0,13|🇺🇸 美国2|@ripaojiedian
+  password: '!!str 65086520307764900'
+  port: 443
+  server: grateful-lark.shiner427.skin
+  skip-cert-verify: false
+  sni: grateful-lark.shiner427.skin
+  type: trojan
 - auth: a3e22d25-a56e-4d2d-b54b-1f5cffd13e96
   client-fingerprint: chrome
-  name: 0|🇺🇸1 |  4.1MB/s
+  name: 0|🇺🇸8 |  3.1MB/s
   password: a3e22d25-a56e-4d2d-b54b-1f5cffd13e96
   port: 443
   server: us4lxwrhvzg.92859852.xyz
   skip-cert-verify: true
   sni: us4lxwrhvzg.92859852.xyz
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸2 |  5.5MB/s
-  password: 8afea9fa-67e0-4ff1-8aa5-712601f2903f
-  port: 28862
-  server: tw-02.douyucdn.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - moi.ir
-    method: GET
-    path:
-    - /
-  name: 0|🇺🇸3 |  19.6MB/s
-  network: http
-  port: 8881
-  server: 66.42.86.202
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- cipher: aes-256-cfb
-  name: 0|🇺🇸4 |  1.5MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 18.236.161.128
-  type: ssr
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸5 |  3.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.190.43.178
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇺🇸6 |  6.1MB/s
-  network: ws
-  port: 23617
-  server: 17.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: efcadb62-c7bb-38f0-8eb9-47340ad9d0a7
-  ws-opts:
-    headers:
-      Host: 17.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸7 |  5.0MB/s
-  network: ws
-  port: 23615
-  server: 15.mamamajd.site
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: efcadb62-c7bb-38f0-8eb9-47340ad9d0a7
-  ws-opts:
-    headers:
-      Host: 15.mamamajd.site
-    path: /
 - client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
   password: '!!str 65086520307764900'
@@ -87,14 +87,6 @@ proxies:
   server: arriving-longhorn.shiner427.skin
   skip-cert-verify: false
   sni: arriving-longhorn.shiner427.skin
-  type: trojan
-- client-fingerprint: chrome
-  name: 13|🇺🇸 美国2|@ripaojiedian
-  password: '!!str 65086520307764900'
-  port: 443
-  server: grateful-lark.shiner427.skin
-  skip-cert-verify: false
-  sni: grateful-lark.shiner427.skin
   type: trojan
 - alterId: 0
   cipher: auto
