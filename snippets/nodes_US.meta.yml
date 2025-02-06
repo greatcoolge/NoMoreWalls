@@ -1,35 +1,11 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸1 |  2.3MB/s
-  password: fe197ce2-2b1c-466d-b89e-a3cd986712ac
-  port: 36721
-  server: free.2weradf.xyz
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸2 |  4.9MB/s
-  network: ws
-  port: 23617
-  server: 17.mamamajd.site
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9d80610e-cdb4-321b-b469-33d955caa518
-  ws-opts:
-    headers:
-      Host: 17.mamamajd.site
-    path: /
-- auth: 50463abf-32e2-47c9-a205-b7894c40e2af
   client-fingerprint: chrome
-  name: 0|🇺🇸3 |  2.7MB/s
-  password: 50463abf-32e2-47c9-a205-b7894c40e2af
-  port: 5001
-  server: jp-linode.aikunapp.com
-  skip-cert-verify: true
-  sni: d1--cn-gotcha204-4.bilivideo.com
-  type: hysteria2
+  name: 0|🇺🇸1 |  1.2MB/s
+  password: f175d66f-7cf5-47aa-83be-a8e969cdbe2d
+  port: 40000
+  server: rk1.boost1.top
+  type: ss
 - alpn:
   - http/1.1
   auth-str: dongtaiwang.com
@@ -52,34 +28,60 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇺🇸6 |  1.3MB/s
-  port: 44614
-  server: 120.198.71.219
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 0,13|🇺🇸 美国2|@ripaojiedian
-  password: '!!str 65086520307764900'
+- cipher: aes-256-cfb
+  name: 0|🇺🇸3 |  5.6MB/s
+  password: amazonskr05
   port: 443
-  server: grateful-lark.shiner427.skin
-  skip-cert-verify: false
-  sni: grateful-lark.shiner427.skin
-  type: trojan
-- auth: a3e22d25-a56e-4d2d-b54b-1f5cffd13e96
+  server: 44.243.30.0
+  type: ss
+- auth: 50463abf-32e2-47c9-a205-b7894c40e2af
   client-fingerprint: chrome
-  name: 0|🇺🇸8 |  3.1MB/s
-  password: a3e22d25-a56e-4d2d-b54b-1f5cffd13e96
-  port: 443
-  server: us4lxwrhvzg.92859852.xyz
+  name: 0|🇺🇸4 |  5.3MB/s
+  password: 50463abf-32e2-47c9-a205-b7894c40e2af
+  port: 5051
+  server: 104.238.222.241
   skip-cert-verify: true
-  sni: us4lxwrhvzg.92859852.xyz
+  sni: d1--cn-gotcha204-4.bilivideo.com
   type: hysteria2
+- client-fingerprint: chrome
+  name: 0,8|@V2rayNG3
+  password: '!!str 123456'
+  port: 443
+  server: 192.3.85.237
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸6 |  7.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 34.219.5.41
+  type: ss
+- auth: 7ee32f14-b07b-4a5c-8417-af90530f06e4
+  client-fingerprint: chrome
+  name: 0|🇺🇸7 |  1.9MB/s
+  password: 7ee32f14-b07b-4a5c-8417-af90530f06e4
+  port: 14001
+  server: 165.22.252.77
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- cipher: aes-128-gcm
+  name: 0|🇺🇸8 |  20.9MB/s
+  password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
+  port: 23733
+  server: cu1.guguyun.xyz
+  type: ss
+- name: 0|🇺🇸9 |  1.4MB/s
+  password: 8b164756-ebc6-3906-bec0-52b5583ccb24
+  port: 20296
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z296.hongkongnode.top
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
   password: '!!str 65086520307764900'
@@ -87,6 +89,14 @@ proxies:
   server: arriving-longhorn.shiner427.skin
   skip-cert-verify: false
   sni: arriving-longhorn.shiner427.skin
+  type: trojan
+- client-fingerprint: chrome
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  password: '!!str 65086520307764900'
+  port: 443
+  server: grateful-lark.shiner427.skin
+  skip-cert-verify: false
+  sni: grateful-lark.shiner427.skin
   type: trojan
 - alterId: 0
   cipher: auto
