@@ -1,27 +1,24 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼1 |  6.1MB/s
-  password: df9d2c2d-78bb-479d-8552-040f62fea5c4
-  port: 28864
-  server: tw-04.douyucdn.top
+- cipher: aes-128-gcm
+  name: 0|🇹🇼1 |  5.5MB/s
+  password: abbd5857-d4ca-41ac-96ac-7e3b8ad4f0c6
+  port: 12029
+  server: mdss-tw.04z3susick.download
   type: ss
+- name: 0|🇹🇼2 |  4.9MB/s
+  password: 85d6e3a8-a3c2-33d3-836f-494a7e77f08d
+  port: 59021
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x100.flybar.work
+  type: trojan
   udp: true
-- name: 0|🇹🇼2 |  5.6MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: tw4-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: tw4-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼3 |  3.9MB/s
-  password: df9d2c2d-78bb-479d-8552-040f62fea5c4
-  port: 28863
-  server: tw-03.douyucdn.top
+- cipher: aes-128-gcm
+  name: 0|🇹🇼3 |  6.0MB/s
+  password: abbd5857-d4ca-41ac-96ac-7e3b8ad4f0c6
+  port: 12031
+  server: mdss-tw.04z3susick.download
   type: ss
-  udp: true
 - client-fingerprint: chrome
   name: 13,14|台湾|@ripaojiedian
   network: tcp
@@ -30,22 +27,4 @@ proxies:
   server: naiu-other.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14|台湾2|@ripaojiedian
-  network: tcp
-  password: f1df4c41-0e78-400b-8588-eaa24bd8fd21
-  port: 18147
-  server: 120.198.71.173
-  skip-cert-verify: false
-  sni: mm2.redapricotcloud.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14,15|speednode_0011
-  network: tcp
-  password: 7cd29891-fe78-4f8f-8844-abb31b9d9a75
-  port: 18147
-  server: nb_ae7a7.kaiqsz.com
-  skip-cert-verify: false
-  sni: mm2.redapricotcloud.com
   type: trojan

@@ -1,51 +1,108 @@
 proxies:
-- alterId: 0
+- cipher: aes-256-cfb
+  name: 0|🇺🇸1 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.212.56.86
+  type: ss
+- alterId: 64
   cipher: auto
-  name: 0|🇺🇸1 |  5.6MB/s
-  port: 45112
-  server: qd.needss.top
+  client-fingerprint: chrome
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇺🇸2 |  3.1MB/s
+  network: tcp
+  port: 45402
+  server: 120.232.153.123
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸3 |  6.1MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: ccf3fcfe-b847-4506-99fd-c4cb17e5073a
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸3 |  1.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.218.219
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸4 |  4.6MB/s
-  password: df9d2c2d-78bb-479d-8552-040f62fea5c4
-  port: 28862
-  server: tw-02.douyucdn.top
-  type: ss
+  uuid: efcadb62-c7bb-38f0-8eb9-47340ad9d0a7
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸4 |  1.1MB/s
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
+  uuid: 7e1e1ad8-ad38-4ce5-97e0-a33f99500acd
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸5 |  7.2MB/s
+  port: 50008
+  server: 50008.baidu-cdn.top
+  tls: false
+  type: vmess
+  uuid: 722ee660-ca57-467f-9eda-5739859212f9
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸5 |  9.2MB/s
-  password: f175d66f-7cf5-47aa-83be-a8e969cdbe2d
-  port: 40000
-  server: rk1.boost1.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸6 |  3.1MB/s
-  password: df9d2c2d-78bb-479d-8552-040f62fea5c4
-  port: 25513
-  server: us-03.douyucdn.top
+  name: 0|🇺🇸7 |  2.0MB/s
+  password: 8afea9fa-67e0-4ff1-8aa5-712601f2903f
+  port: 28861
+  server: tw-01.douyucdn.top
   type: ss
   udp: true
 - client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
   password: '!!str 65086520307764900'
   port: 443
-  server: moral-rat.shiner427.skin
+  server: arriving-longhorn.shiner427.skin
   skip-cert-verify: false
-  sni: moral-rat.shiner427.skin
+  sni: arriving-longhorn.shiner427.skin
   type: trojan
+- client-fingerprint: chrome
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  password: '!!str 65086520307764900'
+  port: 443
+  server: grateful-lark.shiner427.skin
+  skip-cert-verify: false
+  sni: grateful-lark.shiner427.skin
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  port: 44447
+  server: 38.147.161.47
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
 - name: 14|美国|@ripaojiedian
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
-  server: moral-rat.shiner427.skin
+  server: arriving-longhorn.shiner427.skin
   type: trojan
+- name: 14|美国2|@ripaojiedian
+  network: tcp
+  password: '!!str 65086520307764900'
+  port: 443
+  server: grateful-lark.shiner427.skin
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 14|美国3|@ripaojiedian
+  network: tcp
+  port: '44447'
+  server: 38.147.161.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd

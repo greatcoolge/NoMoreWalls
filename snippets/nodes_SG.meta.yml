@@ -1,46 +1,86 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  5.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.229.229.102
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬2 |  5.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.255.245.79
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬1 |  1.4MB/s
-  port: 30028
-  server: i.needss.top
+  name: 0|🇸🇬3 |  5.4MB/s
+  port: 50011
+  server: 50011.baidu-cdn.top
   tls: false
   type: vmess
-  udp: true
-  uuid: ccf3fcfe-b847-4506-99fd-c4cb17e5073a
-- client-fingerprint: chrome
-  name: 13,15|speednode_0021
-  password: '!!str 65086520307764900'
-  port: 443
-  server: relieved-raccoon.shiner427.skin
+  uuid: 722ee660-ca57-467f-9eda-5739859212f9
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇸🇬 新加坡|@ripaojiedian
+  port: 50012
+  server: 50012.baidu-cdn.top
   skip-cert-verify: false
-  sni: relieved-raccoon.shiner427.skin
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 224e3ed4-96d2-4ae0-8d24-070b0039074e
 - client-fingerprint: chrome
   name: 13|🇸🇬 新加坡2|@ripaojiedian
   password: '!!str 65086520307764900'
   port: 443
-  server: robust-redfish.shiner427.skin
+  server: dynamic-shrew.shiner427.skin
   skip-cert-verify: false
-  sni: robust-redfish.shiner427.skin
+  sni: dynamic-shrew.shiner427.skin
+  type: trojan
+- client-fingerprint: chrome
+  name: 13|🇸🇬 新加坡3|@ripaojiedian
+  password: '!!str 65086520307764900'
+  port: 443
+  server: summary-sawfish.shiner427.skin
+  skip-cert-verify: false
+  sni: summary-sawfish.shiner427.skin
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|新加坡4|@ripaojiedian
+  network: tcp
+  password: installshield
+  port: 8443
+  server: 38.180.249.177
+  skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.192.75.193
+  server: 18.141.25.54
   tfo: false
   type: ss
-- name: 14|新加坡|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡|@ripaojiedian
   network: tcp
-  password: '!!str 65086520307764900'
-  port: 443
-  server: relieved-raccoon.shiner427.skin
-  type: trojan
+  port: '50012'
+  server: 50012.baidu-cdn.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 224e3ed4-96d2-4ae0-8d24-070b0039074e
 - name: 14|新加坡2|@ripaojiedian
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
-  server: robust-redfish.shiner427.skin
+  server: dynamic-shrew.shiner427.skin
+  type: trojan
+- name: 14|新加坡3|@ripaojiedian
+  network: tcp
+  password: '!!str 65086520307764900'
+  port: 443
+  server: summary-sawfish.shiner427.skin
   type: trojan
