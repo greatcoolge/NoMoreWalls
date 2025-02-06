@@ -1,19 +1,22 @@
 proxies:
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 0|🇷🇺1 |  13.1MB/s
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40210
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 0|🇷🇺1 |  9.1MB/s
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 217.30.10.18
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 0|🇷🇺2 |  5.0MB/s
+  name: 0|🇷🇺2 |  1.1MB/s
   password: 5911d36c-530a-40d6-b31c-505f238ca313
   port: 49227
   server: south.sf0jm.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇷🇺3 |  1.7MB/s
+  password: f340a4d7-d2d5-4639-928c-7528deead32e
+  port: 36611
+  server: free.2weradf.xyz
   type: ss
