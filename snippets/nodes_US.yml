@@ -1,17 +1,20 @@
 proxies:
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸1 |  6.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.221.167.203
-  type: ss
-- cipher: rc4-md5
-  name: 0|🇺🇸2 |  4.1MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸1 |  5.3MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 167b50ff-f2d0-39a5-989e-fd7fd07916a2
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian

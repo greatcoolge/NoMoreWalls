@@ -1,50 +1,68 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇨🇦1 |  6.0MB/s
+  name: 0|🇰🇷1 |  5.5MB/s
   password: amazonskr05
   port: 443
-  server: 47.129.255.141
+  server: 52.79.216.192
   type: ss
-- alterId: '0'
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  4.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.141.25.54
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬2 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.77.240.71
+  type: ss
+- alterId: 2
   cipher: auto
-  name: 0|🇸🇬1 |  8.6MB/s
+  name: 0|🇺🇸1 |  5.3MB/s
   network: ws
-  port: 80
-  server: awssg1.072659.xyz
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
   type: vmess
-  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
+  udp: true
+  uuid: 167b50ff-f2d0-39a5-989e-fd7fd07916a2
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /?ed=2048
-- cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  6.7MB/s
-  password: amazonskr05
+      Host: 18.mamamajd.site
+    path: /
+- name: 0|🇺🇸2 |  4.4MB/s
+  network: ws
   port: 443
-  server: 34.221.167.203
-  type: ss
-- name: 0|🇯🇵1 |  3.9MB/s
-  password: c12015ed-e211-3e2a-8a1e-f39fd09976b8
-  port: 20141
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z141.hongkongnode.top
-  type: trojan
+  server: lucky.cepu.us.kg
+  servername: lucky.cepu.us.kg
+  tls: true
+  type: vless
   udp: true
-- cipher: rc4-md5
-  name: 0|🇺🇸2 |  4.1MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  type: ss
-- country: 🇫🇷FR
-  name: 0|🇫🇷1 |  5.6MB/s
-  password: a0605527-28e4-449c-80ee-5642cc16a8af
-  port: 8080
-  server: 51.158.148.53
+  uuid: cd45501e-52ec-4584-affe-f12f9a5a3aeb
+  ws-opts:
+    headers:
+      Host: lucky.cepu.us.kg
+    path: /198.13.42.58-32954
+- name: 0|🇺🇸3 |  28.7MB/s
+  network: ws
+  port: 80
+  server: 104.22.53.235
+  servername: cc.ailicf.us.kg
   skip-cert-verify: true
-  type: hysteria2
+  type: vless
   udp: true
+  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+  ws-opts:
+    headers:
+      Host: cc.ailicf.us.kg
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /b5cdabf0-e04
+  xudp: true
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
