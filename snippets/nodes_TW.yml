@@ -1,11 +1,20 @@
 proxies:
-- name: 0|🇹🇼2 |  3.4MB/s
-  password: 68d765ae-2126-383e-af4e-8de32daa515e
-  port: 21247
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x91.flybar.work
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼1 |  2.3MB/s
+  password: 731dafbc-652d-42c3-b075-56913aab1289
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+- cipher: chacha20-ietf
+  name: 0|🇹🇼2 |  6.3MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8304
+  protocol: origin
+  protocol-param: ''
+  server: cn10.closeai.one
+  type: ssr
   udp: true
 - client-fingerprint: chrome
   name: 13,14|台湾|@ripaojiedian
