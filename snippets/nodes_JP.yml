@@ -1,13 +1,4 @@
 proxies:
-- name: 0|🇯🇵1 |  1.4MB/s
-  password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
-  port: 20300
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z300.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -38,5 +29,13 @@ proxies:
   password: MKCB1210R6NKA80W
   port: 18014
   server: 183.61.177.234
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.0.17.42
   tfo: false
   type: ss
