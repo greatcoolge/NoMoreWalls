@@ -1,25 +1,78 @@
 proxies:
-- cipher: chacha20-ietf
+- alpn:
+  - http/1.1
+  auth: 3e62210d-f3a1-4a0c-840c-5cbb1fd9c664
   client-fingerprint: chrome
-  name: 0|🇺🇸1 |  5.0MB/s
+  name: 0,15,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: false
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- cipher: chacha20-ietf
+  name: 0|🇺🇸2 |  5.1MB/s
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
-  port: 8503
+  port: 8505
   protocol: origin
   protocol-param: ''
   server: cn15.closeai.one
   type: ssr
   udp: true
-- name: 0|🇺🇸2 |  2.2MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: chacha20-ietf
+  name: 0|🇺🇸3 |  5.4MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8110
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|🇺🇸4 |  3.3MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8508
+  protocol: origin
+  protocol-param: ''
+  server: cn16.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|🇺🇸5 |  3.5MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8109
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|🇺🇸6 |  6.2MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8123
+  protocol: origin
+  protocol-param: ''
+  server: cn05.closeai.one
+  type: ssr
+  udp: true
 - client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
   network: tcp
@@ -50,277 +103,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
-- name: 15|US_speednode_0027
-  network: ws
-  port: 443
-  server: wear.net
-  servername: wear.net
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15|US_speednode_0100
+  port: 40021
+  reality-opts:
+    public-key: CuFCD-MhNUXArRCGaTHi7BiZvDXfy9sgKSeL3sPMbHY
+    short-id: 891814a4
+  server: 108.181.18.171
+  servername: apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 046fd332-80a6-43b0-91b0-7238a1dfc36c
-  ws-opts:
-    headers:
-      Host: aw035.ir
-    path: /?ed=2048
-- name: 15|US_speednode_0028
-  network: ws
-  port: 80
-  server: ipcloudflaretamiz.fastly80-2.hosting-ip.com
-  servername: vipfast_7.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 169bb191-9155-4fc8-9fe4-b4380ca764c1
-  ws-opts:
-    headers:
-      Host: vipfast_7.com
-    path: /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7?ed=1024
-- name: 15|US_speednode_0029
-  network: ws
-  port: 443
-  server: wear.net
-  servername: wear.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 046fd332-80a6-43b0-91b0-7238a1dfc36c
-  ws-opts:
-    headers:
-      Host: aw039.ir
-    path: /
-- name: 15|US_speednode_0031
-  network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- name: 15|US_speednode_0032
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /?ed=2560
-- name: 15|US_speednode_0033
-  network: ws
-  port: 80
-  server: tgju.org
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray?ed=2560
-- name: 15|US_speednode_0034
-  network: ws
-  port: 443
-  server: hajlab.ucdavis.edu
-  servername: hajlab.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 262d8ab2-0d82-4b8b-90f9-601109aa39b3
-  ws-opts:
-    headers:
-      Host: joinxvproxybedee.ir
-    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
-- name: 15|US_speednode_0035
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray?ed=2560
-- name: 15|US_speednode_0036
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- name: 15|US_speednode_0038
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /Telegram@MTMVPN/?ed=2560
-- name: 15|US_speednode_0042
-  network: ws
-  port: 443
-  server: 151.101.194.133
-  servername: mio.splashthat.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 32dbe23a-852e-44a8-9dc2-80188643f550
-  ws-opts:
-    headers:
-      Host: moeinzp.com
-    path: /telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn?ed=2048
-- name: 15|US_speednode_0043
-  network: ws
-  port: 80
-  server: 151.101.3.8
-  servername: 49.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: abfc215c-b2dc-4d7b-bab4-e0e17812a8d6
-  ws-opts:
-    headers:
-      Host: 49.org
-    path: /telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee?ed=2095
-- name: 15|US_speednode_0044
-  network: ws
-  port: 80
-  server: NUFiLTER.fastly80-3.hosting-ip.com
-  servername: 6.fidsxss222x.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: ff2b2fca-a979-4f23-8740-17975f11110a
-  ws-opts:
-    headers:
-      Host: 6.fidsxss222x.ir
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080
-- name: 15|US_speednode_0045
-  network: ws
-  port: 80
-  server: speedtest.net
-  servername: khamenei.Tehran0087.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 70a0c616-ef20-4e3b-b5bf-1e97e670c5c8
-  ws-opts:
-    headers:
-      Host: khamenei.Tehran0087.ir
-    path: /telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420?ed=2048
-- name: 15|US_speednode_0046
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 15|US_speednode_0047
-  network: ws
-  port: 80
-  server: speedtest.net
-  servername: foffmelo.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 576d1c42-4b4a-4bba-c786-f1c43700d05d
-  ws-opts:
-    headers:
-      Host: foffmelo.com
-    path: /olem/ws?ed=1024
-- name: 15|US_speednode_0048
-  network: ws
-  port: 80
-  server: nufilter.fastly80-3.hosting-ip.com
-  servername: 6.fidsxss222x.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: ff2b2fca-a979-4f23-8740-17975f11110a
-  ws-opts:
-    headers:
-      Host: 6.fidsxss222x.ir
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080
-- name: 15|US_speednode_0049
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 149.28.110.226
-  skip-cert-verify: true
-  sni: z-v2-077057.kailib.com
-  type: trojan
-  udp: true
-- name: 15|US_speednode_0050
-  network: ws
-  port: 80
-  server: cloud2.xmsvx.com
-  servername: jetservices55.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: a65af0ef-ff96-412d-a6ff-477dd6809b85
-  ws-opts:
-    headers:
-      Host: jetservices55.ir
-    path: /CANALTELEGRAM--@jet_config--CANALTELEGRAM--@jet_config
-- name: 15|US_speednode_0056
-  network: ws
-  port: 80
-  server: join.ISVvpn.fastly80-3.hosting-ip.com
-  servername: Copy-Az-Chahnnel-ISVvpn-21.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: a626abcf-b56e-4d3f-9067-1a3e76ee489a
-  ws-opts:
-    headers:
-      Host: Copy-Az-Chahnnel-ISVvpn-21.com
-    path: /VLESS?ed=80
+  uuid: 193f3ec7-d850-481b-b17d-1094edc3e03b
