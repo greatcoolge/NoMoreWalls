@@ -1,69 +1,6 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth: 3e62210d-f3a1-4a0c-840c-5cbb1fd9c664
-  client-fingerprint: chrome
-  name: 0,15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: false
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  udp: true
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
 - cipher: chacha20-ietf
-  name: 0|🇺🇸2 |  5.1MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8505
-  protocol: origin
-  protocol-param: ''
-  server: cn15.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|🇺🇸3 |  5.4MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8110
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|🇺🇸4 |  3.3MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8508
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|🇺🇸5 |  3.5MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8109
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|🇺🇸6 |  6.2MB/s
+  name: 0|🇺🇸1 |  6.0MB/s
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -71,6 +8,47 @@ proxies:
   protocol: origin
   protocol-param: ''
   server: cn05.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|🇺🇸2 |  1.5MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8504
+  protocol: origin
+  protocol-param: ''
+  server: cn15.closeai.one
+  type: ssr
+  udp: true
+- name: 0|🇺🇸3 |  1.7MB/s
+  password: 93f7b539-f89e-3087-8c39-54c4021690ce
+  port: 24603
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z259.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|🇺🇸4 |  5.5MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8124
+  protocol: origin
+  protocol-param: ''
+  server: cn05.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|🇺🇸5 |  5.3MB/s
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8505
+  protocol: origin
+  protocol-param: ''
+  server: cn15.closeai.one
   type: ssr
   udp: true
 - client-fingerprint: chrome
@@ -103,17 +81,87 @@ proxies:
   tls: false
   type: vmess
   uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|US_speednode_0100
-  port: 40021
-  reality-opts:
-    public-key: CuFCD-MhNUXArRCGaTHi7BiZvDXfy9sgKSeL3sPMbHY
-    short-id: 891814a4
-  server: 108.181.18.171
-  servername: apple.com
-  skip-cert-verify: false
+- client-fingerprint: random
+  name: 15|US_speednode_0155
+  network: ws
+  port: 443
+  server: 104.16.163.16
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 193f3ec7-d850-481b-b17d-1094edc3e03b
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0157
+  network: ws
+  port: 443
+  server: 104.16.96.120
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0158
+  network: ws
+  port: 443
+  server: 104.24.51.228
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0160
+  network: ws
+  port: 443
+  server: 103.21.244.10
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0161
+  network: ws
+  port: 443
+  server: 104.24.3.206
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- name: 15|US_speednode_0166
+  port: 443
+  server: 15.204.184.159
+  servername: 147135011033.sec21org.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
