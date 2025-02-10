@@ -1,62 +1,58 @@
 proxies:
-- alterId: 2
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸3 |  3.6MB/s
+  password: 5ea3dd8e-551d-4473-8736-9d594c0505b7
+  port: 20119
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
-  name: 0|🇺🇸1 |  6.0MB/s
-  network: ws
-  port: 23617
-  server: 17.mamamajd.site
-  skip-cert-verify: true
+  http-opts:
+    headers:
+      Host:
+      - moi.ir
+    method: GET
+    path:
+    - /
+  name: 0|🇺🇸4 |  1.7MB/s
+  network: http
+  port: 8881
+  server: 155.138.204.188
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
-  uuid: fb362f19-b489-3f1e-8c0d-573b60360f05
-  ws-opts:
-    headers:
-      Host: 17.mamamajd.site
-    path: /
-- cipher: chacha20-ietf
-  name: 0|🇺🇸2 |  1.6MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8123
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
-  udp: true
-- name: 0|🇺🇸3 |  5.5MB/s
-  password: c983640e-2a6b-3ea8-9a13-6e03032150dd
-  port: 20308
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z308.hongkongnode.top
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- client-fingerprint: chrome
+  name: 13,14|美国|@ripaojiedian
+  network: tcp
+  password: dc15d997-8b26-4294-870e-c90a5784dca4
+  port: 13019
+  server: naiu-us.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国|@ripaojiedian
-  password: NG8UKXGFBF4LFJQ9
-  port: 17005
-  server: 183.232.239.172
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇺🇸 美国2|@ripaojiedian
-  password: M4GWJS4SIR9UHK0Y
-  port: 17002
-  server: w72tapyb.slashdevslashnetslashtun.net
+  port: 44447
+  server: 38.147.161.47
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  password: 5FJF20OHXKZCSDEB
-  port: 17006
-  server: 183.61.177.234
-  tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
+- alterId: 0
+  cipher: auto
+  name: 14|美国2|@ripaojiedian
+  network: tcp
+  port: '44447'
+  server: 38.147.161.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
 - name: 15|US_speednode_0049
   password: Bw5Mz7QkVp
   port: 443
