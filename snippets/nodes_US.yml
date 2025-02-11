@@ -1,18 +1,7 @@
 proxies:
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 0,13|🇭🇰 香港3|@ripaojiedian
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8123
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸2 |  2.1MB/s
+  name: 0|🇺🇸1 |  2.3MB/s
   network: ws
   port: 23617
   server: 17.mamamajd.site
@@ -25,17 +14,29 @@ proxies:
     headers:
       Host: 17.mamamajd.site
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0,13|🇯🇵 日本|@ripaojiedian
-  port: 33184
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
+- cipher: aes-256-cfb
+  name: 0|🇺🇸2 |  1.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.188.99.174
+  type: ss
+- name: 0|🇺🇸3 |  9.4MB/s
+  password: 16088499-0c55-3a79-9715-c0996c3617c9
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0|🇺🇸4 |  4.1MB/s
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 7303
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: us-3-572.flztjc.net
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
   network: tcp
