@@ -1,33 +1,127 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇹🇼1 |  3.3MB/s
-  network: tcp
-  port: 31135
-  server: 910281.chasel.sbs
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  4.9MB/s
+  name: 0|🇸🇬1 |  9.8MB/s
   password: amazonskr05
   port: 443
-  server: 13.213.40.92
+  server: 13.212.177.74
   type: ss
+- name: 0|🌀1- |  2.9MB/s
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 6303
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: jp-3-556.flztjc.net
+  type: trojan
+  udp: true
+- name: 0,15|CN_speednode_0008
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 6306
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: jp-6-559.flztjc.net
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  2.4MB/s
+  name: 0|🇯🇵1 |  3.5MB/s
   password: amazonskr05
   port: 443
-  server: 54.179.36.235
+  server: 52.68.141.225
   type: ss
+- cipher: aes-256-cfb
+  name: 0|🇺🇸1 |  2.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 35.87.108.47
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇺🇸2 |  8.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.143.130.71
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.28.118
+  type: ss
+  udp: true
+- name: 0,15|CN_speednode_0009
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 9301
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: sgp-1-546.flztjc.net
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇸🇬2 |  6.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.221.234.117
+  type: ss
+- name: 0|🇹🇼1 |  5.9MB/s
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 5305
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: tw-05-591.flztjc.net
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🌀1- |  3.5MB/s
-  network: tcp
-  port: 32027
-  server: 510613.frederica.xyz
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 0|🇺🇸3 |  2.0MB/s
+  network: http
+  port: 8881
+  server: 155.138.208.122
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- name: 0|🇹🇼2 |  6.0MB/s
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- name: 0|🇯🇵3 |  1.3MB/s
+  password: 80061424-03b6-3a50-88c9-d00ee5de1ea5
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  4.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.206.238.113
+  type: ss
+  udp: true
+- name: 0|🌀2- |  3.5MB/s
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 6301
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: jp-1-554.flztjc.net
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇰🇷1 |  6.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.79.249.199
+  type: ss
+- name: 0|🇹🇼2 |  5.8MB/s
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 5302
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: tw-2-545.flztjc.net
+  type: trojan
+  udp: true
+- name: 0|🇹🇼3 |  5.8MB/s
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5304
   server: dozo01.flztjc.top
@@ -35,130 +129,59 @@ proxies:
   sni: tw-04-590.flztjc.net
   type: trojan
   udp: true
-- name: 0,15|CN_speednode_0010
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇦🇺1 |  5.3MB/s
+  password: 7c28b43c-41c4-4af1-81c4-48690133d1cd
+  port: 52149
+  server: 0.o.0.cdn-node.ss.one.57.gmaes-cdn-usercontent.com
+  type: ss
+  udp: true
+- name: 0|🇮🇷3 |  5.8MB/s
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 5306
+  port: 9304
   server: dozo01.flztjc.top
   skip-cert-verify: true
-  sni: tw-06-592.flztjc.net
+  sni: sgp-4-549.flztjc.net
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺1 |  2.1MB/s
-  network: tcp
-  port: 31104
-  server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-cfb
-  name: 0|🇰🇷1 |  1.2MB/s
+  name: 0|🇺🇸4 |  2.1MB/s
   password: amazonskr05
   port: 443
-  server: 52.78.5.163
+  server: 34.221.182.25
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 0|🇯🇵1 |  1.9MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21254
-  server: 581023.horace.im
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|🌀2- |  3.8MB/s
-  network: tcp
-  port: 32025
-  server: 581023.horace.im
+  name: 0|🇯🇵5 |  1.0MB/s
+  network: ws
+  port: 12889
+  server: cs.ktmhy.cc
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: 0|🇹🇼4 |  4.9MB/s
-  network: tcp
-  port: 31141
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  6.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.255.247.242
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺2 |  4.3MB/s
-  network: tcp
-  port: 31202
-  server: 910281.chasel.sbs
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: 0|🇺🇸1 |  5.9MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21349
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|🇺🇸2 |  1.9MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21247
-  server: 581023.horace.im
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|🇺🇸3 |  2.6MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21347
-  server: 581023.horace.im
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺3 |  2.3MB/s
-  network: tcp
-  port: 31201
-  server: 910281.chasel.sbs
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: 0|🇷🇺4 |  2.5MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21202
-  server: 910281.chasel.sbs
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  3.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.249.60.76
-  type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 0|🇷🇺5 |  6.1MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21103
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷2 |  2.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.180.158.248
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺6 |  1.8MB/s
-  network: tcp
-  port: 31110
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: 0|🇷🇺7 |  5.6MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21105
-  server: 581610.eveline.lol
-  type: ss
+  uuid: 89718007-5cb2-42db-bbb6-15b6dcdd8e41
+  ws-opts:
+    headers:
+      Host: cs.ktmhy.cc
+    path: /
+- name: 0|🇺🇸5 |  1.3MB/s
+  password: 80061424-03b6-3a50-88c9-d00ee5de1ea5
+  port: 20279
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z279.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵6 |  3.6MB/s
+  password: 80061424-03b6-3a50-88c9-d00ee5de1ea5
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 13|tg频道:@ripaojiedian
   password: amazonskr05
@@ -399,20 +422,12 @@ proxies:
   protocol-param: ''
   server: cn15.closeai.one
   type: ssr
-- name: 15|CN_speednode_0008
+- name: 15|CN_speednode_0010
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 6306
+  port: 5306
   server: dozo01.flztjc.top
   skip-cert-verify: true
-  sni: jp-6-559.flztjc.net
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0009
-  password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 9301
-  server: dozo01.flztjc.top
-  skip-cert-verify: true
-  sni: sgp-1-546.flztjc.net
+  sni: tw-06-592.flztjc.net
   type: trojan
   udp: true
 - name: 15|CN_speednode_0011
