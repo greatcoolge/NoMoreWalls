@@ -1,51 +1,39 @@
 proxies:
 - cipher: chacha20-ietf
-  name: 0|🇹🇼1 |  6.2MB/s
+  name: 0|🇹🇼1 |  3.3MB/s
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
-  port: 8303
+  port: 8301
   protocol: origin
   protocol-param: ''
   server: cn10.closeai.one
   type: ssr
   udp: true
-- name: 0|🇹🇼2 |  6.3MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: tw4-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: tw4-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
-  name: 13,14|台湾|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 18147
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mm2.redapricotcloud.com
-  type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 0|🇹🇼2 |  3.5MB/s
+  password: 896fe3b1-aff4-4795-aa8b-48cabbff8e2d
+  port: 12029
+  server: mdss-tw.04z3susick.download
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 13|🇹🇼 台湾|@ripaojiedian
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8801
+  protocol: origin
+  protocol-param: ''
+  server: cn00.closeai.one
+  type: ssr
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾2|@ripaojiedian
-  port: 19490
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
-- alterId: 0
-  cipher: auto
-  name: 14|台湾2|@ripaojiedian
-  network: tcp
-  port: '19490'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
+  type: ss

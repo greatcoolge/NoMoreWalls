@@ -1,67 +1,69 @@
 proxies:
-- client-fingerprint: chrome
-  name: 13|🇯🇵 日本|@ripaojiedian
-  password: '!!str 3669023846591373312'
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵1 |  6.1MB/s
+  password: amazonskr05
   port: 443
-  server: equipped-parakeet.pigeon031.one
-  skip-cert-verify: false
-  sni: equipped-parakeet.pigeon031.one
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14|日本2|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 28721
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
+  server: 18.183.142.200
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  port: 39131
-  server: 45.159.51.161
+  name: 13|🇯🇵 日本|@ripaojiedian
+  port: 33184
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
-- client-fingerprint: chrome
-  name: 13,14|日本4|@ripaojiedian
-  network: tcp
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13011
-  server: naiu-jp.05vr9nyqg5.download
+  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|日本2|@ripaojiedian
+  network: ws
+  port: '25775'
+  server: tttxbmsm.fask511.cfd
+  servername: ''
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8411
+  protocol: origin
+  protocol-param: ''
+  server: cn14.closeai.one
+  type: ssr
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.139.221.191
+  server: 52.192.7.214
   tfo: false
   type: ss
-- name: 14,15|JP_speednode_0127
-  network: tcp
-  password: '!!str 3669023846591373312'
-  port: 443
-  server: equipped-parakeet.pigeon031.one
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 14|日本3|@ripaojiedian
+  name: 14|日本|@ripaojiedian
   network: tcp
-  port: '39131'
-  server: 45.159.51.161
+  port: '33184'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
+  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
 - name: 15|JP_speednode_0121
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
@@ -108,6 +110,13 @@ proxies:
   server: uk.mjt000.com
   skip-cert-verify: false
   sni: uk.mjt000.com
+  type: trojan
+  udp: true
+- name: 15|JP_speednode_0127
+  password: '!!str 3669023846591373312'
+  port: 443
+  server: equipped-parakeet.pigeon031.one
+  skip-cert-verify: false
   type: trojan
   udp: true
 - name: 15|JP_speednode_0128
