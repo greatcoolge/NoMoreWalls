@@ -1,4 +1,13 @@
 proxies:
+- auth: 99715951-122e-44dd-87fa-6b1621ca386a
+  client-fingerprint: chrome
+  name: 0|🇩🇪1 |  1.6MB/s
+  password: 99715951-122e-44dd-87fa-6b1621ca386a
+  port: 22888
+  server: de2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: de2.xiaoliyu.cyou
+  type: hysteria2
 - client-fingerprint: chrome
   name: 13|🇩🇪 德国|@ripaojiedian
   password: '!!str 65086441068973800'
@@ -7,26 +16,11 @@ proxies:
   skip-cert-verify: false
   sni: mature-flamingo.shiner427.skin
   type: trojan
-- name: 14|德国|@ripaojiedian
+- name: 14,15|DE_speednode_0030
   network: tcp
   password: '!!str 65086441068973800'
   port: 443
   server: mature-flamingo.shiner427.skin
-  type: trojan
-- http-opts:
-    headers:
-      Host:
-      - sso.farhang.gov.ir
-    method: GET
-    path:
-    - /download
-  name: 15|DE_speednode_0032
-  network: http
-  port: 8080
-  server: 188.245.251.47
-  servername: sso.farhang.gov.ir
   skip-cert-verify: false
-  tls: false
-  type: vless
+  type: trojan
   udp: true
-  uuid: 1c86a177-d7ff-4a5f-8255-cfeb4e051305
