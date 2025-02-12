@@ -1,10 +1,36 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵1 |  5.2MB/s
-  password: d626953d-cde0-4f52-9554-a12b116f853c
-  port: 36113
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  name: 0|🇯🇵1 |  5.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.115.39.161
   type: ss
+  udp: true
+- name: 0|🇯🇵2 |  2.2MB/s
+  password: a4ed7a0c-d92c-3742-b788-f70385a8e384
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵3 |  2.3MB/s
+  password: a4ed7a0c-d92c-3742-b788-f70385a8e384
+  port: 41767
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x114.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.206.238.113
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -24,14 +50,6 @@ proxies:
   server: lm.kaiqsz.com
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 43.206.238.113
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 14|日本|@ripaojiedian
@@ -42,11 +60,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 0acfdca6-a960-469a-a7b8-2634371fd9d3
-- name: 15|JP_speednode_0032
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: vn.mjt000.com
-  skip-cert-verify: false
-  sni: vn.mjt000.com
-  type: trojan
-  udp: true

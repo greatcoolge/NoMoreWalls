@@ -1,107 +1,46 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸1 |  2.2MB/s
-  port: 45112
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸2 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.143.130.71
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 0|🇺🇸3 |  3.5MB/s
-  network: ws
-  port: 80
-  server: 141.101.123.208
-  servername: cc.ailicf.us.kg
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-  ws-opts:
-    headers:
-      Host: cc.ailicf.us.kg
-    path: /b5cdabf0-e04
-- auth: 5d23f8ab-f2cd-47c9-8e25-179397358fc8
-  down: 1000
-  name: 0|🇺🇸4 |  6.0MB/s
-  password: 5d23f8ab-f2cd-47c9-8e25-179397358fc8
-  port: 30001
-  server: oracle-amd-osaka1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: osaka.nodes.lanmaoyun.icu
+  name: 0|🇺🇸1 |  4.1MB/s
+  password: 0078c890-e340-4d76-b3d0-752b9c458faa
+  port: 22337
+  ports: 22000-27000
+  server: gb1.xiaoliyu.cyou
+  sni: gb1.xiaoliyu.cyou
   type: hysteria2
-  udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
+- auth: 99715951-122e-44dd-87fa-6b1621ca386a
   client-fingerprint: chrome
-  name: 0|🇺🇸5 |  1.7MB/s
-  password: f175d66f-7cf5-47aa-83be-a8e969cdbe2d
-  port: 40000
-  server: rk1.boost1.top
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 0|🇺🇸6 |  3.5MB/s
-  network: tcp
-  port: 45402
-  server: 120.232.153.123
+  name: 0|🇺🇸2 |  2.7MB/s
+  password: 99715951-122e-44dd-87fa-6b1621ca386a
+  port: 25778
+  server: us1.xiaoliyu.cyou
   skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸7 |  4.8MB/s
-  port: 45063
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
-- cipher: aes-256-cfb
-  name: 0|🇺🇸8 |  12.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.185.150
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
+  sni: us1.xiaoliyu.cyou
+  type: hysteria2
+- auth: a4c1b618-024a-42d4-b78a-1c25c337a484
   client-fingerprint: chrome
-  name: 0|🇺🇸9 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.245.222.80
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸10 |  6.1MB/s
-  port: 45073
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
+  name: 0|🇺🇸3 |  2.0MB/s
+  password: a4c1b618-024a-42d4-b78a-1c25c337a484
+  port: 22027
+  server: us2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us2.xiaoliyu.cyou
+  type: hysteria2
 - client-fingerprint: chrome
-  name: 0|🇺🇸11 |  5.9MB/s
+  name: 0|🇺🇸4 |  2.0MB/s
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 7302
+  port: 7301
   server: dozo01.flztjc.top
   skip-cert-verify: true
-  sni: us-2-571.flztjc.net
+  sni: us-1-570.flztjc.net
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸5 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.195.215.236
+  type: ss
   udp: true
 - client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
@@ -138,12 +77,14 @@ proxies:
   skip-cert-verify: false
   sni: grateful-lark.shiner427.skin
   type: trojan
-- name: 14|美国|@ripaojiedian
+- name: 14,15|US_speednode_0129
   network: tcp
   password: '!!str 65086441068973800'
   port: 443
   server: live-serval.shiner427.skin
+  skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14|美国2|@ripaojiedian
@@ -154,18 +95,160 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 14|美国3|@ripaojiedian
+- name: 14,15|US_speednode_0123
   network: tcp
   password: '!!str 65086441068973800'
   port: 443
   server: humorous-lioness.shiner427.skin
+  skip-cert-verify: false
   type: trojan
-- name: 14|美国4|@ripaojiedian
+  udp: true
+- name: 14,15|US_speednode_0126
   network: tcp
   password: '!!str 65086441068973800'
   port: 443
   server: grateful-lark.shiner427.skin
+  skip-cert-verify: false
   type: trojan
+  udp: true
+- name: 15|US_speednode_0105
+  password: 915476b6-7b20-4b57-be47-d9d0fd6a6ffb
+  port: 46463
+  server: cea291b7d55c322ec47dbd8c56359e7a.us.in.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0107
+  password: 915476b6-7b20-4b57-be47-d9d0fd6a6ffb
+  port: 42911
+  server: b81d0ebd97b5d2f9526651812be75f7e.us.in.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+  udp: true
+- http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
+  name: 15|US_speednode_0111
+  network: http
+  port: 2053
+  server: a11.kiodent.ir
+  servername: fast.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 665b6586-00af-4615-afc3-6310590489c1
+- http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
+  name: 15|US_speednode_0112
+  network: http
+  port: 2053
+  server: 77.221.149.42
+  servername: fast.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 665b6586-00af-4615-afc3-6310590489c1
+- name: 15|US_speednode_0115
+  network: ws
+  port: 80
+  server: 66.235.200.191
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 15|US_speednode_0117
+  network: ws
+  port: 80
+  server: 66.235.200.58
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- client-fingerprint: random
+  name: 15|US_speednode_0118
+  network: ws
+  port: 443
+  server: 103.21.244.163
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0119
+  network: ws
+  port: 443
+  server: 104.24.173.172
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0127
+  network: ws
+  port: 443
+  server: 188.114.97.42
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 15|US_speednode_0130
+  network: ws
+  port: 443
+  server: 104.16.38.172
+  servername: edgetunnel-3pc.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    headers:
+      Host: edgetunnel-3pc.pages.dev
+    path: /?ed=2560
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -184,40 +267,3 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 15|US_speednode_0083
-  network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 15|US_speednode_0084
-  network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 15|US_speednode_0085
-  port: 443
-  server: 135.148.74.155
-  servername: 147135004002.sec20org.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
