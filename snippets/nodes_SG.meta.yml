@@ -1,27 +1,36 @@
 proxies:
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇸🇬1 |  12.2MB/s
+  name: 0|🇸🇬1 |  2.5MB/s
   password: amazonskr05
   port: 443
-  server: 18.141.9.206
+  server: 54.255.247.242
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬2 |  2.1MB/s
+  port: 20014
+  server: i.needss.top
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  1.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.139.221.191
-  type: ss
-- client-fingerprint: chrome
-  name: 13,14|新加坡3|@ripaojiedian
-  network: tcp
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13028
-  server: naiu-sg.05vr9nyqg5.download
+  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
+- alterId: 0
+  cipher: none
+  client-fingerprint: chrome
+  name: 13,14|新加坡|@ripaojiedian
+  network: ws
+  port: '8967'
+  server: 31.58.142.221
+  servername: neo.nicme.me
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 7d29f1ca-647b-4b4e-b9c8-6beab7133535
+  ws-opts:
+    headers:
+      Host: neo.nicme.me
+    path: /BONRyKGhDE
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 新加坡2|@ripaojiedian
@@ -30,11 +39,25 @@ proxies:
   server: 103.106.229.219
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 13|🇸🇬 新加坡3|@ripaojiedian
+  password: '!!str 65086441068973800'
+  port: 443
+  server: summary-sawfish.shiner427.skin
+  skip-cert-verify: false
+  sni: summary-sawfish.shiner427.skin
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.206.240.27
+  server: 43.207.97.53
   tfo: false
   type: ss
+- name: 14|新加坡3|@ripaojiedian
+  network: tcp
+  password: '!!str 65086441068973800'
+  port: 443
+  server: summary-sawfish.shiner427.skin
+  type: trojan
