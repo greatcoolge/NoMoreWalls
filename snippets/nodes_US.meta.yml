@@ -1,28 +1,55 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.143.103.137
-  type: ss
-- name: 0|🇺🇸2 |  5.1MB/s
-  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
-  port: 159
-  server: 107.149.254.26
-  skip-cert-verify: true
-  type: trojan
-- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇺🇸3 |  7.3MB/s
+  name: 0|🇺🇸1 |  11.1MB/s
   password: amazonskr05
   port: 443
-  server: 54.245.222.80
+  server: 52.195.215.236
   type: ss
   udp: true
-- name: 0,15|US_speednode_0146
+- auth: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
+  client-fingerprint: chrome
+  name: 0|🇺🇸2 |  2.3MB/s
+  password: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
+  port: 24701
+  server: us1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us1.xiaoliyu.cyou
+  type: hysteria2
+- client-fingerprint: chrome
+  down: ''
+  fingerprint: ''
+  name: 0|🇺🇸3 |  3.2MB/s
+  obfs: salamander
+  obfs-password: 13f7ba5f
+  password: 4e9ee29b39a28277
+  port: 443
+  server: 66.135.11.68
+  skip-cert-verify: true
+  sni: 66.135.11.68
+  type: hysteria2
+  up: ''
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0|🇺🇸4 |  6.1MB/s
+  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
+  port: 49095
+  server: temp.haoyf.xyz
+  type: ss
+  udp: true
+- auth: 5bf003f0-be90-40fe-acb4-6045e7eff135
+  client-fingerprint: chrome
+  name: 0|🇺🇸5 |  1.9MB/s
+  password: 5bf003f0-be90-40fe-acb4-6045e7eff135
+  port: 24703
+  server: us1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us1.xiaoliyu.cyou
+  type: hysteria2
+- name: 0,15|US_speednode_0148
   network: ws
   port: 80
-  server: 66.235.200.58
+  server: 66.235.200.191
   servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
@@ -33,53 +60,21 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- client-fingerprint: chrome
-  name: 0|🇺🇸5 |  1.1MB/s
-  network: ws
-  port: 80
-  server: 104.17.147.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /?ed=MARAMBASHI_MARAMBASHI/?ed=2560
-- alterId: 0
+- alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 0,13|🇯🇵 日本3|@ripaojiedian
-  port: 33184
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
+  name: 0|🇺🇸7 |  5.3MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b2d1e704-59f5-48ec-ba97-9a5e2005b37b
-- auth: 9bb452b106ffc217
-  client-fingerprint: chrome
-  name: 0|🇺🇸7 |  3.1MB/s
-  obfs: salamander
-  obfs-password: cd29099d
-  password: 9bb452b106ffc217
-  port: 443
-  server: 207.148.22.93
-  skip-cert-verify: true
-  type: hysteria2
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 0|🇺🇸8 |  5.5MB/s
-  network: tcp
-  port: 7733
-  reality-opts:
-    public-key: bdVahzcZN694ebmTLvPE0nymHucaFWw6_h6cV5hvTlI
-    short-id: 335bfdfb
-  server: ort.gecs.top
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
+  udp: true
+  uuid: d34dcfb8-f739-3312-b516-74fcb2b9db20
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
 - client-fingerprint: chrome
   name: 13|🇺🇸 美国3|@ripaojiedian
   password: '!!str 65086441068973800'
@@ -128,10 +123,10 @@ proxies:
   type: vless
   udp: true
   uuid: bc083408-220d-477c-8f43-21289df60def
-- name: 15|US_speednode_0148
+- name: 15|US_speednode_0146
   network: ws
   port: 80
-  server: 66.235.200.191
+  server: 66.235.200.58
   servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false

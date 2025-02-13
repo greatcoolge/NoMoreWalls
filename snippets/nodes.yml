@@ -1,106 +1,123 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  5.8MB/s
+  name: 0|🇺🇸1 |  11.1MB/s
   password: amazonskr05
   port: 443
-  server: 18.143.103.137
+  server: 52.195.215.236
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🌀1- |  5.7MB/s
-  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
-  port: 17175
-  server: temp.haoyf.xyz
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇫🇷1 |  9.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 57.180.31.56
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺1 |  2.8MB/s
-  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
-  port: 36511
-  server: vip.baima360.com
+  name: 0|🇺🇸4 |  6.1MB/s
+  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
+  port: 49095
+  server: temp.haoyf.xyz
   type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 0|🇹🇼2 |  6.0MB/s
+  name: 0|🌏1 |  3.2MB/s
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
     host: 78fe8292462.microsoft.com
     mode: http
-  port: 3026
-  server: pr3.jymzffbquawl.com
+  port: 3603
+  server: pr1.jymzffbquawl.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🌀2- |  5.3MB/s
-  password: 6e44d9ba-780e-4111-bb44-bdd165ccbce2
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  3.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.202.60.105
-  type: ss
-- name: 0|🇺🇸2 |  5.1MB/s
-  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
-  port: 159
-  server: 107.149.254.26
+- name: 0|🇯🇵1 |  6.1MB/s
+  password: ed731f18-985f-318a-9e3b-d2c9db53f970
+  port: 41767
+  server: gy.58n.net
   skip-cert-verify: true
+  sni: x114.flybar.work
   type: trojan
+  udp: true
+- name: 0,13|🇸🇬 新加坡3|@ripaojiedian
+  password: '65086441068973800'
+  port: 443
+  server: robust-redfish.shiner427.skin
+  skip-cert-verify: false
+  sni: robust-redfish.shiner427.skin
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧1 |  2.0MB/s
+  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
+  port: 33712
+  server: temp.haoyf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇺🇸3 |  7.3MB/s
+  name: 0|🇯🇵2 |  4.1MB/s
   password: amazonskr05
   port: 443
-  server: 54.245.222.80
+  server: 54.199.161.79
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸7 |  5.3MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d34dcfb8-f739-3312-b516-74fcb2b9db20
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
+- cipher: aes-256-cfb
+  name: 0|🇫🇷2 |  4.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 57.180.66.41
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 0|🇷🇺3 |  5.6MB/s
+  name: 0|🇷🇺1 |  2.0MB/s
   password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
   port: 53609
   server: temp.haoyf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 0|🇨🇦1 |  1.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.129.8.91
-  type: ss
 - cipher: aes-256-gcm
-  name: 0|🇷🇺4 |  4.1MB/s
+  name: 0|🇷🇺2 |  6.3MB/s
   password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
-  port: 29831
-  server: temp1.haoyf.xyz
+  port: 31601
+  server: temp2.haoyf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|🇨🇦2 |  7.3MB/s
+  name: 0|🇸🇬2 |  7.4MB/s
   password: amazonskr05
   port: 443
-  server: 47.129.38.168
+  server: 13.212.175.124
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 0,13|🇯🇵 日本3|@ripaojiedian
-  port: 33184
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b2d1e704-59f5-48ec-ba97-9a5e2005b37b
 - cipher: rc4-md5
-  name: 0|🇮🇷1 |  5.0MB/s
+  name: 0|🇮🇷1 |  5.4MB/s
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
     host: 78fe8292462.microsoft.com
     mode: http
-  port: 4606
-  server: bs3.jymzffbquawl.com
+  port: 6609
+  server: pr3.jymzffbquawl.com
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇷🇺3 |  6.1MB/s
+  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
+  port: 36511
+  server: vip.baima360.com
+  type: ss
 - cipher: rc4-md5
   name: 13|🇭🇰 香港|@ripaojiedian
   password: RenzheCloudSS
@@ -149,6 +166,16 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  port: 33184
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b2d1e704-59f5-48ec-ba97-9a5e2005b37b
 - name: 13|🇰🇷 韩国|@ripaojiedian
   password: '65086441068973800'
   port: 443
@@ -186,13 +213,6 @@ proxies:
   server: 103.106.229.219
   tfo: false
   type: ss
-- name: 13|🇸🇬 新加坡3|@ripaojiedian
-  password: '65086441068973800'
-  port: 443
-  server: robust-redfish.shiner427.skin
-  skip-cert-verify: false
-  sni: robust-redfish.shiner427.skin
-  type: trojan
 - name: 13|🇺🇸 美国3|@ripaojiedian
   password: '65086441068973800'
   port: 443
