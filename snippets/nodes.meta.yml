@@ -1,124 +1,139 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  11.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
-  type: ss
-  udp: true
-- auth: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
-  name: 0|🇺🇸2 |  2.3MB/s
-  password: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
-  port: 24701
+- auth: 7ffe88bc-c79c-4f54-989e-b4896bf35535
+  name: 0|🇦🇺1 |  3.7MB/s
+  password: 7ffe88bc-c79c-4f54-989e-b4896bf35535
+  port: 25132
+  server: de1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: de1.xiaoliyu.cyou
+  type: hysteria2
+- auth: a4c1b618-024a-42d4-b78a-1c25c337a484
+  name: 0|🇺🇸1 |  3.4MB/s
+  password: a4c1b618-024a-42d4-b78a-1c25c337a484
+  port: 25518
   server: us1.xiaoliyu.cyou
   skip-cert-verify: true
   sni: us1.xiaoliyu.cyou
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 0|🇺🇸3 |  3.2MB/s
-  obfs: salamander
-  obfs-password: 13f7ba5f
-  password: 4e9ee29b39a28277
-  port: 443
-  server: 66.135.11.68
-  skip-cert-verify: true
-  sni: 66.135.11.68
-  type: hysteria2
-  up: ''
-- cipher: aes-256-cfb
-  name: 0|🇫🇷1 |  9.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 57.180.31.56
+- cipher: aes-256-gcm
+  name: 0|🇮🇷1 |  5.5MB/s
+  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
+  port: 36261
+  server: temp1.haoyf.xyz
   type: ss
   udp: true
-- flow: xtls-rprx-vision
-  name: 0|🇹🇼1 |  6.0MB/s
-  network: tcp
-  port: 30182
-  reality-opts:
-    public-key: P_PUED_zdQkKxnhk2u32O78SEfSmhyJaTK4kG5rspkA
-    short-id: af9cdf47
-  server: tw2s.youxuan.wiki
-  servername: www.microsoft.com
-  tls: true
-  type: vless
-  uuid: 5407367c-cfa5-4e24-89ee-990e86d4cde8
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸4 |  6.1MB/s
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  5.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.250.55.231
+  type: ss
+  udp: true
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  name: 0|🇺🇸2 |  3.9MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 26556
+  server: gb1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: gb1.xiaoliyu.cyou
+  type: hysteria2
+- name: 0|🇬🇧1 |  2.2MB/s
+  password: myszy28811
+  port: 28811
+  server: pipi.myddns.me
+  type: socks5
+  udp: true
+  username: myszy
+- cipher: aes-256-gcm
+  name: 0|🇮🇷2 |  1.2MB/s
   password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
-  port: 49095
+  port: 26209
   server: temp.haoyf.xyz
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 0|🌏1 |  3.2MB/s
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 3603
-  server: pr1.jymzffbquawl.com
+- auth: 7ffe88bc-c79c-4f54-989e-b4896bf35535
+  name: 0|🇺🇸3 |  1.1MB/s
+  password: 7ffe88bc-c79c-4f54-989e-b4896bf35535
+  port: 22241
+  server: kr2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: kr2.xiaoliyu.cyou
+  type: hysteria2
+- cipher: aes-256-gcm
+  name: 0|🇷🇺1 |  2.4MB/s
+  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
+  port: 53609
+  server: temp.haoyf.xyz
   type: ss
   udp: true
-- name: 0|🇯🇵1 |  6.1MB/s
-  password: ed731f18-985f-318a-9e3b-d2c9db53f970
-  port: 41767
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x114.flybar.work
-  type: trojan
-  udp: true
-- auth: 5bf003f0-be90-40fe-acb4-6045e7eff135
-  name: 0|🇺🇸5 |  1.9MB/s
-  password: 5bf003f0-be90-40fe-acb4-6045e7eff135
-  port: 24703
-  server: us1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: us1.xiaoliyu.cyou
-  type: hysteria2
-- name: 0,13|🇸🇬 新加坡3|@ripaojiedian
-  password: '65086441068973800'
-  port: 443
-  server: robust-redfish.shiner427.skin
-  skip-cert-verify: false
-  sni: robust-redfish.shiner427.skin
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧1 |  2.0MB/s
+  name: 0|🇵🇱1 |  5.7MB/s
+  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
+  port: 29990
+  server: temp1.haoyf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🌀1- |  3.0MB/s
+  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
+  port: 15888
+  server: vip.baima360.com
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🇬🇧2 |  6.2MB/s
+  password: a198b290-7f12-40d4-8b0f-3f388148809e
+  port: 26597
+  server: 3278.03.ddns-dm.cc
+  type: ss
+  udp: true
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  name: 0|🇬🇧3 |  4.7MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 23867
+  server: fr3.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: fr3.xiaoliyu.cyou
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧4 |  4.0MB/s
   password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
   port: 33712
   server: temp.haoyf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  4.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.199.161.79
-  type: ss
-- name: 0,15|US_speednode_0148
-  network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
+- name: 0|🇺🇸4 |  28.7MB/s
+  network: tcp
+  port: 2046
+  reality-opts:
+    public-key: P0t-7rDdRNOg0bHvo-S_VgNWzcmXb5cB7b6qA1vtfE4
+    short-id: d4fdce164f84219c
+  server: 40.83.200.62
+  servername: www.apple.com
   skip-cert-verify: false
-  tls: false
+  tfo: false
+  tls: true
   type: vless
+  uuid: ba00fea2-9c5b-46aa-895d-2e189715c374
+- name: 0|🇺🇸5 |  4.7MB/s
+  password: ed731f18-985f-318a-9e3b-d2c9db53f970
+  port: 20303
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z303.hongkongnode.top
+  type: trojan
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸6 |  1.8MB/s
+  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
+  port: 23499
+  server: vip.baima360.com
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸7 |  5.3MB/s
+  name: 0|🇺🇸7 |  6.9MB/s
   network: ws
-  port: 23615
-  server: 15.mamamajd.site
+  port: 23617
+  server: 17.mamamajd.site
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -126,73 +141,32 @@ proxies:
   uuid: d34dcfb8-f739-3312-b516-74fcb2b9db20
   ws-opts:
     headers:
-      Host: 15.mamamajd.site
+      Host: 17.mamamajd.site
     path: /
-- cipher: aes-256-cfb
-  name: 0|🇫🇷2 |  4.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 57.180.66.41
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 0|🇷🇺1 |  2.0MB/s
-  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
-  port: 53609
-  server: temp.haoyf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 0|🇷🇺2 |  6.3MB/s
-  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
-  port: 31601
-  server: temp2.haoyf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  7.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.175.124
-  type: ss
-- name: 0|🇭🇰1 |  5.2MB/s
-  network: tcp
-  port: 37528
-  reality-opts:
-    public-key: qBPL3e2Cip0uRxcfXzQ-BNRJep8womQRzupBMojAGH8
-    short-id: 937cf95f39945af1
-  server: 47.79.37.56
-  servername: yahoo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: ee649780-6a77-4125-9edd-b7e72aa86efe
 - auth: 7ffe88bc-c79c-4f54-989e-b4896bf35535
-  name: 0|🇦🇺1 |  4.4MB/s
+  name: 0|🇺🇸8 |  3.0MB/s
   password: 7ffe88bc-c79c-4f54-989e-b4896bf35535
-  port: 25132
-  server: de1.xiaoliyu.cyou
+  port: 26350
+  server: us2.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
+  sni: us2.xiaoliyu.cyou
   type: hysteria2
-- cipher: rc4-md5
-  name: 0|🇮🇷1 |  5.4MB/s
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 6609
-  server: pr3.jymzffbquawl.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺3 |  6.1MB/s
-  password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
-  port: 36511
-  server: vip.baima360.com
-  type: ss
+- auth: 99715951-122e-44dd-87fa-6b1621ca386a
+  name: 0|🇬🇧5 |  2.8MB/s
+  password: 99715951-122e-44dd-87fa-6b1621ca386a
+  port: 25932
+  server: fr3.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: fr3.xiaoliyu.cyou
+  type: hysteria2
+- auth: 7ffe88bc-c79c-4f54-989e-b4896bf35535
+  name: 0|🇺🇸9 |  3.8MB/s
+  password: 7ffe88bc-c79c-4f54-989e-b4896bf35535
+  port: 23878
+  server: sg6.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: sg6.xiaoliyu.cyou
+  type: hysteria2
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -475,6 +449,13 @@ proxies:
   server: 103.106.229.219
   tfo: false
   type: ss
+- name: 13|🇸🇬 新加坡3|@ripaojiedian
+  password: '65086441068973800'
+  port: 443
+  server: robust-redfish.shiner427.skin
+  skip-cert-verify: false
+  sni: robust-redfish.shiner427.skin
+  type: trojan
 - name: 13|🇺🇸 美国3|@ripaojiedian
   password: '65086441068973800'
   port: 443
@@ -610,6 +591,20 @@ proxies:
   network: ws
   port: 80
   server: 66.235.200.58
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 15|US_speednode_0148
+  network: ws
+  port: 80
+  server: 66.235.200.191
   servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
