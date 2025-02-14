@@ -1,13 +1,78 @@
 proxies:
+- auth: a4c1b618-024a-42d4-b78a-1c25c337a484
+  client-fingerprint: chrome
+  name: 0|🇺🇸1 |  2.7MB/s
+  password: a4c1b618-024a-42d4-b78a-1c25c337a484
+  port: 26389
+  server: gb1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: gb1.xiaoliyu.cyou
+  type: hysteria2
+- auth: 5bf003f0-be90-40fe-acb4-6045e7eff135
+  client-fingerprint: chrome
+  name: 0|🇺🇸2 |  1.1MB/s
+  password: 5bf003f0-be90-40fe-acb4-6045e7eff135
+  port: 24703
+  server: us1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us1.xiaoliyu.cyou
+  type: hysteria2
+- auth: a4c1b618-024a-42d4-b78a-1c25c337a484
+  client-fingerprint: chrome
+  name: 0|🇺🇸3 |  1.7MB/s
+  password: a4c1b618-024a-42d4-b78a-1c25c337a484
+  port: 25975
+  server: ln4.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: ln4.xiaoliyu.cyou
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 0|🇺🇸4 |  1.1MB/s
+  network: ws
+  port: 443
+  server: wear.net
+  servername: wear.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 046fd332-80a6-43b0-91b0-7238a1dfc36c
+  ws-opts:
+    headers:
+      Host: aw035.ir
+    path: /?ed=2048
+- auth: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
+  client-fingerprint: chrome
+  name: 0|🇺🇸5 |  3.0MB/s
+  password: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
+  port: 23367
+  server: us2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us2.xiaoliyu.cyou
+  type: hysteria2
 - cipher: aes-256-cfb
-  delay: 983
-  name: 0|🇺🇸1 |  5.1MB/s
+  client-fingerprint: chrome
+  name: 0|🇺🇸6 |  5.2MB/s
   password: amazonskr05
   port: 443
-  server: 3.36.73.26
+  server: 54.190.1.125
   type: ss
 - client-fingerprint: chrome
-  name: 0|🇺🇸2 |  2.8MB/s
+  name: 0|🇺🇸7 |  6.7MB/s
+  network: tcp
+  port: 2046
+  reality-opts:
+    public-key: P0t-7rDdRNOg0bHvo-S_VgNWzcmXb5cB7b6qA1vtfE4
+    short-id: d4fdce164f84219c
+  server: 40.83.200.62
+  servername: www.apple.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: ba00fea2-9c5b-46aa-895d-2e189715c374
+- client-fingerprint: chrome
+  name: 0|🇺🇸8 |  3.4MB/s
   network: ws
   port: 443
   server: 199.232.214.133
@@ -20,14 +85,51 @@ proxies:
     headers:
       Host: aw035.ir
     path: /?ed=2048
-- name: 0|🇺🇸3 |  3.6MB/s
-  password: 21e31c2a-59f5-3b15-840f-ebc4b261f32d
-  port: 20306
-  server: gy.58n.net
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  client-fingerprint: chrome
+  name: 0|🇺🇸9 |  1.5MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 26556
+  server: gb1.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: z306.hongkongnode.top
+  sni: gb1.xiaoliyu.cyou
+  type: hysteria2
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
   type: trojan
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸11 |  4.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.190.194
+  type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸12 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.194.186.197
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
