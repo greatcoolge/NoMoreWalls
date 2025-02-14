@@ -1,4 +1,40 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: 0|🇹🇼1 |  1.3MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4273a789-c232-3ed2-aeef-448c7c600143
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- name: 0|🇹🇼2 |  5.6MB/s
+  password: 660d8d8f-23a6-38a3-8835-b2288a4a0958
+  port: 36821
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z262.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 0|🇹🇼3 |  3.0MB/s
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    host: 78fe8292462.microsoft.com
+    mode: http
+  port: 3026
+  server: pr3.jymzffbquawl.com
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|@ripaojiedian
