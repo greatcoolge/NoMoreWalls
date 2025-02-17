@@ -1,17 +1,18 @@
 proxies:
-- name: 0|🇺🇸9 |  3.1MB/s
-  password: '!!str 3782591447421952000'
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸6 |  5.5MB/s
+  password: amazonskr05
   port: 443
-  server: polite-hyena.adder289.quest
-  skip-cert-verify: true
-  sni: polite-hyena.adder289.quest
-  type: trojan
+  server: 54.184.126.174
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸10 |  11.8MB/s
+  name: 0|🇺🇸8 |  5.1MB/s
   network: ws
-  port: 23617
-  server: 17.mamamajd.site
+  port: 23605
+  server: 5.mamamajd.site
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -19,7 +20,7 @@ proxies:
   uuid: 851df0d4-6d14-3560-adb0-def9805326e1
   ws-opts:
     headers:
-      Host: 17.mamamajd.site
+      Host: 5.mamamajd.site
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
