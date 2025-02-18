@@ -1,21 +1,37 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0,13|🇯🇵 日本3|@ripaojiedian
-  password: 4619d5a0-258a-48f4-98bf-88843d5d7a83
-  port: 30003
-  server: gdgs.tarioblink.me
-  tfo: false
-  type: ss
 - auth: 90fac653-0b27-4eec-a094-ac047c9e60f6
   client-fingerprint: chrome
-  name: 0|🇷🇺2 |  1.4MB/s
+  name: 0|🇷🇺1 |  5.8MB/s
   password: 90fac653-0b27-4eec-a094-ac047c9e60f6
   port: 29015
-  server: 185.22.152.35
+  server: 45.147.200.61
   skip-cert-verify: true
   sni: min.zongyunti.site
   type: hysteria2
+- auth: 90fac653-0b27-4eec-a094-ac047c9e60f6
+  client-fingerprint: chrome
+  name: 0|🇷🇺2 |  4.5MB/s
+  password: 90fac653-0b27-4eec-a094-ac047c9e60f6
+  port: 29015
+  server: 46.17.44.165
+  skip-cert-verify: true
+  sni: min.zongyunti.site
+  type: hysteria2
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: JoinBadeChannel@antimeli
+  name: 0|🇷🇺3 |  1.0MB/s
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: Yfsv32R_HAXEi1l8Tc-sEHiMiNEuqAEL_7dFSFWwtzQ
+    short-id: 3ea6
+  server: 78.111.85.37
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f9a296d9-01c6-440b-aac2-4d92df085653
 - name: 15|RU_speednode_0091
   network: ws
   port: 80
