@@ -1,27 +1,29 @@
 proxies:
+- client-fingerprint: chrome
+  down: '2000'
+  name: 0|🇭🇰1 |  1.1MB/s
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  port: 1443
+  server: hkt.mjhy2.com
+  sni: hkt.mjhy2.com
+  type: hysteria2
+  up: '2000'
 - alterId: 0
   cipher: auto
-  name: 0|🇭🇰1 |  2.5MB/s
-  port: 45051
-  server: xdd.dashuai.cyou
+  name: 0|🇭🇰2 |  4.9MB/s
+  port: 19901
+  server: xg.dashuai.cyou
   tls: false
   type: vmess
+  uuid: 80e6f07a-6bc5-4b41-be42-2fedcfc17547
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 0|🇭🇰3 |  4.9MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
   udp: true
-  uuid: 415aa75f-af26-4654-b7a8-aeb662397437
-- client-fingerprint: chrome
-  name: 0|🇭🇰2 |  4.4MB/s
-  network: tcp
-  port: 37528
-  reality-opts:
-    public-key: qBPL3e2Cip0uRxcfXzQ-BNRJep8womQRzupBMojAGH8
-    short-id: 937cf95f39945af1
-  server: 47.79.37.56
-  servername: yahoo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: ee649780-6a77-4125-9edd-b7e72aa86efe
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
