@@ -1,29 +1,44 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
+  name: 0|🇯🇵1 |  5.5MB/s
   password: amazonskr05
   port: 443
-  server: 43.203.253.211
-  tfo: false
+  server: 43.203.208.32
   type: ss
-- cipher: aes-256-gcm
+- name: 0|🇯🇵2 |  5.5MB/s
+  password: c052bed2-2624-3e80-93bf-5a9b6a91002e
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇯🇵2 |  4.8MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21253
-  server: 581023.horace.im
+  name: 0|🇯🇵3 |  2.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇯🇵3 |  10.1MB/s
+  name: 0|🇯🇵4 |  1.7MB/s
   password: amazonskr05
   port: 443
   server: 43.206.216.94
   type: ss
+- name: 0|🇯🇵5 |  8.4MB/s
+  password: c052bed2-2624-3e80-93bf-5a9b6a91002e
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇯🇵4 |  2.2MB/s
+  name: 0|🇯🇵6 |  5.2MB/s
   password: amazonskr05
   port: 443
   server: 43.203.240.54
@@ -69,16 +84,11 @@ proxies:
   server: 156.231.104.24
   tfo: false
   type: ss
-- name: 15|JP_speednode_0044
-  network: ws
-  password: wb6368
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.203.253.211
+  tfo: false
+  type: ss
