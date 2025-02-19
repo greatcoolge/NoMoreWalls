@@ -1,43 +1,80 @@
 proxies:
-- name: 0|🇯🇵1 |  6.1MB/s
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵1 |  4.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵3 |  4.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.206.216.94
+  type: ss
+- name: 0|🇯🇵4 |  4.8MB/s
   password: 70b99d6c-647d-31a9-92fa-575dc30a8e18
-  port: 54178
+  port: 20142
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x115.flybar.work
+  sni: z142.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵5 |  5.7MB/s
+  password: 70b99d6c-647d-31a9-92fa-575dc30a8e18
+  port: 20298
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z298.hongkongnode.top
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  2.6MB/s
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  type: ss
-- client-fingerprint: chrome
-  name: 13|🇯🇵 日本|@ripaojiedian
-  password: '!!str 3782591447421952000'
+  client-fingerprint: chrome
+  name: 0|🇯🇵6 |  6.5MB/s
+  password: amazonskr05
   port: 443
-  server: inspired-dinosaur.adder289.quest
-  skip-cert-verify: false
-  sni: inspired-dinosaur.adder289.quest
-  type: trojan
-- cipher: rc4-md5
+  server: 43.203.208.32
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵7 |  1.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.112.66
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本|@ripaojiedian
+  password: TQQGWG024W2BF6RP
+  port: 18009
+  server: 156.231.104.19
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本2|@ripaojiedian
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40218
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
-- cipher: chacha20-ietf-poly1305
+  password: 0A876XZUZX93N371
+  port: 18010
+  server: 156.231.104.20
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 13,14|日本4|@ripaojiedian
+  network: tcp
+  password: 1e63e585ab2fef3adcc9ea75a62abc23
+  port: 443
+  server: 49.212.170.40
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  password: 4619d5a0-258a-48f4-98bf-88843d5d7a83
-  port: 30003
-  server: gdgs.tarioblink.me
+  name: 13|🇯🇵 日本5|@ripaojiedian
+  password: 3JHTNK13T6BCEVNH
+  port: 18014
+  server: 156.231.104.24
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -45,12 +82,6 @@ proxies:
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 47.129.37.234
+  server: 43.203.253.211
   tfo: false
   type: ss
-- name: 14|日本|@ripaojiedian
-  network: tcp
-  password: '!!str 3782591447421952000'
-  port: 443
-  server: inspired-dinosaur.adder289.quest
-  type: trojan

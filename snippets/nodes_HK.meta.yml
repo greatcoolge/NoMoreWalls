@@ -1,51 +1,21 @@
 proxies:
 - client-fingerprint: chrome
-  down: '2000'
-  name: 0|🇭🇰1 |  1.1MB/s
-  password: 5adfc828-440d-4022-9571-0299a905b98e
-  port: 1443
-  server: hkt.mjhy2.com
-  sni: hkt.mjhy2.com
-  type: hysteria2
-  up: '2000'
-- alterId: 0
-  cipher: auto
-  name: 0|🇭🇰2 |  4.9MB/s
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 80e6f07a-6bc5-4b41-be42-2fedcfc17547
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇭🇰3 |  4.9MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港|@ripaojiedian
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40206
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
-- alterId: 0
-  cipher: auto
+  name: 13,14|香港|@ripaojiedian
+  network: tcp
+  password: 1e63e585ab2fef3adcc9ea75a62abc23
+  port: 443
+  server: 104.251.227.182
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇭🇰 香港2|@ripaojiedian
-  port: 37349
-  server: 38.147.188.81
-  skip-cert-verify: false
+  password: UQ62K8G88VGBNZXO
+  port: 15015
+  server: 156.245.190.24
   tfo: false
-  tls: false
-  type: vmess
-  uuid: f5d9c282-cee4-479b-98d6-deecd4f70482
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -57,16 +27,22 @@ proxies:
   tls: false
   type: vmess
   uuid: aede82af-c2ca-425d-9423-c68490ab2277
-- alterId: 0
-  cipher: auto
-  name: 14|香港2|@ripaojiedian
-  network: tcp
-  port: '37349'
-  server: 38.147.188.81
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f5d9c282-cee4-479b-98d6-deecd4f70482
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  password: AYC4MQ5DSGJ4QOKG
+  port: 15010
+  server: 156.245.190.19
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港6|@ripaojiedian
+  password: 2MNBVYYYB23ZF03Z
+  port: 15002
+  server: 92.113.116.11
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 14|香港4|@ripaojiedian
