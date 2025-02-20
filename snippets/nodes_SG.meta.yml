@@ -1,11 +1,19 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇸🇬1 |  10.4MB/s
+  name: 0|🇸🇬1 |  10.5MB/s
   password: amazonskr05
   port: 443
-  server: 13.229.111.3
+  server: 18.141.9.206
   type: ss
+  udp: true
+- name: 0|🇸🇬2 |  1.9MB/s
+  password: 71de70bb-1776-399d-9a6b-1fa80e70d223
+  port: 30712
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x83.flybar.work
+  type: trojan
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -55,3 +63,17 @@ proxies:
   server: 54.180.133.38
   tfo: false
   type: ss
+- name: 15|SG_speednode_0087
+  network: ws
+  port: 3333
+  server: free.tharuwa.cfd
+  servername: m.zoom.us
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 29058641-d1a3-4baa-a4c3-bb870384ef9a
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /Free By Tharuwa (0767597317)
