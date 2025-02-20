@@ -1,10 +1,22 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧1 |  1.3MB/s
-  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
-  port: 40034
-  server: fr.fastsoonlink.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0|🇬🇧1 |  3.0MB/s
+  network: tcp
+  port: 31241
+  server: 910281.chasel.sbs
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  client-fingerprint: chrome
+  name: 0|🇬🇧2 |  1.9MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 22246
+  server: fr3.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: fr3.xiaoliyu.cyou
+  type: hysteria2
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 15|GB_speednode_0025
