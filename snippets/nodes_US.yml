@@ -1,43 +1,26 @@
 proxies:
-- name: 0|🇺🇸2 |  5.4MB/s
-  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
-  port: 22741
-  server: gy.58n.net
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸1 |  2.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.190.1.125
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸4 |  1.1MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
   skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸3 |  2.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.41.168.231
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸4 |  4.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸6 |  2.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.216.193.190
-  type: ss
-  udp: true
-- name: 0|🇺🇸7 |  1.6MB/s
-  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
+  uuid: 4e37ce47-d35d-364c-b9fd-650e5e1473b5
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
   network: tcp
