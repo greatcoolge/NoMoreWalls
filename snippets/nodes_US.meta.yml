@@ -1,79 +1,127 @@
 proxies:
-- cipher: aes-256-gcm
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
   client-fingerprint: chrome
-  name: 0|🇺🇸1 |  6.0MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21159
-  server: 581023.horace.im
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 0|🇺🇸2 |  6.2MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21152
-  server: 510613.frederica.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇺🇸3 |  6.1MB/s
-  network: tcp
-  port: 31112
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 0|🇺🇸4 |  6.1MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21113
-  server: 581023.horace.im
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇺🇸5 |  3.3MB/s
-  network: tcp
-  port: 31348
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇺🇸6 |  1.2MB/s
-  network: tcp
-  port: 31347
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- auth: 334c4713-73ea-4e71-b827-21a22d31736b
-  client-fingerprint: chrome
-  name: 0|🇺🇸7 |  3.3MB/s
-  password: 334c4713-73ea-4e71-b827-21a22d31736b
-  port: 26977
-  server: us1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: us1.xiaoliyu.cyou
-  type: hysteria2
-- auth: 334c4713-73ea-4e71-b827-21a22d31736b
-  client-fingerprint: chrome
-  name: 0|🇺🇸8 |  3.0MB/s
-  password: 334c4713-73ea-4e71-b827-21a22d31736b
-  port: 23543
+  name: 0|🇺🇸1 |  1.0MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 25644
   server: gb1.xiaoliyu.cyou
   skip-cert-verify: true
   sni: gb1.xiaoliyu.cyou
   type: hysteria2
-- alterId: 0
-  cipher: auto
+- name: 0|🇺🇸2 |  5.4MB/s
+  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
+  port: 22741
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: dufu.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇺🇸9 |  6.0MB/s
-  network: tcp
-  port: 31150
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  name: 0|🇺🇸3 |  2.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.41.168.231
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸4 |  4.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.195.215.236
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 0|🇺🇸5 |  4.6MB/s
+  network: ws
+  port: 80
+  server: 104.26.13.31
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸6 |  2.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 34.216.193.190
+  type: ss
+  udp: true
+- name: 0|🇺🇸7 |  1.6MB/s
+  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
+  port: 24603
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z259.hongkongnode.top
+  type: trojan
+  udp: true
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  client-fingerprint: chrome
+  name: 0|🇺🇸8 |  1.1MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 26717
+  server: gb1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: gb1.xiaoliyu.cyou
+  type: hysteria2
+- name: 0|🇺🇸9 |  2.8MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  down: 100
+  name: 0|🇺🇸10 |  6.3MB/s
+  password: 4a48871d49c3f20fd93d365c49e45f78
+  port: 443
+  server: v.mch.vaala.cat
+  sni: v.mch.vaala.cat
+  type: hysteria2
+  up: 100
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  client-fingerprint: chrome
+  name: 0|🇺🇸11 |  3.4MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 23014
+  server: us2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us2.xiaoliyu.cyou
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 0|🇺🇸12 |  4.7MB/s
+  network: ws
+  port: 80
+  server: 172.67.75.172
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- client-fingerprint: chrome
+  name: 0|🇺🇸13 |  1.5MB/s
+  network: ws
+  port: 80
+  server: 104.20.43.197
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
 - client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
   network: tcp
