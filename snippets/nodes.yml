@@ -1,50 +1,65 @@
 proxies:
-- name: 0|🇸🇬1 |  1.4MB/s
-  password: 5c7bdb27-b331-36cb-9ed2-5da2ddd886a9
-  port: 20130
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x130.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇰🇷1 |  3.6MB/s
-  password: 5c7bdb27-b331-36cb-9ed2-5da2ddd886a9
-  port: 50355
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z264.hongkongnode.top
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  1.8MB/s
+  name: 0|🇯🇵1 |  11.0MB/s
   password: amazonskr05
   port: 443
   server: 52.197.129.53
   type: ss
-- alterId: '0'
-  cipher: auto
-  name: 0|🇦🇺1 |  1.8MB/s
-  network: tcp
-  port: 59104
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸4 |  4.4MB/s
+  name: 0|🌀1- |  2.5MB/s
   network: ws
-  port: 22643
+  port: 23611
+  server: 11.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 83ee55e8-a444-39ee-9823-9e3f04bba063
+  ws-opts:
+    headers:
+      Host: 11.mamamajd.site
+    path: /
+- cipher: rc4-md5
+  name: 0|🇬🇧1 |  1.0MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+- name: 0|🇯🇵3 |  2.0MB/s
+  password: 5c7bdb27-b331-36cb-9ed2-5da2ddd886a9
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇺🇸3 |  4.2MB/s
+  network: ws
+  port: 22642
   server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tfo: false
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
     headers:
-      Host: zxjp-c.tkong.cc
+      Host: zxjp-b.tkong.cc
     path: /
+- name: 0|🇺🇸5 |  1.6MB/s
+  password: 5c7bdb27-b331-36cb-9ed2-5da2ddd886a9
+  port: 20305
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z305.hongkongnode.top
+  type: trojan
+  udp: true
 - name: 13,14,15|HK_speednode_0006
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
