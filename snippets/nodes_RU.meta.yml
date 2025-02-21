@@ -1,4 +1,13 @@
 proxies:
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇷🇺1 |  5.7MB/s
+  password: dongtaiwang.com
+  port: 51224
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - name: 15|RU_speednode_0135
   network: ws
   port: 80
@@ -41,3 +50,22 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: false
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
