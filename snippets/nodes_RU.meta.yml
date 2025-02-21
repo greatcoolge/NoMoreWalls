@@ -1,18 +1,19 @@
 proxies:
-- client-fingerprint: chrome
-  name: 0|🇷🇺1 |  1.2MB/s
+- name: 15|RU_speednode_0135
   network: ws
   port: 80
-  server: 151.101.128.155
+  server: 185.174.138.194
+  servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: MaHxRaYT.aI.
-    path: /?ed=2048
-- name: 15|RU_speednode_0055
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 15|RU_speednode_0136
   network: ws
   port: 80
   server: 185.174.138.194
@@ -26,7 +27,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 15|RU_speednode_0056
+- name: 15|RU_speednode_0137
   network: ws
   port: 8080
   server: 185.174.138.197
@@ -40,17 +41,22 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- name: 15|RU_speednode_0057
-  network: ws
-  port: 80
-  server: 185.174.138.194
-  servername: pormang.webhost99.workers.dev
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: false
-  tls: false
-  type: vless
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
+      Host: www.zitian.cn

@@ -1,82 +1,125 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  4.9MB/s
+  name: 0|🇰🇷1 |  5.3MB/s
   password: amazonskr05
   port: 443
-  server: 13.229.111.3
+  server: 13.124.62.225
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🌏1 |  2.9MB/s
+  password: 885f2012-ff8b-4835-9ce1-22b2382f6715
+  port: 12010
+  server: mdss-hk.04z3susick.download
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬2 |  3.3MB/s
-  password: ce49b294-08d6-409e-8fc8-aa0d0ff5df00
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸4 |  4.4MB/s
+  name: 0|🇺🇸3 |  1.4MB/s
   network: ws
-  port: 23615
-  server: 15.mamamajd.site
+  port: 23605
+  server: 5.mamamajd.site
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 2a3705f4-84b9-3fa2-8a84-b8e7bb65f59a
+  uuid: 73dc19be-09b0-348f-aea2-ac177170d106
   ws-opts:
     headers:
-      Host: 15.mamamajd.site
+      Host: 5.mamamajd.site
     path: /
 - cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  5.0MB/s
+  name: 0|🇯🇵1 |  2.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.245.114
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🌏2 |  1.9MB/s
+  password: 885f2012-ff8b-4835-9ce1-22b2382f6715
+  port: 12001
+  server: mdss-hk.04z3susick.download
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 0|🇹🇼1 |  2.6MB/s
+  password: 885f2012-ff8b-4835-9ce1-22b2382f6715
+  port: 12030
+  server: mdss-tw.04z3susick.download
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
+  type: ss
+- name: 0|🇯🇵3 |  2.5MB/s
+  password: 7e79f979-a259-3be9-85ff-47d354ecb935
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇺🇸4 |  6.2MB/s
+  password: 7e79f979-a259-3be9-85ff-47d354ecb935
+  port: 24603
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z259.hongkongnode.top
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 0|🌀2- |  2.4MB/s
+  network: ws
+  port: 23612
+  server: 12.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 73dc19be-09b0-348f-aea2-ac177170d106
+  ws-opts:
+    headers:
+      Host: 12.mamamajd.site
+    path: /
+- cipher: aes-128-gcm
+  name: 0|🇺🇸6 |  3.1MB/s
+  password: 885f2012-ff8b-4835-9ce1-22b2382f6715
+  port: 12047
+  server: mdss-other.04z3susick.download
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 0|🌏3 |  6.1MB/s
+  password: 885f2012-ff8b-4835-9ce1-22b2382f6715
+  port: 12006
+  server: mdss-hk.04z3susick.download
+  type: ss
+  udp: true
+- name: 0|🇺🇸8 |  1.7MB/s
+  password: 7e79f979-a259-3be9-85ff-47d354ecb935
+  port: 43337
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z102.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: 0|🇹🇼2 |  2.2MB/s
+  password: 885f2012-ff8b-4835-9ce1-22b2382f6715
+  port: 12031
+  server: mdss-tw.04z3susick.download
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  2.0MB/s
   password: amazonskr05
   port: 443
   server: 13.114.96.104
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸5 |  1.8MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2a3705f4-84b9-3fa2-8a84-b8e7bb65f59a
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- cipher: aes-256-cfb
-  name: 0|🇺🇸6 |  4.4MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.189.149.15
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸7 |  1.7MB/s
-  password: ce49b294-08d6-409e-8fc8-aa0d0ff5df00
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰1 |  3.4MB/s
-  password: ce49b294-08d6-409e-8fc8-aa0d0ff5df00
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-- alterId: '0'
-  cipher: auto
-  name: 0|🇭🇰2 |  1.4MB/s
-  network: tcp
-  port: 51754
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 13,14,15|HK_speednode_0006
+- name: 13,14|香港|@ripaojiedian
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
@@ -84,7 +127,6 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: MHZUEOX3KBXAV09K
