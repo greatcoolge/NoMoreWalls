@@ -1,89 +1,71 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇺🇸4 |  1.0MB/s
+  ip-version: dual
+  name: 0|🇺🇸6 |  2.5MB/s
   password: amazonskr05
   port: 443
-  server: 34.220.99.193
+  server: 54.244.0.4
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  11.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.112.216.127
-  type: ss
-- name: 0|🇺🇸5 |  9.7MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 20278
-  server: gy.58n.net
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸8 |  11.7MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
   skip-cert-verify: true
-  sni: z278.hongkongnode.top
-  type: trojan
+  tfo: true
+  tls: false
+  type: vmess
   udp: true
-- name: 0|🇺🇸6 |  6.3MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
+  uuid: 4542854a-1622-3383-aad1-8dcebebfc580
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
 - cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  11.1MB/s
+  name: 0|🇺🇸12 |  2.3MB/s
   password: amazonskr05
   port: 443
-  server: 13.114.96.104
+  server: 18.236.132.239
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇨🇦1 |  1.3MB/s
+  name: 0|🇺🇸13 |  7.1MB/s
   password: amazonskr05
   port: 443
-  server: 47.129.37.234
+  server: 54.245.222.80
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|🇯🇵3 |  2.9MB/s
+  name: 0|🇯🇵2 |  5.2MB/s
   password: amazonskr05
   port: 443
   server: 43.206.216.94
   type: ss
-- name: 0|🇸🇬1 |  3.2MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 20129
-  server: gy.58n.net
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸15 |  5.7MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
   skip-cert-verify: true
-  sni: x129.flybar.work
-  type: trojan
+  tfo: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 4542854a-1622-3383-aad1-8dcebebfc580
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
 - cipher: aes-256-cfb
-  name: 0|🇺🇸11 |  3.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.194.186.197
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸12 |  5.4MB/s
+  name: 0|🇺🇸16 |  5.7MB/s
   obfs: plain
   password: amazonskr05
   port: 443
   protocol: origin
-  server: 52.41.168.231
+  server: 35.87.206.35
   type: ssr
-- name: 0,13,14|台湾|@ripaojiedian
-  network: tcp
-  password: 65f14831-5c67-483f-9e85-f3aa73f21187
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- name: 0|🇺🇸13 |  3.8MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 16895
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x40.flybar.work
-  type: trojan
-  udp: true
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
@@ -92,27 +74,63 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 13|🇭🇰 香港2|@ripaojiedian
-  password: MHZUEOX3KBXAV09K
-  port: 15007
-  server: 156.245.190.16
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇭🇰 香港3|@ripaojiedian
-  password: ZDGC0Q2E112UAJO6
-  port: 15014
-  server: 156.245.190.23
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40000
-  server: hk.fastsoonlink.com
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  name: 13|🇭🇰 香港3|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 154.197.26.120
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇭🇰 香港4|@ripaojiedian
+  password: LZQ0R9BL69GCC6FS
+  port: 15005
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  password: 2H98UZT9LT1TE3X9
+  port: 15008
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇭🇰 香港6|@ripaojiedian
+  password: RBN1UNGVPF1BQXPK
+  port: 15006
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇭🇰 香港7|@ripaojiedian
+  password: TCEL1H0XD7TWAKI0
+  port: 15011
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇭🇰 香港8|@ripaojiedian
+  password: FCEUOASRQJC0LN0K
+  port: 15009
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- name: 13,14|台湾|@ripaojiedian
+  network: tcp
+  password: 65f14831-5c67-483f-9e85-f3aa73f21187
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-gcm
   name: 13|🇹🇼 台湾2|@ripaojiedian
   password: QF377GGQ00RATCMK
@@ -134,53 +152,27 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  name: 13|🇯🇵 日本|@ripaojiedian
-  password: 17J24GBDGLTUHDF3
-  port: 18011
-  server: 156.231.104.21
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇯🇵 日本2|@ripaojiedian
-  password: 1H5KX5QZBUOWP2P4
-  port: 18007
-  server: 156.231.104.17
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 13|🇰🇷 韩国|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇸🇬 新加坡|@ripaojiedian
-  password: 2UOL8ESS12X0J31P
-  port: 16010
-  server: 154.196.244.20
-  tfo: false
-  type: ss
+- name: 13,14|日本|@ripaojiedian
+  network: tcp
+  password: 65f14831-5c67-483f-9e85-f3aa73f21187
+  port: 13012
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- name: 13,14|韩国|@ripaojiedian
+  network: tcp
+  password: 65f14831-5c67-483f-9e85-f3aa73f21187
+  port: 13036
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-gcm
   name: 13|🇸🇬 新加坡2|@ripaojiedian
   password: 8WDLSCVIFB4I26GB
   port: 16011
   server: 154.196.244.21
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 13|🇸🇬 新加坡3|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇸🇬 新加坡4|@ripaojiedian
-  password: I6DRVVQ4OOMIRMJD
-  port: 16015
-  server: 154.196.244.25
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -198,13 +190,16 @@ proxies:
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 13|🇺🇸 美国4|@ripaojiedian
-  password: LKG8G8VL60RSB59P
-  port: 17003
-  server: 23.185.248.13
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  port: 13447
+  server: 23.236.68.213
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 2e41fa05-75d0-4d8c-9e23-41e2e7a8fa9f
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸 美国3|@ripaojiedian
@@ -215,27 +210,44 @@ proxies:
   tls: false
   type: vmess
   uuid: a5e99fc4-5b87-4312-aa8a-52cad1971b92
+- cipher: aes-256-gcm
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  password: LKG8G8VL60RSB59P
+  port: 17003
+  server: 23.185.248.13
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.182.6.88
+  server: 18.183.242.147
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.124.66.120
+  server: 43.203.240.54
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.114.153.253
+  server: 3.38.214.76
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|美国2|@ripaojiedian
+  network: tcp
+  port: '13447'
+  server: 23.236.68.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2e41fa05-75d0-4d8c-9e23-41e2e7a8fa9f
 - alterId: 0
   cipher: auto
   name: 14|美国3|@ripaojiedian
