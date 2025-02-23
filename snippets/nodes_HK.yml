@@ -8,22 +8,17 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港2|@ripaojiedian
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52611
-  server: hk01.x.quickcht3.club
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港3|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 154.197.26.120
+  port: 30704
+  server: 43.247.135.63
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇭🇰 香港4|@ripaojiedian
@@ -56,11 +51,13 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港8|@ripaojiedian
-  password: FCEUOASRQJC0LN0K
-  port: 15009
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|香港3|@ripaojiedian
+  network: tcp
+  port: '30704'
+  server: 43.247.135.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
