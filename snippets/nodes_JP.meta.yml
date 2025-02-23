@@ -15,13 +15,15 @@ proxies:
   server: 13.114.96.104
   type: ss
 - client-fingerprint: chrome
-  name: 0|🇯🇵3 |  5.5MB/s
+  name: 0,15|JP_speednode_0095
   network: ws
   port: 443
   server: 47.245.37.123
   servername: jpd.kddhs.asia
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: fd902d74-2266-4997-99ec-83d3937cbfcc
   ws-opts:
     headers:
@@ -58,7 +60,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 13,14|日本4|@ripaojiedian
+  name: 13,14,15|CN_speednode_0014
   network: tcp
   password: fc66e1cb-1fa3-412a-81f5-900e59e3837c
   port: 28713
@@ -66,6 +68,7 @@ proxies:
   skip-cert-verify: true
   sni: mmbiz1.redapricotcloud.com
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
@@ -74,3 +77,44 @@ proxies:
   server: 47.129.7.198
   tfo: false
   type: ss
+- name: 15|JP_speednode_0096
+  network: ws
+  port: 443
+  server: 47.74.33.96
+  servername: jpc.kddhs.asia
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
+  ws-opts:
+    headers:
+      Host: jpc.kddhs.asia
+    path: /bing
+- name: 15|JP_speednode_0097
+  network: ws
+  port: 443
+  server: 47.91.18.127
+  servername: agedy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 15|JP_speednode_0098
+  network: ws
+  password: wb6368
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: /
