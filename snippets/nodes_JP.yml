@@ -1,10 +1,21 @@
 proxies:
-- name: 0|🇯🇵1 |  1.0MB/s
-  password: 5ffcb530-1f7b-3f23-b368-8690903c358f
-  port: 20071
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 0,13|🇯🇵 日本5|@ripaojiedian
+  obfs: plain
+  obfs-param: c499e93390.wns.windows.com
+  password: mtbv8n
+  port: 1454
+  protocol: auth_aes128_md5
+  protocol-param: 93390:TDWk1JwybHq
+  server: relayjp4.vip.primeconectin.pro
+  type: ssr
+- name: 0|🇯🇵2 |  4.9MB/s
+  password: fe10330c-c392-37c0-a1d7-29b1c780e04c
+  port: 20141
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x71.flybar.work
+  sni: z141.hongkongnode.top
   type: trojan
   udp: true
 - cipher: aes-256-gcm
@@ -32,7 +43,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 13,14,15|CN_speednode_0005
+  name: 13,14|日本4|@ripaojiedian
   network: tcp
   password: fc66e1cb-1fa3-412a-81f5-900e59e3837c
   port: 28713
@@ -40,7 +51,6 @@ proxies:
   skip-cert-verify: true
   sni: mmbiz1.redapricotcloud.com
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
