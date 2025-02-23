@@ -1,4 +1,10 @@
 proxies:
+- name: 0,13|tg频道:@ripaojiedian
+  port: 4000
+  server: ftq.ink
+  sni: ftq.ink
+  tls: true
+  type: http
 - client-fingerprint: chrome
   name: 13,14|香港|@ripaojiedian
   network: tcp
@@ -8,6 +14,14 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -61,7 +75,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
-- name: 15|HK_speednode_0069
+- name: 15|HK_speednode_0038
   network: ws
   port: 1935
   server: 43.154.34.74
@@ -75,7 +89,21 @@ proxies:
     headers:
       Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 15|HK_speednode_0073
+- name: 15|HK_speednode_0041
+  network: ws
+  port: 443
+  server: 162.247.5.91
+  servername: sga.costs.asia
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ca6df70-73af-4139-9f7e-685e71618c71
+  ws-opts:
+    headers:
+      Host: sga.costs.asia
+    path: /bing
+- name: 15|HK_speednode_0042
   network: ws
   port: 443
   server: 8.218.105.88
@@ -89,7 +117,7 @@ proxies:
     headers:
       Host: vn.cazlelmhpn.group
     path: /bing
-- name: 15|HK_speednode_0074
+- name: 15|HK_speednode_0043
   network: ws
   port: 443
   server: 58.176.95.46
@@ -103,17 +131,22 @@ proxies:
     headers:
       Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 15|HK_speednode_0076
-  network: ws
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,16|d*********g.com_3
+  network: tcp
+  password: fuck
   port: 443
-  server: 8.212.104.247
-  servername: clawhk.costs.asia
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: false
+  sni: www.zitian.cn
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: a5c6f225-4cb9-4e58-edea-1e0793b656b7
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: clawhk.costs.asia
-    path: /bing
+      Host: www.zitian.cn
