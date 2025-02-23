@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰2 |  6.6MB/s
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52613
+  server: hk03.x.quickcht3.club
+  type: ss
 - client-fingerprint: chrome
   name: 13,14|香港|@ripaojiedian
   network: tcp
@@ -8,6 +14,14 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -98,6 +112,20 @@ proxies:
     headers:
       Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
+- name: 15|HK_speednode_0018
+  network: ws
+  port: 443
+  server: 162.247.5.91
+  servername: sga.costs.asia
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ca6df70-73af-4139-9f7e-685e71618c71
+  ws-opts:
+    headers:
+      Host: sga.costs.asia
+    path: /bing
 - name: 15|HK_speednode_0020
   network: ws
   port: 443
