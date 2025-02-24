@@ -1,17 +1,26 @@
 proxies:
-- name: 0|🇰🇷1 |  2.2MB/s
-  password: fd85b7f4-3cba-392a-bb81-4b4d5789007a
-  port: 45168
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z263.hongkongnode.top
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|韩国|@ripaojiedian
+  network: ws
+  port: '22223'
+  server: free-kr.faforex.eu.org
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 34b92487-a7b5-400a-b42f-40f53377aaab
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.143.149.127
+  server: 54.254.236.133
   tfo: false
   type: ss
