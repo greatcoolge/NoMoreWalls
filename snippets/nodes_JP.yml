@@ -1,12 +1,4 @@
 proxies:
-- name: 0|🇯🇵1 |  2.4MB/s
-  password: c4e04a71-f597-37e5-b07a-0fcd048a2f84
-  port: 20076
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x76.flybar.work
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -42,3 +34,11 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 3.link-hub.click
   type: ssr
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 47.128.150.63
+  tfo: false
+  type: ss
