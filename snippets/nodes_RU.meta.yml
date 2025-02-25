@@ -1,10 +1,53 @@
 proxies:
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇷🇺1 |  5.7MB/s
+  password: dongtaiwang.com
+  port: 51224
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 0|🇷🇺2 |  4.2MB/s
+  network: ws
+  port: 80
+  server: 151.101.2.216
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
+  ws-opts:
+    headers:
+      Host: MaHxRaYT.aI.
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 0|🇷🇺3 |  3.4MB/s
+  network: ws
+  port: 80
+  server: 151.101.128.155
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
+  ws-opts:
+    headers:
+      Host: MaHxRaYT.aI.
+    path: /?ed=2048
 - cipher: aes-256-cfb
-  name: 0|🇷🇺1 |  17.0MB/s
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
+  name: 0|🇷🇺4 |  24.8MB/s
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
   server: 217.30.10.18
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺5 |  2.1MB/s
+  port: 22946
+  server: 188.130.154.56
+  tls: false
+  type: vmess
+  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
 - name: 15|RU_speednode_0050
   network: ws
   port: 80
