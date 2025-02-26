@@ -1,4 +1,26 @@
 proxies:
+- name: 0|🇯🇵1 |  1.8MB/s
+  password: bffdec9e-d62b-303a-88cd-e57f4b343303
+  port: 20298
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z298.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵2 |  6.1MB/s
+  password: bffdec9e-d62b-303a-88cd-e57f4b343303
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵3 |  2.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -26,20 +48,21 @@ proxies:
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本4|@ripaojiedian
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40254
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  type: ssr
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    host: 20c0d292462.microsoft.com
+    mode: http
+  port: 4602
+  server: pr3.jymzffbquawl.com
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 47.128.150.63
+  server: 3.38.214.76
   tfo: false
   type: ss
 - name: 15|JP_speednode_0022
