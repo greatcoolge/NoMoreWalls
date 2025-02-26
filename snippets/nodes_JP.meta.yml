@@ -1,26 +1,29 @@
 proxies:
-- name: 0|🇯🇵1 |  1.8MB/s
-  password: bffdec9e-d62b-303a-88cd-e57f4b343303
-  port: 20298
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z298.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵2 |  6.1MB/s
-  password: bffdec9e-d62b-303a-88cd-e57f4b343303
-  port: 20300
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z300.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇯🇵3 |  2.7MB/s
-  password: amazonskr05
+- name: 0|🇯🇵1 |  6.1MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: 3.112.216.127
-  type: ss
+  server: jpgmo102-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jpgmo102-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇯🇵2 |  2.0MB/s
+  password: ab29fd16-e7bd-3b20-9583-dd82a1d2cccc
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇯🇵3 |  6.0MB/s
+  password: ab29fd16-e7bd-3b20-9583-dd82a1d2cccc
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -65,17 +68,3 @@ proxies:
   server: 3.38.214.76
   tfo: false
   type: ss
-- name: 15|JP_speednode_0022
-  network: ws
-  port: 443
-  server: 47.74.33.96
-  servername: jpc.kddhs.asia
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
-  ws-opts:
-    headers:
-      Host: jpc.kddhs.asia
-    path: /bing
