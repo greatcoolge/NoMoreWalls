@@ -8,6 +8,14 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   name: 13|🇭🇰 香港3|@ripaojiedian
   password: Vad3.123a)asd1234-asdasd.asdazzS.123
@@ -18,18 +26,18 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港5|@ripaojiedian
-  password: 2H98UZT9LT1TE3X9
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 13|🇭🇰 香港4|@ripaojiedian
   password: LZQ0R9BL69GCC6FS
   port: 15005
   server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  password: 2H98UZT9LT1TE3X9
+  port: 15008
+  server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -56,15 +64,24 @@ proxies:
   server: hk02.x.quickcht3.club
   tfo: false
   type: ss
-- cipher: rc4-md5
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 13|🇭🇰 香港9|@ripaojiedian
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 20c0d292462.microsoft.com
-    mode: http
-  port: 3603
-  server: pr1.jymzffbquawl.com
+  port: 33311
+  server: bg.guangsu888.cc
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: fa59f800-269d-4e2d-b29c-b4b9a570bbe0
+- alterId: 0
+  cipher: auto
+  name: 14|香港9|@ripaojiedian
+  network: tcp
+  port: '33311'
+  server: bg.guangsu888.cc
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fa59f800-269d-4e2d-b29c-b4b9a570bbe0
