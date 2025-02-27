@@ -1,93 +1,130 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  5.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.202.58.237
+- name: 0|🇯🇵1 |  4.4MB/s
+  password: b2b23650-7141-31b9-9480-9f71d5439010
+  port: 20298
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z298.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 0|🇺🇸3 |  1.1MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 169.197.142.99
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  delay: 754
+  name: 0|🇫🇷1 |  2.3MB/s
+  password: 7243745919d6de49a5db
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45578
+  server: console.02.aliyun.aq.kunlunaqs.com
+  type: ss
+- name: 0|🇺🇸4 |  1.9MB/s
+  password: b2b23650-7141-31b9-9480-9f71d5439010
+  port: 20278
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z278.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇺🇸5 |  1.2MB/s
+  password: b2b23650-7141-31b9-9480-9f71d5439010
+  port: 16895
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x40.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 0|🇺🇸6 |  1.1MB/s
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 169.197.142.99
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  6.0MB/s
+  name: 0|🇨🇦1 |  5.9MB/s
   password: amazonskr05
   port: 443
-  server: 13.213.53.194
+  server: 47.128.243.171
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  5.8MB/s
+  name: 0|🇸🇬1 |  6.2MB/s
   password: amazonskr05
   port: 443
   server: 13.250.96.5
   type: ss
-- name: 0|🇯🇵2 |  5.9MB/s
-  password: b2b23650-7141-31b9-9480-9f71d5439010
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: 0|🌀1- |  5.0MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 159.65.149.67
-  type: ss
 - cipher: aes-256-cfb
-  name: 0|🇺🇸6 |  5.6MB/s
+  name: 0|🇨🇦2 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 34.211.97.239
+  server: 47.129.48.255
   type: ss
-- name: 0|🇸🇬3 |  3.6MB/s
+- name: 0|🇺🇸9 |  5.6MB/s
   password: b2b23650-7141-31b9-9480-9f71d5439010
-  port: 17806
+  port: 20294
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x65.flybar.work
+  sni: z294.hongkongnode.top
   type: trojan
   udp: true
-- name: 0|🇰🇷1 |  2.4MB/s
+- name: 0|🇺🇸10 |  6.0MB/s
   password: b2b23650-7141-31b9-9480-9f71d5439010
-  port: 50355
+  port: 20279
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z264.hongkongnode.top
+  sni: z279.hongkongnode.top
   type: trojan
   udp: true
-- name: 0|🇺🇸9 |  2.2MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0,13|🇭🇰 香港2|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
+- name: 0|🇨🇦3 |  5.6MB/s
   password: b2b23650-7141-31b9-9480-9f71d5439010
-  port: 28678
+  port: 20295
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z143.hongkongnode.top
+  sni: z295.hongkongnode.top
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 0|🇰🇷2 |  6.4MB/s
+  ip-version: dual
+  name: 0|🇺🇸13 |  2.4MB/s
   password: amazonskr05
   port: 443
-  server: 52.78.98.113
+  server: 35.91.187.73
   type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸14 |  5.5MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 98bfddb1-aa6f-3354-9fc7-5ec94ba15ae1
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
 - cipher: aes-256-cfb
-  name: 0|🌀3- |  2.0MB/s
+  ip-version: dual
+  name: 0|🌀1- |  1.7MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.108.129.51
+  server: 185.231.233.173
   type: ss
-- name: 0|🇺🇸13 |  1.5MB/s
-  password: b2b23650-7141-31b9-9480-9f71d5439010
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵4 |  6.1MB/s
-  password: b2b23650-7141-31b9-9480-9f71d5439010
-  port: 20071
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x71.flybar.work
-  type: trojan
   udp: true
 - name: 13,14|香港|@ripaojiedian
   network: tcp
@@ -97,13 +134,6 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港2|@ripaojiedian
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52611
-  server: hk01.x.quickcht3.club
-  tfo: false
-  type: ss
 - name: 13|🇭🇰 香港3|@ripaojiedian
   password: Vad3.123a)asd1234-asdasd.asdazzS.123
   port: 443
