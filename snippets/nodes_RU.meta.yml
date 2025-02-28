@@ -1,12 +1,41 @@
 proxies:
-- client-fingerprint: chrome
-  name: 0|🇷🇺1 |  4.5MB/s
-  password: f2812c88-f678-4c64-98c9-ac42d8dab6ca
-  port: 29015
-  server: 45.147.200.61
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  obfs: dongtaiwang.com
+  password: fuck
+  port: 443
+  ports: 40000-50000
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: true
-  sni: anten.ir
-  type: hysteria2
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- name: 15|RU_speednode_0046
+  network: ws
+  port: 80
+  server: 185.174.138.194
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
 - name: 15|RU_speednode_0047
   network: ws
   port: 8080
