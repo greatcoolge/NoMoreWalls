@@ -1,32 +1,60 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  4.6MB/s
+  name: 0|🇨🇦1 |  4.4MB/s
   password: amazonskr05
   port: 443
-  server: 3.112.216.127
+  server: 47.129.58.69
   type: ss
-- name: 0|🇸🇬1 |  1.6MB/s
-  password: 74296433-e708-3d2a-a2c1-4517de85b93d
-  port: 17806
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x65.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 0|🇺🇸1 |  1.2MB/s
-  network: tcp
-  port: 48919
-  server: 183.236.51.38
+  name: 0|🇫🇷1 |  1.6MB/s
+  port: 15113
+  server: hkt-detour-13.grabgo.pro
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: f837b510-7050-4dec-b182-a777dc358469
+- cipher: aes-128-gcm
+  name: 0|🌀1- |  6.1MB/s
+  password: c3e6387d-ba91-42bb-858c-e1caa337f689
+  port: 12041
+  server: mdss-other.04z3susick.download
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸1 |  5.5MB/s
+  port: 15508
+  server: la-detour-08.grabgo.pro
+  tls: false
+  type: vmess
+  uuid: f837b510-7050-4dec-b182-a777dc358469
+- cipher: aes-128-gcm
+  name: 0|🇹🇼1 |  1.9MB/s
+  password: c3e6387d-ba91-42bb-858c-e1caa337f689
+  port: 12031
+  server: mdss-tw.04z3susick.download
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🇺🇸4 |  2.3MB/s
+  password: f4cd0a554e9d0558c581
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45917
+  server: console.03.aliyun.aq.kunlunaqs.com
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🇨🇦2 |  1.1MB/s
+  password: c3e6387d-ba91-42bb-858c-e1caa337f689
+  port: 12035
+  server: mdss-other.04z3susick.download
+  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|🇫🇷1 |  1.0MB/s
+  name: 0|🇫🇷2 |  1.8MB/s
   network: ws
   port: 80
   server: 151.101.64.155
@@ -38,116 +66,45 @@ proxies:
     headers:
       HOST: telegram-isvvpn.dev
     path: /racevpn
-- cipher: aes-256-cfb
-  name: 0|🇨🇦1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.128.243.171
-  type: ss
-- name: 0|🇺🇸2 |  4.9MB/s
-  password: 74296433-e708-3d2a-a2c1-4517de85b93d
-  port: 16895
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x40.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  delay: 2724
-  name: 0|🇺🇸4 |  1.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.91.107.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸5 |  3.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.185.211.74
-  type: ss
-- cipher: aes-256-gcm
-  delay: 942
-  name: 0|🌀1- |  1.1MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 167.88.61.213
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  5.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.64.124.92
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🌀2- |  4.6MB/s
-  port: 100
-  server: 138.199.158.245
-  tls: false
-  type: vmess
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- name: 0|🇯🇵3 |  8.8MB/s
-  password: 74296433-e708-3d2a-a2c1-4517de85b93d
-  port: 20300
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z300.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  delay: 1036
-  h2-opts: {}
-  http-opts: {}
-  name: 0,14|香港9|@ripaojiedian
-  network: tcp
-  port: '48889'
-  server: gy.youaremygod.top
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- name: 0|🇯🇵4 |  5.4MB/s
-  password: 74296433-e708-3d2a-a2c1-4517de85b93d
-  port: 20071
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x71.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  delay: 2271
-  name: 0|🌀3- |  1.0MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 167.88.61.213
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸7 |  2.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.32.166.45
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸8 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.220.174.155
-  tls: false
-  type: ss
-  udp: true
 - alterId: '0'
   cipher: auto
-  name: 0|🇫🇷2 |  2.5MB/s
+  name: 0|🇺🇸5 |  1.7MB/s
+  network: tcp
+  port: 44014
+  server: 120.198.71.219
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 0|🌏1 |  6.0MB/s
+  port: 15707
+  server: sz-sg-07.grabgo.pro
+  tls: false
+  type: vmess
+  uuid: f837b510-7050-4dec-b182-a777dc358469
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.221.195.154
+  type: ss
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 0|🇫🇷4 |  2.1MB/s
+  network: ws
+  port: 80
+  server: 151.101.128.155
+  type: vmess
+  udp: true
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.dev
+    path: /racevpn
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷5 |  1.2MB/s
   network: ws
   port: 80
   server: AC.fastly80-2.hosting-ip.com
@@ -157,39 +114,31 @@ proxies:
     headers:
       Host: telegram-isvvpn.dev
     path: /racevpn
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  3.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.254.62.242
+- cipher: aes-128-gcm
+  name: 0|🌀2- |  6.0MB/s
+  password: c3e6387d-ba91-42bb-858c-e1caa337f689
+  port: 12014
+  server: mdss-jp.04z3susick.download
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  1.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.32.201
+- cipher: aes-128-gcm
+  name: 0|🇨🇦3 |  2.8MB/s
+  password: c3e6387d-ba91-42bb-858c-e1caa337f689
+  port: 12036
+  server: mdss-other.04z3susick.download
   type: ss
-- name: 0|🇺🇸9 |  2.9MB/s
-  password: 74296433-e708-3d2a-a2c1-4517de85b93d
-  port: 20306
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z306.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇷🇺2 |  9.1MB/s
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.78.98.113
-  tfo: false
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵1 |  6.0MB/s
+  port: 15602
+  server: jp-02.grabgo.pro
+  tls: false
+  type: vmess
+  uuid: f837b510-7050-4dec-b182-a777dc358469
+- cipher: aes-128-gcm
+  name: 0|🌀3- |  4.9MB/s
+  password: c3e6387d-ba91-42bb-858c-e1caa337f689
+  port: 12042
+  server: mdss-other.04z3susick.download
   type: ss
 - name: 13,14|香港|@ripaojiedian
   network: tcp
@@ -343,12 +292,29 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.78.98.113
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.229.59.137
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|香港9|@ripaojiedian
+  network: tcp
+  port: '48889'
+  server: gy.youaremygod.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 16|d*********g.com_2
