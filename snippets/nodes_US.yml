@@ -1,45 +1,65 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|🇺🇸2 |  1.0MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.68.135.208
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸4 |  3.3MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-gcm
-  name: 0|🇺🇸6 |  1.1MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.68.135.208
-  type: ss
+  uuid: d7e9867f-8e86-3ac8-8fef-4aead0756cda
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸7 |  1.4MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-gcm
-  name: 0|🇺🇸8 |  1.1MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 139.64.165.230
-  type: ss
+  uuid: d7e9867f-8e86-3ac8-8fef-4aead0756cda
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸9 |  3.7MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-gcm
-  name: 0|🇺🇸9 |  1.1MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.68.135.208
-  type: ss
+  uuid: d7e9867f-8e86-3ac8-8fef-4aead0756cda
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- name: 0|🇺🇸10 |  5.9MB/s
+  password: e36034d8-1f0c-3721-bca4-2d9d98352fd2
+  port: 20296
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z296.hongkongnode.top
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 0|🇺🇸10 |  1.0MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.68.135.208
-  type: ss
+- name: 0|🇺🇸11 |  4.0MB/s
+  password: e36034d8-1f0c-3721-bca4-2d9d98352fd2
+  port: 28678
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z143.hongkongnode.top
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸11 |  5.2MB/s
-  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
-  port: 36371
-  server: free.2weradf.xyz
-  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
