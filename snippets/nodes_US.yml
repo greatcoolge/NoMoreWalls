@@ -1,36 +1,25 @@
 proxies:
-- name: 0|🇺🇸1 |  2.9MB/s
-  password: ec619d15-c0a3-3e81-9494-a80671371471
-  port: 20294
-  server: gy.58n.net
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸1 |  9.2MB/s
+  password: c27d6767-6562-4a3a-b012-3fdb5d91842d
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸3 |  5.7MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
   skip-cert-verify: true
-  sni: z294.hongkongnode.top
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: 0|🇺🇸2 |  4.9MB/s
-  password: ec619d15-c0a3-3e81-9494-a80671371471
-  port: 22741
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇺🇸4 |  5.9MB/s
-  password: ec619d15-c0a3-3e81-9494-a80671371471
-  port: 43337
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z102.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇺🇸5 |  5.8MB/s
-  password: ec619d15-c0a3-3e81-9494-a80671371471
-  port: 28678
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z143.hongkongnode.top
-  type: trojan
-  udp: true
+  uuid: 7634791a-727a-3ccd-ab08-71df858f756e
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
