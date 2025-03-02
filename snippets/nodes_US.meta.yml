@@ -1,61 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|🇺🇸1 |  1.0MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- name: 0|🇺🇸2 |  4.5MB/s
-  password: a0464e28-a1eb-3615-b9dd-37b9b84bb5ea
-  port: 20304
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z304.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
-- name: 0|🇺🇸3 |  4.0MB/s
-  obfs: salamander
-  obfs-password: 4b817757
-  password: 1f17cdf0578a2860
-  port: 443
-  server: 45.76.0.86
-  skip-cert-verify: true
-  sni: 45.76.0.86
-  type: hysteria2
-  udp: true
-- name: 0|🇺🇸4 |  2.3MB/s
-  password: a0464e28-a1eb-3615-b9dd-37b9b84bb5ea
-  port: 20278
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z278.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
-- name: 0|🇺🇸5 |  1.4MB/s
-  password: a0464e28-a1eb-3615-b9dd-37b9b84bb5ea
-  port: 16895
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x40.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 0|🇺🇸7 |  3.1MB/s
-  network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
 - alpn:
   - http/1.1
   auth-str: dongtaiwang.com
@@ -77,6 +20,95 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- name: 0,8|@V2rayNG3
+  password: '!!str 123456'
+  port: 443
+  server: 192.3.85.237
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  tls: false
+  type: hysteria2
+- name: 0,15|SC_speednode_0051
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 0,15|US_speednode_0056
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- client-fingerprint: chrome
+  delay: 2559
+  name: 0|🇺🇸5 |  2.1MB/s
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸6 |  2.8MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 04cb7151-a151-3194-8cfb-2702f34120c7
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
+- name: 0|🇺🇸7 |  4.8MB/s
+  obfs: salamander
+  obfs-password: 4b817757
+  password: 1f17cdf0578a2860
+  port: 443
+  server: 45.76.0.86
+  skip-cert-verify: true
+  sni: 45.76.0.86
+  tfo: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 0|🇺🇸8 |  2.6MB/s
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
@@ -109,20 +141,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|US_speednode_0056
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - name: 15|US_speednode_0064
   network: ws
   port: 80

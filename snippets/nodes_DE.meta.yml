@@ -1,1 +1,16 @@
-proxies: []
+proxies:
+- client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - 2002:0000:0000::1
+    path:
+    - /Hello!
+  name: 0|🇩🇪1 |  4.6MB/s
+  network: http
+  port: 80
+  server: 45.76.87.24
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 446bfcde-1d2d-4f6f-a828-117487411e01

@@ -1,38 +1,19 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|🇺🇸1 |  1.0MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- name: 0|🇺🇸2 |  4.5MB/s
-  password: a0464e28-a1eb-3615-b9dd-37b9b84bb5ea
-  port: 20304
-  server: gy.58n.net
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸6 |  2.8MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
   skip-cert-verify: true
-  sni: z304.hongkongnode.top
-  tfo: true
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: 0|🇺🇸4 |  2.3MB/s
-  password: a0464e28-a1eb-3615-b9dd-37b9b84bb5ea
-  port: 20278
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z278.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
-- name: 0|🇺🇸5 |  1.4MB/s
-  password: a0464e28-a1eb-3615-b9dd-37b9b84bb5ea
-  port: 16895
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x40.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
+  uuid: 04cb7151-a151-3194-8cfb-2702f34120c7
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
