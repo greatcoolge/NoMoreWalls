@@ -1,96 +1,87 @@
 proxies:
-- name: 0,15|US_speednode_0056
+- cipher: aes-128-gcm
+  name: 0|🇯🇵1 |  1.9MB/s
+  password: 32c41b01-84be-11ef-bb6b-bc241111d95d
+  port: 28029
+  server: js.wnwwv.cn
+  type: ss
+  udp: true
+- name: 0|🇸🇬1 |  6.2MB/s
+  password: 1eb70cdb-45fb-3513-8faa-83b7f749778c
+  port: 30712
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x83.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇺🇸1 |  9.1MB/s
   network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
+  port: 2095
+  server: 156.238.18.163
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 0|🌏1 |  5.8MB/s
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
-  udp: true
-  username: myszy
-- cipher: aes-128-gcm
-  name: 0|🇨🇦1 |  3.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.71
-  type: ss
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  3.4MB/s
+  name: 0,13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.229.55.109
+  server: 47.129.168.96
+  tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇯🇵1 |  5.3MB/s
-  port: 63051
-  server: in06.xxxoooxxxooo.net
-  tls: false
-  type: vmess
-  uuid: 2ecc00a4-25c3-344e-ae6c-8872b9092e25
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸2 |  5.5MB/s
-  network: ws
-  port: 23615
-  server: 15.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 470b5a3b-97f7-38dd-90f1-e659b14540a7
-  ws-opts:
-    headers:
-      Host: 15.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸3 |  5.0MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 470b5a3b-97f7-38dd-90f1-e659b14540a7
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
-- cipher: aes-256-gcm
-  name: 0|🇺🇸4 |  1.0MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 23.154.136.162
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  11.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.30.167
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸5 |  2.4MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
   udp: true
-  uuid: 470b5a3b-97f7-38dd-90f1-e659b14540a7
+- cipher: aes-256-cfb
+  name: 0|🇯🇵3 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.231.162.239
+  type: ss
+  udp: true
+- name: 0|🇺🇸2 |  5.6MB/s
+  password: 1eb70cdb-45fb-3513-8faa-83b7f749778c
+  port: 20307
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z307.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  2.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.183.164.43
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: 18.mamamajd.site
-    path: /
+      Host: www.zitian.cn
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -405,13 +396,6 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: 13|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 47.129.168.96
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
@@ -679,6 +663,20 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 15|US_speednode_0056
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - name: 15|US_speednode_0064
   network: ws
   port: 80
@@ -955,18 +953,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
-- alpn:
-  - http/1.1
-  name: 16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
