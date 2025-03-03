@@ -1,89 +1,26 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧1 |  5.5MB/s
-  password: aeb0fd14-807b-4333-a069-fb1b9076f44a
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸1 |  5.0MB/s
-  password: amazonskr05
+- cipher: rc4-md5
+  name: 0|🇺🇸1 |  2.7MB/s
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.155.57.11
+  type: ssr
+- cipher: aes-128-gcm
+  name: 0|🇨🇦1 |  1.3MB/s
+  password: shadowsocks
   port: 443
-  server: 34.212.0.149
+  server: 149.34.244.71
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇺🇸3 |  6.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.185.114
-  type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|🇩🇪1 |  4.9MB/s
-  network: ws
-  port: 80
-  server: 151.101.130.168
-  servername: amd.al
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
-  ws-opts:
-    headers:
-      HOST: amd.al
-    path: /XESALISTHEBEST?ed=2048
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  3.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.114.82.97
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇷🇺1 |  24.8MB/s
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  1.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.55.109
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  2.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.64.6.209
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸9 |  2.0MB/s
-  network: ws
-  port: 443
-  server: LA01.890619.GGff.NeT
-  servername: la01.890619.ggff.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 632e73b1-2ed0-4844-b111-cc6ef68439a3
-  ws-opts:
-    headers:
-      Host: LA01.890619.GGff.NeT
-    path: /UHXvYRn3CE81zHBaw7RlmqFIy
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸10 |  2.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.190.1.125
-  type: ss
-  udp: true
+- cipher: rc4-md5
+  name: 0|🌀1- |  4.3MB/s
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 194.5.215.59
+  type: ssr
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
