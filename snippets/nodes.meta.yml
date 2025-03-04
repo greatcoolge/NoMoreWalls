@@ -1,10 +1,36 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇰🇷1 |  5.6MB/s
+  name: 0|🇯🇵1 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.180.128.213
+  server: 18.179.10.10
   type: ss
+- name: 0|🇭🇰1 |  6.5MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇹🇼1 |  4.3MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: tw1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: tw1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇺🇸1 |  2.5MB/s
+  password: f5d37f21-6f31-3cf5-884a-bf13383ddfa5
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
 - name: 0,15|US_speednode_0056
   network: ws
   port: 80
@@ -19,32 +45,116 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-128-gcm
-  name: 0|🇺🇸2 |  5.1MB/s
-  password: 703a28b4-26a0-412a-a663-bccd1ad402a7
-  port: 12046
-  server: mdss-other.04z3susick.download
-  type: ss
-- name: 0,13,14|香港|@ripaojiedian
-  network: tcp
-  password: 1e63e585ab2fef3adcc9ea75a62abc23
-  port: 443
-  server: 104.251.227.182
-  skip-cert-verify: true
-  sni: hezijiasuqi.com
-  type: trojan
-- name: 0|🇺🇸3 |  2.2MB/s
+- name: 0|🇺🇸3 |  3.2MB/s
   network: ws
-  port: 2052
-  server: 156.238.18.165
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
   skip-cert-verify: false
-  tls: false
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 0|🇺🇸4 |  2.5MB/s
+  network: ws
+  port: 443
+  server: 31.22.116.15
+  servername: usa.sevco.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: aebc10f3-f34b-49c6-b5e7-68b864183906
+  ws-opts:
+    headers:
+      Host: usa.sevco.me
+    path: /bing
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  3.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.183.232.26
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵3 |  3.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.30.167
+  type: ss
+- name: 0,15|SC_speednode_0051
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
       Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 0|🇺🇸8 |  4.9MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp3-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: usgp3-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇺🇸9 |  3.7MB/s
+  network: ws
+  port: 443
+  server: 104.16.152.64
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 0|🇺🇸10 |  5.3MB/s
+  network: ws
+  port: 443
+  server: 193.9.49.241
+  servername: eua.kobtty.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd01db3b-4b0a-4718-98dd-1d38f55be03f
+  ws-opts:
+    headers:
+      Host: eua.kobtty.me
+    path: /bing
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -201,6 +311,14 @@ proxies:
   server: ftq.ink
   tls: true
   type: http
+- name: 13,14|香港|@ripaojiedian
+  network: tcp
+  password: 1e63e585ab2fef3adcc9ea75a62abc23
+  port: 443
+  server: 104.251.227.182
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: 2be0c954-4291-45ea-b47d-ca713180550b
@@ -638,20 +756,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 15|SC_speednode_0051
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - name: 15|US_speednode_0064
   network: ws
   port: 80
@@ -928,18 +1032,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
-- alpn:
-  - http/1.1
-  name: 16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn

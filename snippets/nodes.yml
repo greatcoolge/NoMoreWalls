@@ -1,17 +1,32 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇰🇷1 |  5.6MB/s
+  name: 0|🇯🇵1 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.180.128.213
+  server: 18.179.10.10
   type: ss
-- cipher: aes-128-gcm
-  name: 0|🇺🇸2 |  5.1MB/s
-  password: 703a28b4-26a0-412a-a663-bccd1ad402a7
-  port: 12046
-  server: mdss-other.04z3susick.download
+- name: 0|🇺🇸1 |  2.5MB/s
+  password: f5d37f21-6f31-3cf5-884a-bf13383ddfa5
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  3.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.183.232.26
   type: ss
-- name: 0,13,14|香港|@ripaojiedian
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵3 |  3.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.30.167
+  type: ss
+- name: 13,14|香港|@ripaojiedian
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443

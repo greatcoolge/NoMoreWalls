@@ -1,5 +1,14 @@
 proxies:
-- name: 0,15|US_speednode_0056
+- name: 0|🇺🇸1 |  2.5MB/s
+  password: f5d37f21-6f31-3cf5-884a-bf13383ddfa5
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0,15|US_speednode_0056
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -13,25 +22,107 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-128-gcm
-  name: 0|🇺🇸2 |  5.1MB/s
-  password: 703a28b4-26a0-412a-a663-bccd1ad402a7
-  port: 12046
-  server: mdss-other.04z3susick.download
-  type: ss
 - client-fingerprint: chrome
-  name: 0|🇺🇸3 |  2.2MB/s
+  name: 0|🇺🇸3 |  3.2MB/s
   network: ws
-  port: 2052
-  server: 156.238.18.165
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
   skip-cert-verify: false
-  tls: false
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- client-fingerprint: chrome
+  name: 0|🇺🇸4 |  2.5MB/s
+  network: ws
+  port: 443
+  server: 31.22.116.15
+  servername: usa.sevco.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: aebc10f3-f34b-49c6-b5e7-68b864183906
+  ws-opts:
+    headers:
+      Host: usa.sevco.me
+    path: /bing
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- name: 0,15|SC_speednode_0051
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
       Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 0|🇺🇸8 |  4.9MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp3-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: usgp3-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇺🇸9 |  3.7MB/s
+  network: ws
+  port: 443
+  server: 104.16.152.64
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 0|🇺🇸10 |  5.3MB/s
+  network: ws
+  port: 443
+  server: 193.9.49.241
+  servername: eua.kobtty.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd01db3b-4b0a-4718-98dd-1d38f55be03f
+  ws-opts:
+    headers:
+      Host: eua.kobtty.me
+    path: /bing
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
