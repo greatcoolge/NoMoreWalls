@@ -1,27 +1,33 @@
 proxies:
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸1 |  5.6MB/s
-  password: amazonskr05
+- down: 100
+  name: 0|🇨🇦1 |  6.3MB/s
+  password: 4a48871d49c3f20fd93d365c49e45f78
   port: 443
-  server: 18.236.101.195
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 0|🌀1- |  2.5MB/s
+  server: v.ccs.vaala.cat
+  sni: v.ccs.vaala.cat
+  type: hysteria2
+  up: 100
+- name: 0|🇺🇸1 |  2.4MB/s
   network: ws
-  port: 23614
-  server: 14.mamamajd.site
+  port: 443
+  server: 104.16.150.133
+  servername: c01.ylkszy.eu.org
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: 14.mamamajd.site
-    path: /
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 0|🇺🇸2 |  5.5MB/s
+  password: iMqY3uG_5pgEj3hCfyHB-0vB
+  port: 443
+  server: 143.198.235.49
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
 - alpn:
   - http/1.1
   auth-str: dongtaiwang.com
@@ -42,171 +48,86 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- auth: dongtaiwang.com
-  delay: 1940
-  name: 0|🇷🇺1 |  1.3MB/s
-  password: dongtaiwang.com
-  port: 51224
-  server: 46.17.41.189
+- name: 0|🇸🇬1 |  6.3MB/s
+  password: be979cbf-3ea8-34cf-bdbc-99f3fafb0b83
+  port: 20130
+  server: gy.58n.net
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  1.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.242.248
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸3 |  1.7MB/s
-  network: ws
-  port: 23615
-  server: 15.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: x130.flybar.work
+  type: trojan
   udp: true
-  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
-  ws-opts:
-    headers:
-      Host: 15.mamamajd.site
-    path: /
+- name: 0|🇺🇸5 |  2.2MB/s
+  password: be979cbf-3ea8-34cf-bdbc-99f3fafb0b83
+  port: 22741
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: dufu.hongkongnode.top
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
+  country: 🇺🇸US
+  delay: 2187
   h2-opts: {}
   http-opts: {}
-  name: 0|🇩🇪1 |  16.9MB/s
+  name: 0|🇩🇪2 |  3.1MB/s
   network: ws
-  port: 80
-  server: www.aetv.com
-  servername: amd.al
+  port: 443
+  server: eu9.998998.best
+  servername: server54-4.998877.best
   skip-cert-verify: true
-  type: vmess
-  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
-  ws-opts:
-    headers:
-      HOST: amd.al
-      Host: www.aetv.com
-    path: /XESALISTHEBEST?ed=2048
-- auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  name: 0|🌀2- |  2.7MB/s
-  password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  port: 8899
-  server: yingguo1.su8.lol
-  skip-cert-verify: false
-  sni: yingguo1.su8.lol
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  1.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.255.230.67
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🌀3- |  4.6MB/s
-  network: ws
-  port: 443
-  server: 104.18.24.41
-  servername: server9-3.998877.best
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 9accf73f-7372-4403-b31e-0f83d86feb98
   ws-opts:
     headers:
-      Host: server9-3.998877.best
-    path: /rksdnuhgteb?ed=2560
-- name: 0|🇺🇸4 |  1.9MB/s
-  network: ws
-  port: 443
-  server: 31.22.116.185
-  servername: usb.kobtty.me
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b12594c-6f7a-4282-a9e5-69979762ab93
-  ws-opts:
-    headers:
-      Host: usb.kobtty.me
-    path: /bing
-- name: 0|🇺🇸5 |  3.6MB/s
-  network: ws
-  port: 443
-  server: 193.9.49.241
-  servername: eua.kobtty.me
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd01db3b-4b0a-4718-98dd-1d38f55be03f
-  ws-opts:
-    headers:
-      Host: eua.kobtty.me
-    path: /bing
-- name: 0|🇭🇰1 |  6.4MB/s
+      HOST: server54-4.998877.best
+    path: /jsedr6deersed6h?ed=2560
+- name: 0|🇺🇸6 |  11.7MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
+  server: jp104-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
+  sni: jp104-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇯🇵1 |  6.2MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jpgmo102-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.231.49.47
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇺🇸6 |  1.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.143.186.182
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸7 |  4.1MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
+- name: 0|🇺🇸7 |  4.0MB/s
+  password: be979cbf-3ea8-34cf-bdbc-99f3fafb0b83
+  port: 20308
+  server: gy.58n.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: z308.hongkongnode.top
+  type: trojan
   udp: true
-  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 0|🇩🇪2 |  2.1MB/s
+- name: 0|🇺🇸8 |  1.0MB/s
   network: ws
-  port: 80
-  server: 151.101.66.168
-  type: vmess
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: amd.al
-    path: /XESALISTHEBEST?ed=2048
-- name: 0|🇺🇸8 |  6.0MB/s
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰1 |  4.9MB/s
+  password: c17457d9-3986-4b43-a5b4-214999ce7476
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.179.221.27
+  tfo: false
+  type: ss
+- name: 0|🇺🇸9 |  5.1MB/s
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -218,34 +139,22 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸9 |  5.1MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
+- name: 0|🇺🇸10 |  4.3MB/s
+  password: be979cbf-3ea8-34cf-bdbc-99f3fafb0b83
+  port: 20307
+  server: gy.58n.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: z307.hongkongnode.top
+  type: trojan
   udp: true
-  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.96.253
-  type: ss
-- cipher: aes-256-gcm
-  name: 0,13|🇸🇬 新加坡|@ripaojiedian
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+- name: 0|🇺🇸11 |  19.6MB/s
+  password: be979cbf-3ea8-34cf-bdbc-99f3fafb0b83
+  port: 43337
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z102.hongkongnode.top
+  type: trojan
+  udp: true
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -551,6 +460,13 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
+  name: 13|🇸🇬 新加坡|@ripaojiedian
+  password: 0407WKIEIXMTLGC6
+  port: 16007
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
   name: 13|🇸🇬 新加坡3|@ripaojiedian
   password: IHWLYZSSSX4GSKLA
   port: 16013
@@ -579,13 +495,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.229.110.23
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.179.221.27
   tfo: false
   type: ss
 - cipher: aes-256-cfb
