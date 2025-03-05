@@ -1,4 +1,63 @@
 proxies:
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 0|🇺🇸1 |  5.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.236.101.195
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸3 |  1.7MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
+- cipher: aes-256-cfb
+  name: 0|🇺🇸6 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.143.186.182
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸7 |  4.1MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸9 |  5.1MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
