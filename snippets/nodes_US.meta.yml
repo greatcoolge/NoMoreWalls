@@ -1,24 +1,44 @@
 proxies:
-- delay: 1157
-  name: 0|🇺🇸1 |  1.1MB/s
-  network: ws
-  port: 443
-  server: icook.tw
-  servername: c01.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
-- name: 0,15|US_speednode_0056
+- client-fingerprint: chrome
+  name: 0|🇺🇸1 |  4.6MB/s
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
   servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 0|🇺🇸2 |  4.9MB/s
+  password: iMqY3uG_5pgEj3hCfyHB-0vB
+  port: 443
+  server: 143.198.235.49
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸3 |  4.8MB/s
+  password: 859553af-b15c-4c75-9a05-9d46a70b6513
+  port: 36721
+  server: free.2weradf.xyz
+  type: ss
+- name: 0|🇺🇸4 |  1.8MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0,15|SC_speednode_0051
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
@@ -26,56 +46,8 @@ proxies:
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 0|🇺🇸4 |  1.3MB/s
-  password: ff74f0b5-f84b-31a3-b156-32b9d8a4a1a7
-  port: 22741
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸5 |  5.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.190.30
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸6 |  5.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.236.83.127
-  type: ss
-  udp: true
-- name: 0|🇺🇸7 |  6.0MB/s
-  password: ff74f0b5-f84b-31a3-b156-32b9d8a4a1a7
-  port: 43337
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z102.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇺🇸8 |  5.7MB/s
-  password: ff74f0b5-f84b-31a3-b156-32b9d8a4a1a7
-  port: 20296
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z296.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇺🇸10 |  4.6MB/s
-  password: ff74f0b5-f84b-31a3-b156-32b9d8a4a1a7
-  port: 20305
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z305.hongkongnode.top
-  type: trojan
-  udp: true
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -97,6 +69,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|US_speednode_0056
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - name: 15|US_speednode_0064
   network: ws
   port: 80
