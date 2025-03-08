@@ -1,11 +1,5 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵1 |  5.5MB/s
-  password: e7ac3e26-b517-49b1-8ce9-62bcf1158542
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-- name: 0|🇯🇵2 |  6.2MB/s
+- name: 0|🇯🇵1 |  6.1MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: jpgmo102-cdn-route.couldflare-cdn.com
@@ -14,12 +8,28 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇯🇵3 |  3.0MB/s
-  password: e06739e1-5c25-32de-8fb7-95ce8e8f9576
-  port: 20300
+- name: 0|🇯🇵2 |  2.7MB/s
+  password: 56a3cb1c-b304-3fe4-9e55-3b42b65cfdff
+  port: 20071
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z300.hongkongnode.top
+  sni: x71.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  delay: 463
+  name: 0|🇯🇵3 |  2.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.250.206
+  type: ss
+- name: 0|🇯🇵4 |  3.3MB/s
+  password: 56a3cb1c-b304-3fe4-9e55-3b42b65cfdff
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
   type: trojan
   udp: true
 - cipher: aes-256-gcm
@@ -38,32 +48,46 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  password: '!!str 74260716866785000'
+  port: 443
+  server: discrete-shrimp.shiner427.skin
+  skip-cert-verify: false
+  sni: discrete-shrimp.shiner427.skin
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  port: 52896
-  server: 45.159.50.128
+  name: 13|🇯🇵 日本3|@ripaojiedian 2
+  port: 35565
+  server: 120.198.71.214
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: d754d8d8-1e09-4ddc-a379-936fb4602634
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.169.244.24
+  server: 52.195.226.198
   tfo: false
   type: ss
+- name: 14|日本3|@ripaojiedian
+  network: tcp
+  password: '!!str 74260716866785000'
+  port: 443
+  server: discrete-shrimp.shiner427.skin
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|日本3|@ripaojiedian
+  name: '14|日本3|@ripaojiedian #1'
   network: tcp
-  port: '52896'
-  server: 45.159.50.128
+  port: '35565'
+  server: 120.198.71.214
   servername: ''
   tls: false
   type: vmess
-  uuid: d754d8d8-1e09-4ddc-a379-936fb4602634
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
