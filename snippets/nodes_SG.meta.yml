@@ -1,24 +1,34 @@
 proxies:
+- name: 0|🇸🇬1 |  5.2MB/s
+  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
+  port: 20299
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x299.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇸🇬2 |  4.5MB/s
+  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
+  port: 17806
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x65.flybar.work
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  5.3MB/s
+  name: 0|🇸🇬3 |  3.1MB/s
   password: amazonskr05
   port: 443
   server: 54.255.213.95
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬2 |  3.5MB/s
-  password: 4995be32-477a-4847-9923-e3ad3d5c07ba
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-- client-fingerprint: chrome
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 13|🇸🇬 新加坡|@ripaojiedian
-  password: '!!str 74260716866785000'
-  port: 443
-  server: hardy-haddock.shiner427.skin
-  skip-cert-verify: false
-  sni: hardy-haddock.shiner427.skin
-  type: trojan
+  password: 0407WKIEIXMTLGC6
+  port: 16007
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇸🇬 新加坡2|@ripaojiedian
@@ -29,18 +39,18 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 13|🇸🇬 新加坡|@ripaojiedian 2
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 13|🇸🇬 新加坡3|@ripaojiedian
   password: IHWLYZSSSX4GSKLA
   port: 16013
   server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 13|🇸🇬 新加坡4|@ripaojiedian
+  password: d2cb5677-5e2d-42ab-9350-8c0ab9a62730
+  port: 30921
+  server: bgp.u17.xyz
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -48,12 +58,6 @@ proxies:
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 57.180.243.140
+  server: 43.201.0.67
   tfo: false
   type: ss
-- name: 14|新加坡|@ripaojiedian
-  network: tcp
-  password: '!!str 74260716866785000'
-  port: 443
-  server: hardy-haddock.shiner427.skin
-  type: trojan

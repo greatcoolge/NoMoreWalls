@@ -1,21 +1,33 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺1 |  5.3MB/s
-  password: 4995be32-477a-4847-9923-e3ad3d5c07ba
-  port: 36571
-  server: free.2weradf.xyz
-  type: ss
+- auth: b53b403b-10d5-4da1-97f5-804be748be6a
+  client-fingerprint: chrome
+  down: 100
+  name: 0|🇷🇺1 |  5.2MB/s
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: b53b403b-10d5-4da1-97f5-804be748be6a
+  port: 33007
+  server: 185.22.152.236
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
 - alterId: 0
   cipher: auto
-  name: 0|🇷🇺2 |  2.9MB/s
+  client-fingerprint: chrome
+  name: 13,14|俄罗斯|@ripaojiedian
   network: ws
-  port: 23007
+  port: '23007'
   server: 185.22.152.236
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 466b7ced-2bd2-48d2-81fe-02872ce5324a
+  uuid: b806a6d9-b854-403a-94e7-5fc936a6da2a
   ws-opts:
-    headers: {}
+    headers:
+      Host: ''
     path: /
 - name: 15|RU_speednode_0046
   network: ws
