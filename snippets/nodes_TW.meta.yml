@@ -1,18 +1,4 @@
 proxies:
-- name: 0|🇹🇼1 |  5.9MB/s
-  password: 3edd1d9a-8eed-33fd-a868-447d2d7ade38
-  port: 59021
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x100.flybar.work
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼2 |  5.5MB/s
-  password: f5f6ad69-8e91-4e5f-a741-cd14f14ac3bd
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|@ripaojiedian
@@ -21,6 +7,23 @@ proxies:
   server: okanc.node-is.green
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|台湾2|@ripaojiedian
+  network: ws
+  port: '12883'
+  server: gtm1.ktmwan.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 9207a3fc-18cc-4af7-ab1c-1c0000e57e37
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾3|@ripaojiedian
