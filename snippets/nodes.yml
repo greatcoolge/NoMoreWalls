@@ -1,11 +1,59 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0,13|🇹🇼 台湾|@ripaojiedian
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21115
-  server: okanc.node-is.green
-  tfo: false
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  5.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.23.249
   type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇸🇬2 |  5.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.250.103.231
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵1 |  5.7MB/s
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  type: ss
+- name: 0|🇹🇼2 |  3.2MB/s
+  password: c74b5d6e-2217-38e3-94e3-cb5cd539c2a4
+  port: 36821
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z262.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 0|🇬🇧1 |  2.6MB/s
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.64.255
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-256-cfb
+  name: 0|🇺🇸2 |  3.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.97.249
+  type: ss
+- cipher: chacha20-ietf
+  name: 0|🌏1 |  5.8MB/s
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- name: 0|🇯🇵3 |  5.9MB/s
+  password: c74b5d6e-2217-38e3-94e3-cb5cd539c2a4
+  port: 20059
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x59.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 0,13,14|台湾2|@ripaojiedian
@@ -22,94 +70,14 @@ proxies:
     headers:
       Host: gtm1.ktmwan.net
     path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🌀1- |  6.2MB/s
-  network: ws
-  port: 23611
-  server: 11.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e441db5d-63e8-331f-9a9b-6483bccf491b
-  ws-opts:
-    headers:
-      Host: 11.mamamajd.site
-    path: /
-- name: 0|🇸🇬2 |  3.4MB/s
-  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
-  port: 20130
+- name: 0|🌀1- |  5.0MB/s
+  password: c74b5d6e-2217-38e3-94e3-cb5cd539c2a4
+  port: 20288
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x130.flybar.work
+  sni: z288.hongkongnode.top
+  tfo: true
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  5.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.201.149.176
-  type: ss
-- name: 0|🇯🇵1 |  5.6MB/s
-  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
-  port: 20071
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x71.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇹🇼1 |  5.5MB/s
-  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
-  port: 59021
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x100.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇺🇸2 |  6.1MB/s
-  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
-  port: 20294
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z294.hongkongnode.top
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸3 |  3.4MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e441db5d-63e8-331f-9a9b-6483bccf491b
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
-- cipher: aes-256-cfb
-  name: 0|🇺🇸4 |  3.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.97.249
-  type: ss
-- name: 0|🇺🇸5 |  1.8MB/s
-  password: 8b8b9e31-a0b7-3ff2-87fa-9d6751cdabc9
-  port: 20278
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z278.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.250.103.231
-  type: ss
   udp: true
 - name: 13|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -171,6 +139,13 @@ proxies:
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇹🇼 台湾|@ripaojiedian
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
   tfo: false
   type: ss
 - cipher: aes-256-gcm
