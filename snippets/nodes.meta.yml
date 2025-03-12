@@ -1,150 +1,153 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|🌏1 |  1.4MB/s
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.237.73.216
-  type: ss
-- name: 0|🇯🇵1 |  1.2MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇺🇸2 |  5.8MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  delay: 1485
-  name: 0|🇺🇸3 |  5.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.217.100.159
-  type: ss
 - fast-open: true
-  name: 0|🇷🇺1 |  2.4MB/s
+  name: 0|🇷🇺1 |  4.6MB/s
   password: dongtaiwang.com
   port: 37481
   server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 0|🇯🇵2 |  6.3MB/s
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  5.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.255.43
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 0|🇭🇰1 |  3.6MB/s
+  network: tcp
+  port: 50052
+  server: 120.232.153.123
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 0|🇺🇸1 |  5.4MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: jpgmo101-cdn-route.couldflare-cdn.com
+  server: ustx004-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: jpgmo101-cdn-route.couldflare-cdn.com
+  sni: ustx004-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇬🇧1 |  2.8MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20309
-  server: gyl.58n.net
+- alterId: 0
+  cipher: auto
+  name: 0|🇫🇷1 |  4.4MB/s
+  port: 41699
+  server: 183.236.51.38
   skip-cert-verify: true
-  sni: z309.hongkongnode.top
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- alpn:
-  - http/1.1
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- auth: a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8
+  name: 0|🇩🇪1 |  4.6MB/s
+  password: a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8
+  port: 37732
+  server: 207.180.248.7
   skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  up: 11 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- name: 0|🇯🇵3 |  4.7MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20076
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x76.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇹🇼1 |  6.2MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 21247
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x91.flybar.work
-  type: trojan
+  sni: www.bing.com
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇷🇺2 |  5.1MB/s
+  name: 0|🇷🇺2 |  5.6MB/s
   network: ws
   port: 23010
   server: 185.22.152.236
   tls: false
   type: vmess
-  uuid: d08a8088-a2a7-4beb-98e9-0973964b5ffa
+  uuid: e25247c6-9adb-41b7-84aa-5fdc5fd28572
   ws-opts:
     headers: {}
     path: /
-- name: 0|🇹🇼2 |  7.4MB/s
+- name: 0|🇹🇼1 |  2.5MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: tw1-cdn-route.couldflare-cdn.com
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: tw1-cdn-route.couldflare-cdn.com
+  sni: twmoon1-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇸🇬1 |  6.1MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 17806
-  server: gy.58n.net
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵1 |  2.1MB/s
+  port: 35565
+  server: 120.198.71.214
   skip-cert-verify: true
-  sni: x65.flybar.work
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: 0|🇺🇸5 |  1.8MB/s
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  name: 0|🌏1 |  1.4MB/s
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+- name: 0|🇺🇸2 |  2.2MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  delay: 1239
+  name: 0|🇺🇸3 |  1.7MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
+  type: ss
+- name: 0|🇭🇰2 |  3.7MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇺🇸4 |  5.4MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp3-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: usgp3-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  2.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 35.77.94.139
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺3 |  4.1MB/s
+  network: ws
+  port: 23010
+  server: 212.192.13.68
+  tls: false
+  type: vmess
+  uuid: e25247c6-9adb-41b7-84aa-5fdc5fd28572
   ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 0|🇺🇸7 |  5.5MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20304
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z304.hongkongnode.top
-  type: trojan
-  udp: true
+    headers: {}
+    path: /
+- name: 0|🇺🇸5 |  5.8MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp2-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: usgp2-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -1010,3 +1013,18 @@ proxies:
   tls: true
   type: vmess
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+- alpn:
+  - http/1.1
+  name: 16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn

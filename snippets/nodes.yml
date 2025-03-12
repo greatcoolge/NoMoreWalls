@@ -1,92 +1,82 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  5.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.255.43
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 0|🇭🇰1 |  3.6MB/s
+  network: tcp
+  port: 50052
+  server: 120.232.153.123
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 0|🇫🇷1 |  4.4MB/s
+  port: 41699
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  5.6MB/s
+  network: ws
+  port: 23010
+  server: 185.22.152.236
+  tls: false
+  type: vmess
+  uuid: e25247c6-9adb-41b7-84aa-5fdc5fd28572
+  ws-opts:
+    headers: {}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵1 |  2.1MB/s
+  port: 35565
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf
   name: 0|🌏1 |  1.4MB/s
   password: asd123456
   port: 8388
   server: 103.149.182.191
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸1 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.237.73.216
-  type: ss
-- name: 0|🇯🇵1 |  1.2MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇺🇸2 |  5.8MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  delay: 1485
-  name: 0|🇺🇸3 |  5.4MB/s
+  delay: 1239
+  name: 0|🇺🇸3 |  1.7MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  2.5MB/s
   password: amazonskr05
   port: 443
-  server: 34.217.100.159
+  server: 35.77.94.139
   type: ss
-- name: 0|🇬🇧1 |  2.8MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20309
-  server: gyl.58n.net
-  skip-cert-verify: true
-  sni: z309.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵3 |  4.7MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20076
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x76.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇹🇼1 |  6.2MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 21247
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x91.flybar.work
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇷🇺2 |  5.1MB/s
+  name: 0|🇷🇺3 |  4.1MB/s
   network: ws
   port: 23010
-  server: 185.22.152.236
+  server: 212.192.13.68
   tls: false
   type: vmess
-  uuid: d08a8088-a2a7-4beb-98e9-0973964b5ffa
+  uuid: e25247c6-9adb-41b7-84aa-5fdc5fd28572
   ws-opts:
     headers: {}
     path: /
-- name: 0|🇸🇬1 |  6.1MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 17806
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x65.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇺🇸7 |  5.5MB/s
-  password: 67b32c28-cecb-3ab0-bff5-8b4a4f2ab51c
-  port: 20304
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z304.hongkongnode.top
-  type: trojan
-  udp: true
 - name: 13|🇭🇰 香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
