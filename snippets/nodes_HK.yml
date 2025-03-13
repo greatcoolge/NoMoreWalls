@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰2 |  6.4MB/s
+  password: cf6f8b70-546e-496c-8edb-473f473cff78
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
 - client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -18,6 +24,18 @@ proxies:
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52611
   server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港3|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503131222137-DT5JTyaOLB.download.microsoft.com
+    mode: http
+  port: 8716
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -56,6 +74,17 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇭🇰 香港8|@ripaojiedian
+  port: 34011
+  server: 183.2.194.141
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 59383c9f-700c-4767-9e5a-6c6e87669c3c
 - name: 14|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
