@@ -1,19 +1,29 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸3 |  1.8MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cf21325c-a1e0-3d7d-8911-b52c2200f960
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸1 |  5.1MB/s
+  password: a6d80e66-7fcf-4f29-a936-b9b5390d8d67
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸3 |  4.5MB/s
+  password: a6d80e66-7fcf-4f29-a936-b9b5390d8d67
+  port: 36371
+  server: free.2weradf.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸4 |  4.9MB/s
+  password: a6d80e66-7fcf-4f29-a936-b9b5390d8d67
+  port: 36411
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 0|🇺🇸5 |  2.7MB/s
+  password: ZZ742AZT1DKLRDIF
+  port: 19005
+  server: 206.245.211.15
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
@@ -23,6 +33,18 @@ proxies:
     host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
     mode: http
   port: 8771
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8773
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
