@@ -1,34 +1,6 @@
 proxies:
-- cipher: rc4-md5
-  name: 0|🇺🇦1 |  1.4MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- name: 0|🇯🇵1 |  4.7MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 54178
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x115.flybar.work
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.254.131.232
-  type: ss
-- name: 0|🇺🇸2 |  1.0MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 22741
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇫🇷1 |  6.0MB/s
+  name: 0|🇫🇷1 |  6.1MB/s
   password: 7243745919d6de49a5db
   plugin: obfs
   plugin-opts:
@@ -38,32 +10,28 @@ proxies:
   server: console.02.aliyun.aq.kunlunaqs.com
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇫🇷2 |  4.3MB/s
+  name: 0|🇫🇷2 |  5.9MB/s
   password: amazonskr05
   port: 443
   server: 57.180.25.228
   type: ss
-- name: 0|🇸🇬2 |  1.9MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 20130
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x130.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇺🇸3 |  1.6MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 20302
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z302.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 0|🌀1- |  1.3MB/s
-  password: P9P5BOVKMIWGQ7L3
-  port: 15003
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  3.9MB/s
+  network: ws
+  port: 23012
+  server: 185.22.152.236
+  tls: false
+  type: vmess
+  uuid: c1db97a7-0ba2-4ae0-a4db-d58deded1b39
+  ws-opts:
+    headers: {}
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇦🇺1 |  1.8MB/s
+  password: 2950baac-98a4-4b8b-8eaf-11059e0af1f8
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
 - cipher: aes-256-cfb
   name: 13|tg频道:@ripaojiedian

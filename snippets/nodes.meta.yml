@@ -1,69 +1,14 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
+- name: 0|🇷🇺1 |  15.2MB/s
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
   skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  udp: true
-  up: 1000 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- cipher: rc4-md5
-  name: 0|🇺🇦1 |  1.4MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- name: 0,15|NL_speednode_0029
-  network: ws
-  port: 2052
-  server: 45.149.12.183
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 0|🇯🇵1 |  4.7MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 54178
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x115.flybar.work
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.254.131.232
-  type: ss
-- name: 0|🇺🇸2 |  1.0MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 22741
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
-  udp: true
+  sni: www.bing.com
+  tfo: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇫🇷1 |  6.0MB/s
+  name: 0|🇫🇷1 |  6.1MB/s
   password: 7243745919d6de49a5db
   plugin: obfs
   plugin-opts:
@@ -73,80 +18,29 @@ proxies:
   server: console.02.aliyun.aq.kunlunaqs.com
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇫🇷2 |  4.3MB/s
+  name: 0|🇫🇷2 |  5.9MB/s
   password: amazonskr05
   port: 443
   server: 57.180.25.228
   type: ss
-- name: 0|🇸🇬2 |  1.9MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 20130
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x130.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇺🇸3 |  1.6MB/s
-  password: bbf0989e-ac34-3ae8-a911-e5c362d8b2a3
-  port: 20302
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z302.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇹🇼1 |  5.9MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: aes-256-gcm
-  name: 0|🌀1- |  1.3MB/s
-  password: P9P5BOVKMIWGQ7L3
-  port: 15003
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  3.9MB/s
+  network: ws
+  port: 23012
+  server: 185.22.152.236
+  tls: false
+  type: vmess
+  uuid: c1db97a7-0ba2-4ae0-a4db-d58deded1b39
+  ws-opts:
+    headers: {}
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇦🇺1 |  1.8MB/s
+  password: 2950baac-98a4-4b8b-8eaf-11059e0af1f8
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
-- name: 0|🇺🇸4 |  5.4MB/s
-  network: ws
-  port: 2086
-  server: 104.21.4.189
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 7320522d-56c1-4e35-9fa7-88a151d76828
-  ws-opts:
-    headers:
-      Host: 07fd36f0-yuv2ray3131331456346534643.cocefob714.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.110 Safari/537.36
-    path: /DdAtLiofda1FCcda?ed=2560
-- name: 0|🇺🇸6 |  5.2MB/s
-  network: ws
-  port: 8880
-  server: 185.146.173.112
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
-  ws-opts:
-    headers:
-      Host: photographipictureai.ir
-    path: /Telegram
-- name: 0|🇺🇸7 |  4.9MB/s
-  network: ws
-  port: 8880
-  server: 195.85.59.155
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
-  ws-opts:
-    headers:
-      Host: photographipictureai.ir
-    path: /Telegram
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -611,6 +505,20 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /?ed=2560
+- name: 15|NL_speednode_0029
+  network: ws
+  port: 2052
+  server: 45.149.12.183
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - name: 15|NL_speednode_0034
   network: ws
   port: 80
@@ -1069,3 +977,18 @@ proxies:
   tls: true
   type: vmess
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+- alpn:
+  - http/1.1
+  name: 16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
