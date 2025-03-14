@@ -1,1 +1,36 @@
-proxies: []
+proxies:
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 1000 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  up: 100 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇨🇦2 |  1.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.128.224.249
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦3 |  9.1MB/s
+  password: 620c5b5108120a72
+  port: 11201
+  server: 23.162.56.206
+  type: ss
