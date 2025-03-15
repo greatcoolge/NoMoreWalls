@@ -1,40 +1,82 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸1 |  2.0MB/s
-  password: 4d666709-9f3c-4830-a454-829f2881365c
-  port: 36641
-  server: free.2weradf.xyz
+- alterId: 0
+  cipher: auto
+  name: 0,13|🇭🇰 香港8|@ripaojiedian
+  port: 49876
+  server: xxxlsopyyds.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2f0a6a99-af56-4119-bd11-04bccd6b74b7
+- cipher: rc4-md5
+  name: 0,13|🇹🇼 台湾3|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8746
+  server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰1 |  3.0MB/s
-  password: 4d666709-9f3c-4830-a454-829f2881365c
-  port: 36141
-  server: free.2weradf.xyz
+- cipher: aes-256-gcm
+  name: 0,13|🇹🇼 台湾5|@ripaojiedian
+  password: 6VQE3NRIIDK656Q0
+  port: 21002
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🌀1- |  1.4MB/s
-  password: 4d666709-9f3c-4830-a454-829f2881365c
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸2 |  1.7MB/s
-  password: 4d666709-9f3c-4830-a454-829f2881365c
-  port: 36271
-  server: free.2weradf.xyz
+- cipher: aes-256-gcm
+  name: 0,13|🇸🇬 新加坡3|@ripaojiedian
+  password: ZI7MN86GBSHSFW50
+  port: 16014
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 0|🇷🇺2 |  5.8MB/s
-  network: ws
-  port: 23012
-  server: 185.22.152.236
-  tls: false
+  name: 0,13|🇺🇸 美国3|@ripaojiedian
+  port: 48216
+  server: relay-cn-00.anycoin.bid
+  servername: 3233342d3134382e3133352e3131352e3237.anycoin.bid
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: cc4d27aa-39c2-4e77-b7a4-d2e954754ce5
-  ws-opts:
-    headers: {}
-    path: /
+  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 0|🇭🇰2 |  5.6MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 0,13|🇸🇬 新加坡2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8724
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- name: 0|🌀2- |  5.9MB/s
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
+  type: trojan
+- cipher: aes-256-cfb
+  name: 0|🇯🇵1 |  1.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.196.181.68
+  type: ss
 - cipher: aes-256-cfb
   name: 13|tg频道:@ripaojiedian
   password: amazonskr05
@@ -105,43 +147,11 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 香港8|@ripaojiedian
-  port: 49876
-  server: xxxlsopyyds.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2f0a6a99-af56-4119-bd11-04bccd6b74b7
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  port: 48216
-  server: relay-cn-00.anycoin.bid
-  servername: 3233342d3134382e3133352e3131352e3237.anycoin.bid
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
 - cipher: aes-256-gcm
   name: 13|🇹🇼 台湾2|@ripaojiedian
   password: OOW5TZHO9I1OFBAF
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  name: 13|🇹🇼 台湾3|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
-    mode: http
-  port: 8746
-  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -153,13 +163,6 @@ proxies:
     mode: http
   port: 8745
   server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇹🇼 台湾5|@ripaojiedian
-  password: 6VQE3NRIIDK656Q0
-  port: 21002
-  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -207,24 +210,6 @@ proxies:
     mode: http
   port: 8722
   server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  name: 13|🇸🇬 新加坡2|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
-    mode: http
-  port: 8724
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇸🇬 新加坡3|@ripaojiedian
-  password: ZI7MN86GBSHSFW50
-  port: 16014
-  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
