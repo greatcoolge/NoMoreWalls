@@ -1,16 +1,19 @@
 proxies:
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 0,13|🇹🇼 台湾3|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503161140460-Ypmr7Skyy1.download.microsoft.com
-    mode: http
-  port: 8746
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇹🇼1 |  1.6MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 96bbef31-5f63-3d0b-bb90-7626b78b057e
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|@ripaojiedian
@@ -35,6 +38,18 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 13|🇹🇼 台湾3|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503161140460-Ypmr7Skyy1.download.microsoft.com
+    mode: http
+  port: 8746
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾4|@ripaojiedian
