@@ -1,15 +1,25 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: 0|🇸🇬1 |  1.8MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 393af9f9-e083-3f10-be91-fdc2c0aba60f
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
 - cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  5.1MB/s
+  client-fingerprint: chrome
+  name: 0|🇸🇬4 |  2.1MB/s
   password: amazonskr05
   port: 443
-  server: 54.169.15.9
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬3 |  2.4MB/s
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19088
-  server: yy1.vyunyunnode.top
+  server: 47.128.224.249
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
