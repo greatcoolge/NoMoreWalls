@@ -1,4 +1,16 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 0|🇹🇼1 |  5.9MB/s
+  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
+  port: 12032
+  server: mdss-tw.04z3susick.download
+  type: ss
+- name: 0|🇹🇼2 |  1.6MB/s
+  password: 7pE3OSjFe9xFey8YyCgaIaz3Zu2CORpananc34DRlgSyO83XTyNjC4xAIue30YKFCCDlx
+  port: 443
+  server: sohtsa.taiwanesefood.link
+  sni: sohtsa.taiwanesefood.link
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|@ripaojiedian
@@ -7,57 +19,11 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾2|@ripaojiedian
-  network: ws
-  port: 46005
-  server: fadawtawd.zhangwei.li
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
-  ws-opts:
-    headers:
-      Host: fadawtawd.zhangwei.li
-    path: /zh-cn
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 13|🇹🇼 台湾3|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503161140460-Ypmr7Skyy1.download.microsoft.com
-    mode: http
-  port: 8746
-  server: cn01.efan8867801.xyz
+  password: 645d056f-369c-46d3-a1cb-7f04c06916ce
+  port: 30018
+  server: 114.132.40.118
   tfo: false
   type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 13|🇹🇼 台湾4|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503161140460-Ypmr7Skyy1.download.microsoft.com
-    mode: http
-  port: 8745
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|台湾2|@ripaojiedian
-  network: ws
-  port: '46005'
-  server: fadawtawd.zhangwei.li
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
