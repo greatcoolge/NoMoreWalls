@@ -1,28 +1,111 @@
 proxies:
+- name: 0|🇸🇬1 |  4.3MB/s
+  password: DEzpFlNpZCTT7RyZzuAYSnDxA33SyClFpyY3RYaS3O2q8gEXA8lO90xDaAw2YjpBC7cx0
+  port: 18331
+  server: orlang.protocolbuffer.com
+  sni: orlang.protocolbuffer.com
+  type: trojan
+- name: 0|🇹🇼1 |  5.9MB/s
+  password: 7pE3OSjFe9xFey8YyCgaIaz3Zu2CORpananc34DRlgSyO83XTyNjC4xAIue30YKFCCDlx
+  port: 443
+  server: sohtsa.taiwanesefood.link
+  sni: sohtsa.taiwanesefood.link
+  type: trojan
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  5.9MB/s
+  name: 0|🇸🇬2 |  5.4MB/s
   password: amazonskr05
   port: 443
-  server: 18.142.182.250
+  server: 47.129.37.231
   type: ss
-- cipher: aes-128-gcm
-  name: 0|🇨🇦1 |  5.2MB/s
-  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
-  port: 12045
-  server: mdss-other.04z3susick.download
-  type: ss
-- name: 0|🇬🇧1 |  5.7MB/s
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.135.34.118
-  sni: trojan.burgerip.co.uk
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸1 |  3.4MB/s
+  network: tcp
+  port: 31998
+  server: 120.234.102.229
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 0|🇺🇸2 |  3.8MB/s
+  network: ws
+  port: 80
+  server: 104.16.182.65
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
+  ws-opts:
+    headers:
+      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
+    path: /Telegram
+- name: 0|🇯🇵1 |  1.2MB/s
+  password: Au8FD7eTewSu46Y3xa90ZB3YxeYg3COORSapYaRl4DEDIl3A9Z8yCDj8gnyACSxSKx3Z6
+  port: 28335
+  server: derrick.meijireform.com
+  sni: derrick.meijireform.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 0|🇭🇰1 |  2.6MB/s
-  password: TKY51QYEBHOTE1B4
-  port: 15015
-  server: qh62onjn.slashdevslashnetslashtun.net
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.142.42
   type: ss
+- name: 0|🇮🇳1 |  2.5MB/s
+  password: YZCCXpEN94la0wz4a6jFuO5pS0uCZ3BR9yX3cOcR3IDRDy2glqDexSNF683FE3DYlKnay
+  port: 28332
+  server: peruby.protocolbuffer.com
+  sni: peruby.protocolbuffer.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  delay: 1360
+  name: 0|🇬🇧1 |  2.0MB/s
+  network: ws
+  port: 443
+  server: 172.67.169.40
+  servername: hms03.dongfeng.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
+  ws-opts:
+    headers:
+      Host: hms03.dongfeng.cfd
+    path: /linkws
+- cipher: aes-128-cfb
+  name: 0|🇺🇸3 |  5.0MB/s
+  obfs: plain
+  password: shadowsocks
+  port: 443
+  protocol: origin
+  server: 184.170.241.194
+  type: ssr
+- name: 0|🇯🇵3 |  4.4MB/s
+  password: FeCOjFDq3aXx8BD39R2O4zxSxNDY3R4zl3x6K2SZaZY3ElTRaO5EeR08yNnSI0Zew9lyC
+  port: 443
+  server: mailbox.meijireform.com
+  sni: mailbox.meijireform.com
+  type: trojan
+- name: 0|🇰🇷1 |  1.9MB/s
+  password: SECCzF5l3xeFN6z76DyuKZ83wTS4gBClpOARp83glBnqXjaI78nZp2eReSXxCY9SlDDFa
+  port: 443
+  server: spirit.koreanbbq.link
+  sni: spirit.koreanbbq.link
+  type: trojan
+- name: 0|🇯🇵4 |  6.1MB/s
+  password: Aa3xCDR7DZa4YxNSKxCye3OR8xCzepYlY47COSwaFplTYjRDDl6nDAE9AZS0wZF2cRy5X
+  port: 18331
+  server: compost.meijireform.com
+  sni: compost.meijireform.com
+  type: trojan
+- name: 0|🇯🇵5 |  6.0MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alpn:
   - http/1.1
   auth-str: dongtaiwang.com
@@ -39,44 +122,11 @@ proxies:
   tls: true
   type: trojan
   udp: true
-  up: 100 Mbps
+  up: 1000 Mbps
   uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
       Host: www.zitian.cn
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 0|🇫🇷1 |  2.4MB/s
-  network: ws
-  port: 2095
-  server: 185.174.138.209
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- cipher: aes-256-gcm
-  name: 0|🇭🇰2 |  2.3MB/s
-  password: TZ36B3HM7NKOPUY7
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
-- name: 0|🇺🇸1 |  3.1MB/s
-  password: YCz0uZ484pjDCFyKqRZ3823SqxDXEBSwNnNYlay3yeuDaA0aISDR533eFglaaOTO3lF8A
-  port: 443
-  server: garland.taiwanesefood.link
-  sni: garland.taiwanesefood.link
-  type: trojan
-- name: 0|🇯🇵1 |  1.8MB/s
-  password: 32aFSDKwjFRcASN6DyAF9eqZ07D3OauYTYgxXBI50Tgy8Oxp8N3KAFDaOn3ZDYE334SEC
-  port: 28335
-  server: kuam.meijireform.com
-  sni: kuam.meijireform.com
-  type: trojan
 - cipher: aes-256-cfb
   name: 0,13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
@@ -84,108 +134,82 @@ proxies:
   server: 54.238.186.53
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🌀1- |  2.2MB/s
-  network: ws
-  port: 2082
-  server: 45.142.120.190
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link#
-- name: 0|🇭🇰3 |  3.6MB/s
-  network: ws
-  port: 443
-  server: 162.247.5.92
-  servername: hk.bkn.asia
-  tls: true
-  type: vless
-  uuid: ce2824eb-9bc1-4369-c574-8a769b203df9
-  ws-opts:
-    headers:
-      Host: hk.bkn.asia
-    path: /bing
-- cipher: aes-128-gcm
-  name: 0|🇮🇳1 |  6.0MB/s
-  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
-  port: 12042
-  server: mdss-other.04z3susick.download
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸2 |  2.4MB/s
-  network: ws
-  port: 23615
-  server: 15.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9fb63156-5bde-3028-983d-dd9eb33ff9d1
-  ws-opts:
-    headers:
-      Host: 15.mamamajd.site
-    path: /
-- cipher: aes-128-gcm
-  name: 0|🇹🇼1 |  5.9MB/s
-  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
-  port: 12032
-  server: mdss-tw.04z3susick.download
-  type: ss
 - cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  5.7MB/s
+  name: 0|🌀1-SK |  1.1MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- name: 0|🇺🇸4 |  1.0MB/s
+  password: YCz0uZ484pjDCFyKqRZ3823SqxDXEBSwNnNYlay3yeuDaA0aISDR533eFglaaOTO3lF8A
+  port: 443
+  server: garland.taiwanesefood.link
+  sni: garland.taiwanesefood.link
+  type: trojan
+- cipher: aes-256-cfb
+  name: 0|🇯🇵7 |  6.1MB/s
   password: amazonskr05
   port: 443
-  server: 13.215.250.172
+  server: 54.199.239.230
   type: ss
 - cipher: aes-256-cfb
-  name: 0,13|🇰🇷 韩国特殊|@ripaojiedian
+  name: 0|🇸🇬3 |  1.4MB/s
   password: amazonskr05
   port: 443
-  server: 18.136.193.92
-  tfo: false
+  server: 18.142.182.250
   type: ss
-- name: 0|🇯🇵3 |  1.8MB/s
+- name: 0|🇯🇵8 |  6.1MB/s
+  password: 9wSlq29Ta3DD633lCcXzFe3qAa3AyC8eO7T7RaFayZRYF3z43ExZuYaEjS0XppgAOg4BC
+  port: 28334
+  server: boohoo.meijireform.com
+  sni: boohoo.meijireform.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: 0|🇯🇵9 |  1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.168.61
+  type: ss
+- fast-open: true
+  name: 0|🇷🇺1 |  5.3MB/s
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: 0|🇯🇵10 |  1.1MB/s
   password: p0axgx3pXT6yjp4SwSRaaYeCDxCFOFaAlRYDNaRjF8OycXn3ZE3ABaYgnDIx3Eeq9C0ce
   port: 443
   server: huzzah.meijireform.com
   sni: huzzah.meijireform.com
   type: trojan
-- name: 0|🇯🇵4 |  6.2MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  1.1MB/s
+  name: 0|🇯🇵11 |  1.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.179.179.201
+  server: 54.95.26.81
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬4 |  5.0MB/s
-  password: amazonskr05
+- name: 0|🇮🇳2 |  5.4MB/s
+  password: Y8aYpzDTE9XBO3Kyca0nZAe3cpFD7eDRqaZxuASIweD5Dyq2Yxxz4SlZ3OpN8jR4OR0ay
   port: 443
-  server: 13.229.233.60
-  type: ss
-- name: 0|🇯🇵5 |  6.2MB/s
-  password: FeCOjFDq3aXx8BD39R2O4zxSxNDY3R4zl3x6K2SZaZY3ElTRaO5EeR08yNnSI0Zew9lyC
-  port: 443
-  server: mailbox.meijireform.com
-  sni: mailbox.meijireform.com
+  server: mineral.protocolbuffer.com
+  sni: mineral.protocolbuffer.com
   type: trojan
-- name: 0|🇺🇸3 |  1.5MB/s
+- name: 0|🇦🇺1 |  1.5MB/s
+  network: ws
+  port: 2095
+  server: 156.238.18.48
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- name: 0|🇺🇸7 |  1.5MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: ustx004-cdn-route.couldflare-cdn.com
@@ -194,151 +218,10 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇭🇰4 |  4.3MB/s
-  password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
-  port: 12221
-  server: 120.198.71.173
-  skip-cert-verify: true
-  sni: mmbiz.redapricotcloud.com
-  type: trojan
-- name: 0|🇹🇼2 |  1.6MB/s
-  password: 7pE3OSjFe9xFey8YyCgaIaz3Zu2CORpananc34DRlgSyO83XTyNjC4xAIue30YKFCCDlx
-  port: 443
-  server: sohtsa.taiwanesefood.link
-  sni: sohtsa.taiwanesefood.link
-  type: trojan
-- cipher: aes-256-cfb
-  name: 0|🇯🇵6 |  4.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.182.5.123
-  type: ss
-- name: 0|🇮🇳2 |  1.7MB/s
-  password: Y8aYpzDTE9XBO3Kyca0nZAe3cpFD7eDRqaZxuASIweD5Dyq2Yxxz4SlZ3OpN8jR4OR0ay
-  port: 443
-  server: mineral.protocolbuffer.com
-  sni: mineral.protocolbuffer.com
-  type: trojan
-- name: 0|🇯🇵7 |  4.7MB/s
-  password: Au8FD7eTewSu46Y3xa90ZB3YxeYg3COORSapYaRl4DEDIl3A9Z8yCDj8gnyACSxSKx3Z6
-  port: 28335
-  server: derrick.meijireform.com
-  sni: derrick.meijireform.com
-  type: trojan
-- cipher: aes-128-cfb
-  name: 0|🇺🇸4 |  2.8MB/s
-  obfs: plain
-  password: shadowsocks
-  port: 443
-  protocol: origin
-  server: 184.170.241.194
-  type: ssr
-- name: 0|🇮🇳3 |  1.8MB/s
-  password: YZCCXpEN94la0wz4a6jFuO5pS0uCZ3BR9yX3cOcR3IDRDy2glqDexSNF683FE3DYlKnay
-  port: 28332
-  server: peruby.protocolbuffer.com
-  sni: peruby.protocolbuffer.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: 0|🇸🇬5 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.129.37.231
-  type: ss
-- name: 0|🌀4-IL |  2.7MB/s
-  password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
-  port: 44650
-  server: 36.163.4.178
-  skip-cert-verify: true
-  sni: mmbiz11.redapricotcloud.com
-  type: trojan
-- delay: 1461
-  name: 0|🇮🇳4 |  1.1MB/s
+- name: 0|🇺🇸8 |  4.5MB/s
   network: ws
-  port: 2086
-  server: 212.183.88.84
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET/?ed=2048
-- cipher: aes-256-gcm
-  name: 0|🇭🇰5 |  1.1MB/s
-  password: 40H6T3FVQPRRPZZJ
-  port: 15003
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-- name: 0|🇰🇷1 |  1.6MB/s
-  password: SECCzF5l3xeFN6z76DyuKZ83wTS4gBClpOARp83glBnqXjaI78nZp2eReSXxCY9SlDDFa
-  port: 443
-  server: spirit.koreanbbq.link
-  sni: spirit.koreanbbq.link
-  type: trojan
-- cipher: aes-128-gcm
-  name: 0|🇺🇸5 |  4.6MB/s
-  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
-  port: 12027
-  server: mdss-us.04z3susick.download
-  type: ss
-- alterId: 0
-  cipher: auto
-  delay: 1360
-  name: 0|🇬🇧2 |  4.8MB/s
-  network: ws
-  port: 443
-  server: 172.67.169.40
-  servername: hms03.dongfeng.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
-  ws-opts:
-    headers:
-      Host: hms03.dongfeng.cfd
-    path: /linkws
-- name: 0|🇩🇪1 |  5.4MB/s
-  network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- cipher: aes-256-cfb
-  name: 0|🇯🇵8 |  3.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.179.8.12
-  type: ss
-- name: 0|🇯🇵9 |  2.8MB/s
-  password: Aa3xCDR7DZa4YxNSKxCye3OR8xCzepYlY47COSwaFplTYjRDDl6nDAE9AZS0wZF2cRy5X
-  port: 18331
-  server: compost.meijireform.com
-  sni: compost.meijireform.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: 0,13|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.0.54.96
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇯🇵10 |  6.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.230.142.42
-  type: ss
-- name: 0|🇩🇪2 |  5.5MB/s
-  network: ws
-  port: 8880
-  server: 154.83.2.228
+  port: 2095
+  server: 156.238.18.163
   skip-cert-verify: false
   tls: false
   type: vless
@@ -346,55 +229,16 @@ proxies:
   ws-opts:
     headers:
       Host: redw.pooriam.ir
-    path: /
-- name: 0|🇸🇬7 |  5.4MB/s
-  password: 63ZE5R8ZCTAKD8RS9Dy2cIwCT8N9pFCx3aYD3YOxOz3Yex6SpjRl0uqZDcFa3Aa4DnRSF
-  port: 18331
-  server: briefly.protocolbuffer.com
-  sni: briefly.protocolbuffer.com
-  type: trojan
-- name: 0|🇸🇬8 |  5.0MB/s
-  password: DEzpFlNpZCTT7RyZzuAYSnDxA33SyClFpyY3RYaS3O2q8gEXA8lO90xDaAw2YjpBC7cx0
-  port: 18331
-  server: orlang.protocolbuffer.com
-  sni: orlang.protocolbuffer.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: 0|🇸🇬9 |  2.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.128.242.43
-  type: ss
-- name: 0|🇺🇸6 |  1.0MB/s
-  password: DzOZFu87ZC2AaX6TYy49AxX8zBCAZYDSjyTyDBeDS3CRjlwaF3cep28SOS33AqeYpEF0I
-  port: 443
-  server: landder.wireshop.net
-  sni: landder.wireshop.net
-  type: trojan
-- cipher: aes-256-cfb
-  name: 0|🇯🇵11 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.230.168.61
-  type: ss
-- name: 0|🇯🇵12 |  5.3MB/s
-  password: 9wSlq29Ta3DD633lCcXzFe3qAa3AyC8eO7T7RaFayZRYF3z43ExZuYaEjS0XppgAOg4BC
-  port: 28334
-  server: boohoo.meijireform.com
-  sni: boohoo.meijireform.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: 0|🌀5-SK |  2.7MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 156.146.40.194
-  type: ss
-- name: 0|🇺🇸7 |  4.8MB/s
-  password: 7AZzxwaCl5caZaBnASIYOCS28eEF036BelDXED6ZKK3u3COXSe3SSqYZ5C43DOqySTRuR
-  port: 28333
-  server: grater.homeofbrave.net
-  sni: grater.homeofbrave.net
-  type: trojan
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- fast-open: true
+  name: 0|🇷🇺2 |  4.8MB/s
+  password: dongtaiwang.com
+  port: 37481
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -704,6 +548,20 @@ proxies:
   password: 54SY1SP5HU73E00Z
   port: 17001
   server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.136.193.92
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.0.54.96
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
