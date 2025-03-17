@@ -1,22 +1,28 @@
 proxies:
-- fast-open: true
-  name: 0|🇷🇺1 |  5.3MB/s
-  password: dongtaiwang.com
-  port: 18626
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- fast-open: true
-  name: 0|🇷🇺2 |  4.8MB/s
-  password: dongtaiwang.com
-  port: 37481
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺1 |  1.2MB/s
+  network: ws
+  port: 22009
+  server: 46.17.43.122
+  tls: false
+  type: vmess
+  uuid: 8af9de8a-120f-464f-bff3-70fd786d99b2
+  ws-opts:
+    headers: {}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  1.8MB/s
+  network: ws
+  port: 21012
+  server: 176.32.35.148
+  tls: false
+  type: vmess
+  uuid: 41657114-7fdd-4dfb-b905-f92227e757f5
+  ws-opts:
+    headers: {}
+    path: /
 - name: 15|RU_speednode_0046
   network: ws
   port: 80
