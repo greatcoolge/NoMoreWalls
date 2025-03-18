@@ -1,16 +1,39 @@
 proxies:
-- client-fingerprint: chrome
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 0|🇯🇵1 |  5.9MB/s
-  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
+  password: amazonskr05
   port: 443
-  server: terture.meijireform.com
-  sni: terture.meijireform.com
-  type: trojan
-- name: 0|🇯🇵2 |  5.3MB/s
-  password: FeCOjFDq3aXx8BD39R2O4zxSxNDY3R4zl3x6K2SZaZY3ElTRaO5EeR08yNnSI0Zew9lyC
+  server: 13.114.55.245
+  type: ss
+- cipher: aes-256-cfb
+  delay: 784
+  name: 0|🇯🇵2 |  3.7MB/s
+  password: amazonskr05
   port: 443
-  server: mailbox.meijireform.com
-  sni: mailbox.meijireform.com
+  server: 13.230.168.61
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵4 |  3.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.114.76.143
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵5 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.13.110
+  type: ss
+- client-fingerprint: chrome
+  name: 0|🇯🇵7 |  2.3MB/s
+  password: lCnTqRDYyYzSCwCaa9euS0BO2KlaepCyyepSOSN8ACB86DZl3aZ3c0n8xOxTI55w3O4SX
+  port: 28340
+  server: social.meijireform.com
+  sni: social.meijireform.com
   type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
@@ -18,7 +41,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503161140460-Ypmr7Skyy1.download.microsoft.com
+    host: 202503170996717-wD0t0Kc8NT.download.microsoft.com
     mode: http
   port: 8764
   server: cn01.efan8867801.xyz
@@ -30,41 +53,50 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503161140460-Ypmr7Skyy1.download.microsoft.com
+    host: 202503170996717-wD0t0Kc8NT.download.microsoft.com
     mode: http
   port: 8761
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇯🇵 日本3|@ripaojiedian
-  port: 18066
-  server: 45.159.50.212
-  skip-cert-verify: false
+  password: KG18CV6HWR7CXWP6
+  port: 18001
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
-  tls: false
-  type: vmess
-  uuid: fd359563-996d-461f-b0d7-97083b1616ae
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本4|@ripaojiedian
+  password: RAKL5ZG4QNFA72VX
+  port: 18007
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 13|🇯🇵 日本5|@ripaojiedian
+  password: '!!str 74260712244661900'
+  port: 443
+  server: gorgeous-bull.shiner427.skin
+  skip-cert-verify: false
+  sni: gorgeous-bull.shiner427.skin
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.238.186.53
+  server: 13.229.233.60
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|日本3|@ripaojiedian
+- name: 14|日本5|@ripaojiedian
   network: tcp
-  port: '18066'
-  server: 45.159.50.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fd359563-996d-461f-b0d7-97083b1616ae
+  password: '!!str 74260712244661900'
+  port: 443
+  server: gorgeous-bull.shiner427.skin
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 14|日本A|@ripaojiedian

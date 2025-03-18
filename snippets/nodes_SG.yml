@@ -1,18 +1,48 @@
 proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 0|🇸🇬1 |  2.7MB/s
+  password: BWC8KTIWQG0CO9IO
+  port: 16007
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
   country: 🇸🇬SG
-  delay: 270
-  name: 0|🇸🇬1 |  6.0MB/s
+  delay: 598
+  name: 0,13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.229.209.178
+  server: 54.151.230.240
+  tfo: false
   type: ss
-- cipher: aes-128-gcm
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇸🇬3 |  1.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.179.201
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇸🇬4 |  1.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.213.69.248
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇸🇬5 |  2.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.215.252.57
+  type: ss
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇸🇬 新加坡|@ripaojiedian
-  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
-  port: 12022
-  server: mdss-sg.04z3susick.download
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
   tfo: false
   type: ss
 - alterId: 0
@@ -26,14 +56,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 035374e8-60ff-34b3-9e7a-cca4cce31013
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.0.54.96
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 13,14|新加坡3|@ripaojiedian
+  network: tcp
+  password: 3gSFTSaSFB29S37DD3D6ne6q93nOCZz4FxYYpRacjp0ITRyRSc24AZypZCll88DXuaCDl
+  port: 28332
+  server: morlin.protocolbuffer.com
+  skip-cert-verify: false
+  sni: morlin.protocolbuffer.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|新加坡4|@ripaojiedian
+  network: tcp
+  password: N5T0K3aYpYFSO4O3gnD73OcFwp6BCqCyCa3jlIxDXyZRDE282ljCASADaTN4CzZZYllFI
+  port: 18333
+  server: pricing.protocolbuffer.com
+  skip-cert-verify: false
+  sni: pricing.protocolbuffer.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 14|新加坡2|@ripaojiedian
