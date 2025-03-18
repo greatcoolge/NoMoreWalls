@@ -1,30 +1,36 @@
 proxies:
-- client-fingerprint: chrome
-  name: 0|🇩🇪1 |  5.6MB/s
+- alterId: 2
+  cipher: auto
+  name: 0|🇩🇪1 |  1.7MB/s
   network: ws
-  port: 2095
-  server: 156.238.18.28
-  skip-cert-verify: false
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
   tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  type: vmess
+  udp: true
+  uuid: f2591110-7245-378a-9f10-b7dcbd1b7074
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
+      Host: 16.mamamajd.site
     path: /
-- client-fingerprint: chrome
-  name: 0|🇩🇪2 |  5.2MB/s
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 1798
+  name: 0|🇩🇪2 |  3.8MB/s
   network: ws
-  port: 8880
-  server: 154.83.2.228
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  port: 443
+  server: 23.158.56.241
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇩🇪 德国|@ripaojiedian
