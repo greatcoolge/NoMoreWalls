@@ -1,80 +1,14 @@
 proxies:
-- name: 0|🇹🇼1 |  4.3MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
+- grpc-opts:
+    grpc-service-name: i8oL7PsxV002zYFTmiIeg
+  name: 0|🇺🇸1 |  5.2MB/s
+  network: grpc
+  password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
   port: 443
-  server: tw1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: tw1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- alterId: 2
-  cipher: auto
-  name: 0|🇩🇪1 |  1.7MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2591110-7245-378a-9f10-b7dcbd1b7074
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- country: 🇨🇳CN
-  delay: 2017
-  name: 0|🇹🇼2 |  4.9MB/s
-  password: f43d30ee-7a5d-408f-a32e-b74935eeb7d7
-  port: 40037
-  server: zz.tw01.fogvip-zz.uk
-  skip-cert-verify: true
-  sni: ld.tw01.yuiuingkig.icu
+  server: 192.3.130.103
+  sni: us10-01zl.huangshang.filegear-sg.me
   type: trojan
   udp: true
-- country: 🇨🇳CN
-  delay: 564
-  name: 0|🇹🇼3 |  3.6MB/s
-  password: f43d30ee-7a5d-408f-a32e-b74935eeb7d7
-  port: 40036
-  server: zz.tw01.fogvip-zz.uk
-  skip-cert-verify: true
-  sni: ld.tw01.yuiuingkig.icu
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  delay: 270
-  name: 0|🇸🇬1 |  5.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.209.178
-  type: ss
-- cipher: aes-256-cfb
-  delay: 311
-  name: 0|🇯🇵1 |  2.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.207.150.238
-  type: ss
-- cipher: aes-256-cfb
-  delay: 784
-  name: 0|🇯🇵2 |  4.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.230.168.61
-  type: ss
-  udp: true
-- name: 0|🇭🇰1 |  1.7MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alpn:
   - http/1.1
   auth-str: dongtaiwang.com
@@ -96,63 +30,26 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- fast-open: true
-  name: 0|🇷🇺1 |  1.8MB/s
-  password: dongtaiwang.com
-  port: 37481
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- fast-open: true
-  name: 0|🇷🇺2 |  2.5MB/s
-  password: dongtaiwang.com
-  port: 18626
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- country: 🇨🇳CN
-  delay: 1412
-  name: 0|🇸🇬2 |  1.5MB/s
-  password: f43d30ee-7a5d-408f-a32e-b74935eeb7d7
-  port: 40013
-  server: zz.xinjp01.fogvip-zz.uk
-  skip-cert-verify: true
-  sni: ld.xinjp01.yuiuingkig.icu
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  delay: 426
-  name: 0|🇯🇵3 |  1.6MB/s
-  password: amazonskr05
+- name: 0,13|🇯🇵 日本5|@ripaojiedian
+  password: '74260712244661900'
   port: 443
-  server: 52.68.10.224
-  type: ss
-- name: 0|🇺🇸2 |  2.5MB/s
+  server: gorgeous-bull.shiner427.skin
+  skip-cert-verify: false
+  sni: gorgeous-bull.shiner427.skin
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 0|🌀1-CN |  4.8MB/s
   network: ws
-  port: 443
-  server: 31.22.116.16
-  servername: usa.xzncr.asia
-  tls: true
-  type: vless
-  uuid: 433f4c30-7b28-4d4e-b573-a6624231700a
+  port: 21013
+  server: 212.192.13.110
+  tls: false
+  type: vmess
+  uuid: 24485c23-59cd-484c-8e43-64f0230fae92
   ws-opts:
-    headers:
-      Host: usa.xzncr.asia
-    path: /bing
-- country: 🇨🇳CN
-  delay: 557
-  name: 0|🇸🇬3 |  5.5MB/s
-  password: f43d30ee-7a5d-408f-a32e-b74935eeb7d7
-  port: 50311
-  server: zz.sghkg.fogvip-zz.uk
-  skip-cert-verify: true
-  sni: ld.xjpsghkg.yuiuingkig.icu
-  type: trojan
-  udp: true
-- name: 0|🇹🇼4 |  5.5MB/s
+    headers: {}
+    path: /
+- name: 0|🇹🇼1 |  3.4MB/s
   network: ws
   port: 443
   server: 129.154.207.203
@@ -164,61 +61,148 @@ proxies:
   ws-opts:
     headers:
       Host: edfgk.aimercc.filegear-sg.me
-    path: /?ed
-- name: 0|🇺🇸3 |  5.7MB/s
+    path: /?edfp
+- alterId: 0
+  cipher: auto
+  name: 0|🌀2-CN |  4.5MB/s
   network: ws
+  port: 23018
+  server: 212.192.13.68
+  tls: false
+  type: vmess
+  uuid: 9a586b99-98ac-40e0-a00d-3aa7ed742f43
+  ws-opts:
+    headers: {}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  5.2MB/s
+  network: ws
+  port: 21013
+  server: 176.32.35.148
+  tls: false
+  type: vmess
+  uuid: 9a586b99-98ac-40e0-a00d-3aa7ed742f43
+  ws-opts:
+    headers: {}
+    path: /
+- fast-open: true
+  name: 0|🇷🇺3 |  1.9MB/s
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇺🇸3 |  2.7MB/s
+  obfs: plain
+  password: amazonskr05
   port: 443
-  server: 31.22.116.196
-  servername: usd.xzncr.asia
+  protocol: origin
+  server: 54.184.74.88
+  type: ssr
+- country: 🇵🇱PL
+  delay: 2155
+  name: 0|🇵🇱1 |  2.6MB/s
+  password: be758973-186d-46fe-8aa4-e017134fa291
+  port: 4029
+  server: 31.186.87.211
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  delay: 2426
+  name: 0|🇺🇸4 |  4.0MB/s
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.86.111.233
+  type: ssr
+- cipher: aes-256-cfb
+  delay: 1072
+  name: 0|🇰🇷1 |  3.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.78.98.141
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  delay: 633
+  name: 0|🇯🇵2 |  4.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.114.55.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇺🇸5 |  1.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 34.210.253.95
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🌀3-SK |  4.2MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- delay: 1100
+  name: 0|🇧🇷1 |  1.1MB/s
+  network: ws
+  port: 2086
+  server: 212.183.88.84
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET/?ed=2048
+- name: 0|🇳🇱1 |  1.0MB/s
+  network: ws
+  port: 2096
+  server: 104.17.148.22
+  servername: FuMzLrHj.kOrTiZ.InFo
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 034b7109-a45a-46d7-afde-3eec1af72322
-  ws-opts:
-    headers:
-      Host: usd.xzncr.asia
-    path: /bing
-- alterId: 0
-  cipher: auto
-  delay: 1798
-  name: 0|🇩🇪2 |  3.8MB/s
-  network: ws
-  port: 443
-  server: 23.158.56.241
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 0|🇫🇷2 |  3.6MB/s
-  network: ws
-  port: 443
-  server: 188.114.97.1
-  servername: linde06.indiavideo.sbs
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
   udp: true
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   ws-opts:
     headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- name: 0|🇺🇸4 |  3.4MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
+      Host: FuMzLrHj.kOrTiZ.InFo
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸6 |  4.4MB/s
+  network: tcp
+  port: 51095
+  server: 120.198.71.219
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  delay: 318
+  name: 0|🌀4- |  1.3MB/s
+  password: amazonskr05
   port: 443
-  server: ustx004-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: ustx004-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  server: 18.181.194.77
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬1 |  6.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.39.129
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🇭🇰1 |  6.0MB/s
+  password: ec588545-292e-4a11-ada2-d62e599af928
+  port: 24502
+  server: algz.76681f9610f175c6.com
+  type: ss
 - country: 🇺🇸US
   delay: 2009
   name: 0,8|@meli_proxyyراییت
@@ -230,119 +214,6 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 0|🇫🇷3 |  2.3MB/s
-  network: ws
-  port: 443
-  server: 188.114.97.210
-  servername: linde06.indiavideo.sbs
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- name: 0|🇯🇵4 |  6.0MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸6 |  3.4MB/s
-  network: ws
-  port: 23615
-  server: 15.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2591110-7245-378a-9f10-b7dcbd1b7074
-  ws-opts:
-    headers:
-      Host: 15.mamamajd.site
-    path: /
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  delay: 633
-  name: 0|🇯🇵5 |  3.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.114.55.245
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  delay: 573
-  name: 0|🇸🇬4 |  2.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.251.193.0
-  type: ss
-- name: 0|🇸🇬5 |  4.9MB/s
-  network: ws
-  port: 443
-  server: 47.74.20.72
-  servername: sgb.bkn.asia
-  tls: true
-  type: vless
-  uuid: 183ebae2-4d43-4026-c7c4-c336b6cef2a2
-  ws-opts:
-    headers:
-      Host: sgb.bkn.asia
-    path: /bing
-- name: 0|🇰🇷1 |  3.1MB/s
-  network: ws
-  port: 2095
-  server: 156.238.18.28
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- cipher: aes-256-cfb
-  name: 0|🇨🇭1 |  2.5MB/s
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 84.17.53.160
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  delay: 318
-  name: 0|🇯🇵6 |  4.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.181.194.77
-  type: ss
-- country: 🇨🇳CN
-  delay: 1997
-  name: 0|🇺🇸8 |  1.5MB/s
-  password: f43d30ee-7a5d-408f-a32e-b74935eeb7d7
-  port: 40005
-  server: zz.mgxyt.fogvip-zz.uk
-  skip-cert-verify: true
-  sni: ld.mgxyt.yuiuingkig.icu
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬6 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.129.39.129
-  type: ss
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -609,13 +480,6 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- name: 13|🇯🇵 日本5|@ripaojiedian
-  password: '74260712244661900'
-  port: 443
-  server: gorgeous-bull.shiner427.skin
-  skip-cert-verify: false
-  sni: gorgeous-bull.shiner427.skin
-  type: trojan
 - cipher: aes-256-gcm
   name: 13|🇸🇬 新加坡|@ripaojiedian
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
