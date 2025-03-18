@@ -1,17 +1,37 @@
 proxies:
-- client-fingerprint: chrome
-  name: 0|🇩🇪1 |  1.2MB/s
+- alterId: 0
+  cipher: auto
+  name: 0|🇩🇪1 |  1.4MB/s
   network: ws
-  port: 2095
-  server: 156.238.18.163
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  port: 443
+  server: 23.158.56.241
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇮🇷IR
+  delay: 750
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 0|🇩🇪2 |  3.1MB/s
+  network: http
+  port: 10683
+  server: 91.107.241.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 42a6b3ff-9f36-4b1c-a0ea-82f2fd1472f9
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 13|🇩🇪 德国|@ripaojiedian

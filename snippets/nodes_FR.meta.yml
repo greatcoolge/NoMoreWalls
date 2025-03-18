@@ -1,14 +1,7 @@
 proxies:
-- delay: 1480
-  name: 0|🇫🇷1 |  5.7MB/s
-  password: RXO4SlDD8qRKaxz3cBgSa3AXZuFnpu3Ce3KZFAN3YCxC7EEj2lTRN4Y6FyOcBp50IzD3D
-  port: 443
-  server: bottling.coffeekit.net
-  sni: bottling.coffeekit.net
-  type: trojan
 - auth: a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8
   client-fingerprint: chrome
-  name: 0|🇫🇷2 |  2.2MB/s
+  name: 0|🇫🇷1 |  4.9MB/s
   password: a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8
   port: 37732
   server: 207.180.248.7
@@ -16,3 +9,24 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇫🇷2 |  1.0MB/s
+  network: tcp
+  port: 22234
+  reality-opts:
+    public-key: tVDaWxsy54q7yRNRdJ718Gyt2HDoh_3R2y_PX22hhjM
+    short-id: 95c93be9
+  server: 195.154.56.233
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22a54b72-9c39-4bb0-97d0-41bbaaca2a67
+- name: 0|🇫🇷3 |  2.8MB/s
+  password: RXO4SlDD8qRKaxz3cBgSa3AXZuFnpu3Ce3KZFAN3YCxC7EEj2lTRN4Y6FyOcBp50IzD3D
+  port: 443
+  server: bottling.coffeekit.net
+  sni: bottling.coffeekit.net
+  type: trojan
