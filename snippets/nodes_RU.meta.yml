@@ -1,4 +1,13 @@
 proxies:
+- fast-open: true
+  name: 0|🇷🇺1 |  1.7MB/s
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - alpn:
   - http/1.1
   auth-str: dongtaiwang.com
@@ -15,21 +24,11 @@ proxies:
   sni: www.zitian.cn
   tls: true
   type: trojan
-  udp: true
   up: 1000 Mbps
   uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
       Host: www.zitian.cn
-- client-fingerprint: chrome
-  fast-open: true
-  name: 0|🇷🇺3 |  1.7MB/s
-  password: dongtaiwang.com
-  port: 18626
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - name: 15|RU_speednode_0046
   network: ws
   port: 80
