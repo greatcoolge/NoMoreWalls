@@ -1,26 +1,22 @@
 proxies:
-- cipher: aes-128-cfb
-  name: 0,13|🇺🇸 美国3|@ripaojiedian
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇫🇮1 |  2.9MB/s
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 95.217.158.231
-  type: ss
-- cipher: aes-256-cfb
+- grpc-opts:
+    grpc-service-name: i8oL7PsxV002zYFTmiIeg
   ip-version: dual
-  name: 0|🌀1- |  1.7MB/s
+  name: 0|🇺🇸1 |  4.0MB/s
+  network: grpc
+  password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
+  port: 443
+  server: 192.3.130.103
+  skip-cert-verify: false
+  sni: us10-01zl.huangshang.filegear-sg.me
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇺🇸2 |  4.4MB/s
   password: amazonskr05
   port: 443
-  server: 34.210.253.95
-  tls: false
+  server: 18.236.137.219
   type: ss
-  udp: true
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -57,14 +53,6 @@ proxies:
   server: 95.163.152.170
   skip-cert-verify: true
   sni: www.whatsapp.com
-  tls: false
-  type: hysteria2
-- name: 8|@meli_proxyyراییت
-  password: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
-  port: 443
-  server: 107.167.18.123
-  skip-cert-verify: true
-  sni: 06a68208-st69s0-su9bm5-1phl.la.shifen.uk
   tls: false
   type: hysteria2
 - name: 8|@V2rayNG3
@@ -353,6 +341,13 @@ proxies:
     mode: http
   port: 8773
   server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-128-cfb
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
   tfo: false
   type: ss
 - cipher: aes-256-gcm
