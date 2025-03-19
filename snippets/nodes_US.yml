@@ -1,52 +1,17 @@
 proxies:
-- grpc-opts:
-    grpc-service-name: i8oL7PsxV002zYFTmiIeg
-  name: 0|🇺🇸1 |  5.2MB/s
-  network: grpc
-  password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
-  port: 443
-  server: 192.3.130.103
-  sni: us10-01zl.huangshang.filegear-sg.me
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇺🇸3 |  2.7MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.184.74.88
-  type: ssr
-- cipher: aes-256-cfb
-  delay: 2426
-  name: 0|🇺🇸4 |  4.0MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 35.86.111.233
-  type: ssr
-- cipher: aes-256-cfb
-  name: 0|🇺🇸5 |  1.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.210.253.95
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸6 |  4.5MB/s
+  password: 7bbb0021ab931024
+  port: 11202
+  server: 67.220.67.59
   type: ss
-- alterId: '0'
-  cipher: auto
-  name: 0|🇺🇸6 |  4.4MB/s
-  network: tcp
-  port: 51095
-  server: 120.198.71.219
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-xh4inuCuH4.download.microsoft.com
+    host: 202503170996717-1jfmRG1tQL.download.microsoft.com
     mode: http
   port: 8771
   server: cn01.efan8867801.xyz
@@ -58,18 +23,42 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-xh4inuCuH4.download.microsoft.com
+    host: 202503170996717-1jfmRG1tQL.download.microsoft.com
     mode: http
   port: 8773
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 13,14|美国3|@ripaojiedian
-  network: tcp
-  password: 8cwxYqlSeC4Xw8KOApT3SxCIX69eZ7zBNZDE0Dap3y9AZTFBFlD5a2euA7A3YzR2DpSyI
+- cipher: aes-128-cfb
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  password: shadowsocks
   port: 443
-  server: bedsheet.homeofbrave.net
-  skip-cert-verify: true
-  sni: bedsheet.homeofbrave.net
+  server: 184.170.241.194
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  password: 9F8JNSW2S1HUHKRX
+  port: 17007
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 13,14|美国5|@ripaojiedian
+  network: tcp
+  password: SDYlNZ6z5DA8TZqz33YnN4lzpp88YBZOyXC5we8AZBqn6YXwI0gISyalXjIOyNwCaDpDORKSyDCSg9S
+  port: 28333
+  server: rolling.homeofbrave.net
+  skip-cert-verify: false
+  sni: rolling.homeofbrave.net
   type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国6|@ripaojiedian
+  password: JPDOKTML5DEL567X
+  port: 17003
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
