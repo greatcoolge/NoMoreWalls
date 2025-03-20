@@ -1,54 +1,35 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 0|🇫🇷1 |  5.6MB/s
-  network: ws
-  port: 2082
-  server: 45.142.120.190
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link#
+- cipher: aes-256-cfb
+  name: 0|🇨🇭1 |  5.6MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
 - cipher: rc4-md5
-  name: 0|🇺🇸1 |  5.2MB/s
+  name: 0|🇺🇸1 |  4.4MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 194.5.215.59
   type: ss
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 0|🇫🇷2 |  5.5MB/s
-  network: ws
-  port: 2095
-  server: 185.174.138.209
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
 - cipher: aes-256-cfb
-  name: 0|🌀1-SK |  5.6MB/s
+  ip-version: dual
+  name: 0|🌀1-T1 |  1.2MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 156.146.40.194
+  server: 51.15.23.63
   type: ss
-- cipher: aes-256-cfb
+  udp: true
+- grpc-opts:
+    grpc-service-name: i8oL7PsxV002zYFTmiIeg
   ip-version: dual
-  name: 0|🇺🇸2 |  4.5MB/s
-  password: amazonskr05
+  name: 0|🇺🇸2 |  4.0MB/s
+  network: grpc
+  password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
   port: 443
-  server: 54.184.74.88
-  tls: false
-  type: ss
+  server: 192.3.130.103
+  skip-cert-verify: false
+  sni: us10-01zl.huangshang.filegear-sg.me
+  type: trojan
   udp: true
 - name: '7,12|@vpnv2rayNGv #3'
   obfs: salamander
