@@ -1,4 +1,50 @@
 proxies:
+- client-fingerprint: chrome
+  name: 0|🇯🇵1 |  3.3MB/s
+  network: ws
+  port: 443
+  server: 20.210.64.11
+  servername: vsdfee.azurewebsites.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      host: vsdfee.azurewebsites.net
+    path: /
+- name: 0|🇯🇵3 |  6.1MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇯🇵4 |  6.3MB/s
+  password: 72988ae1-ce6d-37c3-a5ce-bc8c701f1dc3
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵5 |  6.3MB/s
+  password: 72988ae1-ce6d-37c3-a5ce-bc8c701f1dc3
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇯🇵6 |  1.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.207.150.238
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -48,14 +94,6 @@ proxies:
   skip-cert-verify: false
   sni: tenderly.meijireform.com
   type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.34.253.95
-  tfo: false
-  type: ss
 - name: 14|日本3|@ripaojiedian
   network: tcp
   password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
