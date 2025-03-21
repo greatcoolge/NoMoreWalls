@@ -1,20 +1,43 @@
 proxies:
+- name: 0|🇯🇵1 |  6.2MB/s
+  password: 84db46be-1bb2-3220-ae63-c2bcd63e269b
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵2 |  3.6MB/s
+  password: 84db46be-1bb2-3220-ae63-c2bcd63e269b
+  port: 20298
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z298.hongkongnode.top
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 0|🇯🇵1 |  3.3MB/s
+  flow: ''
+  mode: ''
+  name: 0|🇯🇵3 |  1.8MB/s
   network: ws
   port: 443
-  server: 20.210.64.11
-  servername: vsdfee.azurewebsites.net
-  skip-cert-verify: true
+  server: 172.66.44.209
+  servername: MaHDiSERver-kaO.pagES.DeV
   tls: true
   type: vless
-  udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  udp: false
+  uuid: 15d7ddce-151e-400a-94d0-2b7f8d30e331
   ws-opts:
     headers:
-      host: vsdfee.azurewebsites.net
-    path: /
-- name: 0|🇯🇵3 |  6.1MB/s
+      Host: mahdiserver-kao.pages.dev
+    path: ''
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.168.61
+  type: ss
+- name: 0|🇯🇵5 |  4.6MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: jp104-cdn-route.couldflare-cdn.com
@@ -23,28 +46,44 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇯🇵4 |  6.3MB/s
-  password: 72988ae1-ce6d-37c3-a5ce-bc8c701f1dc3
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵5 |  6.3MB/s
-  password: 72988ae1-ce6d-37c3-a5ce-bc8c701f1dc3
-  port: 20300
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z300.hongkongnode.top
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇯🇵6 |  1.5MB/s
+  name: 0|🇯🇵6 |  1.3MB/s
   password: amazonskr05
   port: 443
-  server: 43.207.150.238
+  server: 13.114.76.143
   type: ss
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇯🇵7 |  1.2MB/s
+  network: ws
+  port: 2095
+  server: 156.238.18.208
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇯🇵8 |  2.4MB/s
+  network: ws
+  port: 80
+  server: 45.131.5.155
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: 301.pooriam.ir
+    path: ''
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -94,6 +133,14 @@ proxies:
   skip-cert-verify: false
   sni: tenderly.meijireform.com
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.34.253.95
+  tfo: false
+  type: ss
 - name: 14|日本3|@ripaojiedian
   network: tcp
   password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
