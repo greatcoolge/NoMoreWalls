@@ -1,18 +1,56 @@
 proxies:
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 1000 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  protocol: udp
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  up: 1000 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
 - fast-open: true
-  name: 0|🇷🇺2 |  1.8MB/s
+  name: 0|🇷🇺2 |  5.1MB/s
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0|🇷🇺3 |  3.6MB/s
+  network: ws
+  port: 23022
+  server: 185.22.152.236
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
+  ws-opts:
+    path: /
+- fast-open: true
+  name: 0|🇷🇺4 |  1.5MB/s
   password: dongtaiwang.com
   port: 37481
   server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 0|🇷🇺3 |  5.8MB/s
-  password: 0597af27-0972-45de-a32f-d320348cb765
-  port: 46925
-  server: aafrtpfxr.rul01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - name: 15|RU_speednode_0046
   network: ws
   port: 80
