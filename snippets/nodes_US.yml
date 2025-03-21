@@ -1,34 +1,11 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸1 |  4.8MB/s
-  password: 57220f3f-8fa2-41bb-9554-98cde52605ed
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸2 |  1.6MB/s
-  password: 57220f3f-8fa2-41bb-9554-98cde52605ed
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-- grpc-opts:
-    grpc-service-name: i8oL7PsxV002zYFTmiIeg
-  ip-version: dual
-  name: 0|🇺🇸3 |  1.4MB/s
-  network: grpc
-  password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
-  port: 443
-  server: 192.3.130.103
-  skip-cert-verify: false
-  sni: us10-01zl.huangshang.filegear-sg.me
-  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-X5D1wovzQJ.download.microsoft.com
+    host: 202503170996717-MVQjjXvt4R.download.microsoft.com
     mode: http
   port: 8771
   server: cn01.efan8867801.xyz
@@ -40,40 +17,26 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-X5D1wovzQJ.download.microsoft.com
+    host: 202503170996717-MVQjjXvt4R.download.microsoft.com
     mode: http
   port: 8773
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-128-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
+  name: 13,14|美国3|@ripaojiedian
+  network: ws
+  port: '20012'
+  server: 207.90.238.136
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 13|🇺🇸 美国4|@ripaojiedian
-  password: '!!str 74260708004220600'
-  port: 443
-  server: capital-hyena.shiner427.skin
-  skip-cert-verify: false
-  sni: capital-hyena.shiner427.skin
-  type: trojan
-- client-fingerprint: chrome
-  name: 13,14|美国5|@ripaojiedian
-  network: tcp
-  password: SDYlNZ6z5DA8TZqz33YnN4lzpp88YBZOyXC5we8AZBqn6YXwI0gISyalXjIOyNwCaDpDORKSyDCSg9S
-  port: 28333
-  server: rolling.homeofbrave.net
-  skip-cert-verify: false
-  sni: rolling.homeofbrave.net
-  type: trojan
-- name: 14|美国4|@ripaojiedian
-  network: tcp
-  password: '!!str 74260708004220600'
-  port: 443
-  server: capital-hyena.shiner427.skin
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: 7c3589ed-eb5f-48a8-85dc-d6b02de60917
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
