@@ -1,15 +1,9 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  6.2MB/s
+  name: 0|🇸🇬1 |  5.8MB/s
   password: amazonskr05
   port: 443
   server: 54.179.179.201
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.129.37.231
   type: ss
 - client-fingerprint: chrome
   name: 13,14|新加坡|@ripaojiedian
@@ -28,19 +22,20 @@ proxies:
   server: okanc.node-is.green
   tfo: false
   type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 13|🇸🇬 新加坡3|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 13,14|新加坡3|@ripaojiedian
+  network: tcp
+  password: 0597af27-0972-45de-a32f-d320348cb765
+  port: 42881
+  server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.203.196.43
+  server: 18.183.126.95
   tfo: false
   type: ss
