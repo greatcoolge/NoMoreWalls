@@ -1,11 +1,24 @@
 proxies:
+- client-fingerprint: chrome
+  name: 0|🇩🇪1 |  1.9MB/s
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇩🇪1 |  4.7MB/s
+  name: 0|🇩🇪2 |  2.7MB/s
   network: ws
   port: 80
-  server: 156.238.18.51
+  server: 156.238.18.124
   servername: ''
   tls: false
   type: vless
@@ -15,18 +28,34 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 0|🇩🇪2 |  5.0MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇩🇪3 |  4.8MB/s
   network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
+  port: 80
+  server: 151.101.130.219
+  servername: ''
   tls: false
-  type: vmess
-  udp: true
-  uuid: e992c424-af2e-3ada-bcc4-f7446e257363
+  type: vless
+  udp: false
+  uuid: c59f7aeb-57fb-47ab-c420-03edd569b405
   ws-opts:
     headers:
-      Host: 16.mamamajd.site
-    path: /
+      Host: retete3.ir
+    path: /telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city-----telegeam-@v2_city?ed=2048
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 0|🇩🇪4 |  4.9MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mg27CNAYLf_Ur6787uTVq_RVfKuiM5MVwbReFVDg5ks
+    short-id: 190d32b118caf07f
+  server: 45.135.193.201
+  servername: mdundo.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 9e284c20-d147-48f4-a4cd-dd72903d7407

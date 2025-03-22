@@ -1,24 +1,55 @@
 proxies:
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇫🇷1 |  2.3MB/s
-  network: ws
-  port: 2087
-  server: 104.17.147.22
-  servername: www.fardares.ir
+- alpn:
+  - http/1.1
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 1000
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  protocol: udp
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
   tls: true
-  type: vless
-  udp: false
-  uuid: c7ccdf0a-f3a0-451c-baa7-c1998bb522ec
+  type: trojan
+  udp: true
+  up: 1000
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      Host: www.fardares.ir
-    path: /paris
+      Host: www.zitian.cn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇫🇷2 |  1.0MB/s
+  network: tcp
+  port: 22234
+  reality-opts:
+    public-key: tVDaWxsy54q7yRNRdJ718Gyt2HDoh_3R2y_PX22hhjM
+    short-id: 95c93be9
+  server: 195.154.56.233
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  sni: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22a54b72-9c39-4bb0-97d0-41bbaaca2a67
+- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  name: 0|🇫🇷3 |  3.9MB/s
+  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  port: 2005
+  server: tw3.akebi.cc
+  skip-cert-verify: false
+  sni: fr01.akebi.cc
+  type: hysteria2
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇫🇷2 |  4.3MB/s
+  name: 0|🇫🇷4 |  5.5MB/s
   network: ws
   port: 8080
   server: 86.38.214.30
@@ -31,3 +62,32 @@ proxies:
     headers:
       Host: sNaPp.MaStErSrV.ir.
     path: ''
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇫🇷5 |  5.3MB/s
+  network: ws
+  port: 8080
+  server: 46.254.93.124
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 31f625ef-7585-441d-9df3-8839506dfb1e
+  ws-opts:
+    headers:
+      Host: sNaPp.MaStErSrV.ir.
+    path: ''
+- client-fingerprint: chrome
+  name: 0|🇫🇷6 |  4.9MB/s
+  network: ws
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
