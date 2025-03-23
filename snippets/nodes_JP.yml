@@ -1,39 +1,37 @@
 proxies:
-- name: 0|🇯🇵1 |  5.8MB/s
-  password: 25953b05-882d-3d3b-9f8b-89bb6ff80909
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵3 |  5.9MB/s
-  password: 25953b05-882d-3d3b-9f8b-89bb6ff80909
-  port: 20300
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z300.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇯🇵7 |  5.5MB/s
-  password: 25953b05-882d-3d3b-9f8b-89bb6ff80909
-  port: 20298
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z298.hongkongnode.top
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇯🇵10 |  3.4MB/s
+  name: 0|🇯🇵4 |  4.2MB/s
   password: amazonskr05
   port: 443
-  server: 3.112.18.99
+  server: 57.180.35.64
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇯🇵15 |  6.2MB/s
+  name: 0|🇯🇵6 |  4.3MB/s
   password: amazonskr05
   port: 443
-  server: 54.248.66.29
+  server: 43.207.71.139
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵7 |  1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.142.42
+  type: ss
+- name: 0|🇯🇵10 |  6.3MB/s
+  password: 8d2b08c6-6344-3f30-bd22-35cdb94a721c
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,13|tg频道:@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.112.172.152
+  tfo: false
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
@@ -41,7 +39,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-2y2Lrw7LzU.download.microsoft.com
+    host: 202503170996717-aLCpr7tZEF.download.microsoft.com
     mode: http
   port: 8764
   server: cn01.efan8867801.xyz
@@ -53,43 +51,65 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-2y2Lrw7LzU.download.microsoft.com
+    host: 202503170996717-aLCpr7tZEF.download.microsoft.com
     mode: http
   port: 8761
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 13,14|日本3|@ripaojiedian
-  network: tcp
-  password: JH9NEZKTib
-  port: 17748
-  server: djvp.sywk.com.cn
-  skip-cert-verify: false
-  sni: djvp.sywk.com.cn
-  type: trojan
-- client-fingerprint: chrome
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  password: 7NJNZOGIM3GT2ZOP
+  port: 18003
+  server: 156.231.104.13
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 13|🇯🇵 日本4|@ripaojiedian
-  password: CCwEYCy3g3SzejBn3lDpRAeC83ap7TaR7a0A4Dxg6IelDZFFuaXNFOSSFYpKaSwyeN8qX
-  port: 28331
-  server: affairs.meijireform.com
+  password: 61B0I2IAA8ZZD7KH
+  port: 18006
+  server: 156.231.104.16
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本5|@ripaojiedian
+  port: 10703
+  server: 120.198.71.184
   skip-cert-verify: false
-  sni: affairs.meijireform.com
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6A5C1155-BC24-F312-5E67-9E735E36E19A
+- client-fingerprint: chrome
+  name: '13,14|日本5|@ripaojiedian #1'
+  network: tcp
+  password: 05819241-c538-4a25-9c1b-7dc5d7646e22
+  port: 10105
+  server: 45.196.233.64
+  skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.34.253.95
+  server: 13.229.233.60
   tfo: false
   type: ss
-- name: 14|日本4|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 14|日本5|@ripaojiedian
   network: tcp
-  password: CCwEYCy3g3SzejBn3lDpRAeC83ap7TaR7a0A4Dxg6IelDZFFuaXNFOSSFYpKaSwyeN8qX
-  port: 28331
-  server: affairs.meijireform.com
-  type: trojan
+  port: '10703'
+  server: 120.198.71.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6A5C1155-BC24-F312-5E67-9E735E36E19A
 - alterId: 0
   cipher: auto
   name: 14|日本A|@ripaojiedian
