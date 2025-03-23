@@ -1,27 +1,49 @@
 proxies:
-- name: 0|🇸🇬1 |  5.4MB/s
-  password: 33003801-8cb0-32da-af43-032cd5e944fa
-  port: 20299
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x299.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇸🇬2 |  5.7MB/s
-  password: 33003801-8cb0-32da-af43-032cd5e944fa
-  port: 17806
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x65.flybar.work
-  type: trojan
-  udp: true
-- name: 0|🇸🇬3 |  5.4MB/s
+- client-fingerprint: chrome
+  name: 0|🇸🇬1 |  5.2MB/s
   password: myszy28811
   port: 28811
   server: pipi.myddns.me
   type: socks5
   udp: true
   username: myszy
+- cipher: aes-256-cfb
+  delay: 425
+  name: 0|🇸🇬2 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.229.99.127
+  type: ss
+- name: 0|🇸🇬3 |  6.2MB/s
+  password: 6b150547-2245-3995-bb05-a74aa56e603d
+  port: 20299
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x299.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇸🇬4 |  6.3MB/s
+  password: 6b150547-2245-3995-bb05-a74aa56e603d
+  port: 20129
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x129.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇸🇬5 |  4.4MB/s
+  password: 6b150547-2245-3995-bb05-a74aa56e603d
+  port: 20130
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x130.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 0|🇸🇬6 |  4.8MB/s
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21114
+  server: okanc.node-is.green
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 新加坡|@ripaojiedian
@@ -36,5 +58,13 @@ proxies:
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
   port: 21115
   server: okanc.node-is.green
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.35.138.170
   tfo: false
   type: ss
