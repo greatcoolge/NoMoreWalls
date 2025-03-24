@@ -1,33 +1,16 @@
 proxies:
-- name: 0,14|日本6|@ripaojiedian
-  network: tcp
-  password: '!!str 74260705449889500'
+- cipher: aes-256-cfb
+  name: 0|🇯🇵4 |  1.9MB/s
+  password: amazonskr05
   port: 443
-  server: grown-doberman.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
-- name: 0|🇯🇵5 |  2.3MB/s
-  password: 67ed20d4-e1a4-46bb-97ca-d721f19a4291
-  port: 46307
-  server: wb.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- name: 0|🇯🇵6 |  6.1MB/s
-  password: 67ed20d4-e1a4-46bb-97ca-d721f19a4291
-  port: 28713
-  server: nbae7a7.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- name: 0|🇯🇵11 |  6.3MB/s
-  password: c02ccaf7-205e-3323-9766-236a4db26c0f
-  port: 20298
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z298.hongkongnode.top
-  type: trojan
-  udp: true
+  server: 57.180.35.64
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵5 |  6.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.197.235.237
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -92,6 +75,12 @@ proxies:
   server: 13.229.99.127
   tfo: false
   type: ss
+- name: 14|日本6|@ripaojiedian
+  network: tcp
+  password: '!!str 74260705449889500'
+  port: 443
+  server: grown-doberman.shiner427.skin
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 14|日本A|@ripaojiedian
