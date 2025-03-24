@@ -1,23 +1,7 @@
 proxies:
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 0|🇸🇬1 |  1.5MB/s
-  password: 583ec169-707f-4123-8a62-0b91ff39c285
-  port: 21876
-  server: 120.232.204.74
-  type: ss
-  udp: true
-- name: 0|🇸🇬2 |  3.0MB/s
-  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
-  port: 20129
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x129.flybar.work
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬3 |  5.9MB/s
+  name: 0|🇸🇬1 |  5.9MB/s
   network: tcp
   port: 56127
   reality-opts:
@@ -27,25 +11,69 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇸🇬4 |  1.4MB/s
-  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
+- name: 0|🇸🇬2 |  6.3MB/s
+  password: 6c2fbace-4107-39af-8dfe-5712ac841c0f
+  port: 17806
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x65.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇸🇬3 |  6.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.223.247
+  type: ss
+- name: 0|🇸🇬4 |  6.0MB/s
+  network: ws
+  port: 2096
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: /
+- name: 0|🇸🇬5 |  6.3MB/s
+  password: 6c2fbace-4107-39af-8dfe-5712ac841c0f
   port: 30712
   server: gy.58n.net
   skip-cert-verify: true
   sni: x83.flybar.work
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬6 |  6.3MB/s
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 0|🇸🇬5 |  6.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.169.138.225
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬6 |  5.7MB/s
+  name: 0|🇸🇬7 |  6.2MB/s
   password: amazonskr05
   port: 443
   server: 47.128.245.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬8 |  5.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.212.61.224
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬9 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.138.225
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
