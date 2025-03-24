@@ -1,15 +1,44 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0|🇰🇷1 |  6.0MB/s
+  name: 0|🇰🇷1 |  1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.203.206.73
+  type: ss
+- name: 0|🇰🇷2 |  6.3MB/s
+  password: 02d12d30-3d79-3c88-afe1-688b867d005f
+  port: 50355
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z264.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇰🇷3 |  6.0MB/s
+  password: 02d12d30-3d79-3c88-afe1-688b867d005f
+  port: 45168
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z263.hongkongnode.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0|🇰🇷4 |  5.0MB/s
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- cipher: aes-256-cfb
+  name: 0|🇰🇷5 |  3.3MB/s
   password: amazonskr05
   port: 443
   server: 54.180.1.213
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷2 |  4.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.92.181
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
