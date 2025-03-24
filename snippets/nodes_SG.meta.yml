@@ -1,59 +1,23 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.169.103.201
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 0|🇸🇬1 |  1.5MB/s
+  password: 583ec169-707f-4123-8a62-0b91ff39c285
+  port: 21876
+  server: 120.232.204.74
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬2 |  6.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.179.97.253
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  3.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.5.197
-  type: ss
-- name: 0|🇸🇬4 |  2.3MB/s
-  network: ws
-  port: 2096
-  server: 141.193.213.21
-  servername: premium.vkehi.shop
-  tls: true
-  type: vless
-  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
-  ws-opts:
-    headers:
-      Host: premium.vkehi.shop
-    path: /
-- cipher: aes-256-cfb
-  name: 0|🇸🇬5 |  2.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.61.224
-  type: ss
-- allowInsecure: '1'
-  name: 0|🇸🇬6 |  4.6MB/s
-  network: tcp
-  password: 86920f59-7e5e-4272-abec-271bb931121c
-  port: 443
-  server: 52.220.214.215
+  udp: true
+- name: 0|🇸🇬2 |  3.0MB/s
+  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
+  port: 20129
+  server: gy.58n.net
   skip-cert-verify: true
-  sni: sg.lyyyds.club
-  tls: true
+  sni: x129.flybar.work
   type: trojan
-- cipher: aes-256-cfb
-  name: 0|🇸🇬7 |  6.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.169.138.225
-  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬8 |  5.3MB/s
+  name: 0|🇸🇬3 |  5.9MB/s
   network: tcp
   port: 56127
   reality-opts:
@@ -63,27 +27,25 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: none
-  mode: ''
-  name: 0|🇸🇬9 |  2.9MB/s
-  network: ws
-  port: 2096
-  server: 141.193.213.20
-  servername: premium.vkehi.shop
-  tls: true
-  type: vless
-  udp: false
-  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
-  ws-opts:
-    headers:
-      Host: premium.vkehi.shop
-    path: '%2F'
+- name: 0|🇸🇬4 |  1.4MB/s
+  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
+  port: 30712
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x83.flybar.work
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇸🇬10 |  6.2MB/s
+  name: 0|🇸🇬5 |  6.2MB/s
   password: amazonskr05
   port: 443
-  server: 13.229.216.120
+  server: 54.169.138.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬6 |  5.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.128.245.70
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
