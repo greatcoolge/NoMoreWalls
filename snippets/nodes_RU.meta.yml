@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺1 |  4.2MB/s
+  name: 0|🇷🇺1 |  4.7MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -11,17 +11,19 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-128-gcm
-  name: 0|🇷🇺2 |  1.3MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 56226
-  server: bsuqian01.dynu.net
-  type: ss
+- auth: dongtaiwang.com
+  name: 0|🇷🇺2 |  3.6MB/s
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - alpn:
   - http/1.1
   auth_str: dongtaiwang.com
   client-fingerprint: chrome
-  down: 55 Mbps
+  down: 1000 Mbps
   name: 0,16|d*********g.com_3
   network: tcp
   password: fuck
@@ -33,16 +35,16 @@ proxies:
   tls: true
   type: trojan
   udp: true
-  up: 11 Mbps
+  up: 100 Mbps
   uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
       Host: www.zitian.cn
 - auth: dongtaiwang.com
-  name: 0|🇷🇺4 |  4.4MB/s
+  name: 0|🇷🇺4 |  2.7MB/s
   password: dongtaiwang.com
-  port: 18626
-  server: 46.29.163.171
+  port: 37481
+  server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
