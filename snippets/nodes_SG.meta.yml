@@ -1,7 +1,49 @@
 proxies:
+- name: 0|🇸🇬1 |  1.1MB/s
+  password: b1bddf1f-a663-3bf1-b7c0-7b4e65f4c116
+  port: 17806
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x65.flybar.work
+  type: trojan
+  udp: true
+- name: 0|🇸🇬2 |  5.9MB/s
+  password: b1bddf1f-a663-3bf1-b7c0-7b4e65f4c116
+  port: 20299
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x299.flybar.work
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬1 |  5.7MB/s
+  name: 0|🇸🇬3 |  1.8MB/s
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇸🇬4 |  1.0MB/s
+  password: b1bddf1f-a663-3bf1-b7c0-7b4e65f4c116
+  port: 30712
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x83.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇸🇬5 |  2.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.134.156
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬6 |  6.2MB/s
   network: tcp
   port: 56127
   reality-opts:
