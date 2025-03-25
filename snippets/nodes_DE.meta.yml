@@ -1,12 +1,33 @@
 proxies:
-- client-fingerprint: ''
-  flow: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇩🇪1 |  5.1MB/s
+  network: tcp
+  port: 443
+  server: 204.10.194.78
+  servername: yfnl1.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  uuid: d21a2d0c-6872-457f-93f2-069d5167a8fc
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 0|🇩🇪2 |  3.3MB/s
+  network: tcp
+  port: 443
+  server: yrtuio.890604.filegear-sg.me
+  servername: yfnl1.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  uuid: d21a2d0c-6872-457f-93f2-069d5167a8fc
+- client-fingerprint: chrome
+  disable-sni: true
   mode: ''
-  name: 0|🇩🇪1 |  1.8MB/s
+  name: 0|🇩🇪3 |  5.3MB/s
   network: ws
-  port: 80
-  server: 156.238.18.156
+  port: 2095
+  server: 156.238.18.208
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: false
@@ -14,64 +35,17 @@ proxies:
   ws-opts:
     headers:
       Host: redw.pooriam.ir
-    path: Telegram🇨🇳 @WangCai2
-- client-fingerprint: ''
-  flow: ''
-  grpc-opts:
-    grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
-  mode: ''
-  name: 0|🇩🇪2 |  4.2MB/s
-  network: grpc
-  port: 12685
-  server: 142.132.185.23
-  servername: ''
+    path: /
+- client-fingerprint: chrome
+  name: 0|🇩🇪4 |  4.6MB/s
+  network: ws
+  port: 8880
+  server: 154.83.2.156
+  skip-cert-verify: false
   tls: false
   type: vless
-  udp: false
-  uuid: f24d6354-d757-4283-9a19-ca26ed37e4ff
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪3 |  5.6MB/s
-  network: tcp
-  port: 35785
-  reality-opts:
-    public-key: sz_X684-MH30mtNFXgWxGXymB1vs82CNoMzwGJfVgWw
-    short-id: c8801ea23cbfc6ff
-  server: 116.203.165.24
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 81447221-6548-60a1-a9d9-aac48e8c410b
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: Join---MTMVPN-Join---MTMVPN-Join---MTMVPN-Join---MTMVPN
-  mode: ''
-  name: 0|🇩🇪4 |  2.5MB/s
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: euMUHS3boiZ0500KTjnU9l_RTX1RP9VFOGEo82gFUyE
-    short-id: ce1be0
-  server: 91.107.183.103
-  servername: www.cdn77.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 26a95673-e692-4f90-bca3-dac0a63a4224
-- client-fingerprint: ''
-  flow: ''
-  grpc-opts:
-    grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
-  mode: gun
-  name: 0|🇩🇪5 |  5.1MB/s
-  network: grpc
-  port: 12685
-  server: V2rayNG.SPDNet.online
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: f24d6354-d757-4283-9a19-ca26ed37e4ff
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
