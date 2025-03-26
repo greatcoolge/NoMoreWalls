@@ -1,61 +1,28 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇯🇵1 |  1.2MB/s
-  network: tcp
-  port: 16497
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇯🇵2 |  5.8MB/s
-  network: ws
-  port: 443
-  server: 104.17.71.31
-  servername: ll.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ll.ylkszy.eu.org
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇯🇵3 |  6.1MB/s
-  network: tcp
-  port: 17278
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇯🇵4 |  5.6MB/s
+- name: 0|🇯🇵1 |  4.0MB/s
   network: ws
   port: 2095
-  server: 156.238.18.208
-  servername: ''
+  server: 156.238.18.28
+  skip-cert-verify: false
   tls: false
   type: vless
-  udp: false
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
       Host: redw.pooriam.ir
     path: /
+- name: 0|🇯🇵2 |  6.1MB/s
+  password: a0f1c422-6546-3b71-aaa8-17c9137c0060
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵5 |  3.6MB/s
+  name: 0|🇯🇵3 |  6.2MB/s
   network: tcp
   port: 10635
   reality-opts:
@@ -67,17 +34,121 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵6 |  6.1MB/s
+  name: 0|🇯🇵4 |  6.8MB/s
   network: tcp
-  port: 14548
+  port: 35659
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
+  server: shenzhou02.mysynology.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇯🇵5 |  6.6MB/s
+  password: a0f1c422-6546-3b71-aaa8-17c9137c0060
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇯🇵6 |  6.2MB/s
+  network: tcp
+  port: 65428
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇯🇵7 |  2.6MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇯🇵7 |  4.5MB/s
+  network: ws
+  port: 8880
+  server: 185.170.166.242
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+  ws-opts:
+    headers:
+      Host: photographipictureai.ir
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇯🇵8 |  6.2MB/s
+  network: tcp
+  port: 25768
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇯🇵9 |  1.6MB/s
+  network: ws
+  port: 80
+  server: 156.238.18.51
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 0|🇯🇵10 |  6.0MB/s
+  password: a0f1c422-6546-3b71-aaa8-17c9137c0060
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 0|🇯🇵11 |  6.1MB/s
+  password: a0f1c422-6546-3b71-aaa8-17c9137c0060
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇯🇵12 |  5.6MB/s
+  network: tcp
+  port: 48121
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇯🇵13 |  5.5MB/s
+  password: a0f1c422-6546-3b71-aaa8-17c9137c0060
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 0|🇯🇵14 |  6.1MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: jp104-cdn-route.couldflare-cdn.com
@@ -88,74 +159,12 @@ proxies:
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵8 |  6.2MB/s
+  name: 0|🇯🇵15 |  5.9MB/s
   network: tcp
-  port: 11839
+  port: 16497
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gy01.hunheiydd.xyz
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 0|🇯🇵9 |  2.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.207.150.238
-  type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇯🇵10 |  5.5MB/s
-  network: ws
-  port: 2095
-  server: 156.238.18.60
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇯🇵11 |  5.5MB/s
-  network: ws
-  port: 80
-  server: 156.238.18.156
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: Telegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇯🇵12 |  6.0MB/s
-  network: tcp
-  port: 35659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇯🇵13 |  6.3MB/s
-  network: tcp
-  port: 48121
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
+  server: zhee01.dynu.net
   servername: www.nvidia.com
   tls: true
   type: vless
