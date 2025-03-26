@@ -1,8 +1,14 @@
 proxies:
-- name: 0|🇰🇷1 |  5.7MB/s
+- cipher: aes-256-cfb
+  name: 0|🇰🇷1 |  4.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.92.181
+  type: ss
+- name: 0|🇰🇷2 |  5.5MB/s
   network: ws
   port: 443
-  server: iplocation.io
+  server: 162.159.152.20
   servername: an.youlingkais.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -13,10 +19,10 @@ proxies:
     headers:
       host: an.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇰🇷2 |  1.6MB/s
+- name: 0|🇰🇷3 |  4.4MB/s
   network: ws
   port: 443
-  server: 162.159.153.190
+  server: 185.16.110.107
   servername: ll.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
@@ -27,10 +33,10 @@ proxies:
     headers:
       host: ll.ylkszy.eu.org
     path: /?ed=2560
-- name: 0|🇰🇷3 |  1.1MB/s
+- name: 0|🇰🇷4 |  5.7MB/s
   network: ws
   port: 443
-  server: 104.17.220.150
+  server: lewis.ns.cloudflare.com
   servername: an.youlingkais.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -41,10 +47,44 @@ proxies:
     headers:
       host: an.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇰🇷4 |  4.2MB/s
+- name: 0|🇰🇷5 |  1.0MB/s
   network: ws
   port: 443
-  server: www.wto.org
+  server: 103.160.204.59
+  servername: ll.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ll.ylkszy.eu.org
+    path: /?ed=2560
+- name: 0|🇰🇷6 |  1.5MB/s
+  network: ws
+  port: 443
+  server: sullivan.ns.cloudflare.com
+  servername: ll.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ll.ylkszy.eu.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 0|🇰🇷7 |  4.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.203.206.73
+  type: ss
+- name: 0|🇰🇷8 |  1.1MB/s
+  network: ws
+  port: 2083
+  server: 104.16.134.27
   servername: an.youlingkais.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -55,10 +95,37 @@ proxies:
     headers:
       host: an.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇰🇷5 |  2.9MB/s
+- client-fingerprint: chrome
+  name: 0|🇰🇷9 |  6.0MB/s
+  network: ws
+  port: 8880
+  server: 154.83.2.156
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- name: 0|🇰🇷10 |  5.8MB/s
   network: ws
   port: 443
-  server: 162.159.153.217
+  server: 104.17.142.12
+  servername: an.youlingkais.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: an.youlingkais.filegear-sg.me
+    path: /?ed=2560
+- name: 0|🇰🇷11 |  5.1MB/s
+  network: ws
+  port: 443
+  server: www.ddwhm.com
   servername: ll.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
@@ -69,52 +136,10 @@ proxies:
     headers:
       host: ll.ylkszy.eu.org
     path: /?ed=2560
-- name: 0|🇰🇷6 |  4.8MB/s
+- name: 0|🇰🇷12 |  3.4MB/s
   network: ws
   port: 443
-  server: moura.ns.cloudflare.com
-  servername: ll.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ll.ylkszy.eu.org
-    path: /?ed=2560
-- name: 0|🇰🇷7 |  2.5MB/s
-  network: ws
-  port: 443
-  server: 212.183.88.109
-  servername: ll.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ll.ylkszy.eu.org
-    path: /?ed=2560
-- name: 0|🇰🇷8 |  4.6MB/s
-  network: ws
-  port: 443
-  server: 172.64.152.251
-  servername: ll.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ll.ylkszy.eu.org
-    path: /?ed=2560
-- name: 0|🇰🇷9 |  4.8MB/s
-  network: ws
-  port: 443
-  server: 104.18.43.60
+  server: steamdb.info
   servername: ll.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
