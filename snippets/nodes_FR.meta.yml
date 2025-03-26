@@ -1,7 +1,28 @@
 proxies:
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 1000 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  up: 100 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
 - auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
   client-fingerprint: chrome
-  name: 0|🇫🇷2 |  1.5MB/s
+  name: 0|🇫🇷2 |  2.6MB/s
   password: 82febca6-8856-41fe-84df-c8bda0b72c7b
   port: 2005
   server: tw3.akebi.cc
@@ -10,7 +31,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇫🇷3 |  5.2MB/s
+  name: 0|🇫🇷3 |  4.7MB/s
   network: tcp
   port: 40072
   reality-opts:
@@ -20,19 +41,3 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇫🇷4 |  5.0MB/s
-  network: ws
-  port: 80
-  server: ipcloudflaretamiz.fastly80-2.hosting-ip.com
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 03b04c54-7080-4052-a73e-8b6824dafe05
-  ws-opts:
-    headers:
-      Host: vipfast_7.com
-    path: /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7?ed=1024
