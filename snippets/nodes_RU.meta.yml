@@ -1,9 +1,21 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺1 |  5.1MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - fast-open: true
-  name: 0|🇷🇺2 |  5.2MB/s
+  name: 0|🇷🇺4 |  1.9MB/s
   password: dongtaiwang.com
-  port: 18626
-  server: 46.29.163.171
+  port: 37481
+  server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
