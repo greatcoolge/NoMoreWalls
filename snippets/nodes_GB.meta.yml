@@ -1,7 +1,60 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  5.8MB/s
+  name: 0|🇬🇧1 |  5.4MB/s
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- allowInsecure: '1'
+  name: 0|🇬🇧2 |  3.8MB/s
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 109.107.159.248
+  skip-cert-verify: true
+  sni: willing-possum.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: 0|🇬🇧3 |  4.6MB/s
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 109.107.159.118
+  skip-cert-verify: true
+  sni: adapting-halibut.shiner427.skin
+  tls: true
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧4 |  5.3MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- allowInsecure: ''
+  name: 0|🇬🇧5 |  5.2MB/s
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: willing-possum.shiner427.skin
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧6 |  4.4MB/s
   network: tcp
   port: 65053
   reality-opts:
@@ -13,7 +66,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  3.4MB/s
+  name: 0|🇬🇧7 |  5.1MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -23,30 +76,25 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧3 |  5.8MB/s
+- allowInsecure: ''
+  name: 0|🇬🇧8 |  4.3MB/s
   network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
+  password: '!!str 74260704627805900'
+  port: 443
+  server: adapting-halibut.shiner427.skin
+  skip-cert-verify: false
   tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧4 |  2.3MB/s
+  type: trojan
+- allowInsecure: '1'
+  name: 0|🇬🇧9 |  1.5MB/s
   network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 109.107.159.206
+  skip-cert-verify: true
+  sni: direct-hen.shiner427.skin
   tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  type: trojan
 - client-fingerprint: chrome
   name: 13|🇬🇧 英国|@ripaojiedian
   password: '!!str 74260704627805900'
