@@ -1,33 +1,28 @@
 proxies:
-- alterId: 0
-  cipher: auto
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
   client-fingerprint: chrome
-  name: 0|🇷🇺1 |  1.9MB/s
-  network: ws
-  port: 23031
-  server: 195.133.5.127
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d7c34d84-f217-4902-88aa-a5ada6eb2c7a
-  ws-opts:
-    path: /
-- auth: f93fdbc9-3789-44b4-8ece-51b9c2780ba8
-  client-fingerprint: chrome
-  down: 15
-  name: 0|🇷🇺2 |  1.2MB/s
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: f93fdbc9-3789-44b4-8ece-51b9c2780ba8
-  port: 33007
-  server: 195.133.5.127
+  down: 1000 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: true
-  type: hysteria2
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
   udp: true
-  up: 15
+  up: 1000 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
 - client-fingerprint: chrome
   fast-open: true
-  name: 0|🇷🇺3 |  1.5MB/s
+  name: 0|🇷🇺2 |  1.1MB/s
   password: dongtaiwang.com
   port: 37481
   server: 46.17.41.217
@@ -35,7 +30,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
 - fast-open: true
-  name: 0|🇷🇺5 |  1.6MB/s
+  name: 0|🇷🇺3 |  2.3MB/s
   password: dongtaiwang.com
   port: 18626
   server: 46.29.163.171
