@@ -1,13 +1,6 @@
 proxies:
-- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  name: 0|🇭🇰1 |  5.2MB/s
-  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  port: 2000
-  server: tw3.akebi.cc
-  skip-cert-verify: false
-  sni: hk03.akebi.cc
-  type: hysteria2
-- name: 0|🇭🇰2 |  5.9MB/s
+- client-fingerprint: chrome
+  name: 0|🇭🇰1 |  6.2MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: hkre1-cdn-route.couldflare-cdn.com
@@ -16,6 +9,49 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0,13|🇭🇰 香港4|@ripaojiedian
+  port: 14601
+  server: stan.pythoncdn.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: B3A983CB-0A4A-438E-9A45-9438B0D362B0
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 0|🇭🇰3 |  4.8MB/s
+  password: B7E2E1B8-E810-4BA0-A300-5632B912019D
+  port: 13864
+  server: prem.pythoncdn.com
+  type: ss
+- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  client-fingerprint: chrome
+  name: 0|🇭🇰4 |  1.2MB/s
+  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  port: 2000
+  server: tw3.akebi.cc
+  skip-cert-verify: false
+  sni: hk03.akebi.cc
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 0|🇭🇰5 |  5.0MB/s
+  network: ws
+  port: 443
+  server: 172.66.47.92
+  servername: Work-YUU00.pageS.dEv
+  tls: true
+  type: vless
+  udp: false
+  uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb
+  ws-opts:
+    headers:
+      Host: work-yuu00.pages.dev
+    path: ''
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -35,22 +71,34 @@ proxies:
   server: 183.232.229.164
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- client-fingerprint: chrome
+  name: 13,14|香港3|@ripaojiedian
+  network: tcp
+  password: VMhGp5wEIyCDf90T
+  port: 42303
+  server: csuzhou01.1cooldns.com
+  skip-cert-verify: false
+  sni: hk06.run.place
+  type: trojan
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港3|@ripaojiedian
-  password: BEI5C8DM9EM3I27J
-  port: 15015
-  server: qh62onjn.slashdevslashnetslashtun.net
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  password: N4WB5VAL40S0WSH8
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
+  name: 13|🇭🇰 香港7|@ripaojiedian
+  port: 47231
+  server: 38.147.188.96
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 178eb98b-3999-4094-a739-1456bdd3ebe1
 - alterId: 0
   cipher: auto
   name: 14|香港|@ripaojiedian
@@ -61,6 +109,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|香港4|@ripaojiedian
+  network: tcp
+  port: '14601'
+  server: stan.pythoncdn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: B3A983CB-0A4A-438E-9A45-9438B0D362B0
+- alterId: 0
+  cipher: auto
+  name: 14|香港7|@ripaojiedian
+  network: tcp
+  port: '47231'
+  server: 38.147.188.96
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 178eb98b-3999-4094-a739-1456bdd3ebe1
 - alterId: 0
   cipher: auto
   name: 14|香港A|@ripaojiedian
