@@ -1,15 +1,55 @@
 proxies:
+- name: 0|🇰🇷1 |  3.0MB/s
+  network: ws
+  port: 443
+  server: 104.16.150.133
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vv.dong2025.cfd
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
+  name: 0|🇰🇷2 |  1.4MB/s
   password: amazonskr05
   port: 443
-  server: 13.125.231.170
-  tfo: false
+  server: 3.34.253.95
   type: ss
+- name: 0|🇰🇷3 |  4.6MB/s
+  network: ws
+  port: 443
+  server: 185.16.110.111
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vv.dong2025.cfd
+    path: /?ed=2560
+- name: 0|🇰🇷4 |  5.8MB/s
+  network: ws
+  port: 443
+  server: 104.17.146.152
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vv.dong2025.cfd
+    path: /?ed=2560
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 0|🇰🇷2 |  4.2MB/s
+  name: 0|🇰🇷5 |  5.6MB/s
   network: tcp
   port: 23333
   reality-opts:
@@ -20,47 +60,6 @@ proxies:
   tls: true
   type: vless
   uuid: 30f85233-d41e-4297-97c1-cfac047a948b
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇰🇷3 |  4.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.124.229.107
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷4 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.34.253.95
-  type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷5 |  1.2MB/s
-  network: ws
-  port: 2086
-  server: 45.131.5.91
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: f366e744-abcd-4b5b-bd5e-2bd97b6443bf
-  ws-opts:
-    headers:
-      Host: fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- cipher: aes-256-cfb
-  name: 0|🇰🇷6 |  6.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.36.26.148
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷7 |  3.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.203.206.73
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国|@ripaojiedian

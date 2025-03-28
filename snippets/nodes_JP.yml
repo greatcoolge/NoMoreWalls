@@ -1,10 +1,28 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  6.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.207.157.253
-  type: ss
+- name: 0|🇯🇵1 |  6.2MB/s
+  password: c8231e5b-dda5-30d6-b14e-d23e5eab6a3d
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵2 |  6.2MB/s
+  password: c8231e5b-dda5-30d6-b14e-d23e5eab6a3d
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 0|🇯🇵3 |  6.3MB/s
+  password: c8231e5b-dda5-30d6-b14e-d23e5eab6a3d
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  type: trojan
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -27,6 +45,14 @@ proxies:
     mode: http
   port: 8761
   server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.125.231.170
   tfo: false
   type: ss
 - alterId: 0

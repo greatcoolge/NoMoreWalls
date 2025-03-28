@@ -1,41 +1,4 @@
 proxies:
-- allowInsecure: ''
-  name: 0|🇹🇼1 |  5.8MB/s
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 154.83.2.88
-  skip-cert-verify: false
-  sni: agepm.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agepm.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 0,13,14|台湾2|@ripaojiedian
-  network: tcp
-  password: 6e8b9913-5277-4627-95b0-86766ae65ad6
-  port: 42765
-  server: wb.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- allowInsecure: ''
-  name: 0|🇹🇼4 |  6.2MB/s
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 213.241.198.59
-  skip-cert-verify: false
-  sni: agepn.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agepn.ambercc.filegear-sg.me
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -47,6 +10,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 13,14|台湾2|@ripaojiedian
+  network: tcp
+  password: 6e8b9913-5277-4627-95b0-86766ae65ad6
+  port: 42765
+  server: wb.kaiqsz.com
+  skip-cert-verify: true
+  sni: mmbiz1.redapricotcloud.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 14|台湾|@ripaojiedian
