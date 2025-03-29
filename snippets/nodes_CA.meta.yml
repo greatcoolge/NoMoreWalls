@@ -1,48 +1,31 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇨🇦1 |  5.2MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gy01.hunheiydd.xyz
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇨🇦2 |  4.6MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦1 |  2.3MB/s
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 12355
+  server: 183.232.229.164
+  type: ss
+  udp: true
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇨🇦2 |  3.1MB/s
   network: ws
   port: 443
-  server: 104.17.213.78
+  server: 162.159.44.169
   servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
+  udp: false
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: in.youlingkais.filegear-sg.me
+      Host: in.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇨🇦3 |  2.0MB/s
+- name: 0|🇨🇦3 |  3.6MB/s
   network: ws
   port: 443
-  server: 160.79.105.99
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇨🇦4 |  2.4MB/s
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
+  server: 104.17.216.53
   servername: il.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
@@ -53,45 +36,19 @@ proxies:
     headers:
       host: il.ylkszy.eu.org
     path: /?ed=2560
-- name: 0|🇨🇦5 |  1.6MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇨🇦4 |  1.3MB/s
   network: ws
   port: 443
-  server: www.4chan.org
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇨🇦6 |  5.0MB/s
-  network: ws
-  port: 443
-  server: cris.ns.cloudflare.com
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇨🇦7 |  5.9MB/s
-  network: ws
-  port: 443
-  server: 212.183.88.200
+  server: 108.162.195.203
   servername: il.ylkszy.eu.org
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
+  udp: false
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: il.ylkszy.eu.org
+      Host: il.ylkszy.eu.org
     path: /?ed=2560
