@@ -1,18 +1,25 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦1 |  2.3MB/s
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12355
-  server: 183.232.229.164
-  type: ss
+- name: 0|🇨🇦1 |  5.4MB/s
+  network: ws
+  port: 443
+  server: 217.163.76.102
+  servername: il.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: il.ylkszy.eu.org
+    path: /?ed=2560
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇨🇦2 |  3.1MB/s
+  name: 0|🇨🇦2 |  1.4MB/s
   network: ws
   port: 443
-  server: 162.159.44.169
+  server: 172.64.35.110
   servername: in.youlingkais.filegear-sg.me
   tls: true
   type: vless
@@ -22,10 +29,10 @@ proxies:
     headers:
       Host: in.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇨🇦3 |  3.6MB/s
+- name: 0|🇨🇦3 |  4.6MB/s
   network: ws
   port: 443
-  server: 104.17.216.53
+  server: 202.37.33.80
   servername: il.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
@@ -34,21 +41,63 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: il.ylkszy.eu.org
+      Host: il.ylkszy.eu.org
+    path: /?ed=2560
+- name: 0|🇨🇦4 |  1.0MB/s
+  network: ws
+  port: 443
+  server: 130.250.137.19
+  servername: in.youlingkais.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: in.youlingkais.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇨🇦4 |  1.3MB/s
+  name: 0|🇨🇦5 |  1.3MB/s
   network: ws
   port: 443
-  server: 108.162.195.203
-  servername: il.ylkszy.eu.org
+  server: 108.162.195.155
+  servername: in.youlingkais.filegear-sg.me
   tls: true
   type: vless
   udp: false
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: il.ylkszy.eu.org
+      Host: in.youlingkais.filegear-sg.me
+    path: /?ed=2560
+- name: 0|🇨🇦6 |  1.2MB/s
+  network: ws
+  port: 443
+  server: 104.16.154.41
+  servername: in.youlingkais.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: in.youlingkais.filegear-sg.me
+    path: /?ed=2560
+- name: 0|🇨🇦7 |  5.1MB/s
+  network: ws
+  port: 443
+  server: 212.183.88.200
+  servername: in.youlingkais.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: in.youlingkais.filegear-sg.me
     path: /?ed=2560
