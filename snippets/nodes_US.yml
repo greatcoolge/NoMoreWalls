@@ -1,38 +1,11 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇺🇸12 |  1.0MB/s
-  network: ws
-  port: 420
-  server: 674ddbc7-stw740-stx214-84ap.fmt2-us.sghuawei.com
-  tls: false
-  type: vmess
-  uuid: b2ae33f6-edd2-11ee-808f-f23c93141fad
-  ws-opts:
-    headers:
-      Host: 674ddbc7-stw740-stx214-84ap.fmt2-us.sghuawei.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸13 |  5.6MB/s
-  network: ws
-  port: 420
-  server: 35a503ea-stucg0-su99vp-4mce.fmt2-us.sghuawei.com
-  tls: false
-  type: vmess
-  uuid: 06c625ea-5902-11ee-9e87-f23c9313b177
-  ws-opts:
-    headers:
-      Host: 35a503ea-stucg0-su99vp-4mce.fmt2-us.sghuawei.com
-    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-78Zoi5O2jZ.download.microsoft.com
+    host: 202503170996717-bgAUFz3awY.download.microsoft.com
     mode: http
   port: 8771
   server: cn01.efan8867801.xyz
@@ -44,30 +17,57 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503170996717-78Zoi5O2jZ.download.microsoft.com
+    host: 202503170996717-bgAUFz3awY.download.microsoft.com
     mode: http
   port: 8773
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  port: 18733
-  server: 23.236.68.110
+  name: 13,14|美国3|@ripaojiedian
+  network: ws
+  port: '420'
+  server: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 6b2e2719-a545-49c1-ab3f-6f4104ae9f56
-- alterId: 0
+  uuid: 117fc3d8-fd04-11ed-b345-f23c93136cb3
+  ws-opts:
+    headers:
+      Host: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
+    path: /
+- client-fingerprint: chrome
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  password: '!!str 74260702287384200'
+  port: 443
+  server: settled-mite.shiner427.skin
+  skip-cert-verify: false
+  sni: settled-mite.shiner427.skin
+  type: trojan
+- alterId: 2
   cipher: auto
-  name: 14|美国3|@ripaojiedian
-  network: tcp
-  port: '18733'
-  server: 23.236.68.110
+  client-fingerprint: chrome
+  name: 13,14|美国5|@ripaojiedian
+  network: ws
+  port: '420'
+  server: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 6b2e2719-a545-49c1-ab3f-6f4104ae9f56
+  uuid: 6e28d086-f1bd-11ed-9ebc-f23c93665044
+  ws-opts:
+    headers:
+      Host: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
+    path: /
+- name: 14|美国4|@ripaojiedian
+  network: tcp
+  password: '!!str 74260702287384200'
+  port: 443
+  server: settled-mite.shiner427.skin
+  type: trojan
