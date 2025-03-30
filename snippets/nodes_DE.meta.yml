@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇩🇪1 |  4.9MB/s
+  name: 0|🇩🇪1 |  4.3MB/s
   network: tcp
   port: 58031
   reality-opts:
@@ -14,7 +14,7 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇩🇪2 |  5.3MB/s
+  name: 0|🇩🇪2 |  5.6MB/s
   network: ws
   port: 8443
   server: 185.146.173.37
@@ -27,18 +27,30 @@ proxies:
     headers:
       Host: NkG27c9Gl1.MySpDmMeTi.CoM
     path: /
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪3 |  3.6MB/s
-  network: tcp
-  port: 1616
-  reality-opts:
-    public-key: WSOBC1gmImcrJqeZIMZZA7NCR9J7i5VEltJf7M13ax8
-    short-id: c5f9ccb6c3e196
-  server: 128.140.113.166
-  servername: wwww.refersion.com
-  tls: true
+- auth: 6ed47616-95aa-4512-8c44-8cd5ba292149
+  client-fingerprint: chrome
+  down: 100
+  name: 0|🇩🇪3 |  2.8MB/s
+  obfs: salamander
+  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
+  password: 6ed47616-95aa-4512-8c44-8cd5ba292149
+  port: 32008
+  server: 5.39.252.72
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 0,15|LT_speednode_0045
+  network: ws
+  port: 8080
+  server: 86.38.214.30
+  servername: sNaPp.MaStErSrV.ir.
+  skip-cert-verify: true
+  tls: false
   type: vless
-  udp: false
-  uuid: 4be07e08-3878-4fe7-9716-72fa2963ff9f
+  udp: true
+  uuid: 09ba60aa-6d83-486d-8de3-70a1f1c3c7a9
+  ws-opts:
+    headers:
+      Host: sNaPp.MaStErSrV.ir.
+    path: /

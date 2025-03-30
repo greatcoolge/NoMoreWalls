@@ -1,50 +1,47 @@
 proxies:
-- client-fingerprint: randomized
-  name: 0|🇫🇷1 |  5.1MB/s
-  network: ws
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 1000 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
   port: 443
-  server: ip.sb
-  servername: 64D78605.Fr-7rB.pageS.dEv
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
   tls: true
-  type: vless
-  uuid: 70f8697b-f9f3-4692-8e0a-3d1834fd76dc
+  type: trojan
+  udp: true
+  up: 1000 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
   ws-opts:
     headers:
-      host: 64D78605.Fr-7rB.pageS.dEv
-    path: /YBa1BBPnrlsvyMZD/MzUuMTgwLjIyOS4x?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 0|🇫🇷2 |  1.6MB/s
-  network: ws
-  port: 443
-  raw:
-    add: 172.67.220.83
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: linja05.hwcar.sbs
-    id: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-    net: ws
-    path: /linkws
-    port: 443
-    ps: 🇺🇸 US_417
-    scy: ''
-    sni: ''
-    tls: tls
-    type: ''
-    v: '2'
-  server: 172.67.220.83
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  ws-opts:
-    headers:
-      Host: linja05.hwcar.sbs
-    path: /linkws
+      Host: www.zitian.cn
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇫🇷2 |  5.5MB/s
+  password: dongtaiwang.com
+  port: 61770
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0,8|@meli_proxyy
+  password: dongtaiwang.com
+  port: 59967
+  server: 195.154.33.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇫🇷3 |  2.6MB/s
+  name: 0|🇫🇷4 |  5.4MB/s
   network: tcp
   port: 40072
   reality-opts:
@@ -54,39 +51,3 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: '0,8|@meli_proxyy #1'
-  password: dongtaiwang.com
-  port: 59967
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: fdvsdv
-  mode: ''
-  name: 0|🇫🇷5 |  1.1MB/s
-  network: grpc
-  port: 2098
-  reality-opts:
-    public-key: JNcCRy0bfOEzzyqh1foTuuG9T8IvwiO8ApJu5FhVERs
-    short-id: 2665af94c7b25f90
-  server: 188.245.242.20
-  servername: sourceforge.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: de3e121a-8405-4888-98ec-8914c1850a2d
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 0|🇫🇷6 |  5.5MB/s
-  password: dongtaiwang.com
-  port: 61770
-  server: 51.159.226.1
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
