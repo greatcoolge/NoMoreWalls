@@ -1,4 +1,37 @@
 proxies:
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇫🇷1 |  5.5MB/s
+  password: dongtaiwang.com
+  port: 59967
+  server: 195.154.33.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: dongtaiwang.com
+  name: 0|🇫🇷2 |  5.4MB/s
+  password: dongtaiwang.com
+  port: 61770
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇫🇷3 |  5.4MB/s
+  network: ws
+  port: 8080
+  server: 172.67.73.163
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: dce4535b-5833-4d62-97e7-3d9d4ba6bd4c
+  ws-opts:
+    headers:
+      Host: 0j.Gr02P5L88B.zUlaIR.oRG.
+    path: /?ed=2048
 - name: 0,15|GB_speednode_0071
   network: ws
   port: 80
@@ -13,63 +46,9 @@ proxies:
     headers:
       Host: APPinfo.EiNETWORK.NEWS
     path: /Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇫🇷2 |  3.2MB/s
-  network: ws
-  port: 80
-  server: 94.247.142.1
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: bcad1dbf-6ab3-4516-b51c-37213737c2e4
-  ws-opts:
-    headers:
-      Host: APPinfo.EiNETWORK.NEWS
-    path: Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
-- alterId: 0
-  cipher: auto
-  name: 0|🇫🇷3 |  4.4MB/s
-  network: ws
-  port: 443
-  server: 172.67.220.10
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  ws-opts:
-    headers:
-      Host: linja05.hwcar.sbs
-    path: /linkws
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 0,8|@meli_proxyy
-  password: dongtaiwang.com
-  port: 59967
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0064
-  network: tcp
-  port: 40072
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
   client-fingerprint: chrome
-  name: 0|🇫🇷7 |  3.7MB/s
+  name: 0|🇫🇷5 |  3.0MB/s
   password: 82febca6-8856-41fe-84df-c8bda0b72c7b
   port: 2005
   server: tw3.akebi.cc
@@ -78,10 +57,26 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 0|🇫🇷8 |  3.5MB/s
+  name: 0|🇫🇷6 |  2.8MB/s
   network: ws
   port: 443
-  server: 104.21.94.64
+  server: 172.67.220.10
+  servername: linja05.hwcar.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: linja05.hwcar.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 0|🇫🇷7 |  2.2MB/s
+  network: ws
+  port: 443
+  server: 172.67.220.83
+  servername: linja05.hwcar.sbs
   skip-cert-verify: false
   tls: true
   type: vmess
