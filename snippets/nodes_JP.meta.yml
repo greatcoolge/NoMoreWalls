@@ -1,63 +1,7 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇯🇵1 |  6.5MB/s
-  network: ws
-  port: 25279
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-opts:
-    headers:
-      Host: cu.awslcn.info
-    path: /
 - alterId: '0'
   cipher: auto
-  name: 0|🇯🇵2 |  3.9MB/s
-  network: ws
-  port: 11184
-  server: 175.215.154.208
-  servername: oracle2ipv4.till.nyc.mn
-  tls: true
-  type: vmess
-  uuid: 0ee75dd1-5e59-4615-a6a8-6fe7aa0b6f17
-  ws-opts:
-    headers:
-      Host: oracle2ipv4.till.nyc.mn
-    path: /
-- name: 0|🇯🇵3 |  1.4MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20007
-  server: 7.9n3pqn1406.xyz
-  skip-cert-verify: true
-  sni: 7.9n3pqn1406.xyz
-  type: trojan
-  udp: true
-- name: 0|🇯🇵4 |  1.7MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20010
-  server: 10.9n3pqn1406.xyz
-  skip-cert-verify: true
-  sni: 10.9n3pqn1406.xyz
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇯🇵5 |  5.7MB/s
-  network: tcp
-  port: 35659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '0'
-  cipher: auto
-  name: 0|🇯🇵6 |  3.9MB/s
+  name: 0|🇯🇵1 |  2.5MB/s
   network: ws
   port: '11184'
   server: 175.215.154.208
@@ -68,70 +12,33 @@ proxies:
     headers:
       host: oracle2ipv4.till.nyc.mn
     path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵2 |  3.6MB/s
+  network: ws
+  port: 12134
+  server: 221.165.128.234
+  servername: oracleipv4.till.nyc.mn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a13f1b5a-7071-4bbc-8bae-f4f74fd77ace
+  ws-opts:
+    headers:
+      Host: oracleipv4.till.nyc.mn
+    path: /123
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵7 |  5.2MB/s
+  name: 0|🇯🇵3 |  2.4MB/s
   network: tcp
-  port: 10635
+  port: 25768
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: bsuqian01.dynu.net
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 0|🇯🇵8 |  6.3MB/s
-  network: ws
-  port: 25278
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-opts:
-    headers:
-      Host: cu.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇯🇵9 |  6.0MB/s
-  network: ws
-  port: 25277
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-opts:
-    headers:
-      Host: cu.awslcn.info
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0058
-  network: tcp
-  port: 13989
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: gateway.icloud.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0,15|JP_speednode_0061
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -171,3 +78,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 551087e5-9a03-4634-9e7f-714133eb3ccb
+- name: 15|JP_speednode_0036
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
