@@ -1,7 +1,23 @@
 proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 0|🇸🇬5 |  4.7MB/s
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21114
+  server: okanc.node-is.green
+  type: ss
+- client-fingerprint: chrome
+  name: 0,15|CN_speednode_0025
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
+  skip-cert-verify: true
+  sni: hk39.work.gd
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇸🇬1 |  6.0MB/s
+  name: 0|🇸🇬9 |  4.1MB/s
   obfs: tls1.2_ticket_auth
   obfs-param: sg2-cdn-route.couldflare-cdn.com
   password: uiACqrIr
@@ -10,40 +26,6 @@ proxies:
   protocol-param: ''
   server: cm2.xcone.xyz
   type: ssr
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  delay: 857
-  name: 0|🇸🇬2 |  3.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.73.58
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬5 |  6.3MB/s
-  network: ws
-  port: 25245
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬6 |  2.3MB/s
-  network: ws
-  port: 25243
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian

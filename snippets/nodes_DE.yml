@@ -1,14 +1,37 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇪4 |  4.9MB/s
+  name: 0|🇩🇪7 |  5.3MB/s
   network: ws
-  port: 25241
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
+  port: 443
+  raw:
+    add: 172.67.71.217
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: 1t3chx0.zed23.web1337.net
+    id: 9072d339-3885-4fe1-b0bc-29fa7505410e
+    net: ws
+    path: /fixedfloati.cfd/linkwsd
+    port: 443
+    ps: 🇺🇸 US_421
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.67.71.217
+  servername: 1t3chx0.zed23.web1337.net
+  tls: true
   type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: 1t3chx0.zed23.web1337.net
+    path: /fixedfloati.cfd/linkwsd
+- cipher: aes-256-cfb
+  name: 0|🇩🇪4 |  1.4MB/s
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 80.92.204.106
+  type: ss
