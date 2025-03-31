@@ -1,8 +1,8 @@
 proxies:
-- name: 0|🇰🇷1 |  2.5MB/s
+- name: 0|🇰🇷1 |  3.4MB/s
   network: ws
   port: 443
-  server: 104.19.156.38
+  server: kyree.ns.cloudflare.com
   servername: nv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -13,10 +13,23 @@ proxies:
     headers:
       Host: nv.dong2025.cfd
     path: /?ed=2560
-- name: 0|🇰🇷2 |  2.0MB/s
+- alterId: '0'
+  cipher: auto
+  name: 0|🇰🇷2 |  2.9MB/s
   network: ws
-  port: 443
-  server: braden.ns.cloudflare.com
+  port: '443'
+  server: kr.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: 41cfbd9d-d2da-4300-a142-b49068f7ad3d
+  ws-opts:
+    headers:
+      host: kr.ttcc.tech
+    path: /41cfbd9d-d2da-4300-a142-b49068f7ad3d
+- name: 0|🇰🇷3 |  5.7MB/s
+  network: ws
+  port: 8443
+  server: 162.159.129.67
   servername: nv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -27,112 +40,28 @@ proxies:
     headers:
       Host: nv.dong2025.cfd
     path: /?ed=2560
-- name: 0|🇰🇷3 |  2.4MB/s
-  network: ws
-  port: 443
-  server: 104.17.68.85
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇰🇷4 |  5.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.92.181
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷4 |  1.2MB/s
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 11004
+  server: 61.172.235.22
   type: ss
-- name: 0|🇰🇷5 |  3.6MB/s
+  udp: true
+- allowInsecure: ''
+  name: 0|🇰🇷5 |  5.5MB/s
   network: ws
+  password: bpb-trojan
   port: 443
-  server: 104.17.161.203
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
   tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  type: trojan
   ws-opts:
     headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 0|🇰🇷6 |  5.1MB/s
-  network: ws
-  port: 443
-  server: www.csgo.com
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 0|🇰🇷7 |  4.7MB/s
-  network: ws
-  port: 8443
-  server: 129.151.225.228
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 0|🇰🇷8 |  5.5MB/s
-  network: ws
-  port: 443
-  server: 162.159.152.244
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 0|🇰🇷9 |  2.2MB/s
-  network: ws
-  port: 8443
-  server: 158.180.230.4
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 0|🇰🇷10 |  5.6MB/s
-  network: ws
-  port: 443
-  server: 185.16.110.0
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 0|🇰🇷11 |  5.3MB/s
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- name: 0|🇰🇷6 |  1.4MB/s
   network: ws
   port: 443
   server: 172.67.181.209
@@ -146,6 +75,61 @@ proxies:
     headers:
       Host: nv.dong2025.cfd
     path: /?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: 0|🇰🇷7 |  5.9MB/s
+  network: ws
+  port: '443'
+  server: kr3.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
+  ws-opts:
+    headers:
+      host: kr3.ttcc.tech
+    path: /
+- name: 0|🇰🇷8 |  5.4MB/s
+  network: ws
+  port: 443
+  server: 104.16.159.190
+  servername: nv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nv.dong2025.cfd
+    path: /?ed=2560
+- name: 0|🇰🇷9 |  3.4MB/s
+  network: ws
+  port: 443
+  server: 104.17.142.12
+  servername: nv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nv.dong2025.cfd
+    path: /?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: 0|🇰🇷10 |  5.6MB/s
+  network: ws
+  port: 443
+  server: kr3.ttcc.tech
+  servername: kr3.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
+  ws-opts:
+    headers:
+      Host: kr3.ttcc.tech
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
@@ -154,17 +138,3 @@ proxies:
   server: 3.0.50.161
   tfo: false
   type: ss
-- name: 15|KR_speednode_0078
-  network: ws
-  port: 56271
-  server: 146.56.106.51
-  servername: vv.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: vv.vs2025.cfd
-    path: /?ed=2560
