@@ -1,50 +1,19 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 1000 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  up: 1000 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
 - client-fingerprint: chrome
   fast-open: true
-  name: 0|🇷🇺2 |  3.6MB/s
+  name: 0|🇷🇺1 |  5.6MB/s
   password: dongtaiwang.com
   port: 35751
   server: 46.29.163.171
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 0|🇷🇺3 |  3.5MB/s
+- auth: dongtaiwang.com
+  name: 0,8|@V2aryng_vpn
   password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
+  port: 12904
+  server: 46.17.41.5
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: apple.com
+  tls: false
   type: hysteria2
-- auth: 0d95b090-02a7-4af8-bb4f-27e2f0ed2a72
-  client-fingerprint: chrome
-  down: 100
-  name: 0|🇷🇺4 |  5.2MB/s
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 0d95b090-02a7-4af8-bb4f-27e2f0ed2a72
-  port: 33007
-  server: 195.133.5.127
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
