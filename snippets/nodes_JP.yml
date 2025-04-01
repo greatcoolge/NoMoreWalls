@@ -1,23 +1,13 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇯🇵2 |  5.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.199.64.156
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇯🇵3 |  1.2MB/s
-  network: tcp
-  port: 40125
-  server: 120.198.71.214
+- name: 0|🇯🇵2 |  5.9MB/s
+  password: 68e6e853-d2d5-3126-950f-841d14dcf75c
+  port: 20300
+  server: gy.58n.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.198.71.214
-  ws-path: /
+  sni: z300.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
