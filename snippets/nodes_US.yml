@@ -1,10 +1,52 @@
 proxies:
+- country: 🇺🇸US
+  delay: 1205
+  name: 0|🇺🇸2 |  2.7MB/s
+  password: ypDt8RkT7J
+  port: 43118
+  server: 89.187.181.172
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|🇺🇸17 |  1.2MB/s
+  name: 0|🇺🇸7 |  4.4MB/s
+  obfs: plain
   password: amazonskr05
   port: 443
-  server: 54.245.10.2
+  protocol: origin
+  server: 34.208.31.71
+  type: ssr
+- cipher: aes-256-cfb
+  name: 0|🇺🇸10 |  5.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 34.217.15.41
   type: ss
+- cipher: aes-256-cfb
+  delay: 975
+  name: 0|🇺🇸14 |  3.0MB/s
+  obfs: plain
+  obfs-param: ''
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 34.220.99.226
+  type: ssr
+- cipher: aes-256-cfb
+  name: 0|🇺🇸16 |  2.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.37.220.218
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸18 |  1.9MB/s
+  network: tcp
+  port: 35001
+  server: 120.198.71.216
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 0,13|🇯🇵 日本特殊|@ripaojiedian
