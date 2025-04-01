@@ -1,27 +1,24 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 0|🇰🇷1 |  7.2MB/s
-  network: tcp
-  port: 21938
-  reality-opts:
-    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
-    short-id: ''
-  server: 3.35.47.27
-  servername: s0.awsstatic.com
-  tls: true
+- cipher: aes-256-cfb
+  name: 0|🇰🇷1 |  4.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.36.72.86
+  type: ss
+- client-fingerprint: random
+  name: 0|🇰🇷2 |  2.3MB/s
+  network: ws
+  port: 8880
+  server: 216.24.57.130
+  servername: mohsenfitshr.wibibin259.workers.dev
+  skip-cert-verify: true
   type: vless
-  udp: false
-  uuid: d8fb7ca6-5a60-4c79-8499-ef3675425aa3
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷2 |  2.1MB/s
-  port: 34009
-  server: v3-hanguo-zx.netcar.live
-  tls: false
-  type: vmess
-  uuid: b4a59b54-4a1d-4afc-bd1b-2e3151047c9f
+  udp: true
+  uuid: 1b6ae0f5-01dc-4b96-bca9-31c672dcf0aa
+  ws-opts:
+    headers:
+      host: mohsenfitshr.wibibin259.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome

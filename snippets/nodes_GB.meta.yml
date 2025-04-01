@@ -1,7 +1,19 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  5.4MB/s
+  name: 0|🇬🇧1 |  4.9MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧3 |  5.2MB/s
   network: tcp
   port: 65053
   reality-opts:
@@ -11,24 +23,9 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- flow: ''
-  mode: ''
-  name: 0|🇬🇧2 |  5.5MB/s
-  network: ws
-  port: 2096
-  server: 104.16.143.237
-  servername: Free.moqaab.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 09ae3454-cf42-44e6-a81e-de00e5457af9
-  ws-opts:
-    headers:
-      Host: Free.moqaab.ir
-    path: Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧3 |  3.9MB/s
+  name: 0|🇬🇧4 |  2.6MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -38,15 +35,17 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧4 |  2.7MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 0|🇬🇧5 |  5.1MB/s
+  network: ws
+  port: 25240
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
