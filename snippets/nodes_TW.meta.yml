@@ -1,26 +1,26 @@
 proxies:
-- name: 0|🇹🇼1 |  2.8MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20028
-  server: 8.qzhm8l42g1.xyz
-  skip-cert-verify: true
-  sni: 8.qzhm8l42g1.xyz
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇹🇼2 |  3.7MB/s
+  name: 0|🇹🇼1 |  1.5MB/s
   network: tcp
-  port: 47531
+  port: 12477
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: gateway.icloud.com
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇹🇼2 |  2.6MB/s
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20024
+  server: 4.qzhm8l42g1.xyz
+  skip-cert-verify: true
+  sni: 4.qzhm8l42g1.xyz
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇹🇼3 |  4.2MB/s
+  name: 0|🇹🇼3 |  1.4MB/s
   network: tcp
   port: 34313
   reality-opts:
@@ -30,16 +30,57 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇹🇼4 |  1.7MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20023
-  server: 3.qzhm8l42g1.xyz
-  skip-cert-verify: true
-  sni: 3.qzhm8l42g1.xyz
-  type: trojan
+- client-fingerprint: chrome
+  delay: 1260
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0004
+  network: tcp
+  port: 37809
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇹🇼5 |  4.5MB/s
+  name: 0|🇹🇼5 |  5.7MB/s
+  network: tcp
+  port: 15823
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼6 |  4.3MB/s
+  network: tcp
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gy01.hunheiydd.xyz
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇹🇼7 |  4.1MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼8 |  1.8MB/s
   network: tcp
   port: 13263
   reality-opts:
@@ -49,35 +90,3 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇹🇼6 |  2.7MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20022
-  server: 2.qzhm8l42g1.xyz
-  skip-cert-verify: true
-  sni: 2.qzhm8l42g1.xyz
-  type: trojan
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇹🇼7 |  2.1MB/s
-  network: ws
-  port: 2095
-  server: 104.18.14.19
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: e1d3a347-d380-4ef6-8145-ae76318002d1
-  ws-opts:
-    headers:
-      Host: 0110.wdpkomyt.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 0,13,14|台湾|@ripaojiedian
-  network: tcp
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20027
-  server: 7.qzhm8l42g1.xyz
-  skip-cert-verify: true
-  sni: 7.qzhm8l42g1.xyz
-  type: trojan

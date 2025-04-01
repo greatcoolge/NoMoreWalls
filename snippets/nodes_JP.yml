@@ -1,41 +1,23 @@
 proxies:
-- name: 0|🇯🇵4 |  3.6MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20003
-  server: 3.9n3pqn1406.xyz
-  skip-cert-verify: true
-  sni: 3.9n3pqn1406.xyz
-  type: trojan
-- name: 0|🇯🇵6 |  3.2MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20002
-  server: 2.9n3pqn1406.xyz
-  skip-cert-verify: true
-  sni: 2.9n3pqn1406.xyz
-  type: trojan
-- name: 0|🇯🇵7 |  1.3MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20005
-  server: 5.9n3pqn1406.xyz
-  skip-cert-verify: true
-  sni: 5.9n3pqn1406.xyz
-  type: trojan
-- name: 0|🇯🇵9 |  1.5MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20009
-  server: 9.9n3pqn1406.xyz
-  skip-cert-verify: true
-  sni: 9.9n3pqn1406.xyz
-  type: trojan
-- alterId: 1
+- cipher: aes-256-cfb
+  name: 0|🇯🇵2 |  5.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.199.64.156
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 0|🇯🇵16 |  5.3MB/s
-  port: 28788
-  server: 1ridh-g06.jp06-7c5a-vm0.entry.fr0307a.art
-  servername: 1ridh-g06.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
+  name: 0|🇯🇵3 |  1.2MB/s
+  network: tcp
+  port: 40125
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 2278146c-8fb0-3683-8300-342238f8a9d0
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.214
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -94,6 +76,14 @@ proxies:
     mode: http
   port: 8769
   server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 44.247.247.209
   tfo: false
   type: ss
 - alterId: 0
