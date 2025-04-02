@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬1 |  1.6MB/s
+  name: 0|🇸🇬3 |  1.2MB/s
   network: tcp
   port: 3683
   server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
@@ -12,9 +12,43 @@ proxies:
   ws-headers:
     Host: 1387ebdd-su7b40-su6828-eme.b.fosant.com
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0,13|🇸🇬 新加坡3|@ripaojiedian
+  password: cfa82b34-bb9a-44e5-bb6c-e3df8284a070
+  port: 26712
+  server: rk2.nynode0.cc
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬3 |  6.2MB/s
+  name: 0|🇸🇬6 |  1.8MB/s
+  port: 3683
+  server: 098e0774-su7xc0-tcm6ys-deip.b.fosant.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬7 |  1.7MB/s
+  port: 3683
+  server: a5944a92-su7b40-tclkqs-deip.b.fosant.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+- cipher: aes-256-cfb
+  name: 0|🇸🇬9 |  1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.140.70.168
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬10 |  1.4MB/s
   network: tcp
   port: 3683
   server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
@@ -25,40 +59,8 @@ proxies:
   ws-headers:
     Host: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬4 |  6.3MB/s
-  port: 3683
-  server: 0dc08664-su7b40-sv0q0f-9w5b.b.fosant.com
-  tls: false
-  type: vmess
-  uuid: 47adbddb-3307-11ef-8002-f23c93136cb3
 - cipher: aes-256-cfb
-  name: 0|🇸🇬6 |  1.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.169.188.214
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬7 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.254.9.107
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬9 |  3.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.0.50.161
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬10 |  5.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.73.58
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇸🇬14 |  6.2MB/s
+  name: 0|🇸🇬11 |  1.9MB/s
   obfs: tls1.2_ticket_auth
   obfs-param: sg2-cdn-route.couldflare-cdn.com
   password: uiACqrIr
@@ -82,14 +84,6 @@ proxies:
   password: 73X9GBT73GSRS89R
   port: 16011
   server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 13|🇸🇬 新加坡3|@ripaojiedian
-  password: cfa82b34-bb9a-44e5-bb6c-e3df8284a070
-  port: 26712
-  server: rk2.nynode0.cc
   tfo: false
   type: ss
 - cipher: aes-128-gcm
