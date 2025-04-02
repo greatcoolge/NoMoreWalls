@@ -1,59 +1,49 @@
 proxies:
-- name: 0|🇹🇼1 |  2.4MB/s
-  network: ws
-  port: 8443
-  server: 92.243.74.3
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼2 |  5.3MB/s
-  network: ws
-  port: 2087
-  server: 27.50.49.74
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼3 |  4.7MB/s
-  network: ws
-  port: 443
-  server: pranab.ns.cloudflare.com
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
+- cipher: aes-128-gcm
+  name: 0|🇹🇼1 |  1.9MB/s
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: 111.247.40.56
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇹🇼4 |  3.4MB/s
+  name: 0|🇹🇼2 |  6.0MB/s
   network: tcp
-  port: 15823
+  port: 47531
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gy01.hunheiydd.xyz
-  servername: www.yahoo.com
+  server: bsuqian01.dynu.net
+  servername: gateway.icloud.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇹🇼5 |  4.5MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼3 |  4.7MB/s
+  network: tcp
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇹🇼4 |  2.2MB/s
+  network: ws
+  port: 443
+  server: kip.ns.cloudflare.com
+  servername: edccq.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccq.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 0|🇹🇼5 |  5.8MB/s
   network: ws
   port: 443
   server: 13.228.142.218
@@ -67,7 +57,61 @@ proxies:
     headers:
       host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇹🇼6 |  4.1MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇹🇼6 |  2.7MB/s
+  network: ws
+  port: 10028
+  server: 59.188.46.218
+  servername: edccq.aimercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccq.aimercc.filegear-sg.me
+    path: /?ed=2560security=tls
+- name: 0|🇹🇼7 |  3.0MB/s
+  network: ws
+  port: 2087
+  server: 108.165.152.59
+  servername: edccq.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccq.aimercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼8 |  1.7MB/s
+  network: tcp
+  port: 34313
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: 120.238.53.237
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼9 |  4.6MB/s
+  network: tcp
+  port: 37809
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇹🇼10 |  2.1MB/s
   network: ws
   port: 443
   server: theo.ns.cloudflare.com
@@ -81,34 +125,48 @@ proxies:
     headers:
       host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇹🇼7 |  1.9MB/s
+- name: 0|🇹🇼11 |  5.7MB/s
   network: ws
-  port: 8443
-  server: 92.243.74.239
+  port: 2087
+  server: 92.243.75.49
   servername: edccq.aimercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
-  udp: false
+  udp: true
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560security=tls
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇹🇼8 |  5.2MB/s
-  network: tcp
-  port: 13263
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: gateway.icloud.com
+      host: edccq.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 0|🇹🇼12 |  4.6MB/s
+  network: ws
+  port: 443
+  server: 13.250.14.76
+  servername: edccq.aimercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccq.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 0|🇹🇼13 |  2.5MB/s
+  network: ws
+  port: 10032
+  server: 183.102.173.114
+  servername: edccq.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccq.aimercc.filegear-sg.me
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 0,15|CN_speednode_0023
@@ -123,144 +181,10 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇹🇼10 |  6.1MB/s
-  network: ws
-  port: 21081
-  server: 220.122.202.79
-  servername: edccq.aimercc.filegear-sg.me
-  tls: true
-  type: vless
-  udp: false
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560security=tls
-- name: 0|🇹🇼11 |  3.2MB/s
-  network: ws
-  port: 10032
-  server: 183.102.173.114
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼12 |  2.6MB/s
+- name: 0|🇹🇼15 |  5.7MB/s
   network: ws
   port: 443
-  server: 13.250.14.76
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇹🇼13 |  1.2MB/s
-  network: tcp
-  port: 34313
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: 120.238.53.237
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇹🇼14 |  2.9MB/s
-  network: tcp
-  port: 16704
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇹🇼15 |  5.2MB/s
-  network: tcp
-  port: 15700
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇹🇼16 |  4.6MB/s
-  network: ws
-  port: 443
-  server: 172.64.35.66
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼17 |  5.2MB/s
-  network: ws
-  port: 2053
-  server: 167.68.5.85
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼18 |  5.8MB/s
-  network: ws
-  port: 443
-  server: 38.207.190.246
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇹🇼19 |  1.4MB/s
-  network: tcp
-  port: 34313
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇹🇼20 |  5.5MB/s
-  network: ws
-  port: 2087
-  server: 92.243.75.49
+  server: pranab.ns.cloudflare.com
   servername: edccq.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -274,7 +198,7 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇹🇼21 |  4.3MB/s
+  name: 0|🇹🇼16 |  3.6MB/s
   network: ws
   port: 2083
   server: 27.50.49.231
@@ -287,21 +211,35 @@ proxies:
     headers:
       Host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560security=tls
-- name: 0|🇹🇼22 |  5.4MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇹🇼17 |  5.2MB/s
   network: ws
-  port: 2096
-  server: 27.50.49.188
+  port: 443
+  server: ignacio.ns.cloudflare.com
   servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
+  udp: false
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
       Host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼23 |  5.2MB/s
+    path: /?ed=2560security=tls
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼18 |  6.0MB/s
+  network: tcp
+  port: 16704
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇹🇼19 |  1.8MB/s
   network: ws
   port: 2087
   server: 209.94.90.87
@@ -315,24 +253,60 @@ proxies:
     headers:
       host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇹🇼24 |  4.9MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇹🇼20 |  4.8MB/s
   network: ws
-  port: 2087
-  server: 108.165.152.59
+  port: 443
+  server: 141.147.147.180
   servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
+  udp: false
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
       Host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼25 |  6.0MB/s
+    path: /?ed=2560security=tls
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼21 |  6.2MB/s
+  network: tcp
+  port: 15823
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gy01.hunheiydd.xyz
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0019
+  network: tcp
+  port: 15823
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0|🇹🇼23 |  3.5MB/s
+  password: f203200f-f6a4-49d8-893e-6559804d79ae
+  port: 50204
+  server: bgp-xdd.blue-bgp.xyz
+  tfo: false
+  type: ss
+- name: 0|🇹🇼24 |  1.5MB/s
   network: ws
-  port: 443
-  server: sage.ns.cloudflare.com
+  port: 2053
+  server: 167.68.5.85
   servername: edccq.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -343,10 +317,22 @@ proxies:
     headers:
       host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇹🇼26 |  2.1MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼25 |  1.7MB/s
+  network: tcp
+  port: 34313
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇹🇼26 |  5.8MB/s
   network: ws
   port: 443
-  server: kip.ns.cloudflare.com
+  server: 38.207.190.246
   servername: edccq.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -357,21 +343,7 @@ proxies:
     headers:
       host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇹🇼27 |  4.7MB/s
-  network: ws
-  port: 2083
-  server: 103.116.7.103
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 0|🇹🇼28 |  5.0MB/s
+- name: 0|🇹🇼27 |  3.3MB/s
   network: ws
   port: 443
   server: duke.ns.cloudflare.com
@@ -385,17 +357,15 @@ proxies:
     headers:
       host: edccq.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 0|🇹🇼29 |  4.2MB/s
-  network: ws
-  port: 443
-  server: lynn.ns.cloudflare.com
-  servername: edccq.aimercc.filegear-sg.me
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇹🇼28 |  3.8MB/s
+  network: tcp
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gy01.hunheiydd.xyz
+  servername: www.nvidia.com
   tls: true
   type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccq.aimercc.filegear-sg.me
-    path: /?ed=2560
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
