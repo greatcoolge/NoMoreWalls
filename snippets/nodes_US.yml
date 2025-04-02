@@ -1,4 +1,17 @@
 proxies:
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸24 |  3.3MB/s
+  network: tcp
+  port: '34013'
+  server: v2-us2-zx.netcar.live
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9a037058-73a1-4fc3-973f-c73b1f612d81
+  ws-headers:
+    Host: v2-us2-zx.netcar.live
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -16,14 +29,13 @@ proxies:
     headers:
       Host: hax.hy.cloudns.ch
     path: d79261b1-b706-49f6-b39d-af2a0b8ebac5-vm
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸27 |  5.9MB/s
-  port: 34013
-  server: v2-us2-zx.netcar.live
-  tls: false
-  type: vmess
-  uuid: 9a037058-73a1-4fc3-973f-c73b1f612d81
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸31 |  1.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 34.222.2.112
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国|@ripaojiedian
