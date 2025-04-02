@@ -1,28 +1,36 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55 Mbps
-  name: 0,15,16|d*********g.com_3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 0|🇫🇷1 |  3.0MB/s
   network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: true
-  sni: www.zitian.cn
+  port: 35443
+  reality-opts:
+    public-key: Fvm8Nk9_xIHnKlrqywijuK6FDWP7zSyNV_ap8qH__EQ
+    short-id: cc024cc0b79b6bad
+  server: 88.214.24.198
+  servername: www.speedtest.net
   tls: true
-  type: trojan
-  udp: true
-  up: 11 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
+  type: vless
+  udp: false
+  uuid: dff6aeff-54dd-4d04-ad68-c79fbf89f9f0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 0|🇫🇷2 |  4.4MB/s
+  network: tcp
+  port: 35443
+  reality-opts:
+    public-key: Fvm8Nk9_xIHnKlrqywijuK6FDWP7zSyNV_ap8qH__EQ
+    short-id: cc024cc0b79b6bad
+  server: sv35.utsteam2.top
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: false
+  uuid: dff6aeff-54dd-4d04-ad68-c79fbf89f9f0
 - auth: dongtaiwang.com
-  name: 0|🇫🇷2 |  5.4MB/s
+  name: 0|🇫🇷3 |  2.2MB/s
   password: dongtaiwang.com
   port: 59967
   server: 195.154.33.70
@@ -30,10 +38,26 @@ proxies:
   sni: www.bing.com
   type: hysteria2
 - auth: dongtaiwang.com
-  name: 0|🇫🇷3 |  3.1MB/s
+  name: 0|🇫🇷4 |  5.4MB/s
   password: dongtaiwang.com
   port: 61770
   server: 51.159.226.1
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  country: 🇫🇷FR
+  delay: 1749
+  name: 0|🇫🇷5 |  5.0MB/s
+  password: 76cf56c1e0092b97
+  port: 26567
+  server: 57.130.21.12
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇫🇷FR
+  delay: 1773
+  name: 0|🇫🇷6 |  5.5MB/s
+  password: b3a20bc01aa4ce13
+  port: 26567
+  server: 57.130.21.59
+  type: ss
