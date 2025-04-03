@@ -1,17 +1,44 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇯🇵11 |  3.4MB/s
-  password: amazonskr05
+- name: 0|🇯🇵2 |  5.7MB/s
+  password: 2bc1d12b-be42-3a9d-9c03-290111f9ed2b
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵3 |  1.4MB/s
+  port: 40125
+  server: 120.198.71.214
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 0|🇯🇵4 |  2.1MB/s
+  password: 2bc1d12b-be42-3a9d-9c03-290111f9ed2b
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0,13|🇯🇵 日本3|@ripaojiedian
+  password: '!!str 74260700211203800'
   port: 443
-  server: 18.183.76.102
-  type: ss
-- cipher: aes-256-cfb
-  delay: 880
-  name: 0|🇯🇵12 |  5.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.112.73.126
-  type: ss
+  server: powerful-grackle.shiner427.skin
+  skip-cert-verify: false
+  sni: powerful-grackle.shiner427.skin
+  type: trojan
+- name: 0|🇯🇵6 |  4.4MB/s
+  password: 2bc1d12b-be42-3a9d-9c03-290111f9ed2b
+  port: 20059
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x59.flybar.work
+  type: trojan
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -41,14 +68,6 @@ proxies:
     headers:
       Host: u2.huvicloud.com
     path: /f07b9711-a6a4-4128-807d-fdb40dcaa488
-- client-fingerprint: chrome
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  password: '!!str 74260700211203800'
-  port: 443
-  server: powerful-grackle.shiner427.skin
-  skip-cert-verify: false
-  sni: powerful-grackle.shiner427.skin
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇯🇵 日本4|@ripaojiedian
