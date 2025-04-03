@@ -9,31 +9,18 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- alpn:
-  - http/1.1
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  udp: true
-  up: 11 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- name: 0|🇷🇺4 |  3.2MB/s
+- name: 0|🇷🇺3 |  3.1MB/s
   password: dongtaiwang.com
   port: 4395
   server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- fast-open: true
+  name: 0|🇷🇺5 |  3.2MB/s
+  password: dongtaiwang.com
+  port: 35751
+  server: 46.29.163.171
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2

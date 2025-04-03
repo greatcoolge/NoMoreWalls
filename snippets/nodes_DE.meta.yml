@@ -1,44 +1,10 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 0|🇩🇪1 |  2.2MB/s
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: Czrf81hoVMXZSc1-QRV-wV0l6sbnkVqDHgBu1pT71T4
-    short-id: ''
-  server: 128.140.43.104
-  servername: stackoverflow.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: f6a0fd16-a7d9-4933-a0e4-512993b55a52
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪2 |  1.2MB/s
-  network: tcp
-  port: 1001
-  reality-opts:
-    public-key: OedmrV321HapQz6m302_6l3zfGvSG54EoA1iBkvp100
-    short-id: '37'
-  server: 188.245.235.93
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: f5ac2015-10da-4379-af30-586d1b35443c
-  ws-opts:
-    headers:
-      Host: Join_Bade_Channel@Nicotine_joker_Nicotine_jokerNicotine_joker_Nicotine_joker
-    path: ''
 - client-fingerprint: ''
   flow: ''
   grpc-opts:
     grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
   mode: ''
-  name: 0|🇩🇪3 |  5.5MB/s
+  name: 0|🇩🇪1 |  2.5MB/s
   network: grpc
   port: 12685
   server: 142.132.185.23
@@ -47,9 +13,45 @@ proxies:
   type: vless
   udp: false
   uuid: c8e39728-adb2-4f62-9dba-bd1f15a95e8a
+- auth: 18463200c271aa6d
+  name: 0|🇩🇪2 |  5.1MB/s
+  obfs: salamander
+  obfs-password: 6c80ade6
+  password: 18463200c271aa6d
+  port: 443
+  server: 45.63.116.113
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- client-fingerprint: ''
+  flow: ''
+  grpc-opts:
+    grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
+  mode: gun
+  name: 0|🇩🇪3 |  3.0MB/s
+  network: grpc
+  port: 12685
+  server: V2rayNG.SPDNet.online
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: c8e39728-adb2-4f62-9dba-bd1f15a95e8a
+- name: 0|🇩🇪4 |  4.9MB/s
+  network: ws
+  port: 80
+  server: 45.131.5.151
+  servername: gozargah.validbv7996.ir
+  tls: false
+  type: vless
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳 @MxlShare@WangCai2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇩🇪4 |  5.2MB/s
+  name: 0|🇩🇪5 |  5.3MB/s
   network: tcp
   port: 58031
   reality-opts:
@@ -59,33 +61,15 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  grpc-opts:
-    grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
-  mode: gun
-  name: 0|🇩🇪5 |  5.4MB/s
-  network: grpc
-  port: 12685
-  server: V2rayNG.SPDNet.online
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: c8e39728-adb2-4f62-9dba-bd1f15a95e8a
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪6 |  4.3MB/s
+- name: 0|🇩🇪6 |  3.5MB/s
   network: ws
-  port: 80
-  server: 104.18.35.30
-  servername: ''
+  port: 8080
+  server: 45.131.4.73
   tls: false
   type: vless
-  udp: false
+  udp: true
   uuid: c5293efa-28f8-4a0f-8f34-541078970cee
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: /Telegram@JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+    path: /
