@@ -1,11 +1,47 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.169.64.13
-  type: ss
-- name: 0|🇸🇬2 |  3.4MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0010
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0013
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0,15|US_speednode_0035
+  network: ws
+  port: 80
+  server: 170.114.45.6
+  servername: free.pranithsandaruwan.shop
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
+  ws-opts:
+    headers:
+      Host: free.pranithsandaruwan.shop
+    path: /
+- name: 0|🇸🇬4 |  1.6MB/s
   password: myszy28811
   port: 28811
   server: pipi.myddns.me
@@ -14,17 +50,50 @@ proxies:
   username: myszy
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0,13|🇸🇬 狮城特殊|@ripaojiedian
+  name: 0|🇸🇬5 |  1.2MB/s
   password: amazonskr05
   port: 443
-  server: 52.76.47.112
+  server: 13.250.61.152
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬6 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.250.55.223
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  delay: 1414
+  name: 0|🇸🇬7 |  1.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.202.70
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.229.210.217
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬4 |  1.3MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬9 |  2.1MB/s
   network: tcp
-  port: 3683
+  port: 29877
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: '0'
+  cipher: auto
+  name: 0|🇸🇬11 |  1.0MB/s
+  network: tcp
+  port: '3683'
   server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
   skip-cert-verify: true
   tls: false
@@ -33,6 +102,13 @@ proxies:
   ws-headers:
     Host: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
   ws-path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇸🇬12 |  1.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.254.9.107
+  type: ss
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -47,5 +123,13 @@ proxies:
   password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
   port: 28187
   server: 45.80.181.77
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.76.47.112
   tfo: false
   type: ss
