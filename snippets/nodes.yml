@@ -1,76 +1,83 @@
 proxies:
-- name: 0|🇺🇸2 |  5.6MB/s
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 64047
-  server: t18.qifei.app
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵2 |  2.1MB/s
+  port: 3684
+  server: 637b7bc9-sudhc0-svibx4-1s4a.d.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 337cb930-073d-11ee-8120-f23c93136cb3
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸7 |  5.3MB/s
+  network: tcp
+  port: 5228
+  server: 65aa431e-sucv40-tcop2n-tl32.cu.plebai.net
   skip-cert-verify: true
-  type: trojan
-- allowInsecure: ''
-  name: 0|🇫🇷2 |  1.3MB/s
-  network: tcp
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  skip-cert-verify: false
-  sni: x1fr-ovh.devefun.net
-  tls: true
-  type: trojan
-- alpn:
-  - http/1.1
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  obfs: salamander
-  obfs-password: '@SiNAVM-@SiNAVM-@SiNAVM-@SiNAVM-@SiNAVM-@SiNAVM'
-  password: fuck
+  tls: false
+  type: vmess
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  ws-headers:
+    Host: 65aa431e-sucv40-tcop2n-tl32.cu.plebai.net
+  ws-path: /
+- cipher: aes-256-cfb
+  delay: 1576
+  name: 0|🇸🇬3 |  1.1MB/s
+  password: amazonskr05
   port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  udp: true
-  up: 1000 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  server: 13.212.199.43
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵8 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.239.136
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇭🇰5 |  1.2MB/s
+  network: ws
+  port: 23000
+  raw:
+    add: 103.136.150.2
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 391eee01-bdef-4c94-b2de-99d90af8b069
+    net: ws
+    path: /
+    port: '23000'
+    ps: 🇭🇰 --001-1C
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 103.136.150.2
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 391eee01-bdef-4c94-b2de-99d90af8b069
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇭🇰7 |  2.9MB/s
+  network: ws
+  port: 80
+  server: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.208.163-5585 | 5.237MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
   ws-opts:
     headers:
-      Host: www.zitian.cn
-- name: 0|🇯🇵2 |  5.0MB/s
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 52907
-  server: t13.qifei.app
-  skip-cert-verify: true
-  type: trojan
-- name: 0|🇺🇸12 |  4.9MB/s
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 52492
-  server: t28.qifei.app
-  skip-cert-verify: false
-  type: trojan
+      Host: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
+    path: /
 - cipher: aes-256-cfb
-  name: 0|🇰🇷3 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.36.52.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷4 |  5.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.34.142.98
-  type: ss
-- alterId: '0'
-  cipher: auto
-  name: 0|🇸🇬4 |  1.5MB/s
-  network: tcp
-  port: 35542
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 0,13|tg频道:@ripaojiedian
+  name: 13|tg频道:@ripaojiedian
   password: amazonskr05
   port: 443
   server: 18.181.170.89

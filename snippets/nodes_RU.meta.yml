@@ -1,24 +1,13 @@
 proxies:
-- auth: dongtaiwang.com
-  name: 0|🇷🇺2 |  1.0MB/s
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-- fast-open: true
-  name: 0|🇷🇺3 |  1.9MB/s
-  password: dongtaiwang.com
-  port: 35751
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 0|🇷🇺4 |  5.6MB/s
-  password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺1 |  1.8MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
