@@ -1,36 +1,7 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 1000 Mbps
-  name: 0,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: true
-  sni: www.zitian.cn
-  tls: true
-  type: trojan
-  udp: true
-  up: 1000 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- fast-open: true
-  name: 0|🇷🇺2 |  5.4MB/s
-  password: dongtaiwang.com
-  port: 35751
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺3 |  3.5MB/s
+  name: 0|🇷🇺2 |  3.9MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -40,39 +11,15 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: dongtaiwang.com
-  name: 0|🇷🇺5 |  2.3MB/s
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-- name: 0|🇷🇺6 |  5.3MB/s
-  password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - client-fingerprint: chrome
-  name: 13|🇷🇺 俄罗斯|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  flow: ''
+  mode: ''
+  name: 0|🇷🇺4 |  1.2MB/s
+  network: tcp
   port: 443
-  server: ru1a.88888007.xyz
-  skip-cert-verify: false
-  sni: ru1a.88888007.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ru1a.88888007.xyz
-    path: /3f741a9f-3c66-4102-838c-c77524d32d85
-- name: 14|俄罗斯|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: ru1a.88888007.xyz
-  type: trojan
-  ws-opts:
-    path: '%2F3f741a9f-3c66-4102-838c-c77524d32d85'
+  server: mrconfigs.hajalii.com
+  servername: mrconfigs-cdn.hajalii.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: da635086-86f7-4c88-a310-0a55fc34f612

@@ -1,6 +1,51 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬1 |  1.5MB/s
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  6.1MB/s
+  delay: 1576
+  name: 0|🇸🇬2 |  4.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.212.199.43
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0013
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇸🇬4 |  3.0MB/s
+  network: ws
+  port: 8443
+  server: 111.119.235.98
+  servername: sgp.cayuo.me
+  tls: true
+  type: vless
+  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
+  ws-opts:
+    headers:
+      Host: sgp.cayuo.me
+    path: /bing
+- cipher: aes-256-cfb
+  name: 0|🇸🇬5 |  1.1MB/s
   password: amazonskr05
   port: 443
   server: 54.179.52.175
@@ -19,70 +64,6 @@ proxies:
     headers:
       Host: free.pranithsandaruwan.shop
     path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬3 |  1.6MB/s
-  port: 3681
-  server: a38c20dc-sudhc0-svm3vt-czv5.c.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 82efba2c-f420-11ef-9529-f23c93141fad
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇸🇬4 |  5.6MB/s
-  network: tcp
-  port: 10778
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0010
-  network: tcp
-  port: 44003
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬6 |  6.0MB/s
-  port: 4135
-  server: 884b8b44-sudhc0-svm3vt-czv5.d.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 82efba2c-f420-11ef-9529-f23c93141fad
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0013
-  network: tcp
-  port: 56127
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬8 |  3.0MB/s
-  port: 4137
-  server: 77ccebe9-sudhc0-syoixd-bm0y.c.volczijie.com
-  tls: false
-  type: vmess
-  uuid: fb8812ae-dcb5-11ef-a57d-f23c9313b177
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -96,27 +77,19 @@ proxies:
   client-fingerprint: chrome
   name: 13|🇸🇬 新加坡|@ripaojiedian
   port: 4135
-  server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
+  server: 81d99721-sudhc0-tbxnq7-3qpz.d.volczijie.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.250.61.152
-  tfo: false
-  type: ss
+  uuid: 3cafb97e-8bf1-11ee-8ebe-f23c93136cb3
 - alterId: 0
   cipher: auto
   name: 14|新加坡|@ripaojiedian
   network: tcp
   port: '4135'
-  server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
+  server: 81d99721-sudhc0-tbxnq7-3qpz.d.volczijie.com
   servername: ''
   tls: false
   type: vmess
-  uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
+  uuid: 3cafb97e-8bf1-11ee-8ebe-f23c93136cb3
