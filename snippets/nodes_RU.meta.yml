@@ -1,17 +1,50 @@
 proxies:
-- country: 🇷🇺RU
-  delay: 2197
-  name: 0|🇷🇺1 |  1.5MB/s
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,15,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: false
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
   udp: true
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺2 |  2.6MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: '0'
+  cipher: auto
+  name: 0|🇷🇺3 |  2.2MB/s
+  network: ws
+  port: '25230'
+  server: cm1.awslcn.info
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    path: /
 - country: 🇷🇺RU
   delay: 1013
-  name: 0|🇷🇺4 |  5.7MB/s
+  name: 0|🇷🇺4 |  5.4MB/s
   password: dongtaiwang.com
   port: 35751
   server: 46.29.163.171
@@ -21,7 +54,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇷🇺5 |  3.2MB/s
+  name: 0|🇷🇺5 |  1.1MB/s
   network: ws
   port: 22001
   raw:
@@ -47,10 +80,13 @@ proxies:
   uuid: 46afe023-db88-4d69-b1d5-7a486ee1962e
   ws-opts:
     path: /
-- name: 0|🇷🇺6 |  4.0MB/s
+- country: 🇷🇺RU
+  delay: 2197
+  name: 0|🇷🇺6 |  5.1MB/s
   password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
+  port: 12904
+  server: 46.17.41.5
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: apple.com
   type: hysteria2
+  udp: true
