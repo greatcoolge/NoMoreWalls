@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇷🇺1 |  4.2MB/s
+  name: 0|🇷🇺2 |  2.2MB/s
   network: ws
   port: '25230'
   server: cm1.awslcn.info
@@ -15,3 +15,16 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺3 |  3.3MB/s
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
