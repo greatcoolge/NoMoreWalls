@@ -1,7 +1,30 @@
 proxies:
+- name: 0|🇬🇧1 |  5.8MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.210
+  tls: false
+  type: vless
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  5.3MB/s
+  name: 0|🇬🇧2 |  5.1MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧3 |  1.5MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -11,15 +34,10 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0,15|NL_speednode_0043
+- name: 0|🇬🇧4 |  1.9MB/s
   network: ws
   port: 80
-  server: 45.131.5.67
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
+  server: 45.131.4.126
   tls: false
   type: vless
   udp: true
@@ -27,10 +45,10 @@ proxies:
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    path: Telegram🇨🇳@WangCai2/?ed
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧3 |  4.6MB/s
+  name: 0|🇬🇧5 |  1.4MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -40,48 +58,15 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇬🇧4 |  5.8MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.200
-  servername: gozargah.validbv7996.ir
+- client-fingerprint: chrome
+  name: 0,15|GB_speednode_0008
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: www.ak-hk.top
   skip-cert-verify: true
-  tls: false
-  type: vless
+  sni: www.ak-hk.top
+  type: trojan
   udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- name: 0,15|NL_speednode_0072
-  network: ws
-  port: 80
-  server: 45.131.5.164
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /
-- name: 0,15|NL_speednode_0037
-  network: ws
-  port: 80
-  server: 45.131.4.228
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳 @MxlShare@WangCai2
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇬🇧 英国|@ripaojiedian
@@ -98,11 +83,3 @@ proxies:
   server: 156.229.162.50
   tfo: false
   type: ss
-- name: 15|GB_speednode_0012
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: www.ak-hk.top
-  skip-cert-verify: true
-  sni: www.ak-hk.top
-  type: trojan
-  udp: true
