@@ -1,4 +1,51 @@
 proxies:
+- client-fingerprint: chrome
+  flow: none
+  mode: ''
+  name: 0|🇸🇬1 |  1.9MB/s
+  network: ws
+  port: 2096
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: false
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: none
+  mode: ''
+  name: 0|🇸🇬2 |  2.5MB/s
+  network: ws
+  port: 2096
+  server: 141.193.213.21
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: false
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬4 |  5.6MB/s
+  network: ws
+  port: 80
+  server: fbf248.de15-5483-d16b.sbs
+  servername: sg02s.de15-5483-d16b.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
+  ws-opts:
+    headers:
+      Host: sg02s.de15-5483-d16b.sbs
+    path: /
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
