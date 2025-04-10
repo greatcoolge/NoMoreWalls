@@ -1,11 +1,18 @@
 proxies:
-- name: 0|🇷🇺1 |  2.2MB/s
-  password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0024
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - country: 🇷🇺RU
   delay: 2197
   name: '0,8|@V2aryng_vpn #1'
@@ -17,14 +24,3 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- auth: abbdd5f5-8200-46f3-8b4f-573d7bc99a57
-  client-fingerprint: chrome
-  name: 0|🇷🇺4 |  5.4MB/s
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57
-  port: 20000
-  server: ru.ansuyun.xyz
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
