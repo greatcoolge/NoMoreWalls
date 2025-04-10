@@ -1,11 +1,22 @@
 proxies:
+- alterId: '0'
+  cipher: auto
+  name: 0|🇸🇬1 |  5.0MB/s
+  network: ws
+  port: '80'
+  server: fbf248.de15-5483-d16b.sbs
+  type: vmess
+  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
+  ws-opts:
+    headers:
+      host: sg02s.de15-5483-d16b.sbs
+    path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬5 |  2.1MB/s
+  name: 0|🇸🇬2 |  5.2MB/s
   network: ws
   port: 80
   server: fbf248.de15-5483-d16b.sbs
-  servername: sg02s.de15-5483-d16b.sbs
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -14,29 +25,9 @@ proxies:
     headers:
       Host: sg02s.de15-5483-d16b.sbs
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇸🇬2 |  4.4MB/s
-  network: tcp
-  port: 10778
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬3 |  3.9MB/s
-  port: 17231
-  server: 6f316071-suk9s0-swtza9-1q91p.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬4 |  3.1MB/s
+  name: 0|🇸🇬3 |  1.6MB/s
   port: 17231
   server: 03d929ef-suk9s0-tcmdts-1mmu6.cm5.p5pv.com
   tls: false
@@ -45,7 +36,7 @@ proxies:
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 0|🇸🇬6 |  4.0MB/s
+  name: 0|🇸🇬4 |  5.4MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -58,6 +49,20 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0023
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056

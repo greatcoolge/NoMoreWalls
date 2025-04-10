@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵1 |  4.3MB/s
+  name: 0|🇯🇵2 |  2.0MB/s
   port: 17233
   server: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
   skip-cert-verify: false
@@ -11,7 +11,7 @@ proxies:
   uuid: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵2 |  5.3MB/s
+  name: 0|🇯🇵5 |  6.3MB/s
   network: tcp
   port: 17233
   server: a0a40de3-suk9s0-t7mt0p-1sllg.cm5.p5pv.com
@@ -22,14 +22,19 @@ proxies:
   ws-headers:
     Host: a0a40de3-suk9s0-t7mt0p-1sllg.cm5.p5pv.com
   ws-path: /
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 0|🇯🇵7 |  2.1MB/s
+  name: 0|🇯🇵7 |  2.2MB/s
   network: tcp
-  port: '17233'
+  port: 17233
   server: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 9eeeea88-f37b-11ed-bd3d-f23c9164ca5d
+  ws-headers:
+    Host: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
