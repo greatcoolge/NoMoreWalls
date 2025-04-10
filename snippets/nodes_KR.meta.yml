@@ -1,8 +1,8 @@
 proxies:
-- name: 0|🇰🇷1 |  2.3MB/s
+- name: 0|🇰🇷1 |  5.8MB/s
   network: ws
   port: 443
-  server: benedict.ns.cloudflare.com
+  server: 160.79.105.66
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -13,10 +13,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷2 |  2.2MB/s
+- name: 0|🇰🇷2 |  1.3MB/s
   network: ws
   port: 443
-  server: ashton.ns.cloudflare.com
+  server: 160.79.105.142
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -27,7 +27,21 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷3 |  4.4MB/s
+- name: 0|🇰🇷3 |  1.0MB/s
+  network: ws
+  port: 443
+  server: www.wto.org
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- name: 0|🇰🇷4 |  5.0MB/s
   network: ws
   port: 443
   server: 185.133.35.67
@@ -41,108 +55,35 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷4 |  2.4MB/s
+- name: 0|🇰🇷5 |  2.2MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.187
+  tls: false
+  type: vless
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /
+- name: 0|🇰🇷6 |  5.4MB/s
+  network: ws
+  port: 30012
+  server: 211.218.223.130
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- name: 0|🇰🇷7 |  4.7MB/s
   network: ws
   port: 443
-  server: 192.0.63.29
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷5 |  1.6MB/s
-  network: ws
-  port: 443
-  server: ipinfo.in
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷6 |  1.0MB/s
-  network: ws
-  port: 443
-  server: 168.138.165.174
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷7 |  2.4MB/s
-  network: ws
-  port: 443
-  server: 160.79.104.233
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷8 |  5.0MB/s
-  network: ws
-  port: 443
-  server: 185.133.35.26
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷9 |  3.4MB/s
-  network: ws
-  port: 60000
-  server: 192.9.248.209
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷10 |  3.7MB/s
-  network: ws
-  port: 443
-  server: 160.123.255.18
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷11 |  5.6MB/s
-  network: ws
-  port: 50001
-  server: 119.205.6.124
+  server: 152.70.57.182
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
