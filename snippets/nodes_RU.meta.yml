@@ -1,11 +1,14 @@
 proxies:
-- name: 0|🇷🇺1 |  4.7MB/s
+- country: 🇷🇺RU
+  delay: 2197
+  name: 0|🇷🇺1 |  4.8MB/s
   password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
+  port: 12904
+  server: 46.17.41.5
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: apple.com
   type: hysteria2
+  udp: true
 - alpn:
   - http/1.1
   auth_str: dongtaiwang.com
@@ -27,6 +30,16 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- country: 🇷🇺RU
+  delay: 1013
+  name: 0|🇷🇺3 |  3.3MB/s
+  password: dongtaiwang.com
+  port: 35751
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 0,15|CN_speednode_0052
@@ -41,13 +54,3 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- country: 🇷🇺RU
-  delay: 1013
-  name: 0|🇷🇺4 |  3.5MB/s
-  password: dongtaiwang.com
-  port: 35751
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true

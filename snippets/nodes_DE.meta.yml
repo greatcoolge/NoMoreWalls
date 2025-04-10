@@ -1,8 +1,22 @@
 proxies:
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 0|🇩🇪1 |  2.1MB/s
+  network: ws
+  port: 2086
+  server: 46.101.152.69
+  servername: mrconfigchannel-cdn.hajalii.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: b4ed05e0-34a7-4b77-89fe-01172ff58f59
+  ws-opts:
+    path: /
 - client-fingerprint: edge
   flow: ''
   mode: ''
-  name: 0|🇩🇪1 |  5.7MB/s
+  name: 0|🇩🇪2 |  5.0MB/s
   network: ws
   port: 443
   server: cdn.packageclub.net
@@ -15,16 +29,54 @@ proxies:
     headers:
       Host: cdn.packageclub.net
     path: /ws-connect/download/update/check/version/2.1.9/patch/force
-- cipher: rc4-md5
-  name: 0|🇩🇪2 |  4.2MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 0|🇩🇪3 |  5.8MB/s
+  name: 0|🇩🇪3 |  5.1MB/s
+  network: ws
+  port: 2086
+  server: mrconfigchannel.hajalii.com
+  servername: mrconfigchannel-cdn.hajalii.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: b4ed05e0-34a7-4b77-89fe-01172ff58f59
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 0|🇩🇪4 |  5.1MB/s
+  network: tcp
+  port: 3661
+  reality-opts:
+    public-key: f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8
+    short-id: 67a1a8bb9ff0ed21
+  server: 157.180.73.74
+  servername: icloud.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: d3bf83fe-f50f-42e4-976f-01aeff84d369
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇩🇪5 |  4.2MB/s
+  network: ws
+  port: 8080
+  server: 190.93.247.56
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 51331216-24fe-4eda-8bf1-0f03d2c97915
+  ws-opts:
+    headers:
+      Host: rsde.hpcdn.info
+    path: /?ed=2560
+- flow: ''
+  mode: ''
+  name: 0|🇩🇪6 |  3.2MB/s
   network: ws
   port: 443
   server: 91.107.176.168
@@ -37,94 +89,55 @@ proxies:
     headers:
       Host: mw7.transitkala.com
     path: /
+- auth: dee29869-ae36-4504-89f5-8f06b7dc7a6a
+  name: 0|🇩🇪7 |  1.0MB/s
+  password: dee29869-ae36-4504-89f5-8f06b7dc7a6a
+  port: 1443
+  server: 94.159.107.136
+  skip-cert-verify: false
+  sni: de2.587458.xyz
+  type: hysteria2
 - client-fingerprint: chrome
-  name: 0|🇩🇪4 |  4.7MB/s
+  flow: ''
+  mode: ''
+  name: 0|🇩🇪8 |  5.7MB/s
   network: ws
-  port: 80
-  server: 45.131.4.33
-  tls: false
+  port: 443
+  server: mw7.transitkala.com
+  servername: mw7.transitkala.com
+  tls: true
   type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  udp: false
+  uuid: 8b04ca95-4b92-4622-96bb-4372d1f22913
   ws-opts:
     headers:
-      Host: gozargah.validbv7996.ir
+      Host: mw7.transitkala.com
     path: /
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 0|🇩🇪5 |  5.4MB/s
-  network: ws
-  port: 2053
-  server: 104.21.69.44
-  servername: all22.kikforwindows.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 78905d87-0266-4825-868d-3069e88d1201
-  ws-opts:
-    headers:
-      Host: all22.kikforwindows.com
-    path: /containers/de
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪6 |  4.8MB/s
-  network: ws
-  port: 443
-  server: 104.21.74.214
-  servername: MyDashboard.2FreeNet.Online
-  tls: true
-  type: vless
-  udp: false
-  uuid: 3ed03120-2e95-49bf-afcb-59bc1be5d937
-  ws-opts:
-    headers:
-      Host: MyDashboard.2FreeNet.Online
-    path: /wp-admin.php?ed=2053
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇩🇪7 |  2.9MB/s
+  name: 0|🇩🇪9 |  1.1MB/s
   network: tcp
-  port: 58031
+  port: 443
   reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 0|🇩🇪8 |  5.4MB/s
-  network: tcp
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
+    public-key: 7Dd-Z14Mxvy_CJmFe5Q-StNR2ZloyDeMAC6MEVSq4yg
+    short-id: e9
+  server: mw8.niassa.ir
+  servername: mw8.niassa.ir
   tls: true
   type: vless
   udp: false
-  uuid: 6f786c4e-6402-4269-98d3-c383fb1708da
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪9 |  2.7MB/s
-  network: ws
-  port: 443
-  server: 172.67.163.103
-  servername: MyDashboard.2FreeNet.Online
-  tls: true
-  type: vless
-  udp: false
-  uuid: 3ed03120-2e95-49bf-afcb-59bc1be5d937
-  ws-opts:
-    headers:
-      Host: MyDashboard.2FreeNet.Online
-    path: /wp-admin.php?ed=2053
+  uuid: 99b7f7d7-0c5f-463c-8f3c-548e15f5ae28
+- cipher: rc4-md5
+  name: 0|🇩🇪10 |  2.6MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - client-fingerprint: edge
   flow: ''
   mode: ''
-  name: 0|🇩🇪10 |  1.3MB/s
+  name: 0|🇩🇪11 |  5.4MB/s
   network: ws
   port: 443
   server: 172.67.189.227
@@ -137,6 +150,44 @@ proxies:
     headers:
       Host: cdn.packageclub.net
     path: /ws-connect/download/update/check/version/2.1.9/patch/force
+- name: 0|🇩🇪12 |  5.8MB/s
+  network: tcp
+  port: 48046
+  server: 188.245.43.225
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0d751e96-72bc-484b-8f0e-ceb8a733fba3
+- alterId: 0
+  cipher: auto
+  name: 0|🇩🇪13 |  5.8MB/s
+  network: ws
+  port: 443
+  raw:
+    add: 172.67.71.217
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: 1t3chx0.zed23.web1337.net
+    id: 9072d339-3885-4fe1-b0bc-29fa7505410e
+    net: ws
+    path: /fixedfloati.cfd/linkwsd
+    port: 443
+    ps: 🇺🇸 US_310
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.67.71.217
+  tls: true
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: 1t3chx0.zed23.web1337.net
+    path: /fixedfloati.cfd/linkwsd
 - client-fingerprint: chrome
   name: 15|DE_speednode_0080
   port: 223
