@@ -1,22 +1,22 @@
 proxies:
-- country: 🇷🇺RU
-  delay: 2197
-  name: '0,8|@V2aryng_vpn #1'
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 1000 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: true
-  sni: apple.com
-  tls: false
-  type: hysteria2
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
   udp: true
-- auth: abbdd5f5-8200-46f3-8b4f-573d7bc99a57
-  name: 0|🇷🇺4 |  5.3MB/s
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57
-  port: 20000
-  server: ru.ansuyun.xyz
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
+  up: 1000 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
