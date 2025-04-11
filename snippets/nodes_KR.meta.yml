@@ -1,8 +1,8 @@
 proxies:
-- name: 0|🇰🇷1 |  2.7MB/s
+- name: 0|🇰🇷1 |  3.6MB/s
   network: ws
-  port: 443
-  server: 138.2.107.107
+  port: 10099
+  server: 146.56.136.39
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -13,10 +13,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷2 |  3.8MB/s
+- name: 0|🇰🇷2 |  7.7MB/s
   network: ws
   port: 443
-  server: 129.146.46.164
+  server: 35.201.203.106
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -27,10 +27,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷3 |  1.0MB/s
+- name: 0|🇰🇷3 |  4.4MB/s
   network: ws
   port: 443
-  server: 45.67.215.167
+  server: 140.238.212.95
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -41,10 +41,24 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷4 |  4.8MB/s
+- name: 0|🇰🇷4 |  1.6MB/s
   network: ws
   port: 443
-  server: 141.147.185.63
+  server: kyree.ns.cloudflare.com
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- name: 0|🇰🇷5 |  1.2MB/s
+  network: ws
+  port: 443
+  server: icook.tw
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -57,31 +71,21 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇰🇷5 |  5.7MB/s
+  name: 0|🇰🇷6 |  5.2MB/s
+  network: tcp
   port: 17232
   server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
-- name: 0|🇰🇷6 |  1.7MB/s
+  ws-headers:
+    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  ws-path: /
+- name: 0|🇰🇷7 |  5.7MB/s
   network: ws
   port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷7 |  1.8MB/s
-  network: ws
-  port: 443
-  server: dylan.ns.cloudflare.com
+  server: 160.79.105.155
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -92,10 +96,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷8 |  3.5MB/s
+- name: 0|🇰🇷8 |  3.9MB/s
   network: ws
   port: 443
-  server: www.wto.org
+  server: craig.ns.cloudflare.com
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -106,10 +110,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷9 |  3.5MB/s
+- name: 0|🇰🇷9 |  1.2MB/s
   network: ws
   port: 443
-  server: 168.138.165.174
+  server: www.pcmag.com
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -120,10 +124,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷10 |  2.1MB/s
+- name: 0|🇰🇷10 |  1.2MB/s
   network: ws
   port: 443
-  server: bowen.ns.cloudflare.com
+  server: 129.146.46.164
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -132,7 +136,7 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: nx.ylka.dpdns.org
+      host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 2
   cipher: auto
@@ -151,11 +155,48 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国2|@ripaojiedian
+  password: '!!str 1234'
+  port: 1234
+  server: 43.203.237.206
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国3|@ripaojiedian
+  password: 1601e3c29c8db1a88942cf0cad731bf3
+  port: 3306
+  server: 43.131.255.175
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国4|@ripaojiedian
+  port: 45245
+  server: ye.fxlcn.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.39.252.80
+  server: 13.124.253.164
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|韩国4|@ripaojiedian
+  network: tcp
+  port: '45245'
+  server: ye.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
