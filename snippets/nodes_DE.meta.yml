@@ -1,20 +1,6 @@
 proxies:
-- name: 0|🇩🇪1 |  5.7MB/s
-  network: ws
-  port: 2053
-  server: 199.34.228.183
-  servername: all22.kikforwindows.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 78905d87-0266-4825-868d-3069e88d1201
-  ws-opts:
-    headers:
-      Host: all22.kikforwindows.com
-    path: /containers/de
 - auth: 18463200c271aa6d
-  name: 0|🇩🇪2 |  4.7MB/s
+  name: 0|🇩🇪1 |  2.9MB/s
   obfs: salamander
   obfs-password: 6c80ade6
   password: 18463200c271aa6d
@@ -23,7 +9,7 @@ proxies:
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
   type: hysteria2
-- name: 0|🇩🇪3 |  5.6MB/s
+- name: 0|🇩🇪2 |  5.5MB/s
   network: ws
   port: 2053
   server: 199.34.228.65
@@ -37,63 +23,31 @@ proxies:
     headers:
       Host: all22.kikforwindows.com
     path: /containers/de
-- client-fingerprint: chrome
+- auth: 18463200c271aa6d
+  name: 0|🇩🇪3 |  4.3MB/s
+  obfs: salamander
+  obfs-password: 6c80ade6
+  password: 18463200c271aa6d
+  port: 443
+  server: 45.63.116.113
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- cipher: rc4-md5
+  name: 0|🇩🇪4 |  2.4MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇩🇪4 |  2.1MB/s
-  network: ws
-  port: 443
-  server: 104.21.73.239
-  servername: DigITALsciENTIfiCrESeARCHGRoup.IR
-  tls: true
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /4McLR3NKFOydbxDs/MTguMTk5LjIxMy4yMDE
-- flow: ''
-  mode: ''
-  name: 0|🇩🇪5 |  5.1MB/s
-  network: ws
-  port: 443
-  server: cdn.packageclub.net
-  servername: cdn.packageclub.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: be88b352-bc2e-45bf-abeb-cc117cf6f884
-  ws-opts:
-    headers:
-      Host: cdn.packageclub.net
-    path: /ws-connect/download/update/check/version/2.1.9/patch/force
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0038
+  name: 0|🇩🇪5 |  1.6MB/s
   network: tcp
-  port: 58031
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
+  port: 1133
+  server: 185.204.168.191
+  servername: ''
+  tls: false
   type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 0|🇩🇪7 |  2.4MB/s
-  network: ws
-  port: 32683
-  server: 92.114.54.227
-  servername: digitalcloud.pro.jiahe.buzz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b4134d6a-945b-4355-b34b-a0899b02701e
-  ws-opts:
-    headers:
-      Host: digitalcloud.pro.jiahe.buzz
-    path: /jh002
+  udp: false
+  uuid: 875dac5e-4700-4cce-b1f9-40b891b3a927
