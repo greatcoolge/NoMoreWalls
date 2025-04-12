@@ -1,17 +1,57 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺2 |  1.1MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺3 |  3.5MB/s
+  network: ws
+  port: 22009
+  raw:
+    add: 195.58.49.84
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: bd334c2d-68b4-45b2-a87c-ae0e1638cd15
+    net: ws
+    path: /
+    port: '22009'
+    ps: 🇷🇺 --001
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 195.58.49.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bd334c2d-68b4-45b2-a87c-ae0e1638cd15
+  ws-opts:
+    path: /
 - fast-open: true
-  name: 0|🇷🇺2 |  5.4MB/s
+  name: 0|🇷🇺4 |  3.1MB/s
   password: dongtaiwang.com
-  port: 32555
-  server: 46.29.163.171
+  port: 64816
+  server: 46.17.41.217
   skip-cert-verify: true
   sni: apple.com
   type: hysteria2
 - fast-open: true
-  name: 0|🇷🇺4 |  5.8MB/s
+  name: 0|🇷🇺5 |  5.4MB/s
   password: dongtaiwang.com
-  port: 64816
-  server: 46.17.41.217
+  port: 32555
+  server: 46.29.163.171
   skip-cert-verify: true
   sni: apple.com
   type: hysteria2
