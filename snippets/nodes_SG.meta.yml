@@ -1,56 +1,46 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|🇸🇬1 |  6.1MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8207
-  protocol: origin
-  protocol-param: ''
-  server: cn07.closeai.one
-  type: ssr
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬2 |  5.8MB/s
-  network: ws
-  port: 12883
-  server: gtm1.ktmwan.net
-  skip-cert-verify: false
+  name: 0|🇸🇬1 |  4.8MB/s
+  port: 17231
+  server: 6f316071-suk9s0-swtza9-1q91p.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
+  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇸🇬2 |  5.5MB/s
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: db33e70b-3769-474a-8d44-193159b64756
   ws-opts:
     headers:
-      Host: gtm1.ktmwan.net
+      Host: free.pranithsandaruwan.cfd
     path: /
-- cipher: chacha20-ietf
-  name: 0|🇸🇬3 |  5.4MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8215
-  protocol: origin
-  protocol-param: ''
-  server: cn09.closeai.one
-  type: ssr
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 0|🇸🇬4 |  6.3MB/s
+  name: 0|🇸🇬3 |  5.4MB/s
   network: ws
-  port: 23617
-  server: 17.mamamajd.site
-  skip-cert-verify: true
-  tls: false
+  port: 2053
+  server: cloudflare.182682.xyz
+  servername: sg1.pavo.eu.org
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  udp: true
-  uuid: ab28a512-215f-34b4-a9bf-ffa17fcc80c7
+  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
   ws-opts:
     headers:
-      Host: 17.mamamajd.site
-    path: /
+      Host: sg1.pavo.eu.org
+    path: /sg1vmess
 - flow: none
   mode: ''
-  name: 0|🇸🇬5 |  4.7MB/s
+  name: 0|🇸🇬4 |  4.7MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -63,6 +53,20 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0013
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056

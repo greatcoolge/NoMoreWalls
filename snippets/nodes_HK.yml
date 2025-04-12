@@ -1,62 +1,11 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|🇭🇰1 |  5.8MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8101
-  protocol: origin
-  protocol-param: ''
-  server: cn01.closeai.one
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 0|🇭🇰2 |  6.2MB/s
-  network: ws
-  port: 12884
-  server: gtm1.ktmwan.net
+- name: 0|🇭🇰6 |  6.3MB/s
+  password: 3ffa664f-364a-4937-a314-1d9f02ad8458
+  port: 32443
+  server: lbso.bnnodeservice.com
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /
-- cipher: chacha20-ietf
-  name: 0|🇭🇰3 |  6.1MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8109
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-- cipher: chacha20-ietf
-  name: 0|🇭🇰8 |  3.2MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8115
-  protocol: origin
-  protocol-param: ''
-  server: cn03.closeai.one
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 0|🇭🇰9 |  5.1MB/s
-  network: ws
-  port: 12890
-  server: gtm1.ktmwan.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /
+  sni: cert.bitbyte.one
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
