@@ -1,7 +1,15 @@
 proxies:
+- fast-open: true
+  name: 0|🇷🇺1 |  1.5MB/s
+  password: dongtaiwang.com
+  port: 64816
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺2 |  1.1MB/s
+  name: 0|🇷🇺2 |  2.0MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -14,41 +22,39 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 0|🇷🇺3 |  3.5MB/s
-  network: ws
-  port: 22009
-  raw:
-    add: 195.58.49.84
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: bd334c2d-68b4-45b2-a87c-ae0e1638cd15
-    net: ws
-    path: /
-    port: '22009'
-    ps: 🇷🇺 --001
-    scy: ''
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 195.58.49.84
-  servername: ''
+  network: tcp
+  port: 20779
+  server: 45.12.114.15
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: bd334c2d-68b4-45b2-a87c-ae0e1638cd15
-  ws-opts:
-    path: /
-- fast-open: true
-  name: 0|🇷🇺4 |  3.1MB/s
-  password: dongtaiwang.com
-  port: 64816
-  server: 46.17.41.217
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+  ws-headers:
+    Host: 45.12.114.15
+  ws-path: /
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,16|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
 - fast-open: true
-  name: 0|🇷🇺5 |  5.4MB/s
+  name: 0|🇷🇺5 |  3.9MB/s
   password: dongtaiwang.com
   port: 32555
   server: 46.29.163.171
