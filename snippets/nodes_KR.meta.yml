@@ -1,62 +1,17 @@
 proxies:
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷1 |  3.6MB/s
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇰🇷1 |  1.8MB/s
+  network: tcp
+  port: 21082
+  reality-opts:
+    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+    short-id: 758719a6080f2767
+  server: tw-ty-line1-2-2.sudatech.store
+  servername: learn.microsoft.com
   tls: true
   type: vless
-  udp: false
-  uuid: c29d39bd-92a4-45db-bb61-56013998617c
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-    path: /Telegram-XV2ry2?ed=512
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷2 |  1.0MB/s
-  network: tcp
-  port: 17232
-  server: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c76abed4-f2d2-e4de-50ce-a545ff74ecd0
-  ws-headers:
-    Host: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷3 |  3.9MB/s
-  network: tcp
-  port: 17232
-  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
-  ws-headers:
-    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0,13|🇰🇷 韩国1|@ripaojiedian
-  password: d192a833-b118-4b46-8e54-12cf5025d4cd
-  port: 43450
-  server: gdlt.aicheetah.lol
-  tfo: false
-  type: ss
-- auth: d07ec566-018a-4a80-b3d3-b378fdead52c
-  name: 0|🇰🇷5 |  5.3MB/s
-  password: d07ec566-018a-4a80-b3d3-b378fdead52c
-  port: 55215
-  server: shy23.zqjc.cloud
-  skip-cert-verify: false
-  sni: shy23.zqjc.cloud
-  type: hysteria2
+  uuid: e7adaa99-8363-3ec4-b849-307c99005405
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -101,6 +56,14 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.114.140.139
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇰🇷 韩国1|@ripaojiedian
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 43450
+  server: gdlt.aicheetah.lol
   tfo: false
   type: ss
 - name: 14|韩国2|@ripaojiedian
