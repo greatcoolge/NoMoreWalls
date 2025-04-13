@@ -1,7 +1,17 @@
 proxies:
 - country: 🇷🇺RU
+  delay: 1442
+  name: 0|🇷🇺1 |  4.6MB/s
+  password: dongtaiwang.com
+  port: 64816
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  udp: true
+- country: 🇷🇺RU
   delay: 2302
-  name: 0|🇷🇺2 |  5.4MB/s
+  name: 0|🇷🇺2 |  5.2MB/s
   password: dongtaiwang.com
   port: 32555
   server: 46.29.163.171
@@ -9,3 +19,15 @@ proxies:
   sni: apple.com
   type: hysteria2
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺3 |  4.6MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45

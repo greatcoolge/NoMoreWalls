@@ -1,37 +1,25 @@
 proxies:
-- name: 0|🇰🇷3 |  1.0MB/s
-  network: ws
-  password: amclubs
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: false
-  sni: tran.amclubs.rr.nu
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tran.amclubs.rr.nu
-    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 0|🇰🇷5 |  1.1MB/s
+  network: tcp
+  port: 17232
+  server: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c76abed4-f2d2-e4de-50ce-a545ff74ecd0
+  ws-headers:
+    Host: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 0,13|🇰🇷 韩国|@ripaojiedian
+  name: 13|🇰🇷 韩国|@ripaojiedian
   password: d192a833-b118-4b46-8e54-12cf5025d4cd
   port: 43450
   server: gdlt.aicheetah.lol
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷10 |  1.7MB/s
-  network: tcp
-  port: 17232
-  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
-  ws-headers:
-    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  ws-path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国2|@ripaojiedian

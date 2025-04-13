@@ -1,7 +1,15 @@
 proxies:
+- auth: 073d062a-3170-4e8c-9123-aaa32155152d
+  name: 0|🇸🇬1 |  3.0MB/s
+  password: 073d062a-3170-4e8c-9123-aaa32155152d
+  port: 29831
+  server: 111.119.207.186
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - flow: none
   mode: ''
-  name: 0|🇸🇬1 |  5.7MB/s
+  name: 0|🇸🇬2 |  1.5MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -14,27 +22,6 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
-- name: 0|🇸🇬2 |  3.8MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 38340
-  server: gysz0000.dynu.net
-  skip-cert-verify: true
-  sni: hk39.work.gd
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0011
-  network: tcp
-  port: 10778
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -75,6 +62,20 @@ proxies:
   server: 54.255.246.167
   tfo: false
   type: ss
+- name: 15|SG_speednode_0052
+  network: ws
+  port: 8443
+  server: 27.50.49.230
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 15|SG_speednode_0053
   network: ws
   port: 8443
