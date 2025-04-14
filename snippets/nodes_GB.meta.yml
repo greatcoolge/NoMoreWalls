@@ -1,10 +1,16 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧1 |  1.3MB/s
-  password: y6fgyC28hscmdwqXj2v0Fm
-  port: 37618
-  server: 62.60.152.158
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧1 |  4.9MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   delay: 2307
   flow: xtls-rprx-vision
@@ -20,46 +26,3 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧3 |  5.1MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0044
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: 2086vless
-  mode: ''
-  name: 0|🇬🇧5 |  4.3MB/s
-  network: grpc
-  port: 2060
-  reality-opts:
-    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
-    short-id: 629cc26960e47e39
-  server: 165.22.116.82
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 701a7842-79a2-4a48-882b-c563daad99c1
