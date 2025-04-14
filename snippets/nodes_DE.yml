@@ -1,21 +1,29 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪1 |  5.4MB/s
-  password: q7jwtcA0MmyYi0JddUgXXj
-  port: 42037
-  server: 85.208.139.31
-  type: ss
-- allowInsecure: ''
-  name: 0|🇩🇪9 |  1.6MB/s
+- alterId: 0
+  cipher: auto
+  name: 0|🇩🇪3 |  4.6MB/s
   network: ws
-  password: redfree8
-  port: 443
-  server: 104.17.148.22
-  skip-cert-verify: false
-  sni: redfree8-p1.pooriashop.ir
-  tls: true
-  type: trojan
+  port: 20051
+  raw:
+    add: 91.149.233.178
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: a8ca1114-9792-4c23-8c92-629e9e3b2d3a
+    net: ws
+    path: /
+    port: '20051'
+    ps: 🇩🇪 --001-1E
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 91.149.233.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a8ca1114-9792-4c23-8c92-629e9e3b2d3a
   ws-opts:
-    headers:
-      Host: redfree8-p1.pooriashop.ir
-    path: /trJF1XisQEbWZpxEHh?ed=2560
+    path: /
