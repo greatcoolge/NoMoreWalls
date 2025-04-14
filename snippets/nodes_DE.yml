@@ -1,29 +1,11 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇩🇪3 |  4.6MB/s
-  network: ws
-  port: 20051
-  raw:
-    add: 91.149.233.178
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: a8ca1114-9792-4c23-8c92-629e9e3b2d3a
-    net: ws
-    path: /
-    port: '20051'
-    ps: 🇩🇪 --001-1E
-    scy: ''
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 91.149.233.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a8ca1114-9792-4c23-8c92-629e9e3b2d3a
-  ws-opts:
-    path: /
+- allowInsecure: '1'
+  name: 0|🇩🇪1 |  5.0MB/s
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 60800
+  server: 130.61.173.105
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
