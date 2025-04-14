@@ -1,20 +1,38 @@
 proxies:
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 0|🇰🇷3 |  2.0MB/s
+  name: 0|🇰🇷1 |  3.6MB/s
   network: tcp
-  port: '17232'
-  server: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
-  type: vmess
-  uuid: 202c296a-f34a-11ef-80e5-f23c9164ca5d
-- alterId: '0'
-  cipher: auto
-  name: 0|🇰🇷4 |  2.0MB/s
-  network: tcp
-  port: '17232'
+  port: 17232
   server: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 78ad2258-088d-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇰🇷3 |  2.9MB/s
+  port: 17232
+  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 0|🇰🇷5 |  1.6MB/s
+  network: tcp
+  port: 17232
+  server: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 202c296a-f34a-11ef-80e5-f23c9164ca5d
+  ws-headers:
+    Host: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国|@ripaojiedian
