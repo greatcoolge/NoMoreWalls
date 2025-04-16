@@ -1,58 +1,8 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷1 |  1.4MB/s
-  network: tcp
-  port: 17232
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  ws-headers:
-    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  ws-path: /
-- name: 0|🇰🇷2 |  1.5MB/s
+- name: 0|🇰🇷1 |  5.9MB/s
   network: ws
   port: 443
-  server: braden.ns.cloudflare.com
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- country: 🇰🇷KR
-  name: 0|🇰🇷3 |  4.3MB/s
-  password: 867f512f-93d2-4344-853c-50965de9b103
-  port: 55215
-  server: shy23.zqjc.cloud
-  skip-cert-verify: false
-  sni: shy23.zqjc.cloud
-  type: hysteria2
-  udp: true
-- name: 0|🇰🇷4 |  3.1MB/s
-  network: ws
-  port: 443
-  server: 192.0.54.174
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷5 |  5.9MB/s
-  network: ws
-  port: 443
-  server: 185.133.35.112
+  server: 192.18.130.65
   servername: vc.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -63,80 +13,56 @@ proxies:
     headers:
       host: vc.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇰🇷6 |  5.4MB/s
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 0|🇰🇷2 |  5.4MB/s
+  network: ws
+  port: 2083
+  server: 172.67.75.52
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  tls: true
+  type: vless
+  udp: false
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /flow=-udp443
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇰🇷3 |  2.1MB/s
+  network: ws
+  port: 443
+  server: 108.162.195.194
+  servername: vc.ylka.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vc.ylka.dpdns.org
+    path: ''
+- name: 0|🇰🇷4 |  3.5MB/s
+  network: ws
+  port: 443
+  server: 198.62.62.4
+  servername: vc.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vc.ylka.dpdns.org
+    path: /?ed=2560
+- name: 0|🇰🇷5 |  5.8MB/s
   network: ws
   port: 443
   server: 160.123.255.18
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷7 |  1.5MB/s
-  network: ws
-  port: 443
-  server: uriah.ns.cloudflare.com
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷8 |  2.8MB/s
-  network: ws
-  port: 18446
-  server: 154.17.21.134
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷9 |  5.1MB/s
-  network: ws
-  port: 443
-  server: nikon.ns.cloudflare.com
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷10 |  1.7MB/s
-  network: ws
-  port: 8443
-  server: 138.2.235.224
-  servername: vc.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vc.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇰🇷11 |  1.8MB/s
-  network: ws
-  port: 443
-  server: 192.9.148.42
   servername: vc.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
