@@ -1,65 +1,30 @@
 proxies:
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇨🇦1 |  5.7MB/s
+- alterId: 2
+  cipher: auto
+  name: 0|🇨🇦1 |  5.3MB/s
   network: ws
-  port: 8443
-  server: 154.83.2.61
-  servername: vlee.amclubs.rr.nu
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v25.heduian.link
+    path: /oooo
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇨🇦2 |  5.0MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
   tls: true
   type: vless
-  udp: false
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vlee.amclubs.rr.nu
-    path: /?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇨🇦2 |  2.7MB/s
-  network: ws
-  port: 2083
-  server: 103.160.204.4
-  servername: vlee.amclubs.rr.nu
-  tls: true
-  type: vless
-  udp: false
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vlee.amclubs.rr.nu
-    path: /?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇨🇦3 |  3.1MB/s
-  network: ws
-  port: 443
-  server: 160.79.105.66
-  servername: vc.ylka.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vc.ylka.dpdns.org
-    path: ''
-- name: 0|🇨🇦4 |  2.5MB/s
-  network: ws
-  password: amclubs
-  port: 2053
-  server: 154.83.2.94
-  skip-cert-verify: true
-  sni: tran.amclubstest.nyc.mn
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tran.amclubstest.nyc.mn
-    path: /?ed=2560
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 15|CA_speednode_0001

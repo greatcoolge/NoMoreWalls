@@ -1,42 +1,45 @@
 proxies:
-- name: 0|🇸🇬1 |  5.3MB/s
-  password: dQUWbcwECl
-  port: 443
-  server: automq-0413-1-proxy.automq-sg.com
-  sni: automq-0413-1-proxy.automq-sg.com
-  type: trojan
-- name: 0,15|CN_speednode_0045
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 27401
-  server: aafrtpfxr.sgl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
+- alterId: 2
+  cipher: auto
+  name: 0|🇸🇬1 |  6.3MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d0d003b8-ad44-37a7-82bf-ad911a23b4df
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
+- name: 0|🇸🇬2 |  6.2MB/s
+  password: 28f6cde4-a129-3a08-997e-dbfee628adf0
+  port: 20130
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x130.flybar.work
+  tfo: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,14|新加坡3|@ripaojiedian
-  network: tcp
-  port: '17231'
-  server: 0496335c-sux8g0-swbudg-1mzwj.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0,13|🇸🇬 新加坡3|@ripaojiedian
-  port: 17231
-  server: 0496335c-sux8g0-swbudg-1mzwj.cm5.p5pv.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬5 |  5.9MB/s
+  name: 0,15|CN_speednode_0009
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬4 |  2.5MB/s
   network: tcp
   port: 29877
   reality-opts:
@@ -46,6 +49,13 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇸🇬5 |  4.3MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
+  skip-cert-verify: true
+  sni: gysz0000.dynu.net
+  type: trojan
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -74,6 +84,17 @@ proxies:
   skip-cert-verify: false
   sni: automq-0413-0-proxy.automq-sg.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇸🇬 新加坡3|@ripaojiedian
+  port: 17231
+  server: 0496335c-sux8g0-swbudg-1mzwj.cm5.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
@@ -92,3 +113,13 @@ proxies:
   tls: false
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡3|@ripaojiedian
+  network: tcp
+  port: '17231'
+  server: 0496335c-sux8g0-swbudg-1mzwj.cm5.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
