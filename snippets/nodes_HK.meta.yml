@@ -1,17 +1,15 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0007
+  name: 0|🇭🇰1 |  3.1MB/s
   network: tcp
-  port: 45883
+  port: 54220
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: zhee01.dynu.net
   servername: www.nvidia.com
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -27,23 +25,9 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0,15|HK_speednode_0035
-  network: ws
-  port: 443
-  server: 162.247.5.96
-  servername: hk.qhahd.shop
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 24a96691-a1d9-4471-f3a8-957fb7a787a0
-  ws-opts:
-    headers:
-      Host: hk.qhahd.shop
-    path: /bing
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇭🇰4 |  6.2MB/s
+  name: 0|🇭🇰3 |  2.9MB/s
   network: tcp
   port: 24318
   reality-opts:
@@ -53,6 +37,14 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 0|🇭🇰4 |  1.1MB/s
+  port: 15229
+  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
@@ -153,3 +145,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|HK_speednode_0035
+  network: ws
+  port: 443
+  server: 162.247.5.96
+  servername: hk.qhahd.shop
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24a96691-a1d9-4471-f3a8-957fb7a787a0
+  ws-opts:
+    headers:
+      Host: hk.qhahd.shop
+    path: /bing
