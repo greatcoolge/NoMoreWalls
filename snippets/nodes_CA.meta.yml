@@ -1,7 +1,15 @@
 proxies:
+- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 0|🇨🇦1 |  2.7MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇨🇦1 |  4.4MB/s
+  name: 0|🇨🇦2 |  5.0MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -11,15 +19,3 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '2'
-  cipher: auto
-  name: 0|🇨🇦2 |  5.1MB/s
-  network: ws
-  port: '30825'
-  server: v25.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
