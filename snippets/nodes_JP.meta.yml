@@ -1,33 +1,21 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵1 |  5.8MB/s
+  name: 0,15|CN_speednode_0014
   network: tcp
-  port: 11839
+  port: 48121
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: beiyong.dynuddns.net
   servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0020
-  network: tcp
-  port: 13989
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: gateway.icloud.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵3 |  5.4MB/s
+  name: 0|🇯🇵2 |  5.2MB/s
   network: tcp
   port: 14548
   reality-opts:
@@ -37,31 +25,41 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇯🇵4 |  1.9MB/s
-  network: ws
-  port: 443
-  server: 104.215.58.230
-  servername: gkkui8.azurewebsites.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: gkkui8.azurewebsites.net
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵5 |  3.1MB/s
+  name: 0,15|CN_speednode_0013
   network: tcp
-  port: 16497
+  port: 31735
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
+  server: bsuqian01.dynu.net
   servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇯🇵4 |  2.9MB/s
+  network: tcp
+  port: 25768
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇯🇵5 |  3.6MB/s
+  network: tcp
+  port: 17278
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
@@ -76,13 +74,32 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: chrome
+  name: 0|🇯🇵7 |  6.2MB/s
+  password: fa532a83-414c-42bd-8951-66a67302d230
+  port: 22271
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇯🇵7 |  4.0MB/s
+  name: 0|🇯🇵8 |  6.3MB/s
   network: tcp
-  port: 25768
+  port: 11839
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇯🇵9 |  5.8MB/s
+  network: tcp
+  port: 16497
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
   servername: www.nvidia.com
   tls: true
   type: vless
@@ -127,14 +144,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 43.201.51.236
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
   name: 14|日本3|@ripaojiedian

@@ -1,33 +1,23 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷1 |  4.9MB/s
-  network: tcp
-  port: 17232
-  server: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇰🇷2 |  2.7MB/s
-  network: tcp
-  port: 17232
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  ws-headers:
-    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  ws-path: /
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇰🇷1 |  5.2MB/s
+  network: ws
+  port: 8443
+  server: 154.83.2.61
+  servername: vlee.amclubs.rr.nu
+  tls: true
+  type: vless
+  udp: false
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vlee.amclubs.rr.nu
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇰🇷3 |  4.1MB/s
+  name: 0|🇰🇷2 |  1.0MB/s
   network: tcp
   port: 21082
   reality-opts:
@@ -38,6 +28,47 @@ proxies:
   tls: true
   type: vless
   uuid: e7adaa99-8363-3ec4-b849-307c99005405
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 0|🇰🇷3 |  1.3MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 13483
+  server: agaungzhou01.bumbleshrimp.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇰🇷4 |  4.3MB/s
+  network: tcp
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  ws-headers:
+    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇰🇷5 |  4.6MB/s
+  network: tcp
+  port: 17232
+  server: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com
+  ws-path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.201.51.236
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
