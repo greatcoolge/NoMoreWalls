@@ -1,25 +1,7 @@
 proxies:
 - client-fingerprint: chrome
-  fast-open: true
-  name: 0|🇷🇺1 |  5.5MB/s
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 0|🇷🇺2 |  4.6MB/s
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺3 |  1.0MB/s
+  name: 0|🇷🇺1 |  5.0MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -29,3 +11,21 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇷🇺2 |  1.7MB/s
+  password: dongtaiwang.com
+  port: 12904
+  server: 46.17.41.5
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+- client-fingerprint: chrome
+  fast-open: true
+  name: 0|🇷🇺3 |  3.2MB/s
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
