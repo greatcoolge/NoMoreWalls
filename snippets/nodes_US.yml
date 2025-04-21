@@ -1,26 +1,38 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 0|🇺🇸12 |  2.2MB/s
-  password: asd123456
-  port: 8388
-  server: 137.175.113.215
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸14 |  2.5MB/s
-  network: ws
-  port: 23077
-  server: 45.147.201.231
+- name: 0|🇺🇸1 |  5.7MB/s
+  password: f6f0c004-26a0-3ea0-a824-2addb0455c31
+  port: 20305
+  server: gy.58n.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
-  ws-headers:
-    Host: 45.147.201.231
-  ws-path: /
+  sni: z305.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0,13|🇺🇸 美国3|@ripaojiedian
+  password: '!!str 1234'
+  port: 1234
+  server: 97.107.140.236
+  tfo: false
+  type: ss
+- allowInsecure: ''
+  name: 0|🇺🇸9 |  1.0MB/s
+  network: ws
+  password: auto
+  port: 443
+  server: 172.66.46.254
+  skip-cert-verify: false
+  sni: dcf741e8.epeius-2gy.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dcf741e8.epeius-2gy.pages.dev
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸43 |  5.8MB/s
+  name: 0|🇺🇸27 |  5.2MB/s
   network: ws
   port: 80
   server: www.wn03.cc
@@ -55,14 +67,6 @@ proxies:
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  password: '!!str 1234'
-  port: 1234
-  server: 97.107.140.236
   tfo: false
   type: ss
 - alterId: 0
