@@ -1,15 +1,47 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬5 |  6.3MB/s
-  port: 17231
-  server: d0012c0c-sux8g0-sycaxv-14au8.cm5.p5pv.com
+  name: 0|🇸🇬1 |  1.2MB/s
+  network: tcp
+  port: 54652
+  server: 183.236.51.38
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 44811728-ebd8-11ec-adf5-f23c91cfbbc9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.38
+  ws-path: /
+- name: 0|🇸🇬2 |  1.4MB/s
+  password: 003fcf00-48d4-4d29-a8a4-252dc7f288b9
+  port: 27401
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬6 |  6.0MB/s
+  name: 0,14|新加坡|@ripaojiedian
+  network: tcp
+  port: '17231'
+  server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
+  ws-headers:
+    Host: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
+  ws-path: /
+- name: 0|🇸🇬7 |  3.0MB/s
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: secure-hookworm.dolphin109.quest
+  skip-cert-verify: true
+  sni: secure-hookworm.dolphin109.quest
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬8 |  3.8MB/s
   network: ws
   port: 40000
   raw:
@@ -35,6 +67,13 @@ proxies:
   uuid: f8d8531b-a2b2-4515-911b-10c2f8ab7f26
   ws-opts:
     path: /bby
+- name: 0|🇸🇬9 |  4.7MB/s
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: stable-labrador.dolphin109.quest
+  skip-cert-verify: true
+  sni: stable-labrador.dolphin109.quest
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -65,16 +104,6 @@ proxies:
   server: 47.129.221.216
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|新加坡|@ripaojiedian
-  network: tcp
-  port: '17231'
-  server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: 14|新加坡2|@ripaojiedian
