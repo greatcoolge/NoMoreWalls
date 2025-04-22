@@ -1,74 +1,47 @@
 proxies:
-- name: 0|🇺🇸2 |  3.0MB/s
-  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
-  port: 27301
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: chacha20-ietf
+  delay: 1693
+  name: 0|🇺🇸3 |  5.6MB/s
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸5 |  5.1MB/s
+  network: ws
+  port: 80
+  server: www.wn03.cc
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 - cipher: aes-128-cfb
-  name: 0|🇺🇸5 |  5.6MB/s
+  name: 0|🇺🇸25 |  5.5MB/s
   password: shadowsocks
   port: 443
   server: 184.170.241.194
   type: ss
-- name: 0|🇺🇸7 |  5.9MB/s
+- allowInsecure: ''
+  name: 0|🇺🇸32 |  5.1MB/s
   network: ws
   password: f82fb954-06a1-4f0b-9180-17e07585b61f
   port: 443
-  server: 172.67.212.82
+  server: 104.21.23.162
   skip-cert-verify: false
   sni: 6tghjk.131.pp.ua
+  tls: true
   type: trojan
   ws-opts:
     headers:
       Host: 6tghjk.131.pp.ua
-    path: '%2FYu29UN3Yz8hcnI3SlZor0'
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸10 |  4.3MB/s
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: '2'
-  cipher: auto
-  name: 0|🇺🇸13 |  2.9MB/s
-  network: ws
-  port: '30829'
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸20 |  6.0MB/s
-  network: ws
-  port: 8443
-  server: skk.moe
-  servername: digitaloceanus.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: ba516af9-329e-4c5c-8ff6-dc59f563269e
-  ws-opts:
-    headers:
-      Host: digitaloceanus.lzj520hxw.dpdns.org
-    path: ba516af9-329e-4c5c-8ff6-dc59f563269e-vm
-- name: 0|🇺🇸22 |  5.8MB/s
-  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
-  port: 34014
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+    path: /Yu29UN3Yz8hcnI3SlZor0
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -86,31 +59,29 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504201238969-y462ONma73.download.microsoft.com
+    host: 202504212352625-1jaHlWfGGj.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  password: '!!str 1234'
-  port: 1234
-  server: 97.107.140.236
-  tfo: false
-  type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国4|@ripaojiedian
-  port: 45251
-  server: 112.65.92.20
+  name: 13,14|美国3|@ripaojiedian
+  network: ws
+  port: '30807'
+  server: v7.heduian.link
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 14|美国|@ripaojiedian
@@ -121,13 +92,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 14|美国4|@ripaojiedian
-  network: tcp
-  port: '45251'
-  server: 112.65.92.20
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
