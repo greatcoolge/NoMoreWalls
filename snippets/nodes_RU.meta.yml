@@ -1,17 +1,7 @@
 proxies:
-- country: 🇷🇺RU
-  delay: 1055
-  name: 0|🇷🇺3 |  1.3MB/s
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺4 |  1.3MB/s
+  name: 0|🇷🇺1 |  3.8MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -21,3 +11,36 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- country: 🇷🇺RU
+  delay: 1055
+  name: 0|🇷🇺2 |  3.9MB/s
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- alpn:
+  - http/1.1
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0,8,16|d*********g.com_3
+  network: tcp
+  obfs: salamander
+  obfs-password: Bia-SiNAVM-Telegram-SiNAVM-@SiNAVM-SiNAVM
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  up: 11 Mbps
+  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
