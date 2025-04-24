@@ -1,5 +1,40 @@
 proxies:
-- name: 0|🇭🇰1 |  5.2MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇭🇰1 |  1.3MB/s
+  network: tcp
+  port: 45883
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenyang001.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  delay: 1918
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0005
+  network: tcp
+  port: 46716
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: '0'
+  cipher: auto
+  name: 0|🇭🇰3 |  1.0MB/s
+  network: tcp
+  port: '15229'
+  server: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
+  type: vmess
+  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
+- name: 0|🇭🇰4 |  5.0MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: hkre1-cdn-route.couldflare-cdn.com
@@ -10,31 +45,18 @@ proxies:
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0038
+  name: 0,15|HK_speednode_0059
   network: tcp
-  port: 12597
+  port: 20550
   reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 0|🇭🇰3 |  1.1MB/s
-  network: tcp
-  port: 15229
-  server: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
-  ws-headers:
-    Host: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
-  ws-path: /
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
 - client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -187,16 +209,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 888ce5e9-6e3a-4b5c-bcb7-ce1125c02d79
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|HK_speednode_0059
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db

@@ -1,28 +1,36 @@
 proxies:
+- name: 0|🇺🇸1 |  4.2MB/s
+  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+  port: 47262
+  server: 64.181.204.186
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 0|🇺🇸2 |  5.0MB/s
+  password: dongtaiwang.com
+  port: 65232
+  server: 108.181.5.130
+  skip-cert-verify: true
+  sni: apple.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇺🇸1 |  1.7MB/s
-  network: tcp
-  port: 60677
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.nvidia.com
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸3 |  5.6MB/s
+  network: ws
+  port: 443
+  server: 104.18.20.69
+  servername: us1s.pqvip.top
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇺🇸2 |  2.4MB/s
-  network: tcp
-  port: 30274
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 98feaab6-e89f-46eb-9224-0f973f03af3f
+  ws-opts:
+    headers:
+      Host: us1s.pqvip.top
+    path: /pq/us1
 - alpn:
   - http/1.1
   auth_str: dongtaiwang.com
@@ -47,33 +55,55 @@ proxies:
     headers:
       Host: www.zitian.cn
 - client-fingerprint: chrome
+  delay: 1676
   flow: xtls-rprx-vision
-  name: 0|🇺🇸4 |  3.9MB/s
+  name: 0|🇺🇸5 |  5.4MB/s
+  network: tcp
+  port: 40430
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸6 |  3.4MB/s
+  network: tcp
+  port: 27932
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸7 |  5.2MB/s
   network: tcp
   port: 29023
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: shenzhou05.mysynology.net
   servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇺🇸5 |  4.7MB/s
-  network: tcp
-  port: 50200
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
+- name: 0,15|US_speednode_0071
+  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+  port: 443
+  server: c795e23c-sva740-sxnljm-1jr1u.los.gotochinatown.net
   tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  type: http
+  udp: true
+  username: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
 - client-fingerprint: chrome
   disable-sni: true
   mode: ''
-  name: 0|🇺🇸6 |  1.6MB/s
+  name: 0|🇺🇸10 |  5.9MB/s
   network: ws
   port: 80
   server: 141.193.213.0
@@ -87,18 +117,48 @@ proxies:
     headers:
       Host: psycho.suex12.ir
     path: /
-- name: 0|🇺🇸7 |  1.4MB/s
-  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-  port: 47262
-  server: 64.181.204.186
+- client-fingerprint: chrome
+  delay: 2070
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸11 |  3.9MB/s
+  network: tcp
+  port: 29023
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenyang001.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸12 |  1.6MB/s
+  network: ws
+  port: 443
+  server: fonts.net
+  servername: d5.medicaltreatment.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 15298f41-e80b-463a-b85b-0c903258a1c8
+  ws-opts:
+    headers:
+      Host: d5.medicaltreatment.ir
+    path: sinavm-sinavm/?ed=2560
+- auth: 5CBqBh6MeDq6GajcilBiDg==
+  name: 0|🇺🇸13 |  4.3MB/s
+  password: 5CBqBh6MeDq6GajcilBiDg==
+  port: 61001
+  server: 192-227-152-86.nip.io
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
+  sni: 192-227-152-86.nip.io
   type: hysteria2
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 0|🇺🇸8 |  5.7MB/s
+  name: 0|🇺🇸14 |  5.4MB/s
   network: ws
   port: 443
   server: 104.16.41.28
@@ -111,53 +171,23 @@ proxies:
     headers:
       Host: d5.medicaltreatment.ir
     path: sinavm-sinavm/?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0030
-  network: tcp
-  port: 50200
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.amazon.com
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸15 |  5.9MB/s
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 1676
-  flow: xtls-rprx-vision
-  name: 0|🇺🇸10 |  2.4MB/s
-  network: tcp
-  port: 40430
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇺🇸11 |  1.1MB/s
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us1s.pqvip.top
-  tls: true
-  type: vless
-  udp: false
-  uuid: 98feaab6-e89f-46eb-9224-0f973f03af3f
-  ws-opts:
-    headers:
-      Host: us1s.pqvip.top
-    path: /pq/us1
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-headers:
+    Host: zxjp-b.tkong.cc
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇺🇸13 |  1.5MB/s
+  name: 0|🇺🇸16 |  4.5MB/s
   network: tcp
   port: 25479
   reality-opts:
@@ -167,6 +197,83 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  delay: 1396
+  flow: xtls-rprx-vision
+  name: 0,15|CN_speednode_0032
+  network: tcp
+  port: 38302
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇺🇸18 |  4.8MB/s
+  network: ws
+  port: 443
+  server: 45.202.113.50
+  servername: hy10.lzj520hxw.dpdns.org
+  tls: true
+  type: vless
+  uuid: a3c075ab-51cd-4947-e8a4-aad55e19bec2
+  ws-opts:
+    headers:
+      Host: hy10.lzj520hxw.dpdns.org
+    path: /lzjjj
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸19 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 199.34.228.183
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 0212fab5-e93c-4904-b7a8-187fd535f354
+  ws-opts:
+    headers:
+      Host: 3sdfgvcxxx.938.pp.ua
+    path: /P879mtCoHQqaWO67qEaMINZ1
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸20 |  1.2MB/s
+  network: ws
+  port: 443
+  server: 199.34.228.191
+  servername: 3sdfgvcxxx.938.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0212fab5-e93c-4904-b7a8-187fd535f354
+  ws-opts:
+    headers:
+      Host: 3sdfgvcxxx.938.pp.ua
+    path: /P879mtCoHQqaWO67qEaMINZ1
+- cipher: aes-256-cfb
+  name: 0|🇺🇸21 |  5.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 35.89.254.216
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸22 |  3.9MB/s
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -231,14 +338,6 @@ proxies:
     headers:
       Host: sv.ylka.dpdns.org
     path: /?ed=2560
-- name: 15|US_speednode_0071
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  port: 443
-  server: c795e23c-sva740-sxnljm-1jr1u.los.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
 - name: 15|US_speednode_0072
   network: ws
   port: 2052
