@@ -1,4 +1,12 @@
 proxies:
+- fast-open: true
+  name: 0|🇷🇺1 |  4.7MB/s
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - alpn:
   - http/1.1
   auth_str: dongtaiwang.com
@@ -24,7 +32,7 @@ proxies:
       Host: www.zitian.cn
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺2 |  4.9MB/s
+  name: 0|🇷🇺3 |  4.9MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -37,30 +45,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 0|🇷🇺3 |  5.5MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
-    short-id: ''
-  server: in.saint.ydns.eu
-  servername: speed.cloudflare.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- fast-open: true
-  name: 0|🇷🇺4 |  4.2MB/s
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 0|🇷🇺5 |  4.7MB/s
+  name: 0|🇷🇺5 |  5.2MB/s
   network: tcp
   port: 55799
   reality-opts:
@@ -72,18 +57,3 @@ proxies:
   type: vless
   udp: false
   uuid: 43589def-fa09-47e3-b44e-7f6e069f470d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 0|🇷🇺6 |  5.4MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
-    short-id: ''
-  server: 5.181.171.10
-  servername: speed.cloudflare.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
