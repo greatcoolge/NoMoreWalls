@@ -1,33 +1,23 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇸🇬1 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.151.174.99
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0,14|新加坡3|@ripaojiedian
-  network: tcp
-  port: '17231'
-  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
-- cipher: aes-256-gcm
-  name: 0|🇸🇬3 |  5.9MB/s
-  password: amazonskr05
-  port: 80
-  server: 54.151.141.90
-  type: ss
-- name: 0|🇸🇬4 |  5.2MB/s
+- name: 0|🇸🇬1 |  6.1MB/s
   password: 616F5C28-A1B2-D7C7-2F5D-46AC56436130
   port: 8306
   server: bldgz.linkcubecloud.dev
   skip-cert-verify: true
   sni: cos.ap-guangzhou.myqcloud.com
   type: trojan
+- cipher: aes-256-cfb
+  name: 0|🇸🇬3 |  5.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 46.137.234.250
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇸🇬7 |  1.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.151.174.99
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -92,6 +82,16 @@ proxies:
   server: 44.247.228.17
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡3|@ripaojiedian
+  network: tcp
+  port: '17231'
+  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
 - alterId: 0
   cipher: auto
   name: 14|新加坡4|@ripaojiedian
