@@ -1,14 +1,43 @@
 proxies:
-- name: 0|🇸🇬1 |  6.1MB/s
-  password: 616F5C28-A1B2-D7C7-2F5D-46AC56436130
-  port: 8306
-  server: bldgz.linkcubecloud.dev
-  skip-cert-verify: true
-  sni: cos.ap-guangzhou.myqcloud.com
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬2 |  5.9MB/s
+  name: 0,15|CN_speednode_0034
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  name: 0|🇸🇬2 |  4.5MB/s
+  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  port: 35000
+  server: 152.69.220.212
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 0,14|新加坡3|@ripaojiedian
+  network: tcp
+  port: '17231'
+  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
+  ws-headers:
+    Host: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  ws-path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬4 |  5.3MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -20,22 +49,34 @@ proxies:
   type: vless
   uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
 - cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  5.9MB/s
+  name: 0|🇸🇬5 |  5.4MB/s
   password: amazonskr05
   port: 443
-  server: 46.137.234.250
+  server: 54.169.209.123
   type: ss
-- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  name: 0|🇸🇬4 |  2.6MB/s
-  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  port: 35000
-  server: 152.69.220.212
+- name: 0|🇸🇬6 |  3.3MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
   skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
+  sni: gysz0000.dynu.net
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬5 |  6.2MB/s
+  name: 0|🇸🇬7 |  3.5MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: gkeUZppVQzutjGsRcsGMW8OrPHboJ3qRFpIvj8lcUj4
+    short-id: c174618d
+  server: pq.aws52.yydjc.top
+  servername: tv.apple.com
+  tls: true
+  type: vless
+  uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬8 |  6.2MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -46,20 +87,15 @@ proxies:
   tls: true
   type: vless
   uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
-- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  name: 0|🇸🇬6 |  4.1MB/s
-  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  port: 35000
-  server: 140.245.46.17
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 0|🇸🇬7 |  1.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.151.174.99
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 0|🇸🇬9 |  4.8MB/s
+  password: 67eOyIrV
+  port: 11503
+  server: 103.106.229.195
+  tfo: true
   type: ss
+  udp: true
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -132,16 +168,6 @@ proxies:
   server: 44.247.228.17
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 14|新加坡3|@ripaojiedian
-  network: tcp
-  port: '17231'
-  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
 - alterId: 0
   cipher: auto
   name: 14|新加坡4|@ripaojiedian

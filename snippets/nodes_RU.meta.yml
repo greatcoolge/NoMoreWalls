@@ -1,17 +1,35 @@
 proxies:
-- auth: dongtaiwang.com
-  delay: 1637
-  name: 0|🇷🇺1 |  4.5MB/s
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  2.2MB/s
+  network: ws
+  port: 22025
+  raw:
+    add: 195.58.49.84
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: d47ec603-eca8-498a-b5cf-5ca03cc1f776
+    net: ws
+    path: /
+    port: '22025'
+    ps: 🇷🇺 --001-1H
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 195.58.49.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d47ec603-eca8-498a-b5cf-5ca03cc1f776
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺2 |  1.6MB/s
+  name: 0|🇷🇺4 |  3.9MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -21,3 +39,22 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 0|🇷🇺5 |  3.3MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 212.233.94.204
+  servername: maviks.eu
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
+  ws-opts:
+    headers:
+      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+    path: ''
