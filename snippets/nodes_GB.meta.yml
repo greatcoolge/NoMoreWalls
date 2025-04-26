@@ -1,35 +1,21 @@
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  4.4MB/s
-  network: tcp
-  port: 49699
+  flow: ''
+  grpc-opts:
+    grpc-service-name: 2086vless
+  mode: ''
+  name: 0|🇬🇧1 |  5.6MB/s
+  network: grpc
+  port: 2060
   reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
+    short-id: 629cc26960e47e39
+  server: 165.22.116.82
+  servername: refersion.com
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  4.8MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  delay: 586
-  name: 0|🇬🇧3 |  1.2MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
+  udp: false
+  uuid: 701a7842-79a2-4a48-882b-c563daad99c1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 0,15|CN_speednode_0048
@@ -44,6 +30,33 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 37d8fcb9-b822-42b1-9842-853ca2f4b250
+  name: 0|🇬🇧3 |  1.3MB/s
+  password: 37d8fcb9-b822-42b1-9842-853ca2f4b250
+  port: 2056
+  server: uk2.xiaoliyu.us
+  skip-cert-verify: true
+  sni: uk2.xiaoliyu.us
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 0|🇬🇧4 |  2.3MB/s
+  network: ws
+  port: 54486
+  server: 185.217.110.96
+  tls: false
+  type: vmess
+  uuid: 5369a60b-42ac-4f73-ddcb-efda466a4441
+  ws-opts:
+    path: /5369a60b
+- auth: 37d8fcb9-b822-42b1-9842-853ca2f4b250
+  name: 0|🇬🇧5 |  1.2MB/s
+  password: 37d8fcb9-b822-42b1-9842-853ca2f4b250
+  port: 2056
+  server: ae1.xiaoliyu.us
+  skip-cert-verify: true
+  sni: ae1.xiaoliyu.us
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 15|GB_speednode_0058
