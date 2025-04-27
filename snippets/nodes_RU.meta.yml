@@ -21,7 +21,21 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 0|🇷🇺2 |  5.2MB/s
+- name: 0|🇷🇺2 |  3.3MB/s
+  network: ws
+  port: 2096
+  server: 172.67.211.140
+  servername: void.crehistory.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84fcffc1-4f4f-4b66-bd2c-31a59681268b
+  ws-opts:
+    headers:
+      Host: void.crehistory.org
+    path: /
+- name: 0|🇷🇺3 |  3.6MB/s
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: af5dc240-svhls0-swy6li-tni2.ru.gotochinatown.net
@@ -29,24 +43,8 @@ proxies:
   type: http
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 0|🇷🇺3 |  5.9MB/s
-  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  port: 443
-  server: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
-  sni: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- name: 0|🇷🇺4 |  5.7MB/s
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: ba6285d8-svfr40-swy6li-tni2.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇷🇺5 |  4.1MB/s
+  name: 0|🇷🇺4 |  3.2MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -56,9 +54,16 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇷🇺5 |  5.8MB/s
+  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  port: 443
+  server: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - auth: dongtaiwang.com
   delay: 993
-  name: 0|🇷🇺6 |  4.9MB/s
+  name: 0|🇷🇺6 |  5.5MB/s
   password: dongtaiwang.com
   port: 10011
   server: hy2.694463.xyz
