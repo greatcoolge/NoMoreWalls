@@ -1,13 +1,4 @@
 proxies:
-- name: 0|🇸🇬1 |  1.0MB/s
-  network: tcp
-  password: fd693f7c-4160-41cc-9065-cbf9df5a12d4
-  port: 27401
-  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   delay: 1924
   flow: xtls-rprx-vision
@@ -23,7 +14,14 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇸🇬3 |  5.1MB/s
+- name: 0|🇸🇬2 |  2.0MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
+  skip-cert-verify: true
+  sni: gysz0000.dynu.net
+  type: trojan
+- name: 0|🇸🇬3 |  1.6MB/s
   network: tcp
   password: 2b03629a-0eab-41f4-bd1c-2558cdc03e2b
   port: 27401
@@ -32,6 +30,48 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
+- name: 0,15|SG_speednode_0050
+  password: '!!str 74260678056890000'
+  port: 443
+  server: grown-doberman.shiner427.skin
+  skip-cert-verify: false
+  sni: grown-doberman.shiner427.skin
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬5 |  5.1MB/s
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇸🇬6 |  1.9MB/s
+  network: tcp
+  password: 2e67a93d-04e7-45ff-a94f-0350f4301bd9
+  port: 42881
+  server: 183.2.150.98
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬7 |  6.2MB/s
+  network: tcp
+  port: 17231
+  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
+  ws-headers:
+    Host: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  ws-path: /
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -91,11 +131,3 @@ proxies:
   server: 13.125.152.108
   tfo: false
   type: ss
-- name: 15|SG_speednode_0050
-  password: '!!str 74260678056890000'
-  port: 443
-  server: grown-doberman.shiner427.skin
-  skip-cert-verify: false
-  sni: grown-doberman.shiner427.skin
-  type: trojan
-  udp: true

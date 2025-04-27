@@ -1,7 +1,45 @@
 proxies:
+- name: 0|🇯🇵1 |  1.1MB/s
+  network: tcp
+  password: a672102b-50f5-4e76-9876-d300765f9b4b
+  port: 22269
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵6 |  6.2MB/s
+  name: 0|🇯🇵6 |  1.3MB/s
+  network: ws
+  port: 35244
+  server: 120.253.242.194
+  servername: jp4.vip2.g2.moonbase.life
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: jp4.vip2.g2.moonbase.life
+    path: /home
+- alterId: '0'
+  cipher: auto
+  name: 0|🇯🇵8 |  1.0MB/s
+  network: ws
+  port: '35244'
+  server: jp4.vip2.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      host: web.xcjs.info
+    path: /home
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵10 |  2.7MB/s
   network: tcp
   port: 17233
   server: bf20b8b1-svhls0-svtxnz-1rgxu.cm5.p5pv.com
@@ -14,7 +52,53 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵7 |  5.2MB/s
+  name: 0|🇯🇵13 |  6.0MB/s
+  network: tcp
+  port: 17233
+  server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
+- name: 0|🇯🇵15 |  3.6MB/s
+  password: 87c196a7-3555-43d6-8756-ca353dc4d42a
+  port: 27001
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵18 |  6.1MB/s
+  network: tcp
+  port: 17233
+  server: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0,13,14|日本5|@ripaojiedian
+  network: ws
+  port: '35213'
+  server: jp3.g2.moonbase.life
+  servername: web.xcjs.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵21 |  6.6MB/s
   network: tcp
   port: 17233
   server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
@@ -25,15 +109,6 @@ proxies:
   ws-headers:
     Host: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇯🇵9 |  6.0MB/s
-  network: tcp
-  port: 17233
-  server: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -78,23 +153,6 @@ proxies:
   server: one.taki.wtf
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,14|日本5|@ripaojiedian
-  network: ws
-  port: '35213'
-  server: jp3.g2.moonbase.life
-  servername: web.xcjs.info
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      Host: web.xcjs.info
-    path: /home
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
