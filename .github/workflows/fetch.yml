@@ -3,7 +3,6 @@ name: Fetch
 on:
   workflow_dispatch:
   schedule:
-    # 表达式生成 https://crontab.guru/
     - cron: '0 0/3 * * *'
   push:
     paths:
@@ -17,49 +16,50 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+
     steps:
     - name: 迁出代码
       uses: actions/checkout@v4
+
+    - name: 重置本地改动
+      run: git reset --hard
+
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
     - name: 安装 Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
         cache: 'pip'
+
     - name: 安装依赖
       run: pip install -r requirements.txt
+
     - name: 执行任务
       run: python ./fetch.py
-    - name: Reset changes
-      run: git reset --hard
- 
+
     - name: 提交更改
-      run: |                 
+      run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git pull origin master
-        git add list*
-        git add snippets/
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
-    - name: 推送更改
-      uses: ad-m/github-push-action@master
-      with:
-        branch: master
+        git add list* snippets/
+        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点" || echo "No changes to commit"
+        git push origin master
 
     - name: 计算要清除缓存的文件
       id: purge_urls
       run: |
-        sleep 5
         baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
         urls=""
-        for f in `find snippets -name "*.yml" -type f`; do
+        for f in $(find snippets -name "*.yml" -type f); do
           urls+="${baseUrl}/${f},"
         done
-        for f in `find . -name "list*" -type f -maxdepth 1`; do
+        for f in $(find . -maxdepth 1 -name "list*"); do
           urls+="${baseUrl}/${f},"
         done
-        echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
+        echo "urls=${urls%,}" >> $GITHUB_OUTPUT
+
     - name: 清除 JsDelivr CDN 缓存
       uses: egad13/purge-jsdelivr-cache@v1
       with:
