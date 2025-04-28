@@ -598,25 +598,26 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alpn:
+  - h2
   - http/1.1
   auth_str: dongtaiwang.com
   down: 1000 Mbps
-  name: 0,15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
+  name: 0,15|RU_speednode_0048
+  network: ws
+  port: 2096
+  server: 45.8.211.26
+  servername: UoIrHqRs.cAfUnEaR.InFo
   skip-cert-verify: false
-  sni: www.zitian.cn
+  sni: www.bing.com
   tls: true
-  type: trojan
+  type: vless
   udp: true
   up: 1000 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   ws-opts:
     headers:
-      Host: www.zitian.cn
+      Host: UoIrHqRs.cAfUnEaR.InFo
+    path: /
 - auth: 14bdcd31-8a9f-4cf1-8fcc-60045900357d
   name: 0|🇺🇸21 |  2.6MB/s
   password: 14bdcd31-8a9f-4cf1-8fcc-60045900357d
@@ -2747,13 +2748,3 @@ proxies:
   type: http
   udp: true
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 16|d*********g.com_2
-  network: tcp
-  port: '443'
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  tls: true
-  type: vmess
-  uuid: 044f0177-0675-4dcf-89d4-804b6788e518
