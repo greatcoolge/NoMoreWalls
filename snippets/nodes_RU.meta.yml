@@ -1,48 +1,5 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 1000 Mbps
-  name: 0,15,16|d*********g.com_3
-  network: tcp
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  skip-cert-verify: false
-  sni: www.zitian.cn
-  tfo: false
-  tls: true
-  type: trojan
-  udp: true
-  up: 1000 Mbps
-  uuid: 11916472-4e2c-49c6-b75d-71196b3a7ecf
-  ws-opts:
-    headers:
-      Host: www.zitian.cn
-- name: 0|🇷🇺2 |  4.8MB/s
-  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  port: 443
-  server: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- name: 0|🇷🇺3 |  1.1MB/s
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 443
-  server: 299db35c-svhls0-t1bnjq-1krtb.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 0|🇷🇺5 |  5.4MB/s
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: ba6285d8-svfr40-swy6li-tni2.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 0|🇷🇺6 |  5.1MB/s
+- name: 0|🇷🇺1 |  5.4MB/s
   network: ws
   port: 2096
   server: 172.67.211.140
@@ -55,4 +12,71 @@ proxies:
   ws-opts:
     headers:
       Host: void.crehistory.org
+    path: /
+- name: 0|🇷🇺2 |  6.0MB/s
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: 4c62a1ff-svfr40-t1bnjq-1krtb.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- auth: dongtaiwang.com
+  delay: 993
+  name: 0|🇷🇺3 |  2.3MB/s
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: 0|🇷🇺5 |  5.9MB/s
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 443
+  server: af5dc240-svhls0-swy6li-tni2.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺6 |  1.0MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇷🇺8 |  2.8MB/s
+  network: ws
+  port: 2096
+  server: 104.21.59.22
+  servername: void.crehistory.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84fcffc1-4f4f-4b66-bd2c-31a59681268b
+  ws-opts:
+    headers:
+      host: void.crehistory.org
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|俄罗斯|@ripaojiedian
+  network: ws
+  port: '1053'
+  server: 199.247.1.99
+  servername: just-moscow-01.vnode.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 5147a5d1-ae9b-407e-8e27-8a4e333df4b0
+  ws-opts:
+    headers:
+      Host: just-moscow-01.vnode.info
     path: /
