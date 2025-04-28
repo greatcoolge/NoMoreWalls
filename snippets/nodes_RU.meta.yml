@@ -1,29 +1,40 @@
 proxies:
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 0|🇷🇺1 |  4.6MB/s
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 0|🇷🇺2 |  5.5MB/s
-  network: ws
-  port: 2096
-  server: 104.21.59.22
-  servername: void.crehistory.org
-  skip-cert-verify: true
+- name: 0|🇷🇺1 |  6.0MB/s
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: a44c12ad-svjgg0-t1bnjq-1krtb.ru.gotochinatown.net
   tls: true
-  type: vless
-  udp: true
-  uuid: 84fcffc1-4f4f-4b66-bd2c-31a59681268b
-  ws-opts:
-    headers:
-      Host: void.crehistory.org
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺2 |  2.9MB/s
+  network: ws
+  port: 22028
+  raw:
+    add: 195.58.49.84
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: b8071fcf-659c-4f02-a43b-3fe1c421b252
+    net: ws
     path: /
-- name: 0|🇷🇺3 |  2.9MB/s
+    port: '22028'
+    ps: 🇷🇺 --001-1B
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 195.58.49.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8071fcf-659c-4f02-a43b-3fe1c421b252
+  ws-opts:
+    path: /
+- name: 0|🇷🇺3 |  5.6MB/s
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: af5dc240-svhls0-swy6li-tni2.ru.gotochinatown.net
@@ -31,40 +42,30 @@ proxies:
   type: http
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 0|🇷🇺5 |  1.1MB/s
-  network: ws
-  port: 2096
-  server: 172.67.211.140
-  servername: void.crehistory.org
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  name: 0|🇷🇺5 |  4.5MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   tls: true
   type: vless
-  udp: true
-  uuid: 84fcffc1-4f4f-4b66-bd2c-31a59681268b
-  ws-opts:
-    headers:
-      Host: void.crehistory.org
-    path: /
-- client-fingerprint: chrome
-  name: 0|🇷🇺6 |  5.8MB/s
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: ba6285d8-svfr40-swy6li-tni2.ru.gotochinatown.net
-  sni: ba6285d8-svfr40-swy6li-tni2.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 0|🇷🇺7 |  6.0MB/s
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 443
-  server: a44c12ad-svjgg0-t1bnjq-1krtb.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 0|🇷🇺8 |  6.1MB/s
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇷🇺6 |  3.3MB/s
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 443
   server: 299db35c-svhls0-t1bnjq-1krtb.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- client-fingerprint: chrome
+  name: 0|🇷🇺7 |  4.9MB/s
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: 4c62a1ff-svfr40-t1bnjq-1krtb.ru.gotochinatown.net
+  sni: 4c62a1ff-svfr40-t1bnjq-1krtb.ru.gotochinatown.net
   tls: true
   type: http
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
