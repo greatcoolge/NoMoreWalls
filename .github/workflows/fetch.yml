@@ -31,7 +31,9 @@ jobs:
       run: pip install -r requirements.txt
     - name: 执行任务
       run: python ./fetch.py
-      
+    - name: Reset changes
+      run: git reset --hard
+ 
     - name: 提交更改
       run: |                 
         git config --local user.email "actions@github.com"
