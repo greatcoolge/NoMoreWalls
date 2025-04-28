@@ -943,11 +943,11 @@ def main():
     if DEBUG_NO_NODES:
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已启用无节点调试，程序产生的配置不能被直接使用 !!!")
-        sources = []
+        sources = ["https://gist.githubusercontent.com/PangTouY00/2efa3f1165304204299a6e091eee070f/raw/ecde221dcb6b24d11f48b0eacf5cce43abf95ff6/clash.yaml"]
     elif DEBUG_NO_DYNAMIC:
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已选择不抓取动态节点 !!!")
-        AUTOURLS = AUTOFETCH = []
+        AUTOURLS = AUTOFETCH = [lambda: "https://gist.githubusercontent.com/PangTouY00/2efa3f1165304204299a6e091eee070f/raw/ecde221dcb6b24d11f48b0eacf5cce43abf95ff6/clash.yaml"]
     print("正在生成动态链接...")
     for auto_fun in AUTOURLS:
         print("正在生成 '"+auto_fun.__name__+"'... ", end='', flush=True)
