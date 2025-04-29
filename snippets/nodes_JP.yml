@@ -1,17 +1,33 @@
 proxies:
+- allowInsecure: '1'
+  client-fingerprint: chrome
+  name: 0|🇯🇵2 |  5.4MB/s
+  network: original
+  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
+  port: 28507
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵1 |  6.3MB/s
+  name: 0|🇯🇵6 |  4.2MB/s
   network: tcp
   port: 17233
-  server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
+  server: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   ws-headers:
-    Host: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
+    Host: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
   ws-path: /
+- name: 0|🇯🇵9 |  1.1MB/s
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 47479
+  server: 125.94.40.162
+  skip-cert-verify: true
+  sni: k74.tudou211.com
+  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 0,13|🇯🇵 日本|@ripaojiedian
@@ -24,41 +40,18 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 0|🇯🇵6 |  2.9MB/s
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 47479
-  server: 125.94.40.162
-  sni: k74.tudou211.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 0|🇯🇵11 |  1.2MB/s
-  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
-  port: 28507
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 0,13,14|日本4|@ripaojiedian
-  network: tcp
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21125
-  server: 125.94.40.162
-  skip-cert-verify: false
-  sni: k12.tudou211.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵16 |  5.9MB/s
+  name: 0|🇯🇵14 |  5.7MB/s
   network: tcp
   port: 17233
-  server: 0e8845d1-suk9s0-sve5if-z93q.cm5.p5pv.com
+  server: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   ws-headers:
-    Host: 0e8845d1-suk9s0-sve5if-z93q.cm5.p5pv.com
+    Host: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -93,6 +86,15 @@ proxies:
   server: 103.140.136.242
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 13,14|日本4|@ripaojiedian
+  network: tcp
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 21125
+  server: 125.94.40.162
+  skip-cert-verify: false
+  sni: k12.tudou211.com
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国特殊|@ripaojiedian

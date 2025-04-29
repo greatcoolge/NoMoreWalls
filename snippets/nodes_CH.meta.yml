@@ -1,11 +1,12 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,15|CH_speednode_0010
+  name: 0,15|CH_speednode_0011
+  network: tcp
   port: 443
-  server: 152.67.68.116
-  servername: YAPC-1.afshin.ir
-  skip-cert-verify: true
+  server: yapc-1.afshin.ir
+  servername: yapc-1.afshin.ir
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -26,11 +27,11 @@ proxies:
   uuid: f28b23ed-6eb2-da9a-c112-6918a83654a6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15|CH_speednode_0011
+  name: 15|CH_speednode_0010
   port: 443
-  server: yapc-1.afshin.ir
-  servername: yapc-1.afshin.ir
-  skip-cert-verify: false
+  server: 152.67.68.116
+  servername: YAPC-1.afshin.ir
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
