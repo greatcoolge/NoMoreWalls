@@ -1,19 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0|🇯🇵2 |  6.4MB/s
-  password: b842f3bc-0ba4-45db-80ec-4540bbb23ae0
-  port: 16945
-  server: hm.huamao888.top
-  type: ss
-  udp: true
-- name: 0|🇯🇵5 |  1.3MB/s
-  password: 01d6fd09-21d7-46ea-9262-d4ba74d0a5af
-  port: 27001
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵1 |  2.7MB/s
+  network: tcp
+  port: 17233
+  server: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -77,3 +75,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+- name: 15|JP_speednode_0028
+  password: 05f1368b-1743-48a3-b2a5-56343e64e7be
+  port: 443
+  server: sg.lyyyds.club
+  skip-cert-verify: false
+  sni: sg.lyyyds.club
+  type: trojan
+  udp: true
