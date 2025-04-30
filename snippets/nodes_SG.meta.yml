@@ -1,28 +1,59 @@
 proxies:
-- name: 0|🇸🇬1 |  3.0MB/s
+- name: 0|🇸🇬1 |  1.1MB/s
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21170
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k39.tudou211.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬2 |  5.9MB/s
+  network: tcp
+  port: 17231
+  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
+  ws-headers:
+    Host: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0011
+  name: 0|🇸🇬3 |  6.2MB/s
   network: tcp
-  port: 29877
+  port: 10778
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
+  server: shenyang001.dynu.net
   servername: www.nvidia.com
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬4 |  3.9MB/s
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0|🇸🇬5 |  6.1MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
+  skip-cert-verify: true
+  sni: gysz0000.dynu.net
+  type: trojan
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇸🇬3 |  1.9MB/s
+  name: 0|🇸🇬6 |  5.8MB/s
   network: ws
   port: 80
   server: 170.114.46.6
@@ -35,48 +66,18 @@ proxies:
     headers:
       Host: free.pranithsandaruwan.cfd
     path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬4 |  7.5MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬7 |  4.5MB/s
   network: tcp
-  port: 17231
-  server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
-  ws-headers:
-    Host: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
-  ws-path: /
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇸🇬5 |  5.6MB/s
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: ''
-  tls: false
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenyang001.dynu.net
+  servername: www.nvidia.com
+  tls: true
   type: vless
-  udp: false
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redfree8mahsang6.redfree8.ir
-    path: /JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN?ed=2560
-- name: 0|🇸🇬6 |  1.2MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 38340
-  server: gysz0000.dynu.net
-  skip-cert-verify: true
-  sni: gysz0000.dynu.net
-  type: trojan
-- name: 0|🇸🇬7 |  3.1MB/s
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 32702
-  server: xd-sh.timiwc.com
-  sni: k36.tudou211.com
-  type: trojan
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -105,9 +106,9 @@ proxies:
 - client-fingerprint: chrome
   name: 13,14|新加坡2|@ripaojiedian
   network: tcp
-  password: 7eccaecb-10ea-460f-975a-77a9cdc1fea7
+  password: a74ec813-6683-47ea-996e-d81447db44df
   port: 27401
-  server: 120.232.220.45
+  server: 183.240.116.224
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
