@@ -1,22 +1,10 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  4.4MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 0|🇬🇧2 |  4.9MB/s
+  name: 0|🇬🇧1 |  5.4MB/s
   network: ws
   port: 443
-  server: 45.131.6.160
+  server: 45.8.211.230
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -26,9 +14,21 @@ proxies:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧2 |  4.6MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 0|🇬🇧3 |  5.6MB/s
+  name: 0|🇬🇧3 |  5.7MB/s
   network: ws
   port: 443
   server: 45.142.120.97
@@ -43,7 +43,7 @@ proxies:
     path: /
 - flow: ''
   mode: ''
-  name: 0|🇬🇧4 |  5.4MB/s
+  name: 0|🇬🇧4 |  1.4MB/s
   network: ws
   port: 443
   server: 188.42.88.45
@@ -58,7 +58,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧5 |  5.0MB/s
+  name: 0|🇬🇧5 |  5.4MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -68,15 +68,18 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧6 |  1.1MB/s
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
+- flow: ''
+  mode: ''
+  name: 0|🇬🇧6 |  5.2MB/s
+  network: ws
+  port: 443
+  server: 45.131.6.160
+  servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
