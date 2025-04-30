@@ -1,15 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0|🇯🇵2 |  1.6MB/s
-  password: 3ba409f5-e03e-4cf1-8c2e-91c0d281e9a1
-  port: 16946
-  server: hm.huamao888.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵3 |  5.0MB/s
+  name: 0|🇯🇵1 |  6.0MB/s
   network: tcp
   port: 17233
   server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
@@ -22,22 +14,45 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇯🇵8 |  3.8MB/s
+  name: 0|🇯🇵2 |  6.1MB/s
   network: tcp
   port: 17233
   server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- client-fingerprint: chrome
-  name: 0,13,14|日本4|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵4 |  6.1MB/s
+  port: 17233
+  server: 1ff869eb-svjgg0-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵9 |  6.0MB/s
+  port: 17233
+  server: 0e8845d1-suk9s0-sve5if-z93q.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 0|🇯🇵11 |  6.2MB/s
   network: tcp
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21125
-  server: 125.94.40.162
-  skip-cert-verify: false
-  sni: k12.tudou211.com
-  type: trojan
+  port: 17233
+  server: 2c7f0fc0-svlb40-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 2c7f0fc0-svlb40-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇯🇵 日本|@ripaojiedian
@@ -74,6 +89,15 @@ proxies:
   server: jsyd.piaomiaoxu.net
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 13,14|日本4|@ripaojiedian
+  network: tcp
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 21125
+  server: 125.94.40.162
+  skip-cert-verify: false
+  sni: k12.tudou211.com
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
