@@ -1,23 +1,15 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 0|🇨🇦1 |  4.2MB/s
+- name: 0|🇨🇦1 |  1.5MB/s
   network: ws
-  port: 30825
-  server: v25.heduian.link
+  port: 443
+  server: 192.0.54.46
+  servername: cz.ylks0033.dpdns.org
   skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: baidu.com
-    path: /oooo
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 0|🇨🇦2 |  1.5MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 132.145.108.102
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
