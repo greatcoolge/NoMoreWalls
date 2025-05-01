@@ -1,1 +1,49 @@
-proxies: []
+proxies:
+- cipher: aes-128-gcm
+  name: 0|🇹🇼1 |  6.0MB/s
+  password: feb203c3-4b25-4961-be32-7e842d7b5dab
+  port: 14001
+  server: japan.cnix.asia
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🇹🇼2 |  2.1MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 64050
+  server: csuzhou01.1cooldns.com
+  type: ss
+- cipher: aes-128-gcm
+  name: 0|🇹🇼4 |  3.6MB/s
+  password: feb203c3-4b25-4961-be32-7e842d7b5dab
+  port: 14002
+  server: japan.cnix.asia
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇹🇼 台湾|@ripaojiedian
+  port: 14100
+  server: dxv4.pai50288.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- client-fingerprint: chrome
+  name: 13,14|台湾2|@ripaojiedian
+  network: tcp
+  password: e31da126-e127-46a1-abc2-9db20eea3f5d
+  port: 27202
+  server: 58.254.186.231
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 14|台湾|@ripaojiedian
+  network: tcp
+  port: '14100'
+  server: dxv4.pai50288.uk
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
