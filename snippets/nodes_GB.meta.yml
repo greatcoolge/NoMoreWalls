@@ -1,10 +1,10 @@
 proxies:
 - client-fingerprint: chrome
   mode: ''
-  name: 0|🇬🇧1 |  5.1MB/s
+  name: 0|🇬🇧1 |  5.7MB/s
   network: ws
   port: 443
-  server: 188.42.88.45
+  server: 45.142.120.97
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -16,22 +16,46 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  5.8MB/s
+  name: 0|🇬🇧2 |  5.5MB/s
   network: tcp
-  port: 35311
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧3 |  5.0MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧4 |  1.1MB/s
+  network: tcp
+  port: 47151
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 0|🇬🇧3 |  5.6MB/s
+  name: 0|🇬🇧5 |  5.4MB/s
   network: ws
   port: 443
-  server: 45.8.211.230
+  server: 45.131.6.160
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -41,36 +65,12 @@ proxies:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧4 |  1.1MB/s
-  network: tcp
-  port: 50123
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: 84.32.41.200
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧5 |  1.9MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
+- flow: ''
   mode: ''
-  name: 0|🇬🇧6 |  4.6MB/s
+  name: 0|🇬🇧6 |  3.9MB/s
   network: ws
   port: 443
-  server: 45.142.120.97
+  server: 45.8.211.230
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -87,8 +87,49 @@ proxies:
   port: 49699
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: vip.jddns0202.top
   servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧8 |  1.8MB/s
+  network: tcp
+  port: 50123
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: 84.32.41.200
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  mode: ''
+  name: 0|🇬🇧9 |  2.8MB/s
+  network: grpc
+  port: 2030
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 74.220.28.225
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 507c8a2f-ca04-4329-bae0-ac783b6fa1cb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧10 |  5.4MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
