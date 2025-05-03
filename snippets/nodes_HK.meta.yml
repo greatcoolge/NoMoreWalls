@@ -78,12 +78,13 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - delay: 1408
-  name: 0|🇭🇰8 |  1.1MB/s
+  name: 0,15|BD_speednode_0001
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: hkre1-cdn-route.couldflare-cdn.com
   tls: true
   type: http
+  udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - name: 0|🇭🇰9 |  6.2MB/s
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
@@ -172,17 +173,15 @@ proxies:
   ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,15|CN_speednode_0004
+  name: 0|🇭🇰16 |  2.0MB/s
   network: tcp
   port: 45883
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: shenyang001.dynu.net
   servername: www.nvidia.com
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -214,13 +213,14 @@ proxies:
   uuid: e3217bc2-061f-11f0-90e2-f23c913c8d2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇭🇰20 |  6.3MB/s
+  name: 0,15|HK_speednode_0071
   network: tcp
   port: 20550
   reality-opts:
     public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
   server: hkt-ty-line-1.sudatech.store
   servername: www.paypal.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -425,3 +425,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|HK_speednode_0074
+  network: ws
+  port: 2096
+  server: 154.211.8.47
+  servername: fei.634676.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+    path: /?ed=2560
