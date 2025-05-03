@@ -1,4 +1,4 @@
-# Update: 2025-05-03 05:19
+# Update: 2025-05-03 09:41
 allow-lan: false
 dns:
   enable: true
@@ -889,7 +889,7 @@ proxies:
   name: 13|tg频道:@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.179.140.142
+  server: 57.180.41.89
   tfo: false
   type: ss
 - name: 13|🇭🇰 香港|@ripaojiedian
@@ -915,7 +915,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 55649
+  port: 13540
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -926,16 +926,24 @@ proxies:
   server: 175.178.13.108
   tfo: false
   type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 13|🇭🇰 香港6|@ripaojiedian
-  port: 42375
-  server: 120.198.71.214
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  port: 59082
+  server: 120.232.153.40
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 13,14|香港6|@ripaojiedian
+  network: tcp
+  password: 799964a2-2a62-4b62-93a9-1f9ab4e87eb8
+  port: 27101
+  server: 58.254.186.222
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 13,14|香港7|@ripaojiedian
   network: tcp
   password: VMhGp5wEIyCDf90T
@@ -954,39 +962,84 @@ proxies:
   tls: false
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- name: 13,14|台湾2|@ripaojiedian
+  network: tcp
+  password: a35b44a9-d941-4c1d-96ac-7a9f6607edb7
+  port: 27201
+  server: 58.254.186.222
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - cipher: rc4-md5
   name: 13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505011468829-RVBML1Fkrz.download.microsoft.com
+    host: 202505021570819-FCRBaKydrI.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  password: 887306f3-af8c-472e-b6e0-e7dcf970a4f0
-  port: 44721
-  server: jsyd.piaomiaoxu.net
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 13|🇯🇵 日本2|@ripaojiedian
-  password: a0bf094b3357
+  password: 937f6b6168b6
   plugin: v2ray-plugin
   plugin-opts:
-    host: jp5v1.8vote.cn
+    host: wt8v1.kvote.cn
     mode: websocket
     mux: true
-    path: /wrzepkmejgru
+    path: /oqhygtklyhwi
     skip-cert-verify: false
     tls: true
   port: 443
-  server: 137.220.142.140
+  server: 103.137.62.194
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 13,14|日本3|@ripaojiedian
+  network: ws
+  port: '35246'
+  server: jp6.vip2.g2.moonbase.life
+  servername: web.xcjs.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- name: 13|🇯🇵 日本4|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 443
+  server: 18.183.158.211
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 13,14|日本6|@ripaojiedian
+  network: ws
+  port: '35216'
+  server: jp6.g2.moonbase.life
+  servername: web.xcjs.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
 - alterId: 2
   cipher: auto
   name: 13,14|新加坡|@ripaojiedian
@@ -1003,24 +1056,16 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇸🇬 新加坡3|@ripaojiedian
-  password: 21e251c3-139c-4b81-b352-3b60734029e9
-  port: 35501
-  server: gw.liangyuandianwan.com
+- alterId: 0
+  cipher: auto
+  name: 13|🇸🇬 新加坡2|@ripaojiedian
+  port: 11060
+  server: 43.156.102.65
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: rc4-md5
-  name: 13|🇺🇸 美国2|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202505011468829-RVBML1Fkrz.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 5cdd371e-cc4e-4ea2-91a8-c755f00f67a0
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸 美国|@ripaojiedian
@@ -1031,6 +1076,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505021570819-FCRBaKydrI.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - alterId: 2
   cipher: auto
   name: 13,14|美国3|@ripaojiedian
@@ -1051,21 +1107,21 @@ proxies:
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.202.0.189
+  server: 52.195.211.35
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.180.136.120
+  server: 13.114.102.184
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.186.29.154
+  server: 52.199.191.145
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -1086,12 +1142,12 @@ proxies:
     headers:
       Host: vt-bana2-cn-11.ghpgwqswodgzv.com
     path: '%2Fdl_media'
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 14|香港6|@ripaojiedian
+  name: 14|香港5|@ripaojiedian
   network: tcp
-  port: '42375'
-  server: 120.198.71.214
+  port: '59082'
+  server: 120.232.153.40
   servername: ''
   tls: false
   type: vmess
@@ -1116,6 +1172,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+- name: 14|日本4|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 443
+  server: 18.183.158.211
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡2|@ripaojiedian
+  network: tcp
+  port: '11060'
+  server: 43.156.102.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5cdd371e-cc4e-4ea2-91a8-c755f00f67a0
 - alterId: 0
   cipher: auto
   name: 14|美国|@ripaojiedian
@@ -1137,108 +1214,114 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 0|🇺🇸83 |  5.7MB/s
-  - 0|🇭🇰25 |  2.3MB/s
-  - 0|🇺🇸115 |  3.4MB/s
-  - 0|🌀2- |  1.5MB/s
-  - 0|🇺🇸73 |  2.7MB/s
-  - 0|🇺🇸114 |  1.2MB/s
-  - 0|🇺🇸45 |  1.4MB/s
-  - 0|🇺🇸16 |  1.6MB/s
-  - 14|台湾|@ripaojiedian
   - 0|🇺🇸64 |  5.4MB/s
-  - 0|🇺🇸30 |  3.6MB/s
-  - 0|🇭🇰1 |  1.9MB/s
-  - 0|🇯🇵19 |  5.9MB/s
-  - 0|🇭🇰18 |  1.5MB/s
-  - 0|🇰🇷4 |  4.9MB/s
-  - 0|🇺🇸79 |  2.2MB/s
-  - 0|🇺🇸26 |  4.8MB/s
-  - 0|🇺🇸3 |  1.8MB/s
-  - 13|🇺🇸 美国|@ripaojiedian
-  - 0|🇭🇰15 |  2.8MB/s
-  - 0|🇷🇺3 |  4.3MB/s
-  - 0|🇺🇸15 |  2.7MB/s
-  - 0|🇺🇸106 |  4.1MB/s
-  - 0|🇭🇰9 |  6.2MB/s
-  - 14|美国|@ripaojiedian
-  - 0|🇺🇸101 |  3.0MB/s
-  - 0|🌀12-TH |  4.3MB/s
-  - 0|🇰🇷9 |  1.5MB/s
-  - 0|🇯🇵11 |  2.1MB/s
-  - 0|🇺🇸11 |  2.2MB/s
-  - 0|🇺🇸99 |  2.7MB/s
-  - 0|🇺🇸37 |  1.6MB/s
-  - 13|🇸🇬 新加坡3|@ripaojiedian
-  - 0|🇫🇷7 |  3.1MB/s
-  - 0|🇺🇸66 |  1.7MB/s
-  - 0|🇺🇸105 |  5.9MB/s
-  - 0|🇺🇸72 |  2.4MB/s
-  - 0|🇰🇷11 |  2.0MB/s
-  - 0|🇺🇸60 |  1.7MB/s
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 0|🇫🇷9 |  2.2MB/s
-  - 13|🇸🇬 狮城特殊|@ripaojiedian
-  - 13|🇯🇵 日本2|@ripaojiedian
-  - 13|🇯🇵 日本3|@ripaojiedian
-  - 0|🇺🇸88 |  2.8MB/s
-  - 13|tg频道:@ripaojiedian
-  - 0|🇯🇵8 |  2.3MB/s
-  - 13|🇯🇵 日本|@ripaojiedian
-  - 0|🇯🇵18 |  2.6MB/s
-  - 0|🇭🇰14 |  2.7MB/s
   - 0|🇰🇷5 |  2.9MB/s
-  - 0|🇹🇼2 |  5.1MB/s
-  - 0|🇺🇸69 |  3.4MB/s
   - 13,14|香港7|@ripaojiedian
-  - 13,14|美国3|@ripaojiedian
-  - 0|🇯🇵32 |  3.4MB/s
-  - 0|🇸🇬2 |  2.7MB/s
-  - 13|🇺🇸 美国2|@ripaojiedian
   - 13|🇰🇷 韩国特殊|@ripaojiedian
-  - 0|🇯🇵1 |  2.3MB/s
-  - 0,13,14|香港4|@ripaojiedian
-  - 0|🇭🇰30 |  1.3MB/s
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 13|🇻🇳 越南|@ripaojiedian
-  - 0|🌀6-VN |  1.7MB/s
-  - 0|🇫🇷8 |  2.5MB/s
-  - 0|🇰🇷2 |  1.7MB/s
-  - 0|🇯🇵5 |  2.8MB/s
-  - 0|🇺🇸31 |  5.3MB/s
-  - 0|🇯🇵28 |  1.1MB/s
-  - 0|🇺🇸94 |  4.1MB/s
-  - 0|🇺🇸47 |  4.8MB/s
-  - 0|🇺🇸81 |  2.6MB/s
-  - 0|🇭🇰19 |  3.9MB/s
-  - 0|🇺🇸55 |  2.9MB/s
-  - 0|🇺🇸109 |  2.9MB/s
-  - 0|🇫🇷3 |  1.8MB/s
-  - 13,14|新加坡|@ripaojiedian
-  - 0|🇯🇵20 |  3.3MB/s
-  - 0|🇺🇸87 |  1.9MB/s
-  - 0|🇺🇸9 |  2.9MB/s
-  - 0|🇺🇸113 |  3.8MB/s
-  - 13|🇹🇼 台湾|@ripaojiedian
-  - 0|🇭🇰23 |  4.6MB/s
-  - 0|🇺🇸85 |  3.3MB/s
-  - 0|🇺🇸63 |  4.9MB/s
-  - 14|香港6|@ripaojiedian
-  - 0|🇰🇷1 |  4.5MB/s
-  - 0|🇺🇸32 |  3.8MB/s
-  - 13|🇭🇰 香港|@ripaojiedian
-  - 14|日本5|@ripaojiedian
-  - 0|🌀4-CY |  3.1MB/s
   - 0|🇯🇵6 |  2.1MB/s
-  - 0|🇯🇵10 |  2.6MB/s
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 0|🇺🇸7 |  3.3MB/s
-  - 0|🇺🇸110 |  3.4MB/s
-  - 14|香港|@ripaojiedian
-  - 0|🇰🇷6 |  4.4MB/s
+  - 13|🇯🇵 日本特殊|@ripaojiedian
+  - 0|🇯🇵5 |  2.8MB/s
+  - 0|🇺🇸47 |  4.8MB/s
+  - 13|🇯🇵 日本4|@ripaojiedian
+  - 14|美国|@ripaojiedian
+  - 0|🇯🇵11 |  2.1MB/s
+  - 13,14|台湾2|@ripaojiedian
+  - 14|台湾|@ripaojiedian
+  - 0|🇭🇰9 |  6.2MB/s
+  - 0|🇸🇬2 |  2.7MB/s
+  - 0|🇯🇵1 |  2.3MB/s
+  - 0|🇺🇸55 |  2.9MB/s
+  - 0|🇺🇸101 |  3.0MB/s
+  - 0|🇺🇸32 |  3.8MB/s
+  - 0|🇯🇵19 |  5.9MB/s
+  - 0|🇺🇸88 |  2.8MB/s
+  - 0|🇷🇺3 |  4.3MB/s
+  - 0|🇺🇸9 |  2.9MB/s
+  - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - 0|🌀4-CY |  3.1MB/s
+  - 0|🇰🇷2 |  1.7MB/s
+  - 0,13,14|香港4|@ripaojiedian
+  - 13|tg频道:@ripaojiedian
+  - 0|🇭🇰19 |  3.9MB/s
+  - 0|🇯🇵20 |  3.3MB/s
+  - 0|🇺🇸63 |  4.9MB/s
+  - 0|🇹🇼2 |  5.1MB/s
+  - 13,14|香港6|@ripaojiedian
+  - 0|🇰🇷9 |  1.5MB/s
+  - 0|🇯🇵32 |  3.4MB/s
+  - 0|🇫🇷3 |  1.8MB/s
+  - 0|🇺🇸31 |  5.3MB/s
+  - 0|🇰🇷11 |  2.0MB/s
+  - 0|🇺🇸11 |  2.2MB/s
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 0|🇺🇸87 |  1.9MB/s
+  - 0|🇺🇸45 |  1.4MB/s
+  - 0|🇺🇸83 |  5.7MB/s
+  - 0|🇺🇸60 |  1.7MB/s
+  - 0|🇯🇵18 |  2.6MB/s
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 0|🇺🇸15 |  2.7MB/s
+  - 0|🇭🇰15 |  2.8MB/s
+  - 0|🇺🇸99 |  2.7MB/s
+  - 14|日本5|@ripaojiedian
   - 13|🇭🇰 香港2|@ripaojiedian
+  - 0|🌀12-TH |  4.3MB/s
+  - 0|🇭🇰1 |  1.9MB/s
+  - 13|🇺🇸 美国2|@ripaojiedian
+  - 0|🇯🇵8 |  2.3MB/s
+  - 0|🇰🇷6 |  4.4MB/s
+  - 13|🇻🇳 越南|@ripaojiedian
+  - 13,14|新加坡|@ripaojiedian
+  - 0|🇺🇸7 |  3.3MB/s
+  - 13|🇹🇼 台湾|@ripaojiedian
+  - 0|🇺🇸37 |  1.6MB/s
+  - 14|新加坡2|@ripaojiedian
+  - 14|日本4|@ripaojiedian
+  - 0|🇺🇸66 |  1.7MB/s
+  - 0|🇺🇸3 |  1.8MB/s
+  - 0|🇫🇷8 |  2.5MB/s
+  - 0|🇺🇸30 |  3.6MB/s
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 0|🇺🇸94 |  4.1MB/s
+  - 0|🇰🇷4 |  4.9MB/s
+  - 0|🇺🇸72 |  2.4MB/s
+  - 13,14|美国3|@ripaojiedian
+  - 0|🇭🇰18 |  1.5MB/s
+  - 0|🇺🇸69 |  3.4MB/s
+  - 13|🇭🇰 香港|@ripaojiedian
+  - 0|🇭🇰23 |  4.6MB/s
+  - 0|🇺🇸114 |  1.2MB/s
+  - 0|🇺🇸16 |  1.6MB/s
+  - 0|🇺🇸110 |  3.4MB/s
+  - 0|🇺🇸113 |  3.8MB/s
+  - 0|🇫🇷7 |  3.1MB/s
+  - 0|🇺🇸73 |  2.7MB/s
+  - 14|香港|@ripaojiedian
+  - 13|🇯🇵 日本|@ripaojiedian
+  - 0|🇭🇰14 |  2.7MB/s
+  - 0|🌀6-VN |  1.7MB/s
   - 0|🇰🇷8 |  5.8MB/s
+  - 0|🌀2- |  1.5MB/s
+  - 13|🇸🇬 新加坡2|@ripaojiedian
+  - 0|🇯🇵10 |  2.6MB/s
+  - 0|🇺🇸85 |  3.3MB/s
+  - 0|🇺🇸109 |  2.9MB/s
+  - 14|香港5|@ripaojiedian
+  - 0|🇭🇰30 |  1.3MB/s
+  - 0|🇺🇸115 |  3.4MB/s
+  - 0|🇫🇷9 |  2.2MB/s
+  - 13,14|日本3|@ripaojiedian
+  - 0|🇺🇸26 |  4.8MB/s
+  - 0|🇺🇸79 |  2.2MB/s
+  - 0|🇯🇵28 |  1.1MB/s
+  - 0|🇺🇸81 |  2.6MB/s
+  - 13|🇯🇵 日本2|@ripaojiedian
   - 0|🇯🇵12 |  1.1MB/s
+  - 0|🇭🇰25 |  2.3MB/s
+  - 0|🇺🇸106 |  4.1MB/s
+  - 0|🇰🇷1 |  4.5MB/s
+  - 0|🇺🇸105 |  5.9MB/s
+  - 13,14|日本6|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1307,10 +1390,13 @@ proxy-groups:
   - 0|🇯🇵28 |  1.1MB/s
   - 0|🇯🇵32 |  3.4MB/s
   - 13|🇯🇵 日本|@ripaojiedian
-  - 13|🇯🇵 日本3|@ripaojiedian
   - 13|🇯🇵 日本2|@ripaojiedian
+  - 13,14|日本3|@ripaojiedian
+  - 13|🇯🇵 日本4|@ripaojiedian
+  - 13,14|日本6|@ripaojiedian
   - 13|🇯🇵 日本特殊|@ripaojiedian
   - 14|日本5|@ripaojiedian
+  - 14|日本4|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
@@ -1351,8 +1437,8 @@ proxy-groups:
   - 0|🇺🇸110 |  3.4MB/s
   - 0|🇺🇸113 |  3.8MB/s
   - 0|🇺🇸115 |  3.4MB/s
-  - 13|🇺🇸 美国2|@ripaojiedian
   - 13|🇺🇸 美国|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian
   - 13,14|美国3|@ripaojiedian
   - 14|美国|@ripaojiedian
   type: select
@@ -1375,15 +1461,17 @@ proxy-groups:
   - 13|🇭🇰 香港|@ripaojiedian
   - 13|🇭🇰 香港2|@ripaojiedian
   - 13|🇭🇰 香港3|@ripaojiedian
-  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 13,14|香港6|@ripaojiedian
   - 13,14|香港7|@ripaojiedian
   - 14|香港|@ripaojiedian
-  - 14|香港6|@ripaojiedian
+  - 14|香港5|@ripaojiedian
   type: select
 - name: ❔ 台湾
   proxies:
   - 0|🇹🇼2 |  5.1MB/s
   - 13|🇹🇼 台湾|@ripaojiedian
+  - 13,14|台湾2|@ripaojiedian
   - 14|台湾|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
@@ -1401,8 +1489,9 @@ proxy-groups:
   proxies:
   - 0|🇸🇬2 |  2.7MB/s
   - 13,14|新加坡|@ripaojiedian
-  - 13|🇸🇬 新加坡3|@ripaojiedian
+  - 13|🇸🇬 新加坡2|@ripaojiedian
   - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - 14|新加坡2|@ripaojiedian
   type: select
 - name: 🇬🇧 英国
   proxies:
