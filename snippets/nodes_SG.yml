@@ -25,21 +25,29 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 13,14|新加坡2|@ripaojiedian
-  network: tcp
-  password: 07300b55-b834-41d8-a13a-fc6c65ffdfdf
-  port: 27401
-  server: 125.94.45.119
+  network: ws
+  port: '35146'
+  server: sg6.vip2.g2.moonbase.life
+  servername: web.xcjs.info
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.114.211.183
+  server: 44.243.100.122
   tfo: false
   type: ss
 - name: 15|SG_speednode_0015
