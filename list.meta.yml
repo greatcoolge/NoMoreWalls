@@ -1,4 +1,4 @@
-# Update: 2025-05-08 23:23
+# Update: 2025-05-09 02:29
 allow-lan: false
 dns:
   enable: true
@@ -18,24 +18,6 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- name: '7,11|@vpnv2rayNGv #3'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 443
-  server: 66.23.198.32
-  skip-cert-verify: true
-  sni: www.eliv2ray.net
-  tls: false
-  type: hysteria2
-- name: '7,11|@vpnv2rayNGv #4'
-  password: a278eadd-c35c-403f-a286-7767a74307c1
-  port: 8080
-  server: 45.140.169.231
-  skip-cert-verify: true
-  sni: www.eliv2ray.net
-  tls: false
-  type: hysteria2
 - name: 8|@V2rayNG3
   password: '123456'
   port: 443
@@ -188,14 +170,22 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '8|@vpnv2rayNGv #2'
+- name: 11|@vpnv2rayNGv
   obfs: salamander
-  obfs-password: V2R@yM@teRS1Q2VEe
-  password: rZzZr2Za3B
+  obfs-password: KevinZakarian
+  password: KevinZakarian
   port: 443
-  server: 82.117.87.183
+  server: 66.23.198.32
   skip-cert-verify: true
-  sni: ns.cloudflare.com
+  sni: www.eliv2ray.net
+  tls: false
+  type: hysteria2
+- name: '11|@vpnv2rayNGv #1'
+  password: a278eadd-c35c-403f-a286-7767a74307c1
+  port: 8080
+  server: 45.140.169.231
+  skip-cert-verify: true
+  sni: www.eliv2ray.net
   tls: false
   type: hysteria2
 - name: 11|新加坡
@@ -819,79 +809,78 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - '8|@V2rayNG3 #3'
-  - 8|ZOHAL-SVERVER-1
-  - 8|Mci-@V2ray_Raha-6
-  - 12|🇭🇰 香港2|@ripaojiedian
-  - 12|🇸🇬 狮城特殊|@ripaojiedian
-  - '8|@V2rayNG3 #7'
-  - 13|香港|@ripaojiedian
-  - 14|US_speednode_0010
-  - 8|Mci-@V2ray_Raha-4
+  - '8|@V2rayNG3 #9'
   - 14|US_speednode_0013
-  - 14|US_speednode_0052
-  - '7,11|@vpnv2rayNGv #3'
-  - 13|香港5|@ripaojiedian
-  - 8|@V2rayNG3
-  - 8|Mci-@V2ray_Raha-8
-  - 11|@ToYoTA_PRoXY
-  - 12,13|美国4|@ripaojiedian
-  - '8|@V2rayNG3 #1'
-  - 12,13|新加坡|@ripaojiedian
-  - 14|US_speednode_0014
-  - 12|🇺🇸 美国2|@ripaojiedian
-  - 13|日本3|@ripaojiedian
-  - 14|US_speednode_0058
-  - '8|@vpnv2rayNGv #2'
-  - 14|BR_speednode_0001
-  - 14|US_speednode_0042
-  - '8|@V2rayNG3 #8'
-  - 14|US_speednode_0011
-  - 14|US_speednode_0024
-  - 13|日本4|@ripaojiedian
-  - 14|US_speednode_0060
-  - 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 12|🇭🇰 香港|@ripaojiedian
-  - 12|🇯🇵 日本3|@ripaojiedian
-  - 12,13|美国3|@ripaojiedian
-  - 8|Mci-@V2ray_Raha-2
-  - 8|@ا+ا
-  - 12|🇯🇵 日本特殊|@ripaojiedian
+  - 12,13|美国|@ripaojiedian
+  - 13|香港|@ripaojiedian
+  - '8|@V2rayNG3 #6'
   - 14|US_speednode_0016
   - 14|EE_speednode_0005
-  - 14|US_speednode_0059
-  - '8|@V2rayNG3 #6'
-  - 12|🇭🇰 香港3|@ripaojiedian
-  - 12|🇻🇳 越南|@ripaojiedian
-  - 12,13|新加坡3|@ripaojiedian
-  - 12,13|香港4|@ripaojiedian
   - 14|US_speednode_0048
-  - 13|日本5|@ripaojiedian
-  - 12|🇭🇰 香港6|@ripaojiedian
-  - 13|香港6|@ripaojiedian
-  - '8|@V2rayNG3 #5'
-  - 12|🇯🇵 日本4|@ripaojiedian
-  - 13|香港3|@ripaojiedian
-  - 14|US_speednode_0008
-  - 14|US_speednode_0047
-  - '7,11|@vpnv2rayNGv #4'
-  - 8|@meli_proxyy
-  - 11|新加坡
-  - '8|@V2rayNG3 #4'
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 12|🇭🇰 香港8|@ripaojiedian
-  - '8|@V2rayNG3 #9'
-  - 12,13|新加坡2|@ripaojiedian
-  - 12,13|美国|@ripaojiedian
-  - 14|CN_speednode_0002
-  - 14|KR_speednode_0007
-  - 12,13|香港7|@ripaojiedian
-  - '8|@V2rayNG3 #2'
+  - 13|日本4|@ripaojiedian
   - 12|🇭🇰 香港5|@ripaojiedian
+  - 14|BR_speednode_0001
+  - 13|日本5|@ripaojiedian
+  - '8|@V2rayNG3 #2'
+  - 8|Mci-@V2ray_Raha-6
+  - 11|新加坡
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 11|@ToYoTA_PRoXY
+  - 12|🇭🇰 香港|@ripaojiedian
+  - '8|@V2rayNG3 #3'
+  - 12|🇭🇰 香港8|@ripaojiedian
+  - 12|🇰🇷 韩国特殊|@ripaojiedian
+  - '8|@V2rayNG3 #8'
+  - 12|🇭🇰 香港6|@ripaojiedian
   - 12|tg频道:@ripaojiedian
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 14|US_speednode_0061
+  - 12|🇭🇰 香港3|@ripaojiedian
   - 14|US_speednode_0035
+  - 12,13|新加坡3|@ripaojiedian
+  - 14|US_speednode_0060
+  - 8|ZOHAL-SVERVER-1
+  - 12|🇯🇵 日本4|@ripaojiedian
+  - 12,13|美国3|@ripaojiedian
+  - 8|Mci-@V2ray_Raha-4
+  - 14|US_speednode_0047
+  - 12,13|香港4|@ripaojiedian
+  - 14|US_speednode_0052
+  - 13|香港6|@ripaojiedian
+  - 12,13|新加坡2|@ripaojiedian
+  - 14|KR_speednode_0007
+  - '8|@V2rayNG3 #1'
+  - 8|@meli_proxyy
+  - 14|US_speednode_0014
+  - 8|@ا+ا
+  - 12,13|新加坡|@ripaojiedian
+  - 14|US_speednode_0061
+  - 12|🇻🇳 越南|@ripaojiedian
+  - '11|@vpnv2rayNGv #1'
+  - 8|@V2rayNG3
+  - 12|🇯🇵 日本3|@ripaojiedian
+  - 13|香港3|@ripaojiedian
+  - '8|@V2rayNG3 #7'
+  - 12,13|香港7|@ripaojiedian
+  - 14|CN_speednode_0002
+  - 14|US_speednode_0059
+  - '8|@V2rayNG3 #5'
+  - 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 12|🇭🇰 香港2|@ripaojiedian
+  - 12,13|美国4|@ripaojiedian
+  - 14|US_speednode_0010
+  - 14|US_speednode_0058
+  - 13|日本3|@ripaojiedian
+  - 14|US_speednode_0042
+  - 12|🇯🇵 日本2|@ripaojiedian
+  - 13|香港5|@ripaojiedian
+  - '8|@V2rayNG3 #4'
+  - 11|@vpnv2rayNGv
+  - 12|🇯🇵 日本|@ripaojiedian
+  - 14|US_speednode_0024
+  - 8|Mci-@V2ray_Raha-8
+  - 12|🇯🇵 日本特殊|@ripaojiedian
+  - 14|US_speednode_0011
+  - 14|US_speednode_0008
+  - 8|Mci-@V2ray_Raha-2
   type: fallback
   url: https://www.google.com/
 - interval: 300
