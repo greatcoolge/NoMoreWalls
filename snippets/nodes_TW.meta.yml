@@ -6,12 +6,12 @@ proxies:
   down: 1000 Mbps
   name: 0,14|US_speednode_0058
   network: ws
-  password: 67db0c34-ae7a-4369-a6b5-554c99d8e5c9
+  password: bpb-trojan
   port: 443
   server: 188.114.96.4
   servername: MyphOTOgRApicpIcTUre.iR
   skip-cert-verify: false
-  sni: M4rrT.999157.XYz
+  sni: apple.com
   tls: true
   type: vless
   udp: true
@@ -22,20 +22,6 @@ proxies:
       Host: MyphOTOgRApicpIcTUre.iR
     path: /I4OZ4PupsElhvJ7c
   xudp: true
-- name: 0|🇹🇼5 |  2.8MB/s|0%|Disney|Opena...
-  network: ws
-  port: '8080'
-  server: 104.18.14.19
-  type: vless
-  udp: true
-  uuid: 41956a47-8432-4a3f-b70d-a54fc7efd6b8
-  ws-opts:
-    headers:
-      Host: 0223.jq2ter91.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /Telegram@V2ray_Alpha
-  xudp: true
 - client-fingerprint: chrome
   name: 0,12|🇹🇼 台湾|@ripaojiedian
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
@@ -45,13 +31,19 @@ proxies:
   sni: 45.32.28.232
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 0|🇹🇼9 |  2.4MB/s|Netflix|Openai|...
-  password: cacb4d4fa26f4eed25e4d17a6370083c
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0|🇹🇼6 |  1.5MB/s|25%|Netflix|Dis...
+  password: 937f6b6168b6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wt8v1.kvote.cn
+    mode: websocket
+    mux: true
+    path: /oqhygtklyhwi
+    skip-cert-verify: false
+    tls: true
   port: 443
-  server: tw01.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
+  server: 103.137.62.194
+  tfo: false
+  type: ss
