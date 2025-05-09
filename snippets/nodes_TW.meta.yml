@@ -1,49 +1,54 @@
 proxies:
-- alpn:
-  - http/1.1
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 1000 Mbps
-  name: 0,14|US_speednode_0058
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 188.114.96.4
-  servername: MyphOTOgRApicpIcTUre.iR
-  skip-cert-verify: false
-  sni: apple.com
-  tls: true
-  type: vless
-  udp: true
-  up: 1000 Mbps
-  uuid: 4d91916f-a7fd-419b-8b90-640bb8d4b3f2
-  ws-opts:
-    headers:
-      Host: MyphOTOgRApicpIcTUre.iR
-    path: /I4OZ4PupsElhvJ7c
-  xudp: true
 - client-fingerprint: chrome
-  name: 0,12|🇹🇼 台湾|@ripaojiedian
+  name: 0,12,14|CN_speednode_0004
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a10.taipeicitygovernment.kyiv.ua
+  skip-cert-verify: true
+  sni: 45.32.28.232
+  type: trojan
+  udp: true
+- name: 0|🇹🇼5 |  1.1MB/s|0%|Netflix|Disn...
+  network: ws
+  port: 80
+  server: 152.32.226.221
+  servername: edccj.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 0|🇹🇼6 |  1.1MB/s|0%|Disney
+  network: ws
+  port: 443
+  server: pranab.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 0,14|CN_speednode_0006
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a02.taipeicitygovernment.chernovtsy.ua
   skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0|🇹🇼6 |  1.5MB/s|25%|Netflix|Dis...
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 103.137.62.194
-  tfo: false
-  type: ss
+- name: 0,14|CN_speednode_0007
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  type: trojan
+  udp: true
