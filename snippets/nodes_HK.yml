@@ -1,24 +1,17 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|🇭🇰1 |  1.0MB/s|16%
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11501'
-  server: cdn-p1-hk.weibo-dns.com
-  type: ss
-  udp: true
-- name: 0|🇭🇰2 |  6.8MB/s|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 0|🇭🇰3 |  6.1MB/s
+- name: 0|🇭🇰1 |  1.2MB/s|0%|Netflix|Disn...
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: dozo01.flztjc.top
   skip-cert-verify: true
   sni: dozo01.flztjc.top
+  type: trojan
+  udp: true
+- name: 0|🇭🇰2 |  1.3MB/s|0%|Disney
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
+  skip-cert-verify: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
