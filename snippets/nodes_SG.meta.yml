@@ -1,28 +1,29 @@
 proxies:
-- name: 0|🇸🇬1 |  2.3MB/s|Openai
+- name: 0|🇸🇬1 |  5.6MB/s|Youtube|Openai
   network: ws
   port: '80'
-  server: 141.193.213.20
+  server: 141.193.213.21
   type: vless
   udp: true
   uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
   ws-opts:
     headers:
       Host: lk.sahanwickramasinghe.shop
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/69.0.3497.100 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
     path: /
   xudp: true
-- client-fingerprint: chrome
-  name: 0|🇸🇬2 |  2.8MB/s|Youtube|Openai
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8444
-  server: singapore02.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
+- cipher: aes-256-cfb
+  name: 0|🇸🇬2 |  5.8MB/s|54%|Youtube|Ope...
+  obfs: tls1.2_ticket_auth
+  obfs-param: sg2-cdn-route.couldflare-cdn.com
+  password: uiACqrIr
+  port: 56138
+  protocol: origin
+  protocol-param: ''
+  server: cm2.xcone.xyz
+  type: ssr
   udp: true
-  username: dmpyoary@mayorlogistic.com
 - name: 11|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
