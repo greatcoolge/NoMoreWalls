@@ -1,17 +1,25 @@
 proxies:
-- auth: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  name: 0|🇯🇵1 |  1.2MB/s|0%|Youtube|Gemi...
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  port: 13301
-  server: baipiaoyun-japan.baipiaoyun.site
-  skip-cert-verify: true
-  sni: s0.awsstatic.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
-  name: 0|🇯🇵2 |  4.8MB/s|8%|Disney|Youtu...
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 0|🇯🇵1 |  5.4MB/s|20%|Disney|Yout...
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: gkeUZppVQzutjGsRcsGMW8OrPHboJ3qRFpIvj8lcUj4
+    short-id: c174618d
+  server: 3.115.82.155
+  servername: tv.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d62993f2-f2b7-410d-b56d-2cef2e971038
+  xudp: true
+- client-fingerprint: chrome
+  name: 0|🇯🇵2 |  1.5MB/s|Youtube|Openai
   network: ws
   port: '11223'
   server: 218.38.33.77
@@ -28,42 +36,12 @@ proxies:
     path: fp=chrome
   xudp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 0|🇯🇵3 |  6.2MB/s|20%|Disney|Yout...
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: gkeUZppVQzutjGsRcsGMW8OrPHboJ3qRFpIvj8lcUj4
-    short-id: c174618d
-  server: 3.115.82.155
-  servername: tv.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d62993f2-f2b7-410d-b56d-2cef2e971038
-  xudp: true
-- client-fingerprint: chrome
-  name: 0|🇯🇵4 |  1.7MB/s|0%|Netflix|Disn...
+  name: 0|🇯🇵3 |  2.6MB/s|13%|Youtube|Ope...
   password: cacb4d4fa26f4eed25e4d17a6370083c
   port: 443
   server: tky03.sqx001.com
   skip-cert-verify: true
   sni: tky03.sqx001.com
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
-- client-fingerprint: chrome
-  name: 0|🇯🇵5 |  1.6MB/s|0%|Disney|Opena...
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: tky02.sqx001.com
-  skip-cert-verify: true
-  sni: tky02.sqx001.com
   tls: true
   type: http
   udp: true
