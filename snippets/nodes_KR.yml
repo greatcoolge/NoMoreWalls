@@ -1,27 +1,7 @@
 proxies:
-- cipher: aes-256-cfb
-  delay: 407
-  name: 0|🇰🇷1 |  1.8MB/s|34%|Youtube|Ope...
-  password: yijian0503
-  port: 443
-  server: 3.38.250.157
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷3 |  3.0MB/s|44%|Netflix|Ope...
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷4 |  4.2MB/s|77%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: '11389'
-  server: 221.150.109.89
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇰🇷5 |  4.6MB/s|62%|Youtube|Ope...
+  name: 0|🇰🇷1 |  1.7MB/s|62%|Youtube|Ope...
   network: ws
   port: 2096
   server: dv4.789900.xyz
@@ -37,31 +17,20 @@ proxies:
     path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
   xudp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇰🇷8 |  4.3MB/s|44%|Netflix|Ope...
+  name: 0|🇰🇷2 |  2.9MB/s|44%|Netflix|Dis...
   password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇰🇷9 |  1.7MB/s|45%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  tfo: true
+  port: '4857'
+  server: 125.141.26.12
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  delay: 2199
-  name: 0|🇰🇷10 |  5.6MB/s|63%|Youtube|Op...
+  name: 0|🇰🇷4 |  4.8MB/s|63%|Youtube|Ope...
   network: ws
   port: 2087
   server: lv4.789900.xyz
   servername: lv4.789900.xyz
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -70,19 +39,48 @@ proxies:
     headers:
       Host: lv4.789900.xyz
     path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  delay: 1269
-  h2-opts: {}
-  http-opts: {}
-  name: 0|🇰🇷11 |  4.1MB/s|49%|Youtube|Op...
-  network: tcp
-  port: 17232
-  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  xudp: true
+- cipher: aes-256-cfb
+  name: 0|🇰🇷5 |  6.2MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: p222.panda001.net
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇰🇷6 |  2.3MB/s|77%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '11389'
+  server: 221.150.109.89
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇰🇷7 |  5.8MB/s|77%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇰🇷8 |  4.0MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 4857
+  server: p227.panda004.net
+  tfo: true
+  type: ss
+  udp: true
+- delay: 1281
+  name: 0|🇰🇷11 |  5.8MB/s|Disney
+  network: ws
+  password: slch2024
+  port: 443
+  server: usa.visa.com
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国|@ripaojiedian
@@ -96,6 +94,6 @@ proxies:
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 13.212.202.199
+  server: 52.197.184.25
   tfo: false
   type: ss
