@@ -1,11 +1,16 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|🇸🇬1 |  6.3MB/s|6%|Disney|Youtu...
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: '21114'
-  server: okanc.node-is.green
-  type: ss
+- alterId: '64'
+  cipher: auto
+  name: 0|🇸🇬2 |  3.2MB/s|0%|Netflix|Disn...
+  network: tcp
+  port: '46121'
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  xudp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -28,7 +33,7 @@ proxies:
   name: 12|🇸🇬 狮城特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 3.35.231.158
+  server: 3.112.193.115
   tfo: false
   type: ss
 - name: 14|SG_speednode_0024

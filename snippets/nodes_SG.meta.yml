@@ -1,11 +1,54 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 0|🇸🇬1 |  6.3MB/s|6%|Disney|Youtu...
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: '21114'
-  server: okanc.node-is.green
-  type: ss
+- name: 0|🇸🇬1 |  5.4MB/s|Youtube|Openai
+  network: ws
+  port: '80'
+  server: 141.193.213.21
+  type: vless
   udp: true
+  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+- alterId: '64'
+  cipher: auto
+  name: 0|🇸🇬2 |  3.2MB/s|0%|Netflix|Disn...
+  network: tcp
+  port: '46121'
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  xudp: true
+- name: 0|🇸🇬3 |  5.6MB/s|Youtube|Openai
+  network: ws
+  port: '80'
+  server: 141.193.213.20
+  type: vless
+  udp: true
+  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: 0|🇸🇬4 |  2.2MB/s|57%|Youtube|Ope...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 8444
+  server: singapore02.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
 - name: 11|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
@@ -36,7 +79,7 @@ proxies:
   name: 12|🇸🇬 狮城特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 3.35.231.158
+  server: 3.112.193.115
   tfo: false
   type: ss
 - name: 14|SG_speednode_0024
