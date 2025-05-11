@@ -1,18 +1,14 @@
 proxies:
-- name: 0|🇸🇬1 |  4.8MB/s|0%|Netflix|Disn...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
-- name: 0|🇸🇬2 |  3.1MB/s|0%|Netflix|Disn...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg02.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg02.trojanyyds.xyz
-  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 0|🇸🇬2 |  1.1MB/s|0%|Netflix|Open...
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome

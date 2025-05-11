@@ -1,4 +1,4 @@
-# Update: 2025-05-11 20:38
+# Update: 2025-05-11 23:19
 allow-lan: false
 dns:
   enable: true
@@ -18,60 +18,6 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸4 |  1.3MB/s|31%|Openai
-  network: ws
-  port: 22641
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸5 |  1.5MB/s|31%|Openai
-  network: ws
-  port: 22641
-  server: 52.80.232.93
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸6 |  1.8MB/s|31%|Openai
-  network: ws
-  port: 22641
-  server: 52.80.27.229
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- name: 0,14|CN_speednode_0026
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 0,14|TW_speednode_0074
   network: ws
   password: bpb-trojan
@@ -85,6 +31,13 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
+- name: 0,14|CN_speednode_0026
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - name: 0,14|RU_speednode_0061
   network: ws
   password: Aimer
@@ -98,436 +51,9 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 0|🇮🇹1 |  2.7MB/s|46%|Openai
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸12 |  1.8MB/s|Openai
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- ip-version: dual
-  name: 0|🇺🇸13 |  1.1MB/s|34%|Netflix
-  network: ws
-  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
-  port: 443
-  server: 104.21.112.1
-  sni: 7bhui.191262.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /wGgR8FyAGgRCKSiyxgvJgLl
-- ip-version: dual
-  name: 0|🇺🇸14 |  1.2MB/s|34%|Netflix
-  network: ws
-  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
-  port: 443
-  server: 104.21.96.1
-  sni: 7nnn.191262.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /wGgR8FyAGgRCKSiyxgvJgLl
-- cipher: aes-256-cfb
-  name: 0|🇰🇷3 |  5.3MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
-  type: ss
-- name: 0|🇸🇬1 |  4.8MB/s|0%|Netflix|Disn...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
-- cipher: rc4-md5
-  name: 0|🇩🇪3 |  2.2MB/s|100%|Youtube|Op...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🌀3-VN |  1.7MB/s|0%|Netflix|Op...
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.24
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷4 |  5.3MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰1 |  3.4MB/s
-  network: ws
-  port: 80
-  server: 97ec248c-sv2sg0-t1l34b-s6zq.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 97ec248c-sv2sg0-t1l34b-s6zq.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰2 |  1.7MB/s|16%
-  network: ws
-  port: 80
-  server: 2260072e-sv0xs0-swocza-1d3bw.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 2260072e-sv0xs0-swocza-1d3bw.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰3 |  2.2MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 63a845ef-sv4n40-svc6zc-tf26.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 63a845ef-sv4n40-svc6zc-tf26.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰4 |  2.0MB/s|Youtube
-  network: ws
-  port: 80
-  server: c857cef9-sv2sg0-swni7u-1r3y8.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0a7a2478-f4d6-11ee-9628-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: c857cef9-sv2sg0-swni7u-1r3y8.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰5 |  1.1MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
-    path: /
-- cipher: aes-256-gcm
-  name: 0|🇭🇰6 |  3.3MB/s|16%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11501
-  server: cdn-p1-hk.weibo-dns.com
-  type: ss
-- name: 0|🇸🇬2 |  3.1MB/s|0%|Netflix|Disn...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg02.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg02.trojanyyds.xyz
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰7 |  2.8MB/s|Youtube
-  network: ws
-  port: 80
-  server: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
-    path: /
-- name: 0|🇺🇸15 |  1.1MB/s|32%|Openai
-  network: ws
-  password: 1549e70f-dc57-45e3-ac7c-515f0161db72
-  port: 443
-  server: 104.21.7.147
-  skip-cert-verify: false
-  sni: 6667.HUAnGSHanG.dpdNs.orG
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 6667.HUAnGSHanG.dpdNs.orG
-    path: '%2FTomYJoQX0RSt1mktNrT'
-- name: 0|🇺🇸16 |  4.7MB/s|32%|Netflix|Op...
-  network: ws
-  password: a926af96-2cfe-4169-8107-6c5f0d74a938
-  port: 443
-  server: 104.21.112.1
-  skip-cert-verify: false
-  sni: zsde.7777128.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zsde.7777128.xyz
-    path: '%2F5NB3RVAWa3Uo1P5zFPkui'
-- name: 0|🇺🇸17 |  2.3MB/s|34%|Netflix|Op...
-  network: ws
-  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
-  port: 443
-  server: 104.21.80.1
-  skip-cert-verify: false
-  sni: 7bhui.191262.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 7bhui.191262.xyz
-    path: '%2FwGgR8FyAGgRCKSiyxgvJgLl'
-- name: 0|🌀4-SE |  5.5MB/s|20%|Openai
-  network: ws
-  password: s1G6gpTJG20X
-  port: 2053
-  server: tasnim.andishehnegariran.ir
-  skip-cert-verify: false
-  sni: tasnim.andishehnegariran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tasnim.andishehnegariran.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰8 |  1.3MB/s|16%
-  network: ws
-  port: 80
-  server: 92447038-sv2sg0-swos8d-1te2a.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 92447038-sv2sg0-swos8d-1te2a.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰9 |  4.5MB/s|Youtube
-  network: ws
-  port: 80
-  server: 06eb7c64-sv2sg0-svxfqo-1hfyu.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ab0147e4-e673-11ee-8058-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 06eb7c64-sv2sg0-svxfqo-1hfyu.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰10 |  2.8MB/s|16%
-  network: ws
-  port: 80
-  server: 9a175f99-sv4n40-svve10-e5yo.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8b6a0482-4fa2-11ea-bdcd-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 9a175f99-sv4n40-svve10-e5yo.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰11 |  3.1MB/s|Youtube|Openai
-  network: ws
-  port: 80
-  server: 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9b94a182-5a1b-11ee-b866-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰12 |  2.2MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 360de725-sv4n40-t2y63q-1jk6u.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 360de725-sv4n40-t2y63q-1jk6u.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰13 |  1.8MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: e7faf98f-sv2sg0-t802lu-1p9qc.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 37e9a0f8-8ade-11ee-b03a-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: e7faf98f-sv2sg0-t802lu-1p9qc.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰14 |  1.7MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 60ca4aee-sv4n40-t8x4vo-12ujz.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e5b57156-3c81-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 60ca4aee-sv4n40-t8x4vo-12ujz.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰15 |  2.3MB/s|Youtube
-  network: ws
-  port: 80
-  server: f0278492-sv2sg0-tcvree-129gb.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 88994e12-009f-11eb-8684-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: f0278492-sv2sg0-tcvree-129gb.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰16 |  1.1MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: e7f0dad3-sv0xs0-sv8lir-1su7j.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: e7f0dad3-sv0xs0-sv8lir-1su7j.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰17 |  2.6MB/s|Youtube|Openai
-  network: ws
-  port: 80
-  server: 5e392f9d-sv0xs0-svewl8-xu74.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 5e392f9d-sv0xs0-svewl8-xu74.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰18 |  1.7MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-  ws-opts:
-    headers:
-      Host: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰19 |  3.6MB/s|16%|Netflix
-  network: ws
-  port: 80
-  server: bd5709b4-sv0xs0-swni7u-1r3y8.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0a7a2478-f4d6-11ee-9628-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: bd5709b4-sv0xs0-swni7u-1r3y8.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰20 |  3.2MB/s
-  network: ws
-  port: 80
-  server: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4d0e01ce-2ae6-11ef-8433-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇫🇷1 |  2.3MB/s|100%|Openai
+  name: 0|🇫🇷3 |  2.5MB/s|100%|Openai
   network: ws
   port: 443
   server: 8.219.206.22
@@ -539,128 +65,119 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
-- name: 0|🇺🇸24 |  3.4MB/s|0%|Netflix|Dis...
-  network: ws
-  password: '0588'
-  port: '50000'
-  server: 175.203.30.93
-  skip-cert-verify: true
-  sni: 888.uskm.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2228.0 Safari/537.36
-    path: /?ed=2560
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰21 |  1.7MB/s|16%|Youtube|Op...
-  network: ws
-  port: 80
-  server: ea2d3cd3-sv0xs0-t9azkv-17xn0.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4faf123a-572a-11eb-8684-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰22 |  3.2MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 7cf3222f-sv4n40-sv8lir-1su7j.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰23 |  2.2MB/s|Youtube|Openai
-  network: ws
-  port: 80
-  server: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰24 |  1.2MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 1bcf533f-sv0xs0-sy8f4e-ukt4.hk3.p5pv.com
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰25 |  2.2MB/s|Youtube
-  network: ws
-  port: 80
-  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 0|🇺🇸31 |  3.2MB/s|34%|Netflix|Op...
+- ip-version: dual
+  name: 0|🇺🇸7 |  1.0MB/s|Netflix|Openai
   network: ws
   password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
   port: 443
-  server: 104.21.32.1
-  skip-cert-verify: false
-  sni: 7bhui.191262.xyz
+  server: 104.21.96.1
+  sni: 7nnn.191262.xyz
   type: trojan
+  udp: true
   ws-opts:
-    headers:
-      Host: 7bhui.191262.xyz
     path: /wGgR8FyAGgRCKSiyxgvJgLl
-- alterId: 2
+- delay: 1106
+  name: 0|🇺🇸39 |  1.3MB/s|Openai
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|🇰🇷3 |  1.4MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇰🇷4 |  3.5MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
+- alterId: 64
   cipher: auto
-  name: 0|🇭🇰26 |  2.9MB/s|Youtube
-  network: ws
-  port: 80
-  server: 33e3af20-sv0xs0-t83wtx-2rrb.hk3.p5pv.com
+  name: 0|🇸🇬2 |  1.1MB/s|0%|Netflix|Open...
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 0|🇺🇸42 |  2.6MB/s|47%|Openai|Gem...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
+  type: trojan
+- name: 0|🇺🇸43 |  1.1MB/s|0%|Netflix|Ope...
+  network: ws
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  port: 443
+  server: 172.67.135.37
+  sni: m9rrrfgh.459.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- name: 0|🇺🇸44 |  1.8MB/s|47%|Openai|Gem...
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: c6b50ea5-sw5og0-t1bnjq-1krtb.cu.plebai.net
+  type: trojan
+- name: 0|🌀5-SE |  5.4MB/s|20%|Openai
+  network: ws
+  password: poTB9j1n12Tq
+  port: 2053
+  server: 104.21.54.208
+  skip-cert-verify: false
+  sni: tasnim.andishehnegariran.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /🆔@M3HDIO1
+- alterId: 0
+  cipher: auto
+  name: 0|🇨🇦2 |  1.0MB/s|29%|Youtube|Ope...
+  network: ws
+  port: 2083
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 698d9a5b-59dc-4ea6-b404-cd9e967fc54c
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+      Host: CanaDa-138.blAzecAnAdA.SITe
+    path: /linkvkws
+- alterId: 0
+  cipher: auto
+  name: 0|🌀6-ID |  1.1MB/s|Youtube|Opena...
+  network: tcp
+  port: 17234
+  server: 1e69d086-sux8g0-t9eu8q-tlhh.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+  xudp: true
 - alterId: '0'
   cipher: auto
-  name: 0|🇺🇸75 |  5.8MB/s|56%|Openai|Gem...
+  name: 0|🌀10-ID |  1.6MB/s|41%|Youtube|...
+  network: tcp
+  port: '17234'
+  server: 2a668e37-surog0-sxm4ot-zn8y.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇨🇦3 |  5.8MB/s|29%|Youtube|Ope...
   network: ws
   port: 443
   server: cloudgetservice.mcloudservice.site
@@ -668,106 +185,11 @@ proxies:
   tls: true
   type: vmess
   udp: true
-  uuid: 81cfc74e-79f6-4187-9c11-58b6acdc0e83
+  uuid: b87cea1d-d14c-45c3-af40-7af5d3be88da
   ws-opts:
     headers:
-      Host: uSa-Vp-149.BLazECloudMain.Site
-    path: /linkvkws
-  xudp: true
-- cipher: aes-256-cfb
-  name: 0|🌀11-VN |  1.2MB/s|0%|Openai
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.151.57.123
-  type: ss
-  udp: true
-- delay: 1106
-  name: 0|🇺🇸106 |  3.3MB/s|Openai
-  password: RlzoEILU
-  port: 7815
-  server: 36.151.251.59
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰27 |  2.5MB/s|16%
-  network: ws
-  port: 80
-  server: 78da5850-sv2sg0-t0t0ee-1tave.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a930bf30-e465-11ef-bd0b-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰28 |  5.0MB/s|Youtube
-  network: ws
-  port: 80
-  server: 2bc8c2b4-sv0xs0-tcr97d-2b2n.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰29 |  3.5MB/s
-  network: ws
-  port: 80
-  server: 30451d6f-sv2sg0-t8ivpf-z65w.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰30 |  3.4MB/s|Youtube
-  network: ws
-  port: 80
-  server: aae81205-sva740-sw0nbj-1anhm.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰31 |  2.8MB/s
-  network: ws
-  port: 80
-  server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+      Host: CANADa-199.BLaZecANADA.sIte
+    path: /linkvkvws
   xudp: true
 - cipher: aes-256-cfb
   name: 12|tg频道:@ripaojiedian
@@ -1185,102 +607,62 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 0|🇭🇰9 |  4.5MB/s|Youtube
-  - 14|HK_speednode_0041
-  - 0|🇭🇰24 |  1.2MB/s|16%|Youtube
-  - 0|🇭🇰25 |  2.2MB/s|Youtube
-  - 0|🇺🇸16 |  4.7MB/s|32%|Netflix|Op...
-  - 0,14|RU_speednode_0061
-  - 14|KR_speednode_0046
-  - 0|🇭🇰10 |  2.8MB/s|16%
-  - 0|🇺🇸17 |  2.3MB/s|34%|Netflix|Op...
-  - 0|🇭🇰27 |  2.5MB/s|16%
-  - 0|🇫🇷1 |  2.3MB/s|100%|Openai
-  - 0|🇭🇰23 |  2.2MB/s|Youtube|Openai
+  - 0|🇰🇷4 |  3.5MB/s|44%|Netflix|Dis...
   - 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 0|🌀11-VN |  1.2MB/s|0%|Openai
-  - 12,13|日本4|@ripaojiedian
-  - 0|🇰🇷4 |  5.3MB/s|44%|Netflix|Dis...
-  - 0|🇰🇷3 |  5.3MB/s|44%|Netflix|Dis...
-  - 0|🇭🇰22 |  3.2MB/s|16%|Youtube
   - 14|DE_speednode_0029
+  - 12,13|美国|@ripaojiedian
+  - 0|🇺🇸7 |  1.0MB/s|Netflix|Openai
+  - 12,13|台湾|@ripaojiedian
+  - 12|🇭🇰 香港6|@ripaojiedian
+  - 0|🇸🇬2 |  1.1MB/s|0%|Netflix|Open...
+  - 12|🇻🇳 越南|@ripaojiedian
+  - 14|CN_speednode_0012
+  - 0,14|CN_speednode_0026
   - 12|🇺🇸 美国3|@ripaojiedian
-  - 0|🇺🇸24 |  3.4MB/s|0%|Netflix|Dis...
+  - 12|🇯🇵 日本特殊|@ripaojiedian
+  - 0|🇨🇦3 |  5.8MB/s|29%|Youtube|Ope...
+  - 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 0|🇰🇷3 |  1.4MB/s|44%|Netflix|Dis...
+  - 14|HK_speednode_0041
   - 14|KR_speednode_0045
   - 12,13|台湾2|@ripaojiedian
-  - 12|tg频道:@ripaojiedian
-  - 0|🇭🇰8 |  1.3MB/s|16%
-  - 0|🌀3-VN |  1.7MB/s|0%|Netflix|Op...
-  - 0|🇩🇪3 |  2.2MB/s|100%|Youtube|Op...
-  - 12,13|台湾|@ripaojiedian
-  - 0|🇺🇸15 |  1.1MB/s|32%|Openai
-  - 0|🇺🇸14 |  1.2MB/s|34%|Netflix
-  - 0,14|CN_speednode_0026
-  - 0|🇸🇬1 |  4.8MB/s|0%|Netflix|Disn...
-  - 0|🇭🇰1 |  3.4MB/s
-  - 0|🇭🇰21 |  1.7MB/s|16%|Youtube|Op...
-  - 0|🇺🇸13 |  1.1MB/s|34%|Netflix
-  - 0|🇭🇰29 |  3.5MB/s
-  - 0|🇭🇰20 |  3.2MB/s
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 12,13|美国|@ripaojiedian
-  - 0|🇺🇸5 |  1.5MB/s|31%|Openai
-  - 0|🇭🇰16 |  1.1MB/s|16%|Youtube
-  - 0|🇭🇰2 |  1.7MB/s|16%
-  - 0|🇭🇰13 |  1.8MB/s|16%|Youtube
-  - 12|🇭🇰 香港6|@ripaojiedian
-  - 14|CN_speednode_0012
-  - 12|🇸🇬 狮城特殊|@ripaojiedian
-  - 13|日本3|@ripaojiedian
-  - 0|🇭🇰11 |  3.1MB/s|Youtube|Openai
-  - 0|🇭🇰15 |  2.3MB/s|Youtube
-  - 0|🇺🇸75 |  5.8MB/s|56%|Openai|Gem...
-  - 12|🇰🇷 韩国2|@ripaojiedian
-  - 0|🇭🇰26 |  2.9MB/s|Youtube
-  - 0|🌀4-SE |  5.5MB/s|20%|Openai
   - 13|香港3|@ripaojiedian
-  - 12,13|新加坡|@ripaojiedian
-  - 13|香港|@ripaojiedian
-  - 0|🇭🇰5 |  1.1MB/s|16%|Youtube
-  - 0|🇭🇰4 |  2.0MB/s|Youtube
-  - 12|🇺🇸 美国2|@ripaojiedian
-  - 0|🇭🇰30 |  3.4MB/s|Youtube
-  - 14|US_speednode_0112
-  - 0|🇺🇸6 |  1.8MB/s|31%|Openai
-  - 13|香港6|@ripaojiedian
-  - 12|🇯🇵 日本3|@ripaojiedian
-  - 0|🇺🇸4 |  1.3MB/s|31%|Openai
-  - 0|🇸🇬2 |  3.1MB/s|0%|Netflix|Disn...
-  - 0|🇮🇹1 |  2.7MB/s|46%|Openai
   - 12|🇭🇰 香港3|@ripaojiedian
-  - 0,14|TW_speednode_0074
-  - 0|🇺🇸31 |  3.2MB/s|34%|Netflix|Op...
-  - 0|🇭🇰17 |  2.6MB/s|Youtube|Openai
-  - 12|🇺🇸 美国5|@ripaojiedian
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 0|🇭🇰31 |  2.8MB/s
-  - 12,13|美国4|@ripaojiedian
-  - 12|🇯🇵 日本特殊|@ripaojiedian
-  - 0|🇭🇰3 |  2.2MB/s|16%|Youtube
-  - 14|SE_speednode_0066
-  - 0|🇭🇰18 |  1.7MB/s|16%|Youtube
-  - 12,13|香港7|@ripaojiedian
-  - 12|🇰🇷 韩国|@ripaojiedian
-  - 0|🇺🇸106 |  3.3MB/s|Openai
-  - 0|🇭🇰12 |  2.2MB/s|16%|Youtube
-  - 12|🇭🇰 香港2|@ripaojiedian
-  - 13|美国5|@ripaojiedian
-  - 0|🇭🇰14 |  1.7MB/s|16%|Youtube
-  - 12|🇻🇳 越南|@ripaojiedian
-  - 13|香港5|@ripaojiedian
-  - 0|🇭🇰19 |  3.6MB/s|16%|Netflix
-  - 0|🇭🇰6 |  3.3MB/s|16%|Netflix|Dis...
-  - 0|🇺🇸12 |  1.8MB/s|Openai
-  - 0|🇭🇰7 |  2.8MB/s|Youtube
-  - 0|🇭🇰28 |  5.0MB/s|Youtube
   - 12|🇭🇰 香港|@ripaojiedian
+  - 12|🇭🇰 香港5|@ripaojiedian
+  - 12|🇯🇵 日本2|@ripaojiedian
+  - 12|🇯🇵 日本3|@ripaojiedian
+  - 0|🇺🇸42 |  2.6MB/s|47%|Openai|Gem...
+  - 0|🌀10-ID |  1.6MB/s|41%|Youtube|...
+  - 12|tg频道:@ripaojiedian
+  - 12,13|日本4|@ripaojiedian
+  - 12|🇰🇷 韩国|@ripaojiedian
+  - 13|香港6|@ripaojiedian
+  - 13|香港5|@ripaojiedian
+  - 13|美国5|@ripaojiedian
+  - 12,13|香港7|@ripaojiedian
+  - 0,14|TW_speednode_0074
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 0|🇫🇷3 |  2.5MB/s|100%|Openai
+  - 0|🇺🇸39 |  1.3MB/s|Openai
+  - 12|🇭🇰 香港2|@ripaojiedian
+  - 14|US_speednode_0112
   - 13|日本5|@ripaojiedian
+  - 12|🇺🇸 美国5|@ripaojiedian
+  - 12|🇯🇵 日本|@ripaojiedian
+  - 0,14|RU_speednode_0061
+  - 0|🌀5-SE |  5.4MB/s|20%|Openai
+  - 13|日本3|@ripaojiedian
+  - 12,13|美国4|@ripaojiedian
+  - 14|SE_speednode_0066
+  - 0|🇺🇸44 |  1.8MB/s|47%|Openai|Gem...
+  - 0|🌀6-ID |  1.1MB/s|Youtube|Opena...
+  - 13|香港|@ripaojiedian
+  - 14|KR_speednode_0046
+  - 0|🇺🇸43 |  1.1MB/s|0%|Netflix|Ope...
+  - 12,13|新加坡|@ripaojiedian
+  - 12|🇰🇷 韩国2|@ripaojiedian
+  - 0|🇨🇦2 |  1.0MB/s|29%|Youtube|Ope...
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1346,20 +728,12 @@ proxy-groups:
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 0|🇺🇸4 |  1.3MB/s|31%|Openai
-  - 0|🇺🇸5 |  1.5MB/s|31%|Openai
-  - 0|🇺🇸6 |  1.8MB/s|31%|Openai
   - 0,14|CN_speednode_0026
-  - 0|🇺🇸12 |  1.8MB/s|Openai
-  - 0|🇺🇸13 |  1.1MB/s|34%|Netflix
-  - 0|🇺🇸14 |  1.2MB/s|34%|Netflix
-  - 0|🇺🇸15 |  1.1MB/s|32%|Openai
-  - 0|🇺🇸16 |  4.7MB/s|32%|Netflix|Op...
-  - 0|🇺🇸17 |  2.3MB/s|34%|Netflix|Op...
-  - 0|🇺🇸24 |  3.4MB/s|0%|Netflix|Dis...
-  - 0|🇺🇸31 |  3.2MB/s|34%|Netflix|Op...
-  - 0|🇺🇸75 |  5.8MB/s|56%|Openai|Gem...
-  - 0|🇺🇸106 |  3.3MB/s|Openai
+  - 0|🇺🇸7 |  1.0MB/s|Netflix|Openai
+  - 0|🇺🇸39 |  1.3MB/s|Openai
+  - 0|🇺🇸42 |  2.6MB/s|47%|Openai|Gem...
+  - 0|🇺🇸43 |  1.1MB/s|0%|Netflix|Ope...
+  - 0|🇺🇸44 |  1.8MB/s|47%|Openai|Gem...
   - 12,13|美国|@ripaojiedian
   - 12|🇺🇸 美国2|@ripaojiedian
   - 12|🇺🇸 美国3|@ripaojiedian
@@ -1374,37 +748,6 @@ proxy-groups:
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 0|🇭🇰1 |  3.4MB/s
-  - 0|🇭🇰2 |  1.7MB/s|16%
-  - 0|🇭🇰3 |  2.2MB/s|16%|Youtube
-  - 0|🇭🇰4 |  2.0MB/s|Youtube
-  - 0|🇭🇰5 |  1.1MB/s|16%|Youtube
-  - 0|🇭🇰6 |  3.3MB/s|16%|Netflix|Dis...
-  - 0|🇭🇰7 |  2.8MB/s|Youtube
-  - 0|🇭🇰8 |  1.3MB/s|16%
-  - 0|🇭🇰9 |  4.5MB/s|Youtube
-  - 0|🇭🇰10 |  2.8MB/s|16%
-  - 0|🇭🇰11 |  3.1MB/s|Youtube|Openai
-  - 0|🇭🇰12 |  2.2MB/s|16%|Youtube
-  - 0|🇭🇰13 |  1.8MB/s|16%|Youtube
-  - 0|🇭🇰14 |  1.7MB/s|16%|Youtube
-  - 0|🇭🇰15 |  2.3MB/s|Youtube
-  - 0|🇭🇰16 |  1.1MB/s|16%|Youtube
-  - 0|🇭🇰17 |  2.6MB/s|Youtube|Openai
-  - 0|🇭🇰18 |  1.7MB/s|16%|Youtube
-  - 0|🇭🇰19 |  3.6MB/s|16%|Netflix
-  - 0|🇭🇰20 |  3.2MB/s
-  - 0|🇭🇰21 |  1.7MB/s|16%|Youtube|Op...
-  - 0|🇭🇰22 |  3.2MB/s|16%|Youtube
-  - 0|🇭🇰23 |  2.2MB/s|Youtube|Openai
-  - 0|🇭🇰24 |  1.2MB/s|16%|Youtube
-  - 0|🇭🇰25 |  2.2MB/s|Youtube
-  - 0|🇭🇰26 |  2.9MB/s|Youtube
-  - 0|🇭🇰27 |  2.5MB/s|16%
-  - 0|🇭🇰28 |  5.0MB/s|Youtube
-  - 0|🇭🇰29 |  3.5MB/s
-  - 0|🇭🇰30 |  3.4MB/s|Youtube
-  - 0|🇭🇰31 |  2.8MB/s
   - 12|🇭🇰 香港|@ripaojiedian
   - 12|🇭🇰 香港2|@ripaojiedian
   - 12|🇭🇰 香港3|@ripaojiedian
@@ -1425,16 +768,16 @@ proxy-groups:
   type: select
 - name: 🇨🇦 加拿大
   proxies:
-  - REJECT
+  - 0|🇨🇦2 |  1.0MB/s|29%|Youtube|Ope...
+  - 0|🇨🇦3 |  5.8MB/s|29%|Youtube|Ope...
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - 0|🇫🇷1 |  2.3MB/s|100%|Openai
+  - 0|🇫🇷3 |  2.5MB/s|100%|Openai
   type: select
 - name: 🇸🇬 新加坡
   proxies:
-  - 0|🇸🇬1 |  4.8MB/s|0%|Netflix|Disn...
-  - 0|🇸🇬2 |  3.1MB/s|0%|Netflix|Disn...
+  - 0|🇸🇬2 |  1.1MB/s|0%|Netflix|Open...
   - 12,13|新加坡|@ripaojiedian
   - 12|🇸🇬 狮城特殊|@ripaojiedian
   type: select
@@ -1444,8 +787,9 @@ proxy-groups:
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - 0|🇰🇷3 |  5.3MB/s|44%|Netflix|Dis...
-  - 0|🇰🇷4 |  5.3MB/s|44%|Netflix|Dis...
+  - 0,14|TW_speednode_0074
+  - 0|🇰🇷3 |  1.4MB/s|44%|Netflix|Dis...
+  - 0|🇰🇷4 |  3.5MB/s|44%|Netflix|Dis...
   - 12|🇰🇷 韩国|@ripaojiedian
   - 12|🇰🇷 韩国2|@ripaojiedian
   - 12|🇰🇷 韩国特殊|@ripaojiedian
@@ -1458,8 +802,6 @@ proxy-groups:
   type: select
 - name: 🇩🇪 德国
   proxies:
-  - 0,14|TW_speednode_0074
-  - 0|🇩🇪3 |  2.2MB/s|100%|Youtube|Op...
   - 14|DE_speednode_0029
   type: select
 rules:
