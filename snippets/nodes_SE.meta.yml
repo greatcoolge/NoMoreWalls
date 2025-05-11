@@ -1,21 +1,30 @@
 proxies:
-- client-fingerprint: chrome
-  name: 0|🌀7-SE |  5.3MB/s|34%|Openai
+- name: 0,14|SE_speednode_0068
   network: ws
-  port: '22224'
-  server: 13.51.117.245
+  port: 22224
+  server: 56.228.75.152
   servername: trojan.burgerip.co.uk
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
     headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/67.0.3396.99 Safari/537.36
+      Host: trojan.burgerip.co.uk
     path: /telegram-channel-vlessconfig
-  xudp: true
+- name: 0|🌀4-SE |  5.5MB/s|20%|Openai
+  network: ws
+  password: s1G6gpTJG20X
+  port: 2053
+  server: tasnim.andishehnegariran.ir
+  skip-cert-verify: false
+  sni: tasnim.andishehnegariran.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tasnim.andishehnegariran.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
 - name: 14|SE_speednode_0066
   password: telegram-id-privatevpns
   port: 22222
@@ -33,17 +42,3 @@ proxies:
   type: http
   udp: true
   username: dmpyoary@mayorlogistic.com
-- name: 14|SE_speednode_0068
-  network: ws
-  port: 22224
-  server: 56.228.75.152
-  servername: trojan.burgerip.co.uk
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: trojan.burgerip.co.uk
-    path: /telegram-channel-vlessconfig
