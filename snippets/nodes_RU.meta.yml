@@ -1,7 +1,7 @@
 proxies:
 - down: ''
   fingerprint: ''
-  name: 0|🇷🇺1 |  4.5MB/s|0%
+  name: 0|🇷🇺1 |  2.8MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -11,19 +11,44 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- delay: 699
-  down: ''
+- down: ''
   fingerprint: ''
-  name: 0|🇷🇺2 |  2.5MB/s|50%|Youtube
+  name: 0|🇷🇺2 |  2.0MB/s
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
-  port: 10011
+  port: '10011'
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 0|🇷🇺4 |  5.5MB/s|50%|Youtube
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '10011'
   server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
   up: ''
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺5 |  5.4MB/s|0%|Youtube
+  network: ws
+  port: 20022
+  server: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - client-fingerprint: random
   name: 14|RU_speednode_0058
   network: ws
@@ -39,6 +64,19 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0059
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 109.172.94.249
+  servername: fr.ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
 - name: 14|RU_speednode_0060
   network: ws
   port: 443
@@ -53,6 +91,19 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /
+- name: 14|RU_speednode_0061
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 14|RU_speednode_0062
   password: cacb4d4fa26f4eed25e4d17a6370083c
   port: 443
