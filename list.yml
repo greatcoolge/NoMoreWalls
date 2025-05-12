@@ -1,4 +1,4 @@
-# Update: 2025-05-12 09:49
+# Update: 2025-05-12 11:43
 allow-lan: false
 dns:
   enable: true
@@ -135,7 +135,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 0,14|TW_speednode_0074
+- name: 0,14|TW_speednode_0038
   network: ws
   password: bpb-trojan
   port: 443
@@ -757,30 +757,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|CN_speednode_0012
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  skip-cert-verify: false
-  sni: cgsg2.hysality.com
-  type: trojan
-  udp: true
-- name: 14|CN_speednode_0026
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: 14|DE_speednode_0029
-  password: telegram-id-directvpn
-  port: 22223
-  server: 3.76.154.155
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 14|HK_speednode_0041
+- name: 14|HK_speednode_0023
   network: ws
   password: Aimer
   port: 443
@@ -793,20 +770,7 @@ proxies:
     headers:
       Host: tyep.esslh.filegear-sg.me
     path: /?ed=2560
-- name: 14|KR_speednode_0045
-  network: ws
-  password: '0588'
-  port: 50000
-  server: 175.203.30.93
-  skip-cert-verify: true
-  sni: 888.uskm.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 888.uskm.dpdns.org
-    path: /?ed=2560
-- name: 14|KR_speednode_0046
+- name: 14|KR_speednode_0025
   network: ws
   password: Aimer
   port: 50000
@@ -819,7 +783,20 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 14|RU_speednode_0061
+- name: 14|KR_speednode_0026
+  network: ws
+  password: '0588'
+  port: 50000
+  server: 175.203.30.93
+  skip-cert-verify: true
+  sni: 888.uskm.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 888.uskm.dpdns.org
+    path: /?ed=2560
+- name: 14|RU_speednode_0035
   network: ws
   password: Aimer
   port: 2096
@@ -832,15 +809,7 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 14|SE_speednode_0066
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.75.152
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0112
+- name: 14|US_speednode_0065
   network: ws
   password: Aimer
   port: 2096
@@ -864,90 +833,86 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 13|日本3|@ripaojiedian
-  - 0|🇺🇸59 |  3.8MB/s|23%|Netflix|Di...
-  - 12,13|美国|@ripaojiedian
+  - 12|tg频道:@ripaojiedian
+  - 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 14|KR_speednode_0025
+  - 12|🇯🇵 日本2|@ripaojiedian
+  - 0|🇺🇸18 |  4.1MB/s|47%|Openai
+  - 0|🇰🇷10 |  1.1MB/s|Netflix|Disney
   - 12|🇭🇰 香港2|@ripaojiedian
   - 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 0,14|TW_speednode_0038
   - 0|🇰🇷9 |  1.1MB/s|62%|Netflix|Dis...
-  - 12|🇻🇳 越南|@ripaojiedian
-  - 14|DE_speednode_0029
-  - 0|🌀6-ID |  5.0MB/s|41%|Youtube|O...
-  - 12|🇯🇵 日本3|@ripaojiedian
-  - 0|🇨🇦1 |  3.5MB/s|29%|Youtube|Ope...
-  - 0|🇺🇸19 |  5.0MB/s|34%|Netflix|Op...
-  - 12,13|香港7|@ripaojiedian
-  - 14|SE_speednode_0066
-  - 0|🇸🇬1 |  4.0MB/s|13%|Netflix|Dis...
-  - 0|🇯🇵1 |  5.5MB/s|10%|Youtube|Ope...
-  - 0|🇯🇵2 |  3.5MB/s|10%|Disney|Yout...
-  - 0|🇭🇰3 |  2.3MB/s|0%|Netflix|Disn...
-  - 0|🇺🇸50 |  5.0MB/s|56%|Openai
   - 12,13|台湾2|@ripaojiedian
-  - 12|🇯🇵 日本特殊|@ripaojiedian
-  - 0|🇺🇸75 |  1.4MB/s|0%
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 14|US_speednode_0112
-  - 13|日本5|@ripaojiedian
-  - 0|🇨🇦2 |  2.4MB/s|62%|Netflix|Dis...
-  - 0|🇯🇵5 |  2.2MB/s|64%|Netflix|Dis...
-  - 0|🇭🇰5 |  1.2MB/s|16%|Netflix|Dis...
-  - 0|🇺🇸88 |  2.8MB/s|34%|Openai
-  - 0|🇺🇸17 |  4.3MB/s|31%|Openai
-  - 0|🇺🇸91 |  4.1MB/s|47%|Openai|Gem...
-  - 0|🇺🇸61 |  5.0MB/s|0%|Netflix|Dis...
-  - 12,13|新加坡|@ripaojiedian
-  - 0|🇦🇺1 |  3.8MB/s|62%|Youtube|Gem...
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 0|🇰🇷4 |  2.7MB/s|44%|Netflix|Dis...
-  - 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 0|🇭🇰2 |  6.0MB/s|0%|Netflix|Yout...
-  - 0|🇺🇸18 |  4.1MB/s|47%|Openai
-  - 0|🇯🇵4 |  1.6MB/s|64%|Netflix|Dis...
-  - 12|tg频道:@ripaojiedian
-  - 0|🇰🇷7 |  1.6MB/s|62%|Disney
-  - 0|🇰🇷10 |  1.1MB/s|Netflix|Disney
-  - 14|KR_speednode_0046
-  - 12,13|台湾|@ripaojiedian
-  - 12|🇰🇷 韩国2|@ripaojiedian
-  - 0|🇺🇸58 |  5.8MB/s|15%|Openai|Gem...
-  - 12,13|美国4|@ripaojiedian
-  - 0|🌀4-CN |  1.1MB/s|0%|Netflix
-  - 0|🇩🇪11 |  4.8MB/s|39%|Youtube|Op...
-  - 0|🇭🇰1 |  5.4MB/s|0%|Disney
-  - 13|香港3|@ripaojiedian
-  - 12|🇭🇰 香港|@ripaojiedian
-  - 12|🇭🇰 香港3|@ripaojiedian
-  - 13|香港6|@ripaojiedian
-  - 14|CN_speednode_0012
-  - 0|🇹🇼2 |  2.5MB/s|0%|Netflix|Disn...
-  - 13|香港|@ripaojiedian
-  - 0|🇹🇼1 |  6.2MB/s|0%|Netflix|Disn...
-  - 13|香港5|@ripaojiedian
-  - 12,13|日本4|@ripaojiedian
-  - 0|🇮🇳1 |  5.2MB/s|Youtube|Openai|...
-  - 12,13|美国3|@ripaojiedian
-  - 0|🇸🇬2 |  4.6MB/s|13%|Netflix|Dis...
-  - 0,14|TW_speednode_0074
-  - 14|CN_speednode_0026
-  - 0|🇰🇷6 |  1.2MB/s|62%|Disney
-  - 12|🇺🇸 美国5|@ripaojiedian
-  - 14|HK_speednode_0041
-  - 0|🇬🇧3 |  1.6MB/s|39%|Netflix|Dis...
-  - 12|🇰🇷 韩国|@ripaojiedian
-  - 14|KR_speednode_0045
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 12|🇺🇸 美国2|@ripaojiedian
   - 0|🇭🇰6 |  3.9MB/s|13%|Netflix|Dis...
-  - 13|美国5|@ripaojiedian
-  - 0|🇩🇪18 |  1.3MB/s|34%|Youtube|Op...
-  - 12|🇭🇰 香港6|@ripaojiedian
-  - 0|🌀1-ID |  1.6MB/s|41%|Youtube|O...
-  - 0|🇸🇬5 |  5.4MB/s|0%|Netflix|Open...
-  - 14|RU_speednode_0061
+  - 0|🇸🇬1 |  4.0MB/s|13%|Netflix|Dis...
+  - 12|🇭🇰 香港|@ripaojiedian
+  - 12,13|台湾|@ripaojiedian
+  - 12,13|美国|@ripaojiedian
+  - 0|🇨🇦2 |  2.4MB/s|62%|Netflix|Dis...
+  - 12,13|香港7|@ripaojiedian
+  - 12|🇯🇵 日本|@ripaojiedian
+  - 14|US_speednode_0065
   - 0|🇺🇸57 |  1.7MB/s|34%|Openai
-  - 0|🇭🇰4 |  1.6MB/s|13%|Netflix|Dis...
+  - 12,13|美国3|@ripaojiedian
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 0|🌀4-CN |  1.1MB/s|0%|Netflix
+  - 0|🇺🇸91 |  4.1MB/s|47%|Openai|Gem...
+  - 0|🇯🇵1 |  5.5MB/s|10%|Youtube|Ope...
+  - 0|🇦🇺1 |  3.8MB/s|62%|Youtube|Gem...
+  - 0|🌀6-ID |  5.0MB/s|41%|Youtube|O...
+  - 0|🇹🇼1 |  6.2MB/s|0%|Netflix|Disn...
+  - 0|🇺🇸75 |  1.4MB/s|0%
+  - 13|香港6|@ripaojiedian
+  - 13|日本3|@ripaojiedian
+  - 12,13|日本4|@ripaojiedian
   - 0|🇺🇸56 |  1.7MB/s|32%|Openai
+  - 0|🇺🇸59 |  3.8MB/s|23%|Netflix|Di...
+  - 13|香港3|@ripaojiedian
+  - 0|🇸🇬5 |  5.4MB/s|0%|Netflix|Open...
+  - 0|🇺🇸50 |  5.0MB/s|56%|Openai
+  - 0|🇭🇰5 |  1.2MB/s|16%|Netflix|Dis...
+  - 0|🇭🇰2 |  6.0MB/s|0%|Netflix|Yout...
+  - 0|🇩🇪18 |  1.3MB/s|34%|Youtube|Op...
+  - 0|🇨🇦1 |  3.5MB/s|29%|Youtube|Ope...
+  - 0|🇹🇼2 |  2.5MB/s|0%|Netflix|Disn...
+  - 14|HK_speednode_0023
+  - 13|日本5|@ripaojiedian
+  - 0|🇭🇰3 |  2.3MB/s|0%|Netflix|Disn...
+  - 13|香港5|@ripaojiedian
+  - 0|🇺🇸61 |  5.0MB/s|0%|Netflix|Dis...
+  - 0|🇭🇰4 |  1.6MB/s|13%|Netflix|Dis...
+  - 12|🇻🇳 越南|@ripaojiedian
+  - 12,13|新加坡|@ripaojiedian
+  - 13|香港|@ripaojiedian
+  - 12|🇺🇸 美国5|@ripaojiedian
+  - 12|🇯🇵 日本3|@ripaojiedian
+  - 0|🇯🇵4 |  1.6MB/s|64%|Netflix|Dis...
+  - 12|🇭🇰 香港5|@ripaojiedian
+  - 12|🇭🇰 香港6|@ripaojiedian
+  - 13|美国5|@ripaojiedian
+  - 14|KR_speednode_0026
+  - 0|🌀1-ID |  1.6MB/s|41%|Youtube|O...
+  - 12,13|美国4|@ripaojiedian
+  - 0|🇰🇷7 |  1.6MB/s|62%|Disney
+  - 12|🇰🇷 韩国2|@ripaojiedian
+  - 0|🇸🇬2 |  4.6MB/s|13%|Netflix|Dis...
+  - 0|🇬🇧3 |  1.6MB/s|39%|Netflix|Dis...
+  - 0|🇺🇸88 |  2.8MB/s|34%|Openai
+  - 0|🇰🇷4 |  2.7MB/s|44%|Netflix|Dis...
+  - 0|🇩🇪11 |  4.8MB/s|39%|Youtube|Op...
+  - 0|🇮🇳1 |  5.2MB/s|Youtube|Openai|...
+  - 0|🇰🇷6 |  1.2MB/s|62%|Disney
+  - 0|🇭🇰1 |  5.4MB/s|0%|Disney
+  - 12|🇭🇰 香港3|@ripaojiedian
+  - 12|🇯🇵 日本特殊|@ripaojiedian
+  - 14|RU_speednode_0035
+  - 0|🇺🇸17 |  4.3MB/s|31%|Openai
+  - 0|🇺🇸19 |  5.0MB/s|34%|Netflix|Op...
+  - 12|🇰🇷 韩国|@ripaojiedian
+  - 0|🇺🇸58 |  5.8MB/s|15%|Openai|Gem...
+  - 0|🇯🇵2 |  3.5MB/s|10%|Disney|Yout...
+  - 0|🇯🇵5 |  2.2MB/s|64%|Netflix|Dis...
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1021,7 +986,7 @@ proxy-groups:
   - 0|🇺🇸18 |  4.1MB/s|47%|Openai
   - 0|🇺🇸19 |  5.0MB/s|34%|Netflix|Op...
   - 0|🇺🇸50 |  5.0MB/s|56%|Openai
-  - 0,14|TW_speednode_0074
+  - 0,14|TW_speednode_0038
   - 0|🇺🇸56 |  1.7MB/s|32%|Openai
   - 0|🇺🇸57 |  1.7MB/s|34%|Openai
   - 0|🇺🇸58 |  5.8MB/s|15%|Openai|Gem...
@@ -1036,13 +1001,11 @@ proxy-groups:
   - 12,13|美国4|@ripaojiedian
   - 12|🇺🇸 美国5|@ripaojiedian
   - 13|美国5|@ripaojiedian
-  - 14|US_speednode_0112
+  - 14|US_speednode_0065
   type: select
 - name: 🇨🇳 中国
   proxies:
   - 0|🌀4-CN |  1.1MB/s|0%|Netflix
-  - 14|CN_speednode_0012
-  - 14|CN_speednode_0026
   type: select
 - name: 🇭🇰 香港
   proxies:
@@ -1062,7 +1025,7 @@ proxy-groups:
   - 13|香港3|@ripaojiedian
   - 13|香港5|@ripaojiedian
   - 13|香港6|@ripaojiedian
-  - 14|HK_speednode_0041
+  - 14|HK_speednode_0023
   type: select
 - name: ❔ 台湾
   proxies:
@@ -1102,18 +1065,17 @@ proxy-groups:
   - 12|🇰🇷 韩国|@ripaojiedian
   - 12|🇰🇷 韩国2|@ripaojiedian
   - 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 14|KR_speednode_0045
-  - 14|KR_speednode_0046
+  - 14|KR_speednode_0025
+  - 14|KR_speednode_0026
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - 14|RU_speednode_0061
+  - 14|RU_speednode_0035
   type: select
 - name: 🇩🇪 德国
   proxies:
   - 0|🇩🇪11 |  4.8MB/s|39%|Youtube|Op...
   - 0|🇩🇪18 |  1.3MB/s|34%|Youtube|Op...
-  - 14|DE_speednode_0029
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站
