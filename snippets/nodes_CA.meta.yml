@@ -1,8 +1,8 @@
 proxies:
-- name: 0|🇨🇦1 |  3.2MB/s|63%|Disney|Gemi...
+- name: 0|🇨🇦1 |  1.4MB/s|63%|Disney
   network: ws
   port: 443
-  server: 185.133.35.112
+  server: 192.0.54.111
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -11,12 +11,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦2 |  3.2MB/s|Openai|Gemini
+- name: 0|🇨🇦2 |  4.8MB/s|63%|Disney
   network: ws
   port: 443
-  server: 69.84.182.97
+  server: 160.79.104.195
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -25,12 +25,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦3 |  2.8MB/s|63%|Disney|Gemi...
+- name: 0|🇨🇦3 |  1.7MB/s|63%
   network: ws
   port: 443
-  server: 185.133.35.160
+  server: 185.133.35.67
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -39,12 +39,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦4 |  2.8MB/s|63%|Disney|Open...
+- name: 0|🇨🇦4 |  1.0MB/s|Disney
   network: ws
   port: 443
-  server: 216.24.57.36
+  server: 160.79.105.109
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -53,12 +53,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦5 |  5.9MB/s|Openai|Gemini
+- name: 0|🇨🇦5 |  1.4MB/s|Disney
   network: ws
   port: 443
-  server: 160.123.255.130
+  server: 63.141.128.93
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -67,24 +67,5 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 0|🇨🇦6 |  1.9MB/s|23%|Netflix|Dis...
-  network: tcp
-  port: '26113'
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 40.233.80.61
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  xudp: true
