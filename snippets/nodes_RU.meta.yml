@@ -1,7 +1,7 @@
 proxies:
 - down: ''
   fingerprint: ''
-  name: 0|🇷🇺1 |  2.2MB/s|0%
+  name: 0|🇷🇺1 |  2.3MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -11,9 +11,28 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 0|🇷🇺2 |  4.4MB/s|0%|Youtube
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 212.233.94.204
+  servername: maviks.eu
+  tls: true
+  type: vless
+  udp: true
+  uuid: ce833c9b-e39a-475f-b649-23e7f1ea5236
+  xudp: true
 - down: ''
   fingerprint: ''
-  name: 0|🇷🇺2 |  3.4MB/s|0%
+  name: 0|🇷🇺4 |  1.1MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -23,40 +42,34 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- down: ''
-  fingerprint: ''
-  name: 0|🇷🇺3 |  1.3MB/s|50%|Youtube
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '10011'
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺4 |  5.3MB/s|Youtube
+- client-fingerprint: random
+  name: 14|RU_speednode_0058
   network: ws
-  port: 20022
-  server: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
+  port: 443
+  server: 45.67.215.168
+  servername: 0229.patterdeng.pp.ua
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  delay: 1143
-  name: 0|🇷🇺5 |  1.6MB/s|50%|Youtube
-  password: hakmx9nHDGvBmbWQteeIXg
-  port: 1080
-  server: 89.23.113.166
-  type: ss
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0059
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 109.172.94.249
+  servername: fr.ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
 - name: 14|RU_speednode_0060
   network: ws
   port: 443
