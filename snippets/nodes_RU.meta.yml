@@ -1,14 +1,15 @@
 proxies:
 - alpn:
   - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  auth: ad77e45c-0485-4357-9d64-1593aabc2c19
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   client-fingerprint: chrome
-  delay: 2297
+  delay: 2579
   disable-sni: false
-  down: '100'
-  fingerprint: ''
+  down: 1000 Mbps
+  grpc-opts:
+    grpc-service-name: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
   http-opts:
     headers: {}
     path:
@@ -17,41 +18,35 @@ proxies:
   name: 0,12,13|台湾3|@ripaojiedian
   network: tcp
   obfs: ''
-  obfs-password: Bia-Telegram__SiNAVM-SiNAVM__Bia__SiNAVM
   password: bpb-trojan
   port: 443
-  protocol: ''
+  protocol: udp
+  reality-opts:
+    public-key: Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw
+    short-id: 05a6d4aa5e314637
   reduce-rtt: false
   request-timeout: 0
   server: 35.201.203.106
-  servername: m3EeerT.777259.xYZ
+  servername: M3vVvbNFFfG.777289.XyZ
   skip-cert-verify: false
   sni: skwygx.top
   tls: true
   type: trojan
   udp: true
   udp-relay-mode: native
-  up: '100'
+  up: 1000 Mbps
   uuid: 53721970-2138-4263-8c9c-21397e759c06
   version: 5
   ws-opts:
     headers:
-      Host: m3eeert.777259.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+      Host: m3vvvbnfffg.777289.xyz
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
     path: /Bt93qlsreYHzV5Ii9WW
   xudp: true
-- auth: dongtaiwang.com
-  name: 0|🇷🇺2 |  2.2MB/s|50%|Youtube
-  password: dongtaiwang.com
-  port: 10011
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 0|🇷🇺3 |  2.1MB/s|0%
+  name: 0|🇷🇺2 |  1.4MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -61,35 +56,25 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- name: 14|RU_speednode_0031
-  network: ws
-  port: 80
-  server: 45.8.211.61
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
-- client-fingerprint: random
-  name: 14|RU_speednode_0033
-  network: ws
-  port: 443
-  server: 45.67.215.168
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 0|🇷🇺3 |  4.9MB/s|0%|Youtube
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 213.219.215.89
+  servername: maviks.eu
   tls: true
   type: vless
   udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
+  uuid: ce833c9b-e39a-475f-b649-23e7f1ea5236
+  xudp: true
 - name: 14|RU_speednode_0034
   network: ws
   port: 443
