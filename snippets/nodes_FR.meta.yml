@@ -1,7 +1,7 @@
 proxies:
 - down: ''
   fingerprint: ''
-  name: 0|🇫🇷1 |  5.6MB/s|15%|Openai
+  name: 0|🇫🇷1 |  5.4MB/s|15%|Openai
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -13,16 +13,52 @@ proxies:
   up: ''
 - auth: dongtaiwang.com
   client-fingerprint: chrome
-  name: 0|🇫🇷2 |  5.7MB/s|15%|Openai
+  name: 0|🇫🇷2 |  5.2MB/s|15%|Openai
   password: dongtaiwang.com
   port: 4489
   server: 51.158.205.126
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  auth: ad77e45c-0485-4357-9d64-1593aabc2c19
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  delay: 2579
+  down: 55 Mbps
+  flow: xtls-rprx-vision
+  name: 0,14|US_speednode_0187
+  network: ws
+  obfs: ''
+  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
+  port: 58017
+  protocol: udp
+  reality-opts:
+    public-key: EnZCoW0ZE047unVnwVg6jOTWxCvAbj3OrweS_ANYCVg
+    short-id: 34d8ddb4971913eb
+  server: 147.182.246.69
+  servername: madcity2.777999.lol
+  skip-cert-verify: true
+  sni: ccdfRt6.890634.Xyz
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  up: 11 Mbps
+  uuid: 0fc8452a-17f9-47de-95dd-65de502d39da
+  ws-opts:
+    headers:
+      Host: madcity2.777999.lol
+    path: /?ed=2560
+  xudp: true
 - alterId: '0'
   cipher: auto
-  name: 0|🇫🇷6 |  1.2MB/s|100%|Openai
+  client-fingerprint: chrome
+  name: 0|🇫🇷11 |  3.1MB/s|100%|Openai
   network: ws
   port: 443
   server: 188.114.97.2
@@ -39,7 +75,8 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇫🇷5 |  5.7MB/s|100%|Openai
+  client-fingerprint: chrome
+  name: 0|🇫🇷6 |  4.8MB/s|Openai
   network: ws
   port: 443
   server: 188.114.96.2
@@ -51,12 +88,76 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
+- delay: 1637
+  name: 0|🇫🇷7 |  5.6MB/s|43%|Youtube|Ope...
+  network: ws
+  port: 8080
+  server: tgju.org
+  type: vless
+  udp: true
+  uuid: 51fda508-20aa-419e-b4c3-3a6202411412
+  ws-opts:
+    headers:
+      Host: 18.6na7PY43IT.zuLaiR.Org.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /?ed=2048
+  xudp: true
 - alterId: '0'
   cipher: auto
-  name: 0|🇫🇷7 |  5.4MB/s|100%|Openai
+  name: 0|🇫🇷13 |  2.0MB/s|100%|Disney|Op...
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  servername: beyonddsz.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷9 |  5.9MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷10 |  5.5MB/s|100%|Openai
   network: ws
   port: 443
   server: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷12 |  5.8MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 162.159.152.2
   skip-cert-verify: false
   tls: true
   type: vmess
