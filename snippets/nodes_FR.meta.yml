@@ -1,7 +1,16 @@
 proxies:
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇫🇷1 |  2.8MB/s|15%|Openai
+  password: dongtaiwang.com
+  port: 4489
+  server: 51.158.205.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 0|🇫🇷1 |  4.8MB/s|15%|Openai
+  name: 0|🇫🇷2 |  1.6MB/s|15%|Openai
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -11,59 +20,40 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 0|🇫🇷2 |  5.8MB/s|15%|Openai
-  password: dongtaiwang.com
-  port: 4489
-  server: 51.158.205.126
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  auth: ad77e45c-0485-4357-9d64-1593aabc2c19
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  delay: 1153
-  disable-sni: false
-  down: 55 Mbps
-  name: 0,14|US_speednode_0187
-  network: ws
-  obfs: salamander
-  obfs-password: Bia-Telegram__SiNAVM-SiNAVM__Bia__SiNAVM
-  password: f3ba3679-f2f4-465f-92a5-de320b775a88
-  port: 58017
-  protocol: udp
-  reduce-rtt: false
-  request-timeout: 0
-  server: 147.182.246.69
-  servername: madcity2.777999.lol
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  udp-relay-mode: native
-  up: 11 Mbps
-  uuid: 0fc8452a-17f9-47de-95dd-65de502d39da
-  version: 5
-  ws-opts:
-    headers:
-      Host: madcity2.777999.lol
-    path: /?ed=2560
-  xudp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇫🇷5 |  2.9MB/s|Openai
+  name: 0|🇫🇷3 |  4.8MB/s|100%|Openai
   network: ws
   port: 443
   server: 188.114.97.2
-  servername: obdii.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 0|🇫🇷4 |  5.5MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷5 |  1.9MB/s|100%|Openai
+  network: ws
+  port: '443'
+  server: 104.26.0.95
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -74,30 +64,13 @@ proxies:
       Host: obdii.cfd
     path: /linkws
   xudp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇫🇷6 |  4.5MB/s|Openai
+  name: 0|🇫🇷7 |  5.1MB/s|100%|Netflix|Op...
   network: ws
   port: 443
   server: 188.114.96.2
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 0|🇫🇷7 |  5.4MB/s|100%|Openai
-  network: ws
-  port: 443
-  server: 162.159.152.2
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tfo: false
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -106,21 +79,6 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-- delay: 2606
-  name: 0|🇫🇷8 |  5.4MB/s|15%|Openai
-  network: ws
-  port: 8080
-  server: tgju.org
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  type: vless
-  udp: true
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      Host: IO.IhJtq0hklC.ZULAiR.OrG.
-      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
-        Chrome/v1.0.0 Safari/538.1
-    path: /
   xudp: true
 - name: 14|FR_speednode_0157
   network: ws
