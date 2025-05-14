@@ -1,18 +1,4 @@
 proxies:
-- name: 0|🇸🇬1 |  2.0MB/s|30%|Netflix|Dis...
-  network: ws
-  port: '80'
-  server: 45.131.7.59
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /
-  xudp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -30,6 +16,21 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- client-fingerprint: chrome
+  name: 0|🇸🇬2 |  5.6MB/s|Youtube|Openai
+  network: ws
+  port: 80
+  server: 141.193.213.20
+  type: vless
+  udp: true
+  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/31.0.1650.57 Safari/537.36
+    path: /
+  xudp: true
 - name: 11|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
