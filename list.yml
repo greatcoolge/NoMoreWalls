@@ -1,4 +1,4 @@
-# Update: 2025-05-14 17:22
+# Update: 2025-05-14 20:42
 allow-lan: false
 dns:
   enable: true
@@ -18,24 +18,14 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 0|🇯🇵2 |  2.1MB/s|54%|Youtube|Ope...
-  network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  servername: centos7
+- name: 0,14|US_speednode_0060
+  password: 9107ad3d-747c-46c4-86b4-8438de3d21ce
+  port: 43456
+  server: 103.79.118.14
   skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
+  type: trojan
   udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
-  ws-opts:
-    headers:
-      Host: centos7
-    path: /634c5c4f9782
-- name: 0|🇺🇸41 |  1.7MB/s|32%|Openai
+- name: 0|🇺🇸14 |  5.3MB/s|32%|Openai
   network: ws
   password: f82fb954-06a1-4f0b-9180-17e07585b61f
   port: 443
@@ -47,263 +37,18 @@ proxies:
     headers:
       Host: 6tghjk.131.pp.ua
     path: '%2FYu29UN3Yz8hcnI3SlZor0'
-- alterId: '2'
-  cipher: auto
-  name: 0|🇭🇰1 |  2.0MB/s|15%|Youtube
-  network: ws
-  port: 80
-  server: 6dbaea45-sv0xs0-t9i7o2-1lt20.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bf4ec108-f2b7-11ef-b654-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- name: 0,14|CN_speednode_0021
-  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
-  port: 46927
-  server: 120.232.220.45
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 0|🇯🇵3 |  5.9MB/s|0%|Netflix|Disn...
-  network: http
-  port: 13883
-  server: 45.159.50.57
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
-- name: 0,14|CN_speednode_0030
-  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
-  port: 46926
-  server: 120.232.220.45
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 0,14|DE_speednode_0036
-  password: '74260665780162200'
-  port: 443
-  server: ultimate-lemming.shiner427.skin
-  skip-cert-verify: false
-  sni: ultimate-lemming.shiner427.skin
-  type: trojan
-  udp: true
-- name: 0,14|DE_speednode_0037
-  password: '74260665780162200'
-  port: 443
-  server: cuddly-finch.shiner427.skin
-  skip-cert-verify: false
-  sni: cuddly-finch.shiner427.skin
-  type: trojan
-  udp: true
-- name: 0,14|US_speednode_0086
-  password: 9107ad3d-747c-46c4-86b4-8438de3d21ce
-  port: 43456
-  server: 103.79.118.14
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: 0|🇺🇸47 |  1.8MB/s|0%|Openai|Gemi...
-  network: ws
-  password: aTArbZ2F0E
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  sni: uSa-vp-27.bLAzECLOUD.SITE
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /linkvkws
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: 0|🇺🇸48 |  5.2MB/s|Openai
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
   http-opts: {}
   ip-version: dual
-  name: 0|🇺🇸49 |  5.6MB/s|Openai|Gemini
+  name: 0|🇺🇸15 |  3.0MB/s|0%|Openai|Gemi...
   network: http
   port: 47006
   server: 141.11.122.27
   type: vmess
   udp: true
   uuid: 364a033d-99bf-4610-d552-8516e63aaac5
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰2 |  1.4MB/s|15%|Netflix|Dis...
-  network: ws
-  port: 80
-  server: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1137 | 18.733MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b93c66cc-00ed-11ec-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰3 |  3.7MB/s|15%|Disney|Yout...
-  network: ws
-  port: 80
-  server: ac759499-sv2sg0-sw26q2-php4.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6387 | 25.289MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c648ecc0-838a-11ed-bd81-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: ac759499-sv2sg0-sw26q2-php4.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰4 |  3.2MB/s|15%|Youtube
-  network: ws
-  port: 80
-  server: 8cb66822-sv4n40-t2ke0u-1tif6.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.218.16-6373 | 11.648MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3ec273e4-0087-11f0-ab20-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 8cb66822-sv4n40-t2ke0u-1tif6.hk3.p5pv.com
-    path: /
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🌀5-T1 |  1.6MB/s|0%|Openai
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰5 |  2.4MB/s|15%|Youtube
-  network: ws
-  port: 80
-  server: 9e6fe842-sv4n40-t6ctgc-1s3hd.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.218.16-6381 | 6.376MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1c641c86-5078-11ef-a585-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 9e6fe842-sv4n40-t6ctgc-1s3hd.hk3.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸50 |  4.8MB/s|32%|Netflix|Di...
-  network: ws
-  port: 2096
-  server: 141.101.120.253
-  servername: 1746882891.speed.adl.cccp.freefly.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-  ws-opts:
-    headers:
-      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
-    path: /
-- name: 0|🇺🇸51 |  4.7MB/s|46%|Gemini
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 12748b59-sw9ds0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰6 |  1.2MB/s|15%|Youtube
-  network: ws
-  port: 80
-  server: 62c1587e-sv2sg0-t2ke0u-1tif6.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3ec273e4-0087-11f0-ab20-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 62c1587e-sv2sg0-t2ke0u-1tif6.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 0|🇭🇰7 |  1.2MB/s|Youtube
-  network: ws
-  port: 80
-  server: 457a1492-sv4n40-t6kzbp-1h5u7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 457a1492-sv4n40-t6kzbp-1h5u7.hk3.p5pv.com
-    path: /
-- cipher: aes-256-cfb
-  name: 0|🇰🇷2 |  5.6MB/s|44%|Openai
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|🇫🇷5 |  5.1MB/s|36%|Openai
-  password: PqJc89bEJnYJ-3mFetkZRQ
-  port: '20'
-  server: 82.146.46.28
-  type: ss
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 0|🇫🇷6 |  5.9MB/s|0%|Openai
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
-  ws-opts:
-    headers:
-      Host: Fra-Vp-123.BLaZECLOUD.Site
-    path: /linvkws
-  xudp: true
-- name: 0|🇺🇸110 |  5.8MB/s|Openai|Gemini
+- name: 0|🇺🇸35 |  5.4MB/s|Netflix|Openai...
   password: RlzoEILU
   port: 7815
   server: 36.151.251.59
@@ -312,21 +57,210 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  delay: 2284
-  h2-opts: {}
-  http-opts: {}
-  name: 0|🇺🇸116 |  5.9MB/s|Gemini
+  name: 0|🇺🇸39 |  2.1MB/s|0%|Openai
   network: ws
   port: 443
-  server: 5.10.244.41
-  servername: cry-sf-analyses-latina.trycloudflare.com
+  server: ljm005-2.facai202408.com
+  servername: ljm005-2.facai202408.com
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
-  uuid: 569dda85-bc76-4f8b-ae03-609d97f9e76c
+  udp: true
+  uuid: b95bf0d8-c748-40b8-e243-6479d879c3d5
   ws-opts:
     headers:
-      Host: cry-sf-analyses-latina.trycloudflare.com
-    path: /vmess-argo?ed=2048
+      Host: ljm005-2.facai202408.com
+    path: /b95bf0d8-
+- name: 0|🇺🇸40 |  3.7MB/s|0%|Netflix|Dis...
+  network: ws
+  password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
+  port: 443
+  server: 172.67.188.77
+  skip-cert-verify: true
+  sni: edfr4.890604.dpdns.org
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: edfr4.890604.dpdns.org
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- name: 0|🇺🇸41 |  5.3MB/s|46%|Openai|Gem...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: b5d29914-swb8g0-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: b5d29914-swb8g0-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 0|🇺🇸42 |  4.1MB/s|46%|Openai|Gem...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: ad7dc62e-sw9ds0-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: ad7dc62e-sw9ds0-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 0,14|CN_speednode_0018
+  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
+  port: 15229
+  server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
+  skip-cert-verify: false
+  sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 0|🌀4-AR |  4.5MB/s|59%|Openai|Ge...
+  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
+  port: 43590
+  server: 58.254.186.222
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 0,14|HK_speednode_0042
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸106 |  1.9MB/s|29%|Openai
+  network: ws
+  port: 22641
+  server: 52.80.27.229
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-a.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇭🇰1 |  1.4MB/s|15%|Netflix|You...
+  network: ws
+  port: 80
+  server: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+      Host: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  delay: 1445
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇭🇰2 |  1.4MB/s|15%|Netflix|You...
+  network: ws
+  port: 80
+  server: 296d0ed6-sv6hs0-tegcd3-1ne75.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: c24da08e-e384-11ed-b0dd-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+      Host: 296d0ed6-sv6hs0-tegcd3-1ne75.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇭🇰3 |  2.5MB/s|15%|Youtube|Ope...
+  network: ws
+  port: 80
+  server: 75a5d1ab-sv2sg0-svr00o-1oxz4.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ac3a8a98-51dc-11ee-a6e8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇭🇰4 |  3.5MB/s|15%|Youtube
+  network: ws
+  port: 80
+  server: aa1d3b0f-sv0xs0-svr00o-1oxz4.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ac3a8a98-51dc-11ee-a6e8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷3 |  1.1MB/s|61%|Youtube|Ope...
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 43450
+  server: gdlt.aicheetah.lol
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸105 |  1.2MB/s|29%|Openai
+  network: ws
+  port: 22641
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-a.tkong.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇺🇸107 |  5.8MB/s|34%|Openai
+  network: ws
+  port: 80
+  server: 9e5560.82d35d19-d88c.shop
+  servername: us03s.82d35d19-d88c.shop
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
+  ws-opts:
+    headers:
+      HOST: us03s.82d35d19-d88c.shop
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸108 |  5.2MB/s|32%|Netflix|D...
+  network: ws
+  port: '2096'
+  server: 141.101.120.253
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      host: 1746882891.speed.adl.cccp.freefly.pp.ua
+    path: /
 - cipher: aes-256-cfb
   name: 12|tg频道:@ripaojiedian
   password: awsps0501
@@ -688,19 +622,6 @@ proxies:
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 212.183.88.156
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=212.183.88.156:443&proxyIP=null
-- name: 14|AT_speednode_0003
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
   server: 212.183.88.29
   skip-cert-verify: true
   sni: icecream.955850.xyz
@@ -710,6 +631,19 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=212.183.88.29:443&proxyIP=null
+- name: 14|AT_speednode_0003
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 212.183.88.156
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=212.183.88.156:443&proxyIP=null
 - name: 14|BG_speednode_0005
   network: ws
   password: bpb-trojan
@@ -723,20 +657,7 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
-- name: 14|BR_speednode_0007
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.133.35.243
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=185.133.35.243:443&proxyIP=null
-- name: 14|BR_speednode_0008
+- name: 14|BR_speednode_0006
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -749,6 +670,19 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=185.133.35.141:443&proxyIP=null
+- name: 14|BR_speednode_0008
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.133.35.243
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=185.133.35.243:443&proxyIP=null
 - name: 14|CA_speednode_0009
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -762,7 +696,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.158.238:443&proxyIP=null
-- name: 14|CH_speednode_0011
+- name: 14|CH_speednode_0010
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -775,15 +709,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.212.95:443&proxyIP=null
-- name: 14|CN_speednode_0014
-  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
-  port: 22269
-  server: 58.254.186.222
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 14|CN_speednode_0016
+- name: 14|CN_speednode_0011
   password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
   port: 43394
   server: 219.135.197.214
@@ -791,37 +717,39 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- name: 14|CN_speednode_0027
-  password: RlzoEILU
-  port: 3744
-  server: 36.151.251.61
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 14|CN_speednode_0029
-  password: RlzoEILU
-  port: 8513
-  server: 36.151.251.61
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 14|CN_speednode_0031
+- name: 14|CN_speednode_0013
   password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
-  port: 43590
-  server: 58.254.186.222
+  port: 46927
+  server: 120.232.220.45
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- name: 14|CN_speednode_0033
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  port: 15229
-  server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
-  skip-cert-verify: false
-  sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
+- name: 14|CN_speednode_0017
+  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
+  port: 46926
+  server: 120.232.220.45
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- name: 14|EE_speednode_0039
+- name: 14|DE_speednode_0023
+  password: '74260665780162200'
+  port: 443
+  server: ultimate-lemming.shiner427.skin
+  skip-cert-verify: false
+  sni: ultimate-lemming.shiner427.skin
+  type: trojan
+  udp: true
+- name: 14|DE_speednode_0024
+  password: '74260665780162200'
+  port: 443
+  server: cuddly-finch.shiner427.skin
+  skip-cert-verify: false
+  sni: cuddly-finch.shiner427.skin
+  type: trojan
+  udp: true
+- name: 14|EE_speednode_0026
   network: ws
   password: bpb-trojan
   port: 443
@@ -834,7 +762,7 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
-- name: 14|FR_speednode_0040
+- name: 14|FR_speednode_0027
   password: '74260665780162200'
   port: 443
   server: grown-doberman.shiner427.skin
@@ -842,7 +770,7 @@ proxies:
   sni: grown-doberman.shiner427.skin
   type: trojan
   udp: true
-- name: 14|GB_speednode_0050
+- name: 14|GB_speednode_0037
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -855,33 +783,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=217.163.76.237:443&proxyIP=null
-- name: 14|GB_speednode_0051
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.254
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.254:443&proxyIP=null
-- name: 14|GB_speednode_0052
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.89
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.89:443&proxyIP=null
-- name: 14|GB_speednode_0053
+- name: 14|GB_speednode_0038
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -894,7 +796,33 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=217.163.76.227:443&proxyIP=null
-- name: 14|GB_speednode_0054
+- name: 14|GB_speednode_0039
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.254
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.254:443&proxyIP=null
+- name: 14|GB_speednode_0040
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.89
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.89:443&proxyIP=null
+- name: 14|GB_speednode_0041
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -907,20 +835,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=217.163.76.51:443&proxyIP=null
-- name: 14|HK_speednode_0063
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- name: 14|KR_speednode_0067
+- name: 14|KR_speednode_0044
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 10243
@@ -933,7 +848,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=221.151.124.103:10243&proxyIP=null
-- name: 14|KZ_speednode_0070
+- name: 14|KZ_speednode_0046
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -946,20 +861,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=194.76.18.122:443&proxyIP=null
-- name: 14|RU_speednode_0075
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.153
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=45.67.215.153:443&proxyIP=null
-- name: 14|RU_speednode_0076
+- name: 14|RU_speednode_0051
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -972,7 +874,20 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.234:443&proxyIP=null
-- name: 14|RU_speednode_0077
+- name: 14|RU_speednode_0052
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.153
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.153:443&proxyIP=null
+- name: 14|RU_speednode_0053
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -985,33 +900,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.5:443&proxyIP=null
-- name: 14|SG_speednode_0079
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 57621
-  server: 129.150.58.86
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=129.150.58.86:57621&proxyIP=null
-- name: 14|SG_speednode_0080
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 6666
-  server: 150.109.24.233
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=150.109.24.233:6666&proxyIP=null
-- name: 14|SG_speednode_0081
+- name: 14|SG_speednode_0055
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -1024,7 +913,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=138.2.107.107:443&proxyIP=null
-- name: 14|US_speednode_0087
+- name: 14|US_speednode_0061
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -1037,20 +926,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=160.79.105.220:443&proxyIP=null
-- name: 14|US_speednode_0089
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 192.0.54.184
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=192.0.54.184:443&proxyIP=null
-- name: 14|US_speednode_0091
+- name: 14|US_speednode_0062
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -1063,7 +939,20 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=160.79.105.81:443&proxyIP=null
-- name: 14|ZA_speednode_0094
+- name: 14|US_speednode_0064
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.184
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.184:443&proxyIP=null
+- name: 14|ZA_speednode_0066
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -1076,7 +965,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=160.123.255.199:443&proxyIP=null
-- name: 14|ZA_speednode_0095
+- name: 14|ZA_speednode_0067
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -1100,98 +989,88 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 14|RU_speednode_0077
-  - 14|BG_speednode_0005
-  - 14|AT_speednode_0002
-  - 14|GB_speednode_0050
-  - 14|CN_speednode_0033
-  - 14|GB_speednode_0051
-  - 0|🇺🇸50 |  4.8MB/s|32%|Netflix|Di...
-  - 0|🇭🇰1 |  2.0MB/s|15%|Youtube
-  - 0,14|DE_speednode_0037
-  - 0|🇭🇰2 |  1.4MB/s|15%|Netflix|Dis...
-  - 12,13|日本4|@ripaojiedian
-  - 0|🇫🇷6 |  5.9MB/s|0%|Openai
-  - 14|AT_speednode_0001
-  - 12,13|美国5|@ripaojiedian
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 14|SG_speednode_0079
-  - 12|🇯🇵 日本特殊|@ripaojiedian
-  - 12|🇻🇳 越南|@ripaojiedian
-  - 14|EE_speednode_0039
-  - 12|🇯🇵 日本3|@ripaojiedian
-  - 0|🇯🇵2 |  2.1MB/s|54%|Youtube|Ope...
-  - 0,14|DE_speednode_0036
-  - 12|🇰🇷 韩国|@ripaojiedian
-  - 14|CN_speednode_0029
-  - 14|US_speednode_0087
-  - 0|🇫🇷5 |  5.1MB/s|36%|Openai
-  - 0|🌀5-T1 |  1.6MB/s|0%|Openai
-  - 0|🇰🇷2 |  5.6MB/s|44%|Openai
-  - 0|🇭🇰3 |  3.7MB/s|15%|Disney|Yout...
-  - 12|🇭🇰 香港4|@ripaojiedian
-  - 12,13|美国4|@ripaojiedian
-  - 0|🇺🇸51 |  4.7MB/s|46%|Gemini
-  - 0|🇺🇸41 |  1.7MB/s|32%|Openai
-  - 12|🇯🇵 日本6|@ripaojiedian
-  - 14|CN_speednode_0031
-  - 0|🇺🇸116 |  5.9MB/s|Gemini
-  - 0|🇯🇵3 |  5.9MB/s|0%|Netflix|Disn...
-  - 14|US_speednode_0091
-  - 12,13|美国|@ripaojiedian
-  - 14|RU_speednode_0076
-  - 14|FR_speednode_0040
-  - 14|KZ_speednode_0070
-  - 12,13|香港5|@ripaojiedian
-  - 0|🇺🇸110 |  5.8MB/s|Openai|Gemini
-  - 14|CH_speednode_0011
-  - 12|🇭🇰 香港|@ripaojiedian
-  - 13|日本3|@ripaojiedian
-  - 14|SG_speednode_0080
-  - 14|US_speednode_0089
-  - 14|GB_speednode_0053
-  - 0|🇭🇰4 |  3.2MB/s|15%|Youtube
-  - 14|GB_speednode_0054
-  - 12|tg频道:@ripaojiedian
-  - 12,13|新加坡|@ripaojiedian
-  - 12|🇸🇬 狮城特殊|@ripaojiedian
-  - 12,13|台湾|@ripaojiedian
-  - 0|🇺🇸49 |  5.6MB/s|Openai|Gemini
-  - 12|🇺🇸 美国2|@ripaojiedian
-  - 14|SG_speednode_0081
-  - 0,14|CN_speednode_0021
-  - 12|🇭🇰 香港3|@ripaojiedian
+  - 14|RU_speednode_0051
+  - 14|DE_speednode_0024
+  - 0|🇺🇸41 |  5.3MB/s|46%|Openai|Gem...
+  - 14|CN_speednode_0017
+  - 14|GB_speednode_0040
   - 12|🇭🇰 香港6|@ripaojiedian
-  - 14|KR_speednode_0067
+  - 14|US_speednode_0064
+  - 0|🇺🇸14 |  5.3MB/s|32%|Openai
   - 13|日本6|@ripaojiedian
-  - 0|🇭🇰7 |  1.2MB/s|Youtube
-  - 14|CA_speednode_0009
-  - 14|HK_speednode_0063
-  - 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 14|BR_speednode_0007
-  - 13|香港|@ripaojiedian
-  - 0|🇭🇰6 |  1.2MB/s|15%|Youtube
-  - 13|日本5|@ripaojiedian
-  - 14|CN_speednode_0014
-  - 14|BR_speednode_0008
-  - 14|GB_speednode_0052
+  - 12,13|日本4|@ripaojiedian
+  - 0|🇺🇸35 |  5.4MB/s|Netflix|Openai...
+  - 0|🇺🇸105 |  1.2MB/s|29%|Openai
+  - 14|RU_speednode_0052
+  - 12,13|新加坡|@ripaojiedian
   - 12,13|新加坡2|@ripaojiedian
-  - 13|香港4|@ripaojiedian
-  - 0|🇺🇸47 |  1.8MB/s|0%|Openai|Gemi...
-  - 14|ZA_speednode_0095
+  - 0|🇺🇸39 |  2.1MB/s|0%|Openai
+  - 12,13|香港5|@ripaojiedian
   - 13|香港6|@ripaojiedian
-  - 14|RU_speednode_0075
-  - 0|🇭🇰5 |  2.4MB/s|15%|Youtube
-  - 14|CN_speednode_0027
-  - 14|CN_speednode_0016
+  - 12|🇰🇷 韩国|@ripaojiedian
+  - 14|BR_speednode_0006
+  - 14|BG_speednode_0005
   - 13|香港3|@ripaojiedian
+  - 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 14|GB_speednode_0039
+  - 14|ZA_speednode_0067
+  - 0|🇭🇰3 |  2.5MB/s|15%|Youtube|Ope...
+  - 0|🇭🇰4 |  3.5MB/s|15%|Youtube
+  - 12|🇯🇵 日本6|@ripaojiedian
+  - 14|CN_speednode_0013
+  - 14|CN_speednode_0011
+  - 0,14|US_speednode_0060
+  - 12|🇯🇵 日本特殊|@ripaojiedian
+  - 12,13|美国|@ripaojiedian
+  - 14|GB_speednode_0038
+  - 13|香港|@ripaojiedian
+  - 14|ZA_speednode_0066
+  - 0|🇺🇸15 |  3.0MB/s|0%|Openai|Gemi...
+  - 12|tg频道:@ripaojiedian
+  - 14|KR_speednode_0044
+  - 14|AT_speednode_0001
+  - 14|US_speednode_0062
+  - 0|🇭🇰1 |  1.4MB/s|15%|Netflix|You...
+  - 14|BR_speednode_0008
+  - 0|🇰🇷3 |  1.1MB/s|61%|Youtube|Ope...
+  - 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 0|🇺🇸108 |  5.2MB/s|32%|Netflix|D...
+  - 0|🇺🇸42 |  4.1MB/s|46%|Openai|Gem...
+  - 14|GB_speednode_0041
+  - 0,14|HK_speednode_0042
+  - 0|🇺🇸40 |  3.7MB/s|0%|Netflix|Dis...
+  - 12|🇭🇰 香港|@ripaojiedian
+  - 0|🌀4-AR |  4.5MB/s|59%|Openai|Ge...
+  - 0|🇺🇸107 |  5.8MB/s|34%|Openai
+  - 14|CA_speednode_0009
+  - 14|DE_speednode_0023
   - 12|🇯🇵 日本2|@ripaojiedian
+  - 12,13|台湾|@ripaojiedian
+  - 12|🇯🇵 日本|@ripaojiedian
+  - 14|EE_speednode_0026
+  - 12|🇭🇰 香港4|@ripaojiedian
+  - 14|CH_speednode_0010
+  - 14|GB_speednode_0037
+  - 14|SG_speednode_0055
+  - 12,13|美国4|@ripaojiedian
+  - 13|日本3|@ripaojiedian
   - 12|🇭🇰 香港2|@ripaojiedian
-  - 0,14|CN_speednode_0030
-  - 14|ZA_speednode_0094
-  - 0|🇺🇸48 |  5.2MB/s|Openai
+  - 13|香港4|@ripaojiedian
+  - 12|🇻🇳 越南|@ripaojiedian
+  - 14|RU_speednode_0053
+  - 13|日本5|@ripaojiedian
+  - 0,14|CN_speednode_0018
+  - 12,13|美国5|@ripaojiedian
+  - 12|🇯🇵 日本3|@ripaojiedian
+  - 12|🇭🇰 香港3|@ripaojiedian
+  - 0|🇭🇰2 |  1.4MB/s|15%|Netflix|You...
+  - 14|AT_speednode_0002
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 14|US_speednode_0061
+  - 14|FR_speednode_0027
+  - 14|KZ_speednode_0046
+  - 0|🇺🇸106 |  1.9MB/s|29%|Openai
   - 14|AT_speednode_0003
-  - 0,14|US_speednode_0086
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1247,8 +1126,6 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 0|🇯🇵2 |  2.1MB/s|54%|Youtube|Ope...
-  - 0|🇯🇵3 |  5.9MB/s|0%|Netflix|Disn...
   - 12|🇯🇵 日本|@ripaojiedian
   - 12|🇯🇵 日本2|@ripaojiedian
   - 12|🇯🇵 日本3|@ripaojiedian
@@ -1261,41 +1138,39 @@ proxy-groups:
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 0|🇺🇸41 |  1.7MB/s|32%|Openai
-  - 0,14|US_speednode_0086
-  - 0|🇺🇸47 |  1.8MB/s|0%|Openai|Gemi...
-  - 0|🇺🇸48 |  5.2MB/s|Openai
-  - 0|🇺🇸49 |  5.6MB/s|Openai|Gemini
-  - 0|🇺🇸50 |  4.8MB/s|32%|Netflix|Di...
-  - 0|🇺🇸51 |  4.7MB/s|46%|Gemini
-  - 0|🇺🇸110 |  5.8MB/s|Openai|Gemini
-  - 0|🇺🇸116 |  5.9MB/s|Gemini
+  - 0,14|US_speednode_0060
+  - 0|🇺🇸14 |  5.3MB/s|32%|Openai
+  - 0|🇺🇸15 |  3.0MB/s|0%|Openai|Gemi...
+  - 0|🇺🇸35 |  5.4MB/s|Netflix|Openai...
+  - 0|🇺🇸39 |  2.1MB/s|0%|Openai
+  - 0|🇺🇸40 |  3.7MB/s|0%|Netflix|Dis...
+  - 0|🇺🇸41 |  5.3MB/s|46%|Openai|Gem...
+  - 0|🇺🇸42 |  4.1MB/s|46%|Openai|Gem...
+  - 0,14|CN_speednode_0018
+  - 0|🇺🇸106 |  1.9MB/s|29%|Openai
+  - 0|🇺🇸105 |  1.2MB/s|29%|Openai
+  - 0|🇺🇸107 |  5.8MB/s|34%|Openai
+  - 0|🇺🇸108 |  5.2MB/s|32%|Netflix|D...
   - 12,13|美国|@ripaojiedian
   - 12|🇺🇸 美国2|@ripaojiedian
   - 12,13|美国4|@ripaojiedian
   - 12,13|美国5|@ripaojiedian
-  - 14|US_speednode_0087
-  - 14|US_speednode_0089
-  - 14|US_speednode_0091
+  - 14|US_speednode_0061
+  - 14|US_speednode_0062
+  - 14|US_speednode_0064
   type: select
 - name: 🇨🇳 中国
   proxies:
-  - 14|CN_speednode_0014
-  - 14|CN_speednode_0016
-  - 14|CN_speednode_0027
-  - 14|CN_speednode_0029
-  - 14|CN_speednode_0031
-  - 14|CN_speednode_0033
+  - 14|CN_speednode_0011
+  - 14|CN_speednode_0013
+  - 14|CN_speednode_0017
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 0|🇭🇰1 |  2.0MB/s|15%|Youtube
-  - 0|🇭🇰2 |  1.4MB/s|15%|Netflix|Dis...
-  - 0|🇭🇰3 |  3.7MB/s|15%|Disney|Yout...
-  - 0|🇭🇰4 |  3.2MB/s|15%|Youtube
-  - 0|🇭🇰5 |  2.4MB/s|15%|Youtube
-  - 0|🇭🇰6 |  1.2MB/s|15%|Youtube
-  - 0|🇭🇰7 |  1.2MB/s|Youtube
+  - 0|🇭🇰1 |  1.4MB/s|15%|Netflix|You...
+  - 0|🇭🇰2 |  1.4MB/s|15%|Netflix|You...
+  - 0|🇭🇰3 |  2.5MB/s|15%|Youtube|Ope...
+  - 0|🇭🇰4 |  3.5MB/s|15%|Youtube
   - 12|🇭🇰 香港|@ripaojiedian
   - 12|🇭🇰 香港2|@ripaojiedian
   - 12|🇭🇰 香港3|@ripaojiedian
@@ -1306,7 +1181,6 @@ proxy-groups:
   - 13|香港3|@ripaojiedian
   - 13|香港4|@ripaojiedian
   - 13|香港6|@ripaojiedian
-  - 14|HK_speednode_0063
   type: select
 - name: ❔ 台湾
   proxies:
@@ -1318,44 +1192,41 @@ proxy-groups:
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - 0|🇫🇷5 |  5.1MB/s|36%|Openai
-  - 0|🇫🇷6 |  5.9MB/s|0%|Openai
-  - 14|FR_speednode_0040
+  - 14|FR_speednode_0027
   type: select
 - name: 🇸🇬 新加坡
   proxies:
   - 12,13|新加坡|@ripaojiedian
   - 12,13|新加坡2|@ripaojiedian
   - 12|🇸🇬 狮城特殊|@ripaojiedian
-  - 14|SG_speednode_0079
-  - 14|SG_speednode_0080
-  - 14|SG_speednode_0081
+  - 14|SG_speednode_0055
   type: select
 - name: 🇬🇧 英国
   proxies:
-  - 14|GB_speednode_0050
-  - 14|GB_speednode_0051
-  - 14|GB_speednode_0052
-  - 14|GB_speednode_0053
-  - 14|GB_speednode_0054
+  - 14|GB_speednode_0037
+  - 14|GB_speednode_0038
+  - 14|GB_speednode_0039
+  - 14|GB_speednode_0040
+  - 14|GB_speednode_0041
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - 0|🇰🇷2 |  5.6MB/s|44%|Openai
+  - 0|🇰🇷3 |  1.1MB/s|61%|Youtube|Ope...
   - 12|🇰🇷 韩国|@ripaojiedian
   - 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 14|KR_speednode_0067
+  - 14|KR_speednode_0044
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - 14|RU_speednode_0075
-  - 14|RU_speednode_0076
-  - 14|RU_speednode_0077
+  - 14|RU_speednode_0051
+  - 14|RU_speednode_0052
+  - 14|RU_speednode_0053
   type: select
 - name: 🇩🇪 德国
   proxies:
-  - 0,14|DE_speednode_0036
-  - 0,14|DE_speednode_0037
+  - 0,14|HK_speednode_0042
+  - 14|DE_speednode_0023
+  - 14|DE_speednode_0024
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站

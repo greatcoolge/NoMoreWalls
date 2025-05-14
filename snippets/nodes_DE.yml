@@ -1,5 +1,19 @@
 proxies:
-- name: 0,14|DE_speednode_0036
+- client-fingerprint: chrome
+  name: 0,14|HK_speednode_0042
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
+- name: 14|DE_speednode_0023
   password: '!!str 74260665780162200'
   port: 443
   server: ultimate-lemming.shiner427.skin
@@ -7,7 +21,7 @@ proxies:
   sni: ultimate-lemming.shiner427.skin
   type: trojan
   udp: true
-- name: 0,14|DE_speednode_0037
+- name: 14|DE_speednode_0024
   password: '!!str 74260665780162200'
   port: 443
   server: cuddly-finch.shiner427.skin
