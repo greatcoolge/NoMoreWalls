@@ -1,19 +1,7 @@
 proxies:
 - down: ''
   fingerprint: ''
-  name: 0|🇫🇷1 |  3.2MB/s|15%|Openai
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '4489'
-  server: hy2-1.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 0|🇫🇷2 |  2.6MB/s|15%|Openai
+  name: 0|🇫🇷1 |  2.4MB/s|15%|Openai
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -23,41 +11,62 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  delay: 2579
-  disable-sni: false
-  down: 1000 Mbps
-  name: 0|🇷🇺4 |  1.4MB/s|50%
-  network: ws
-  password: f3ba3679-f2f4-465f-92a5-de320b775a88
-  port: 10803
-  protocol: udp
-  reduce-rtt: false
-  request-timeout: 0
-  server: 185.22.155.71
-  servername: Jg3EqJvM8k.SoUbLoTiK.iNfO
+- down: ''
+  fingerprint: ''
+  name: 0|🇫🇷2 |  3.0MB/s|15%|Openai
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '4489'
+  server: hy2-1.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
+  type: hysteria2
+  up: ''
+- alpn:
+  - h2http/1.1
+  alterId: '0'
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 1432
+  disable-sni: false
+  down: '100'
+  flow: xtls-rprx-vision
+  http-opts:
+    headers:
+      Host:
+      - parsabr.com
+    path:
+    - /
+  name: 0|🇩🇪13 |  4.0MB/s|24%
+  network: ws
+  obfs: ''
+  password: f3ba3679-f2f4-465f-92a5-de320b775a88
+  port: '2087'
+  protocol: ''
+  reduce-rtt: false
+  request-timeout: 0
+  server: 162.159.152.2
+  servername: Tp426TnOyA.mOlAnAmAmAlI1.iNfO
+  skip-cert-verify: true
+  sni: apple.com
   tls: true
-  type: hysteria
+  type: vless
   udp: true
   udp-relay-mode: native
-  up: 1000 Mbps
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  up: '100'
+  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
   version: 5
   ws-opts:
     headers:
-      Host: Jg3EqJvM8k.SoUbLoTiK.iNfO
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+      Host: Tp426TnOyA.mOlAnAmAmAlI1.iNfO
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
     path: /
   xudp: true
-- name: 14|FR_speednode_0027
+- name: 0,14|FR_speednode_0021
   password: '!!str 74260665780162200'
   port: 443
   server: grown-doberman.shiner427.skin
@@ -65,3 +74,32 @@ proxies:
   sni: grown-doberman.shiner427.skin
   type: trojan
   udp: true
+- name: 0|🇫🇷7 |  3.8MB/s|15%|Openai
+  network: ws
+  port: '8080'
+  server: tgju.org
+  servername: IO.IhJtq0hklC.ZULAiR.OrG.
+  type: vless
+  udp: true
+  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
+  ws-opts:
+    headers:
+      Host: IO.IhJtq0hklC.ZULAiR.OrG.
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /
+  xudp: true
+- name: 0|🇫🇷8 |  2.1MB/s|15%|Openai
+  network: ws
+  port: '8080'
+  server: 172.67.73.163
+  type: vless
+  udp: true
+  uuid: 56652249-2e67-4429-b86c-3df8b838ad85
+  ws-opts:
+    headers:
+      Host: 4j.QBAo1g5z6k.ZulaIR.org.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: ''
+  xudp: true
