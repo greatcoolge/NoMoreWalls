@@ -1,4 +1,48 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: 0|🇯🇵2 |  2.1MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  servername: centos7
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 0|🇯🇵3 |  5.9MB/s|0%|Netflix|Disn...
+  network: http
+  port: 13883
+  server: 45.159.50.57
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
+- down: ''
+  fingerprint: ''
+  name: 0|🇯🇵4 |  1.1MB/s|0%|Disney|Youtu...
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
+  port: '13301'
+  server: baipiaoyun-japan.baipiaoyun.site
+  skip-cert-verify: true
+  sni: s0.awsstatic.com
+  type: hysteria2
+  up: ''
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
@@ -104,3 +148,31 @@ proxies:
   tls: false
   type: vmess
   uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|JP_speednode_0064
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp3.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c8a1f63-8658-4458-b997-17ad1dea1054
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|JP_speednode_0065
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp1.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b1676447-0825-4b60-be37-735c9586735e

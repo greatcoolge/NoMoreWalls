@@ -1,7 +1,15 @@
 proxies:
+- auth: dongtaiwang.com
+  name: 0|🇷🇺1 |  1.3MB/s|50%
+  password: dongtaiwang.com
+  port: 10011
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 0|🇷🇺1 |  1.0MB/s
+  name: 0|🇷🇺2 |  3.9MB/s|50%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -11,54 +19,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  delay: 1608
-  disable-sni: false
-  down: 100
-  flow: xtls-rprx-vision
-  name: 0,14|US_speednode_0029
-  network: ws
-  obfs: salamander
-  obfs-password: Bia-Telegram__SiNAVM-SiNAVM__Bia__SiNAVM
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  port: 58017
-  protocol: udp
-  reality-opts:
-    public-key: EnZCoW0ZE047unVnwVg6jOTWxCvAbj3OrweS_ANYCVg
-    short-id: 34d8ddb4971913eb
-  reduce-rtt: false
-  request-timeout: 0
-  server: 147.182.246.69
-  servername: madcity2.777999.lol
-  skip-cert-verify: true
-  sni: apple.com
-  tls: true
-  type: vless
-  udp: true
-  udp-relay-mode: native
-  up: 100
-  uuid: 0fc8452a-17f9-47de-95dd-65de502d39da
-  version: 5
-  ws-opts:
-    headers:
-      Host: madcity2.777999.lol
-    path: /?ed=2560
-  xudp: true
-- auth: dongtaiwang.com
-  name: 0|🇷🇺3 |  5.0MB/s|50%
-  password: dongtaiwang.com
-  port: 10011
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 14|RU_speednode_0020
+- name: 14|RU_speednode_0073
   network: ws
   port: 80
   server: 185.174.138.206
@@ -72,18 +33,57 @@ proxies:
     headers:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
-- client-fingerprint: random
-  name: 14|RU_speednode_0021
+- name: 14|RU_speednode_0075
   network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 45.67.215.168
-  servername: 0229.patterdeng.pp.ua
+  server: 45.67.215.153
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.153:443&proxyIP=null
+- name: 14|RU_speednode_0076
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.234
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.234:443&proxyIP=null
+- name: 14|RU_speednode_0077
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.5
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.5:443&proxyIP=null
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0078
+  network: ws
+  port: 35097
+  server: de.uzilol.cn
+  servername: de.uzilol.cn
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  uuid: d9e674f2-b1ab-470d-937c-5e2eb0d74751
   ws-opts:
     headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
+      Host: de.uzilol.cn
+    path: /rangws
