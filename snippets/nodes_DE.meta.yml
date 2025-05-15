@@ -1,26 +1,28 @@
 proxies:
 - client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 0|🇩🇪1 |  6.3MB/s|20%|Openai
-  network: tcp
-  port: '7022'
-  reality-opts:
-    public-key: Sm0gGVH8qJHECOVhNaN2j52ayfqYcrZggyQMxiQP2Fo
-    short-id: ''
-  server: 188.245.250.75
-  servername: refersion.com
+  name: 0|🇩🇪1 |  1.3MB/s|25%|Youtube|Ope...
+  network: ws
+  port: 35097
+  server: de.uzilol.cn
+  servername: de.uzilol.cn
+  tls: true
+  type: vless
+  uuid: d9e674f2-b1ab-470d-937c-5e2eb0d74751
+  ws-opts:
+    headers:
+      Host: de.uzilol.cn
+    path: /rangws
+- client-fingerprint: chrome
+  name: 0|🇩🇪2 |  5.7MB/s|44%|Openai
+  network: ws
+  port: 8443
+  server: 205.233.181.186
+  servername: CiR346yL3b.DeRaKhT.iNfO
   tls: true
   type: vless
   udp: true
-  uuid: ce462cc3-9983-45da-b030-728fb7b5684e
-  xudp: true
-- name: 0|🇩🇪2 |  5.4MB/s|30%|Youtube|Ope...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.157.248.200
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      Host: CiR346yL3b.DeRaKhT.iNfO
+    path: /
