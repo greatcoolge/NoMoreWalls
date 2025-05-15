@@ -1,4 +1,13 @@
 proxies:
+- name: 0|🇸🇬1 |  1.3MB/s|34%|Disney|Yout...
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
+  skip-cert-verify: true
+  sni: cgsg2.hysality.com
+  tfo: false
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -55,10 +64,16 @@ proxies:
   port: 8123
   server: mortify.koreanbbq.link
   type: trojan
-- name: 14|SG_speednode_0180
-  password: 9de6d20c-d133-4261-8dd2-88684d619f7e
-  port: 43456
-  server: 43.163.126.61
+- name: 14|SG_speednode_0056
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 138.2.107.107
   skip-cert-verify: true
+  sni: icecream.955850.xyz
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=138.2.107.107:443&proxyIP=null
