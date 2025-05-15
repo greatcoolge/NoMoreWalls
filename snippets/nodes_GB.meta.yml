@@ -1,6 +1,32 @@
 proxies:
+- down: ''
+  fingerprint: ''
+  name: 0|🇬🇧1 |  5.7MB/s|61%|Netflix|Dis...
+  obfs: ''
+  obfs-password: ''
+  password: nfsn666
+  port: '8888'
+  server: ld-arm.nfsn666.gq
+  skip-cert-verify: true
+  sni: ld-arm.nfsn666.gq
+  type: hysteria2
+  up: ''
+- name: 0|🇬🇧2 |  1.3MB/s|100%|Openai
+  network: ws
+  port: '8880'
+  server: 104.19.54.50
+  type: vless
+  udp: true
+  uuid: 3de43906-5511-4257-852f-ecb16c8324cb
+  ws-opts:
+    headers:
+      Host: V2rayArgoN.elmahstyle.xyz.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048
+  xudp: true
 - client-fingerprint: chrome
-  name: 0,14|GB_speednode_0030
+  name: 14|GB_speednode_0030
   port: 55311
   reality-opts:
     public-key: YUcUHdfvj0h3EbIe2kLT9IM4J3Q1O3Cpb29gKxE2fwM
@@ -12,34 +38,6 @@ proxies:
   type: vless
   udp: true
   uuid: 52a0b1c0-0b8d-4e08-a2ae-89f6f13852b4
-- down: ''
-  fingerprint: ''
-  name: 0|🇬🇧2 |  4.2MB/s|61%|Netflix|You...
-  obfs: ''
-  obfs-password: ''
-  password: nfsn666
-  port: '8888'
-  server: ld-arm.nfsn666.gq
-  skip-cert-verify: true
-  sni: ld-arm.nfsn666.gq
-  type: hysteria2
-  up: ''
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
-  name: 0|🇬🇧3 |  2.9MB/s|33%|Openai
-  network: grpc
-  port: '2083'
-  reality-opts:
-    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
-    short-id: e09b0ba7d2
-  server: 77.110.100.177
-  servername: speedtest.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 108d0bd4-ed8a-4186-995f-8f49e3127699
-  xudp: true
 - name: 14|GB_speednode_0031
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
