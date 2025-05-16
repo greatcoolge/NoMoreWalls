@@ -1,23 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰1 |  3.7MB/s|12%|Youtube
-  password: d72162d1-9bce-460e-99ed-bc3c92cfbe11
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 0,12,13|香港5|@ripaojiedian
-  network: tcp
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
 - cipher: chacha20-ietf
   delay: 763
-  name: 0|🇭🇰4 |  1.9MB/s|16%|Disney
+  name: 0|🇭🇰1 |  2.8MB/s|16%|Disney
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: sGWdzYDx5J
@@ -26,6 +10,13 @@ proxies:
   protocol-param: ''
   server: csilicovolcanoconiosis.godeove.xyz
   type: ssr
+  udp: true
+- name: 0|🇭🇰3 |  5.3MB/s|0%|Disney
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
+  skip-cert-verify: true
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -76,6 +67,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 12,13|香港5|@ripaojiedian
+  network: tcp
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
+  sni: hk-13-568.flztjc.net
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 12|🇭🇰 香港6|@ripaojiedian
