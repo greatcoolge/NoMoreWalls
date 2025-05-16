@@ -1,47 +1,50 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇺🇸62 |  4.7MB/s|30%|Openai|Gem...
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 35.90.251.87
-  type: ssr
-- name: 0|🇺🇸63 |  2.4MB/s|46%|Openai|Gem...
+- name: 0|🇺🇸50 |  2.8MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: false
+  sni: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   type: trojan
-- name: 0|🇺🇸64 |  2.3MB/s|46%|Openai|Gem...
+- name: 0|🇺🇸51 |  1.9MB/s|46%|Openai|Gem...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 0|🇺🇸52 |  1.7MB/s|46%|Openai|Gem...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸65 |  5.7MB/s|56%|Netflix|Op...
-  network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ad2bca4d-be9e-4ac2-b2ed-4c81abb4242f
-  ws-opts:
-    headers:
-      Host: mAxNEtVip-uSA-Vp4.nETKh3.sItE
-    path: /linkws
-- name: 0|🇺🇸66 |  1.4MB/s|46%|Openai
+- client-fingerprint: chrome
+  name: 0|🇺🇸55 |  2.0MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
+  port: '15229'
   server: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: true
   sni: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 0|🇺🇸59 |  2.8MB/s|46%|Openai|Gem...
+  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
+  port: '15229'
+  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  skip-cert-verify: false
+  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸83 |  2.2MB/s|25%|Openai|Gem...
+  port: 49930
+  server: 65.75.194.28
+  tls: false
+  type: vmess
+  uuid: 75191b1e-74a5-4f54-ad94-3bc09ff61322
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome

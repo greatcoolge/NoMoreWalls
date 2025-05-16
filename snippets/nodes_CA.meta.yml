@@ -1,46 +1,4 @@
 proxies:
-- name: 0|🇨🇦1 |  2.8MB/s|62%|Disney|Yout...
-  network: ws
-  port: 443
-  server: dnschecker.org
-  servername: zx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: zx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 0|🇨🇦2 |  4.4MB/s|62%|Disney
-  network: ws
-  port: 443
-  server: 160.123.255.38
-  servername: zx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylks0033.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,14|CA_speednode_0023
-  port: 443
-  reality-opts:
-    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-    short-id: 7a2b
-  server: 3.96.179.112
-  servername: zula.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 0,14|CA_speednode_0022
@@ -55,3 +13,31 @@ proxies:
   type: vless
   udp: true
   uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
+- alterId: 2
+  cipher: auto
+  name: 0|🇨🇦2 |  5.5MB/s|Youtube|Openai|...
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|CA_speednode_0023
+  port: 443
+  reality-opts:
+    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+    short-id: 7a2b
+  server: 3.96.179.112
+  servername: zula.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db

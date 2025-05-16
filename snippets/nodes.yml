@@ -12,99 +12,125 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
-- cipher: aes-256-cfb
-  name: 0|🇰🇷1 |  4.5MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 0|🇮🇹1 |  1.4MB/s|45%|Netflix|Dis...
+  password: JTzjwNa8A8ajiqtD6sdytP
+  port: 443
+  server: 147.45.51.30
+  skip-cert-verify: true
+  tls: true
   type: ss
-- alterId: '0'
+- alterId: 2
   cipher: auto
-  name: 0|🇭🇰1 |  1.7MB/s|16%|Youtube
+  name: 0|🇨🇦2 |  5.5MB/s|Youtube|Openai|...
   network: ws
-  port: 8080
-  server: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- cipher: chacha20-ietf
+  name: 0|🇹🇼1 |  6.1MB/s|0%|Netflix|Disn...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: records.godeove.xyz
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 0,12,13|香港8|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
+  servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: fcf7573c-faa4-11ef-8a67-f23c913c8d2b
+  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
   ws-opts:
-    headers: {}
+    headers:
+      Host: broadcastlv.chat.bilibili.com
     path: /
-  xudp: true
 - cipher: aes-256-cfb
-  name: 0|🇰🇷3 |  6.1MB/s|44%
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
+  name: 0|🌀1-T1 |  2.0MB/s|22%|Openai
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸62 |  4.7MB/s|30%|Openai|Gem...
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 35.90.251.87
-  type: ssr
-- name: 0|🇺🇸63 |  2.4MB/s|46%|Openai|Gem...
+- name: 0|🇺🇸50 |  2.8MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: false
+  sni: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   type: trojan
-- name: 0|🇺🇸64 |  2.3MB/s|46%|Openai|Gem...
+- name: 0|🇺🇸51 |  1.9MB/s|46%|Openai|Gem...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 0|🇺🇸52 |  1.7MB/s|46%|Openai|Gem...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   type: trojan
+- cipher: aes-256-cfb
+  name: 0|🇰🇷1 |  5.9MB/s|Netflix|Youtube...
+  password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸65 |  5.7MB/s|56%|Netflix|Op...
+  name: 0|🇭🇰2 |  1.0MB/s|16%|Disney|Open...
   network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
+  port: 8080
+  server: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
-  uuid: ad2bca4d-be9e-4ac2-b2ed-4c81abb4242f
+  uuid: fcf7573c-faa4-11ef-8a67-f23c913c8d2b
   ws-opts:
     headers:
-      Host: mAxNEtVip-uSA-Vp4.nETKh3.sItE
-    path: /linkws
-- name: 0|🌀2-SE |  3.4MB/s|30%|Openai
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.62.15.8
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 0|🇺🇸66 |  1.4MB/s|46%|Openai
+      Host: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
+    path: /
+- name: 0|🇺🇸55 |  2.0MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
+  port: '15229'
   server: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: true
   sni: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   type: trojan
   udp: true
+- name: 0|🇺🇸59 |  2.8MB/s|46%|Openai|Gem...
+  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
+  port: '15229'
+  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  skip-cert-verify: false
+  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇪6 |  6.0MB/s|22%|Youtube
-  network: ws
-  port: 443
-  server: www.visa.com.sg
-  servername: radiation-browse-dallas-slight.trycloudflare.com
-  skip-cert-verify: false
-  tls: true
+  name: 0|🇺🇸83 |  2.2MB/s|25%|Openai|Gem...
+  port: 49930
+  server: 65.75.194.28
+  tls: false
   type: vmess
-  udp: true
-  uuid: 38d1a891-f3f9-ef39-6a95-c106e2a386eb
-  ws-opts:
-    headers:
-      Host: radiation-browse-dallas-slight.trycloudflare.com
-    path: /vmess-argo?ed=2048
+  uuid: 75191b1e-74a5-4f54-ad94-3bc09ff61322
 - cipher: aes-256-cfb
   name: 12|tg频道:@ripaojiedian
   password: awsps0501
@@ -182,22 +208,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 12,13|香港8|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - name: 12,13|台湾|@ripaojiedian
   network: tcp
   password: 4abad10b-be0d-48bf-ab8a-3311463084d4
