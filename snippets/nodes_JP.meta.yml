@@ -1,4 +1,40 @@
 proxies:
+- client-fingerprint: chrome
+  name: 0|🇯🇵1 |  2.1MB/s|12%|Youtube|Ope...
+  network: ws
+  port: '443'
+  server: 20.210.64.11
+  servername: vsdfee.azurewebsites.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: vsdfee.azurewebsites.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/65.0.3325.181 Safari/537.36
+    path: ''
+  xudp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,12|tg频道:@ripaojiedian
+  password: awsps0501
+  port: 443
+  server: 43.207.198.128
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0,12|🇯🇵 日本4|@ripaojiedian
+  port: 33184
+  server: gzhmbkqt.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fc7b534b-9188-4d81-b804-55b4eb91cd6e
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
@@ -38,17 +74,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 12|🇯🇵 日本4|@ripaojiedian
-  port: 33184
-  server: gzhmbkqt.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: fc7b534b-9188-4d81-b804-55b4eb91cd6e
 - alterId: 64
   cipher: auto
   name: 13|日本3|@ripaojiedian
