@@ -1,26 +1,49 @@
 proxies:
-- name: 0|🇺🇸76 |  4.8MB/s|46%|Openai|Gem...
-  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
-  port: 15229
-  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
-  skip-cert-verify: true
-  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: 0|🇺🇸91 |  5.2MB/s|Openai
+  name: 0|🇺🇸8 |  4.7MB/s|Openai
   password: RlzoEILU
   port: 7815
   server: 36.151.251.59
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 0|🇺🇸92 |  1.2MB/s|46%|Gemini
+- name: 0|🇺🇸54 |  1.9MB/s|46%|Openai|Gem...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
-  server: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
-  sni: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
+  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  tfo: false
   type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0|🇺🇸84 |  4.8MB/s|50%
+  network: ws
+  password: 70776bb4-d791-4cbd-9c9b-c76e937f9e60
+  port: 443
+  server: 172.67.216.240
+  skip-cert-verify: true
+  sni: Xxs345rf.857856.xYZ
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Xxs345rf.857856.xYZ
+    path: /71M8Ov1I5Gk9247fHC0XGZG6
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸136 |  4.0MB/s|51%|Openai|Ge...
+  network: ws
+  port: 2082
+  server: 172.67.214.33
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      Host: cs.flha.ru
+    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -44,7 +67,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505121278853-hDhUn5bpB5.download.microsoft.com
+    host: 202505031478387-KuiKPndOsR.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
