@@ -1,4 +1,4 @@
-# Update: 2025-05-17 14:27
+# Update: 2025-05-17 17:20
 allow-lan: false
 dns:
   enable: true
@@ -18,116 +18,33 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- name: 0|🇺🇸5 |  3.0MB/s|Openai
+- name: 0|🇺🇸76 |  4.8MB/s|46%|Openai|Gem...
+  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
+  port: 15229
+  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  skip-cert-verify: true
+  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 0|🇺🇸91 |  5.2MB/s|Openai
   password: RlzoEILU
   port: 7815
   server: 36.151.251.59
   skip-cert-verify: true
   type: trojan
-- name: 0|🇺🇸8 |  2.8MB/s|46%|Openai|Gemi...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  type: trojan
-- cipher: aes-128-cfb
-  name: 0|🇺🇸11 |  1.4MB/s|34%|Openai
-  obfs: plain
-  obfs-param: ''
-  password: shadowsocks
-  port: 443
-  protocol: origin
-  protocol-param: ''
-  server: 184.170.241.194
-  type: ssr
-  udp: true
-- name: 0|🇺🇸46 |  5.3MB/s|46%|Openai|Gem...
+- name: 0|🇺🇸92 |  1.2MB/s|46%|Gemini
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
-  tls: true
+  sni: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: 0|🇺🇸61 |  1.4MB/s|46%|Openai
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 443
-  server: 1b58d0f3-swgsg0-t1bnjq-1krtb.la3.tcpbbr.net
-  tls: true
+- name: 0|🇫🇷5 |  3.4MB/s|30%|Youtube|Ope...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.33.140
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
   type: trojan
-- name: 0|🇫🇮1 |  4.9MB/s|0%|Netflix|Disn...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: sg.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 0|🇺🇸70 |  2.3MB/s|29%|Openai
-  network: ws
-  port: 22641
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-a.tkong.cc
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: tk.hzlt.tkddns.xyz
-    path: /
-- name: 0,12,13|台湾|@ripaojiedian
-  network: tcp
-  password: 9f19a22d-60d0-4cf8-935d-ebcff8546054
-  port: 42765
-  server: wb.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- name: 0|🇺🇸71 |  1.4MB/s|50%|Openai|Gem...
-  network: ws
-  password: 70776bb4-d791-4cbd-9c9b-c76e937f9e60
-  port: 443
-  server: 172.67.216.240
-  skip-cert-verify: true
-  sni: Xxs345rf.857856.xYZ
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Xxs345rf.857856.xYZ
-    path: /71M8Ov1I5Gk9247fHC0XGZG6
-- cipher: aes-256-cfb
-  name: 0|🌀5-T1 |  2.9MB/s|50%|Openai
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 0|🇯🇵2 |  1.5MB/s|54%|Youtube|Ope...
-  network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
-  ws-opts:
-    headers:
-      Host: centos7
-    path: /634c5c4f9782
 - cipher: aes-256-cfb
   name: 12|tg频道:@ripaojiedian
   password: awsps0501
@@ -205,6 +122,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 12,13|台湾|@ripaojiedian
+  network: tcp
+  password: 9f19a22d-60d0-4cf8-935d-ebcff8546054
+  port: 42765
+  server: wb.kaiqsz.com
+  skip-cert-verify: true
+  sni: mmbiz1.redapricotcloud.com
+  type: trojan
 - cipher: rc4-md5
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -1119,98 +1044,92 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 14|NZ_speednode_0068
-  - 14|RU_speednode_0077
-  - 14|AT_speednode_0008
-  - 14|US_speednode_0109
-  - 13|日本4|@ripaojiedian
-  - 14|KZ_speednode_0063
-  - 12|🇭🇰 香港6|@ripaojiedian
-  - 14|GB_speednode_0056
-  - 14|HK_speednode_0061
-  - 13|日本5|@ripaojiedian
-  - 0|🌀5-T1 |  2.9MB/s|50%|Openai
-  - 14|US_speednode_0119
-  - 14|CN_speednode_0025
-  - 14|ZA_speednode_0131
-  - 14|BR_speednode_0015
-  - 14|RU_speednode_0075
-  - 14|GB_speednode_0050
-  - 12|🇰🇷 韩国|@ripaojiedian
-  - 12|🇸🇬 新加坡2|@ripaojiedian
-  - 14|ZA_speednode_0129
-  - 12|🇯🇵 日本4|@ripaojiedian
-  - 12|tg频道:@ripaojiedian
-  - 14|ZA_speednode_0132
-  - 13|日本3|@ripaojiedian
-  - 14|US_speednode_0104
   - 13|香港7|@ripaojiedian
-  - 12|🇯🇵 日本3|@ripaojiedian
-  - 14|KZ_speednode_0064
-  - 12,13|香港5|@ripaojiedian
-  - 14|GB_speednode_0051
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 14|BR_speednode_0019
-  - 14|AT_speednode_0010
-  - 0,12,13|台湾|@ripaojiedian
-  - 14|GB_speednode_0052
-  - 12|🇭🇰 香港7|@ripaojiedian
   - 12,13|美国4|@ripaojiedian
-  - 14|HK_speednode_0060
-  - 14|RU_speednode_0080
-  - 14|BR_speednode_0020
-  - 14|US_speednode_0110
-  - 14|BR_speednode_0016
-  - 12,13|新加坡|@ripaojiedian
-  - 0|🇺🇸11 |  1.4MB/s|34%|Openai
-  - 12,13|美国|@ripaojiedian
-  - 12|🇭🇰 香港|@ripaojiedian
-  - 12|🇰🇷 韩国3|@ripaojiedian
-  - 14|AT_speednode_0005
-  - 0|🇺🇸8 |  2.8MB/s|46%|Openai|Gemi...
-  - 14|GB_speednode_0058
-  - 14|RU_speednode_0079
-  - 0|🇺🇸70 |  2.3MB/s|29%|Openai
-  - 14|NL_speednode_0067
-  - 14|AT_speednode_0009
-  - 12|🇭🇰 香港4|@ripaojiedian
-  - 14|US_speednode_0112
-  - 12|🇭🇰 香港3|@ripaojiedian
-  - 14|AT_speednode_0007
-  - 14|RU_speednode_0081
-  - 12|🇺🇸 美国2|@ripaojiedian
-  - 0|🇺🇸61 |  1.4MB/s|46%|Openai
-  - 0|🇫🇮1 |  4.9MB/s|0%|Netflix|Disn...
-  - 14|GB_speednode_0054
-  - 0|🇺🇸46 |  5.3MB/s|46%|Openai|Gem...
-  - 14|BR_speednode_0021
-  - 13|香港3|@ripaojiedian
-  - 0|🇺🇸5 |  3.0MB/s|Openai
-  - 14|GB_speednode_0053
-  - 14|AT_speednode_0006
-  - 14|CH_speednode_0024
-  - 14|RU_speednode_0078
-  - 14|GB_speednode_0055
-  - 14|BR_speednode_0018
-  - 14|BG_speednode_0012
-  - 14|GB_speednode_0057
-  - 14|AT_speednode_0004
-  - 14|ZA_speednode_0133
-  - 14|US_speednode_0111
-  - 14|RU_speednode_0076
+  - 14|AT_speednode_0010
+  - 12|🇰🇷 韩国|@ripaojiedian
   - 13|香港6|@ripaojiedian
-  - 14|BR_speednode_0017
-  - 14|US_speednode_0114
-  - 13|新加坡2|@ripaojiedian
-  - 12|🇰🇷 韩国2|@ripaojiedian
   - 12,13|美国5|@ripaojiedian
-  - 0|🇯🇵2 |  1.5MB/s|54%|Youtube|Ope...
-  - 13|香港4|@ripaojiedian
-  - 0|🇺🇸71 |  1.4MB/s|50%|Openai|Gem...
-  - 12|🇭🇰 香港2|@ripaojiedian
-  - 14|US_speednode_0120
+  - 14|BR_speednode_0019
+  - 12|🇯🇵 日本4|@ripaojiedian
+  - 14|BR_speednode_0015
+  - 12|🇰🇷 韩国2|@ripaojiedian
+  - 14|GB_speednode_0058
+  - 14|CN_speednode_0025
+  - 14|AT_speednode_0006
+  - 12,13|新加坡|@ripaojiedian
+  - 13|香港3|@ripaojiedian
+  - 0|🇺🇸92 |  1.2MB/s|46%|Gemini
+  - 14|HK_speednode_0061
+  - 14|ZA_speednode_0129
+  - 14|RU_speednode_0077
+  - 14|US_speednode_0114
+  - 12|🇭🇰 香港|@ripaojiedian
+  - 14|RU_speednode_0079
+  - 14|ZA_speednode_0131
+  - 12,13|美国|@ripaojiedian
+  - 14|AT_speednode_0008
+  - 13|日本3|@ripaojiedian
+  - 12|🇭🇰 香港3|@ripaojiedian
+  - 14|ZA_speednode_0132
+  - 14|BR_speednode_0018
+  - 14|US_speednode_0111
+  - 12|🇭🇰 香港7|@ripaojiedian
+  - 14|BR_speednode_0020
+  - 14|GB_speednode_0051
   - 14|ZA_speednode_0130
+  - 14|AT_speednode_0009
+  - 14|BG_speednode_0012
+  - 14|GB_speednode_0052
+  - 12|🇰🇷 韩国3|@ripaojiedian
+  - 14|KZ_speednode_0063
+  - 12|tg频道:@ripaojiedian
   - 12|🇯🇵 日本2|@ripaojiedian
+  - 12,13|香港5|@ripaojiedian
+  - 14|NZ_speednode_0068
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 14|CH_speednode_0024
+  - 13|新加坡2|@ripaojiedian
+  - 14|AT_speednode_0005
+  - 0|🇺🇸91 |  5.2MB/s|Openai
+  - 14|ZA_speednode_0133
+  - 14|GB_speednode_0055
+  - 14|HK_speednode_0060
+  - 12|🇸🇬 新加坡2|@ripaojiedian
+  - 14|BR_speednode_0017
+  - 12|🇭🇰 香港6|@ripaojiedian
+  - 14|RU_speednode_0078
+  - 12|🇭🇰 香港4|@ripaojiedian
+  - 13|日本4|@ripaojiedian
+  - 14|RU_speednode_0080
+  - 14|AT_speednode_0007
+  - 14|GB_speednode_0056
+  - 14|RU_speednode_0081
+  - 14|RU_speednode_0075
+  - 14|BR_speednode_0021
+  - 14|GB_speednode_0054
+  - 14|US_speednode_0104
+  - 14|US_speednode_0110
+  - 12|🇯🇵 日本3|@ripaojiedian
+  - 14|US_speednode_0119
+  - 14|AT_speednode_0004
+  - 14|GB_speednode_0057
+  - 13|香港4|@ripaojiedian
+  - 14|US_speednode_0109
+  - 13|日本5|@ripaojiedian
+  - 12,13|台湾|@ripaojiedian
+  - 14|GB_speednode_0050
+  - 14|KZ_speednode_0064
+  - 12|🇯🇵 日本|@ripaojiedian
+  - 0|🇫🇷5 |  3.4MB/s|30%|Youtube|Ope...
+  - 14|BR_speednode_0016
+  - 14|RU_speednode_0076
+  - 14|US_speednode_0112
+  - 14|GB_speednode_0053
+  - 14|NL_speednode_0067
+  - 0|🇺🇸76 |  4.8MB/s|46%|Openai|Gem...
+  - 14|US_speednode_0120
+  - 12|🇭🇰 香港2|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1266,7 +1185,6 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 0|🇯🇵2 |  1.5MB/s|54%|Youtube|Ope...
   - 12|🇯🇵 日本|@ripaojiedian
   - 12|🇯🇵 日本2|@ripaojiedian
   - 12|🇯🇵 日本3|@ripaojiedian
@@ -1277,13 +1195,9 @@ proxy-groups:
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 0|🇺🇸5 |  3.0MB/s|Openai
-  - 0|🇺🇸8 |  2.8MB/s|46%|Openai|Gemi...
-  - 0|🇺🇸11 |  1.4MB/s|34%|Openai
-  - 0|🇺🇸46 |  5.3MB/s|46%|Openai|Gem...
-  - 0|🇺🇸61 |  1.4MB/s|46%|Openai
-  - 0|🇺🇸70 |  2.3MB/s|29%|Openai
-  - 0|🇺🇸71 |  1.4MB/s|50%|Openai|Gem...
+  - 0|🇺🇸76 |  4.8MB/s|46%|Openai|Gem...
+  - 0|🇺🇸91 |  5.2MB/s|Openai
+  - 0|🇺🇸92 |  1.2MB/s|46%|Gemini
   - 12,13|美国|@ripaojiedian
   - 12|🇺🇸 美国2|@ripaojiedian
   - 12,13|美国4|@ripaojiedian
@@ -1319,7 +1233,7 @@ proxy-groups:
   type: select
 - name: ❔ 台湾
   proxies:
-  - 0,12,13|台湾|@ripaojiedian
+  - 12,13|台湾|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
   proxies:
@@ -1327,7 +1241,7 @@ proxy-groups:
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - REJECT
+  - 0|🇫🇷5 |  3.4MB/s|30%|Youtube|Ope...
   type: select
 - name: 🇸🇬 新加坡
   proxies:
