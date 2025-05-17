@@ -1,34 +1,65 @@
 proxies:
-- name: 0|🇳🇱1 |  1.2MB/s|0%|Disney|Opena...
-  password: RlzoEILU
-  port: 16641
-  server: 36.151.251.61
-  skip-cert-verify: true
-  type: trojan
-- name: 0|🇺🇸17 |  1.2MB/s|46%|Openai|Gem...
+- name: 0|🇺🇸3 |  3.9MB/s|46%|Openai|Gemi...
   password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
   port: 15229
   server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
   skip-cert-verify: true
   sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸18 |  4.9MB/s|32%|Netflix|Di...
-  network: ws
-  port: 2096
-  server: 141.101.120.253
-  servername: 1746882891.speed.adl.cccp.freefly.pp.ua
+- name: 0|🇺🇸15 |  2.6MB/s|Openai|Gemini
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: '15229'
+  server: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
-  tls: true
-  type: vmess
+  type: trojan
   udp: true
-  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-  ws-opts:
-    headers:
-      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
-    path: /
-  xudp: true
+- name: 0,14|CN_speednode_0025
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: 0,12|🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505031478387-KuiKPndOsR.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- name: 0,12,13|香港5|@ripaojiedian
+  network: tcp
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
+  sni: hk-13-568.flztjc.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰3 |  1.9MB/s
+  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- name: 0|🇺🇸25 |  5.2MB/s|46%|Openai|Gem...
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: '15229'
+  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: false
+  sni: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 0|🇺🇸28 |  4.7MB/s|46%|Openai|Gem...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 0,12,13|美国5|@ripaojiedian
@@ -48,7 +79,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸43 |  1.2MB/s|29%|Openai
+  name: 0|🇺🇸53 |  3.8MB/s|29%|Openai
   network: ws
   port: 22641
   server: tk.hzlt.tkddns.xyz
@@ -58,25 +89,102 @@ proxies:
   type: vmess
   udp: true
   uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+- ip-version: dual
+  name: 0|🇺🇸55 |  5.2MB/s|Openai|Gemini
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 0|🇺🇸57 |  5.4MB/s|Openai|Gemini
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸46 |  1.7MB/s|29%|Openai
+  ip-version: dual
+  name: 0|🇺🇸58 |  1.9MB/s|Netflix|Openai...
   network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: zxjp-c.tkong.cc
-    path: /
+      host: baidu.com
+    path: /oooo
+- name: 0|🇭🇰4 |  1.4MB/s|0%|Youtube
+  network: ws
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  skip-cert-verify: false
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
+    path: /dl_media
+- cipher: aes-256-cfb
+  name: 0|🇰🇷2 |  1.8MB/s|75%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🌀1-T1 |  1.6MB/s|35%|Openai
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🌀2-VN |  1.1MB/s|0%|Openai|Gem...
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.37
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|🇺🇸60 |  3.4MB/s|28%|Netflix|Di...
+  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
+  port: 11511
+  server: cdn-p1-us.youku-dns.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬1 |  1.6MB/s|Netflix|Disney|...
+  port: 47883
+  server: 120.198.44.126
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 0|🇺🇸48 |  2.5MB/s|Openai
+  name: 0|🇨🇦1 |  4.0MB/s|Youtube|Openai|...
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸61 |  5.0MB/s|29%|Openai
   network: ws
   port: 22643
   server: tk.hzlt.tkddns.xyz
@@ -88,37 +196,153 @@ proxies:
   ws-headers:
     Host: zxjp-c.tkong.cc
   ws-path: /
-- name: 0|🇺🇸52 |  2.8MB/s|46%|Openai|Gem...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: '15229'
-  server: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸62 |  4.4MB/s|Openai|Gemini
+  network: ws
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: false
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  delay: 763
-  name: 0|🇭🇰1 |  2.7MB/s|16%|Disney
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: sGWdzYDx5J
-  port: 43125
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: csilicovolcanoconiosis.godeove.xyz
-  type: ssr
-  udp: true
-- name: 0|🇭🇰2 |  5.1MB/s|16%|Netflix|Dis...
-  password: RlzoEILU
-  port: 15624
-  server: 36.156.102.124
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰3 |  3.5MB/s|Disney
-  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
-  port: 49709
-  server: jg647hf446ghvw.gym0boy.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 0|🌀3-VN |  1.2MB/s|0%|Openai|Gem...
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.28
   type: ss
+- cipher: aes-256-cfb
+  name: 0|🇰🇷3 |  2.2MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇰🇷4 |  3.4MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 0|🇺🇸63 |  1.9MB/s|61%|Openai|Gem...
+  network: http
+  port: 55839
+  server: 38.54.25.204
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
+- name: 0|🇸🇬2 |  2.9MB/s|34%|Netflix|Dis...
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
+  skip-cert-verify: false
+  sni: cgsg2.hysality.com
+  type: trojan
+- name: 0|🇺🇸64 |  4.5MB/s|29%|Openai
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.181.193
+  skip-cert-verify: false
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: EEeEee4.hUAngSHANG2030.dPdNS.org
+    path: '%2FptGwaGzcA4KNAXX'
+- alterId: 0
+  cipher: auto
+  name: 0|🇭🇰5 |  3.0MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: 104.21.6.201
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 0|🇭🇰6 |  4.4MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: 172.67.135.62
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 0|🇭🇰7 |  4.3MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: hknbyivfffj.site
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- cipher: aes-256-gcm
+  name: 0|🌀6-GI |  1.9MB/s|44%|Youtube|O...
+  password: 0UcM3g3583uXXaAo
+  port: '8388'
+  server: 95.164.68.37
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇺🇸82 |  3.7MB/s|30%|Openai
+  network: ws
+  port: 2082
+  server: cs.flha.ru
+  servername: cs.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      HOST: cs.flha.ru
+    path: /
+- name: 0|🇺🇸127 |  5.0MB/s|50%|Openai
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.25.95
+  skip-cert-verify: true
+  sni: 1sDFgT.890604.FileGear-sG.mE
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 1sDFgT.890604.FileGear-sG.mE
+    path: /OYzPAeaZdXUq2d6J3gc4aj
 - cipher: aes-256-cfb
   name: 12|tg频道:@ripaojiedian
   password: awsps0501
@@ -168,14 +392,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 12,13|香港5|@ripaojiedian
-  network: tcp
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 12|🇭🇰 香港6|@ripaojiedian
@@ -204,17 +420,6 @@ proxies:
   skip-cert-verify: true
   sni: mmbiz1.redapricotcloud.com
   type: trojan
-- cipher: rc4-md5
-  name: 12|🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202505031478387-KuiKPndOsR.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 12|🇯🇵 日本2|@ripaojiedian
   password: af77ad2f906d
@@ -628,14 +833,6 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.212.95:443&proxyIP=null
-- name: 14|CN_speednode_0025
-  password: b6200af42ccadea353f5b5856dd20d70
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-  udp: true
 - name: 14|GB_speednode_0050
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
