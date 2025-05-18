@@ -1,7 +1,23 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: 0|🇯🇵1 |  4.7MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 0,12|🇯🇵 日本|@ripaojiedian
+  name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -58,3 +74,46 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+- client-fingerprint: random
+  name: 14|JP_speednode_0116
+  network: ws
+  port: 7000
+  server: 153.121.32.78
+  servername: mot.luyuju.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4b13ceb-11d0-4611-8e50-f5bb453defa2
+  ws-opts:
+    headers:
+      Host: mot.luyuju.dpdns.org
+    path: /?ed=2560
+- name: 14|JP_speednode_0117
+  network: ws
+  port: 443
+  server: 45.77.28.75
+  servername: freehk.lzj520hxw.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
+  ws-opts:
+    headers:
+      Host: freehk.lzj520hxw.dpdns.org
+    path: /lzjjjj666
+- name: 14|JP_speednode_0119
+  network: ws
+  port: 443
+  server: 64.176.38.232
+  servername: lighter-missouri-hydrocodone-yeast.trycloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e46d518d-4a20-4f9a-873d-a86e9455321c
+  ws-opts:
+    headers:
+      Host: lighter-missouri-hydrocodone-yeast.trycloudflare.com
+    path: /e46d518d-4a20-4f9a-873d-a86e9455321c-vless?ed=2048
