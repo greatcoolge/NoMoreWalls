@@ -27,7 +27,7 @@ proxies:
       Host: ocbc.com
     path: /oooo
 - client-fingerprint: chrome
-  name: 12,13|新加坡2|@ripaojiedian
+  name: 12,13|新加坡4|@ripaojiedian
   network: tcp
   password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
   port: 35000
@@ -35,12 +35,11 @@ proxies:
   skip-cert-verify: false
   sni: cgsg2.hysality.com
   type: trojan
-- client-fingerprint: chrome
-  name: 12,13|新加坡3|@ripaojiedian
-  network: tcp
-  password: ffea316f-7e81-4f8c-b122-1673abe353ed
-  port: 42881
-  server: 120.232.220.45
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 12|🇸🇬 新加坡3|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6666
+  server: 54.251.238.225
+  tfo: false
+  type: ss
