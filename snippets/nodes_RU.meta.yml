@@ -1,52 +1,40 @@
 proxies:
 - alpn:
+  - h3
+  - h2
   - http/1.1
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   delay: 2596
   disable-sni: false
   down: '55'
-  name: 0,14|US_speednode_0123
+  name: 0,14|US_speednode_0108
   network: ws
   obfs: salamander
   obfs-password: Bia-Telegram__SiNAVM-SiNAVM__Bia__SiNAVM
   password: Bia-SiNAVM-Telegram-SiNAVM-Bia-SiNAVM
-  port: 443
+  port: 18899
   protocol: ''
   reduce-rtt: false
   request-timeout: 0
-  server: 104.17.148.22
-  servername: hOZori.iR
-  skip-cert-verify: false
+  server: 154.17.238.64
+  servername: madcity3.mianfeicf.lol
+  skip-cert-verify: true
   sni: sinavm.ru
   tls: true
   type: vless
   udp: true
   udp-relay-mode: native
   up: '11'
-  uuid: 3058e698-61fd-4d12-95bc-f1fe4c071713
+  uuid: ebcdd90c-d374-4f88-a4b4-7d9df8c0bad6
   version: 5
   ws-opts:
     headers:
-      Host: hOZori.iR
-    path: /RklUHeautH5uvnSB/NTQuMTY5LjIyOS4xODg
-  xudp: true
-- name: 14|RU_speednode_0057
-  network: ws
-  port: 8880
-  server: 185.59.218.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
+      Host: madcity3.mianfeicf.lol
     path: /?ed=2560
-- name: 14|RU_speednode_0058
+  xudp: true
+- name: 14|RU_speednode_0087
   network: ws
   port: 8880
   server: 45.67.215.20
@@ -60,22 +48,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 14|RU_speednode_0059
-  network: ws
-  port: 8880
-  server: 194.53.53.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 14|RU_speednode_0060
+- name: 14|RU_speednode_0088
   network: ws
   port: 8880
   server: 45.8.211.20
@@ -88,18 +61,4 @@ proxies:
   ws-opts:
     headers:
       Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 14|RU_speednode_0061
-  network: ws
-  port: 443
-  server: 45.67.215.92
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: ca.bgm2024.dpdns.org
     path: /?ed=2560
