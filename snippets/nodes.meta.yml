@@ -1572,7 +1572,7 @@ proxies:
   name: 12|tg频道:@ripaojiedian
   password: awsps0501
   port: 443
-  server: 18.246.228.5
+  server: 34.212.26.32
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1593,7 +1593,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 46583
+  port: 20273
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -1624,7 +1624,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 12,13|香港7|@ripaojiedian
+  name: 12,13|香港8|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -1638,22 +1638,19 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 12|🇭🇰 香港8|@ripaojiedian
-  port: 47010
-  server: 43.247.134.85
-  skip-cert-verify: false
+- cipher: aes-256-gcm
+  name: 12|🇭🇰 香港10|@ripaojiedian
+  password: Q5XH89ZLTSGOQASZ
+  port: 15007
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
-  tls: false
-  type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+  type: ss
 - cipher: rc4-md5
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505250813455-9i84PIbLBb.download.microsoft.com
+    host: 202505250813455-KDSmts8jZf.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -1661,31 +1658,45 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 12|🇯🇵 日本2|@ripaojiedian
-  password: 60a930c17ff0
+  password: 2e96aa2f3054
   plugin: v2ray-plugin
   plugin-opts:
-    host: kr6v1.xpmc.cc
+    host: kr7v1.pmxiaonan.xyz
     mode: websocket
     mux: true
-    path: /matwnpkhug
+    path: /lornlqecrjwe
     skip-cert-verify: false
     tls: true
-  port: 20091
-  server: 43.226.17.8
+  port: 14312
+  server: 43.226.17.17
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: 12|🇯🇵 日本3|@ripaojiedian
-  password: JAI3U4Q8S82OR7ZY
-  port: 18012
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 52.195.15.105
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   name: 12|🇯🇵 日本4|@ripaojiedian
-  password: HO86LQ8KH31JNMBQ
+  password: TF63RS7M0DB9OJ3B
   port: 18010
   server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 12|🇰🇷 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇰🇷 韩国2|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 3.38.139.172
   tfo: false
   type: ss
 - alterId: 2
@@ -1704,22 +1715,12 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 64
-  cipher: auto
-  name: 12|🇸🇬 新加坡2|@ripaojiedian
-  port: 49121
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505250813455-9i84PIbLBb.download.microsoft.com
+    host: 202505250813455-KDSmts8jZf.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -1779,16 +1780,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13|香港8|@ripaojiedian
-  network: tcp
-  port: '47010'
-  server: 43.247.134.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- alterId: 0
-  cipher: auto
   name: 13|日本V2|@ripaojiedian
   network: kcp
   port: '50951'
@@ -1797,16 +1788,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a3d04548-625c-4658-9ff0-f9a7835d1f6d
-- alterId: 64
-  cipher: auto
-  name: 13|新加坡2|@ripaojiedian
-  network: tcp
-  port: '49121'
-  server: 183.236.51.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 13|美国4|@ripaojiedian
