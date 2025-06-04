@@ -1,4 +1,4 @@
-# Update: 2025-06-04 20:45
+# Update: 2025-06-04 23:43
 allow-lan: false
 dns:
   enable: true
@@ -452,39 +452,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|GB_speednode_0060
-  password: 0bb42393-517a-4633-b852-afef37bd66fa
-  port: 15443
-  server: 192.248.144.185
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0183
-  network: ws
-  password: trojan
-  port: 8443
-  server: 104.26.12.31
-  skip-cert-verify: false
-  sni: fofang.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: fofang.pages.dev
-    path: /?ed=2560
-- name: 14|US_speednode_0188
-  network: ws
-  password: trojan
-  port: 8443
-  server: 172.67.75.172
-  skip-cert-verify: false
-  sni: fofang.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: fofang.pages.dev
-    path: /?ed=2560
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -496,51 +463,48 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 14|US_speednode_0183
-  - 12|🇸🇬 新加坡2|@ripaojiedian
-  - 12,13|香港4|@ripaojiedian
-  - 0|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
-  - 0|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
-  - 12|🇰🇷 韩国2|@ripaojiedian
-  - 12,13|香港7|@ripaojiedian
-  - 12|🇭🇰 香港6|@ripaojiedian
-  - 0|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
-  - 13|香港8|@ripaojiedian
-  - 12|🇺🇸 美国2|@ripaojiedian
-  - 12|🇰🇷 韩国3|@ripaojiedian
-  - 13|新加坡3|@ripaojiedian
   - 12|🇭🇰 香港|@ripaojiedian
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 12|🇸🇬 新加坡3|@ripaojiedian
-  - 12|🇭🇰 香港8|@ripaojiedian
-  - 0|🇺🇸62 |  3.3MB/s|Openai|Gemini
+  - 12|🇰🇷 韩国3|@ripaojiedian
   - 13|香港|@ripaojiedian
-  - 0|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
-  - 13|新加坡2|@ripaojiedian
-  - 12,13|美国5|@ripaojiedian
-  - 12,13|新加坡|@ripaojiedian
-  - 12,13|美国|@ripaojiedian
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 12|🇰🇷 韩国|@ripaojiedian
-  - 13|日本V2|@ripaojiedian
   - 13|香港5|@ripaojiedian
-  - 14|GB_speednode_0060
-  - 12|🇭🇰 香港5|@ripaojiedian
+  - 0|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
+  - 0|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   - 0|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
-  - 14|US_speednode_0188
-  - 12,13|新加坡5|@ripaojiedian
-  - 0|🌀4-TH |  2.6MB/s|55%|Netflix|O...
-  - 12|🇹🇼 台湾|@ripaojiedian
-  - 12|🇯🇵 日本4|@ripaojiedian
-  - 0|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
-  - 0|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   - 12|🇸🇬 新加坡4|@ripaojiedian
-  - 13|新加坡4|@ripaojiedian
-  - 12,13|美国4|@ripaojiedian
+  - 12|🇸🇬 新加坡3|@ripaojiedian
+  - 12|🇯🇵 日本4|@ripaojiedian
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 12,13|香港7|@ripaojiedian
+  - 13|日本V2|@ripaojiedian
+  - 0|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
   - 0|🇰🇷2 |  1.5MB/s|44%|Openai
-  - 0|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+  - 12|🇰🇷 韩国2|@ripaojiedian
+  - 13|香港8|@ripaojiedian
+  - 0|🇺🇸62 |  3.3MB/s|Openai|Gemini
+  - 12|🇭🇰 香港8|@ripaojiedian
+  - 13|新加坡2|@ripaojiedian
+  - 12|🇰🇷 韩国|@ripaojiedian
+  - 12,13|新加坡|@ripaojiedian
+  - 12|🇯🇵 日本2|@ripaojiedian
+  - 12|🇭🇰 香港5|@ripaojiedian
+  - 12|🇭🇰 香港6|@ripaojiedian
   - 12|tg频道:@ripaojiedian
+  - 0|🌀4-TH |  2.6MB/s|55%|Netflix|O...
+  - 13|新加坡4|@ripaojiedian
+  - 0|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+  - 12,13|新加坡5|@ripaojiedian
+  - 13|新加坡3|@ripaojiedian
+  - 0|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+  - 0|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
+  - 12|🇸🇬 新加坡2|@ripaojiedian
+  - 12,13|美国5|@ripaojiedian
+  - 12,13|香港4|@ripaojiedian
+  - 12,13|美国4|@ripaojiedian
   - 12|🇭🇰 香港2|@ripaojiedian
+  - 0|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  - 12,13|美国|@ripaojiedian
+  - 12|🇹🇼 台湾|@ripaojiedian
+  - 12|🇯🇵 日本|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -612,8 +576,6 @@ proxy-groups:
   - 12,13|美国|@ripaojiedian
   - 12,13|美国5|@ripaojiedian
   - 12,13|美国4|@ripaojiedian
-  - 14|US_speednode_0183
-  - 14|US_speednode_0188
   type: select
 - name: 🇨🇳 中国
   proxies:
@@ -659,7 +621,7 @@ proxy-groups:
   type: select
 - name: 🇬🇧 英国
   proxies:
-  - 14|GB_speednode_0060
+  - REJECT
   type: select
 - name: 🇰🇷 韩国
   proxies:
