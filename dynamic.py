@@ -7,21 +7,21 @@ from typing import Set
 from fetch import raw2fastly, session, LOCAL
 
 
- def kkzui():
+# def kkzui():
      # 密码在视频中口述, no use any more.
-     if LOCAL: return
-     res = session.get("https://kkzui.com/jd?orderby=modified")
-     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
-     res = session.get(article_url)
-     passwd = re.search(r'<strong>本期密码：(.*?)</strong>',res.text).groups()[0]
-     # print("Unlock kkzui.com with password:", passwd)
-     res = session.post(article_url, data={'secret-key': passwd})
-     sub = res.text.split('<pre')[1].split('</pre>')[0]
-     if '</' in sub:
-         sub = sub.split('</')[-2]
-     if '>' in sub:
-         sub = sub.split('>')[-1]
-     return sub
+#     if LOCAL: return
+#     res = session.get("https://kkzui.com/jd?orderby=modified")
+#     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
+#     res = session.get(article_url)
+#     passwd = re.search(r'<strong>本期密码：(.*?)</strong>',res.text).groups()[0]
+#     # print("Unlock kkzui.com with password:", passwd)
+#     res = session.post(article_url, data={'secret-key': passwd})
+#     sub = res.text.split('<pre')[1].split('</pre>')[0]
+#     if '</' in sub:
+#         sub = sub.split('</')[-2]
+#     if '>' in sub:
+#         sub = sub.split('>')[-1]
+#     return sub
 
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
