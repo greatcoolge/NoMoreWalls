@@ -8,13 +8,11 @@ from fetch import raw2fastly, session, LOCAL
 
 
 # def kkzui():
-     # 密码在视频中口述, no use any more.
 #     if LOCAL: return
 #     res = session.get("https://kkzui.com/jd?orderby=modified")
 #     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
 #     res = session.get(article_url)
 #     passwd = re.search(r'<strong>本期密码：(.*?)</strong>',res.text).groups()[0]
-#     # print("Unlock kkzui.com with password:", passwd)
 #     res = session.post(article_url, data={'secret-key': passwd})
 #     sub = res.text.split('<pre')[1].split('</pre>')[0]
 #     if '</' in sub:
@@ -39,7 +37,7 @@ def changfengoss():
         "https://api.github.com/repos/changfengoss/pub/contents/data/%Y_%m_%d?ref=main")).json()
     return [_['download_url'] for _ in res]
 
- def vpn_fail():
+def vpn_fail():
     # The site has been closed
     # if LOCAL: return
     response = session.get("https://vpn.fail/free-proxy/type/v2ray").text
