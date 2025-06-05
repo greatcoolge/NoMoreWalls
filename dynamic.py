@@ -40,27 +40,33 @@ def changfengoss():
     return [_['download_url'] for _ in res]
 
  def vpn_fail():
-     # The site has been closed
-     # if LOCAL: return
-     response = session.get("https://vpn.fail/free-proxy/type/v2ray").text
-     lines = re.findall(r'<article(.*?)</article', response, re.DOTALL)
-     links = set()
-     ips = set()
-     for line in lines:
-         result = re.search(r'<span>(\d+)%</span>', line)
-         if result and result.group(1) == '100':
-             ips.add(re.search(r'<a href=\"https://vpn\.fail/free-proxy/ip/(.*?)\" style=', line).group(1))
-     def get_link(ip: str) -> None:
-         try:
-             response = session.get(f"https://vpn.fail/free-proxy/ip/{ip}").text
-             link = response.split('class="form-control text-center" id="pp2" value="')[1].split('"')[0]
-             links.add(link)
-         except requests.exceptions.RequestException: pass
-     threads = [threading.Thread(target=get_link, args=(ip,)) for ip in ips]
-     for thread in threads: thread.start()
-     for thread in threads: thread.join()
-     return links
+    # The site has been closed
+    # if LOCAL: return
+    response = session.get("https://vpn.fail/free-proxy/type/v2ray").text
+    lines = re.findall(r'<article(.*?)</article', response, re.DOTALL)
+    links = set()
+    ips = set()
+    for line in lines:
+        result = re.search(r'<span>(\d+)%</span>', line)
+        if result and result.group(1) == '100':
+            ips.add(re.search(r'<a href="https://vpn\.fail/free-proxy/ip/(.*?)" style=', line).group(1))
 
+    def get_link(ip: str) -> None:
+        try:
+            response = session.get(f"https://vpn.fail/free-proxy/ip/{ip}").text
+            link = response.split('class="form-control text-center" id="pp2" value="')[1].split('"')[0]
+            links.add(link)
+        except requests.exceptions.RequestException:
+            pass
+
+    threads = [threading.Thread(target=get_link, args=(ip,)) for ip in ips]
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()
+
+    return links
+      
 def w1770946466():
     if LOCAL: return
     res = session.get(raw2fastly("https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/README.md")).text
