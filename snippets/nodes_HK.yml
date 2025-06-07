@@ -22,7 +22,7 @@ proxies:
     path: /simieepvt
     skip-cert-verify: false
     tls: true
-  port: 11400
+  port: 37689
   server: 121.127.231.217
   tfo: false
   type: ss
@@ -74,6 +74,26 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- client-fingerprint: chrome
+  name: 11,12|香港7|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11|🇭🇰 香港8|@ripaojiedian
+  port: 59652
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 12|香港|@ripaojiedian
@@ -100,6 +120,16 @@ proxies:
   network: tcp
   port: '31209'
   server: 120.232.153.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 12|香港8|@ripaojiedian
+  network: tcp
+  port: '59652'
+  server: 183.236.51.38
   servername: ''
   tls: false
   type: vmess
