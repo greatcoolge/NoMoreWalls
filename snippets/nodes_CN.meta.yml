@@ -1,14 +1,13 @@
 proxies:
-- name: '1,18,32|CN_speednode_0005 #1'
+- name: '1|15|CN_speednode_0005 #2'
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21031
   server: 120.233.44.201
   skip-cert-verify: true
   sni: k54.tudou211.com
   type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: '1,15,16,18,30,31,32|CN_speednode_0006 #1'
+  name: '1,15,16,30,31|韩国|@ripaojiedian #1'
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -16,7 +15,6 @@ proxies:
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-  udp: true
 - name: 1|免费VPN：https://tt.vg/gwaAy
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21102
@@ -33,14 +31,13 @@ proxies:
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-- name: '1,18,32|CN_speednode_0004 #1'
+- name: '1|15|CN_speednode_0004 #2'
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
   server: 203.156.253.11
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-  udp: true
 - name: '1|_中国 #5'
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -187,7 +184,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 3,8,18|CN_speednode_0010
+  name: 3,8,18|CN_speednode_0004
   network: ws
   port: 22641
   server: tk.hzlt.tkddns.xyz
@@ -302,58 +299,3 @@ proxies:
   server: xibaozi.19890604.day
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 18|CN_speednode_0007
-  network: ws
-  port: 22642
-  server: 120.253.251.26
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 18|CN_speednode_0009
-  network: ws
-  port: 22641
-  server: 120.253.251.26
-  servername: zxjp-a.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 18|CN_speednode_0012
-  network: ws
-  port: 22643
-  server: 120.253.251.26
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 18|CN_speednode_0014
-  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-  port: 19852
-  server: h.cm2.xiaomi-api.xyz
-  type: ss
-  udp: true
