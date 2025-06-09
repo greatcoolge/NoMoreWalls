@@ -422,7 +422,7 @@ class Node:
                     self.data[k] = v
                 elif k == 'fp':
                     self.data['fingerprint'] = v
-            # 可选扩展，支持 reality-opts.server-name
+                # 可选扩展，支持 reality-opts.server-name
                 elif k == 'server-name':
                     if 'reality-opts' not in self.data:
                         self.data['reality-opts'] = {}
