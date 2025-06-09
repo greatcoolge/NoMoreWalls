@@ -295,7 +295,7 @@ class Node:
                     'protocol': parts[2], 'cipher': parts[3], 'obfs': parts[4],
                     'password': passwd, 'name': ''}
             for kv in info.split('&'):
-                k_v = kv.split('=')
+                k, v = kv.split('=', 1)
                 if len(k_v) != 2:
                     k = k_v[0]
                     v = ''
@@ -345,7 +345,7 @@ class Node:
             self.data['tls'] = False
             if parsed.query:
                 for kv in parsed.query.split('&'):
-                    k,v = kv.split('=')
+                    k, v = kv.split('=', 1)
                     if k in ('allowInsecure', 'insecure'):
                         self.data['skip-cert-verify'] = (v != '0')
                     elif k == 'sni': self.data['servername'] = v
@@ -401,7 +401,7 @@ class Node:
             self.data['tls'] = False
             if parsed.query:
                 for kv in parsed.query.split('&'):
-                    k,v = kv.split('=')
+                    k, v = kv.split('=', 1)
                     if k == 'insecure':
                         self.data['skip-cert-verify'] = (v != '0')
                     elif k == 'alpn':
