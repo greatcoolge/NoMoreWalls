@@ -50,16 +50,6 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: '3,8|Channel id: @ShadowProxy66🇩🇪 #1'
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
-- alterId: 0
-  cipher: auto
   name: 3|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.82...
   network: tcp
   port: '54757'
@@ -68,35 +58,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
-- alterId: 0
-  cipher: auto
-  name: 3|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
-  network: tcp
-  port: 23890
-  server: 188.245.109.124
-  tls: false
-  type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
-- alterId: 0
-  cipher: auto
-  name: 3|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
-  network: tcp
-  port: '22839'
-  server: 45.12.138.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
-- alterId: 0
-  cipher: auto
-  name: '3,8|🌟Telegram:@Asak_Vpn #11'
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -111,7 +72,27 @@ proxies:
   uuid: a36bc162-c700-49e4-90b8-f1542b3fa9fb
 - alterId: 0
   cipher: auto
-  name: '3,33|Channel id: @ShadowProxy66🇩🇪 #3'
+  name: '3,8|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: tcp
+  port: '33940'
+  server: 37.221.125.159
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: '3,8|🌟Telegram:@Asak_Vpn #11'
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: '3,33|Channel id: @ShadowProxy66🇩🇪 #4'
   network: ws
   port: '443'
   server: 57.129.28.65
@@ -123,6 +104,25 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 3|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
+  network: tcp
+  port: '22839'
+  server: 45.12.138.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
+- alterId: 0
+  cipher: auto
+  name: 3|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  network: tcp
+  port: 23890
+  server: 188.245.109.124
+  tls: false
+  type: vmess
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: '3,33|法国 国际航空电讯集团公司(SITA) #1'
@@ -139,7 +139,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 3|🇩🇪DE-132.145.232.171-7184
+  name: 3,33|3|🇫🇷13 |  2.0MB/s|100%|Disney|...
   network: ws
   port: 443
   server: 132.145.232.171
@@ -172,6 +172,19 @@ proxies:
     headers:
       Host: e9464f45.trauma-2r4.pages.dev
     path: /
+- alpn:
+  - http/1.1
+  name: 13|@APPSOONER+کانال+تلگرام+🇩🇪
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 104.18.34.21
+  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb-worker-panel1-e4p.pages.dev
+    path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
 - name: 13|🇩🇪/DE/德国/3
   password: 6befeeb3-702b-4948-9028-f9e072f2da98
   port: 443
@@ -195,20 +208,6 @@ proxies:
   port: 1007
   server: srvr2.sootoon.site
   type: trojan
-- alterId: 1
-  cipher: auto
-  name: 33|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: '33|Channel id: @ShadowProxy66🇩🇪 #2'
@@ -223,3 +222,17 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 33|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws

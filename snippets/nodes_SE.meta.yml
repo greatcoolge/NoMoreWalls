@@ -13,15 +13,42 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 3,33|2|🇺🇸11 |  4.7MB/s
+- alpn:
+  - http/1.1
+  name: 13|🇸🇪@
   network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.251.88
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '13|🇸🇪@ #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 56.228.39.94
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '13|🇸🇪@ #2'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.14.251
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '13|🇸🇪@ #3'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.188.15
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - client-fingerprint: chrome
   name: '18,32|SE_speednode_0057 #1'
   network: ws

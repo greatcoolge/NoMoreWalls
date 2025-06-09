@@ -1,16 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
   name: 3|🇷🇺RU-45.147.201.231-0557
   network: ws
   port: 20056
@@ -23,6 +13,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 3|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - name: 13|@appsooner+کانال+تلگرام+🇷🇺
   network: tcp
   password: ypDt8RkT7J
@@ -36,6 +36,20 @@ proxies:
   server: 185.236.233.111
   sni: ftp.debian.org
   type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 13|Russia
+  network: tcp
+  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
+  port: 8443
+  server: 195.133.52.153
+  sni: ru2.asc-sam.io
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ru2.asc-sam.io
 - name: '13|Russia #1'
   network: ws
   password: vpn

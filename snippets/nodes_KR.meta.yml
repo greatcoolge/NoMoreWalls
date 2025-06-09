@@ -1,4 +1,11 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 0,18|KR_speednode_0050
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+  udp: true
 - name: '1,17|🇰🇷KR韩国 #1'
   password: Aimer
   port: 50000
@@ -15,6 +22,20 @@ proxies:
   tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
+- alpn:
+  - h2
+  - http/1.1
+  name: 13|@APPSOONER+کانال+تلگرام+🇰🇷
+  network: ws
+  password: azadnet-trojan
+  port: 443
+  server: 104.21.36.165
+  sni: XN----PmCnaaC0dKn0Rb71NdA.PagES.DeV
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xn----pmcnaac0dkn0rb71nda.pages.dev
+    path: /trbRb6rQQHUXO1sk03?ed=2560
 - name: '13|@APPSOONER+کانال+تلگرام+🇰🇷 #1'
   network: ws
   password: auto
@@ -58,14 +79,6 @@ proxies:
   server: kr2.yihaobao.xyz
   sni: tls.yihaobao.xyz
   type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,30|🇰🇷 韩国2|@ripaojiedian #2'
-  password: qwerREWQ@@
-  port: 36379
-  server: p080.panda001.net
-  tfo: false
-  type: ss
 - name: '18,32|KR_speednode_0048 #1'
   network: ws
   port: 36636
@@ -94,10 +107,3 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- cipher: aes-256-cfb
-  name: 18|KR_speednode_0050
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-  udp: true
