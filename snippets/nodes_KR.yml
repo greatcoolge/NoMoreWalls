@@ -15,20 +15,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
-- name: 13|V1-韩国
-  network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 43871
-  server: 5493d9bac2d945e3514cd8d2e1d966bf.v1.cac.node-is.green
-  sni: kr.cacnord.bilibili.com
-  type: trojan
-- name: 13|🇰🇷+韩国-解锁-2
-  network: tcp
-  password: f78b6dfe-d15c-42bf-a9d6-a6b2db2fff5b
-  port: 10077
-  server: kr2.yihaobao.xyz
-  sni: tls.yihaobao.xyz
-  type: trojan
 - name: 13|🇰🇷.KR.韩国.6
   password: 6x8HcghsjS
   port: 10003
@@ -46,6 +32,20 @@ proxies:
   port: 40003
   server: 146.56.166.123
   skip-cert-verify: true
+  type: trojan
+- name: 13|V1-韩国
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 43871
+  server: 5493d9bac2d945e3514cd8d2e1d966bf.v1.cac.node-is.green
+  sni: kr.cacnord.bilibili.com
+  type: trojan
+- name: 13|🇰🇷+韩国-解锁-2
+  network: tcp
+  password: f78b6dfe-d15c-42bf-a9d6-a6b2db2fff5b
+  port: 10077
+  server: kr2.yihaobao.xyz
+  sni: tls.yihaobao.xyz
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome

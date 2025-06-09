@@ -45,6 +45,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '3,16,31|香港4|@ripaojiedian #1'
+  network: tcp
+  port: '27680'
+  server: 38.147.189.7
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1e17ef3c-b4a9-4430-ba37-3c986dba8f2f
 - alterId: 64
   cipher: auto
   name: '3,16,31|香港5|@ripaojiedian #1'
@@ -55,6 +65,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '3,15,16,30,31|香港6|@ripaojiedian #1'
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 64
   cipher: auto
   name: '3,8,16,31|香港8|@ripaojiedian #1'
@@ -66,29 +93,6 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 3|🔒 VM-TCP-NA 🇭🇰 HK-8.218.244.56...
-  network: tcp
-  port: '24925'
-  server: 8.218.244.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 59abf2b3-bdb7-450c-e608-f2152da346b5
-- alterId: 0
-  cipher: auto
-  name: 3|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
-  network: ws
-  port: 40601
-  server: 82.152.164.10
-  tls: false
-  type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  ws-opts:
-    headers:
-      Host: us05.jssssss.com
-    path: /
-- alterId: 0
   cipher: auto
   name: 3|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
   network: tcp
@@ -97,6 +101,16 @@ proxies:
   tls: false
   type: vmess
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
+- alterId: 0
+  cipher: auto
+  name: '3,8|@awlix_ir #31'
+  network: tcp
+  port: '47010'
+  server: 43.247.134.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - alterId: 0
   cipher: auto
   name: 3|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
@@ -113,14 +127,37 @@ proxies:
     path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: '3,8|@awlix_ir #31'
+  name: 3|🔒 VM-TCP-NA 🇭🇰 HK-103.30.76.66...
   network: tcp
-  port: '47010'
-  server: 43.247.134.85
+  port: '13651'
+  server: 103.30.76.66
   servername: ''
   tls: false
   type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+  uuid: 6831c9ce-4ca8-42c0-8181-fb1055710ccc
+- alterId: 0
+  cipher: auto
+  name: 3|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  network: ws
+  port: 40601
+  server: 82.152.164.10
+  tls: false
+  type: vmess
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  ws-opts:
+    headers:
+      Host: us05.jssssss.com
+    path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 3|🔒 VM-TCP-NA 🇭🇰 HK-8.218.244.56...
+  network: tcp
+  port: '24925'
+  server: 8.218.244.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 59abf2b3-bdb7-450c-e608-f2152da346b5
 - alterId: 2
   cipher: auto
   name: '3,8,17|HK4 #1'
@@ -135,16 +172,6 @@ proxies:
     headers:
       Host: 09d8162a-sv6hs0-t5963m-1ex5a.hk.p5pv.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '3,16,31|香港4|@ripaojiedian #1'
-  network: tcp
-  port: '27680'
-  server: 38.147.189.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1e17ef3c-b4a9-4430-ba37-3c986dba8f2f
 - alterId: 0
   cipher: auto
   name: 3,33|🇭🇰HK-8.218.42.21-1023
@@ -313,6 +340,12 @@ proxies:
     headers:
       Host: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
     path: /
+- name: 13|🇭🇰_HK_香港_10
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: hk03.trojanyyds.xyz
+  sni: hk03.trojanyyds.xyz
+  type: trojan
 - name: 13|V1-香港1
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
@@ -362,12 +395,6 @@ proxies:
   server: hk6.yihaobao.xyz
   sni: tls.yihaobao.xyz
   type: trojan
-- name: 13|🇭🇰_HK_香港_10
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: hk03.trojanyyds.xyz
-  sni: hk03.trojanyyds.xyz
-  type: trojan
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -409,7 +436,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '15,30|🇭🇰 香港4|@ripaojiedian #1'
+  name: '15,30|🇭🇰 香港4|@ripaojiedian #2'
   port: 27680
   server: 38.147.189.7
   skip-cert-verify: false
