@@ -245,8 +245,8 @@ class Node:
 
         elif self.type == 'ss':
             info = url.split('@')
-            if not info:
-                raise UnsupportedType('ss', 'Invalid SS URL: missing @ part')
+            if len(info) < 2:
+                raise UnsupportedType('ss', f'Invalid SS URL: missing user@server part: {url}')
 
             srvname = info.pop()
             if '#' in srvname:
@@ -255,32 +255,33 @@ class Node:
                 srv = srvname
                 name = ''
 
-           if ':' not in srv:
-               raise UnsupportedType('ss', f'Invalid server:port format in {srv}')
-           server, port = srv.split(':', 1)
-           try:
-               port = int(port)
-           except ValueError:
-               raise UnsupportedType('ss', f'Invalid port: {port}')
+            if ':' not in srv:
+                raise UnsupportedType('ss', f'Invalid server:port format in: {srv}')
 
-    info = '@'.join(info)
-    if ':' not in info:
-        info = b64decodes_safe(info)
+            server, port = srv.split(':', 1)
+            try:
+                port = int(port)
+            except ValueError:
+                raise UnsupportedType('ss', f'Invalid port number: {port}')
 
-    if ':' in info:
-        cipher, passwd = info.split(':', 1)
-    else:
-        cipher = info
-        passwd = ''
+            userinfo = '@'.join(info)
+            if ':' not in userinfo:
+                userinfo = b64decodes_safe(userinfo)
 
-    self.data = {
-        'name': unquote(name),
-        'server': server,
-        'port': port,
-        'type': 'ss',
-        'password': passwd,
-        'cipher': cipher
-    }
+            if ':' in userinfo:
+                cipher, passwd = userinfo.split(':', 1)
+            else:
+                cipher = userinfo
+                passwd = ''
+
+            self.data = {
+                'name': unquote(name),
+                'server': server,
+                'port': port,
+                'type': 'ss',
+                'password': passwd,
+                'cipher': cipher
+            }
         elif self.type == 'ssr':
             if '?' in url:
                 parts = dt.split(':')
