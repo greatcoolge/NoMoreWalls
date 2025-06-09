@@ -301,19 +301,19 @@ class Node:
                     'protocol': parts[2], 'cipher': parts[3], 'obfs': parts[4],
                     'password': passwd, 'name': ''}
             for kv in info.split('&'):
-                k, v = kv.split('=', 1)
-                if len(kv) != 2:
-                    k = k_v[0]
-                    v = ''
-                else: k,v = k_v
-                if k == 'remarks':
-                    self.data['name'] = v
-                elif k == 'group':
-                    self.data['group'] = v
-                elif k == 'obfsparam':
-                    self.data['obfs-param'] = v
-                elif k == 'protoparam':
-                    self.data['protocol-param'] = v
+                if '=' in kv:
+                    k, v = kv.split('=', 1)
+                else:
+                    k, v = kv, ''  # 没有 = 的情况，值设为空字符串
+
+               if k == 'remarks':
+                   self.data['name'] = v
+               elif k == 'group':
+                   self.data['group'] = v
+               elif k == 'obfsparam':
+                   self.data['obfs-param'] = v
+               elif k == 'protoparam':
+                   self.data['protocol-param'] = v
 
         elif self.type == 'trojan':
             parsed = urlparse(url)
