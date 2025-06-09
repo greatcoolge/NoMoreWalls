@@ -315,7 +315,7 @@ class Node:
                     'port': parsed.port, 'type': 'trojan', 'password': unquote(parsed.username)} # type: ignore
             if parsed.query:
                 for kv in parsed.query.split('&'):
-                    k,v = kv.split('=')
+                    k, v = kv.split('=', 1)
                     if k in ('allowInsecure', 'insecure'):
                         self.data['skip-cert-verify'] = (v != '0')
                     elif k == 'sni': self.data['sni'] = v
