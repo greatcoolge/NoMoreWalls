@@ -64,19 +64,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 17|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 17|北美地区 v2rayfree.eu.org
   network: ws
   port: 443
@@ -90,13 +77,17 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 17|2|🇺🇸11 |  4.7MB/s
-  network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
+  name: 17|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 32
   cipher: auto
   name: 17|🇺🇸US-77.83.141.171-1131
@@ -121,3 +112,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 0041dada-22bc-4c80-f655-d32c9faecbc8
+- alterId: 0
+  cipher: auto
+  name: 17|2|🇺🇸11 |  4.7MB/s
+  network: tcp
+  port: 18000
+  server: 169.150.208.83
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
