@@ -302,7 +302,7 @@ class Node:
                     'password': passwd, 'name': ''}
             for kv in info.split('&'):
                 k, v = kv.split('=', 1)
-                if len(k_v) != 2:
+                if len(kv) != 2:
                     k = k_v[0]
                     v = ''
                 else: k,v = k_v
@@ -321,6 +321,8 @@ class Node:
                     'port': parsed.port, 'type': 'trojan', 'password': unquote(parsed.username)} # type: ignore
             if parsed.query:
                 for kv in parsed.query.split('&'):
+                    if '=' not in kv:
+                        continue  # 跳过不包含 = 的项，避免出错
                     k, v = kv.split('=', 1)
                     if k in ('allowInsecure', 'insecure'):
                         self.data['skip-cert-verify'] = (v != '0')
@@ -351,6 +353,8 @@ class Node:
             self.data['tls'] = False
             if parsed.query:
                 for kv in parsed.query.split('&'):
+                    if '=' not in kv:
+                        continue  # 跳过不包含 = 的项，避免出错
                     k, v = kv.split('=', 1)
                     if k in ('allowInsecure', 'insecure'):
                         self.data['skip-cert-verify'] = (v != '0')
