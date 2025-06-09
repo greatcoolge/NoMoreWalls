@@ -523,7 +523,9 @@ class Node:
                 ret += f"alpn={quote(','.join(data['alpn']))}&"
             if 'network' in data:
                 if data['network'] == 'grpc':
-                    ret += f"type=grpc&serviceName={data['grpc-opts']['grpc-service-name']}"
+                    grpc_opts = data.get('grpc-opts', {})
+                    service_name = grpc_opts.get('grpc-service-name', '')
+                    ret += f"type=grpc&serviceName={service_name}"
                 elif data['network'] == 'ws':
                     ret += f"type=ws&"
                     if 'ws-opts' in data:
@@ -547,7 +549,9 @@ class Node:
                 ret += f"alpn={quote(','.join(data['alpn']))}&"
             if 'network' in data:
                 if data['network'] == 'grpc':
-                    ret += f"type=grpc&serviceName={data['grpc-opts']['grpc-service-name']}"
+                    grpc_opts = data.get('grpc-opts', {})
+                    service_name = grpc_opts.get('grpc-service-name', '')
+                    ret += f"type=grpc&serviceName={service_name}"
                 elif data['network'] == 'ws':
                     ret += f"type=ws&"
                     if 'ws-opts' in data:
