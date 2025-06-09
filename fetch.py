@@ -306,14 +306,14 @@ class Node:
                 else:
                     k, v = kv, ''  # 没有 = 的情况，值设为空字符串
 
-               if k == 'remarks':
-                   self.data['name'] = v
-               elif k == 'group':
-                   self.data['group'] = v
-               elif k == 'obfsparam':
-                   self.data['obfs-param'] = v
-               elif k == 'protoparam':
-                   self.data['protocol-param'] = v
+                if k == 'remarks':
+                    self.data['name'] = v
+                elif k == 'group':
+                    self.data['group'] = v
+                elif k == 'obfsparam':
+                    self.data['obfs-param'] = v
+                elif k == 'protoparam':
+                    self.data['protocol-param'] = v
 
         elif self.type == 'trojan':
             parsed = urlparse(url)
