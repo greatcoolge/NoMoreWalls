@@ -245,28 +245,42 @@ class Node:
 
         elif self.type == 'ss':
             info = url.split('@')
+            if not info:
+                raise UnsupportedType('ss', 'Invalid SS URL: missing @ part')
+
             srvname = info.pop()
             if '#' in srvname:
-                srv, name = srvname.split('#')
+                srv, name = srvname.split('#', 1)
             else:
                 srv = srvname
                 name = ''
-            server, port = srv.split(':')
-            try:
-                port = int(port)
-            except ValueError:
-                raise UnsupportedType('ss', 'SP')
-            info = '@'.join(info)
-            if not ':' in info:
-                info = b64decodes_safe(info)
-            if ':' in info:
-                cipher, passwd = info.split(':')
-            else:
-                cipher = info
-                passwd = ''
-            self.data = {'name': unquote(name), 'server': server, 
-                    'port': port, 'type': 'ss', 'password': passwd, 'cipher': cipher}
 
+           if ':' not in srv:
+               raise UnsupportedType('ss', f'Invalid server:port format in {srv}')
+           server, port = srv.split(':', 1)
+           try:
+               port = int(port)
+           except ValueError:
+               raise UnsupportedType('ss', f'Invalid port: {port}')
+
+    info = '@'.join(info)
+    if ':' not in info:
+        info = b64decodes_safe(info)
+
+    if ':' in info:
+        cipher, passwd = info.split(':', 1)
+    else:
+        cipher = info
+        passwd = ''
+
+    self.data = {
+        'name': unquote(name),
+        'server': server,
+        'port': port,
+        'type': 'ss',
+        'password': passwd,
+        'cipher': cipher
+    }
         elif self.type == 'ssr':
             if '?' in url:
                 parts = dt.split(':')
