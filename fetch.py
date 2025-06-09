@@ -393,43 +393,43 @@ class Node:
             self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname, 
                          'type': 'hysteria2', 'password': unquote(parsed.username)} # type: ignore
 
-        if ':' in parsed.netloc:
-            try:
-                ports = parsed.netloc.split(':', 1)[1]
-                if ',' in ports:
-                    p1, p2 = ports.split(',', 1)
-                    self.data['port'] = int(p1)
-                    self.data['ports'] = p2
-                else:
-                    self.data['port'] = int(ports)
-            except Exception:
+            if ':' in parsed.netloc:
+                try:
+                    ports = parsed.netloc.split(':', 1)[1]
+                    if ',' in ports:
+                        p1, p2 = ports.split(',', 1)
+                        self.data['port'] = int(p1)
+                        self.data['ports'] = p2
+                    else:
+                        self.data['port'] = int(ports)
+                except Exception:
+                    self.data['port'] = 443
+            else:
                 self.data['port'] = 443
-        else:
-            self.data['port'] = 443
 
-        self.data['tls'] = False
+            self.data['tls'] = False
 
-        if parsed.query:
-            for kv in parsed.query.split('&'):
-                if '=' not in kv:
-                    continue
-                k, v = kv.split('=', 1)
-                if k == 'insecure':
-                    self.data['skip-cert-verify'] = (v != '0')
-                elif k == 'alpn':
-                    self.data['alpn'] = unquote(v).split(',')
-                elif k in ('sni', 'obfs', 'obfs-password'):
-                    self.data[k] = v
-                elif k == 'fp':
-                    self.data['fingerprint'] = v
-                # 可选扩展，支持 reality-opts.server-name
-                elif k == 'server-name':
-                    if 'reality-opts' not in self.data:
-                        self.data['reality-opts'] = {}
-                    self.data['reality-opts']['server-name'] = v
+            if parsed.query:
+                for kv in parsed.query.split('&'):
+                    if '=' not in kv:
+                        continue
+                    k, v = kv.split('=', 1)
+                    if k == 'insecure':
+                        self.data['skip-cert-verify'] = (v != '0')
+                    elif k == 'alpn':
+                        self.data['alpn'] = unquote(v).split(',')
+                    elif k in ('sni', 'obfs', 'obfs-password'):
+                        self.data[k] = v
+                    elif k == 'fp':
+                        self.data['fingerprint'] = v
+                    # 可选扩展，支持 reality-opts.server-name
+                    elif k == 'server-name':
+                        if 'reality-opts' not in self.data:
+                            self.data['reality-opts'] = {}
+                        self.data['reality-opts']['server-name'] = v
 
-    else:
-        raise UnsupportedType(self.type)
+        else: 
+            raise UnsupportedType(self.type)
 
     def format_name(self, max_len=30) -> None:
         self.data['name'] = self.name
