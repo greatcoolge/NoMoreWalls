@@ -211,8 +211,10 @@ class Node:
             return False
 
     def load_url(self, url: str) -> None:
-        self.type, dt = url.split("://", 1)
-        except ValueError: raise NotANode(url)
+        try:
+            self.type, dt = url.split("://", 1)
+        except ValueError: 
+            raise NotANode(url)
         # === Fix begin ===
         if not self.type.isascii():
             self.type = ''.join([_ for _ in self.type if _.isascii()])
