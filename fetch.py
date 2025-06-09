@@ -211,7 +211,7 @@ class Node:
             return False
 
     def load_url(self, url: str) -> None:
-        try: self.type, dt = url.split("://")
+        self.type, dt = url.split("://", 1)
         except ValueError: raise NotANode(url)
         # === Fix begin ===
         if not self.type.isascii():
@@ -391,30 +391,45 @@ class Node:
         elif self.type == 'hysteria2':
             parsed = urlparse(url)
             self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname, 
-                    'type': 'hysteria2', 'password': unquote(parsed.username)} # type: ignore
-            if ':' in parsed.netloc:
-                ports = parsed.netloc.split(':')[1]
+                         'type': 'hysteria2', 'password': unquote(parsed.username)} # type: ignore
+
+        if ':' in parsed.netloc:
+            try:
+                ports = parsed.netloc.split(':', 1)[1]
                 if ',' in ports:
-                    self.data['port'], self.data['ports'] = ports.split(',',1)
+                    p1, p2 = ports.split(',', 1)
+                    self.data['port'] = int(p1)
+                    self.data['ports'] = p2
                 else:
-                    self.data['port'] = ports
-                try: self.data['port'] = int(self.data['port'])
-                except ValueError: self.data['port'] = 443
-            else:
+                    self.data['port'] = int(ports)
+            except Exception:
                 self.data['port'] = 443
-            self.data['tls'] = False
-            if parsed.query:
-                for kv in parsed.query.split('&'):
-                    k, v = kv.split('=', 1)
-                    if k == 'insecure':
-                        self.data['skip-cert-verify'] = (v != '0')
-                    elif k == 'alpn':
-                        self.data['alpn'] = unquote(v).split(',')
-                    elif k in ('sni', 'obfs', 'obfs-password'):
-                        self.data[k] = v
-                    elif k == 'fp': self.data['fingerprint'] = v
-        
-        else: raise UnsupportedType(self.type)
+        else:
+            self.data['port'] = 443
+
+        self.data['tls'] = False
+
+        if parsed.query:
+            for kv in parsed.query.split('&'):
+                if '=' not in kv:
+                    continue
+                k, v = kv.split('=', 1)
+                if k == 'insecure':
+                    self.data['skip-cert-verify'] = (v != '0')
+                elif k == 'alpn':
+                    self.data['alpn'] = unquote(v).split(',')
+                elif k in ('sni', 'obfs', 'obfs-password'):
+                    self.data[k] = v
+                elif k == 'fp':
+                    self.data['fingerprint'] = v
+            # 可选扩展，支持 reality-opts.server-name
+                elif k == 'server-name':
+                    if 'reality-opts' not in self.data:
+                        self.data['reality-opts'] = {}
+                    self.data['reality-opts']['server-name'] = v
+
+    else:
+        raise UnsupportedType(self.type)
 
     def format_name(self, max_len=30) -> None:
         self.data['name'] = self.name
