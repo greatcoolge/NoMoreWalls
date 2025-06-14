@@ -5,7 +5,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506070920094-n6Kql0nGua.download.microsoft.com
+    host: 202506131022370-LF8GL1rPM0.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -45,60 +45,23 @@ proxies:
     headers:
       Host: v24.heduian.link
     path: /oooo
-- name: 16|US_speednode_0119
-  password: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  port: 12527
-  server: t11.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 16|US_speednode_0120
-  password: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  port: 1401
-  server: t10.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 16|US_speednode_0123
-  password: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  port: 1662
-  server: t16.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 16|US_speednode_0125
-  password: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  port: 1370
-  server: t15.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 17|北美地区 v2rayfree.eu.org
+  client-fingerprint: chrome
+  name: 14,15|美国4|@ripaojiedian
   network: ws
-  port: 443
-  server: 134.195.198.147
+  port: '22641'
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-a.tkong.cc
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
     headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|2|🇺🇸11 |  4.7MB/s
-  network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+      Host: zxjp-a.tkong.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: 17|美国 v2rayfree.eu.org
@@ -111,4 +74,40 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|2|🇺🇸11 |  4.7MB/s
+  network: tcp
+  port: 18000
+  server: 169.150.208.83
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 32
+  cipher: auto
+  name: 17|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 17|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
