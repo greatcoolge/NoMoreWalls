@@ -1,40 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇭🇰 香港7|@ripaojiedian
-  port: 20332
-  server: 43.247.135.2
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇭🇰 香港2|@ripaojiedian
-  password: 1450cecfb93f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.pmxiaonan.xyz
-    mode: websocket
-    mux: true
-    path: /simieepvt
-    skip-cert-verify: false
-    tls: true
-  port: 15056
-  server: 121.127.231.229
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 14,15|香港3|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 125.94.40.221
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
 - client-fingerprint: chrome
   name: 14,15|香港4|@ripaojiedian
   network: tcp
@@ -43,6 +7,31 @@ proxies:
   server: 113.99.140.184
   skip-cert-verify: true
   sni: www.yrtok.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 14|🇭🇰 香港2|@ripaojiedian
+  password: 08293b204707
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.pmxiaonan.xyz
+    mode: websocket
+    mux: true
+    path: /sclbvcgkp
+    skip-cert-verify: false
+    tls: true
+  port: 42084
+  server: 156.251.179.238
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 14,15|香港3|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
   type: trojan
 - alterId: 64
   cipher: auto
@@ -74,20 +63,31 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 15|香港7|@ripaojiedian
-  network: tcp
-  port: '20332'
-  server: 43.247.135.2
-  servername: ''
+  client-fingerprint: chrome
+  name: 14|🇭🇰 香港7|@ripaojiedian
+  port: 46159
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 15|新加坡3|@ripaojiedian
   network: tcp
   port: '31209'
   server: 120.232.153.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 15|香港7|@ripaojiedian
+  network: tcp
+  port: '46159'
+  server: 120.198.71.216
   servername: ''
   tls: false
   type: vmess
