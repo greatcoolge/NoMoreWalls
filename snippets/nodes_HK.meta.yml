@@ -27,7 +27,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 14,15,16|CN_speednode_0002
+  name: 14,15|香港3|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -35,7 +35,6 @@ proxies:
   skip-cert-verify: true
   sni: 120.233.128.68
   type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 14,15|香港4|@ripaojiedian
   network: tcp
@@ -103,6 +102,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cd9d6687-d1c0-49d9-89fa-2ac90940b17a
+- client-fingerprint: chrome
+  name: 16|HK_speednode_0031
+  network: ws
+  port: 8880
+  server: 154.218.15.63
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: auto
   name: '17|Channel id: @ShadowProxy66🇭🇰'
