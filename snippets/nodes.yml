@@ -17,17 +17,17 @@ proxies:
     path: /oooo
 - cipher: aes-256-gcm
   name: 11|🇭🇰 香港2|@ripaojiedian
-  password: 25ec467c78cb
+  password: ae29f32aa471
   plugin: v2ray-plugin
   plugin-opts:
-    host: hk6v1.dsjsapp.com
+    host: hkxwv1-5.dsjsapi.com
     mode: websocket
     mux: true
-    path: /iqgfyizn
+    path: /evoeqcpitmgg
     skip-cert-verify: false
     tls: true
   port: 443
-  server: 156.251.179.238
+  server: 121.127.231.200
   tfo: false
   type: ss
 - alterId: 0
@@ -73,7 +73,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506212021989-efqPqRoxds.download.microsoft.com
+    host: 202506212021989-UeZw4cuGiR.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -94,26 +94,22 @@ proxies:
   server: 163.61.207.182
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 11|🇯🇵 日本4|@ripaojiedian
-  port: 3684
-  server: a29b45ed-submo0-syap8d-dbk8.d.volczijie.com
+  name: 11,12|日本3|@ripaojiedian
+  network: ws
+  port: '30806'
+  server: v6.heduian.link
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
-- alterId: 0
-  cipher: auto
-  name: 11|🇰🇷 韩国|@ripaojiedian
-  port: 49815
-  server: 45.141.136.234
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 105af49c-e4ee-4294-b7cc-abfe6a651cf5
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - name: 11,12|韩国2|@ripaojiedian
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
@@ -143,7 +139,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506212021989-efqPqRoxds.download.microsoft.com
+    host: 202506212021989-UeZw4cuGiR.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -191,16 +187,6 @@ proxies:
   uuid: 986b3bc8-d0fb-4b60-b01f-28164e44cd48
 - alterId: 0
   cipher: auto
-  name: 12|日本4|@ripaojiedian
-  network: tcp
-  port: '3684'
-  server: a29b45ed-submo0-syap8d-dbk8.d.volczijie.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
-- alterId: 0
-  cipher: auto
   name: 12|日本v2|@ripaojiedian
   network: kcp
   port: '36668'
@@ -209,16 +195,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b798372a-54c8-4597-969e-8b00d2f76c09
-- alterId: 0
-  cipher: auto
-  name: 12|韩国|@ripaojiedian
-  network: tcp
-  port: '49815'
-  server: 45.141.136.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 105af49c-e4ee-4294-b7cc-abfe6a651cf5
 - name: 13|CN_speednode_0033
   password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c
   port: 38027
@@ -274,190 +250,30 @@ proxies:
     path: /5MkU0nARgHwk3aXBStn7
 - alterId: 0
   cipher: auto
-  name: 15|🏁RELAY-172.67.207.26-0163
+  name: 15|🇩🇪DE-23.158.56.241-0823
   network: ws
   port: 443
-  server: 172.67.207.26
-  servername: glweidf.sbs
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 15|1|🌀13-RO |  1.8MB/s
-  network: tcp
-  port: '49664'
-  server: 5.182.37.231
-  tls: false
-  type: vmess
-  uuid: 9395474c-e2a1-4565-ba56-c16e7373c4c4
-- alterId: 0
-  cipher: auto
-  name: 15|[🏁]t.me/ConfigsHub
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
+  server: 23.158.56.241
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇨🇦'
-  network: tcp
-  port: '42610'
-  server: 51.79.86.182
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
-- alterId: 0
-  cipher: auto
-  name: 15|0|--86
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|0|--30
-  network: ws
-  port: 443
-  server: 38.99.82.193
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: tilebani.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|✅سرورهایبیشتردرکانال:prrofile_...
-  network: tcp
-  port: '57118'
-  server: 142.4.119.72
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 15|0|-https://t.me/MrXbin-97
-  network: ws
-  port: 443
-  server: 146.59.55.50
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '15|✅سرورهایبیشتردرکانال:prrofile_... #1'
-  network: ws
-  port: '443'
-  server: kapelleng.com
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|t.me/ConfigsHub
-  network: ws
-  port: '2082'
-  server: 172.67.170.103
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: kanal-tel.freev2alpha.cfd
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇩🇪'
-  network: ws
-  port: '443'
-  server: 57.129.28.65
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 15|0|--38
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: mankadmu.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|法国 国际航空电讯集团公司(SITA)
-  network: ws
-  port: 443
-  server: 57.129.24.125
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -473,16 +289,86 @@ proxies:
     headers:
       Host: baradiha.com
     path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 15|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 15|@V2ray1_Ng
+  name: 15|1|🇨🇭2 |  5.0MB/s
   network: tcp
-  port: '53503'
-  server: 66.94.114.122
+  port: 22324
+  server: 186.190.215.193
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '15|Channel id: @ShadowProxy66🇨🇦'
+  network: tcp
+  port: '42610'
+  server: 51.79.86.182
   servername: ''
   tls: false
   type: vmess
-  uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d
+  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- alterId: 0
+  cipher: auto
+  name: '15|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 15|[🏁]t.me/ConfigsHub
+  network: tcp
+  port: '22324'
+  server: 23.166.88.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '15|Channel id: @ShadowProxy66🇩🇪'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '15|Channel id: @ShadowProxy66🇩🇪 #1'
@@ -509,18 +395,163 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 15|🇩🇪DE-23.158.56.241-0823
+  name: 15|✅سرورهایبیشتردرکانال:prrofile_...
+  network: tcp
+  port: '57118'
+  server: 142.4.119.72
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 15|@V2ray1_Ng
+  network: tcp
+  port: '53503'
+  server: 66.94.114.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d
+- alterId: 0
+  cipher: auto
+  name: 15|13|🇸🇬 新加坡4|@ripaojiedian
+  network: tcp
+  port: 56051
+  server: 38.47.176.251
+  tls: false
+  type: vmess
+  uuid: 2bca3569-0662-47f7-fdf8-421f30e71f44
+- alterId: 0
+  cipher: auto
+  name: 15|🏁RELAY-104.21.15.212-0196
   network: ws
   port: 443
-  server: 23.158.56.241
+  server: 104.21.15.212
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 15|🏁RELAY-172.67.156.210-2892
+  network: ws
+  port: 443
+  server: 172.67.156.210
   servername: ''
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 15|0|--86
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: aveiror.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|0|--26
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '15|Channel id: @ShadowProxy66🏳'
+  network: tcp
+  port: '2535'
+  server: 89.44.112.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04d7c089-bbc5-4ef2-80ef-a0982cf33708
+- alterId: 0
+  cipher: auto
+  name: 15|t.me/ConfigsHub
+  network: ws
+  port: '2082'
+  server: 172.67.170.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kanal-tel.freev2alpha.cfd
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|0|--30
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|1|🌀13-RO |  1.8MB/s
+  network: tcp
+  port: '49664'
+  server: 5.182.37.231
+  tls: false
+  type: vmess
+  uuid: 9395474c-e2a1-4565-ba56-c16e7373c4c4
+- alterId: 0
+  cipher: auto
+  name: 15|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|🏁RELAY-172.67.207.26-0163
+  network: ws
+  port: 443
+  server: 172.67.207.26
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: '15|法国 国际航空电讯集团公司(SITA) #1'
@@ -537,25 +568,59 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 15|1|🇨🇭2 |  5.0MB/s
-  network: tcp
-  port: 22324
-  server: 186.190.215.193
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 15|北美地区 v2rayfree.eu.org
+  name: 15|0|-https://t.me/MrXbin-97
   network: ws
   port: 443
-  server: 134.195.198.147
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: inna.cfd
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|0|--38
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: mankadmu.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '15|Channel id: @ShadowProxy66🇩🇪 #2'
+  network: ws
+  port: '443'
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '15|✅سرورهایبیشتردرکانال:prrofile_... #1'
+  network: ws
+  port: '443'
+  server: kapelleng.com
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -580,75 +645,75 @@ proxies:
     headers:
       Host: f.khilei.com
     path: /linkvws
-- name: 16|IEPL+·+美国US+·+A250+·+Netflix美国...
-  password: uroetGnps
-  port: 28175
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+美国US+·+88+·+深港IEPL
-  password: uroetGnps
-  port: 28109
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+日本JP+·+23+·+沪港IEPL
-  password: uroetGnps
-  port: 28113
-  server: 183.2.150.192
-  skip-cert-verify: true
-  type: trojan
 - name: 16|IEPL+·+日本JP+·+A140+·+Netflix日本...
-  password: uroetGnps
+  password: Eldzu0hKH
   port: 28117
-  server: 183.2.150.192
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+美国US+·+36+·+深港IEPL
-  password: uroetGnps
-  port: 28136
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
 - name: 16|IEPL+·+日本JP+·+23+·+深港IEPL
-  password: uroetGnps
+  password: Eldzu0hKH
   port: 28113
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+美国US+·+88+·+沪港IEPL
-  password: uroetGnps
-  port: 28109
+- name: 16|IEPL+·+日本JP+·+23+·+沪港IEPL
+  password: Eldzu0hKH
+  port: 28113
   server: 183.2.150.192
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+美国US+·+36+·+沪港IEPL
-  password: uroetGnps
-  port: 28136
+- name: '16|IEPL+·+日本JP+·+A140+·+Netflix日本... #1'
+  password: Eldzu0hKH
+  port: 28117
   server: 183.2.150.192
   skip-cert-verify: true
   type: trojan
-- name: '16|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
-  password: uroetGnps
+- name: 16|IEPL+·+美国US+·+A250+·+Netflix美国...
+  password: Eldzu0hKH
   port: 28175
   server: 183.2.150.192
   skip-cert-verify: true
   type: trojan
+- name: '16|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
+  password: Eldzu0hKH
+  port: 28175
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: 16|IEPL+·+美国US+·+36+·+深港IEPL
+  password: Eldzu0hKH
+  port: 28136
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
 - name: 16|IEPL+·+日本JP+·+V8+·+沪港IEPL
-  password: uroetGnps
+  password: Eldzu0hKH
   port: 28107
   server: 183.2.150.192
   skip-cert-verify: true
   type: trojan
 - name: 16|IEPL+·+日本JP+·+V8+·+深港IEPL
-  password: uroetGnps
+  password: Eldzu0hKH
   port: 28107
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '16|IEPL+·+日本JP+·+A140+·+Netflix日本... #1'
-  password: uroetGnps
-  port: 28117
+- name: 16|IEPL+·+美国US+·+88+·+深港IEPL
+  password: Eldzu0hKH
+  port: 28109
   server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: 16|IEPL+·+美国US+·+88+·+沪港IEPL
+  password: Eldzu0hKH
+  port: 28109
+  server: 183.2.150.192
+  skip-cert-verify: true
+  type: trojan
+- name: 16|IEPL+·+美国US+·+36+·+沪港IEPL
+  password: Eldzu0hKH
+  port: 28136
+  server: 183.2.150.192
   skip-cert-verify: true
   type: trojan
