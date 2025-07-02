@@ -5,7 +5,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506261935105-EWzC7QCi0k.download.microsoft.com
+    host: 202507020089439-ZZW4Z8jpet.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -15,8 +15,8 @@ proxies:
   name: 11,12|美国3|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 5975
-  server: 36.151.192.60
+  port: 4447
+  server: 36.151.192.61
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -24,33 +24,16 @@ proxies:
   name: 11,12|美国4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 15821
-  server: 36.151.192.60
+  port: 5975
+  server: 36.151.251.56
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,12|美国5|@ripaojiedian
-  network: ws
-  port: '443'
-  server: api.jquery.com
-  servername: admin.kasrax.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: admin.kasrax.ir
-    path: /us.kkp.me.eu.org/aa
-- name: 13|US_speednode_0265
+- name: 13|US_speednode_0228
   network: ws
   password: juzi
   port: 443
-  server: 172.66.45.35
+  server: 172.66.46.221
   skip-cert-verify: true
   sni: juzi8186-sr1.pages.dev
   type: trojan
@@ -59,11 +42,11 @@ proxies:
     headers:
       Host: juzi8186-sr1.pages.dev
     path: /
-- name: 13|US_speednode_0269
+- name: 13|US_speednode_0230
   network: ws
   password: juzi
   port: 443
-  server: 172.66.46.221
+  server: 172.66.45.35
   skip-cert-verify: true
   sni: juzi8186-sr1.pages.dev
   type: trojan
@@ -88,6 +71,28 @@ proxies:
     path: /path/133527190814
 - alterId: 0
   cipher: auto
+  name: 15|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|2|🇺🇸11 |  4.7MB/s
+  network: tcp
+  port: 18000
+  server: 169.150.208.83
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
   name: '15|Channel id: @ShadowProxy66🇺🇸'
   network: tcp
   port: '15361'
@@ -109,25 +114,17 @@ proxies:
     headers:
       Host: inna.cfd
     path: /linkvws
-- alterId: 0
+- alterId: 32
   cipher: auto
-  name: 15|美国 v2rayfree.eu.org
+  name: 15|🇺🇸US-77.83.141.171-1131
   network: ws
   port: 443
-  server: 23.162.200.227
+  server: vc.fly.dev
+  servername: vc.fly.dev
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|2|🇺🇸11 |  4.7MB/s
-  network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+      Host: vc.fly.dev
+    path: /vc
