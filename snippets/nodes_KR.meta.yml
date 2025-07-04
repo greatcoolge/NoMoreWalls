@@ -1,19 +1,10 @@
 proxies:
 - client-fingerprint: chrome
-  name: 11,12|韩国|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-- client-fingerprint: chrome
   name: 11,12|韩国2|@ripaojiedian
   network: tcp
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6668
-  server: 13.125.64.14
+  server: 15.165.19.79
   skip-cert-verify: true
   sni: baidu.com
   type: trojan
@@ -38,28 +29,13 @@ proxies:
   name: 11,12|韩国4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 13967
-  server: 36.151.192.60
+  port: 20615
+  server: 36.151.192.61
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: random
-  name: 13|KR_speednode_0060
-  network: ws
-  port: 12097
-  server: 59.14.189.230
-  servername: oty.myto.ip-ddns.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f2146d13-aa93-4210-9500-50fd3fed7bc8
-  ws-opts:
-    headers:
-      Host: oty.myto.ip-ddns.com
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 13|KR_speednode_0061
+  name: 13|KR_speednode_0055
   network: ws
   port: 12097
   server: 59.14.189.230
@@ -73,20 +49,18 @@ proxies:
     headers:
       Host: mot.majusti.dpdns.org
     path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 13|KR_speednode_0062
+- client-fingerprint: random
+  name: 13|KR_speednode_0056
   network: ws
-  port: 50000
-  server: 222.113.39.207
-  servername: edmx.aimercc.filegear-sg.me
+  port: 12097
+  server: 59.14.189.230
+  servername: oty.myto.ip-ddns.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: f2146d13-aa93-4210-9500-50fd3fed7bc8
   ws-opts:
     headers:
-      Host: edmx.aimercc.filegear-sg.me
+      Host: oty.myto.ip-ddns.com
     path: /?ed=2560
