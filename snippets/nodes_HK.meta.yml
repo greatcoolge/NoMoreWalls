@@ -1,4 +1,15 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11|🇭🇰 香港|@ripaojiedian
+  port: 50170
+  server: 38.147.188.234
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 11|🇭🇰 香港2|@ripaojiedian
@@ -19,8 +30,8 @@ proxies:
   name: 11,12|香港4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
+  port: 51083
+  server: 36.151.192.27
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -28,13 +39,31 @@ proxies:
   name: 11,12|香港5|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
+  port: 444
+  server: 36.151.192.27
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- client-fingerprint: chrome
+  name: 11,12|香港6|@ripaojiedian
+  network: tcp
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
+  name: 12|香港|@ripaojiedian
+  network: tcp
+  port: '50170'
+  server: 38.147.188.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
+- alterId: 0
+  cipher: none
   name: 12|香港v2|@ripaojiedian
   network: kcp
   port: '34833'
@@ -43,45 +72,3 @@ proxies:
   tls: false
   type: vmess
   uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
-- name: 13|HK_speednode_0165
-  network: ws
-  port: 8880
-  server: 45.192.224.77
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
-  ws-opts:
-    headers:
-      Host: free.cfdns.online
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|HK_speednode_0166
-  network: ws
-  port: 8880
-  server: 45.192.222.77
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
-  ws-opts:
-    headers:
-      Host: free.cfdns.online
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|HK_speednode_0167
-  network: ws
-  port: 8880
-  server: 154.211.8.77
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
-  ws-opts:
-    headers:
-      Host: free.cfdns.online
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
