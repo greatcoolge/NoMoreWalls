@@ -119,7 +119,7 @@ session.mount('file://', FileAdapter())
 exc_queue: List[str] = []
 
 d = datetime.datetime.now()
-if (d.month, d.day) in ((13, 100), (16, 100), (18, 100)):
+if (d.month, d.day) in set():
     DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = STOP = True
 
 class Node:
