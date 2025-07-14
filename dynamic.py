@@ -25,27 +25,45 @@ from typing import Optional
 
 
 
-def fetch_cfmem():
-    base_url = "https://www.cfmem.com/"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-    }
+def fetch_latest_cfmem_article():
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    })
 
-    # 访问首页
-    res = session.get(base_url, headers=headers)
+    base_url = "https://www.cfmem.com/"
+    res = session.get(base_url)
     soup = BeautifulSoup(res.text, 'html.parser')
 
-    # 查找包含“节点”的文章链接（支持 2025/07/xxx.html 格式）
-    article_url = None
+    # 正则匹配
+    link_pat = re.compile(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html")
+    date_pat = re.compile(r"/(\d{8})-")  # 提取 slug 中 8 位日期
+
+    candidates = []
+
     for a in soup.find_all("a", href=True):
         href = a["href"]
         title = a.get_text(strip=True)
-        if (
-            re.match(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html", href)
-            and "节点" in title
-        ):
-            article_url = href
-            break
+
+        if not ("节点" in title and link_pat.match(href)):
+            continue
+
+        m = date_pat.search(href)
+        if not m:
+            continue
+
+        try:
+            date_obj = dt.datetime.strptime(m.group(1), "%Y%m%d")
+            candidates.append((date_obj, href))
+        except:
+            continue
+
+    if not candidates:
+        raise Exception("❌ 没找到任何节点文章")
+
+    # 取日期最大的那篇
+    _, latest_url = max(candidates)
+    return latest_url
 
 
 def sharkdoor():
@@ -107,7 +125,7 @@ def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
 AUTOURLS = []
-AUTOFETCH = [vpn_fail, sharkdoor, fetch_cfmem]
+AUTOFETCH = [vpn_fail, sharkdoor, fetch_latest_cfmem_article]
 
 if __name__ == '__main__':
     print("URL 抓取："+', '.join([_.__name__ for _ in AUTOURLS]))
