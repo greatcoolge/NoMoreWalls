@@ -7,6 +7,20 @@ from typing import Set
 from fetch import raw2fastly, session, LOCAL
 from bs4 import BeautifulSoup
 
+# def kkzui():
+#     if LOCAL: return
+#     res = session.get("https://kkzui.com/jd?orderby=modified")
+#     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
+#     res = session.get(article_url)
+#     passwd = re.search(r'<strong>本期密码：(.*?)</strong>',res.text).groups()[0]
+#     res = session.post(article_url, data={'secret-key': passwd})
+#     sub = res.text.split('<pre')[1].split('</pre>')[0]
+#     if '</' in sub:
+#         sub = sub.split('</')[-2]
+#     if '>' in sub:
+#         sub = sub.split('>')[-1]
+#     return sub
+
 def fetch_cfmem():
     base_url = "https://www.cfmem.com/"
     headers = {
