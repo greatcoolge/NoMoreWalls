@@ -1012,8 +1012,11 @@ def main():
     
     for source in sources:
         if source == 'EOF': break
-        if not source: continue
-        if source[0] == '#': continue
+        if not source.strip():
+            print(f"[调试] 发现空或空白行，跳过: {repr(source)}")
+            continue
+        if source.lstrip().startswith("#"):  # 更严谨地跳过注释行
+            continue
         sub = source
         if sub[0] == '!':
             if LOCAL: continue
