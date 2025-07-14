@@ -24,44 +24,53 @@ from typing import Optional
 #     return sub
 
 
+session = requests.Session()
+session.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+})
+
 def fetch_cfmem():
     base_url = "https://www.cfmem.com/"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-    }
 
     # 访问首页
-    res = session.get(base_url, headers=headers)
+    res = session.get(base_url)
     soup = BeautifulSoup(res.text, 'html.parser')
 
-    # 查找包含“节点”的文章链接（支持 2025/07/xxx.html 格式）
+    # 匹配相对路径，如 /2025/07/xxx.html
+    link_pat = re.compile(r"/\d{4}/\d{2}/[a-z0-9\-]+\.html")
     article_url = None
+
     for a in soup.find_all("a", href=True):
         href = a["href"]
         title = a.get_text(strip=True)
-        if (
-            re.match(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html", href)
-            and "节点" in title
-        ):
-            article_url = href
+
+        if "节点" in title and link_pat.match(href):
+            article_url = base_url.rstrip("/") + href
+            print("✅ 找到文章链接：", article_url)
             break
 
     if not article_url:
-        raise Exception("未找到符合格式的“节点”文章链接")
+        raise Exception("❌ 未找到包含“节点”的文章链接")
 
-    # 进入文章页
-    res = session.get(article_url, headers=headers)
+    # 访问文章页面
+    res = session.get(article_url)
+    print("📄 正在解析文章页内容，长度:", len(res.text))
 
-    # 提取 v2rayse 分享链接
+    # 提取订阅链接
     sub_link_pattern = re.compile(
         r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
         re.IGNORECASE
     )
     sub_links = sub_link_pattern.findall(res.text)
-    if not sub_links:
-        raise Exception("未找到订阅链接")
 
-    # 分类
+    if not sub_links:
+        raise Exception("❌ 未提取到任何订阅链接")
+
+    print(f"📦 共提取到 {len(sub_links)} 个订阅链接")
+    for link in sub_links:
+        print("   🔗", link)
+
+    # 分类保存
     result = {}
     for link in sub_links:
         if link.endswith(".txt") and "base64" not in result:
@@ -74,6 +83,7 @@ def fetch_cfmem():
         elif link.endswith(".json") and "singbox" not in result:
             result["singbox"] = link
 
+    print("✅ 分类完成：", result)
     return result
 
 
