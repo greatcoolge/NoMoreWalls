@@ -1,4 +1,4 @@
-# Update: 2025-07-14 18:47
+# Update: 2025-07-14 19:38
 allow-lan: false
 dns:
   enable: true
@@ -18,9 +18,97 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 50002
+  server: 120.26.55.225
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 1,3,14,15|香港6|@ripaojiedian
+  network: tcp
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 11,12|香港|@ripaojiedian
+  name: 1|_CN_->_US__1
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 1,3|🇬🇧_GB_英国->🇺🇸_US_美国
+  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
+  port: 443
+  server: it.mjt000.com
+  sni: it.mjt000.com
+  type: trojan
+- grpc-opts:
+    grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048
+  name: 1|_US_->_CN_
+  network: grpc
+  password: 94cf288d-f764-4ce9-a547-a7228144f056
+  port: 2053
+  server: gerxyz.bm04.xyz
+  sni: gerxyz.bm04.xyz
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- name: 3|🇺🇸_US_美国->🇰🇷_KR_韩国
+  network: ws
+  port: 2052
+  server: 104.24.158.0
+  tls: false
+  type: vless
+  uuid: b6a617b7-758e-4639-b2f4-d296c0f1b03e
+  ws-opts:
+    headers:
+      Host: register.tunnelbreaking.shop
+    path: '%2F'
+- name: 3|🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: www.speedtest.net.cdn.cloudflare.net
+  tls: false
+  type: vless
+  uuid: 6b3b071f-096b-4e4c-8d70-0e0b53f27434
+  ws-opts:
+    headers:
+      Host: VAST-RAdIo.zuLAIR.oRG
+    path: '%2F%3Fed%3D2048'
+- grpc-opts:
+    grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged%3D2048
+  name: 3|🇺🇸_US_美国->🇨🇳_CN_中国
+  network: grpc
+  password: 94cf288d-f764-4ce9-a547-a7228144f056
+  port: 2053
+  server: gerxyz.bm04.xyz
+  sni: gerxyz.bm04.xyz
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 14,15|香港|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -35,7 +123,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
-  name: 11|🇭🇰 香港2|@ripaojiedian
+  name: 14|🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
   plugin-opts:
@@ -51,7 +139,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 11|🇭🇰 香港3|@ripaojiedian
+  name: 14|🇭🇰 香港3|@ripaojiedian
   port: 31019
   server: ghikkdg2.mi0001.xyz
   skip-cert-verify: false
@@ -59,7 +147,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 2e0d1409-81fc-42bd-b37f-bd1910869e13
-- name: 11,12|香港4|@ripaojiedian
+- name: 14,15|香港4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 9141
@@ -67,7 +155,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|香港5|@ripaojiedian
+- name: 14,15|香港5|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 24903
@@ -75,16 +163,9 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|香港6|@ripaojiedian
-  network: tcp
-  password: 7367d04e-4c59-4dff-a50e-12e730a09891
-  port: 26193
-  server: 155.117.228.70
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 11|🇭🇰 香港7|@ripaojiedian
+  name: 14|🇭🇰 香港7|@ripaojiedian
   port: 25740
   server: 43.247.134.145
   skip-cert-verify: false
@@ -93,7 +174,7 @@ proxies:
   type: vmess
   uuid: d70ca72a-2b50-4536-8abc-da48995dd902
 - cipher: rc4-md5
-  name: 11|🇯🇵 日本|@ripaojiedian
+  name: 14|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -104,7 +185,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: 11|🇯🇵 日本2|@ripaojiedian
+  name: 14|🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -118,7 +199,7 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- name: 11,12|日本3|@ripaojiedian
+- name: 14,15|日本3|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 41225
@@ -126,7 +207,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|日本4|@ripaojiedian
+- name: 14,15|日本4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 4445
@@ -134,7 +215,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|韩国|@ripaojiedian
+- name: 14,15|韩国|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 16158
@@ -142,7 +223,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|韩国2|@ripaojiedian
+- name: 14,15|韩国2|@ripaojiedian
   network: tcp
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6668
@@ -150,7 +231,7 @@ proxies:
   skip-cert-verify: true
   sni: baidu.com
   type: trojan
-- name: 11,12|新加坡|@ripaojiedian
+- name: 14,15|新加坡|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 7571
@@ -158,7 +239,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|新加坡2|@ripaojiedian
+- name: 14,15|新加坡2|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 32765
@@ -168,7 +249,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 11|🇸🇬 新加坡3|@ripaojiedian
+  name: 14|🇸🇬 新加坡3|@ripaojiedian
   port: 31014
   server: ghikkdg2.mi0001.xyz
   skip-cert-verify: false
@@ -177,7 +258,7 @@ proxies:
   type: vmess
   uuid: 803dfb35-0ae6-4540-9715-7182fc043187
 - cipher: rc4-md5
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 14|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -187,7 +268,7 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 11,12|美国3|@ripaojiedian
+- name: 14,15|美国3|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 4447
@@ -195,7 +276,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 11,12|美国4|@ripaojiedian
+- name: 14,15|美国4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 34719
@@ -205,7 +286,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 12|香港3|@ripaojiedian
+  name: 15|香港3|@ripaojiedian
   network: tcp
   port: '31019'
   server: ghikkdg2.mi0001.xyz
@@ -215,7 +296,7 @@ proxies:
   uuid: 2e0d1409-81fc-42bd-b37f-bd1910869e13
 - alterId: 0
   cipher: auto
-  name: 12|香港7|@ripaojiedian
+  name: 15|香港7|@ripaojiedian
   network: tcp
   port: '25740'
   server: 43.247.134.145
@@ -225,7 +306,7 @@ proxies:
   uuid: d70ca72a-2b50-4536-8abc-da48995dd902
 - alterId: 0
   cipher: auto
-  name: 12|香港v2|@ripaojiedian
+  name: 15|香港v2|@ripaojiedian
   network: kcp
   port: '63101'
   server: 47.76.160.154
@@ -235,7 +316,7 @@ proxies:
   uuid: ba47c516-0c18-49d5-9548-6370c835e163
 - alterId: 0
   cipher: auto
-  name: 12|日本v2|@ripaojiedian
+  name: 15|日本v2|@ripaojiedian
   network: kcp
   port: '2389'
   server: 8.211.145.146
@@ -245,7 +326,7 @@ proxies:
   uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
 - alterId: 0
   cipher: auto
-  name: 12|新加坡3|@ripaojiedian
+  name: 15|新加坡3|@ripaojiedian
   network: tcp
   port: '31014'
   server: ghikkdg2.mi0001.xyz
@@ -253,7 +334,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 803dfb35-0ae6-4540-9715-7182fc043187
-- name: 13|AE_speednode_0001
+- name: 16|AE_speednode_0001
   network: ws
   port: 8880
   server: 94.140.0.186
@@ -267,7 +348,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|AE_speednode_0002
+- name: 16|AE_speednode_0002
   network: ws
   port: 8880
   server: 103.245.228.186
@@ -281,7 +362,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|AE_speednode_0003
+- name: 16|AE_speednode_0003
   network: ws
   port: 8880
   server: 103.245.229.186
@@ -295,7 +376,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|AE_speednode_0004
+- name: 16|AE_speednode_0004
   network: ws
   port: 8880
   server: 103.245.228.254
@@ -309,7 +390,7 @@ proxies:
     headers:
       Host: yg.bantony199.top
     path: /
-- name: 13|AT_speednode_0005
+- name: 16|AT_speednode_0005
   network: ws
   port: 8880
   server: 212.183.88.186
@@ -323,7 +404,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|AT_speednode_0006
+- name: 16|AT_speednode_0006
   network: ws
   port: 2096
   server: 212.183.88.29
@@ -337,7 +418,7 @@ proxies:
     headers:
       Host: pOStWArE-2Jm.PAgEs.dEv
     path: /ssqKt5JYIXEwDOMJ?ed=2560
-- name: 13|AT_speednode_0007
+- name: 16|AT_speednode_0007
   network: ws
   port: 2083
   server: 212.183.88.29
@@ -351,7 +432,7 @@ proxies:
     headers:
       Host: PoStwarE-2jM.PaGeS.DEv
     path: /PB8ZxcORP4BTVbIC?ed=2560
-- name: 13|AT_speednode_0008
+- name: 16|AT_speednode_0008
   network: ws
   port: 2053
   server: 212.183.88.29
@@ -365,7 +446,7 @@ proxies:
     headers:
       Host: PostwaRE-2jm.PaGES.DEv
     path: /JkT5yFwh3Mveqw81?ed=2560
-- name: 13|AT_speednode_0009
+- name: 16|AT_speednode_0009
   network: ws
   port: 2087
   server: 212.183.88.29
@@ -379,7 +460,7 @@ proxies:
     headers:
       Host: PosTWARE-2jm.pagEs.DeV
     path: /sA7GzJhCYXmpVes8?ed=2560
-- name: 13|AT_speednode_0010
+- name: 16|AT_speednode_0010
   network: ws
   port: 2083
   server: 212.183.88.29
@@ -393,7 +474,7 @@ proxies:
     headers:
       Host: POstwARE-2jm.PagES.DEv
     path: /3BiOQ1rCgST9FvMj?ed=2560
-- name: 13|AU_speednode_0011
+- name: 16|AU_speednode_0011
   network: ws
   port: 8880
   server: 103.169.142.186
@@ -407,7 +488,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|AU_speednode_0012
+- name: 16|AU_speednode_0012
   network: ws
   port: 8880
   server: 192.65.217.177
@@ -421,7 +502,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|AU_speednode_0013
+- name: 16|AU_speednode_0013
   network: ws
   port: 8880
   server: 103.169.142.177
@@ -435,7 +516,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|AU_speednode_0014
+- name: 16|AU_speednode_0014
   network: ws
   port: 8880
   server: 192.65.217.186
@@ -449,7 +530,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|BG_speednode_0015
+- name: 16|BG_speednode_0015
   network: ws
   port: 8880
   server: 147.78.140.186
@@ -463,7 +544,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CA_speednode_0016
+- name: 16|CA_speednode_0016
   network: ws
   port: 8880
   server: 74.49.214.186
@@ -477,7 +558,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CA_speednode_0017
+- name: 16|CA_speednode_0017
   network: ws
   port: 8880
   server: 74.49.215.186
@@ -491,7 +572,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CH_speednode_0018
+- name: 16|CH_speednode_0018
   network: ws
   port: 8880
   server: 185.18.250.186
@@ -505,7 +586,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CR_speednode_0019
+- name: 16|CR_speednode_0019
   network: ws
   port: 8880
   server: 190.93.244.186
@@ -519,7 +600,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CR_speednode_0020
+- name: 16|CR_speednode_0020
   network: ws
   port: 8880
   server: 190.93.246.186
@@ -533,7 +614,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CR_speednode_0021
+- name: 16|CR_speednode_0021
   network: ws
   port: 8880
   server: 190.93.247.186
@@ -547,7 +628,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CR_speednode_0022
+- name: 16|CR_speednode_0022
   network: ws
   port: 8443
   server: 190.93.246.246
@@ -561,7 +642,7 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram@V2rayN5/?ed=2560
-- name: 13|CR_speednode_0023
+- name: 16|CR_speednode_0023
   network: ws
   port: 8443
   server: 190.93.246.246
@@ -576,7 +657,7 @@ proxies:
       Host: bitget1.asdasd.click
     path: /Telegram@V2ray_Alpha/?ed=2560
 - client-fingerprint: random
-  name: 13|CR_speednode_0024
+  name: 16|CR_speednode_0024
   network: ws
   port: 8443
   server: 190.93.245.232
@@ -591,7 +672,7 @@ proxies:
       Host: bitget1.asdasd.click
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|CR_speednode_0025
+  name: 16|CR_speednode_0025
   network: ws
   port: 443
   server: 190.93.247.159
@@ -605,7 +686,7 @@ proxies:
     headers:
       Host: jack.jack-cq.click
     path: /?ed=2560
-- name: 13|CR_speednode_0026
+- name: 16|CR_speednode_0026
   network: ws
   port: 8443
   server: 190.93.246.246
@@ -619,7 +700,7 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- name: 13|CR_speednode_0027
+- name: 16|CR_speednode_0027
   network: ws
   port: 443
   server: 190.93.244.103
@@ -633,7 +714,7 @@ proxies:
     headers:
       Host: mylearn-8zx.pages.dev
     path: /
-- name: 13|CY_speednode_0028
+- name: 16|CY_speednode_0028
   network: ws
   port: 8880
   server: 213.109.205.186
@@ -647,7 +728,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CY_speednode_0029
+- name: 16|CY_speednode_0029
   network: ws
   port: 8880
   server: 213.109.205.177
@@ -661,7 +742,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|CY_speednode_0030
+- name: 16|CY_speednode_0030
   network: ws
   port: 8880
   server: 195.85.59.186
@@ -675,7 +756,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|CY_speednode_0031
+- name: 16|CY_speednode_0031
   network: ws
   port: 8880
   server: 213.109.205.247
@@ -689,7 +770,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|CZ_speednode_0032
+- name: 16|CZ_speednode_0032
   network: ws
   port: 8880
   server: 193.124.224.186
@@ -703,7 +784,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0033
+- name: 16|DE_speednode_0033
   network: ws
   port: 8880
   server: 188.244.122.186
@@ -717,7 +798,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0034
+- name: 16|DE_speednode_0034
   network: ws
   port: 8880
   server: 5.10.215.186
@@ -731,7 +812,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0035
+- name: 16|DE_speednode_0035
   network: ws
   port: 8880
   server: 77.37.33.186
@@ -745,7 +826,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0036
+- name: 16|DE_speednode_0036
   network: ws
   port: 8880
   server: 5.10.215.177
@@ -759,7 +840,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0037
+- name: 16|DE_speednode_0037
   network: ws
   port: 8880
   server: 45.80.111.186
@@ -773,7 +854,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0038
+- name: 16|DE_speednode_0038
   network: ws
   port: 8880
   server: 140.99.233.186
@@ -787,7 +868,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|DE_speednode_0039
+- name: 16|DE_speednode_0039
   network: ws
   port: 8880
   server: 188.244.122.247
@@ -801,7 +882,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|DE_speednode_0040
+- name: 16|DE_speednode_0040
   network: ws
   port: 8880
   server: 5.10.215.177
@@ -815,7 +896,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳
-- name: 13|EE_speednode_0041
+- name: 16|EE_speednode_0041
   network: ws
   port: 8880
   server: 45.80.110.186
@@ -829,7 +910,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|ES_speednode_0042
+- name: 16|ES_speednode_0042
   network: ws
   port: 8880
   server: 185.251.80.177
@@ -843,7 +924,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|ES_speednode_0043
+- name: 16|ES_speednode_0043
   network: ws
   port: 8880
   server: 185.251.82.177
@@ -857,7 +938,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|ES_speednode_0044
+- name: 16|ES_speednode_0044
   network: ws
   port: 8880
   server: 185.251.81.186
@@ -871,7 +952,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|ES_speednode_0045
+- name: 16|ES_speednode_0045
   network: ws
   port: 8880
   server: 185.238.228.186
@@ -885,7 +966,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|ES_speednode_0046
+- name: 16|ES_speednode_0046
   network: ws
   port: 8880
   server: 185.251.82.186
@@ -899,7 +980,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|ES_speednode_0047
+- name: 16|ES_speednode_0047
   network: ws
   password: trojan
   port: 8443
@@ -912,7 +993,7 @@ proxies:
     headers:
       Host: store.timimi.dpdns.org
     path: /
-- name: 13|FR_speednode_0048
+- name: 16|FR_speednode_0048
   network: ws
   port: 8880
   server: 185.16.110.186
@@ -926,7 +1007,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|FR_speednode_0049
+- name: 16|FR_speednode_0049
   network: ws
   port: 8880
   server: 141.11.203.186
@@ -940,7 +1021,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|FR_speednode_0050
+- name: 16|FR_speednode_0050
   network: ws
   port: 8880
   server: 141.11.203.177
@@ -954,7 +1035,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0051
+- name: 16|GB_speednode_0051
   network: ws
   port: 8880
   server: 185.193.29.186
@@ -968,7 +1049,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0052
+- name: 16|GB_speednode_0052
   network: ws
   port: 8880
   server: 25.129.198.177
@@ -982,7 +1063,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0053
+- name: 16|GB_speednode_0053
   network: ws
   port: 8880
   server: 109.176.239.186
@@ -996,7 +1077,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0054
+- name: 16|GB_speednode_0054
   network: ws
   port: 8880
   server: 25.25.25.186
@@ -1010,7 +1091,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0055
+- name: 16|GB_speednode_0055
   network: ws
   port: 8880
   server: 109.176.239.177
@@ -1024,7 +1105,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0056
+- name: 16|GB_speednode_0056
   network: ws
   port: 8880
   server: 25.26.27.186
@@ -1038,7 +1119,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0057
+- name: 16|GB_speednode_0057
   network: ws
   port: 8880
   server: 25.129.197.186
@@ -1052,7 +1133,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0058
+- name: 16|GB_speednode_0058
   network: ws
   port: 8880
   server: 164.38.155.177
@@ -1066,7 +1147,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0059
+- name: 16|GB_speednode_0059
   network: ws
   port: 8880
   server: 25.129.196.186
@@ -1080,7 +1161,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0060
+- name: 16|GB_speednode_0060
   network: ws
   port: 8880
   server: 25.129.198.186
@@ -1094,7 +1175,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0061
+- name: 16|GB_speednode_0061
   network: ws
   port: 8880
   server: 25.129.199.186
@@ -1108,7 +1189,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0062
+- name: 16|GB_speednode_0062
   network: ws
   port: 8880
   server: 185.170.166.186
@@ -1122,7 +1203,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0063
+- name: 16|GB_speednode_0063
   network: ws
   port: 8880
   server: 94.247.142.186
@@ -1136,7 +1217,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0064
+- name: 16|GB_speednode_0064
   network: ws
   port: 8880
   server: 194.36.55.186
@@ -1150,7 +1231,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0065
+- name: 16|GB_speednode_0065
   network: ws
   port: 8880
   server: 25.129.196.177
@@ -1164,7 +1245,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0066
+- name: 16|GB_speednode_0066
   network: ws
   port: 8880
   server: 80.93.202.186
@@ -1178,7 +1259,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|GB_speednode_0067
+- name: 16|GB_speednode_0067
   network: ws
   port: 8880
   server: 109.176.239.247
@@ -1192,7 +1273,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|GB_speednode_0068
+- name: 16|GB_speednode_0068
   network: ws
   port: 8880
   server: 109.176.239.13
@@ -1206,7 +1287,7 @@ proxies:
     headers:
       Host: c.82313369.xyz
     path: /TelegramU0001F1E8U0001F1F3
-- name: 13|GB_speednode_0069
+- name: 16|GB_speednode_0069
   network: ws
   port: 8880
   server: 25.129.198.177
@@ -1220,7 +1301,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2
-- name: 13|HK_speednode_0070
+- name: 16|HK_speednode_0070
   network: ws
   port: 443
   server: 47.76.218.163
@@ -1234,7 +1315,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram @SRCVPN/?ed=2560
-- name: 13|JO_speednode_0071
+- name: 16|JO_speednode_0071
   network: ws
   port: 8880
   server: 62.72.166.186
@@ -1248,7 +1329,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|JO_speednode_0072
+- name: 16|JO_speednode_0072
   network: ws
   port: 8880
   server: 62.72.166.177
@@ -1262,7 +1343,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|JP_speednode_0073
+- name: 16|JP_speednode_0073
   network: ws
   port: 8880
   server: 103.116.7.186
@@ -1276,7 +1357,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|JP_speednode_0074
+- name: 16|JP_speednode_0074
   network: ws
   port: 8880
   server: 103.116.7.177
@@ -1290,7 +1371,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|KZ_speednode_0075
+- name: 16|KZ_speednode_0075
   network: ws
   port: 8880
   server: 194.76.18.186
@@ -1304,7 +1385,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|KZ_speednode_0076
+- name: 16|KZ_speednode_0076
   network: ws
   password: tg-fq521free
   port: 443
@@ -1317,7 +1398,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 13|LT_speednode_0077
+- name: 16|LT_speednode_0077
   network: ws
   port: 8880
   server: 88.216.69.177
@@ -1331,7 +1412,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram@WangCai2/?ed=2560
-- name: 13|LT_speednode_0078
+- name: 16|LT_speednode_0078
   network: ws
   port: 8880
   server: 89.117.112.186
@@ -1345,7 +1426,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0079
+- name: 16|LT_speednode_0079
   network: ws
   port: 8880
   server: 89.116.161.186
@@ -1359,7 +1440,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0080
+- name: 16|LT_speednode_0080
   network: ws
   port: 8880
   server: 89.116.250.186
@@ -1373,7 +1454,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0081
+- name: 16|LT_speednode_0081
   network: ws
   port: 8880
   server: 86.38.214.186
@@ -1387,7 +1468,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0082
+- name: 16|LT_speednode_0082
   network: ws
   port: 8880
   server: 88.216.69.186
@@ -1401,7 +1482,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0083
+- name: 16|LT_speednode_0083
   network: ws
   port: 8880
   server: 86.38.214.177
@@ -1415,7 +1496,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0084
+- name: 16|LT_speednode_0084
   network: ws
   port: 8880
   server: 89.116.180.186
@@ -1429,7 +1510,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0085
+- name: 16|LT_speednode_0085
   network: ws
   port: 8880
   server: 45.153.7.186
@@ -1443,7 +1524,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LT_speednode_0086
+- name: 16|LT_speednode_0086
   network: ws
   port: 8880
   server: 88.216.69.247
@@ -1457,7 +1538,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|LU_speednode_0087
+- name: 16|LU_speednode_0087
   network: ws
   port: 8880
   server: 188.42.88.186
@@ -1471,7 +1552,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|LU_speednode_0088
+- name: 16|LU_speednode_0088
   network: ws
   port: 8880
   server: 188.42.89.186
@@ -1485,7 +1566,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NL_speednode_0090
+- name: 16|NL_speednode_0090
   network: ws
   port: 8880
   server: 188.164.248.186
@@ -1499,7 +1580,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NL_speednode_0091
+- name: 16|NL_speednode_0091
   network: ws
   port: 8880
   server: 45.131.209.186
@@ -1513,7 +1594,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NL_speednode_0092
+- name: 16|NL_speednode_0092
   network: ws
   port: 8880
   server: 45.131.208.186
@@ -1527,7 +1608,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NL_speednode_0093
+- name: 16|NL_speednode_0093
   network: ws
   port: 8880
   server: 45.131.7.186
@@ -1541,7 +1622,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NL_speednode_0094
+- name: 16|NL_speednode_0094
   network: ws
   port: 8880
   server: 45.149.12.186
@@ -1555,7 +1636,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NL_speednode_0095
+- name: 16|NL_speednode_0095
   network: ws
   port: 80
   server: 45.131.6.231
@@ -1569,7 +1650,7 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: /Telegram@WangCai2
-- name: 13|NL_speednode_0096
+- name: 16|NL_speednode_0096
   network: ws
   port: 80
   server: 45.131.209.23
@@ -1583,7 +1664,7 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: /Telegram@WangCai2
-- name: 13|NL_speednode_0097
+- name: 16|NL_speednode_0097
   network: ws
   port: 80
   server: 45.131.4.38
@@ -1598,7 +1679,7 @@ proxies:
       Host: redfree8.pooriashop.ir
     path: /Telegram@WangCai2
 - client-fingerprint: firefox
-  name: 13|NN_speednode_0098
+  name: 16|NN_speednode_0098
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -1610,7 +1691,7 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: 13|NZ_speednode_0099
+- name: 16|NZ_speednode_0099
   network: ws
   port: 8880
   server: 114.129.43.186
@@ -1624,7 +1705,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|NZ_speednode_0100
+- name: 16|NZ_speednode_0100
   network: ws
   port: 8880
   server: 114.129.43.247
@@ -1638,7 +1719,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|RU_speednode_0101
+- name: 16|RU_speednode_0101
   network: ws
   port: 8880
   server: 185.221.160.177
@@ -1652,7 +1733,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0102
+- name: 16|RU_speednode_0102
   network: ws
   port: 8880
   server: 185.174.138.186
@@ -1666,7 +1747,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0103
+- name: 16|RU_speednode_0103
   network: ws
   port: 8880
   server: 46.254.93.186
@@ -1680,7 +1761,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0104
+- name: 16|RU_speednode_0104
   network: ws
   port: 8880
   server: 188.42.145.177
@@ -1694,7 +1775,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0105
+- name: 16|RU_speednode_0105
   network: ws
   port: 8880
   server: 77.105.163.186
@@ -1708,7 +1789,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0106
+- name: 16|RU_speednode_0106
   network: ws
   port: 8880
   server: 45.67.215.186
@@ -1722,7 +1803,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0107
+- name: 16|RU_speednode_0107
   network: ws
   port: 8880
   server: 185.176.24.186
@@ -1736,7 +1817,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0108
+- name: 16|RU_speednode_0108
   network: ws
   port: 8880
   server: 193.9.49.186
@@ -1750,7 +1831,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0109
+- name: 16|RU_speednode_0109
   network: ws
   port: 8880
   server: 5.182.85.186
@@ -1764,7 +1845,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0110
+- name: 16|RU_speednode_0110
   network: ws
   port: 8880
   server: 46.254.92.186
@@ -1778,7 +1859,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0111
+- name: 16|RU_speednode_0111
   network: ws
   port: 8880
   server: 185.221.160.186
@@ -1792,7 +1873,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0112
+- name: 16|RU_speednode_0112
   network: ws
   port: 8880
   server: 45.8.211.186
@@ -1806,7 +1887,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0113
+- name: 16|RU_speednode_0113
   network: ws
   port: 8880
   server: 185.148.107.186
@@ -1820,7 +1901,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|RU_speednode_0114
+- name: 16|RU_speednode_0114
   network: ws
   port: 8880
   server: 188.42.145.177
@@ -1834,7 +1915,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳@WangCai2
-- name: 13|RU_speednode_0115
+- name: 16|RU_speednode_0115
   network: ws
   password: tg-fq521free
   port: 443
@@ -1847,7 +1928,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 13|SA_speednode_0116
+- name: 16|SA_speednode_0116
   network: ws
   port: 8880
   server: 91.209.253.186
@@ -1861,7 +1942,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SC_speednode_0117
+- name: 16|SC_speednode_0117
   network: ws
   port: 8880
   server: 154.83.2.186
@@ -1875,7 +1956,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SG_speednode_0118
+- name: 16|SG_speednode_0118
   network: ws
   port: 8880
   server: 92.243.74.177
@@ -1889,7 +1970,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|SG_speednode_0119
+- name: 16|SG_speednode_0119
   network: ws
   port: 8880
   server: 92.243.75.186
@@ -1903,7 +1984,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SG_speednode_0120
+- name: 16|SG_speednode_0120
   network: ws
   port: 8880
   server: 92.243.74.186
@@ -1917,7 +1998,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SG_speednode_0121
+- name: 16|SG_speednode_0121
   network: ws
   port: 443
   server: 164.52.2.100
@@ -1931,7 +2012,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- name: 13|SI_speednode_0122
+- name: 16|SI_speednode_0122
   network: ws
   port: 8880
   server: 92.53.188.177
@@ -1945,7 +2026,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram@WangCai2/?ed=2560
-- name: 13|SI_speednode_0123
+- name: 16|SI_speednode_0123
   network: ws
   port: 8880
   server: 92.53.191.186
@@ -1959,7 +2040,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SI_speednode_0124
+- name: 16|SI_speednode_0124
   network: ws
   port: 8880
   server: 92.53.189.186
@@ -1973,7 +2054,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SI_speednode_0125
+- name: 16|SI_speednode_0125
   network: ws
   port: 8880
   server: 92.53.190.186
@@ -1987,7 +2068,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SI_speednode_0126
+- name: 16|SI_speednode_0126
   network: ws
   port: 8880
   server: 92.60.74.186
@@ -2001,7 +2082,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|SI_speednode_0127
+- name: 16|SI_speednode_0127
   network: ws
   port: 8880
   server: 92.53.189.247
@@ -2015,7 +2096,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|SI_speednode_0128
+- name: 16|SI_speednode_0128
   network: ws
   port: 8880
   server: 92.53.188.177
@@ -2029,7 +2110,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramрЯЗ®рЯЗ≥ @WangCai2
-- name: 13|TH_speednode_0129
+- name: 16|TH_speednode_0129
   network: ws
   port: 19816
   server: 45.144.167.46
@@ -2043,7 +2124,7 @@ proxies:
     headers:
       Host: rs-hk.lzjnb.shop
     path: /lzjjjj666
-- name: 13|UA_speednode_0130
+- name: 16|UA_speednode_0130
   network: ws
   port: 8880
   server: 91.124.127.186
@@ -2057,7 +2138,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|UA_speednode_0131
+- name: 16|UA_speednode_0131
   network: ws
   port: 8880
   server: 46.202.30.186
@@ -2071,7 +2152,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|UA_speednode_0132
+- name: 16|UA_speednode_0132
   network: ws
   port: 8880
   server: 46.202.30.177
@@ -2085,7 +2166,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0133
+- name: 16|US_speednode_0133
   network: ws
   port: 80
   server: 104.17.147.22
@@ -2099,7 +2180,7 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: /Telegram@V2ray_Alpha/?ed=2560
-- name: 13|US_speednode_0134
+- name: 16|US_speednode_0134
   network: ws
   port: 8880
   server: 147.185.161.251
@@ -2113,7 +2194,7 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0135
+- name: 16|US_speednode_0135
   network: ws
   port: 8880
   server: 216.205.52.177
@@ -2127,7 +2208,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0136
+- name: 16|US_speednode_0136
   network: ws
   port: 8880
   server: 170.114.45.177
@@ -2141,7 +2222,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0138
+- name: 16|US_speednode_0138
   network: ws
   port: 8880
   server: 66.45.118.186
@@ -2155,7 +2236,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0139
+- name: 16|US_speednode_0139
   network: ws
   port: 8880
   server: 130.250.137.177
@@ -2169,7 +2250,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @xixv2ray /?ed=2560
-- name: 13|US_speednode_0140
+- name: 16|US_speednode_0140
   network: ws
   port: 8880
   server: 104.129.164.39
@@ -2183,7 +2264,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 13|US_speednode_0141
+- name: 16|US_speednode_0141
   network: ws
   port: 8880
   server: 135.84.79.177
@@ -2197,7 +2278,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-- name: 13|US_speednode_0143
+- name: 16|US_speednode_0143
   network: ws
   port: 8880
   server: 45.159.217.186
@@ -2211,7 +2292,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0144
+- name: 16|US_speednode_0144
   network: ws
   port: 8880
   server: 45.159.218.186
@@ -2225,7 +2306,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0145
+- name: 16|US_speednode_0145
   network: ws
   port: 8880
   server: 104.129.167.186
@@ -2239,7 +2320,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0146
+- name: 16|US_speednode_0146
   network: ws
   port: 8880
   server: 63.141.128.186
@@ -2253,7 +2334,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0147
+- name: 16|US_speednode_0147
   network: ws
   port: 8880
   server: 45.159.219.186
@@ -2267,7 +2348,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0148
+- name: 16|US_speednode_0148
   network: ws
   port: 8880
   server: 66.235.200.186
@@ -2281,7 +2362,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0149
+- name: 16|US_speednode_0149
   network: ws
   port: 8880
   server: 66.81.247.186
@@ -2295,7 +2376,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0150
+- name: 16|US_speednode_0150
   network: ws
   port: 8880
   server: 104.129.164.186
@@ -2309,7 +2390,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0151
+- name: 16|US_speednode_0151
   network: ws
   port: 8880
   server: 139.64.235.186
@@ -2323,7 +2404,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0152
+- name: 16|US_speednode_0152
   network: ws
   port: 8880
   server: 159.242.242.186
@@ -2337,7 +2418,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0153
+- name: 16|US_speednode_0153
   network: ws
   port: 8880
   server: 104.254.140.186
@@ -2351,7 +2432,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0154
+- name: 16|US_speednode_0154
   network: ws
   port: 8880
   server: 103.133.1.186
@@ -2365,7 +2446,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0155
+- name: 16|US_speednode_0155
   network: ws
   port: 8880
   server: 147.185.161.186
@@ -2379,7 +2460,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0156
+- name: 16|US_speednode_0156
   network: ws
   port: 8880
   server: 130.250.137.186
@@ -2393,7 +2474,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0157
+- name: 16|US_speednode_0157
   network: ws
   port: 8880
   server: 104.129.165.186
@@ -2407,7 +2488,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0158
+- name: 16|US_speednode_0158
   network: ws
   port: 8880
   server: 141.193.27.186
@@ -2421,7 +2502,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0159
+- name: 16|US_speednode_0159
   network: ws
   port: 8880
   server: 135.84.75.186
@@ -2435,7 +2516,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0160
+- name: 16|US_speednode_0160
   network: ws
   port: 8880
   server: 69.84.182.186
@@ -2449,7 +2530,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0161
+- name: 16|US_speednode_0161
   network: ws
   port: 8880
   server: 108.165.216.186
@@ -2463,7 +2544,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0162
+- name: 16|US_speednode_0162
   network: ws
   port: 8880
   server: 160.79.104.186
@@ -2477,7 +2558,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0163
+- name: 16|US_speednode_0163
   network: ws
   port: 443
   server: 104.16.122.80
@@ -2491,7 +2572,7 @@ proxies:
     headers:
       Host: kawaiifreevpn.pages.dev
     path: /?ed=2560
-- name: 13|US_speednode_0164
+- name: 16|US_speednode_0164
   network: ws
   port: 443
   server: digitalocean.com
@@ -2506,7 +2587,7 @@ proxies:
       Host: rayan-olala.parvaneh.dpdns.org
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|US_speednode_0165
+  name: 16|US_speednode_0165
   network: ws
   port: 443
   server: 104.19.242.104
@@ -2520,7 +2601,7 @@ proxies:
     headers:
       Host: kawaiifreevpn-7ds.pages.dev
     path: /?ed=2560
-- name: 13|US_speednode_0166
+- name: 16|US_speednode_0166
   network: ws
   port: 8880
   server: 154.85.99.186
@@ -2534,7 +2615,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0167
+- name: 16|US_speednode_0167
   network: ws
   port: 443
   server: 104.19.245.206
@@ -2550,7 +2631,7 @@ proxies:
     path: /?ed=2560
 - alpn:
   - http/1.1
-  name: 13|US_speednode_0168
+  name: 16|US_speednode_0168
   network: ws
   port: 2053
   server: 188.114.97.183
@@ -2564,7 +2645,7 @@ proxies:
     headers:
       Host: nOCTYq.pAGES.DEV
     path: /bPJ4mgkJbA7CnY7q?ed=2560
-- name: 13|US_speednode_0169
+- name: 16|US_speednode_0169
   network: ws
   port: 8880
   server: 159.112.235.186
@@ -2578,7 +2659,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0170
+- name: 16|US_speednode_0170
   network: ws
   port: 443
   server: 104.19.253.84
@@ -2592,7 +2673,7 @@ proxies:
     headers:
       Host: kawaiifreevpn.pages.dev
     path: /?ed=2560
-- name: 13|US_speednode_0171
+- name: 16|US_speednode_0171
   network: ws
   port: 8880
   server: 160.79.105.186
@@ -2607,7 +2688,7 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: random
-  name: 13|US_speednode_0172
+  name: 16|US_speednode_0172
   network: ws
   port: 443
   server: 104.16.114.221
@@ -2623,7 +2704,7 @@ proxies:
     path: /?ed=2560
 - alpn:
   - http/1.1
-  name: 13|US_speednode_0173
+  name: 16|US_speednode_0173
   network: ws
   port: 8443
   server: 188.114.96.3
@@ -2637,7 +2718,7 @@ proxies:
     headers:
       Host: w325.pages.dev
     path: /6WKNgcKo7LMqOzhb?ed=2560
-- name: 13|US_speednode_0174
+- name: 16|US_speednode_0174
   network: ws
   port: 443
   server: 104.18.155.119
@@ -2653,7 +2734,7 @@ proxies:
     path: /?ed=2560
 - alpn:
   - http/1.1
-  name: 13|US_speednode_0175
+  name: 16|US_speednode_0175
   network: ws
   port: 443
   server: 104.16.14.1
@@ -2670,7 +2751,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: 13|US_speednode_0176
+  name: 16|US_speednode_0176
   network: ws
   port: 443
   server: 188.114.96.3
@@ -2684,7 +2765,7 @@ proxies:
     headers:
       Host: GrOUPyoUnEs.PAGEs.DEv
     path: /Orib1TRRDQo8XqMa?ed=2560
-- name: 13|US_speednode_0177
+- name: 16|US_speednode_0177
   network: ws
   port: 8880
   server: 156.225.72.186
@@ -2698,7 +2779,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0178
+- name: 16|US_speednode_0178
   network: ws
   port: 8880
   server: 161.145.150.186
@@ -2712,7 +2793,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0179
+- name: 16|US_speednode_0179
   network: ws
   port: 8880
   server: 192.0.63.186
@@ -2726,7 +2807,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0180
+- name: 16|US_speednode_0180
   network: ws
   port: 443
   server: 104.22.24.195
@@ -2740,7 +2821,7 @@ proxies:
     headers:
       Host: kawaiifreevpn-7ds.pages.dev
     path: /?ed=2560
-- name: 13|US_speednode_0181
+- name: 16|US_speednode_0181
   network: ws
   port: 8880
   server: 199.34.229.177
@@ -2754,7 +2835,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳
-- name: 13|US_speednode_0182
+- name: 16|US_speednode_0182
   network: ws
   port: 8880
   server: 160.153.0.186
@@ -2768,7 +2849,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0183
+- name: 16|US_speednode_0183
   network: ws
   port: 8880
   server: 184.174.80.186
@@ -2782,7 +2863,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0184
+- name: 16|US_speednode_0184
   network: ws
   port: 8880
   server: 104.129.166.186
@@ -2796,7 +2877,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0185
+- name: 16|US_speednode_0185
   network: ws
   port: 8880
   server: 135.84.75.3
@@ -2810,7 +2891,7 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /TelegramU0001F1E8U0001F1F3
-- name: 13|US_speednode_0186
+- name: 16|US_speednode_0186
   network: ws
   port: 8880
   server: 159.246.55.186
@@ -2824,7 +2905,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0223
+- name: 16|US_speednode_0223
   network: ws
   port: 8880
   server: 135.84.75.3
@@ -2838,7 +2919,7 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- name: 13|US_speednode_0188
+- name: 16|US_speednode_0188
   network: ws
   port: 8880
   server: 185.148.104.186
@@ -2852,7 +2933,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0189
+- name: 16|US_speednode_0189
   network: ws
   port: 2083
   server: 66.81.247.88
@@ -2866,7 +2947,7 @@ proxies:
     headers:
       Host: edmz.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 13|US_speednode_0190
+- name: 16|US_speednode_0190
   network: ws
   port: 8880
   server: 167.68.42.186
@@ -2880,7 +2961,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0191
+- name: 16|US_speednode_0191
   network: ws
   port: 8880
   server: 155.46.213.186
@@ -2894,7 +2975,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0192
+- name: 16|US_speednode_0192
   network: ws
   port: 8880
   server: 168.100.6.186
@@ -2908,7 +2989,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0193
+- name: 16|US_speednode_0193
   network: ws
   port: 8880
   server: 198.62.62.186
@@ -2922,7 +3003,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0194
+- name: 16|US_speednode_0194
   network: ws
   port: 8880
   server: 162.120.94.186
@@ -2936,7 +3017,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0195
+- name: 16|US_speednode_0195
   network: ws
   port: 8880
   server: 170.114.45.186
@@ -2950,7 +3031,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0196
+- name: 16|US_speednode_0196
   network: ws
   port: 8880
   server: 195.13.54.186
@@ -2964,7 +3045,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0197
+- name: 16|US_speednode_0197
   network: ws
   port: 8880
   server: 167.68.11.186
@@ -2978,7 +3059,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0198
+- name: 16|US_speednode_0198
   network: ws
   port: 8880
   server: 199.34.230.247
@@ -2992,7 +3073,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|US_speednode_0199
+- name: 16|US_speednode_0199
   network: ws
   port: 8880
   server: 155.46.167.186
@@ -3006,7 +3087,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0200
+- name: 16|US_speednode_0200
   network: ws
   port: 8880
   server: 209.94.90.186
@@ -3020,7 +3101,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0201
+- name: 16|US_speednode_0201
   network: ws
   port: 8880
   server: 195.13.44.186
@@ -3034,7 +3115,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0202
+- name: 16|US_speednode_0202
   network: ws
   port: 8880
   server: 167.68.4.186
@@ -3048,7 +3129,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0203
+- name: 16|US_speednode_0203
   network: ws
   port: 8880
   server: 170.114.46.186
@@ -3062,7 +3143,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0204
+- name: 16|US_speednode_0204
   network: ws
   port: 8880
   server: 185.148.106.186
@@ -3076,7 +3157,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0205
+- name: 16|US_speednode_0205
   network: ws
   port: 8880
   server: 192.0.54.186
@@ -3090,7 +3171,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0206
+- name: 16|US_speednode_0206
   network: ws
   port: 8880
   server: 195.13.45.186
@@ -3104,7 +3185,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0207
+- name: 16|US_speednode_0207
   network: ws
   port: 8880
   server: 209.46.30.186
@@ -3118,7 +3199,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0208
+- name: 16|US_speednode_0208
   network: ws
   port: 8880
   server: 205.233.181.186
@@ -3132,7 +3213,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0209
+- name: 16|US_speednode_0209
   network: ws
   port: 8880
   server: 192.200.160.177
@@ -3146,7 +3227,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0210
+- name: 16|US_speednode_0210
   network: ws
   port: 8880
   server: 199.34.229.186
@@ -3160,7 +3241,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0211
+- name: 16|US_speednode_0211
   network: ws
   port: 8880
   server: 195.13.55.186
@@ -3174,7 +3255,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0212
+- name: 16|US_speednode_0212
   network: ws
   port: 8880
   server: 199.181.197.186
@@ -3188,7 +3269,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0213
+- name: 16|US_speednode_0213
   network: ws
   port: 8880
   server: 195.13.55.177
@@ -3202,7 +3283,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0214
+- name: 16|US_speednode_0214
   network: ws
   port: 8880
   server: 216.205.52.186
@@ -3216,7 +3297,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0215
+- name: 16|US_speednode_0215
   network: ws
   port: 8880
   server: 185.148.105.186
@@ -3230,7 +3311,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0216
+- name: 16|US_speednode_0216
   network: ws
   port: 8880
   server: 205.233.181.177
@@ -3244,7 +3325,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 13|US_speednode_0217
+- name: 16|US_speednode_0217
   network: ws
   port: 8880
   server: 199.34.230.186
@@ -3259,7 +3340,7 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: randomized
-  name: 13|US_speednode_0218
+  name: 16|US_speednode_0218
   network: ws
   port: 443
   server: 104.16.144.63
@@ -3273,7 +3354,7 @@ proxies:
     headers:
       Host: a.azadnet003.ddns-ip.net
     path: /?ed=2560
-- name: 13|US_speednode_0219
+- name: 16|US_speednode_0219
   network: ws
   port: 8880
   server: 69.84.182.247
@@ -3287,7 +3368,7 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /Telegram🇨🇳
-- name: 13|US_speednode_0220
+- name: 16|US_speednode_0220
   network: ws
   port: 443
   server: 104.19.144.212
@@ -3301,7 +3382,7 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /
-- name: 13|US_speednode_0221
+- name: 16|US_speednode_0221
   network: ws
   port: 2096
   server: 104.16.161.143
@@ -3315,7 +3396,7 @@ proxies:
     headers:
       Host: baomei.pages.dev
     path: /
-- name: 13|US_speednode_0222
+- name: 16|US_speednode_0222
   network: ws
   port: 443
   server: 199.34.228.187
@@ -3329,7 +3410,7 @@ proxies:
     headers:
       Host: edmz.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 13|US_speednode_0224
+- name: 16|US_speednode_0224
   network: ws
   password: tg-fq521free
   port: 443
@@ -3345,7 +3426,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: randomized
-  name: 13|US_speednode_0226
+  name: 16|US_speednode_0226
   network: ws
   port: 443
   server: 104.17.186.58
@@ -3359,7 +3440,7 @@ proxies:
     headers:
       Host: frieren.albedo.ddns-ip.net
     path: /proxyip=ayaka.shorekeeper.ir
-- name: 13|US_speednode_0227
+- name: 16|US_speednode_0227
   network: ws
   password: tg-fq521free
   port: 443
@@ -3373,7 +3454,7 @@ proxies:
       Host: torjan.xn--xhq44j.eu.org
     path: /
 - client-fingerprint: randomized
-  name: 13|US_speednode_0228
+  name: 16|US_speednode_0228
   network: ws
   port: 2053
   server: 156.238.18.112
@@ -3388,7 +3469,7 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560
 - client-fingerprint: randomized
-  name: 13|US_speednode_0229
+  name: 16|US_speednode_0229
   network: ws
   port: 2053
   server: 156.238.18.112
@@ -3405,7 +3486,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: randomized
-  name: 13|US_speednode_0230
+  name: 16|US_speednode_0230
   network: ws
   port: 443
   server: 104.17.182.58
@@ -3420,7 +3501,7 @@ proxies:
       Host: frieren.albedo.ddns-ip.net
     path: /proxyip=ayaka.shorekeeper.ir
 - client-fingerprint: randomized
-  name: 13|US_speednode_0231
+  name: 16|US_speednode_0231
   network: ws
   port: 2087
   server: 156.238.18.112
@@ -3437,7 +3518,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: randomized
-  name: 13|US_speednode_0232
+  name: 16|US_speednode_0232
   network: ws
   port: 443
   server: 104.17.183.58
@@ -3454,7 +3535,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: randomized
-  name: 13|US_speednode_0233
+  name: 16|US_speednode_0233
   network: ws
   port: 443
   server: 104.17.184.58
@@ -3470,7 +3551,7 @@ proxies:
     path: /proxyip=ayaka.shorekeeper.ir
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 13|US_speednode_0234
+  name: 16|US_speednode_0234
   port: 25888
   reality-opts:
     public-key: eHaAkgZIfsYhrH_0HCj07-Vbd7nrMHnnAa663_969DA
@@ -3483,7 +3564,7 @@ proxies:
   udp: true
   uuid: ca14efe8-d119-47df-a7f7-421bc6884bb4
 - client-fingerprint: firefox
-  name: 13|VN_speednode_0235
+  name: 16|VN_speednode_0235
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -3496,7 +3577,7 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: firefox
-  name: 13|VN_speednode_0236
+  name: 16|VN_speednode_0236
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -3509,7 +3590,7 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: firefox
-  name: 13|VN_speednode_0237
+  name: 16|VN_speednode_0237
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -3522,7 +3603,7 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: firefox
-  name: 13|VN_speednode_0238
+  name: 16|VN_speednode_0238
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -3535,7 +3616,7 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: firefox
-  name: 13|VN_speednode_0239
+  name: 16|VN_speednode_0239
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -3548,7 +3629,7 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: firefox
-  name: 13|VN_speednode_0240
+  name: 16|VN_speednode_0240
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -3560,7 +3641,7 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: 13|ZA_speednode_0241
+- name: 16|ZA_speednode_0241
   network: ws
   port: 8880
   server: 102.177.176.186
@@ -3576,129 +3657,20 @@ proxies:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 15|美国 v2rayfree.eu.org
+  name: 18|法国 国际航空电讯集团公司(SITA)
   network: ws
   port: 443
-  server: 23.162.200.227
+  server: 57.129.24.125
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇮🇳'
-  network: tcp
-  port: '10534'
-  server: 94.136.185.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- alterId: 0
-  cipher: auto
-  name: 15|0|--32
-  network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: f.khilei.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|0|--38
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: mankadmu.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|0|--86
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|0|--30
-  network: ws
-  port: 443
-  server: 38.99.82.193
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: tilebani.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 15|@V2ray1_Ng
-  network: tcp
-  port: '53503'
-  server: 66.94.114.122
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d
-- alterId: 0
-  cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇨🇦'
-  network: tcp
-  port: '42610'
-  server: 51.79.86.182
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
-- alterId: 0
-  cipher: auto
-  name: 15|0|-https://t.me/MrXbin-97
+  name: 18|0|-https://t.me/MrXbin-97
   network: ws
   port: 443
   server: 146.59.55.50
@@ -3712,54 +3684,35 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 15|法国 国际航空电讯集团公司(SITA)
+  name: 18|0|--30
   network: ws
   port: 443
-  server: 57.129.24.125
+  server: 38.99.82.193
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: tilebani.com
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇩🇪'
-  network: tcp
-  port: '28213'
-  server: 135.125.182.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
-- alterId: 2
-  cipher: auto
-  name: 15|12,13|韩国|@ripaojiedian
+  name: 18|0|--32
   network: ws
-  port: '30828'
-  server: v28.heduian.link
-  servername: ''
-  tls: false
+  port: 443
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇬🇧'
-  network: tcp
-  port: '44023'
-  server: 51.38.64.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+      Host: f.khilei.com
+    path: /linkvws
 - alterId: 64
   cipher: auto
-  name: 15|🇯🇵JP-107.148.6.67-5005
+  name: 18|🇯🇵JP-107.148.6.67-5005
   network: ws
   port: 30001
   server: 107.148.6.67
@@ -3773,30 +3726,81 @@ proxies:
     path: /path/170733132233
 - alterId: 0
   cipher: auto
-  name: 15|1|🇨🇭2 |  5.0MB/s
-  network: tcp
-  port: 22324
-  server: 186.190.215.193
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 15|🇩🇪DE-23.158.56.241-0823
+  name: 18|0|--38
   network: ws
   port: 443
-  server: 23.158.56.241
+  server: 15.235.83.227
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: mankadmu.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 18|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 18|2|🇺🇸11 |  4.7MB/s
+  network: tcp
+  port: 18000
+  server: 169.150.208.83
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: '18|Channel id: @ShadowProxy66🇮🇳'
+  network: tcp
+  port: '10534'
+  server: 94.136.185.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- alterId: 0
+  cipher: auto
+  name: 18|🇨🇦CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: baradiha.com
     path: /linkvws
+- alterId: 2
+  cipher: auto
+  name: 18|12,13|韩国|@ripaojiedian
+  network: ws
+  port: '30828'
+  server: v28.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: '15|Channel id: @ShadowProxy66🇩🇪 #1'
+  name: '18|Channel id: @ShadowProxy66🇩🇪'
   network: ws
   port: '443'
   server: 57.129.64.238
@@ -3810,91 +3814,229 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 15|1|🌀13-RO |  1.8MB/s
-  network: tcp
-  port: '49664'
-  server: 5.182.37.231
-  tls: false
+  name: 18|🇩🇪DE-23.158.56.241-0823
+  network: ws
+  port: 443
+  server: 23.158.56.241
+  servername: ''
+  tls: true
   type: vmess
-  uuid: 9395474c-e2a1-4565-ba56-c16e7373c4c4
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 15|2|🇺🇸11 |  4.7MB/s
+  name: 18|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 18|@V2ray1_Ng
   network: tcp
-  port: 18000
-  server: 169.150.208.83
+  port: '53503'
+  server: 66.94.114.122
+  servername: ''
   tls: false
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 16|IEPL+·+日本JP+·+23+·+深港IEPL
-  password: zssWgYQp7
-  port: 28113
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+美国US+·+88+·+沪港IEPL
-  password: zssWgYQp7
-  port: 28109
-  server: 202.104.44.184
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+美国US+·+A250+·+Netflix美国...
-  password: zssWgYQp7
-  port: 28175
-  server: 202.104.44.184
-  skip-cert-verify: true
-  type: trojan
-- name: '16|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
-  password: zssWgYQp7
-  port: 28175
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+日本JP+·+A140+·+Netflix日本...
+  uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d
+- alterId: 0
+  cipher: auto
+  name: 18|🇨🇦CA-15.235.83.228-4945
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 18|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '18|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: tcp
+  port: '28213'
+  server: 135.125.182.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- alterId: 0
+  cipher: auto
+  name: 18|0|--86
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '18|Channel id: @ShadowProxy66🇬🇧'
+  network: tcp
+  port: '44023'
+  server: 51.38.64.209
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- alterId: 0
+  cipher: auto
+  name: 18|0|--26
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 18|1|🇨🇭2 |  5.0MB/s
+  network: tcp
+  port: 22324
+  server: 186.190.215.193
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '18|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: '18|法国 国际航空电讯集团公司(SITA) #1'
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '18|Channel id: @ShadowProxy66🇨🇦'
+  network: tcp
+  port: '42610'
+  server: 51.79.86.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- name: 19|IEPL+·+日本JP+·+A140+·+Netflix日本...
   password: zssWgYQp7
   port: 28117
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '16|IEPL+·+日本JP+·+A140+·+Netflix日本... #1'
-  password: zssWgYQp7
-  port: 28117
-  server: 202.104.44.184
-  skip-cert-verify: true
-  type: trojan
-- name: 16|IEPL+·+美国US+·+36+·+深港IEPL
+- name: 19|IEPL+·+美国US+·+36+·+深港IEPL
   password: zssWgYQp7
   port: 28136
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+日本JP+·+V8+·+沪港IEPL
+- name: 19|IEPL+·+美国US+·+A250+·+Netflix美国...
+  password: zssWgYQp7
+  port: 28175
+  server: 202.104.44.184
+  skip-cert-verify: true
+  type: trojan
+- name: 19|IEPL+·+日本JP+·+23+·+深港IEPL
+  password: zssWgYQp7
+  port: 28113
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: 19|IEPL+·+日本JP+·+V8+·+沪港IEPL
   password: zssWgYQp7
   port: 28107
   server: 202.104.44.184
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+日本JP+·+V8+·+深港IEPL
+- name: 19|IEPL+·+美国US+·+88+·+深港IEPL
   password: zssWgYQp7
-  port: 28107
+  port: 28109
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+日本JP+·+23+·+沪港IEPL
+- name: 19|IEPL+·+日本JP+·+23+·+沪港IEPL
   password: zssWgYQp7
   port: 28113
   server: 202.104.44.184
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+美国US+·+36+·+沪港IEPL
+- name: 19|IEPL+·+美国US+·+88+·+沪港IEPL
+  password: zssWgYQp7
+  port: 28109
+  server: 202.104.44.184
+  skip-cert-verify: true
+  type: trojan
+- name: '19|IEPL+·+日本JP+·+A140+·+Netflix日本... #1'
+  password: zssWgYQp7
+  port: 28117
+  server: 202.104.44.184
+  skip-cert-verify: true
+  type: trojan
+- name: 19|IEPL+·+日本JP+·+V8+·+深港IEPL
+  password: zssWgYQp7
+  port: 28107
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: 19|IEPL+·+美国US+·+36+·+沪港IEPL
   password: zssWgYQp7
   port: 28136
   server: 202.104.44.184
   skip-cert-verify: true
   type: trojan
-- name: 16|IEPL+·+美国US+·+88+·+深港IEPL
+- name: '19|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
   password: zssWgYQp7
-  port: 28109
+  port: 28175
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
@@ -3909,299 +4051,311 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 13|US_speednode_0180
-  - 13|US_speednode_0183
-  - 11,12|日本3|@ripaojiedian
-  - 13|US_speednode_0140
-  - 13|NZ_speednode_0099
-  - 13|NL_speednode_0097
-  - 13|US_speednode_0224
-  - 13|GB_speednode_0066
-  - 12|香港3|@ripaojiedian
-  - 13|SI_speednode_0125
-  - 13|GB_speednode_0059
-  - 13|RU_speednode_0106
-  - 13|GB_speednode_0051
-  - 11,12|新加坡|@ripaojiedian
-  - 11,12|美国3|@ripaojiedian
-  - 16|IEPL+·+日本JP+·+23+·+沪港IEPL
-  - 13|AT_speednode_0008
-  - 13|CY_speednode_0029
-  - 13|LT_speednode_0086
-  - 13|US_speednode_0160
-  - 13|US_speednode_0173
-  - 13|SG_speednode_0121
-  - 13|CA_speednode_0017
-  - 13|ES_speednode_0044
-  - 13|SG_speednode_0119
-  - 13|US_speednode_0212
-  - 13|DE_speednode_0033
-  - 13|US_speednode_0138
-  - 13|US_speednode_0156
-  - 13|US_speednode_0233
-  - 13|RU_speednode_0111
-  - 13|US_speednode_0159
-  - 13|US_speednode_0191
-  - 13|US_speednode_0141
-  - 13|AT_speednode_0010
-  - 13|CR_speednode_0019
-  - 13|CY_speednode_0028
-  - 13|US_speednode_0232
-  - 13|US_speednode_0186
-  - 13|US_speednode_0202
-  - 13|NL_speednode_0094
-  - 13|US_speednode_0176
-  - 13|AU_speednode_0013
-  - 13|US_speednode_0139
-  - 13|RU_speednode_0103
-  - 13|US_speednode_0182
-  - 13|US_speednode_0164
-  - 13|US_speednode_0211
-  - 13|US_speednode_0163
-  - 12|日本v2|@ripaojiedian
-  - 13|UA_speednode_0131
-  - 13|US_speednode_0136
-  - 11|🇯🇵 日本|@ripaojiedian
-  - 13|FR_speednode_0050
-  - 13|JO_speednode_0071
-  - 13|US_speednode_0184
-  - 13|US_speednode_0214
-  - 13|US_speednode_0195
-  - 13|AT_speednode_0007
-  - 13|SI_speednode_0123
-  - 13|VN_speednode_0235
-  - '15|Channel id: @ShadowProxy66🇩🇪 #1'
-  - 13|US_speednode_0172
-  - '16|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
-  - 13|CY_speednode_0031
-  - 13|US_speednode_0231
-  - 15|0|--38
-  - 13|AU_speednode_0012
-  - 13|CR_speednode_0024
-  - 13|GB_speednode_0061
-  - 15|1|🇨🇭2 |  5.0MB/s
-  - 13|US_speednode_0189
-  - 13|AE_speednode_0002
-  - 13|CH_speednode_0018
-  - 13|LU_speednode_0088
-  - 13|US_speednode_0149
-  - 13|US_speednode_0200
-  - 13|DE_speednode_0036
-  - 13|JP_speednode_0073
-  - 13|TH_speednode_0129
-  - 13|US_speednode_0133
-  - 13|US_speednode_0222
-  - '15|Channel id: @ShadowProxy66🇩🇪'
-  - 13|US_speednode_0205
-  - 11|🇭🇰 香港3|@ripaojiedian
-  - 15|法国 国际航空电讯集团公司(SITA)
-  - 13|GB_speednode_0055
-  - 13|US_speednode_0179
-  - 13|US_speednode_0196
-  - 13|LT_speednode_0080
-  - 12|香港v2|@ripaojiedian
-  - 13|KZ_speednode_0076
-  - 13|NL_speednode_0090
-  - 13|US_speednode_0198
-  - 13|CR_speednode_0027
-  - 13|GB_speednode_0064
-  - 13|AE_speednode_0001
-  - 11,12|新加坡2|@ripaojiedian
-  - 13|AE_speednode_0003
-  - 13|BG_speednode_0015
-  - 13|US_speednode_0194
-  - 13|US_speednode_0175
-  - 13|RU_speednode_0114
-  - 13|US_speednode_0161
-  - 13|US_speednode_0213
-  - 13|US_speednode_0219
-  - 13|US_speednode_0206
-  - 13|GB_speednode_0058
-  - 13|AT_speednode_0005
-  - 13|CR_speednode_0022
-  - 13|CY_speednode_0030
-  - 13|GB_speednode_0060
-  - 13|US_speednode_0181
-  - 13|US_speednode_0190
-  - 13|LT_speednode_0085
-  - 13|US_speednode_0209
-  - 15|美国 v2rayfree.eu.org
-  - 15|0|--30
-  - 11,12|韩国2|@ripaojiedian
-  - 13|GB_speednode_0068
-  - 13|RU_speednode_0105
-  - 13|US_speednode_0193
-  - 13|VN_speednode_0238
-  - 15|1|🌀13-RO |  1.8MB/s
-  - 15|2|🇺🇸11 |  4.7MB/s
-  - 13|SI_speednode_0124
-  - 11,12|日本4|@ripaojiedian
-  - 13|US_speednode_0154
-  - 16|IEPL+·+日本JP+·+A140+·+Netflix日本...
-  - 11|🇸🇬 新加坡3|@ripaojiedian
-  - 13|NL_speednode_0096
-  - 13|US_speednode_0229
-  - 13|DE_speednode_0040
-  - 13|LT_speednode_0081
-  - 13|US_speednode_0207
-  - 13|US_speednode_0228
-  - 13|US_speednode_0197
-  - 13|US_speednode_0143
-  - 16|IEPL+·+日本JP+·+23+·+深港IEPL
-  - 13|EE_speednode_0041
-  - 13|US_speednode_0166
-  - 13|VN_speednode_0239
-  - 11,12|韩国|@ripaojiedian
-  - 13|AU_speednode_0014
-  - 13|KZ_speednode_0075
-  - 13|US_speednode_0185
-  - 11,12|香港5|@ripaojiedian
-  - 13|US_speednode_0204
-  - 13|US_speednode_0165
-  - 13|DE_speednode_0038
-  - 13|SG_speednode_0120
-  - 13|US_speednode_0135
-  - 13|AT_speednode_0006
-  - 13|SI_speednode_0126
-  - 13|SI_speednode_0122
-  - 13|LT_speednode_0083
-  - 15|🇯🇵JP-107.148.6.67-5005
-  - 13|CR_speednode_0020
-  - 13|US_speednode_0227
-  - 13|DE_speednode_0035
-  - 13|US_speednode_0167
-  - 13|US_speednode_0171
-  - 13|US_speednode_0234
-  - 13|RU_speednode_0109
-  - 15|0|--32
-  - 13|US_speednode_0147
-  - 13|DE_speednode_0034
-  - 13|ZA_speednode_0241
-  - '15|Channel id: @ShadowProxy66🇨🇦'
-  - 13|US_speednode_0169
-  - 13|GB_speednode_0057
-  - 13|CZ_speednode_0032
-  - 13|RU_speednode_0110
-  - 13|US_speednode_0188
-  - 13|ES_speednode_0042
-  - 11,12|美国4|@ripaojiedian
-  - 13|US_speednode_0208
-  - 13|FR_speednode_0049
-  - 13|JO_speednode_0072
-  - 13|RU_speednode_0104
-  - 13|GB_speednode_0067
-  - 13|GB_speednode_0056
-  - 13|NL_speednode_0093
-  - 13|RU_speednode_0112
-  - 13|AU_speednode_0011
-  - 13|SG_speednode_0118
-  - 13|US_speednode_0151
-  - 13|US_speednode_0216
-  - 13|LT_speednode_0082
-  - 13|US_speednode_0201
-  - 15|0|-https://t.me/MrXbin-97
-  - 13|RU_speednode_0107
-  - 13|CR_speednode_0021
-  - 13|GB_speednode_0053
-  - 13|LT_speednode_0078
-  - 13|US_speednode_0148
-  - 11|🇭🇰 香港7|@ripaojiedian
-  - 13|GB_speednode_0052
-  - 13|LU_speednode_0087
-  - 16|IEPL+·+日本JP+·+V8+·+深港IEPL
-  - 16|IEPL+·+美国US+·+36+·+沪港IEPL
-  - 13|UA_speednode_0130
-  - 13|DE_speednode_0039
-  - 13|ES_speednode_0045
-  - 11,12|香港4|@ripaojiedian
-  - 13|CA_speednode_0016
-  - 16|IEPL+·+美国US+·+36+·+深港IEPL
-  - 13|ES_speednode_0046
-  - 13|NL_speednode_0095
-  - 13|AE_speednode_0004
-  - 13|SA_speednode_0116
-  - 13|FR_speednode_0048
-  - 13|US_speednode_0217
-  - 13|RU_speednode_0115
-  - 13|AT_speednode_0009
-  - 13|VN_speednode_0240
-  - 13|JP_speednode_0074
-  - 13|LT_speednode_0084
-  - 13|GB_speednode_0069
-  - 13|RU_speednode_0101
-  - 13|US_speednode_0153
-  - 13|LT_speednode_0079
-  - 13|GB_speednode_0065
-  - 13|US_speednode_0162
-  - 13|US_speednode_0226
-  - 16|IEPL+·+美国US+·+88+·+沪港IEPL
-  - 13|CR_speednode_0025
-  - 11|🇭🇰 香港2|@ripaojiedian
-  - 13|US_speednode_0146
-  - 13|US_speednode_0158
-  - 11|🇯🇵 日本2|@ripaojiedian
-  - 12|新加坡3|@ripaojiedian
-  - 13|ES_speednode_0043
-  - 13|US_speednode_0220
-  - 13|VN_speednode_0237
-  - 13|US_speednode_0150
-  - 13|HK_speednode_0070
-  - 13|RU_speednode_0102
-  - 15|0|--86
-  - 15|12,13|韩国|@ripaojiedian
-  - 13|GB_speednode_0063
-  - 13|US_speednode_0134
-  - 13|US_speednode_0174
-  - 13|US_speednode_0157
-  - 13|RU_speednode_0113
-  - 13|US_speednode_0223
-  - 13|US_speednode_0155
-  - 13|US_speednode_0203
-  - 13|NL_speednode_0092
-  - 13|GB_speednode_0054
-  - 13|US_speednode_0230
-  - 13|US_speednode_0221
-  - '15|Channel id: @ShadowProxy66🇮🇳'
-  - 15|北美地区 v2rayfree.eu.org
-  - 13|US_speednode_0144
-  - 13|US_speednode_0199
-  - 13|ES_speednode_0047
-  - 16|IEPL+·+日本JP+·+V8+·+沪港IEPL
-  - 13|VN_speednode_0236
-  - 11|🇺🇸 美国2|@ripaojiedian
-  - 13|UA_speednode_0132
-  - 13|US_speednode_0215
-  - 13|NL_speednode_0091
-  - '15|Channel id: @ShadowProxy66🇬🇧'
-  - 13|US_speednode_0145
-  - 13|US_speednode_0168
-  - 13|GB_speednode_0062
-  - 13|US_speednode_0170
-  - 13|NN_speednode_0098
-  - 13|US_speednode_0152
-  - 13|RU_speednode_0108
-  - '15|Channel id: @ShadowProxy66🇺🇸'
-  - 13|US_speednode_0177
-  - 13|US_speednode_0210
-  - 15|🇩🇪DE-23.158.56.241-0823
-  - 15|@V2ray1_Ng
-  - 16|IEPL+·+美国US+·+A250+·+Netflix美国...
-  - 11,12|香港6|@ripaojiedian
-  - 13|US_speednode_0178
-  - 16|IEPL+·+美国US+·+88+·+深港IEPL
-  - 13|US_speednode_0192
-  - 13|SC_speednode_0117
-  - 12|香港7|@ripaojiedian
-  - 13|LT_speednode_0077
-  - 13|NZ_speednode_0100
-  - 13|US_speednode_0218
-  - 13|SI_speednode_0127
-  - 13|DE_speednode_0037
-  - 13|SI_speednode_0128
-  - 11,12|香港|@ripaojiedian
-  - 13|CR_speednode_0026
-  - '16|IEPL+·+日本JP+·+A140+·+Netflix日本... #1'
-  - 13|CR_speednode_0023
+  - 16|US_speednode_0143
+  - 16|SI_speednode_0125
+  - 16|UA_speednode_0130
+  - 16|ES_speednode_0047
+  - 16|SI_speednode_0122
+  - 16|NL_speednode_0096
+  - 16|SI_speednode_0127
+  - 16|JO_speednode_0072
+  - 16|AE_speednode_0003
+  - 14|🇭🇰 香港7|@ripaojiedian
+  - 18|12,13|韩国|@ripaojiedian
+  - 16|US_speednode_0229
+  - 16|VN_speednode_0235
+  - 16|US_speednode_0199
+  - 16|US_speednode_0193
+  - 16|LT_speednode_0083
+  - 16|US_speednode_0189
+  - 16|SG_speednode_0121
+  - 16|LT_speednode_0080
+  - 16|US_speednode_0190
+  - 16|DE_speednode_0040
+  - 16|US_speednode_0197
+  - 16|GB_speednode_0064
+  - 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
+  - 16|GB_speednode_0059
+  - 16|US_speednode_0163
+  - 14,15|香港|@ripaojiedian
+  - 16|US_speednode_0165
+  - 14|🇭🇰 香港3|@ripaojiedian
+  - 16|US_speednode_0200
+  - 18|0|-https://t.me/MrXbin-97
+  - 16|US_speednode_0230
+  - 16|RU_speednode_0107
+  - 16|GB_speednode_0066
+  - 16|BG_speednode_0015
+  - 16|LT_speednode_0081
+  - 16|RU_speednode_0112
+  - 16|VN_speednode_0237
+  - 16|RU_speednode_0105
+  - 16|US_speednode_0196
+  - 16|US_speednode_0215
+  - 16|AT_speednode_0006
+  - 16|NL_speednode_0094
+  - 16|US_speednode_0205
+  - 16|US_speednode_0210
+  - 16|JP_speednode_0074
+  - 16|US_speednode_0141
+  - 16|US_speednode_0191
+  - 16|AT_speednode_0005
+  - 16|DE_speednode_0036
+  - 16|RU_speednode_0113
+  - 16|US_speednode_0198
+  - 16|GB_speednode_0056
+  - '18|Channel id: @ShadowProxy66🇮🇳'
+  - 16|GB_speednode_0057
+  - 16|US_speednode_0223
+  - 18|🇩🇪DE-57.129.25.20-1271
+  - 16|RU_speednode_0101
+  - 19|IEPL+·+日本JP+·+23+·+沪港IEPL
+  - 16|GB_speednode_0052
+  - 16|VN_speednode_0240
+  - 16|AT_speednode_0009
+  - 16|UA_speednode_0132
+  - 16|US_speednode_0171
+  - 19|IEPL+·+美国US+·+36+·+深港IEPL
+  - 16|VN_speednode_0239
+  - 16|CR_speednode_0026
+  - 16|LT_speednode_0079
+  - 16|NL_speednode_0095
+  - 16|SI_speednode_0128
+  - 15|香港3|@ripaojiedian
+  - 16|DE_speednode_0039
+  - 16|GB_speednode_0060
+  - 16|NL_speednode_0092
+  - 16|NL_speednode_0093
+  - 16|US_speednode_0218
+  - 1,3|🇬🇧_GB_英国->🇺🇸_US_美国
+  - 16|AE_speednode_0001
+  - 16|US_speednode_0145
+  - 16|ES_speednode_0043
+  - 19|IEPL+·+美国US+·+36+·+沪港IEPL
+  - 16|CY_speednode_0029
+  - 1,3,14,15|香港6|@ripaojiedian
+  - 16|LT_speednode_0078
+  - 16|US_speednode_0233
+  - 16|US_speednode_0209
+  - 16|US_speednode_0219
+  - 16|CR_speednode_0024
+  - 16|AT_speednode_0010
+  - 16|US_speednode_0133
+  - 16|US_speednode_0176
+  - 15|新加坡3|@ripaojiedian
+  - 16|DE_speednode_0035
+  - 14,15|香港4|@ripaojiedian
+  - 1|_CN_->_US__1
+  - 16|CR_speednode_0020
+  - 16|RU_speednode_0110
+  - 16|FR_speednode_0048
+  - 16|US_speednode_0138
+  - 16|US_speednode_0135
+  - 16|US_speednode_0202
+  - 18|法国 国际航空电讯集团公司(SITA)
+  - 14|🇯🇵 日本|@ripaojiedian
+  - 19|IEPL+·+日本JP+·+23+·+深港IEPL
+  - 16|JP_speednode_0073
+  - 16|KZ_speednode_0075
+  - 16|GB_speednode_0068
+  - 16|US_speednode_0164
+  - 16|NN_speednode_0098
+  - 16|US_speednode_0148
+  - 16|CY_speednode_0028
+  - 14|🇸🇬 新加坡3|@ripaojiedian
+  - 16|ES_speednode_0044
+  - 16|RU_speednode_0102
+  - 16|US_speednode_0178
+  - 16|US_speednode_0211
+  - 18|🇯🇵JP-107.148.6.67-5005
+  - 16|GB_speednode_0054
+  - 15|日本v2|@ripaojiedian
+  - 16|AT_speednode_0007
+  - 16|TH_speednode_0129
+  - 16|UA_speednode_0131
+  - 16|NL_speednode_0090
+  - 16|US_speednode_0168
+  - 16|US_speednode_0184
+  - 16|US_speednode_0179
+  - 16|CR_speednode_0025
+  - 16|US_speednode_0214
+  - 18|🇨🇦CA-15.235.83.228-4945
+  - 16|RU_speednode_0103
+  - 16|US_speednode_0222
+  - 16|US_speednode_0228
+  - '18|Channel id: @ShadowProxy66🇩🇪'
+  - 16|US_speednode_0188
+  - 18|0|--32
+  - 14,15|日本3|@ripaojiedian
+  - 16|US_speednode_0172
+  - 16|US_speednode_0150
+  - 16|GB_speednode_0058
+  - 16|NL_speednode_0091
+  - 19|IEPL+·+日本JP+·+A140+·+Netflix日本...
+  - 19|IEPL+·+日本JP+·+V8+·+沪港IEPL
+  - 14,15|美国3|@ripaojiedian
+  - 16|US_speednode_0156
+  - 16|US_speednode_0169
+  - 16|RU_speednode_0114
+  - 16|SG_speednode_0119
+  - 3|🇺🇸_US_美国->🇨🇳_CN_中国
+  - 16|LT_speednode_0082
+  - 16|LU_speednode_0088
+  - 14,15|美国4|@ripaojiedian
+  - 16|US_speednode_0144
+  - 18|0|--86
+  - '18|Channel id: @ShadowProxy66🇺🇸'
+  - 14|🇯🇵 日本2|@ripaojiedian
+  - 14|🇭🇰 香港2|@ripaojiedian
+  - 16|US_speednode_0180
+  - 16|US_speednode_0182
+  - 16|US_speednode_0203
+  - 16|VN_speednode_0236
+  - 16|ZA_speednode_0241
+  - 16|US_speednode_0204
+  - 16|CY_speednode_0030
+  - 16|JO_speednode_0071
+  - 16|US_speednode_0152
+  - 16|US_speednode_0206
+  - 19|IEPL+·+美国US+·+A250+·+Netflix美国...
+  - 16|GB_speednode_0063
+  - '18|法国 国际航空电讯集团公司(SITA) #1'
+  - 16|US_speednode_0177
+  - 16|AU_speednode_0013
+  - 16|HK_speednode_0070
+  - 16|CR_speednode_0022
+  - 16|US_speednode_0194
+  - 16|US_speednode_0227
+  - 16|US_speednode_0185
+  - 16|US_speednode_0158
+  - 16|US_speednode_0151
+  - 16|US_speednode_0161
+  - 16|US_speednode_0174
+  - 16|RU_speednode_0104
+  - 16|US_speednode_0140
+  - 16|US_speednode_0208
+  - 16|SG_speednode_0118
+  - 18|@V2ray1_Ng
+  - 16|CY_speednode_0031
+  - 16|DE_speednode_0034
+  - 16|SI_speednode_0123
+  - 16|FR_speednode_0050
+  - 16|US_speednode_0181
+  - 16|AT_speednode_0008
+  - 16|NZ_speednode_0099
+  - 16|US_speednode_0136
+  - '3|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  - 16|DE_speednode_0038
+  - 16|US_speednode_0226
+  - 16|FR_speednode_0049
+  - 16|LT_speednode_0084
+  - 3|🇺🇸_US_美国
+  - 16|SA_speednode_0116
+  - 18|美国 v2rayfree.eu.org
+  - 16|AE_speednode_0004
+  - 16|US_speednode_0149
+  - 14,15|新加坡2|@ripaojiedian
+  - 16|AU_speednode_0012
+  - 16|KZ_speednode_0076
+  - 16|RU_speednode_0108
+  - 16|SG_speednode_0120
+  - 16|US_speednode_0231
+  - 16|GB_speednode_0069
+  - 16|DE_speednode_0033
+  - 18|2|🇺🇸11 |  4.7MB/s
+  - 16|LU_speednode_0087
+  - 16|US_speednode_0195
+  - 18|🇨🇦CA-15.235.50.172-1645
+  - 16|US_speednode_0183
+  - 16|US_speednode_0155
+  - 16|US_speednode_0217
+  - 16|US_speednode_0213
+  - 16|US_speednode_0153
+  - 16|GB_speednode_0065
+  - 16|US_speednode_0166
+  - 16|ES_speednode_0042
+  - 16|US_speednode_0154
+  - 14,15|日本4|@ripaojiedian
+  - 16|GB_speednode_0061
+  - 16|US_speednode_0147
+  - 16|CR_speednode_0021
+  - 16|SI_speednode_0126
+  - 16|LT_speednode_0077
+  - 16|US_speednode_0192
+  - 16|US_speednode_0216
+  - 16|DE_speednode_0037
+  - 16|CA_speednode_0016
+  - 16|LT_speednode_0085
+  - 16|VN_speednode_0238
+  - '19|IEPL+·+日本JP+·+A140+·+Netflix日本... #1'
+  - 16|AU_speednode_0011
+  - 15|香港7|@ripaojiedian
+  - 16|CR_speednode_0019
+  - 16|ES_speednode_0045
+  - 16|US_speednode_0186
+  - 16|US_speednode_0139
+  - 16|CZ_speednode_0032
+  - 16|US_speednode_0175
+  - 14,15|韩国|@ripaojiedian
+  - 16|GB_speednode_0055
+  - 16|CA_speednode_0017
+  - 16|RU_speednode_0106
+  - 16|RU_speednode_0109
+  - 14,15|新加坡|@ripaojiedian
+  - 15|香港v2|@ripaojiedian
+  - 18|0|--26
+  - 16|CH_speednode_0018
+  - 16|NL_speednode_0097
+  - 16|US_speednode_0146
+  - 16|US_speednode_0232
+  - 16|LT_speednode_0086
+  - 16|RU_speednode_0115
+  - 16|US_speednode_0160
+  - 14,15|香港5|@ripaojiedian
+  - 16|US_speednode_0162
+  - 16|US_speednode_0220
+  - 16|GB_speednode_0053
+  - '18|Channel id: @ShadowProxy66🇩🇪 #1'
+  - 19|IEPL+·+美国US+·+88+·+深港IEPL
+  - 19|IEPL+·+日本JP+·+V8+·+深港IEPL
+  - 16|AE_speednode_0002
+  - 19|IEPL+·+美国US+·+88+·+沪港IEPL
+  - 18|北美地区 v2rayfree.eu.org
+  - 16|US_speednode_0134
+  - 16|GB_speednode_0062
+  - 1|_US_->_CN_
+  - 16|GB_speednode_0051
+  - 16|US_speednode_0201
+  - 16|ES_speednode_0046
+  - 16|EE_speednode_0041
+  - 16|US_speednode_0173
+  - 16|GB_speednode_0067
+  - 14|🇺🇸 美国2|@ripaojiedian
+  - 16|SI_speednode_0124
+  - 16|SC_speednode_0117
+  - 16|US_speednode_0157
+  - 16|US_speednode_0170
+  - 16|US_speednode_0224
+  - 3|🇺🇸_US_美国->🇰🇷_KR_韩国
+  - '18|Channel id: @ShadowProxy66🇨🇦'
+  - 18|0|--38
+  - 16|US_speednode_0159
+  - 16|US_speednode_0167
+  - 16|US_speednode_0221
+  - 16|US_speednode_0207
+  - 18|0|--30
+  - 18|🇩🇪DE-23.158.56.241-0823
+  - 16|CR_speednode_0027
+  - '18|Channel id: @ShadowProxy66🇬🇧'
+  - 16|US_speednode_0212
+  - 16|AU_speednode_0014
+  - 16|US_speednode_0234
+  - 16|RU_speednode_0111
+  - 18|1|🇨🇭2 |  5.0MB/s
+  - '19|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
+  - 16|CR_speednode_0023
+  - 16|NZ_speednode_0100
+  - 14,15|韩国2|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -4257,122 +4411,123 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 11|🇯🇵 日本|@ripaojiedian
-  - 11|🇯🇵 日本2|@ripaojiedian
-  - 11,12|日本3|@ripaojiedian
-  - 11,12|日本4|@ripaojiedian
-  - 12|日本v2|@ripaojiedian
-  - 13|JP_speednode_0073
-  - 13|JP_speednode_0074
-  - 15|🇯🇵JP-107.148.6.67-5005
+  - 14|🇯🇵 日本|@ripaojiedian
+  - 14|🇯🇵 日本2|@ripaojiedian
+  - 14,15|日本3|@ripaojiedian
+  - 14,15|日本4|@ripaojiedian
+  - 15|日本v2|@ripaojiedian
+  - 16|JP_speednode_0073
+  - 16|JP_speednode_0074
+  - 18|🇯🇵JP-107.148.6.67-5005
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 11|🇺🇸 美国2|@ripaojiedian
-  - 11,12|美国3|@ripaojiedian
-  - 11,12|美国4|@ripaojiedian
-  - 13|US_speednode_0133
-  - 13|US_speednode_0134
-  - 13|US_speednode_0135
-  - 13|US_speednode_0136
-  - 13|US_speednode_0138
-  - 13|US_speednode_0139
-  - 13|US_speednode_0140
-  - 13|US_speednode_0141
-  - 13|US_speednode_0143
-  - 13|US_speednode_0144
-  - 13|US_speednode_0145
-  - 13|US_speednode_0146
-  - 13|US_speednode_0147
-  - 13|US_speednode_0148
-  - 13|US_speednode_0149
-  - 13|US_speednode_0150
-  - 13|US_speednode_0151
-  - 13|US_speednode_0152
-  - 13|US_speednode_0153
-  - 13|US_speednode_0154
-  - 13|US_speednode_0155
-  - 13|US_speednode_0156
-  - 13|US_speednode_0157
-  - 13|US_speednode_0158
-  - 13|US_speednode_0159
-  - 13|US_speednode_0160
-  - 13|US_speednode_0161
-  - 13|US_speednode_0162
-  - 13|US_speednode_0163
-  - 13|US_speednode_0164
-  - 13|US_speednode_0165
-  - 13|US_speednode_0166
-  - 13|US_speednode_0167
-  - 13|US_speednode_0168
-  - 13|US_speednode_0169
-  - 13|US_speednode_0170
-  - 13|US_speednode_0171
-  - 13|US_speednode_0172
-  - 13|US_speednode_0173
-  - 13|US_speednode_0174
-  - 13|US_speednode_0175
-  - 13|US_speednode_0176
-  - 13|US_speednode_0177
-  - 13|US_speednode_0178
-  - 13|US_speednode_0179
-  - 13|US_speednode_0180
-  - 13|US_speednode_0181
-  - 13|US_speednode_0182
-  - 13|US_speednode_0183
-  - 13|US_speednode_0184
-  - 13|US_speednode_0185
-  - 13|US_speednode_0186
-  - 13|US_speednode_0223
-  - 13|US_speednode_0188
-  - 13|US_speednode_0189
-  - 13|US_speednode_0190
-  - 13|US_speednode_0191
-  - 13|US_speednode_0192
-  - 13|US_speednode_0193
-  - 13|US_speednode_0194
-  - 13|US_speednode_0195
-  - 13|US_speednode_0196
-  - 13|US_speednode_0197
-  - 13|US_speednode_0198
-  - 13|US_speednode_0199
-  - 13|US_speednode_0200
-  - 13|US_speednode_0201
-  - 13|US_speednode_0202
-  - 13|US_speednode_0203
-  - 13|US_speednode_0204
-  - 13|US_speednode_0205
-  - 13|US_speednode_0206
-  - 13|US_speednode_0207
-  - 13|US_speednode_0208
-  - 13|US_speednode_0209
-  - 13|US_speednode_0210
-  - 13|US_speednode_0211
-  - 13|US_speednode_0212
-  - 13|US_speednode_0213
-  - 13|US_speednode_0214
-  - 13|US_speednode_0215
-  - 13|US_speednode_0216
-  - 13|US_speednode_0217
-  - 13|US_speednode_0218
-  - 13|US_speednode_0219
-  - 13|US_speednode_0220
-  - 13|US_speednode_0221
-  - 13|US_speednode_0222
-  - 13|US_speednode_0224
-  - 13|US_speednode_0226
-  - 13|US_speednode_0227
-  - 13|US_speednode_0228
-  - 13|US_speednode_0229
-  - 13|US_speednode_0230
-  - 13|US_speednode_0231
-  - 13|US_speednode_0232
-  - 13|US_speednode_0233
-  - 13|US_speednode_0234
-  - '15|Channel id: @ShadowProxy66🇺🇸'
-  - 15|美国 v2rayfree.eu.org
-  - 15|北美地区 v2rayfree.eu.org
-  - 15|2|🇺🇸11 |  4.7MB/s
+  - 3|🇺🇸_US_美国
+  - 14|🇺🇸 美国2|@ripaojiedian
+  - 14,15|美国3|@ripaojiedian
+  - 14,15|美国4|@ripaojiedian
+  - 16|US_speednode_0133
+  - 16|US_speednode_0134
+  - 16|US_speednode_0135
+  - 16|US_speednode_0136
+  - 16|US_speednode_0138
+  - 16|US_speednode_0139
+  - 16|US_speednode_0140
+  - 16|US_speednode_0141
+  - 16|US_speednode_0143
+  - 16|US_speednode_0144
+  - 16|US_speednode_0145
+  - 16|US_speednode_0146
+  - 16|US_speednode_0147
+  - 16|US_speednode_0148
+  - 16|US_speednode_0149
+  - 16|US_speednode_0150
+  - 16|US_speednode_0151
+  - 16|US_speednode_0152
+  - 16|US_speednode_0153
+  - 16|US_speednode_0154
+  - 16|US_speednode_0155
+  - 16|US_speednode_0156
+  - 16|US_speednode_0157
+  - 16|US_speednode_0158
+  - 16|US_speednode_0159
+  - 16|US_speednode_0160
+  - 16|US_speednode_0161
+  - 16|US_speednode_0162
+  - 16|US_speednode_0163
+  - 16|US_speednode_0164
+  - 16|US_speednode_0165
+  - 16|US_speednode_0166
+  - 16|US_speednode_0167
+  - 16|US_speednode_0168
+  - 16|US_speednode_0169
+  - 16|US_speednode_0170
+  - 16|US_speednode_0171
+  - 16|US_speednode_0172
+  - 16|US_speednode_0173
+  - 16|US_speednode_0174
+  - 16|US_speednode_0175
+  - 16|US_speednode_0176
+  - 16|US_speednode_0177
+  - 16|US_speednode_0178
+  - 16|US_speednode_0179
+  - 16|US_speednode_0180
+  - 16|US_speednode_0181
+  - 16|US_speednode_0182
+  - 16|US_speednode_0183
+  - 16|US_speednode_0184
+  - 16|US_speednode_0185
+  - 16|US_speednode_0186
+  - 16|US_speednode_0223
+  - 16|US_speednode_0188
+  - 16|US_speednode_0189
+  - 16|US_speednode_0190
+  - 16|US_speednode_0191
+  - 16|US_speednode_0192
+  - 16|US_speednode_0193
+  - 16|US_speednode_0194
+  - 16|US_speednode_0195
+  - 16|US_speednode_0196
+  - 16|US_speednode_0197
+  - 16|US_speednode_0198
+  - 16|US_speednode_0199
+  - 16|US_speednode_0200
+  - 16|US_speednode_0201
+  - 16|US_speednode_0202
+  - 16|US_speednode_0203
+  - 16|US_speednode_0204
+  - 16|US_speednode_0205
+  - 16|US_speednode_0206
+  - 16|US_speednode_0207
+  - 16|US_speednode_0208
+  - 16|US_speednode_0209
+  - 16|US_speednode_0210
+  - 16|US_speednode_0211
+  - 16|US_speednode_0212
+  - 16|US_speednode_0213
+  - 16|US_speednode_0214
+  - 16|US_speednode_0215
+  - 16|US_speednode_0216
+  - 16|US_speednode_0217
+  - 16|US_speednode_0218
+  - 16|US_speednode_0219
+  - 16|US_speednode_0220
+  - 16|US_speednode_0221
+  - 16|US_speednode_0222
+  - 16|US_speednode_0224
+  - 16|US_speednode_0226
+  - 16|US_speednode_0227
+  - 16|US_speednode_0228
+  - 16|US_speednode_0229
+  - 16|US_speednode_0230
+  - 16|US_speednode_0231
+  - 16|US_speednode_0232
+  - 16|US_speednode_0233
+  - 16|US_speednode_0234
+  - 18|北美地区 v2rayfree.eu.org
+  - 18|2|🇺🇸11 |  4.7MB/s
+  - 18|美国 v2rayfree.eu.org
+  - '18|Channel id: @ShadowProxy66🇺🇸'
   type: select
 - name: 🇨🇳 中国
   proxies:
@@ -4380,17 +4535,16 @@ proxy-groups:
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 11,12|香港|@ripaojiedian
-  - 11|🇭🇰 香港2|@ripaojiedian
-  - 11|🇭🇰 香港3|@ripaojiedian
-  - 11,12|香港4|@ripaojiedian
-  - 11,12|香港5|@ripaojiedian
-  - 11,12|香港6|@ripaojiedian
-  - 11|🇭🇰 香港7|@ripaojiedian
-  - 12|香港3|@ripaojiedian
-  - 12|香港7|@ripaojiedian
-  - 12|香港v2|@ripaojiedian
-  - 13|HK_speednode_0070
+  - 14,15|香港|@ripaojiedian
+  - 14|🇭🇰 香港2|@ripaojiedian
+  - 14|🇭🇰 香港3|@ripaojiedian
+  - 14,15|香港4|@ripaojiedian
+  - 14,15|香港5|@ripaojiedian
+  - 14|🇭🇰 香港7|@ripaojiedian
+  - 15|香港3|@ripaojiedian
+  - 15|香港7|@ripaojiedian
+  - 15|香港v2|@ripaojiedian
+  - 16|HK_speednode_0070
   type: select
 - name: ❔ 台湾
   proxies:
@@ -4398,88 +4552,92 @@ proxy-groups:
   type: select
 - name: 🇨🇦 加拿大
   proxies:
-  - 13|CA_speednode_0016
-  - 13|CA_speednode_0017
-  - '15|Channel id: @ShadowProxy66🇨🇦'
+  - 16|CA_speednode_0016
+  - 16|CA_speednode_0017
+  - 18|🇨🇦CA-15.235.50.172-1645
+  - 18|🇨🇦CA-15.235.83.228-4945
+  - '18|Channel id: @ShadowProxy66🇨🇦'
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - 13|FR_speednode_0048
-  - 13|FR_speednode_0049
-  - 13|FR_speednode_0050
-  - 15|法国 国际航空电讯集团公司(SITA)
+  - 16|FR_speednode_0048
+  - 16|FR_speednode_0049
+  - 16|FR_speednode_0050
+  - 18|法国 国际航空电讯集团公司(SITA)
+  - '18|法国 国际航空电讯集团公司(SITA) #1'
   type: select
 - name: 🇸🇬 新加坡
   proxies:
-  - 11,12|新加坡|@ripaojiedian
-  - 11,12|新加坡2|@ripaojiedian
-  - 11|🇸🇬 新加坡3|@ripaojiedian
-  - 12|新加坡3|@ripaojiedian
-  - 13|SG_speednode_0118
-  - 13|SG_speednode_0119
-  - 13|SG_speednode_0120
-  - 13|SG_speednode_0121
+  - 14,15|新加坡|@ripaojiedian
+  - 14,15|新加坡2|@ripaojiedian
+  - 14|🇸🇬 新加坡3|@ripaojiedian
+  - 15|新加坡3|@ripaojiedian
+  - 16|SG_speednode_0118
+  - 16|SG_speednode_0119
+  - 16|SG_speednode_0120
+  - 16|SG_speednode_0121
   type: select
 - name: 🇬🇧 英国
   proxies:
-  - 13|GB_speednode_0051
-  - 13|GB_speednode_0052
-  - 13|GB_speednode_0053
-  - 13|GB_speednode_0054
-  - 13|GB_speednode_0055
-  - 13|GB_speednode_0056
-  - 13|GB_speednode_0057
-  - 13|GB_speednode_0058
-  - 13|GB_speednode_0059
-  - 13|GB_speednode_0060
-  - 13|GB_speednode_0061
-  - 13|GB_speednode_0062
-  - 13|GB_speednode_0063
-  - 13|GB_speednode_0064
-  - 13|GB_speednode_0065
-  - 13|GB_speednode_0066
-  - 13|GB_speednode_0067
-  - 13|GB_speednode_0068
-  - 13|GB_speednode_0069
-  - '15|Channel id: @ShadowProxy66🇬🇧'
+  - 16|GB_speednode_0051
+  - 16|GB_speednode_0052
+  - 16|GB_speednode_0053
+  - 16|GB_speednode_0054
+  - 16|GB_speednode_0055
+  - 16|GB_speednode_0056
+  - 16|GB_speednode_0057
+  - 16|GB_speednode_0058
+  - 16|GB_speednode_0059
+  - 16|GB_speednode_0060
+  - 16|GB_speednode_0061
+  - 16|GB_speednode_0062
+  - 16|GB_speednode_0063
+  - 16|GB_speednode_0064
+  - 16|GB_speednode_0065
+  - 16|GB_speednode_0066
+  - 16|GB_speednode_0067
+  - 16|GB_speednode_0068
+  - 16|GB_speednode_0069
+  - '18|Channel id: @ShadowProxy66🇬🇧'
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - 11,12|韩国|@ripaojiedian
-  - 11,12|韩国2|@ripaojiedian
-  - 15|12,13|韩国|@ripaojiedian
+  - 14,15|韩国|@ripaojiedian
+  - 14,15|韩国2|@ripaojiedian
+  - 18|12,13|韩国|@ripaojiedian
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - 13|RU_speednode_0101
-  - 13|RU_speednode_0102
-  - 13|RU_speednode_0103
-  - 13|RU_speednode_0104
-  - 13|RU_speednode_0105
-  - 13|RU_speednode_0106
-  - 13|RU_speednode_0107
-  - 13|RU_speednode_0108
-  - 13|RU_speednode_0109
-  - 13|RU_speednode_0110
-  - 13|RU_speednode_0111
-  - 13|RU_speednode_0112
-  - 13|RU_speednode_0113
-  - 13|RU_speednode_0114
-  - 13|RU_speednode_0115
+  - 16|RU_speednode_0101
+  - 16|RU_speednode_0102
+  - 16|RU_speednode_0103
+  - 16|RU_speednode_0104
+  - 16|RU_speednode_0105
+  - 16|RU_speednode_0106
+  - 16|RU_speednode_0107
+  - 16|RU_speednode_0108
+  - 16|RU_speednode_0109
+  - 16|RU_speednode_0110
+  - 16|RU_speednode_0111
+  - 16|RU_speednode_0112
+  - 16|RU_speednode_0113
+  - 16|RU_speednode_0114
+  - 16|RU_speednode_0115
   type: select
 - name: 🇩🇪 德国
   proxies:
-  - 13|DE_speednode_0033
-  - 13|DE_speednode_0034
-  - 13|DE_speednode_0035
-  - 13|DE_speednode_0036
-  - 13|DE_speednode_0037
-  - 13|DE_speednode_0038
-  - 13|DE_speednode_0039
-  - 13|DE_speednode_0040
-  - '15|Channel id: @ShadowProxy66🇩🇪'
-  - 15|🇩🇪DE-23.158.56.241-0823
-  - '15|Channel id: @ShadowProxy66🇩🇪 #1'
+  - 16|DE_speednode_0033
+  - 16|DE_speednode_0034
+  - 16|DE_speednode_0035
+  - 16|DE_speednode_0036
+  - 16|DE_speednode_0037
+  - 16|DE_speednode_0038
+  - 16|DE_speednode_0039
+  - 16|DE_speednode_0040
+  - '18|Channel id: @ShadowProxy66🇩🇪'
+  - 18|🇩🇪DE-23.158.56.241-0823
+  - 18|🇩🇪DE-57.129.25.20-1271
+  - '18|Channel id: @ShadowProxy66🇩🇪 #1'
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站
