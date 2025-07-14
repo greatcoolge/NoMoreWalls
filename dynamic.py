@@ -76,8 +76,9 @@ def fetch_cfmem():
     subs = set()
     result = {}
     for link in sub_links:
-        if link.strip():
-            subs.add(link.strip())
+        clean_link = link.strip()
+        if clean_link.startswith("http"):
+            subs.add(clean_link)
     print(f"📦 共提取 {len(subs)} 个订阅链接，已存入 subs 变量。")
     return subs  # 返回纯链接的集合
 
