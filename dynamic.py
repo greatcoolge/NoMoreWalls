@@ -25,12 +25,16 @@ from typing import Optional
 
 
 
-session = requests.Session()
-session.headers.update({
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-})
-
 def fetch_cfmem():
+    import re
+    import requests
+    from bs4 import BeautifulSoup
+
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    })
+
     base_url = "https://www.cfmem.com/"
     res = session.get(base_url)
     soup = BeautifulSoup(res.text, 'html.parser')
@@ -45,22 +49,21 @@ def fetch_cfmem():
         title = a.get_text(strip=True)
         print(f"   链接: {href} | 标题: {title}")
 
-        if link_pat.match(href) and "节点" in title:
+        if "节点" in title and link_pat.match(href):
             full_url = base_url.rstrip("/") + href
+            print(f"✅ 命中节点文章链接：{full_url}")
             candidates.append((title, full_url))
+            break
 
     if not candidates:
         raise Exception("❌ 未找到包含“节点”的文章链接")
 
-    # 默认取第一篇命中的文章
     article_url = candidates[0][1]
-    print(f"\n✅ 命中节点文章链接：{article_url}")
+    print(f"\n🎯 开始解析文章页面：{article_url}")
 
-    # 请求文章页面
     res = session.get(article_url)
     html = res.text
 
-    # 提取订阅链接
     sub_link_pattern = re.compile(
         r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
         re.IGNORECASE
