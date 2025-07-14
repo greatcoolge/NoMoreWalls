@@ -5,10 +5,6 @@ import requests
 import threading
 from typing import Set
 from fetch import raw2fastly, session, LOCAL
-
-
-import re
-import re
 from bs4 import BeautifulSoup
 
 def fetch_cfmem():
@@ -122,7 +118,7 @@ def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
 AUTOURLS = []
-AUTOFETCH = [vpn_fail, sharkdoor, fetch_cfmem_latest_v2rayse]
+AUTOFETCH = [vpn_fail, sharkdoor, fetch_cfmem]
 
 if __name__ == '__main__':
     print("URL 抓取："+', '.join([_.__name__ for _ in AUTOURLS]))
