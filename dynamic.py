@@ -76,23 +76,8 @@ def fetch_cfmem():
     subs = set()
     result = {}
     for link in sub_links:
-        if link.endswith(".txt") and "base64" not in result:
-            result["base64"] = link
-        elif link.endswith(".yaml"):
-            if "mihomo" not in result and ("mh" in link or "mihomo" in link):
-                result["mihomo"] = link
-            elif "clash" not in result:
-                result["clash"] = link
-        elif link.endswith(".json") and "singbox" not in result:
-            result["singbox"] = link
-
-    for val in result.values():
-        subs.add(val)
-
-    print("\n✅ 分类完成：")
-    for key, val in result.items():
-        print(f"   {key:<8} → {val}")
-
+        subs.add(link)
+    print(f"📦 共提取 {len(subs)} 个订阅链接，已存入 subs 变量。")
     return subs  # 返回纯链接的集合
 
 
