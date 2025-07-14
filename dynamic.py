@@ -7,35 +7,62 @@ from typing import Set
 from fetch import raw2fastly, session, LOCAL
 
 
-def fetch_cfmem_latest_v2rayse():
+import re
+import re
+from bs4 import BeautifulSoup
+
+def fetch_cfmem():
     base_url = "https://www.cfmem.com/"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
     }
 
+    # 访问首页
     res = session.get(base_url, headers=headers)
+    soup = BeautifulSoup(res.text, 'html.parser')
 
-    # 提取包含“节点”的最新文章链接
-    article_match = re.search(r'<a href="(https://www\.cfmem\.com/\d+\.html)"[^>]*>([^<]*节点[^<]*)</a>', res.text)
-    if not article_match:
-        raise Exception("未找到包含“节点”的文章链接")
+    # 查找包含“节点”的文章链接（支持 2025/07/xxx.html 格式）
+    article_url = None
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        title = a.get_text(strip=True)
+        if (
+            re.match(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html", href)
+            and "节点" in title
+        ):
+            article_url = href
+            break
 
-    article_url = article_match.group(1)
-    print("最新文章链接：", article_url)
+    if not article_url:
+        raise Exception("未找到符合格式的“节点”文章链接")
 
+    # 进入文章页
     res = session.get(article_url, headers=headers)
 
-    # 提取 fs.v2rayse.com 分享链接
+    # 提取 v2rayse 分享链接
     sub_link_pattern = re.compile(
         r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
         re.IGNORECASE
     )
-
     sub_links = sub_link_pattern.findall(res.text)
     if not sub_links:
-        raise Exception("未找到 v2rayse 分享订阅链接")
+        raise Exception("未找到订阅链接")
 
-    return sub_links  # or return sub_links[0]w
+    # 分类
+    result = {}
+    for link in sub_links:
+        if link.endswith(".txt") and "base64" not in result:
+            result["base64"] = link
+        elif link.endswith(".yaml"):
+            if "mihomo" not in result and ("mh" in link or "mihomo" in link):
+                result["mihomo"] = link
+            elif "clash" not in result:
+                result["clash"] = link
+        elif link.endswith(".json") and "singbox" not in result:
+            result["singbox"] = link
+
+    return result
+
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
         'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master')).json()
