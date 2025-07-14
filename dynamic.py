@@ -74,28 +74,27 @@ def fetch_latest_cfmem_article() -> str:
         # ① 先尝试从 URL 获取日期
         m = url_date_pat.search(href)
         date_obj = None
-        if m:
-            try:
-                date_obj = dt.datetime.strptime(m.group(1), "%Y%m%d")
-            except ValueError:
-                pass
+def fetch_cfmem():
+    base_url = "https://www.cfmem.com/"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    }
 
-        # ② URL 没取到 → 备用：从标题抓日期
-        if date_obj is None:
-            date_obj = extract_date_from_title(title)
+    # 访问首页
+    res = session.get(base_url, headers=headers)
+    soup = BeautifulSoup(res.text, 'html.parser')
 
-        # ③ 两种方式都失败则跳过
-        if date_obj is None:
-            continue
-
-        candidates.append((date_obj, href))
-
-    if not candidates:
-        raise Exception("❌ 未找到任何包含“节点”的文章")
-
-    # ④ 返回日期最新的一篇
-    latest_url = max(candidates, key=lambda x: x[0])[1]
-    return latest_url
+    # 查找包含“节点”的文章链接（支持 2025/07/xxx.html 格式）
+    article_url = None
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        title = a.get_text(strip=True)
+        if (
+            re.match(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html", href)
+            and "节点" in title
+        ):
+            article_url = href
+            break
 
 
 def sharkdoor():
