@@ -49,18 +49,16 @@ def fetch_cfmem():
             full_url = href if href.startswith("http") else base_url.rstrip("/") + "/" + href.lstrip("/")
             print(f"✅ 命中节点文章链接：{full_url}")
             candidates.append((title, full_url))
-            break  # 如果你只想抓第一篇，保留 break；否则去掉
+            break  # 只取第一个匹配链接
 
     if not candidates:
         raise Exception("❌ 未找到包含“节点”的文章链接")
 
     article_url = candidates[0][1]
 
-    # 请求文章页面
     res = session.get(article_url)
     html = res.text
 
-    # 提取订阅链接
     sub_link_pattern = re.compile(
         r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
         re.IGNORECASE
@@ -74,7 +72,8 @@ def fetch_cfmem():
     for link in sub_links:
         print("   🔗", link)
 
-    # 分类整理
+    # 分类整理，存到 subs 集合中，只放纯链接字符串
+    subs = set()
     result = {}
     for link in sub_links:
         if link.endswith(".txt") and "base64" not in result:
@@ -87,12 +86,14 @@ def fetch_cfmem():
         elif link.endswith(".json") and "singbox" not in result:
             result["singbox"] = link
 
+    for val in result.values():
+        subs.add(val)
+
     print("\n✅ 分类完成：")
     for key, val in result.items():
         print(f"   {key:<8} → {val}")
 
-    return result
-
+    return subs  # 返回纯链接的集合
 
 
 
