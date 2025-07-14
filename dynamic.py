@@ -24,46 +24,57 @@ from typing import Optional
 #     return sub
 
 
-
-def fetch_latest_cfmem_article():
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-    })
-
+def fetch_cfmem():
     base_url = "https://www.cfmem.com/"
-    res = session.get(base_url)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    }
+
+    # 访问首页
+    res = session.get(base_url, headers=headers)
     soup = BeautifulSoup(res.text, 'html.parser')
 
-    # 正则匹配
-    link_pat = re.compile(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html")
-    date_pat = re.compile(r"/(\d{8})-")  # 提取 slug 中 8 位日期
-
-    candidates = []
-
+    # 查找包含“节点”的文章链接（支持 2025/07/xxx.html 格式）
+    article_url = None
     for a in soup.find_all("a", href=True):
         href = a["href"]
         title = a.get_text(strip=True)
+        if (
+            re.match(r"https://www\.cfmem\.com/\d{4}/\d{2}/[a-z0-9\-]+\.html", href)
+            and "节点" in title
+        ):
+            article_url = href
+            break
 
-        if not ("节点" in title and link_pat.match(href)):
-            continue
+    if not article_url:
+        raise Exception("未找到符合格式的“节点”文章链接")
 
-        m = date_pat.search(href)
-        if not m:
-            continue
+    # 进入文章页
+    res = session.get(article_url, headers=headers)
 
-        try:
-            date_obj = dt.datetime.strptime(m.group(1), "%Y%m%d")
-            candidates.append((date_obj, href))
-        except:
-            continue
+    # 提取 v2rayse 分享链接
+    sub_link_pattern = re.compile(
+        r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
+        re.IGNORECASE
+    )
+    sub_links = sub_link_pattern.findall(res.text)
+    if not sub_links:
+        raise Exception("未找到订阅链接")
 
-    if not candidates:
-        raise Exception("❌ 没找到任何节点文章")
+    # 分类
+    result = {}
+    for link in sub_links:
+        if link.endswith(".txt") and "base64" not in result:
+            result["base64"] = link
+        elif link.endswith(".yaml"):
+            if "mihomo" not in result and ("mh" in link or "mihomo" in link):
+                result["mihomo"] = link
+            elif "clash" not in result:
+                result["clash"] = link
+        elif link.endswith(".json") and "singbox" not in result:
+            result["singbox"] = link
 
-    # 取日期最大的那篇
-    _, latest_url = max(candidates)
-    return latest_url
+    return result
 
 
 def sharkdoor():
@@ -124,8 +135,8 @@ def w1770946466():
 def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
-AUTOURLS = []
-AUTOFETCH = [vpn_fail, sharkdoor, fetch_latest_cfmem_article]
+AUTOURLS = [fetch_cfmem]
+AUTOFETCH = [vpn_fail, sharkdoor]
 
 if __name__ == '__main__':
     print("URL 抓取："+', '.join([_.__name__ for _ in AUTOURLS]))
