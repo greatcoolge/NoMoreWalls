@@ -1053,6 +1053,9 @@ def main():
     print("正在整理链接...")
     sources_final = list(sources_final)
     sources_final.sort()
+    # 在这里打印准备抓取的链接
+    for url in sources_final:
+        print(f"准备抓取的链接: '{url}'") 
     sources_obj = [Source(url) for url in (sources_final + AUTOFETCH)]
 
     print("开始抓取！")
