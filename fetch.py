@@ -1009,6 +1009,7 @@ def main():
     print("正在整理链接...")
     sources_final: Union[Set[str], List[str]] = set()
     airports: Set[str] = set()
+    
     for source in sources:
         if source == 'EOF': break
         if not source: continue
@@ -1030,6 +1031,12 @@ def main():
         if isairport: airports.add(sub)
         else: sources_final.add(sub)
 
+    print("[调试] 所有链接：")
+    for x in sorted(sources_final):
+        if not x.strip():
+            print("-《空链接⚠️》")
+        else:
+            print(f"-《{x}》")
     if airports:
         print("正在抓取机场列表...")
         for sub in airports:
