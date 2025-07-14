@@ -24,6 +24,7 @@ from typing import Optional
 #     return sub
 
 
+
 session = requests.Session()
 session.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -31,46 +32,49 @@ session.headers.update({
 
 def fetch_cfmem():
     base_url = "https://www.cfmem.com/"
-
-    # 访问首页
     res = session.get(base_url)
     soup = BeautifulSoup(res.text, 'html.parser')
 
-    # 匹配相对路径，如 /2025/07/xxx.html
     link_pat = re.compile(r"/\d{4}/\d{2}/[a-z0-9\-]+\.html")
-    article_url = None
+
+    print("🧪 正在扫描首页文章列表...")
+    candidates = []
 
     for a in soup.find_all("a", href=True):
         href = a["href"]
         title = a.get_text(strip=True)
+        print(f"   链接: {href} | 标题: {title}")
 
-        if "节点" in title and link_pat.match(href):
-            article_url = base_url.rstrip("/") + href
-            print("✅ 找到文章链接：", article_url)
-            break
+        if link_pat.match(href) and "节点" in title:
+            full_url = base_url.rstrip("/") + href
+            candidates.append((title, full_url))
 
-    if not article_url:
+    if not candidates:
         raise Exception("❌ 未找到包含“节点”的文章链接")
 
-    # 访问文章页面
+    # 默认取第一篇命中的文章
+    article_url = candidates[0][1]
+    print(f"\n✅ 命中节点文章链接：{article_url}")
+
+    # 请求文章页面
     res = session.get(article_url)
-    print("📄 正在解析文章页内容，长度:", len(res.text))
+    html = res.text
 
     # 提取订阅链接
     sub_link_pattern = re.compile(
         r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
         re.IGNORECASE
     )
-    sub_links = sub_link_pattern.findall(res.text)
+    sub_links = sub_link_pattern.findall(html)
 
     if not sub_links:
         raise Exception("❌ 未提取到任何订阅链接")
 
-    print(f"📦 共提取到 {len(sub_links)} 个订阅链接")
+    print(f"📦 共提取 {len(sub_links)} 个订阅链接：")
     for link in sub_links:
         print("   🔗", link)
 
-    # 分类保存
+    # 分类整理
     result = {}
     for link in sub_links:
         if link.endswith(".txt") and "base64" not in result:
@@ -83,8 +87,14 @@ def fetch_cfmem():
         elif link.endswith(".json") and "singbox" not in result:
             result["singbox"] = link
 
-    print("✅ 分类完成：", result)
+    print("\n✅ 分类完成：")
+    for key, val in result.items():
+        print(f"   {key:<8} → {val}")
+
     return result
+
+
+
 
 
 def sharkdoor():
