@@ -87,6 +87,8 @@ def fetch_cfmem():
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
         'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master')).json()
+    if not res_json:          # ← 只加这一行：目录为空就直接返回空集合
+        return set()
     res = session.get(raw2fastly(res_json[-1]['download_url']))
     nodes: Set[str] = set()
     for line in res.text.split('\n'):
