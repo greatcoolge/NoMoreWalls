@@ -7,19 +7,27 @@ from typing import Set
 from fetch import raw2fastly, session, LOCAL
 
 
-# def kkzui():
-#     if LOCAL: return
-#     res = session.get("https://kkzui.com/jd?orderby=modified")
-#     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
-#     res = session.get(article_url)
-#     passwd = re.search(r'<strong>本期密码：(.*?)</strong>',res.text).groups()[0]
-#     res = session.post(article_url, data={'secret-key': passwd})
-#     sub = res.text.split('<pre')[1].split('</pre>')[0]
-#     if '</' in sub:
-#         sub = sub.split('</')[-2]
-#     if '>' in sub:
-#         sub = sub.split('>')[-1]
-#     return sub
+def kkzui():
+    if LOCAL: return
+    res = session.get("https://kkzui.com/jd?orderby=modified")
+    match = re.search(r'<a href="(https://kkzui.com/.*?\.html)" title="20.*?节点.*?</a>', res.text)
+    if not match:
+        raise Exception("未找到文章链接")
+    article_url = match.group(1)
+
+    res = session.get(article_url)
+    passwd_match = re.search(r'<strong>本期密码：(.*?)</strong>', res.text)
+    if not passwd_match:
+        raise Exception("未找到密码")
+    passwd = passwd_match.group(1)
+
+    res = session.post(article_url, data={'secret-key': passwd})
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(res.text, 'html.parser')
+    pre = soup.find('pre')
+    if not pre:
+        raise Exception("未找到订阅内容")
+    return pre.text.strip()
 
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
