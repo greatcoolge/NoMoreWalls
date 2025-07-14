@@ -7,28 +7,35 @@ from typing import Set
 from fetch import raw2fastly, session, LOCAL
 
 
-def kkzui():
-    if LOCAL: return
-    res = session.get("https://kkzui.com/jd?orderby=modified")
-    match = re.search(r'<a href="(https://kkzui.com/.*?\.html)" title="20.*?节点.*?</a>', res.text)
-    if not match:
-        raise Exception("未找到文章链接")
-    article_url = match.group(1)
+def fetch_cfmem_latest_v2rayse():
+    base_url = "https://www.cfmem.com/"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    }
 
-    res = session.get(article_url)
-    passwd_match = re.search(r'<strong>本期密码：(.*?)</strong>', res.text)
-    if not passwd_match:
-        raise Exception("未找到密码")
-    passwd = passwd_match.group(1)
+    res = session.get(base_url, headers=headers)
 
-    res = session.post(article_url, data={'secret-key': passwd})
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(res.text, 'html.parser')
-    pre = soup.find('pre')
-    if not pre:
-        raise Exception("未找到订阅内容")
-    return pre.text.strip()
+    # 提取包含“节点”的最新文章链接
+    article_match = re.search(r'<a href="(https://www\.cfmem\.com/\d+\.html)"[^>]*>([^<]*节点[^<]*)</a>', res.text)
+    if not article_match:
+        raise Exception("未找到包含“节点”的文章链接")
 
+    article_url = article_match.group(1)
+    print("最新文章链接：", article_url)
+
+    res = session.get(article_url, headers=headers)
+
+    # 提取 fs.v2rayse.com 分享链接
+    sub_link_pattern = re.compile(
+        r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
+        re.IGNORECASE
+    )
+
+    sub_links = sub_link_pattern.findall(res.text)
+    if not sub_links:
+        raise Exception("未找到 v2rayse 分享订阅链接")
+
+    return sub_links  # or return sub_links[0]w
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
         'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master')).json()
