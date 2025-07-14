@@ -88,7 +88,7 @@ def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
 AUTOURLS = []
-AUTOFETCH = [vpn_fail, sharkdoor]
+AUTOFETCH = [vpn_fail, sharkdoor, kkzui]
 
 if __name__ == '__main__':
     print("URL 抓取："+', '.join([_.__name__ for _ in AUTOURLS]))
