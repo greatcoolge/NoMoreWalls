@@ -1,32 +1,11 @@
 proxies:
-- name: 2|🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: www.speedtest.net.cdn.cloudflare.net
-  tls: false
-  type: vless
-  uuid: 6b3b071f-096b-4e4c-8d70-0e0b53f27434
-  ws-opts:
-    headers:
-      Host: VAST-RAdIo.zuLAIR.oRG
-    path: '%2F%3Fed%3D2048'
-- name: 3|_US_
-  network: ws
-  port: 80
-  server: www.speedtest.net.cdn.cloudflare.net
-  type: vless
-  uuid: 6b3b071f-096b-4e4c-8d70-0e0b53f27434
-  ws-opts:
-    headers:
-      host: VAST-RAdIo.zuLAIR.oRG
-    path: /?ed=2048
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 14|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-BbgY2abS77.download.microsoft.com
+    host: 202507121073737-vn1ZEZYzN4.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -1141,33 +1120,6 @@ proxies:
     headers:
       Host: baomei.pages.dev
     path: /
-- alterId: 2
-  cipher: auto
-  name: 18|12,13|美国3|@ripaojiedian
-  network: ws
-  port: '30824'
-  server: v24.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 18|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '18|Channel id: @ShadowProxy66🇺🇸'
@@ -1189,14 +1141,42 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 18|北美地区 v2rayfree.eu.org
+  name: 18|美国 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 134.195.198.147
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: inna.cfd
+      Host: ''
     path: /linkvws
+- alterId: 2
+  cipher: auto
+  name: 18|12,13|美国3|@ripaojiedian
+  network: ws
+  port: '30824'
+  server: v24.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo
+- alterId: 32
+  cipher: auto
+  name: 18|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
