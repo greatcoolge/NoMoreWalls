@@ -83,7 +83,22 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 14,15|美国3|@ripaojiedian
+  name: 14|🇺🇸 美国3|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 3596
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 14|🇺🇸 美国4|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32962
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 15|美国3|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 4447
@@ -91,8 +106,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- client-fingerprint: chrome
-  name: 14,15|美国4|@ripaojiedian
+- name: 15|美国4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 13855
@@ -1077,17 +1091,14 @@ proxies:
     path: /TelegramU0001F1E8U0001F1F3تعداد
 - alterId: 0
   cipher: auto
-  name: 18|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
+  name: '18|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
   name: 18|2|🇺🇸11 |  4.7MB/s
@@ -1097,16 +1108,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: '18|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
   name: 18|美国 v2rayfree.eu.org
@@ -1119,4 +1120,17 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 18|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
