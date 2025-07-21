@@ -38,17 +38,16 @@ proxies:
   name: 14|🇭🇰 香港3|@ripaojiedian
   port: 59056
   server: 38.147.188.53
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   uuid: d028918e-b508-456f-8139-d5022f91a36c
 - client-fingerprint: chrome
-  name: 14,15|香港4|@ripaojiedian
-  network: tcp
+  name: 14|🇭🇰 香港4|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 14495
-  server: 36.151.192.62
+  server: 36.151.251.7
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -71,6 +70,14 @@ proxies:
   tls: false
   type: vmess
   uuid: d028918e-b508-456f-8139-d5022f91a36c
+- name: 15|香港4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 14495
+  server: 36.151.192.62
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 15|香港v2|@ripaojiedian
@@ -95,3 +102,17 @@ proxies:
     headers:
       Host: hk01s.7d79233c.shop
     path: /
+- alterId: 2
+  cipher: auto
+  name: 18|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
