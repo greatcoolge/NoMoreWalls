@@ -1,18 +1,64 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '0,2|_US_ #1'
+  network: ws
+  port: 80
+  server: s1.db-link01.top
+  type: vmess
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      host: 100-212-144-55.s1.db-link01.top
+    path: /dabai.in172.64.9.15
+- cipher: aes-256-gcm
+  name: '0,2|_US__3 #1'
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸_US_美国
+  network: ws
+  port: '80'
+  server: s1.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      Host: 100-212-144-55.s1.db-link01.top
+    path: /dabai.in172.64.9.15
+- client-fingerprint: chrome
+  name: 14,16|SG_speednode_0256
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
+  skip-cert-verify: false
+  sni: tyep.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tyep.esslh.filegear-sg.me
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 14|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-90KK9REZBf.download.microsoft.com
+    host: 202507121073737-Hr6yYQkgXg.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 14|🇺🇸 美国3|@ripaojiedian
+  name: 14,15|美国3|@ripaojiedian
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 3596
   server: 36.151.251.7
@@ -20,29 +66,52 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 14|🇺🇸 美国4|@ripaojiedian
+  name: 14,15|美国4|@ripaojiedian
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 32962
   server: 36.151.251.7
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 15|美国3|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 3596
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: www.baidu.com
+- alterId: 0
+  cipher: chacha20-poly1305
+  client-fingerprint: chrome
+  name: 14,15|美国5|@ripaojiedian
+  network: ws
+  port: '8880'
+  server: s2.cn-db.top
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      Host: 100-114-171-163.s2.cn-db.top
+    path: /dabai.in172.67.69.28
+- name: 15|美国|@ripaojiedian
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
+  sni: tyep.esslh.filegear-sg.me
   type: trojan
-- name: 15|美国4|@ripaojiedian
+  ws-opts:
+    headers:
+      Host: tyep.esslh.filegear-sg.me
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: '18|Channel id: @ShadowProxy66🇺🇸'
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 32962
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 32
   cipher: auto
   name: 18|🇺🇸US-77.83.141.171-1131
@@ -59,13 +128,17 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: 18|2|🇺🇸11 |  4.7MB/s
-  network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
+  name: 18|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 18|美国 v2rayfree.eu.org
@@ -81,11 +154,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '18|Channel id: @ShadowProxy66🇺🇸'
+  name: 18|2|🇺🇸11 |  4.7MB/s
   network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
+  port: 18000
+  server: 169.150.208.83
   tls: false
   type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
