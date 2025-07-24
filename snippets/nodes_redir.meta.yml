@@ -1,33 +1,31 @@
 proxies:
-- cipher: aes-256-gcm
-  name: '0,1|_US_->_CN_ #1'
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-- name: 0|_US_->_DE_
-  network: ws
-  port: 80
-  server: 104.18.26.90
-  servername: blaze-can-118.blazecanada.site
-  type: vless
-  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
-  ws-opts:
-    headers:
-      host: blaze-can-118.blazecanada.site
-    path: /?ed=2560
 - alterId: 2
   cipher: auto
-  name: '0,1|_CN_->_DE_ #1'
+  name: '0,1|_CN_->_US_ #1'
   network: ws
-  port: 30833
-  server: v33.heduian.link
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v33.heduian.link
+      host: v37.heduian.link
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 0,1,2|🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: '25013'
+  server: 45.136.245.177
+  tls: false
+  type: vmess
+  uuid: bba15f35-f16f-4b03-a50e-f864d87f26c9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '0,1|_JP_->_US_ #1'
@@ -40,93 +38,6 @@ proxies:
     headers:
       host: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
-- alterId: 2
-  cipher: auto
-  name: '0,1|_CN_->_US_ #1'
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v37.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '0,1|_AU_->_US_ #1'
-  network: ws
-  port: 8880
-  server: 103.133.1.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: '0,1|_GB_->_US_ #1'
-  network: ws
-  port: 8880
-  server: 109.176.239.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: '0,1|_ZA_->_US_ #1'
-  network: ws
-  port: 8880
-  server: 102.177.189.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: '0,1|_SG_->_US_ #1'
-  network: ws
-  port: 8880
-  server: 114.129.43.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: '0,1|_FR_->_US_ #1'
-  network: ws
-  port: 8880
-  server: 141.11.202.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 2
-  cipher: auto
-  name: '0,1|_CN_->_CA_ #1'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
 - alterId: 2
   cipher: auto
   name: '0,1|_CN_->_US__1 #1'
@@ -143,6 +54,18 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
+  name: '0,1|_CN_->_DE_ #1'
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v33.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
   name: '0,1|_CN_->_US__2 #1'
   network: ws
   port: 30829
@@ -155,92 +78,29 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '0,1|_CN_->_US__3 #1'
+  name: '0,1|_CN_->_CA_ #1'
   network: ws
-  port: 30805
-  server: v5.heduian.link
+  port: 30808
+  server: v8.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v5.heduian.link
+      host: v8.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '0,1|_RU_->_US_ #1'
-  network: ws
-  port: 8880
-  server: 94.247.142.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: '0,1|_FR_->_US__1 #1'
-  network: ws
-  port: 8880
-  server: 94.140.0.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- name: 0|_US_->_FR_
-  network: ws
-  port: 2052
-  server: 104.24.158.0
-  servername: register.tunnelbreaking.shop
-  type: vless
-  uuid: b6a617b7-758e-4639-b2f4-d296c0f1b03e
-  ws-opts:
-    headers:
-      host: register.tunnelbreaking.shop
-    path: /
-- name: 2|🇺🇸_US_美国->🇩🇪_DE_德国
+- name: 1|_US_->_DE_
   network: ws
   port: 80
   server: 104.18.26.90
   servername: blaze-can-118.blazecanada.site
-  skip-cert-verify: false
-  tls: false
   type: vless
   uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
   ws-opts:
     headers:
-      Host: blaze-can-118.blazecanada.site
+      host: blaze-can-118.blazecanada.site
     path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: ws
-  port: '30833'
-  server: v33.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v33.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 2|🇯🇵_JP_日本->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
 - alterId: 2
   cipher: auto
   name: 2|🇨🇳_CN_中国->🇺🇸_US_美国
@@ -257,10 +117,10 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 2|🇦🇺_AU_澳大利亚->🇺🇸_US_美国
+  name: 2|🇯🇵_JP_日本->🇺🇸_US_美国
   network: ws
   port: 8880
-  server: 103.133.1.241
+  server: 103.116.7.241
   tls: false
   type: vmess
   uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
@@ -268,72 +128,19 @@ proxies:
     headers:
       Host: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 2|🇬🇧_GB_英国->🇺🇸_US_美国
+- name: 2|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
-  port: 8880
-  server: 109.176.239.241
+  port: 80
+  server: 104.18.26.90
+  servername: blaze-can-118.blazecanada.site
+  skip-cert-verify: false
   tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  type: vless
+  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
   ws-opts:
     headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 2|🇿🇦_ZA_南非->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 102.177.189.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬_SG_新加坡->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 114.129.43.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 2|🇫🇷_FR_法国->🇺🇸_US_美国
-  network: ws
-  port: '8880'
-  server: 141.11.202.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
+      Host: blaze-can-118.blazecanada.site
+    path: /?ed=2560
 - alterId: 2
   cipher: auto
   name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
@@ -350,6 +157,19 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
+  name: 2|🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: ws
+  port: '30833'
+  server: v33.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v33.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
   name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
   port: 30829
@@ -363,53 +183,15 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  name: 2|🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 30805
-  server: v5.heduian.link
+  port: 30808
+  server: v8.heduian.link
   servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v5.heduian.link
+      Host: v8.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 2|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 94.247.142.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: '2|🇫🇷_FR_法国->🇺🇸_US_美国 #1'
-  network: ws
-  port: 8880
-  server: 94.140.0.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- name: 2|🇺🇸_US_美国->🇫🇷_FR_法国
-  network: ws
-  port: 2052
-  server: 104.24.158.0
-  servername: register.tunnelbreaking.shop
-  tls: false
-  type: vless
-  uuid: b6a617b7-758e-4639-b2f4-d296c0f1b03e
-  ws-opts:
-    headers:
-      Host: register.tunnelbreaking.shop
-    path: '%2F'
