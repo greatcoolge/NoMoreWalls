@@ -1,25 +1,13 @@
 proxies:
-- cipher: aes-256-gcm
-  name: '0,1|_US_ #1'
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
+- cipher: aes-256-cfb
+  name: '0,1|_US__1 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
   type: ss
 - alterId: 0
   cipher: auto
   name: '0,1|_US__2 #1'
-  network: ws
-  port: 80
-  server: 69.84.182.108
-  type: vmess
-  uuid: 527a7c04-9a2c-4fdb-aa18-37337e62e917
-  ws-opts:
-    headers:
-      host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
-  name: '0,1|_US__3 #1'
   network: ws
   port: 8880
   server: 108.165.216.241
@@ -31,20 +19,7 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: '2|🇺🇸_US_美国 #1'
-  network: ws
-  port: 80
-  server: 69.84.182.108
-  tls: false
-  type: vmess
-  uuid: 527a7c04-9a2c-4fdb-aa18-37337e62e917
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
-  name: '2|🇺🇸_US_美国 #2'
+  name: '3|🇺🇸_US_美国 #1'
   network: ws
   port: '8880'
   server: 108.165.216.241
@@ -55,32 +30,31 @@ proxies:
     headers:
       Host: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
+- client-fingerprint: chrome
+  name: 14|🇺🇸 美国|@ripaojiedian
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  skip-cert-verify: false
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 14|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-CP0L3MZWnq.download.microsoft.com
+    host: 202507232129723-vNgaz226QA.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 14,16|SG_speednode_0256
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: /
 - client-fingerprint: chrome
   name: 14,15|美国3|@ripaojiedian
   network: tcp
@@ -101,28 +75,15 @@ proxies:
   type: trojan
 - name: 15|美国|@ripaojiedian
   network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  sni: tyep.esslh.filegear-sg.me
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: tyep.esslh.filegear-sg.me
+      Host: wahaha.yingyangkuaixian.dpdns.org
     path: '%2F'
-- alterId: 0
-  cipher: auto
-  name: 18|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 18|2|🇺🇸11 |  4.7MB/s
@@ -132,19 +93,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 2
-  cipher: auto
-  name: 18|2|🇺🇸26 |  4.9MB/s
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 18|北美地区 v2rayfree.eu.org
@@ -168,3 +116,43 @@ proxies:
   tls: false
   type: vmess
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 2
+  cipher: auto
+  name: 18|2|🇺🇸26 |  4.9MB/s
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 18|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 32
+  cipher: auto
+  name: 18|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc

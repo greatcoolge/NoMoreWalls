@@ -3,29 +3,89 @@ proxies:
   cipher: auto
   name: '0,1|_CN_->_US_ #1'
   network: ws
-  port: 30837
-  server: v37.heduian.link
+  port: 30805
+  server: v5.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '0,1|_DK_->_US_ #1'
+  network: ws
+  port: 80
+  server: csgo.com
+  type: vmess
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '0,1|_DK_->_US__1 #1'
+  network: ws
+  port: 80
+  server: fastcup.net
+  type: vmess
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 2
+  cipher: auto
+  name: '0,1|_CN_->_US__1 #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '0,1|_CN_->_DE_ #1'
+  network: ws
+  port: 30833
+  server: v33.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v37.heduian.link
+      host: v33.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 0,1,2|🇳🇱_NL_荷兰->🇺🇸_US_美国
+  name: '0,1|_DK_->_US__2 #1'
   network: ws
-  port: '25013'
-  server: 45.136.245.177
-  tls: false
+  port: 80
+  server: pubg.ac
   type: vmess
-  uuid: bba15f35-f16f-4b03-a50e-f864d87f26c9
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- cipher: aes-256-cfb
+  name: '0,1|_IT_->_MD_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.213.23.226
+  type: ss
+- cipher: aes-256-gcm
+  name: '0,1|_US_->_CN_ #1'
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
 - alterId: 0
   cipher: auto
   name: '0,1|_JP_->_US_ #1'
@@ -40,73 +100,100 @@ proxies:
     path: /dabai.in
 - alterId: 2
   cipher: auto
-  name: '0,1|_CN_->_US__1 #1'
-  network: ws
-  port: 30835
-  server: v35.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v35.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '0,1|_CN_->_DE_ #1'
-  network: ws
-  port: 30833
-  server: v33.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v33.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
   name: '0,1|_CN_->_US__2 #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '0,1|_CN_->_CA_ #1'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30837
   server: v37.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 3|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: '30805'
+  server: v5.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 3|🇩🇰_DK_丹麦->🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: csgo.com
+  tls: false
+  type: vmess
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '3|🇩🇰_DK_丹麦->🇺🇸_US_美国 #1'
+  network: ws
+  port: 80
+  server: fastcup.net
+  tls: false
+  type: vmess
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 2
+  cipher: auto
+  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
   servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v37.heduian.link
+      Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 3|🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v33.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 2|🇯🇵_JP_日本->🇺🇸_US_美国
+  name: '3|🇩🇰_DK_丹麦->🇺🇸_US_美国 #2'
+  network: ws
+  port: 80
+  server: pubg.ac
+  tls: false
+  type: vmess
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: 3|🇯🇵_JP_日本->🇺🇸_US_美国
   network: ws
   port: 8880
   server: 103.116.7.241
@@ -119,55 +206,15 @@ proxies:
     path: /dabai.in
 - alterId: 2
   cipher: auto
-  name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
-  port: 30835
-  server: v35.heduian.link
+  port: 30837
+  server: v37.heduian.link
   servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v35.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: ws
-  port: '30833'
-  server: v33.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v33.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
+      Host: v37.heduian.link
     path: /oooo
