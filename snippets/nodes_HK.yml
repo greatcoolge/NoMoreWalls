@@ -36,13 +36,13 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 14|🇭🇰 香港3|@ripaojiedian
-  port: 12425
-  server: 38.147.188.87
+  port: 42203
+  server: 103.224.80.29
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2f927b33-021b-4d45-9d4e-9a3592aef502
+  uuid: 89e3bb59-bf63-4346-9864-cbc79cee58a5
 - client-fingerprint: chrome
   name: 14,15|香港4|@ripaojiedian
   network: tcp
@@ -61,33 +61,37 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 14,15|香港6|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 14269f63-t049s0-t1kmeg-mv7m.hk3.p5pv.com
-  servername: ''
+  name: 14|🇭🇰 香港6|@ripaojiedian
+  port: 49597
+  server: 103.181.165.26
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 15|香港3|@ripaojiedian
   network: tcp
-  port: '12425'
-  server: 38.147.188.87
+  port: '42203'
+  server: 103.224.80.29
   servername: ''
   tls: false
   type: vmess
-  uuid: 2f927b33-021b-4d45-9d4e-9a3592aef502
+  uuid: 89e3bb59-bf63-4346-9864-cbc79cee58a5
+- alterId: 0
+  cipher: auto
+  name: 15|香港6|@ripaojiedian
+  network: tcp
+  port: '49597'
+  server: 103.181.165.26
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 15|香港v2|@ripaojiedian
@@ -98,20 +102,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 97a3cf03-66d6-4d65-aa3e-33eb6c709be7
-- alterId: 2
-  cipher: auto
-  name: 18|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: '18|香港3|@ripaojiedian #1'
@@ -126,3 +116,17 @@ proxies:
     headers:
       Host: hk01s.7d79233c.shop
     path: /
+- alterId: 2
+  cipher: auto
+  name: 18|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
