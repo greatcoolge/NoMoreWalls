@@ -1,32 +1,55 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '1,2|_US_ #1'
+- name: 0|🇺🇸_US_美国
   network: ws
-  port: 8880
-  server: 108.165.216.241
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 3|🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 108.165.216.241
-  servername: ''
+  port: 80
+  server: 104.18.26.90
+  servername: blaze-can-118.blazecanada.site
+  skip-cert-verify: false
   tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  type: vless
+  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
   ws-opts:
     headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
+      Host: blaze-can-118.blazecanada.site
+    path: /?ed=2560
+- name: '0|🇺🇸_US_美国 #1'
+  network: ws
+  port: 80
+  server: light-presence.oneeat.co
+  tls: false
+  type: vless
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+  ws-opts:
+    headers:
+      Host: light-presence.oneeat.co
+    path: '%2F'
+- name: '0,2,3|_US__2 #1'
+  network: tcp
+  password: 1CvlKYj1aU
+  port: 1935
+  server: x1-sweden-linode-v2-71u92.devefun.org
+  type: trojan
+- name: 3|_US_
+  network: ws
+  port: 80
+  server: 104.18.26.90
+  servername: blaze-can-118.blazecanada.site
+  type: vless
+  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+  ws-opts:
+    headers:
+      host: blaze-can-118.blazecanada.site
+    path: /?ed=2560
+- name: 3|_US__1
+  network: ws
+  port: 80
+  server: light-presence.oneeat.co
+  type: vless
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+  ws-opts:
+    headers:
+      host: light-presence.oneeat.co
+    path: /
 - client-fingerprint: chrome
   name: 14|🇺🇸 美国|@ripaojiedian
   network: ws
@@ -46,7 +69,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-JtmNFkb3wi.download.microsoft.com
+    host: 202507282137611-8jv54zz1ja.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -66,7 +89,7 @@ proxies:
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
-  server: 174.138.85.53
+  server: 165.22.3.117
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -2157,13 +2180,40 @@ proxies:
     path: /@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@vmessorg----@unlimiteddev----@unlimiteddev?ed=2480
 - alterId: 0
   cipher: auto
-  name: 18|2|🇺🇸11 |  4.7MB/s
+  name: '18|Channel id: @ShadowProxy66🇺🇸'
   network: tcp
-  port: 18000
-  server: 169.150.208.83
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
   tls: false
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 18|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 2
+  cipher: auto
+  name: 18|2|🇺🇸26 |  4.9MB/s
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - alterId: 32
   cipher: auto
   name: 18|🇺🇸US-77.83.141.171-1131
@@ -2193,37 +2243,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 18|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '18|Channel id: @ShadowProxy66🇺🇸'
+  name: 18|2|🇺🇸11 |  4.7MB/s
   network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
+  port: 18000
+  server: 169.150.208.83
   tls: false
   type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 2
-  cipher: auto
-  name: 18|2|🇺🇸26 |  4.9MB/s
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
