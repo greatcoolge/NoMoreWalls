@@ -97,18 +97,23 @@ def sharkdoor():
     return nodes
 
 def sharkdoor_today():
-    today = datetime.datetime.now().strftime('%Y-%m-%d')
-    month_url = datetime.datetime.now().strftime(
-        'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master'
-    )
+    # 1. 构造日期格式
+    now = datetime.datetime.now()
+    day_str = now.strftime('%d日')  # 如 '01日'
+    month_str = now.strftime('%Y-%m')  # 如 '2025-08'
+
+    # 2. 构造 GitHub API 路径
+    month_url = f'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/{month_str}?ref=master'
     res_json = session.get(month_url).json()
     if not res_json:
         return set()
 
+    # 3. 逐个匹配今日日期的 .md 文件
     nodes: Set[str] = set()
     for item in res_json:
-        if today in item['name'] and item['name'].endswith('.md'):
-            res = session.get(raw2fastly(item['download_url']))
+        if item["name"].startswith(day_str) and item["name"].endswith('.md'):
+            url = raw2fastly(item['download_url'])  # 转成 raw.fastly CDN
+            res = session.get(url)
             for line in res.text.splitlines():
                 if '://' in line:
                     nodes.add(line.split('|')[-2])
