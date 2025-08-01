@@ -102,6 +102,30 @@ def changfengoss():
         "https://api.github.com/repos/changfengoss/pub/contents/data/%Y_%m_%d?ref=main")).json()
     return [_['download_url'] for _ in res]
 
+def get_danmaifu_today_link():
+    today = datetime.datetime.now().strftime("%Y%m%d")
+    url = "https://api.github.com/repos/danmaifu/mianfeijiedian/contents/feed?ref=main"
+    headers = {"User-Agent": "changfengoss-fetcher"}
+
+    try:
+        res = requests.get(url, headers=headers, timeout=10)
+        if res.status_code != 200:
+            print(f"Failed to fetch directory: {res.status_code} - {res.text}")
+            return None
+
+        data = res.json()
+        for item in data:
+            name = item.get("name", "")
+            if name == f"v2ray-{today}.txt":
+                return item.get("download_url")
+
+        print(f"No v2ray-{today}.txt found.")
+        return None
+
+    except requests.RequestException as e:
+        print(f"Request error: {e}")
+        return None
+
 def vpn_fail():
     # The site has been closed
     # if LOCAL: return
@@ -144,7 +168,7 @@ def w1770946466():
 def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
-AUTOURLS = [fetch_cfmem]
+AUTOURLS = [fetch_cfmem, get_danmaifu_today_link]
 AUTOFETCH = [vpn_fail]
 
 if __name__ == '__main__':
