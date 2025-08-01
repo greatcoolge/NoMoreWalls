@@ -102,28 +102,33 @@ def changfengoss():
         "https://api.github.com/repos/changfengoss/pub/contents/data/%Y_%m_%d?ref=main")).json()
     return [_['download_url'] for _ in res]
 
-def get_danmaifu_today_link():
-    today = datetime.datetime.now().strftime("%Y%m%d")
+def get_latest_danmaifu_link(max_days: int = 3):
     url = "https://api.github.com/repos/danmaifu/mianfeijiedian/contents/feed?ref=main"
-    headers = {"User-Agent": "changfengoss-fetcher"}
+    headers = {"User-Agent": "danmaifu-fetcher"}
 
     try:
         res = requests.get(url, headers=headers, timeout=10)
         if res.status_code != 200:
-            print(f"Failed to fetch directory: {res.status_code} - {res.text}")
+            print(f"[{res.status_code}] Failed to fetch directory: {res.text}")
             return None
 
         data = res.json()
-        for item in data:
-            name = item.get("name", "")
-            if name == f"v2ray-{today}.txt":
-                return item.get("download_url")
 
-        print(f"No v2ray-{today}.txt found.")
+        # 获取过去 N 天的日期字符串
+        for i in range(max_days):
+            day = (datetime.datetime.now() - datetime.timedelta(days=i)).strftime("%Y%m%d")
+            target_name = f"v2ray-{day}.txt"
+
+            for item in data:
+                if item.get("name") == target_name:
+                    print(f"[INFO] Found file: {target_name}")
+                    return item.get("download_url")
+
+        print("No matching file found in recent days.")
         return None
 
     except requests.RequestException as e:
-        print(f"Request error: {e}")
+        print(f"Request failed: {e}")
         return None
 
 def vpn_fail():
