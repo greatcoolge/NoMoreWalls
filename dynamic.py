@@ -96,6 +96,25 @@ def sharkdoor():
             nodes.add(line.split('|')[-2])
     return nodes
 
+def sharkdoor_today():
+    today = datetime.datetime.now().strftime('%Y-%m-%d')
+    month_url = datetime.datetime.now().strftime(
+        'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master'
+    )
+    res_json = session.get(month_url).json()
+    if not res_json:
+        return set()
+
+    nodes: Set[str] = set()
+    for item in res_json:
+        if today in item['name'] and item['name'].endswith('.md'):
+            res = session.get(raw2fastly(item['download_url']))
+            for line in res.text.splitlines():
+                if '://' in line:
+                    nodes.add(line.split('|')[-2])
+    return nodes
+
+
 def changfengoss():
     # Unused
     res = session.get(datetime.datetime.now().strftime(
@@ -174,7 +193,7 @@ def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
 AUTOURLS = [fetch_cfmem, get_latest_danmaifu_link]
-AUTOFETCH = [vpn_fail]
+AUTOFETCH = [vpn_fail, sharkdoor_today]
 
 if __name__ == '__main__':
     print("URL 抓取："+', '.join([_.__name__ for _ in AUTOURLS]))
