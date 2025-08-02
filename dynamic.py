@@ -60,7 +60,7 @@ def fetch_cfmem():
     html = res.text
 
     sub_link_pattern = re.compile(
-        r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml|json)',
+        r'https://fs\.v2rayse\.com/share/\d{8}/[a-z0-9]{10}\.(?:txt|yaml|yml)',
         re.IGNORECASE
     )
     sub_links = sub_link_pattern.findall(html)
