@@ -1,11 +1,17 @@
 proxies:
 - name: 11|🇨🇦[By EbraSha] vless-CA 🔒
-  network: tcp
-  port: 51952
-  server: 51.222.86.7
+  network: ws
+  port: 80
+  server: 104.18.26.90
+  servername: blaze-can-118.blazecanada.site
+  skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 3956dd35-4f86-4b48-a1ca-45a3dbe471a0
+  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+  ws-opts:
+    headers:
+      Host: blaze-can-118.blazecanada.site
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 16|🇨🇦CA-15.235.83.228-4945
