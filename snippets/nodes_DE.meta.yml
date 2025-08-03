@@ -1,4 +1,11 @@
 proxies:
+- name: 10|🇩🇪[By EbraSha] vless-DE 🔒
+  network: tcp
+  port: 2020
+  server: 78.46.251.109
+  tls: false
+  type: vless
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
 - name: 14|DE_speednode_0009
   network: ws
   port: 8880
@@ -125,20 +132,6 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
-- alterId: 1
-  cipher: auto
-  name: 16|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
@@ -153,6 +146,20 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 16|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
