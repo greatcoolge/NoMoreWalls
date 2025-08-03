@@ -1,24 +1,53 @@
 proxies:
 - cipher: aes-256-cfb
-  name: '0,2|_RU_ #1'
+  name: '0,1|_RU__1 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|🇷🇺 俄罗斯 V2CROSS.COM
+- name: 14|RU_speednode_0084
   network: ws
-  port: '8880'
-  server: 77.105.163.25
+  port: 8880
+  server: 185.148.107.213
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
   tls: false
-  type: vmess
-  uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: TG.WangCai2.s2.cn-db.top
-    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 14|RU_speednode_0040
+      Host: jp.laoyoutiao.link
+    path: /?ed=2560
+- name: 14|RU_speednode_0085
+  network: ws
+  port: 8880
+  server: 176.124.223.213
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /?ed=2560
+- name: 14|RU_speednode_0086
+  network: ws
+  port: 8880
+  server: 185.59.218.188
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 14|RU_speednode_0087
   network: ws
   port: 8880
   server: 176.124.223.251
@@ -31,4 +60,18 @@ proxies:
   ws-opts:
     headers:
       Host: cf.d3z.net
+    path: /
+- name: 14|RU_speednode_0088
+  network: ws
+  port: 8880
+  server: 5.182.85.213
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
     path: /
