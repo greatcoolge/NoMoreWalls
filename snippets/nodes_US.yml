@@ -383,20 +383,20 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560
-- alterId: 64
+- alterId: 32
   cipher: auto
-  name: 16|🇺🇸US-198.2.218.216-9378
+  name: 16|🇺🇸US-77.83.141.171-1131
   network: ws
   port: 443
-  server: 198.2.218.216
-  servername: ''
+  server: vc.fly.dev
+  servername: vc.fly.dev
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: ''
-    path: /path/120306182525
+      Host: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   name: 16|北美地区 v2rayfree.eu.org
@@ -409,19 +409,6 @@ proxies:
   ws-opts:
     headers:
       Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
     path: /linkvws
 - alterId: 2
   cipher: auto
@@ -446,3 +433,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 16|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
