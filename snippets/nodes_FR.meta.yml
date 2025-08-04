@@ -1,5 +1,16 @@
 proxies:
-- name: 14|FR_speednode_0025
+- name: 10|🇫🇷_FR_法国
+  network: ws
+  port: 80
+  server: 51.75.161.60
+  tls: false
+  type: vless
+  uuid: 3f277f78-ef7c-4fab-982c-0ae1b0c0cf67
+  ws-opts:
+    headers:
+      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
+    path: '%2Fvless%2F'
+- name: 14|FR_speednode_0016
   network: ws
   port: 8880
   server: 185.16.110.186
@@ -13,6 +24,20 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 14|FR_speednode_0017
+  network: ws
+  port: 8880
+  server: 185.16.110.63
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳
 - alterId: 0
   cipher: auto
   name: 16|法国 国际航空电讯集团公司(SITA)
