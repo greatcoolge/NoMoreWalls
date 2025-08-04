@@ -1,20 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: 10|_中国
-  network: ws
-  port: '30805'
-  server: v5.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v5.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 10|🇨🇳CN-36.151.194.29-0948
+  name: 0,10|🇨🇳CN-36.151.194.29-0948
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -25,4 +12,31 @@ proxies:
   ws-opts:
     headers:
       Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '1,2|_CN_ #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 10|_中国
+  network: ws
+  port: '30805'
+  server: v5.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
     path: /oooo
