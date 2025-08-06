@@ -53,15 +53,6 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 12,13|香港5|@ripaojiedian
-  network: tcp
-  password: 02491ccf-e969-4200-9ebd-5e0da4eff308
-  port: 23003
-  server: okanc.iepl.cac.cab
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-- client-fingerprint: chrome
   name: 12,13|香港6|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -90,3 +81,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 892ed9b7-70b2-48cb-8334-7c59e4e10daa
+- alterId: 2
+  cipher: auto
+  name: 16|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
