@@ -1,7 +1,40 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10,16|@V2ray1_Ng
+  name: '0,1,2|_US_ #1'
+  network: ws
+  port: 20086
+  server: 3.149.233.188
+  tls: false
+  type: vmess
+  uuid: 158ee47c-c5f6-4892-8662-8fc113fb3d6b
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '0,1,2|_US__1 #1'
+  network: ws
+  port: 20086
+  server: 38.106.3.14
+  tls: false
+  type: vmess
+  uuid: 766c0871-1359-4ae9-8921-0f468ec02722
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '0,1,2|_US__2 #1'
+  network: ws
+  port: 20086
+  server: 64.81.30.24
+  tls: false
+  type: vmess
+  uuid: f53e0d42-afca-4b76-ae7f-806d6a1d36c2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0,1,2,10,16|@V2ray1_Ng
   network: tcp
   port: '41100'
   server: 15.204.234.200
@@ -9,6 +42,79 @@ proxies:
   tls: false
   type: vmess
   uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+- alterId: 0
+  cipher: auto
+  name: '0,1,2|_US__4 #1'
+  network: ws
+  port: 20086
+  server: 23.184.200.69
+  tls: false
+  type: vmess
+  uuid: ed715e84-81a0-40c5-bb6a-4d8d341e5cfa
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '0|🇺🇸_US_美国 #5'
+  network: ws
+  port: 20086
+  server: 050910.xyz
+  tls: false
+  type: vmess
+  uuid: 7e992138-4bae-44d7-893e-c33605c40d5f
+  ws-opts:
+    headers:
+      Host: 050910.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '0,1,2|_US__6 #1'
+  network: ws
+  port: 20086
+  server: 64.81.30.225
+  tls: false
+  type: vmess
+  uuid: 7f499074-3408-4840-b55b-91142735d2cc
+  ws-opts:
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '0,1,2|_US__8 #1'
+  network: tcp
+  port: 44883
+  server: 198.2.218.216
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '0,1,2|_US__9 #1'
+  network: ws
+  port: 20086
+  server: 173.208.51.193
+  tls: false
+  type: vmess
+  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '1,2|_US__5 #1'
+  network: ws
+  port: 20086
+  server: 050910.xyz
+  type: vmess
+  uuid: 7e992138-4bae-44d7-893e-c33605c40d5f
+  ws-opts:
+    headers:
+      host: 050910.xyz
+    path: /
+- cipher: aes-256-cfb
+  name: '1,2|_US__10 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
 - client-fingerprint: chrome
   name: 12|🇺🇸 美国|@ripaojiedian
   network: ws
@@ -28,7 +134,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-9VmVbE7FgF.download.microsoft.com
+    host: 202507282137611-Ibej7QBdUa.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -37,7 +143,7 @@ proxies:
 - client-fingerprint: chrome
   name: 12,13|美国3|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 329
   server: 36.156.102.125
   skip-cert-verify: true
@@ -46,7 +152,7 @@ proxies:
 - client-fingerprint: chrome
   name: 12,13|美国4|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 472
   server: 36.156.102.125
   skip-cert-verify: true
@@ -76,19 +182,6 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- alterId: 2
-  cipher: auto
-  name: 16|1|🇺🇸29 |  5.2MB/s
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 16|北美地区 v2rayfree.eu.org
@@ -102,40 +195,6 @@ proxies:
     headers:
       Host: inna.cfd
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 16|2|🇺🇸107 |  3.9MB/s|54%|Openai|...
-  network: tcp
-  port: 443
-  server: abc.theyyszmn.sbs
-  servername: abc.theyyszmn.sbs
-  tls: true
-  type: vmess
-  uuid: 3d84a668-0588-447b-fbe1-058deb5baf93
-- alterId: 64
-  cipher: auto
-  name: 16|🇺🇸US-198.2.218.216-9378
-  network: ws
-  port: 443
-  server: 198.2.218.216
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/120306182525
 - alterId: 2
   cipher: auto
   name: 16|2|🇺🇸26 |  4.9MB/s
@@ -151,6 +210,26 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
+  name: 16|2|🇺🇸107 |  3.9MB/s|54%|Openai|...
+  network: tcp
+  port: 443
+  server: abc.theyyszmn.sbs
+  servername: abc.theyyszmn.sbs
+  tls: true
+  type: vmess
+  uuid: 3d84a668-0588-447b-fbe1-058deb5baf93
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
   name: 16|美国 v2rayfree.eu.org
   network: ws
   port: 443
@@ -162,3 +241,31 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 32
+  cipher: auto
+  name: 16|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 64
+  cipher: auto
+  name: 16|🇺🇸US-198.2.218.216-9378
+  network: ws
+  port: 443
+  server: 198.2.218.216
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/120306182525
