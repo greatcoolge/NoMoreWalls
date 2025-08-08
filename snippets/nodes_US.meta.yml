@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_US_ #1'
+  name: 0,1,2,10|美国 Amazon EC2服务器
   network: ws
   port: 20086
   server: 3.149.233.188
@@ -9,6 +9,8 @@ proxies:
   type: vmess
   uuid: 158ee47c-c5f6-4892-8662-8fc113fb3d6b
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -23,14 +25,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_US__2 #1'
+  name: 0,1,2,10|🇺🇸 美国 加州
   network: ws
-  port: 20086
+  port: '20086'
   server: 64.81.30.24
   tls: false
   type: vmess
   uuid: f53e0d42-afca-4b76-ae7f-806d6a1d36c2
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -68,14 +72,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_US__6 #1'
+  name: '0,1,2,10|🇺🇸 美国 加州 #1'
   network: ws
-  port: 20086
+  port: '20086'
   server: 64.81.30.225
   tls: false
   type: vmess
   uuid: 7f499074-3408-4840-b55b-91142735d2cc
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - name: 0,2|_US__7
   network: tcp
@@ -95,7 +101,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_US__9 #1'
+  name: 0,1,2,10|美国 得克萨斯州达拉斯县达拉斯市Nobis技术集团有限公司U...
   network: ws
   port: 20086
   server: 173.208.51.193
@@ -103,6 +109,8 @@ proxies:
   type: vmess
   uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -122,13 +130,106 @@ proxies:
   port: 989
   server: 38.54.57.90
   type: ss
-- name: 10|🇺🇸[By EbraSha] vless-US 🔒
+- alterId: 64
+  cipher: auto
+  name: 10|🇺🇸 US_400
   network: tcp
-  port: 57403
-  server: 15.204.199.122
+  port: 30002
+  server: 38.12.83.217
   tls: false
-  type: vless
-  uuid: 1c22f9ec-4677-4a53-921a-a87c63df37d5
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 10|美国 V2CROSS.COM
+  network: ws
+  port: 20086
+  server: 154.62.185.216
+  tls: false
+  type: vmess
+  uuid: 20ed1673-8f9e-485b-9956-147768fce851
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|美国 华盛顿Cogent通信公司
+  network: ws
+  port: 20086
+  server: 38.244.28.221
+  tls: false
+  type: vmess
+  uuid: 37872214-0445-4cff-a1a8-670333c1d3c0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10|美国 V2CROSS.COM #1'
+  network: ws
+  port: 443
+  server: vall.codefyinc.com
+  tls: true
+  type: vmess
+  uuid: 606ece17-7279-4a43-b879-f8502103de8f
+  ws-opts:
+    headers:
+      Host: vall.codefyinc.com
+    path: /vmessws
+- alterId: 0
+  cipher: auto
+  name: 10|🇺🇸 US_366
+  network: ws
+  port: 20086
+  server: 38.58.60.127
+  tls: false
+  type: vmess
+  uuid: 66d508ed-1ee6-412d-97a8-eedf849bad57
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10|美国 V2CROSS.COM #2'
+  network: ws
+  port: 20086
+  server: 137.175.124.167
+  tls: false
+  type: vmess
+  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10|🇺🇸 美国 加州 #2'
+  network: ws
+  port: '20086'
+  server: 64.81.39.101
+  tls: false
+  type: vmess
+  uuid: b29f7187-9707-47fe-85d2-65b1ba69df16
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公...
+  network: ws
+  port: 20086
+  server: 198.23.174.168
+  tls: false
+  type: vmess
+  uuid: 2b36304b-4f88-4ff5-9033-f4d57dbb5490
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - client-fingerprint: chrome
   name: 12|🇺🇸 美国|@ripaojiedian
   network: ws
@@ -469,20 +570,30 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- alterId: 32
+- alterId: 64
   cipher: auto
-  name: 16|🇺🇸US-77.83.141.171-1131
+  name: 16|🇺🇸US-198.2.218.216-9378
   network: ws
   port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
+  server: 198.2.218.216
+  servername: ''
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: ''
+    path: /path/120306182525
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
   name: 16|美国 v2rayfree.eu.org
@@ -498,28 +609,31 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 64
-  cipher: auto
-  name: 16|🇺🇸US-198.2.218.216-9378
+  name: 16|北美地区 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 198.2.218.216
-  servername: ''
+  server: 134.195.198.147
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /path/120306182525
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 32
+  cipher: auto
+  name: 16|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   name: 16|2|🇺🇸107 |  3.9MB/s|54%|Openai|...
@@ -543,16 +657,3 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 16|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws

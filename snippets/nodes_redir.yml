@@ -10,6 +10,12 @@ proxies:
   uuid: 0908eadd-7337-49dd-8e9b-e325bca02910
   ws-opts:
     path: /
+- cipher: aes-256-cfb
+  name: '0,1,2|_SK_->_CN_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: '0,1,2|_IN_->_FR_ #1'
   password: c0iCgBG1Jma4QGutmZC17k
@@ -24,14 +30,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_RU_->_unKnow_ #1'
+  name: 0,1,2,10|🇷🇺 俄罗斯 V2CROSS.COM
   network: ws
-  port: 20086
+  port: '20086'
   server: 77.221.143.225
   tls: false
   type: vmess
   uuid: 149b4663-aece-486a-b92c-392c41727ac1
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -46,7 +54,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇰_DK_丹麦->🇺🇸_US_美国
+  name: '0,10|🇩🇰_DK_丹麦->🇺🇸_US_美国 #2'
   network: ws
   port: 80
   server: fastcup.net
@@ -60,7 +68,7 @@ proxies:
     path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  name: 0|🇳🇱_NL_荷兰->🇺🇸_US_美国
+  name: 0,10|🇲🇩 摩尔多瓦 V2CROSS.COM
   network: ws
   port: '8880'
   server: 185.193.29.88
@@ -73,7 +81,7 @@ proxies:
     path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '0|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: 0,10|南非 V2CROSS.COM
   network: ws
   port: 8880
   server: 154.197.108.88
@@ -131,7 +139,7 @@ proxies:
   cipher: auto
   name: '10|🇩🇰_DK_丹麦->🇺🇸_US_美国 #1'
   network: ws
-  port: '80'
+  port: 80
   server: pubg.ac
   servername: ''
   tls: false
