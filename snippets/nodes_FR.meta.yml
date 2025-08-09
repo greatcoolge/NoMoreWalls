@@ -1,4 +1,11 @@
 proxies:
+- name: 0,1|🇫🇷_FR_法国
+  network: tcp
+  port: 16390
+  server: 79.137.33.139
+  tls: false
+  type: vless
+  uuid: 170ba974-6ae5-44ae-dfdc-4675b5643f34
 - client-fingerprint: chrome
   name: 14|FR_speednode_0025
   network: ws
@@ -33,19 +40,6 @@ proxies:
   name: 16|法国 国际航空电讯集团公司(SITA)
   network: ws
   port: 443
-  server: 57.129.24.125
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|法国 国际航空电讯集团公司(SITA) #1'
-  network: ws
-  port: 443
   server: 57.129.28.69
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
@@ -54,4 +48,17 @@ proxies:
   ws-opts:
     headers:
       Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|法国 国际航空电讯集团公司(SITA) #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
