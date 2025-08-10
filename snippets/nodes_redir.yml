@@ -1,46 +1,45 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: '0,1|_US_->_CN_ #1'
+  network: ws
+  port: 443
+  server: v2ray.codefyinc.com
+  sni: v2ray.codefyinc.com
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      host: v2ray.codefyinc.com
+    path: /vmessws
 - alterId: 2
   cipher: auto
-  name: '0,2|_CN_->_US_ #1'
+  name: '0,1|_CN_->_US_ #1'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '0,1|_CN_->_US__1 #1'
   network: ws
   port: 30833
   server: v33.heduian.link
-  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: v33.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 0,1,2,10|@ShadowProxy66 🇮🇷
-  network: tcp
-  port: '59956'
-  server: 46.29.34.205
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
 - alterId: 2
   cipher: auto
-  name: '0,2|_CN_->_SG_ #1'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: false
-  sni: baidu.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '0,2|_CN_->_GB_ #1'
+  name: '0,1|_CN_->_GB_ #1'
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -54,11 +53,51 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 1,10|🇨🇳 江苏省 移动
+  name: '0,1|_CN_->_US__2 #1'
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  port: '443'
+  server: v2ray.codefyinc.com
+  servername: v2ray.codefyinc.com
+  tls: true
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vmessws
+- alterId: 2
+  cipher: auto
+  name: 2,10|🇺🇸美国62 | ⬇️ 3.3MB/s|Openai|Gem...
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 2,10|🇨🇳 江苏省 移动
   network: ws
   port: '30833'
   server: v33.heduian.link
-  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -68,21 +107,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 1|🇨🇳_CN_中国->🇸🇬_SG_新加坡
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 1,10|🇨🇳CN-36.151.194.29-0673
+  name: 2,10|🇨🇳CN-36.151.194.29-0673
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -93,4 +118,18 @@ proxies:
   ws-opts:
     headers:
       Host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 2,10|🇨🇳CN-36.151.194.29-4925
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  servername: ocbc.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v37.heduian.link
     path: /oooo
