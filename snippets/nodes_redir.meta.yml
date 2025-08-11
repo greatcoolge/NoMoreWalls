@@ -2,6 +2,16 @@ proxies:
 - name: 0|_DK_->_US_
   network: ws
   port: 8080
+  server: pubg.ac
+  type: vless
+  uuid: 27425750-5bf5-497b-92d4-16e67030e154
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: 0|_DK_->_US__1
+  network: ws
+  port: 8080
   server: csgo.com
   type: vless
   uuid: 27425750-5bf5-497b-92d4-16e67030e154
@@ -9,6 +19,20 @@ proxies:
     headers:
       host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- alterId: 2
+  cipher: auto
+  name: '0,1|_CN_->_US_ #1'
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
 - name: 0|_US_->_GB_
   network: ws
   port: 80
@@ -19,51 +43,9 @@ proxies:
     headers:
       host: small-meal.oneeat.co
     path: /
-- name: 0|_DK_->_US__1
-  network: ws
-  port: 8080
-  server: fastcup.net
-  type: vless
-  uuid: 27425750-5bf5-497b-92d4-16e67030e154
-  ws-opts:
-    headers:
-      host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- name: 0|_DK_->_US__2
-  network: ws
-  port: 8080
-  server: pubg.ac
-  type: vless
-  uuid: 27425750-5bf5-497b-92d4-16e67030e154
-  ws-opts:
-    headers:
-      host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- name: 0,2,10|🇦🇲 AM | 🔓 VLESS | @server444 [...
-  network: ws
-  port: 20000
-  server: 93.115.240.88
-  tls: false
-  type: vless
-  uuid: 490edb5c-d884-4b77-be02-19ebad7891dd
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '0,1|_US_->_CN_ #1'
-  network: ws
-  port: 443
-  server: v2ray.codefyinc.com
-  sni: v2ray.codefyinc.com
-  type: vmess
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  ws-opts:
-    headers:
-      host: v2ray.codefyinc.com
-    path: /vmessws
 - alterId: 2
   cipher: auto
-  name: '0,1|_CN_->_US_ #1'
+  name: '0,1|_CN_->_US__1 #1'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -75,7 +57,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '0,1|_CN_->_US__1 #1'
+  name: '0,1|_CN_->_US__2 #1'
   network: ws
   port: 30833
   server: v33.heduian.link
@@ -91,7 +73,6 @@ proxies:
   network: ws
   port: 30836
   server: v36.heduian.link
-  skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -99,52 +80,35 @@ proxies:
     headers:
       host: v36.heduian.link
     path: /oooo
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '0,1|_CN_->_US__2 #1'
+  name: '0,1|_DK_->_ES_ #1'
   network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  sni: ''
+  port: 80
+  server: pubg.ac
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v37.heduian.link
-    path: /oooo
-- name: '2,10|Telegram:@config_proxy 🔥 #1'
-  network: ws
-  port: 8080
-  server: csgo.com
-  tls: false
-  type: vless
   uuid: 27425750-5bf5-497b-92d4-16e67030e154
   ws-opts:
     headers:
-      Host: cdn-node-oss-99.paofu.de
+      host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '2,10|🇺🇸_US_美国->🇬🇧_GB_英国 #1'
-  network: ws
-  port: 80
-  server: small-meal.oneeat.co
-  tls: false
-  type: vless
-  uuid: d1e44075-8c92-4698-9db0-e71d7015b757
-  ws-opts:
-    headers:
-      Host: small-meal.oneeat.co
-    path: '%2F'
-- name: '2,10|🇩🇰_DK_丹麦->🇺🇸_US_美国 #3'
+- name: 0,1,2,12,13|美国3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 347
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 0|_DK_->_US__2
   network: ws
   port: 8080
   server: fastcup.net
-  tls: false
   type: vless
   uuid: 27425750-5bf5-497b-92d4-16e67030e154
   ws-opts:
     headers:
-      Host: cdn-node-oss-99.paofu.de
+      host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
 - name: 2,10|Telegram:@config_proxy 🔥
   network: ws
@@ -157,20 +121,42 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
-  name: 2,10|Telegram | @FNET00📱
+- name: '2,10|Telegram:@config_proxy 🔥 #1'
   network: ws
-  port: '443'
-  server: v2ray.codefyinc.com
-  servername: v2ray.codefyinc.com
-  tls: true
-  type: vmess
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  port: 8080
+  server: csgo.com
+  tls: false
+  type: vless
+  uuid: 27425750-5bf5-497b-92d4-16e67030e154
   ws-opts:
     headers:
-      Host: v2ray.codefyinc.com
-    path: /vmessws
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 2
+  cipher: auto
+  name: 2,10|🇨🇳CN-36.151.194.29-0549
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v37.heduian.link
+    path: /oooo
+- name: '2,10|🇺🇸_US_美国->🇬🇧_GB_英国 #1'
+  network: ws
+  port: 80
+  server: small-meal.oneeat.co
+  tls: false
+  type: vless
+  uuid: d1e44075-8c92-4698-9db0-e71d7015b757
+  ws-opts:
+    headers:
+      Host: small-meal.oneeat.co
+    path: '%2F'
 - alterId: 2
   cipher: auto
   name: 2,10|🇺🇸美国62 | ⬇️ 3.3MB/s|Openai|Gem...
@@ -211,17 +197,27 @@ proxies:
     headers:
       Host: v36.heduian.link
     path: /oooo
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 2,10|🇨🇳CN-36.151.194.29-0549
+  name: 2|🇩🇰_DK_丹麦->🇪🇸_ES_西班牙
   network: ws
-  port: 30837
-  server: v37.heduian.link
-  servername: ''
+  port: 80
+  server: pubg.ac
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 27425750-5bf5-497b-92d4-16e67030e154
   ws-opts:
     headers:
-      Host: v37.heduian.link
-    path: /oooo
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '2,10|🇩🇰_DK_丹麦->🇺🇸_US_美国 #3'
+  network: ws
+  port: 8080
+  server: fastcup.net
+  tls: false
+  type: vless
+  uuid: 27425750-5bf5-497b-92d4-16e67030e154
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
