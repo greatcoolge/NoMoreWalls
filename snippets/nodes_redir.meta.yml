@@ -1,7 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: '0,10|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: 0,10|🇺🇸美国62 | ⬇️ 3.3MB/s|Openai|Gem...
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -25,7 +25,7 @@ proxies:
   uuid: 863b6395-3f7a-4e37-acb8-9da9cf57908d
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇰_DK_丹麦->🇺🇸_US_美国
+  name: 0,10|🇩🇰_DK_丹麦->🇨🇳_CN_中国
   network: ws
   port: 80
   server: csgo.com
@@ -36,7 +36,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: 0,10|🇳🇱 荷兰 343
+- name: '0,10|🇳🇱[By EbraSha] vless-NL 🔒 #1'
   network: ws
   port: 80
   server: light-presence.oneeat.co
@@ -51,9 +51,9 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: '0,1,2|_DE_->_RO_ #1'
+  name: 0,1,2,10|Telegram:@config_proxy 🔥
   network: tcp
-  port: 100
+  port: '100'
   server: cpanel.erade32.ir
   servername: ''
   sni: ''
@@ -62,7 +62,7 @@ proxies:
   uuid: 0888adea-086c-4783-9989-85df86819c1f
 - alterId: 2
   cipher: auto
-  name: 0,10|🇨🇳CN-36.151.194.29-0507
+  name: 0,10|🇨🇳CN-36.151.194.29-0552
   network: ws
   port: 30837
   server: v37.heduian.link
@@ -76,7 +76,7 @@ proxies:
     path: /oooo
 - alpn:
   - http/1.1
-  name: '0,1,2|_RU_->_US_ #1'
+  name: 0,1,2,10|AstroVPN_Official 🇹🇷
   network: tcp
   password: tunnel-astrovpn_official-tr
   port: 8441
@@ -89,11 +89,10 @@ proxies:
       Host: tr-1.stunnel.cc
 - alterId: 2
   cipher: auto
-  name: '0,10|🇨🇳_CN_中国->🇬🇧_GB_英国 #1'
+  name: 0,10|🇬🇧 _CN_中国->🇬🇧_GB_英国
   network: ws
-  port: 30836
+  port: '30836'
   server: v36.heduian.link
-  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -162,14 +161,17 @@ proxies:
     headers:
       host: v36.heduian.link
     path: /oooo
-- name: '10|🇩🇰_DK_丹麦->🇺🇸_US_美国 #1'
+- alterId: 2
+  cipher: auto
+  name: '10|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
-  port: 8080
-  server: fastcup.net
+  port: 30824
+  server: v24.heduian.link
+  servername: ''
   tls: false
-  type: vless
-  uuid: 27425750-5bf5-497b-92d4-16e67030e154
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
+      Host: v24.heduian.link
+    path: /oooo
