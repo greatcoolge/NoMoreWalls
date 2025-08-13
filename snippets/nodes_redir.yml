@@ -1,21 +1,31 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: 0|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '0,10|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
-  port: 30824
-  server: v24.heduian.link
-  servername: ''
+  port: 30829
+  server: v29.heduian.link
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v24.heduian.link
+      Host: ocbc.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇰_DK_丹麦->🇨🇳_CN_中国
+  grpc-opts:
+    grpc-service-name: '@Ghostray_NG'
+  name: '0,1,2|_DE_->_US_ #1'
+  network: grpc
+  port: 8880
+  server: s1.ghostrkr.sbs
+  tls: true
+  type: vmess
+  uuid: 863b6395-3f7a-4e37-acb8-9da9cf57908d
+- alterId: 0
+  cipher: auto
+  name: 0|🇩🇰_DK_丹麦->🇺🇸_US_美国
   network: ws
   port: 80
   server: csgo.com
@@ -26,6 +36,18 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: '0,1,2|_DE_->_RO_ #1'
+  network: tcp
+  port: 100
+  server: cpanel.erade32.ir
+  servername: ''
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: 0888adea-086c-4783-9989-85df86819c1f
 - alterId: 2
   cipher: auto
   name: 0,10|🇨🇳CN-36.151.194.29-0507
@@ -40,23 +62,48 @@ proxies:
     headers:
       Host: v37.heduian.link
     path: /oooo
+- alpn:
+  - http/1.1
+  name: '0,1,2|_RU_->_US_ #1'
+  network: tcp
+  password: tunnel-astrovpn_official-tr
+  port: 8441
+  server: tr-1.stunnel.cc
+  skip-cert-verify: true
+  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.monster.JoinTelegram-------------AstroVPN_Official----------Join.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr-1.stunnel.cc
 - alterId: 2
   cipher: auto
-  name: '1,2|_CN_->_US_ #1'
+  name: '0,10|🇨🇳_CN_中国->🇬🇧_GB_英国 #1'
   network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
-  sni: ''
+  port: 30836
+  server: v36.heduian.link
+  servername: ''
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v24.heduian.link
+      Host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '1,2|_CN_->_US_ #1'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '1,2|_DK_->_CN_ #1'
+  name: '1,2|_DK_->_US_ #1'
   network: ws
   port: 80
   server: csgo.com
@@ -82,28 +129,13 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国
+  name: '1,2|_CN_->_GB_ #1'
   network: ws
   port: 30836
   server: v36.heduian.link
-  servername: ''
-  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v36.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '10|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
+      host: v36.heduian.link
     path: /oooo

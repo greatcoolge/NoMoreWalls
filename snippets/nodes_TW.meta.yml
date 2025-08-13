@@ -1,1 +1,32 @@
-proxies: []
+proxies:
+- name: 12|🇹🇼 台湾|@ripaojiedian
+  password: test.+
+  port: 30443
+  server: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
+- client-fingerprint: chrome
+  name: 12,13|台湾2|@ripaojiedian
+  network: tcp
+  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
+  port: 25004
+  server: 8.134.93.116
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 16|🇹🇼TW-103.61.139.137-5418
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
