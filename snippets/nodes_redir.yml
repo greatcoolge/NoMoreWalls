@@ -1,61 +1,72 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '0,10|🇩🇰_DK_丹麦->🇺🇸_US_美国 #1'
-  network: ws
-  port: 80
-  server: csgo.com
-  tls: false
-  type: vmess
-  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
 - alterId: 2
   cipher: auto
-  name: 0,10|🇨🇳CN-36.151.194.29-0650
+  name: '0,1|_CN_->_GB_ #1'
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
+  port: 30836
+  server: v36.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: ocbc.com
+      host: v36.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 0,10|美国 CloudFlare节点
-  network: ws
-  port: 80
-  server: test3.flha.ru
-  tls: false
-  type: vmess
-  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
-  ws-opts:
-    headers:
-      Host: test3.flha.ru
-    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
+- cipher: chacha20-ietf-poly1305
+  name: '0,1|_US_->_MD_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 104.192.226.106
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 0,10|🇨🇳CN-36.151.194.29-0687
+  name: '0,1|_CN_->_US_ #1'
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '0,1|_CN_->_US__1 #1'
   network: ws
   port: 30833
   server: v33.heduian.link
-  servername: ''
-  tls: false
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v33.heduian.link
+      host: v33.heduian.link
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 0,1,2|🇦🇹_AT_奥地利->🇫🇷_FR_法国
+  network: tcp
+  port: '59956'
+  server: 46.29.34.205
+  tls: false
+  type: vmess
+  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
+- name: '0,1|_DK_->_US_ #1'
+  network: ws
+  password: a134e3de-b25a-4020-9998-05fa6b715f1a
+  port: 8443
+  server: pubg.ac
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /profile/telegram@ssrsub
 - alterId: 2
   cipher: auto
-  name: 0,10|🇬🇧 _CN_中国->🇬🇧_GB_英国
+  name: 2,10|🇬🇧 _CN_中国->🇬🇧_GB_英国
   network: ws
   port: '30836'
   server: v36.heduian.link
@@ -68,7 +79,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 0,10|🇨🇳CN-36.151.194.29-0552
+  name: 2,10|🇨🇳CN-36.151.194.29-0552
   network: ws
   port: 30837
   server: v37.heduian.link
@@ -80,81 +91,26 @@ proxies:
     headers:
       Host: v37.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '1,2|_DK_->_US_ #1'
-  network: ws
-  port: 80
-  server: csgo.com
-  type: vmess
-  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
-  ws-opts:
-    headers:
-      host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
 - alterId: 2
   cipher: auto
-  name: '1,2|_CN_->_US_ #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '1,2|_US_->_ES_ #1'
-  network: ws
-  port: 80
-  server: test3.flha.ru
-  type: vmess
-  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
-  ws-opts:
-    headers:
-      host: test3.flha.ru
-    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US__1 #1'
+  name: 2,10|🇨🇳CN-36.151.194.29-0687
   network: ws
   port: 30833
   server: v33.heduian.link
-  skip-cert-verify: true
-  sni: ''
+  servername: ''
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v33.heduian.link
+      Host: v33.heduian.link
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_GB_ #1'
+- name: 2|🇩🇰_DK_丹麦->🇺🇸_US_美国
   network: ws
-  port: 30836
-  server: v36.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: a134e3de-b25a-4020-9998-05fa6b715f1a
+  port: 8443
+  server: pubg.ac
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
   ws-opts:
-    headers:
-      host: v36.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US__2 #1'
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v37.heduian.link
-    path: /oooo
+    path: '%2Fprofile%2Ftelegram%40ssrsub'
