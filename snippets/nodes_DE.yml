@@ -1,18 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: '0,1,2|_DE__1 #1'
-  network: tcp
-  port: 80
-  server: 93.127.180.64
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
-- alterId: 0
-  cipher: auto
   name: 10|🇩🇪 DE德国(mibei77.com 米贝节点分享)
   network: ws
   port: '8880'
@@ -27,6 +15,20 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '16|Channel id: @ShadowProxy66🇩🇪'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
   network: ws
   port: '443'
   server: 57.129.28.65
@@ -54,7 +56,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
   network: tcp
   port: '28213'
   server: 135.125.182.74
@@ -62,17 +64,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
-  network: ws
-  port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws

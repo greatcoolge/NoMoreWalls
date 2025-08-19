@@ -1,4 +1,4 @@
-# Update: 2025-08-19 05:23
+# Update: 2025-08-19 10:04
 allow-lan: false
 dns:
   enable: true
@@ -20,37 +20,23 @@ mode: rule
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇰_DK_丹麦->🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: pubg.ac
+  fingerprint: ''
+  name: '0,1,2|_US_->_CN_ #1'
+  network: tcp
+  port: 39043
+  server: aaaaaaaaaaaaaaaa.sangarvpn-bot.shop
   servername: ''
+  sni: ''
   tls: false
   type: vmess
-  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- cipher: rc4-md5
-  name: 0,1,2,10,14|US_speednode_0259
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 23.251.121.242
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '0,1,2|_US__1 #1'
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
+  uuid: 70ff69e2-89ce-4963-9fe7-b880360fd901
 - alterId: 2
   cipher: auto
-  name: 0|🇨🇳_CN_中国
+  name: 0|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
-  port: '30833'
+  port: 30833
   server: v33.heduian.link
+  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -58,18 +44,6 @@ proxies:
     headers:
       Host: v33.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '0,1,2|_US_->_CN_ #1'
-  network: tcp
-  port: 2053
-  server: 65.109.190.91.suupermeat.ir
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: b4493eed-d316-45d5-addf-9857ffeba30e
 - cipher: aes-256-cfb
   name: '0,1,2|_GB_ #1'
   obfs: plain
@@ -82,49 +56,11 @@ proxies:
   type: ssr
 - alterId: 2
   cipher: auto
-  name: 0|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v29.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '0,1,2|_DE__1 #1'
-  network: tcp
-  port: 80
-  server: 93.127.180.64
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
-- alterId: 0
-  cipher: auto
-  name: '1,2|_DK_->_US_ #1'
-  network: ws
-  port: 80
-  server: pubg.ac
-  sni: ''
-  type: vmess
-  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
-  ws-opts:
-    headers:
-      host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_ #1'
+  name: '1,2|_CN_->_US_ #1'
   network: ws
   port: 30833
   server: v33.heduian.link
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
@@ -137,20 +73,12 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_RU_ #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v29.heduian.link
-    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: '1,2|_US_ #1'
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
 - alterId: 0
   cipher: auto
   name: 10|🇬🇧 GB英国(mibei77.com 米贝节点分享)
@@ -244,7 +172,7 @@ proxies:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 2
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '10|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -386,7 +314,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-iN9Ka3jcO2.download.microsoft.com
+    host: 202508150964186-3bI5FffInl.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -439,24 +367,12 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 12|🇺🇸 美国|@ripaojiedian
-  network: ws
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
-  skip-cert-verify: false
-  sni: xXcdvFgt.191268.XYz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xXcdvFgt.191268.XYz
-    path: /ctdmgeIg3NII3ibrzzKXJGy3S1
 - cipher: rc4-md5
   name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-iN9Ka3jcO2.download.microsoft.com
+    host: 202508150964186-3bI5FffInl.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -474,7 +390,7 @@ proxies:
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 22006
-  server: 36.156.102.67
+  server: 36.156.102.78
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -518,83 +434,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
-- name: 13|美国|@ripaojiedian
-  network: ws
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
-  sni: xXcdvFgt.191268.XYz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xXcdvFgt.191268.XYz
-    path: '%2FctdmgeIg3NII3ibrzzKXJGy3S1'
-- name: 14|FR_speednode_0051
-  network: ws
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|JP_speednode_0075
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 103.116.7.100
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|JP_speednode_0076
-  network: ws
-  password: Aimer
-  port: 443
-  server: 103.116.7.189
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|JP_speednode_0077
-  network: ws
-  password: Aimer
-  port: 443
-  server: 103.116.7.235
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|JP_speednode_0078
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|KZ_speednode_0086
+- name: 14|KZ_speednode_0081
   network: ws
   password: tg-fq521free
   port: 443
@@ -607,59 +447,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 14|RU_speednode_0180
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 5.182.84.9
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0181
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 77.232.140.114
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0182
-  network: ws
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0183
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 5.182.85.255
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0184
+- name: 14|RU_speednode_0175
   network: ws
   password: tg-fq521free
   port: 443
@@ -672,176 +460,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 14|RU_speednode_0185
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 5.182.84.52
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0186
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 5.182.84.229
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0187
-  network: ws
-  password: Aimer
-  port: 443
-  server: 176.124.223.92
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|SG_speednode_0194
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|SG_speednode_0195
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 92.243.74.23
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|SG_speednode_0196
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.3
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0297
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 135.84.74.27
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0298
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0299
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 104.129.167.255
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0300
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 66.81.247.88
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0301
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 135.84.74.254
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0303
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 155.46.213.38
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0304
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 216.24.57.30
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 14|US_speednode_0305
+- name: 14|US_speednode_0282
   network: ws
   password: slch2024
   port: 8443
@@ -854,59 +473,20 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /
-- name: 14|US_speednode_0306
+- name: 14|US_speednode_0283
   network: ws
-  password: Aimer
-  port: 2087
-  server: 199.34.228.164
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
+  password: tg-fq521free
+  port: 443
+  server: 216.24.57.30
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0307
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 192.200.160.35
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0308
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 63.141.128.66
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0309
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 167.68.5.248
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0310
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 14|US_speednode_0284
   network: ws
   password: tg-fq521free
   port: 443
@@ -919,84 +499,44 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 14|US_speednode_0311
+- alterId: 32
+  cipher: auto
+  name: 16|🇺🇸US-77.83.141.171-1131
   network: ws
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0312
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 16|🇹🇼TW-103.61.139.137-5418
   network: ws
-  password: Aimer
-  port: 2083
-  server: 198.62.62.61
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
+  port: 20521
+  server: 103.61.139.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-opts:
     headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0313
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0314
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 66.81.247.230
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0315
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 192.0.54.221
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0316
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 209.94.90.87
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
 - alterId: 0
   cipher: auto
   name: 16|0|--86
@@ -1010,6 +550,174 @@ proxies:
   ws-opts:
     headers:
       Host: aveiror.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|0|--30
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
+- alterId: 2
+  cipher: auto
+  name: 16|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 16|0|--32
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: f.khilei.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇺🇸US-82.29.132.9-4954
+  network: ws
+  port: 20086
+  server: 82.29.132.9
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2c61f53-a359-429c-900e-255f02def6be
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66 🇬🇧'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇨🇦'
+  network: tcp
+  port: '42610'
+  server: 51.79.86.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- alterId: 0
+  cipher: auto
+  name: 16|0|-https://t.me/MrXbin-97
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇨🇦CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇩🇪'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -1027,98 +735,51 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 16|法国 国际航空电讯集团公司(SITA)
+  name: 16|@ShadowProxy66 🇮🇩
+  network: tcp
+  port: '58868'
+  server: 154.90.49.57
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fbffeb6b-b5e5-4f77-8888-c7919fbeb0ad
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇬🇧'
+  network: tcp
+  port: '44023'
+  server: 51.38.64.209
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- alterId: 0
+  cipher: auto
+  name: 16|美国 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 57.129.24.125
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇮🇳'
-  network: tcp
-  port: '10534'
-  server: 94.136.185.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66 🇬🇧'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66 🇺🇸'
-  network: tcp
-  port: '29800'
-  server: 103.124.107.144
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
-- alterId: 0
-  cipher: auto
-  name: 16|🇹🇼TW-103.61.139.137-5418
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
+    path: /linkvws
+- alterId: 1
   cipher: auto
-  name: 16|🇨🇦CA-15.235.50.172-1645
+  name: 16|🇩🇪DE-57.129.25.20-1271
   network: ws
   port: 443
-  server: 15.235.50.172
+  server: 57.129.25.20
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: baradiha.com
-    path: /linkvws
+      Host: 57.129.25.20
+    path: linkvws
 - alterId: 64
   cipher: auto
   name: 16|🇸🇬SG-202.79.161.188-0996
@@ -1135,6 +796,40 @@ proxies:
     path: /path/170733132233
 - alterId: 0
   cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇮🇳'
+  network: tcp
+  port: '10534'
+  server: 94.136.185.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- alterId: 0
+  cipher: auto
+  name: 16|🇻🇳VN-161.248.30.3-5234
+  network: ws
+  port: 20086
+  server: 161.248.30.3
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|@V2ray1_Ng
+  network: tcp
+  port: '41100'
+  server: 15.204.234.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+- alterId: 0
+  cipher: auto
   name: 16|0|--38
   network: ws
   port: 443
@@ -1149,84 +844,14 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 16|0|-https://t.me/MrXbin-97
-  network: ws
-  port: 443
-  server: 146.59.55.50
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|@V2ray1_Ng
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
   network: tcp
-  port: '41100'
-  server: 15.204.234.200
+  port: '28213'
+  server: 135.125.182.74
   servername: ''
   tls: false
   type: vmess
-  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪'
-  network: ws
-  port: '443'
-  server: 57.129.28.65
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|0|--32
-  network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: f.khilei.com
-    path: /linkvws
-- alterId: 2
-  cipher: auto
-  name: 16|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
-- alterId: 1
-  cipher: auto
-  name: 16|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
+  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
   cipher: auto
   name: '16|法国 国际航空电讯集团公司(SITA) #1'
@@ -1243,155 +868,124 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 16|0|--30
+  name: 16|0|--26
   network: ws
   port: 443
-  server: 38.99.82.193
+  server: 57.129.25.22
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: tilebani.com
+      Host: o.metuji.com
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇬🇧'
-  network: tcp
-  port: '44023'
-  server: 51.38.64.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
-- alterId: 0
-  cipher: auto
-  name: 16|@ShadowProxy66 🇮🇩
-  network: tcp
-  port: '58868'
-  server: 154.90.49.57
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fbffeb6b-b5e5-4f77-8888-c7919fbeb0ad
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
-  network: tcp
-  port: '28213'
-  server: 135.125.182.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇨🇦'
-  network: tcp
-  port: '42610'
-  server: 51.79.86.182
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
-  network: ws
-  port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- name: '17|IEPL+·+美国US+·+A250+·+Netflix美国... #3'
+- name: '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #9'
+  password: wsmdRfiuS
+  port: 28117
+  server: 14.119.119.52
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+A250+·+Netflix美国... #7'
   password: 1biQSzdU0
   port: 28175
   server: 14.119.119.52
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #3'
-  password: 1biQSzdU0
-  port: 28117
+- name: 17|IEPL+·+日本JP+·+V8+·+深港IEPL
+  password: qLDegKlHQ
+  port: 28107
+  server: 183.60.229.144
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+日本JP+·+23+·+深港IEPL #4'
+  password: wsmdRfiuS
+  port: 28113
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+日本JP+·+23+·+沪港IEPL #1'
-  password: P5W1V5Vek
+- name: '17|IEPL+·+日本JP+·+V8+·+深港IEPL #4'
+  password: 1biQSzdU0
+  port: 28107
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+36+·+沪港IEPL #4'
+  password: 6Jh2DFjX9
+  port: 28136
+  server: 14.119.119.52
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+日本JP+·+23+·+沪港IEPL #4'
+  password: qLDegKlHQ
   port: 28113
   server: 14.119.119.52
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+美国US+·+88+·+深港IEPL #1'
-  password: 1biQSzdU0
+- name: '17|IEPL+·+美国US+·+36+·+深港IEPL #4'
+  password: 6Jh2DFjX9
+  port: 28136
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
+  password: qLDegKlHQ
+  port: 28175
+  server: 183.60.229.144
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+88+·+沪港IEPL #4'
+  password: 6Jh2DFjX9
+  port: 28109
+  server: 14.119.119.52
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+88+·+深港IEPL #3'
+  password: P5W1V5Vek
   port: 28109
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+日本JP+·+V8+·+沪港IEPL #1'
-  password: P5W1V5Vek
+- name: '17|IEPL+·+日本JP+·+V8+·+沪港IEPL #4'
+  password: 6Jh2DFjX9
   port: 28107
   server: 14.119.119.52
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+美国US+·+88+·+沪港IEPL #1'
+- name: '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #8'
   password: 1biQSzdU0
-  port: 28109
-  server: 14.119.119.52
-  skip-cert-verify: true
-  type: trojan
-- name: '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #2'
-  password: P5W1V5Vek
   port: 28117
-  server: 14.119.119.52
-  skip-cert-verify: true
-  type: trojan
-- name: '17|IEPL+·+美国US+·+A250+·+Netflix美国... #2'
-  password: P5W1V5Vek
-  port: 28175
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: '17|IEPL+·+日本JP+·+23+·+深港IEPL #1'
-  password: P5W1V5Vek
-  port: 28113
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
 - name: '17|IEPL+·+美国US+·+36+·+深港IEPL #1'
-  password: 1biQSzdU0
+  password: qLDegKlHQ
   port: 28136
+  server: 183.60.229.144
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+A250+·+Netflix美国... #9'
+  password: 6Jh2DFjX9
+  port: 28175
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+日本JP+·+V8+·+深港IEPL #1'
-  password: 1biQSzdU0
-  port: 28107
-  server: 59.42.247.76
+- name: '17|IEPL+·+日本JP+·+23+·+深港IEPL #2'
+  password: qLDegKlHQ
+  port: 28113
+  server: 183.60.229.144
   skip-cert-verify: true
   type: trojan
-- name: '17|IEPL+·+美国US+·+36+·+沪港IEPL #1'
-  password: 1biQSzdU0
-  port: 28136
-  server: 14.119.119.52
+- name: '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #5'
+  password: qLDegKlHQ
+  port: 28117
+  server: 183.60.229.144
+  skip-cert-verify: true
+  type: trojan
+- name: '17|IEPL+·+美国US+·+88+·+深港IEPL #4'
+  password: qLDegKlHQ
+  port: 28109
+  server: 183.60.229.144
   skip-cert-verify: true
   type: trojan
 proxy-groups:
@@ -1405,126 +999,97 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 12|🇺🇸 美国2|@ripaojiedian
+  - '16|Channel id: @ShadowProxy66🇨🇦'
+  - 10|🇩🇪 DE德国(mibei77.com 米贝节点分享)
+  - 14|US_speednode_0283
+  - '17|IEPL+·+美国US+·+A250+·+Netflix美国... #1'
+  - 16|0|--32
+  - '17|IEPL+·+日本JP+·+V8+·+深港IEPL #4'
   - 16|0|--38
+  - '17|IEPL+·+美国US+·+88+·+深港IEPL #4'
+  - '10|🇬🇧 GB英国(mibei77.com 米贝节点分享) #1'
+  - 12|🇯🇵 日本2|@ripaojiedian
+  - '17|IEPL+·+美国US+·+88+·+沪港IEPL #4'
+  - '1,2|_MD_ #1'
+  - '10|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
+  - 17|IEPL+·+日本JP+·+V8+·+深港IEPL
+  - '17|IEPL+·+美国US+·+36+·+深港IEPL #1'
+  - 13|香港3|@ripaojiedian
   - 10|伊朗 V2CROSS.COM
-  - '0,1,2|_DE__1 #1'
-  - '17|IEPL+·+日本JP+·+23+·+深港IEPL #1'
-  - '10|🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
   - '16|Channel id: @ShadowProxy66 🇺🇸'
   - 12,13|美国4|@ripaojiedian
-  - 14|FR_speednode_0051
-  - 13|美国|@ripaojiedian
-  - 14|US_speednode_0308
-  - 16|0|--32
-  - 14|JP_speednode_0075
-  - 14|RU_speednode_0185
-  - 14|US_speednode_0299
-  - 16|0|--30
-  - 12,13|美国3|@ripaojiedian
-  - 10|🇬🇧 GB英国(mibei77.com 米贝节点分享)
-  - 14|US_speednode_0305
-  - '10|🇬🇧 GB英国(mibei77.com 米贝节点分享) #1'
-  - 14|US_speednode_0304
-  - '17|IEPL+·+美国US+·+88+·+深港IEPL #1'
-  - 14|US_speednode_0316
-  - '10|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
-  - '16|Channel id: @ShadowProxy66🇩🇪'
-  - '17|IEPL+·+日本JP+·+V8+·+深港IEPL #1'
-  - 14|RU_speednode_0186
-  - 14|US_speednode_0303
-  - '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #2'
-  - 14|US_speednode_0314
-  - '17|IEPL+·+美国US+·+A250+·+Netflix美国... #2'
-  - 14|US_speednode_0301
-  - 16|🇨🇦CA-15.235.83.228-4945
-  - 14|RU_speednode_0181
-  - 14|RU_speednode_0182
-  - 14|US_speednode_0300
-  - '16|Channel id: @ShadowProxy66 🇬🇧'
-  - 16|@ShadowProxy66 🇮🇩
-  - 13|日本v2|@ripaojiedian
-  - '17|IEPL+·+美国US+·+36+·+深港IEPL #1'
-  - 12|🇭🇰 香港3|@ripaojiedian
-  - 14|US_speednode_0310
-  - '1,2|_CN_->_RU_ #1'
-  - '10|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
-  - 12,13|日本3|@ripaojiedian
-  - 14|US_speednode_0306
-  - 10|🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-  - 14|US_speednode_0311
-  - 0|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-  - 12|🇺🇸 美国|@ripaojiedian
-  - 14|US_speednode_0298
-  - 16|0|-https://t.me/MrXbin-97
-  - 12,13|香港|@ripaojiedian
-  - 12,13|新加坡|@ripaojiedian
-  - 12,13|香港6|@ripaojiedian
-  - '16|法国 国际航空电讯集团公司(SITA) #1'
-  - 16|法国 国际航空电讯集团公司(SITA)
-  - 14|US_speednode_0315
-  - '16|Channel id: @ShadowProxy66🇮🇳'
-  - '16|Channel id: @ShadowProxy66🇩🇪 #2'
-  - '16|Channel id: @ShadowProxy66🇩🇪 #1'
-  - 16|🇨🇦CA-15.235.50.172-1645
-  - 14|KZ_speednode_0086
-  - 16|🇸🇬SG-202.79.161.188-0996
-  - '16|Channel id: @ShadowProxy66🇨🇦'
-  - 10|🇦🇪 AE | 🔓 VMESS | @mowjproxy [...
-  - 14|SG_speednode_0195
-  - '17|IEPL+·+美国US+·+88+·+沪港IEPL #1'
-  - 14|JP_speednode_0076
-  - 14|RU_speednode_0184
-  - 12|🇭🇰 香港7|@ripaojiedian
-  - '0,1,2|_GB_ #1'
-  - 16|🇭🇰HK-219.79.187.188-5056
-  - 10|🇺🇸 US美国(mibei77.com 米贝节点分享)
-  - 14|US_speednode_0307
-  - 12,13|新加坡2|@ripaojiedian
-  - 12|🇭🇰 香港2|@ripaojiedian
-  - 13|香港3|@ripaojiedian
-  - '17|IEPL+·+日本JP+·+23+·+沪港IEPL #1'
-  - 14|US_speednode_0312
-  - '10|🇯🇵 JP日本(mibei77.com 米贝节点分享) #1'
-  - 16|🇹🇼TW-103.61.139.137-5418
-  - 10|🇩🇪 DE德国(mibei77.com 米贝节点分享)
   - 10|🇯🇵 JP日本(mibei77.com 米贝节点分享)
-  - 16|0|--86
-  - 14|RU_speednode_0180
-  - 0|🇨🇳_CN_中国
-  - '1,2|_MD_ #1'
-  - 14|US_speednode_0309
-  - 14|RU_speednode_0187
-  - 0|🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #3'
-  - 13|香港v2|@ripaojiedian
-  - '0,1,2|_US_->_CN_ #1'
-  - 14|US_speednode_0313
-  - '17|IEPL+·+美国US+·+A250+·+Netflix美国... #3'
-  - '1,2|_CN_ #1'
-  - 10|🇨🇳_CN_中国->🇺🇸_US_美国
-  - 14|SG_speednode_0196
-  - 14|RU_speednode_0183
-  - 0,1,2,10,14|US_speednode_0259
-  - '16|Channel id: @ShadowProxy66🇬🇧'
-  - 12,13|香港4|@ripaojiedian
-  - '0,1,2|_US__1 #1'
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 16|@V2ray1_Ng
-  - 16|北美地区 v2rayfree.eu.org
-  - 16|美国 v2rayfree.eu.org
-  - 14|JP_speednode_0078
-  - 14|JP_speednode_0077
-  - '17|IEPL+·+日本JP+·+V8+·+沪港IEPL #1'
-  - '17|IEPL+·+美国US+·+36+·+沪港IEPL #1'
+  - 16|0|--26
+  - '16|Channel id: @ShadowProxy66🇩🇪 #1'
+  - 14|US_speednode_0282
+  - '17|IEPL+·+日本JP+·+23+·+深港IEPL #2'
+  - 16|🇨🇦CA-15.235.50.172-1645
+  - 12|🇭🇰 香港3|@ripaojiedian
+  - 12|🇭🇰 香港7|@ripaojiedian
+  - '16|Channel id: @ShadowProxy66🇩🇪'
+  - '16|法国 国际航空电讯集团公司(SITA) #1'
+  - '1,2|_US_ #1'
+  - 12,13|日本3|@ripaojiedian
+  - 16|🇹🇼TW-103.61.139.137-5418
+  - '17|IEPL+·+日本JP+·+23+·+沪港IEPL #4'
+  - 12|🇭🇰 香港2|@ripaojiedian
+  - '17|IEPL+·+日本JP+·+V8+·+沪港IEPL #4'
+  - '17|IEPL+·+美国US+·+88+·+深港IEPL #3'
+  - 12,13|香港|@ripaojiedian
+  - '16|Channel id: @ShadowProxy66 🇬🇧'
+  - 13|日本v2|@ripaojiedian
+  - 16|0|-https://t.me/MrXbin-97
+  - 16|法国 国际航空电讯集团公司(SITA)
+  - '17|IEPL+·+美国US+·+36+·+深港IEPL #4'
+  - 12,13|美国3|@ripaojiedian
+  - 14|KZ_speednode_0081
+  - 10|🇦🇪 AE | 🔓 VMESS | @mowjproxy [...
+  - '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #5'
   - '16|Channel id: @ShadowProxy66🇺🇸'
-  - '1,2|_DK_->_US_ #1'
-  - 14|US_speednode_0297
-  - 16|🇩🇪DE-57.129.25.20-1271
-  - 14|SG_speednode_0194
-  - 12|🇯🇵 日本|@ripaojiedian
+  - 0|🇨🇳_CN_中国->🇺🇸_US_美国
+  - '0,1,2|_GB_ #1'
+  - 13|香港v2|@ripaojiedian
+  - 16|🇨🇦CA-15.235.83.228-4945
   - 13|香港7|@ripaojiedian
+  - '16|Channel id: @ShadowProxy66🇮🇳'
+  - 12,13|香港6|@ripaojiedian
+  - 16|0|--30
+  - 10|🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+  - 16|@V2ray1_Ng
+  - 16|🇺🇸US-77.83.141.171-1131
+  - '17|IEPL+·+美国US+·+A250+·+Netflix美国... #9'
+  - '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #9'
+  - '17|IEPL+·+美国US+·+A250+·+Netflix美国... #7'
+  - '17|IEPL+·+美国US+·+36+·+沪港IEPL #4'
+  - 10|🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 12,13|日本4|@ripaojiedian
+  - '10|🇯🇵 JP日本(mibei77.com 米贝节点分享) #1'
+  - 12|🇯🇵 日本|@ripaojiedian
+  - '0,1,2|_US_->_CN_ #1'
+  - '10|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  - 14|RU_speednode_0175
+  - 16|北美地区 v2rayfree.eu.org
+  - '17|IEPL+·+日本JP+·+23+·+深港IEPL #4'
+  - 16|🇭🇰HK-219.79.187.188-5056
+  - 14|US_speednode_0284
+  - '17|IEPL+·+日本JP+·+A140+·+Netflix日本... #8'
+  - '10|🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
+  - 12,13|新加坡|@ripaojiedian
+  - 12,13|新加坡2|@ripaojiedian
+  - 16|🇸🇬SG-202.79.161.188-0996
+  - '10|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  - 12|🇺🇸 美国2|@ripaojiedian
+  - 16|@ShadowProxy66 🇮🇩
+  - '1,2|_CN_->_US_ #1'
+  - 16|🇩🇪DE-57.129.25.20-1271
+  - 12,13|香港4|@ripaojiedian
+  - 10|🇬🇧 GB英国(mibei77.com 米贝节点分享)
+  - 16|🇺🇸US-82.29.132.9-4954
+  - '16|Channel id: @ShadowProxy66🇬🇧'
+  - 16|美国 v2rayfree.eu.org
+  - '16|Channel id: @ShadowProxy66🇩🇪 #2'
+  - 16|0|--86
+  - 16|🇻🇳VN-161.248.30.3-5234
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1588,50 +1153,28 @@ proxy-groups:
   - 12,13|日本3|@ripaojiedian
   - 12,13|日本4|@ripaojiedian
   - 13|日本v2|@ripaojiedian
-  - 14|JP_speednode_0075
-  - 14|JP_speednode_0076
-  - 14|JP_speednode_0077
-  - 14|JP_speednode_0078
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 0,1,2,10,14|US_speednode_0259
-  - '0,1,2|_US__1 #1'
+  - '1,2|_US_ #1'
   - 10|🇺🇸 US美国(mibei77.com 米贝节点分享)
   - '10|🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
-  - 12|🇺🇸 美国|@ripaojiedian
   - 12|🇺🇸 美国2|@ripaojiedian
   - 12,13|美国3|@ripaojiedian
   - 12,13|美国4|@ripaojiedian
-  - 13|美国|@ripaojiedian
-  - 14|US_speednode_0297
-  - 14|US_speednode_0298
-  - 14|US_speednode_0299
-  - 14|US_speednode_0300
-  - 14|US_speednode_0301
-  - 14|US_speednode_0303
-  - 14|US_speednode_0304
-  - 14|US_speednode_0305
-  - 14|US_speednode_0306
-  - 14|US_speednode_0307
-  - 14|US_speednode_0308
-  - 14|US_speednode_0309
-  - 14|US_speednode_0310
-  - 14|US_speednode_0311
-  - 14|US_speednode_0312
-  - 14|US_speednode_0313
-  - 14|US_speednode_0314
-  - 14|US_speednode_0315
-  - 14|US_speednode_0316
-  - 16|北美地区 v2rayfree.eu.org
-  - '16|Channel id: @ShadowProxy66🇺🇸'
+  - 14|US_speednode_0282
+  - 14|US_speednode_0283
+  - 14|US_speednode_0284
+  - 16|🇺🇸US-77.83.141.171-1131
   - '16|Channel id: @ShadowProxy66 🇺🇸'
+  - '16|Channel id: @ShadowProxy66🇺🇸'
+  - 16|🇺🇸US-82.29.132.9-4954
+  - 16|北美地区 v2rayfree.eu.org
   - 16|美国 v2rayfree.eu.org
   type: select
 - name: 🇨🇳 中国
   proxies:
-  - 0|🇨🇳_CN_中国
-  - '1,2|_CN_ #1'
+  - REJECT
   type: select
 - name: 🇭🇰 香港
   proxies:
@@ -1652,13 +1195,12 @@ proxy-groups:
   type: select
 - name: 🇨🇦 加拿大
   proxies:
-  - 16|🇨🇦CA-15.235.83.228-4945
-  - 16|🇨🇦CA-15.235.50.172-1645
   - '16|Channel id: @ShadowProxy66🇨🇦'
+  - 16|🇨🇦CA-15.235.50.172-1645
+  - 16|🇨🇦CA-15.235.83.228-4945
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - 14|FR_speednode_0051
   - 16|法国 国际航空电讯集团公司(SITA)
   - '16|法国 国际航空电讯集团公司(SITA) #1'
   type: select
@@ -1666,9 +1208,6 @@ proxy-groups:
   proxies:
   - 12,13|新加坡|@ripaojiedian
   - 12,13|新加坡2|@ripaojiedian
-  - 14|SG_speednode_0194
-  - 14|SG_speednode_0195
-  - 14|SG_speednode_0196
   - 16|🇸🇬SG-202.79.161.188-0996
   type: select
 - name: 🇬🇧 英国
@@ -1685,22 +1224,14 @@ proxy-groups:
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - 14|RU_speednode_0180
-  - 14|RU_speednode_0181
-  - 14|RU_speednode_0182
-  - 14|RU_speednode_0183
-  - 14|RU_speednode_0184
-  - 14|RU_speednode_0185
-  - 14|RU_speednode_0186
-  - 14|RU_speednode_0187
+  - 14|RU_speednode_0175
   type: select
 - name: 🇩🇪 德国
   proxies:
-  - '0,1,2|_DE__1 #1'
   - 10|🇩🇪 DE德国(mibei77.com 米贝节点分享)
   - '16|Channel id: @ShadowProxy66🇩🇪'
-  - 16|🇩🇪DE-57.129.25.20-1271
   - '16|Channel id: @ShadowProxy66🇩🇪 #1'
+  - 16|🇩🇪DE-57.129.25.20-1271
   - '16|Channel id: @ShadowProxy66🇩🇪 #2'
   type: select
 rules:
