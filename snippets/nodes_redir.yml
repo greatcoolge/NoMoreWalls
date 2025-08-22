@@ -7,14 +7,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_NL_->_US_ #1'
+  name: 0,1,2,10|🇺🇸 美国 327
   network: ws
-  port: 25032
+  port: '25032'
   server: 45.136.245.177
   tls: false
   type: vmess
   uuid: aff739f3-e277-4be1-a8c2-1b6b9462971a
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 2
   cipher: auto
@@ -43,7 +45,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '1,10|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 30833
   server: v33.heduian.link
@@ -54,18 +56,4 @@ proxies:
   ws-opts:
     headers:
       Host: v33.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '10|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
     path: /oooo
