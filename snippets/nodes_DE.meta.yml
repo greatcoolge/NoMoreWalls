@@ -1,4 +1,22 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '0,2|_DE_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '0,2|_DE__1 #1'
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 185.245.107.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '0,2|_DE__2 #1'
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 185.245.107.250
+  type: ss
 - alterId: 0
   cipher: auto
   name: 10|🇩🇪 DE德国(mibei77.com 米贝节点分享)
@@ -17,20 +35,6 @@ proxies:
   name: '16|Channel id: @ShadowProxy66🇩🇪'
   network: ws
   port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
-  network: ws
-  port: '443'
   server: 57.129.28.65
   servername: kapelleng.com
   tls: true
@@ -42,7 +46,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
   network: tcp
   port: '28213'
   server: 135.125.182.74
@@ -50,6 +54,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- alterId: 0
+  cipher: auto
+  name: 16|[🇩🇪]t.me/ConfigsHub
+  network: tcp
+  port: '40878'
+  server: 85.195.101.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
 - alterId: 1
   cipher: auto
   name: 16|🇩🇪DE-57.129.25.20-1271
@@ -64,3 +78,17 @@ proxies:
     headers:
       Host: 57.129.25.20
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #2'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
