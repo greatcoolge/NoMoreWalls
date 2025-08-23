@@ -1,51 +1,25 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '0,2|_SK_->_US_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 156.146.40.194
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 0,1,2,10|🇺🇸 美国 327
-  network: ws
-  port: '25032'
-  server: 45.136.245.177
-  tls: false
-  type: vmess
-  uuid: aff739f3-e277-4be1-a8c2-1b6b9462971a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 2
   cipher: auto
-  name: '0,2|_CN_->_US_ #1'
+  name: '0,1|_CN_->_US_ #1'
   network: ws
   port: 30833
   server: v33.heduian.link
-  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: v33.heduian.link
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: '0,2|_GB_->_DE_ #1'
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 91.84.104.133
-  type: ss
 - cipher: aes-128-gcm
-  name: '0,1,2|_CN_->_GB_ #1'
+  name: '0,1|_CN_->_US__1 #1'
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13874
-  server: usa20250815010624020199.tmdns-sing.top
+  port: 13892
+  server: usa022.tmdns-sing.top
   type: ss
 - alterId: 2
   cipher: auto
-  name: '1,10|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: '2,10|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 30833
   server: v33.heduian.link
