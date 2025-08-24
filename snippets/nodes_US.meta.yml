@@ -1,52 +1,4 @@
 proxies:
-- name: 0|_US_
-  network: ws
-  port: 2086
-  server: cloudflare.182682.xyz
-  type: vless
-  uuid: f2fdcc30-a0c1-434d-94a7-dc8fc2c11a45
-  ws-opts:
-    headers:
-      host: free.naichachong.top
-    path: /TG@naichachong
-- name: 0|_US__1
-  network: ws
-  port: 8080
-  server: 104.18.37.228
-  type: vless
-  uuid: 0518ca46-4313-45ce-df4d-5268c1b30cf2
-  ws-opts:
-    headers:
-      host: shad.ir.fin.test.digicyber.click.
-    path: /olem/ws?ed=1024
-- cipher: aes-256-cfb
-  name: '0,1|_US__2 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- name: 2,10|>>@v2rayNG_Matsuri::US
-  network: ws
-  port: 2086
-  server: cloudflare.182682.xyz
-  tls: false
-  type: vless
-  uuid: f2fdcc30-a0c1-434d-94a7-dc8fc2c11a45
-  ws-opts:
-    headers:
-      Host: free.naichachong.top
-    path: '%2FTG%40naichachong'
-- name: '2|🇺🇸_US_美国 #1'
-  network: ws
-  port: 8080
-  server: 104.18.37.228
-  tls: false
-  type: vless
-  uuid: 0518ca46-4313-45ce-df4d-5268c1b30cf2
-  ws-opts:
-    headers:
-      Host: shad.ir.fin.test.digicyber.click.
-    path: /olem/ws?ed%3D1024
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸 美国 327
@@ -60,13 +12,24 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 10|>>@v2rayNG_Matsuri::US
+  network: ws
+  port: 2086
+  server: cloudflare.182682.xyz
+  tls: false
+  type: vless
+  uuid: f2fdcc30-a0c1-434d-94a7-dc8fc2c11a45
+  ws-opts:
+    headers:
+      Host: free.naichachong.top
+    path: '%2FTG%40naichachong'
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-7ZISrh3uaF.download.microsoft.com
+    host: 202508100385405-YeOFla7vv5.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -85,7 +48,7 @@ proxies:
   name: 12,13|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 7177
+  port: 22006
   server: 36.150.215.141
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
@@ -206,6 +169,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 16|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '16|Channel id: @ShadowProxy66🇺🇸'
   network: tcp
   port: '15361'
@@ -214,6 +190,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+- alterId: 32
+  cipher: auto
+  name: 16|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   name: 16|美国 v2rayfree.eu.org
@@ -226,17 +226,4 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
     path: /linkvws
