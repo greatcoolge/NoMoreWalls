@@ -2,9 +2,9 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: '0,1,2|_ES_->_US_ #1'
+  name: 0,1,2,10|@Daily_Configs
   network: tcp
-  port: 32020
+  port: '32020'
   server: s3.ipyar.org
   servername: ''
   sni: ''
@@ -25,7 +25,7 @@ proxies:
     headers:
       host: v29.heduian.link
     path: /oooo
-- name: 1|🇮🇷_IR_伊朗->🇬🇧_GB_英国
+- name: 1,10|🇮🇷_IR_伊朗->🇺🇸_US_美国
   network: ws
   port: 26734
   server: zarin8i.alireza031.pw
@@ -36,7 +36,7 @@ proxies:
     path: '%2F'
 - alterId: 2
   cipher: auto
-  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 1,10|🇨🇳CN-36.151.194.29-0532
   network: ws
   port: 30829
   server: v29.heduian.link
