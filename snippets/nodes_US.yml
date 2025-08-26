@@ -139,7 +139,7 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - cipher: aes-256-gcm
-  name: 14|US_speednode_0093
+  name: 14|US_speednode_0074
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -152,33 +152,7 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
-- name: 14|US_speednode_0109
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 14|US_speednode_0110
-  network: ws
-  password: ttfang
-  port: 2096
-  server: ttfang.fange.me
-  skip-cert-verify: false
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /Telegram🇨🇳
-- name: 14|US_speednode_0111
+- name: 14|US_speednode_0090
   network: ws
   password: tg-fq521free
   port: 443
@@ -191,20 +165,29 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- alterId: 32
-  cipher: auto
-  name: 16|🇺🇸US-77.83.141.171-1131
+- name: 14|US_speednode_0092
   network: ws
+  password: tg-fq521free
   port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  server: 198.62.62.67
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
 - alterId: 0
   cipher: auto
   name: 16|美国 v2rayfree.eu.org
@@ -231,13 +214,3 @@ proxies:
     headers:
       Host: inna.cfd
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
