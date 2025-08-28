@@ -1,4 +1,11 @@
 proxies:
+- name: 7|🇩🇪[By EbraSha] vless-DE 🔒
+  network: tcp
+  port: 8443
+  server: cdn29.saloonak.ir
+  tls: false
+  type: vless
+  uuid: 789d4f30-c31b-4762-8116-ed42574d5e85
 - client-fingerprint: chrome
   name: 11|DE_speednode_0006
   network: ws
@@ -59,6 +66,20 @@ proxies:
   type: vless
   udp: true
   uuid: adb21e18-c07c-4c3f-a1c0-dff5667bd69c
+- alterId: 0
+  cipher: auto
+  name: '13|Channel id: @ShadowProxy66🇩🇪'
+  network: ws
+  port: '443'
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
 - alterId: 1
   cipher: auto
   name: 13|🇩🇪DE-57.129.25.20-1271
@@ -75,7 +96,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '13|Channel id: @ShadowProxy66🇩🇪'
+  name: '13|Channel id: @ShadowProxy66🇩🇪 #1'
   network: tcp
   port: '28213'
   server: 135.125.182.74
@@ -85,24 +106,10 @@ proxies:
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
   cipher: auto
-  name: '13|Channel id: @ShadowProxy66🇩🇪 #1'
-  network: ws
-  port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: '13|Channel id: @ShadowProxy66🇩🇪 #2'
   network: ws
   port: '443'
-  server: 57.129.28.65
+  server: 57.129.64.238
   servername: kapelleng.com
   tls: true
   type: vmess
