@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 11|DE_speednode_0008
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: deu246.bypassall.org
+  servername: www.bing.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4b8aa1f-77d2-4851-a5a4-f78886f3e997
 - alterId: 0
   cipher: auto
   name: '13|Channel id: @ShadowProxy66🇩🇪'
@@ -13,6 +26,16 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '13|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: tcp
+  port: '28213'
+  server: 135.125.182.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 1
   cipher: auto
   name: 13|🇩🇪DE-57.129.25.20-1271
@@ -27,16 +50,6 @@ proxies:
     headers:
       Host: 57.129.25.20
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '13|Channel id: @ShadowProxy66🇩🇪 #1'
-  network: tcp
-  port: '28213'
-  server: 135.125.182.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
   cipher: auto
   name: '13|Channel id: @ShadowProxy66🇩🇪 #2'
