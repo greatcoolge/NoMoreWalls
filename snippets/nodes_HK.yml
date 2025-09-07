@@ -51,7 +51,8 @@ proxies:
       Host: hkt.gotochinatown.net
     path: /
 - client-fingerprint: chrome
-  name: 9|🇭🇰 香港4|@ripaojiedian
+  name: 9,10|香港6|@ripaojiedian
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 219.77.97.194
@@ -69,22 +70,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f9575b63-7410-4c76-88db-91c24a429ea8
-- client-fingerprint: chrome
-  name: 9|🇭🇰 香港6|@ripaojiedian
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 219.73.55.195
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-- name: 10|香港4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 441
-  server: 18.162.156.99
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 10|香港5|@ripaojiedian
@@ -95,14 +80,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f9575b63-7410-4c76-88db-91c24a429ea8
-- name: 10|香港6|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 18.162.147.157
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 10|香港v2|@ripaojiedian
@@ -171,20 +148,6 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 13|🇭🇰HK-47.83.18.10-5029
-  network: ws
-  port: 36968
-  server: 47.83.18.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: 13|🇭🇰HK-47.239.204.193-1025
   network: ws
   port: 33611
@@ -221,6 +184,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 49bb1bac-226e-434e-985b-e5fd1ac6c48b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
     headers:
       Host: ''
