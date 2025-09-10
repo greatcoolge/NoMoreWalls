@@ -1,12 +1,14 @@
 proxies:
 - alterId: 2
   cipher: auto
+  client-fingerprint: chrome
   name: 9,10|香港|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -15,6 +17,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 9|🇭🇰 香港2|@ripaojiedian
   password: 2b5fad3874e5
   plugin: v2ray-plugin
@@ -27,15 +30,18 @@ proxies:
     tls: true
   port: 443
   server: 156.251.179.135
+  tfo: false
   type: ss
 - alterId: 2
   cipher: auto
+  client-fingerprint: chrome
   name: 9,10|香港3|@ripaojiedian
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
@@ -43,7 +49,8 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- name: 9,10|香港4|@ripaojiedian
+- client-fingerprint: chrome
+  name: 9,10|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -51,13 +58,8 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- cipher: aes-256-gcm
-  name: 9|🇭🇰 香港5|@ripaojiedian
-  password: amazongreatvpn
-  port: 16888
-  server: 18.163.165.61
-  type: ss
-- name: 9,10|香港6|@ripaojiedian
+- client-fingerprint: chrome
+  name: 9,10|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2282
@@ -122,6 +124,20 @@ proxies:
     v2ray-http-upgrade-fast-open: true
 - alterId: 0
   cipher: auto
+  name: 13|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
   name: 13|🇭🇰HK-47.83.162.4-5020
   network: ws
   port: 40873
@@ -134,20 +150,6 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
-- alterId: 2
-  cipher: auto
-  name: 13|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 13|🇭🇰HK-47.239.142.73-5161
@@ -164,14 +166,14 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13|🇭🇰HK-8.210.140.23-4901
+  name: 13|🇭🇰HK-47.83.192.216-5026
   network: ws
-  port: 54809
-  server: 8.210.140.23
+  port: 36199
+  server: 47.83.192.216
   servername: ''
   tls: false
   type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  uuid: 49bb1bac-226e-434e-985b-e5fd1ac6c48b
   ws-opts:
     headers:
       Host: ''
@@ -190,3 +192,31 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-8.210.140.23-4901
+  network: ws
+  port: 54809
+  server: 8.210.140.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 2
+  cipher: auto
+  name: 13|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo

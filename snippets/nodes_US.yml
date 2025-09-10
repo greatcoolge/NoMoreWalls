@@ -9,16 +9,19 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
+  client-fingerprint: chrome
   name: 9|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
+    host: 202509031722041-UO2JxEthna.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
-- name: 9,10|美国3|@ripaojiedian
+- client-fingerprint: chrome
+  name: 9,10|美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2966
@@ -26,7 +29,8 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 9,10|美国4|@ripaojiedian
+- client-fingerprint: chrome
+  name: 9,10|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 18233
@@ -256,14 +260,17 @@ proxies:
     path: /Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '13|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
+  name: 13|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
   type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 1
   cipher: auto
   name: 13|🇺🇸🌏 @customv2ray کانفیگ های بی...
@@ -294,14 +301,11 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 13|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
+  name: '13|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
