@@ -54,18 +54,18 @@ proxies:
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 218.103.249.91
+  server: 42.2.170.224
   skip-cert-verify: true
-  sni: 23.45.86.28
+  sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: 9,10|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 2282
-  server: 43.198.184.150
+  port: 443
+  server: 203.218.202.199
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -122,20 +122,20 @@ proxies:
     path: /hudjfnjodhnfkdfdfdfdf
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 13|🇭🇰HK-205.198.125.160-5343
+  name: 13|🇭🇰HK-219.79.187.188-5056
   network: ws
-  port: 10901
-  server: 205.198.125.160
-  servername: ''
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
   tls: false
   type: vmess
-  uuid: 30a5ba37-cfbd-4b27-d266-b52562cfbc44
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: ''
-    path: /ednovas
+      Host: v10.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 13|🇭🇰HK-47.83.162.4-5020
@@ -152,14 +152,56 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13|🇭🇰HK-8.210.140.23-4901
+  name: 13|🇭🇰HK-47.239.233.101-5336
   network: ws
-  port: 54809
-  server: 8.210.140.23
+  port: 23104
+  server: 47.239.233.101
   servername: ''
   tls: false
   type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  uuid: 0aae2419-f82c-4b15-9dbc-4292995d416e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-47.239.117.202-5348
+  network: ws
+  port: 45979
+  server: 47.239.117.202
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  ws-opts:
+    headers:
+      Host: ''
+    path: /test
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-47.86.160.177-5352
+  network: ws
+  port: 22083
+  server: 47.86.160.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 374f0ecb-2140-4f4f-bdd8-c43561cf383a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
     headers:
       Host: ''
@@ -178,30 +220,30 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
-- alterId: 2
-  cipher: auto
-  name: 13|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 13|🇭🇰HK-47.239.233.101-5336
+  name: 13|🇭🇰HK-205.198.125.160-5343
   network: ws
-  port: 23104
-  server: 47.239.233.101
+  port: 10901
+  server: 205.198.125.160
   servername: ''
   tls: false
   type: vmess
-  uuid: 0aae2419-f82c-4b15-9dbc-4292995d416e
+  uuid: 30a5ba37-cfbd-4b27-d266-b52562cfbc44
+  ws-opts:
+    headers:
+      Host: ''
+    path: /ednovas
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-8.210.140.23-4901
+  network: ws
+  port: 54809
+  server: 8.210.140.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
     headers:
       Host: ''
