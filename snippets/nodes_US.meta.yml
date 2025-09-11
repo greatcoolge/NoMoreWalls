@@ -1,13 +1,47 @@
 proxies:
-- alterId: 64
+- name: 7|🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: 104.17.71.153
+  tls: false
+  type: vless
+  uuid: e04791a5-ccf8-5e56-a4fb-dc48c673008d
+- name: '7|🇺🇸_US_美国 #1'
+  network: ws
+  port: 2052
+  server: 104.26.13.8
+  tls: false
+  type: vless
+  uuid: 6247d8e0-3b38-54e7-ae86-de8bd6c10111
+- alterId: 0
   cipher: auto
-  name: 7|🇺🇸 US_189
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
+  name: '7|🇺🇸_US_美国 #2'
+  network: ws
+  port: 2086
+  server: 172.64.175.88
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '7|🇺🇸_US_美国 #3'
+  network: http
+  port: 2098
+  server: f41.maryam1500.top
+  tls: false
+  type: vmess
+  uuid: 83876222-64a4-4912-aa18-b7d9d34959de
+- alterId: 0
+  cipher: auto
+  name: '7|🇺🇸_US_美国 #4'
+  network: ws
+  port: 2086
+  server: 104.19.21.71
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 9|🇺🇸 美国2|@ripaojiedian
@@ -311,43 +345,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '13|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 13|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸US-47.251.75.162-5341
-  network: ws
-  port: 3649
-  server: 47.251.75.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f0d0112a-9539-4513-a6dd-171c9361eb23
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
 - alterId: 1
   cipher: auto
   name: 13|美国 CloudFlare节点
@@ -362,6 +359,70 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '13|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸US-47.251.75.162-5341
+  network: ws
+  port: 3649
+  server: 47.251.75.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f0d0112a-9539-4513-a6dd-171c9361eb23
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 32
+  cipher: auto
+  name: 13|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 13|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 13|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 1
   cipher: auto
   name: 13|🇺🇸🌏 @customv2ray کانفیگ های بی...
