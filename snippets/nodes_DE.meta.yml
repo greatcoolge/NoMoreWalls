@@ -1,37 +1,16 @@
 proxies:
 - name: 7|德国
   network: ws
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
+  port: 443
+  server: hdfynpv2d1.makingirangreatagain.com
+  servername: hdfynpv2d1.makingirangreatagain.com
+  tls: true
+  type: vless
+  uuid: e959d53c-91e9-459d-a332-d59ae89b3b4c
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: '%2F%E7%94%B1%E9%9B%B6%E5%BC%80%E5%A7%8B'
-- name: '7|德国 #1'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3'
-- name: '7|德国 #2'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: '%2FTelegram'
+      Host: hdfynpv2d1.makingirangreatagain.com
+    path: '%2FIyq035lnud9R8ruNNrqGxZZ2'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: 11|DE_speednode_0004
@@ -46,6 +25,20 @@ proxies:
   type: vless
   udp: true
   uuid: 32e9e2c6-1f76-4ff5-9681-c98a5961e7f6
+- alterId: 1
+  cipher: auto
+  name: 13|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: '13|Channel id: @ShadowProxy66🇩🇪'
@@ -74,17 +67,3 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
-- alterId: 1
-  cipher: auto
-  name: 13|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
