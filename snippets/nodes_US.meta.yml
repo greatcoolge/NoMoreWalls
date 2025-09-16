@@ -420,50 +420,76 @@ proxies:
   tls: false
   type: vmess
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 11|US_speednode_0023
-  port: 17779
-  reality-opts:
-    public-key: zM_4XVYflnr-VmBsc06Qk_KzaUABAriVqqKEsEBb2C8
-    short-id: ea7bf16e8eb5769d
-  server: 38.244.39.95
-  servername: learn.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+- cipher: rc4-md5
+  name: 11|US_speednode_0019
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 23.251.121.242
+  type: ss
   udp: true
-  uuid: a83d7ca8-9ff7-3c65-ace5-b2f53dd5b1dc
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
+- client-fingerprint: chrome
   name: 11|US_speednode_0024
-  port: 10001
-  reality-opts:
-    public-key: T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4
-  server: 1002.952326.xyz
-  servername: www.python.org
-  skip-cert-verify: false
+  network: ws
+  port: 2053
+  server: 141.101.120.100
+  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 68bec4db-a813-417e-85ff-0367e8f3cf22
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+    path: /telegram@V2ray_Alpha/?ed=2048
+- client-fingerprint: chrome
   name: 11|US_speednode_0025
-  port: 10101
-  reality-opts:
-    public-key: NZvgcP62A2MqgU6AQa_wSWW85BBc5wMIUQVNxbKBWR0
-    short-id: f304b3aa
-  server: 166.88.142.46
-  servername: www.hongkongdisneyland.com
+  network: ws
+  port: 2096
+  server: 104.18.14.201
+  servername: iamdt.pages.dev
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: b0797d01-63a2-4a19-8ca1-674a09eca4f4
+  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
+  ws-opts:
+    headers:
+      Host: iamdt.pages.dev
+    path: /
+- client-fingerprint: chrome
+  name: 11|US_speednode_0026
+  network: ws
+  port: 2053
+  server: 141.101.120.100
+  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+    path: /telegram@V2ray_Alpha
+- client-fingerprint: chrome
+  name: 11|US_speednode_0027
+  network: ws
+  port: 2096
+  server: 104.18.15.201
+  servername: iamdt.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
+  ws-opts:
+    headers:
+      Host: iamdt.pages.dev
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 11|US_speednode_0026
+  name: 11|US_speednode_0028
   port: 8443
   reality-opts:
     public-key: XgQPLMVHvbUKTzcAZPBDGZ_mDhaZRiAJEk7c4-7UzR4
@@ -474,19 +500,6 @@ proxies:
   type: vless
   udp: true
   uuid: 9b3d65ab-576c-4750-9cb3-bb41c12c085e
-- alterId: 0
-  cipher: auto
-  name: 13|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 13|美国 v2rayfree.eu.org
@@ -514,20 +527,19 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- alterId: 32
+- alterId: 0
   cipher: auto
-  name: 13|🇺🇸US-77.83.141.171-1131
+  name: 13|北美地区 v2rayfree.eu.org
   network: ws
   port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
+  server: 134.195.198.147
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: inna.cfd
+    path: /linkvws
 - alterId: 1
   cipher: auto
   name: 13|美国 CloudFlare节点
@@ -542,6 +554,20 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
+- alterId: 32
+  cipher: auto
+  name: 13|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   name: '13|Channel id: @ShadowProxy66🇺🇸'
@@ -552,17 +578,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸US-47.251.75.162-5341
-  network: ws
-  port: 3649
-  server: 47.251.75.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f0d0112a-9539-4513-a6dd-171c9361eb23
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
