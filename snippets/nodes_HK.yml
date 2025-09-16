@@ -2,7 +2,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 8,9|香港|@ripaojiedian
+  name: 9,10|香港|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -18,7 +18,7 @@ proxies:
     path: /oooo
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 8|🇭🇰 香港2|@ripaojiedian
+  name: 9|🇭🇰 香港2|@ripaojiedian
   password: 2b5fad3874e5
   plugin: v2ray-plugin
   plugin-opts:
@@ -35,45 +35,45 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 8|🇭🇰 香港3|@ripaojiedian
-  port: 46981
-  server: 43.247.134.211
+  name: 9|🇭🇰 香港3|@ripaojiedian
+  port: 21201
+  server: 149.104.15.178
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
+  uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
 - client-fingerprint: chrome
-  name: 8,9|香港4|@ripaojiedian
+  name: 9,10|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 391
-  server: 36.156.102.77
+  port: 392
+  server: 36.156.102.121
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 8,9|香港6|@ripaojiedian
+  name: 9,10|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 391
-  server: 36.150.215.200
+  port: 443
+  server: 203.218.158.70
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: fe2.update.microsoft.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 9|香港3|@ripaojiedian
+  name: 10|香港3|@ripaojiedian
   network: tcp
-  port: '46981'
-  server: 43.247.134.211
+  port: '21201'
+  server: 149.104.15.178
   servername: ''
   tls: false
   type: vmess
-  uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
+  uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
 - alterId: 0
   cipher: auto
-  name: 9|香港v2|@ripaojiedian
+  name: 10|香港v2|@ripaojiedian
   network: kcp
   port: '28590'
   server: 47.239.183.87
@@ -87,7 +87,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 10|HK_speednode_0006
+  name: 11|HK_speednode_0006
   network: http
   port: 30397
   server: 43.247.135.17
@@ -98,49 +98,21 @@ proxies:
   uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰HK-47.239.204.193-1025
+  name: 13|🇭🇰HK-47.239.233.101-5270
   network: ws
-  port: 33611
-  server: 47.239.204.193
+  port: 11614
+  server: 47.239.233.101
   servername: ''
   tls: false
   type: vmess
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
+  uuid: 8e63bf5b-1ecb-49c9-a53a-5e9f6d0f7d39
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰HK-47.83.162.4-5020
-  network: ws
-  port: 40873
-  server: 47.83.162.4
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3fd266bc-7691-43cf-a82f-0c9761a69bf0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 2
-  cipher: auto
-  name: 12|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 12|🇭🇰HK-47.239.117.202-5348
+  name: 13|🇭🇰HK-47.239.117.202-5348
   network: ws
   port: 45979
   server: 47.239.117.202
@@ -154,7 +126,35 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰HK-8.210.140.23-4901
+  name: 13|🇭🇰HK-47.83.162.4-5020
+  network: ws
+  port: 40873
+  server: 47.83.162.4
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3fd266bc-7691-43cf-a82f-0c9761a69bf0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 2
+  cipher: auto
+  name: 13|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-8.210.140.23-4901
   network: ws
   port: 54809
   server: 8.210.140.23
@@ -168,14 +168,28 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰HK-47.239.233.101-5270
+  name: 13|🇭🇰HK-47.239.204.193-1025
   network: ws
-  port: 11614
-  server: 47.239.233.101
+  port: 33611
+  server: 47.239.204.193
   servername: ''
   tls: false
   type: vmess
-  uuid: 8e63bf5b-1ecb-49c9-a53a-5e9f6d0f7d39
+  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
     headers:
       Host: ''
