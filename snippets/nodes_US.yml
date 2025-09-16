@@ -147,20 +147,6 @@ proxies:
   server: 23.251.121.242
   type: ss
   udp: true
-- alterId: 32
-  cipher: auto
-  name: 13|🇺🇸US-77.83.141.171-1131
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - alterId: 0
   cipher: auto
   name: 13|美国 v2rayfree.eu.org
@@ -212,17 +198,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
+- alterId: 32
   cipher: auto
-  name: 13|🇺🇸US-47.251.75.162-5341
+  name: 13|🇺🇸US-77.83.141.171-1131
   network: ws
-  port: 3649
-  server: 47.251.75.162
-  servername: ''
-  tls: false
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
   type: vmess
-  uuid: f0d0112a-9539-4513-a6dd-171c9361eb23
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: ''
-    path: /arki?ed=2048
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 13|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
