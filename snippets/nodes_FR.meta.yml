@@ -1,4 +1,32 @@
 proxies:
+- alterId: 1
+  cipher: auto
+  name: 7,13|🏁RELAY-104.21.1.252-1209
+  network: ws
+  port: 443
+  server: kampong.org
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- name: 11|FR_speednode_0017
+  network: ws
+  port: 80
+  server: 51.195.31.95
+  servername: wWw.speEDtEST.NeT
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 962bfec5-ef89-4180-8f5b-9209a7207668
+  ws-opts:
+    headers:
+      Host: wWw.speEDtEST.NeT
+    path: /wslinws
 - alterId: 0
   cipher: auto
   name: 13|法国 国际航空电讯集团公司(SITA)

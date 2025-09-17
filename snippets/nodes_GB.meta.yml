@@ -1,12 +1,18 @@
 proxies:
-- name: 7|英国
-  network: grpc
-  port: 443
-  server: 45.8.211.71
-  servername: pqh24v3.hiddendom.shop
-  tls: true
+- name: 11|GB_speednode_0018
+  network: ws
+  port: 8080
+  server: 51.38.168.151
+  servername: wWw.SpeEDTeSt.nEt
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  udp: true
+  uuid: dde87267-da95-4a6b-9891-0c864a3e9be8
+  ws-opts:
+    headers:
+      Host: wWw.SpeEDTeSt.nEt
+    path: /wslinka
 - alterId: 0
   cipher: auto
   name: 13|[🇬🇧]t.me/ConfigsHub
@@ -23,16 +29,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '13|Channel id: @ShadowProxy66 🇬🇧'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
   name: '13|[🇬🇧]t.me/ConfigsHub #1'
   network: ws
   port: '443'
@@ -45,3 +41,13 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '13|Channel id: @ShadowProxy66 🇬🇧'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
