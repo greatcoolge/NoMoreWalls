@@ -43,15 +43,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 9,10|美国3|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 13855
-  server: 36.150.215.200
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 9|🇺🇸 美国2|@ripaojiedian
@@ -64,49 +55,62 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9|🇺🇸 美国|@ripaojiedian
-  port: 6506
-  server: 193.124.24.247
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
+- client-fingerprint: chrome
+  name: 9,10|美国3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3294
+  server: 153.121.73.102
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - client-fingerprint: chrome
   name: 9,10|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4317
-  server: xingxing.jiasu123.org
+  server: 153.121.76.9
   skip-cert-verify: true
-  sni: 23.45.86.28
+  sni: www.nintendogames.net
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 10|美国|@ripaojiedian
-  network: tcp
-  port: '6506'
-  server: 193.124.24.247
+  name: 13|🇺🇸US-47.251.75.162-5341
+  network: ws
+  port: 3649
+  server: 47.251.75.162
   servername: ''
   tls: false
   type: vmess
-  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
+  uuid: f0d0112a-9539-4513-a6dd-171c9361eb23
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13|美国 v2rayfree.eu.org
+  name: '13|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 1
+  cipher: auto
+  name: 13|美国 CloudFlare节点
   network: ws
-  port: 443
-  server: 23.162.200.227
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /linkvws
+      Host: fapeng.org
+    path: linkvws
 - alterId: 1
   cipher: auto
   name: 13|🇺🇸🌏 @customv2ray کانفیگ های بی...
@@ -123,39 +127,41 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '13|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸US-47.251.75.162-5341
+  name: 13|美国 v2rayfree.eu.org
   network: ws
-  port: 3649
-  server: 47.251.75.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f0d0112a-9539-4513-a6dd-171c9361eb23
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 1
-  cipher: auto
-  name: 13|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: fapeng.org
-  servername: fapeng.org
+  port: 443
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
-    path: linkvws
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 13|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 32
+  cipher: auto
+  name: 13|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
