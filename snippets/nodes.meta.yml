@@ -78,14 +78,12 @@ proxies:
     headers:
       Host: backus1.dh03.shop
     path: '%2Fhigate'
-- name: 10,14|KG_speednode_0034
+- name: '10|澳洲 #3'
   network: tcp
   port: 20992
   server: 45.130.214.192
-  skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: e0042666-497b-4fde-bf4a-c5281df24d15
 - name: '10|美国 #8'
   network: ws
@@ -667,26 +665,54 @@ proxies:
   tls: false
   type: vmess
   uuid: 79f0cb97-d631-493e-84a1-82a0576fa952
+- cipher: aes-256-cfb
+  name: 14|BR_speednode_0001
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+  udp: true
 - flow: xtls-rprx-vision
-  name: 14|CH_speednode_0010
-  port: 443
+  name: 14|CA_speednode_0002
+  port: 42557
   reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: deu44.unlockedworld.org
-  servername: yahoo.com
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 140.238.147.101
+  servername: www.yahoo.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: b32d0323-b12b-4b63-aff3-00de09817f9d
-- cipher: chacha20-ietf-poly1305
-  name: 14|CN_speednode_0014
-  password: 102826c0-8ad3-4417-8843-6da0f5c80cfe
-  port: 35603
-  server: gw.liangyuandianwan.com
-  type: ss
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- alterId: 2
+  cipher: auto
+  name: 14|CN_speednode_0007
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- name: 14|FR_speednode_0017
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- name: 14|DE_speednode_0008
+  port: 6666
+  reality-opts:
+    public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+    short-id: b525ecd2fc
+  server: 188.68.53.100
+  servername: Tgju.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- name: 14|FR_speednode_0010
   network: ws
   port: 80
   server: 51.195.31.95
@@ -700,7 +726,7 @@ proxies:
     headers:
       Host: wWw.speEDtEST.NeT
     path: /wslinws
-- name: 14|GB_speednode_0018
+- name: 14|GB_speednode_0011
   network: ws
   port: 8080
   server: 51.38.168.151
@@ -715,7 +741,7 @@ proxies:
       Host: wWw.SpeEDTeSt.nEt
     path: /wslinka
 - flow: xtls-rprx-vision
-  name: 14|GR_speednode_0019
+  name: 14|GR_speednode_0012
   port: 443
   reality-opts:
     public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
@@ -729,7 +755,7 @@ proxies:
   uuid: 6035325d-399a-5148-9126-29cedfd5966a
 - alterId: 2
   cipher: auto
-  name: 14|HK_speednode_0032
+  name: 14|HK_speednode_0013
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -742,56 +768,105 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 14|IR_speednode_0033
-  password: 7Lt2sqUu9wsA4lAgPcXdjB
-  port: 8443
-  server: 95.81.106.102
-  type: ss
-  udp: true
-- name: 14|KR_speednode_0035
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- flow: xtls-rprx-vision
-  name: 14|NL_speednode_0036
-  port: 1443
-  reality-opts:
-    public-key: eJeVlxdi2YBV1YpPVCcCgTez80y8ny27SQoZZVBFGyc
-  server: 45.148.233.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
-- flow: xtls-rprx-vision
-  name: 14|NL_speednode_0037
-  port: 443
-  reality-opts:
-    public-key: eJeVlxdi2YBV1YpPVCcCgTez80y8ny27SQoZZVBFGyc
-  server: 45.148.233.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
-- name: 14|NL_speednode_0038
-  port: 46964
-  server: 159.223.209.139
+- alterId: 2
+  cipher: auto
+  name: 14|HK_speednode_0014
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: false
   tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 14|IN_speednode_0015
+  network: http
+  port: 18872
+  server: 123.58.203.92
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: edfe29a5-cc54-488d-a31d-ca71f39e38d4
+- flow: xtls-rprx-vision
+  name: 14|IR_speednode_0016
+  port: 44443
+  reality-opts:
+    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+  server: hybrid.arvancloud.online
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 4bb35928-40bb-4bf3-95f1-9efdc4169147
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+- cipher: aes-256-cfb
+  name: 14|KR_speednode_0017
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+  udp: true
 - flow: xtls-rprx-vision
-  name: 14|PL_speednode_0040
+  name: 14|LB_speednode_0018
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: usa4.worldunlocked.org
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5187e249-b0dc-490e-ab89-cb3bbff55cb3
+- cipher: chacha20-ietf-poly1305
+  name: 14|LT_speednode_0019
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|LT_speednode_0020
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: ltnl15.saint.ydns.eu
+  type: ss
+  udp: true
+- name: 14|NL_speednode_0021
+  password: installshield
+  port: 8443
+  server: 38.180.249.177
+  skip-cert-verify: true
+  sni: 38.180.249.177
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|PH_speednode_0022
+  port: 2589
+  reality-opts:
+    public-key: 2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U
+    short-id: e41865e506628f44
+  server: 192.142.18.40
+  servername: tgju.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f0120f1-ba26-e137-5e06-a99b844741aa
+- flow: xtls-rprx-vision
+  name: 14|PL_speednode_0023
   port: 443
   reality-opts:
     public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
@@ -804,23 +879,68 @@ proxies:
   udp: true
   uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
 - cipher: aes-256-cfb
-  name: 14|PY_speednode_0041
+  name: 14|PY_speednode_0024
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
   udp: true
-- name: 14|SG_speednode_0045
-  password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+- flow: xtls-rprx-vision
+  name: 14|RU_speednode_0026
   port: 443
-  server: de.viefast.net
-  skip-cert-verify: true
-  sni: csapp.catch.net.tw
-  type: trojan
+  reality-opts:
+    public-key: WtKTSZd2ujSiy4M42WgwrSp3flODoh2eHpasVWnySSE
+    short-id: 8074a7f8
+  server: 185.105.111.50
+  servername: outlook.office.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6035325d-399a-5148-9126-29cedfd5966a
+- flow: xtls-rprx-vision
+  name: 14|SC_speednode_0027
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: deu196.unboundaccess.org
+  servername: www.bing.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f788e136-b245-4617-9d41-b505c7f41ef9
+- cipher: chacha20-ietf-poly1305
+  name: 14|TR_speednode_0028
+  password: oC9c1kPkYbkg
+  port: 443
+  server: 83.217.9.210
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|TR_speednode_0029
+  port: 2589
+  reality-opts:
+    public-key: 2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U
+    short-id: e41865e506628f44
+  server: 188.132.183.15
+  servername: tgju.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f0120f1-ba26-e137-5e06-a99b844741aa
+- cipher: aes-256-cfb
+  name: 14|TW_speednode_0030
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
   udp: true
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 14|US_speednode_0046
+  name: 14|US_speednode_0034
   port: 34074
   reality-opts:
     public-key: zimSAAs4SyUKAR-MTMaw08PuI7skyi1U5Peb6VGJwjY
@@ -832,684 +952,216 @@ proxies:
   type: vless
   udp: true
   uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-- flow: xtls-rprx-vision
-  name: 14|US_speednode_0047
+- name: 14|US_speednode_0037
+  port: 443
+  reality-opts:
+    public-key: fv0Zz9FtroOmuK1Tsn0u98gXSq8XepZKtbdH3lDg9EU
+    short-id: ad2e
+  server: uisacorp1yl7nz9xw6mt3vk8qd5rp2gj4bs1jcoruisa.outline360bot.com
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: aca8c3b9-9637-4c90-937b-64d30b6dcb45
+- name: 14|US_speednode_0038
+  network: ws
   port: 8880
-  reality-opts:
-    public-key: zQw1fAQByQ8nSFvliZS4NsIWdhfzMnRMnK_xCFRwFQQ
-  server: 155.117.19.221
-  servername: aws.amazon.com
+  server: 172.66.40.99
+  servername: websocket.network.www.speedtest.net.flutter.dev.russia.python.elmahstyle.xyz.
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: f2f00a89-cc9d-450f-b8bb-0d5b2d4c5a65
-- name: 14|US_speednode_0048
-  network: ws
-  port: 2053
-  server: 141.101.120.100
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 934ad667-dce8-402a-aa45-3c3b52252c0a
   ws-opts:
     headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /telegram@V2ray_Alpha/?ed=2048
-- flow: xtls-rprx-vision
-  name: 14|US_speednode_0049
-  port: 8443
-  reality-opts:
-    public-key: XgQPLMVHvbUKTzcAZPBDGZ_mDhaZRiAJEk7c4-7UzR4
-  server: 172.245.251.10
-  servername: www.ieee.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9b3d65ab-576c-4750-9cb3-bb41c12c085e
-- client-fingerprint: randomized
-  name: 14|US_speednode_0050
+      Host: websocket.network.www.speedtest.net.flutter.dev.russia.python.elmahstyle.xyz.
+    path: /@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048
+- name: 14|US_speednode_0039
   network: ws
-  port: 2053
-  server: 141.101.121.34
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /?ed=2048
-- client-fingerprint: randomized
-  name: 14|US_speednode_0051
-  network: ws
-  port: 2053
-  server: 141.101.120.15
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /?ed=2048
-- alpn:
-  - http/1.1
-  name: 14|US_speednode_0052
-  network: ws
-  port: 8443
+  port: 2082
   server: www.speedtest.net
-  servername: www.speedtest24.ir
+  servername: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 244fff6a-adfc-45b8-b797-5ccb23f64e40
+  uuid: 64060858-31b4-4fcd-f2c3-0dba9f93c959
   ws-opts:
     headers:
-      Host: www.speedtest24.ir
-    path: /@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config?ed=2048
-- client-fingerprint: randomized
-  name: 14|US_speednode_0053
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
+- name: 14|US_speednode_0040
+  network: ws
+  port: 80
+  server: light-presence.oneeat.co
+  servername: light-presence.oneeat.co
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+  ws-opts:
+    headers:
+      Host: light-presence.oneeat.co
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  name: 14|US_speednode_0041
   network: ws
   port: 2053
-  server: 141.101.121.107
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  server: 104.16.53.11
+  servername: frAgeU2.cpI2HIdd.eu.ORG
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 97fc44dd-c88c-4470-8d66-1752089c0183
   ws-opts:
     headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /
-- client-fingerprint: randomized
-  name: 14|US_speednode_0054
+      Host: frAgeU2.cpI2HIdd.eu.ORG
+    path: /?ed=2048
+- name: 14|US_speednode_0042
   network: ws
-  port: 2053
-  server: 141.101.121.62
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  port: 443
+  server: 104.21.36.57
+  servername: orange.fullmargintraders.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 4c835bff-4f4d-4608-bb21-120099089688
   ws-opts:
     headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /
+      Host: orange.fullmargintraders.com
+    path: /wsv/4c835bff-4f4d-4608-bb21-120099089688?ed=2048
+- client-fingerprint: firefox
+  name: 14|US_speednode_0043
+  port: 10001
+  reality-opts:
+    public-key: 1ltSdo2K6D9EEwebaDQPCb5ypbURcXyO9HsX4RUbbUo
+    short-id: 1a24af87
+  server: 172.233.153.209
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
 - cipher: aes-256-cfb
-  name: 14|VN_speednode_0057
+  name: 14|VN_speednode_0044
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.34
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0045
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.13
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0046
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.151
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0047
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.81
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0048
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.106
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0049
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.213
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 14|VN_speednode_0058
+  name: 14|VN_speednode_0050
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.101
+  server: 103.186.154.16
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 14|VN_speednode_0059
+  name: 14|VN_speednode_0051
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.119
+  server: 103.186.155.53
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 14|VN_speednode_0060
+  name: 14|VN_speednode_0052
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.38
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0053
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.71
   type: ss
   udp: true
-- alterId: 0
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0054
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.19
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0055
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0056
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|VN_speednode_0057
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.22
+  type: ss
+  udp: true
+- alterId: 64
   cipher: auto
-  name: 16|[🇩🇪]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 57.129.28.64
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.39.154-0907
-  network: ws
-  port: 20521
-  server: 47.86.39.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: eb9ec6af-3366-4992-841d-6ee3a0ccb647
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 16|[🇨🇦]t.me/ConfigsHub
-  network: tcp
-  port: '2201'
-  server: 23.162.200.125
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 86eab4ac-dbe2-4e2f-a490-4fccade87c35
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.16.206-0930
-  network: ws
-  port: 40617
-  server: 47.86.16.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: eec9ce64-a124-4f14-b72d-f513b6ad6ab2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇸🇬SG-202.79.161.192-0822
+  name: 16|🇸🇬SG-202.79.161.188-0996
   network: ws
   port: 443
-  server: 202.79.161.192
+  server: 202.79.161.188
   servername: ''
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: ''
-    path: path/170733132233
-- alterId: 0
-  cipher: auto
-  name: 16|🇨🇦CA-15.235.50.172-1645
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|[🇬🇧]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 57.128.189.253
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 16|法国 国际航空电讯集团公司(SITA)
-  network: ws
-  port: 443
-  server: 57.129.28.69
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.16.64-0927
-  network: ws
-  port: 56957
-  server: 47.86.16.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4347661b-f276-4f83-9676-55b0743f3270
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.239.117.202-5348
-  network: ws
-  port: 45979
-  server: 47.239.117.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
-  ws-opts:
-    headers:
-      Host: ''
-    path: /test
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.39.105-0667
-  network: ws
-  port: 3227
-  server: 47.86.39.105
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc7556ed-1af2-4291-b4ed-f9dc4eb7a435
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '16|[🇩🇪]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 57.129.64.157
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.18.229-0912
-  network: ws
-  port: 53719
-  server: 47.86.18.229
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 33dbf25a-285f-48f7-9080-cc3ac3f7490e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 1
-  cipher: auto
-  name: 16|🪝ConfigV2RayNG
-  network: ws
-  port: '443'
-  server: masjide.org
-  servername: masjide.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: masjide.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.43.91-0904
-  network: ws
-  port: 20521
-  server: 47.86.43.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e03d1609-cd88-443d-917b-8344c1529a85
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 16|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: fapeng.org
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.42.197-4952
-  network: ws
-  port: 20521
-  server: 47.86.42.197
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fe0861ca-1e49-44dd-ad74-51406cb77165
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.43.5-0921
-  network: ws
-  port: 7021
-  server: 47.86.43.5
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c2a24f8a-78b0-4671-b065-47681d0b9477
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.47.186-0908
-  network: ws
-  port: 38545
-  server: 47.86.47.186
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9d19bf76-c6fa-44d6-9c00-460ebf849494
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇨🇦CA-15.235.83.228-4945
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.16.208-0911
-  network: ws
-  port: 29120
-  server: 47.86.16.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 383b6416-0bd0-4bab-862a-83791b927991
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.46.96-0929
-  network: ws
-  port: 20521
-  server: 47.86.46.96
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04f3481b-437b-4bd4-8210-033002ee48ba
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16|[🇬🇧]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 57.128.189.143
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.19.225-4948
-  network: ws
-  port: 26125
-  server: 47.86.19.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 890be8cd-8b33-41cf-e611-674dd1cff098
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16|法国 国际航空电讯集团公司(SITA) #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.239.204.193-1025
-  network: ws
-  port: 33611
-  server: 47.239.204.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|0|--38
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: mankadmu.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|[🏁]t.me/ConfigsHub
-  network: ws
-  port: '58867'
-  server: 47.238.252.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7b80e36f-b082-46fc-ae59-6bb0dd17eee8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.43.242-0663
-  network: ws
-  port: 35987
-  server: 47.86.43.242
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cdb1236d-7bd5-4213-9371-6407c2ac85b0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.18.204-4944
-  network: ws
-  port: 20521
-  server: 47.86.18.204
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4f0de4ee-0ad9-498b-adf7-4f8409bf7a89
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16|[🏁]t.me/ConfigsHub #1'
-  network: ws
-  port: '20521'
-  server: 140.235.38.89
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c65ef645-2172-44d1-909f-cb30a40bca1c
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪'
-  network: ws
-  port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|0|--32
-  network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: f.khilei.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇩🇪DE-57.129.28.213-0918
-  network: ws
-  port: 443
-  server: 57.129.28.213
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.47.211-0914
-  network: ws
-  port: 20521
-  server: 47.86.47.211
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05bd2a20-e32d-407b-8211-6fd4625db5cf
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.83.18.10-5029
-  network: ws
-  port: 36968
-  server: 47.83.18.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.19.186-4955
-  network: ws
-  port: 20521
-  server: 47.86.19.186
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c88a062e-27f8-40ba-a7d1-a4836888fa0a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+      Host: www.32278117.xyz
+    path: /path/170733132233
 - alterId: 0
   cipher: auto
   name: 16|🇭🇰HK-8.210.140.23-4901
@@ -1526,108 +1178,24 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 16|🇭🇰HK-47.86.45.215-4954
+  name: 16|🇭🇰HK-47.86.42.197-4952
   network: ws
   port: 20521
-  server: 47.86.45.215
+  server: 47.86.42.197
   servername: ''
   tls: false
   type: vmess
-  uuid: 657ab348-924f-486d-845c-8c7c59d578ac
+  uuid: fe0861ca-1e49-44dd-ad74-51406cb77165
   ws-opts:
     headers:
       Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 16|0|--30
+  name: 16|[🇩🇪]t.me/ConfigsHub
   network: ws
-  port: 443
-  server: 38.99.82.193
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: tilebani.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.43.137-4953
-  network: ws
-  port: 20521
-  server: 47.86.43.137
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e737552d-4d41-4d28-af16-3e8fefe77942
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 16|0|--26
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.43.197-0925
-  network: ws
-  port: 29435
-  server: 47.86.43.197
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248828eb-38cc-4806-8ec0-5eb5f821f41c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 16|0|--86
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 64
-  cipher: auto
-  name: 16|🇸🇬SG-202.79.161.188-0996
-  network: ws
-  port: 443
-  server: 202.79.161.188
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.32278117.xyz
-    path: /path/170733132233
-- alterId: 1
-  cipher: auto
-  name: 16|🏁RELAY-104.21.15.186-1220
-  network: ws
-  port: 443
-  server: serkat.org
+  port: '443'
+  server: 57.129.28.64
   servername: serkat.org
   tls: true
   type: vmess
@@ -1638,98 +1206,56 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 16|🇭🇰HK-47.83.162.4-5020
+  name: 16|🇭🇰HK-47.86.43.91-0904
   network: ws
-  port: 40873
-  server: 47.83.162.4
+  port: 20521
+  server: 47.86.43.91
   servername: ''
   tls: false
   type: vmess
-  uuid: 3fd266bc-7691-43cf-a82f-0c9761a69bf0
+  uuid: e03d1609-cd88-443d-917b-8344c1529a85
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.39.105-0667
+  network: ws
+  port: 3227
+  server: 47.86.39.105
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc7556ed-1af2-4291-b4ed-f9dc4eb7a435
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 16|🇭🇰HK-47.86.18.80-0664
-  network: ws
-  port: 31523
-  server: 47.86.18.80
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 015f1957-281d-4cda-ae41-f435cf9a349f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 1
-  cipher: auto
-  name: 16|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66 🇬🇧'
+  name: 16|[🇨🇦]t.me/ConfigsHub
   network: tcp
-  port: '50394'
-  server: 46.250.243.56
+  port: '2201'
+  server: 23.162.200.125
   servername: ''
   tls: false
   type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+  uuid: 86eab4ac-dbe2-4e2f-a490-4fccade87c35
 - alterId: 0
   cipher: auto
-  name: 16|🇩🇪DE-57.129.28.63-0926
+  name: 16|0|--32
   network: ws
   port: 443
-  server: 57.129.28.63
-  servername: ''
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 16|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇩🇪DE-57.129.28.216-0916
-  network: ws
-  port: 443
-  server: 57.129.28.216
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
+      Host: f.khilei.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 16|🇻🇳VN-161.248.30.3-5234
@@ -1746,18 +1272,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 16|🇭🇰HK-47.86.44.179-4951
-  network: ws
-  port: 20521
-  server: 47.86.44.179
+  name: '16|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
   servername: ''
   tls: false
   type: vmess
-  uuid: 2597f3ff-e19d-4318-848e-dcff180a34e2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
   name: 16|0|-https://t.me/MrXbin-97
@@ -1774,41 +1296,14 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '16|[🇬🇧]t.me/ConfigsHub #2'
+  name: 16|[🏁]t.me/ConfigsHub
   network: ws
-  port: '443'
-  server: 57.128.189.222
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 16|🇭🇰HK-47.86.45.136-0931
-  network: ws
-  port: 61980
-  server: 47.86.45.136
+  port: '58867'
+  server: 47.238.252.154
   servername: ''
   tls: false
   type: vmess
-  uuid: 851b7167-6587-4990-b9de-80f76ca49c2a
+  uuid: 7b80e36f-b082-46fc-ae59-6bb0dd17eee8
   ws-opts:
     headers:
       Host: ''
@@ -1829,6 +1324,34 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
+  name: 16|🇭🇰HK-47.86.43.242-0663
+  network: ws
+  port: 35987
+  server: 47.86.43.242
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cdb1236d-7bd5-4213-9371-6407c2ac85b0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 32
+  cipher: auto
+  name: 16|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
   name: 16|@V2ray1_Ng
   network: tcp
   port: '41100'
@@ -1837,30 +1360,6 @@ proxies:
   tls: false
   type: vmess
   uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
-- alterId: 0
-  cipher: auto
-  name: 16|🇹🇼TW-103.61.139.137-5418
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇮🇳'
-  network: tcp
-  port: '10534'
-  server: 94.136.185.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
 - alterId: 0
   cipher: auto
   name: 16|🇭🇰HK-47.239.233.101-5270
@@ -1877,7 +1376,170 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
+  name: 16|🇭🇰HK-47.86.47.186-0908
+  network: ws
+  port: 38545
+  server: 47.86.47.186
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9d19bf76-c6fa-44d6-9c00-460ebf849494
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.18.229-0912
+  network: ws
+  port: 53719
+  server: 47.86.18.229
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 33dbf25a-285f-48f7-9080-cc3ac3f7490e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇩🇪DE-57.129.28.213-0918
+  network: ws
+  port: 443
+  server: 57.129.28.213
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.18.80-0664
+  network: ws
+  port: 31523
+  server: 47.86.18.80
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 015f1957-281d-4cda-ae41-f435cf9a349f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇨🇦CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇹🇼TW-103.61.139.137-5418
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 2
+  cipher: auto
+  name: 16|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.83.162.4-5020
+  network: ws
+  port: 40873
+  server: 47.83.162.4
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3fd266bc-7691-43cf-a82f-0c9761a69bf0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66 🇬🇧'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.45.136-0931
+  network: ws
+  port: 61980
+  server: 47.86.45.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 851b7167-6587-4990-b9de-80f76ca49c2a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 1
+  cipher: auto
+  name: 16|🪝ConfigV2RayNG
+  network: ws
+  port: '443'
+  server: masjide.org
+  servername: masjide.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: masjide.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇩🇪'
   network: ws
   port: '443'
   server: 57.129.28.65
@@ -1889,3 +1551,515 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇸🇬SG-202.79.161.192-0822
+  network: ws
+  port: 443
+  server: 202.79.161.192
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: path/170733132233
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 16|美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|[🇬🇧]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 57.128.189.143
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.43.5-0921
+  network: ws
+  port: 7021
+  server: 47.86.43.5
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c2a24f8a-78b0-4671-b065-47681d0b9477
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇩🇪DE-57.129.28.216-0916
+  network: ws
+  port: 443
+  server: 57.129.28.216
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|[🇩🇪]t.me/ConfigsHub #1'
+  network: ws
+  port: '443'
+  server: 57.129.64.157
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.16.206-0930
+  network: ws
+  port: 40617
+  server: 47.86.16.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eec9ce64-a124-4f14-b72d-f513b6ad6ab2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.46.96-0929
+  network: ws
+  port: 20521
+  server: 47.86.46.96
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04f3481b-437b-4bd4-8210-033002ee48ba
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.19.186-4955
+  network: ws
+  port: 20521
+  server: 47.86.19.186
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c88a062e-27f8-40ba-a7d1-a4836888fa0a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|🇰🇷KR-45.141.139.109-0915
+  network: ws
+  port: 13311
+  server: 45.141.139.109
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6752e2c4-ff7c-4da5-a815-c307bf83ab48
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|0|--26
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.39.154-0907
+  network: ws
+  port: 20521
+  server: 47.86.39.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eb9ec6af-3366-4992-841d-6ee3a0ccb647
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.43.197-0925
+  network: ws
+  port: 29435
+  server: 47.86.43.197
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 248828eb-38cc-4806-8ec0-5eb5f821f41c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.18.204-4944
+  network: ws
+  port: 20521
+  server: 47.86.18.204
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4f0de4ee-0ad9-498b-adf7-4f8409bf7a89
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇮🇳'
+  network: tcp
+  port: '10534'
+  server: 94.136.185.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.16.64-0927
+  network: ws
+  port: 56957
+  server: 47.86.16.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4347661b-f276-4f83-9676-55b0743f3270
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '16|[🇬🇧]t.me/ConfigsHub #1'
+  network: ws
+  port: '443'
+  server: 57.128.189.253
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.45.215-4954
+  network: ws
+  port: 20521
+  server: 47.86.45.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 657ab348-924f-486d-845c-8c7c59d578ac
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '16|[🇬🇧]t.me/ConfigsHub #2'
+  network: ws
+  port: '443'
+  server: 57.128.189.222
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.47.211-0914
+  network: ws
+  port: 20521
+  server: 47.86.47.211
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 05bd2a20-e32d-407b-8211-6fd4625db5cf
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16|0|--30
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|0|--86
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.86.19.225-4948
+  network: ws
+  port: 26125
+  server: 47.86.19.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 890be8cd-8b33-41cf-e611-674dd1cff098
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 16|🏁RELAY-104.21.15.186-1220
+  network: ws
+  port: 443
+  server: serkat.org
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.239.204.193-1025
+  network: ws
+  port: 33611
+  server: 47.239.204.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇩🇪DE-57.129.28.63-0926
+  network: ws
+  port: 443
+  server: 57.129.28.63
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇨🇦CA-15.235.83.228-4945
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.239.117.202-5348
+  network: ws
+  port: 45979
+  server: 47.239.117.202
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  ws-opts:
+    headers:
+      Host: ''
+    path: /test
+- alterId: 0
+  cipher: auto
+  name: '16|[🏁]t.me/ConfigsHub #1'
+  network: ws
+  port: '20521'
+  server: 140.235.38.89
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c65ef645-2172-44d1-909f-cb30a40bca1c
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 16|法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 16|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|0|--38
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: mankadmu.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|法国 国际航空电讯集团公司(SITA) #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 1
+  cipher: auto
+  name: 16|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  network: ws
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
