@@ -436,20 +436,6 @@ proxies:
   type: vless
   udp: true
   uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
-- alterId: 1
-  cipher: auto
-  name: 16|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: fapeng.org
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
 - alterId: 32
   cipher: auto
   name: 16|🇺🇸US-77.83.141.171-1131
@@ -466,17 +452,18 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: 16|美国 v2rayfree.eu.org
+  name: 16|🇺🇸US-154.9.254.63-4971
   network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
+  port: 20521
+  server: 154.9.254.63
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
   ws-opts:
     headers:
       Host: ''
-    path: /linkvws
+    path: /
 - alterId: 0
   cipher: auto
   name: 16|北美地区 v2rayfree.eu.org
@@ -492,17 +479,17 @@ proxies:
     path: /linkvws
 - alterId: 1
   cipher: auto
-  name: '16|美国 CloudFlare节点 #1'
+  name: 16|美国 CloudFlare节点
   network: ws
   port: '443'
-  server: seribus.org
-  servername: seribus.org
+  server: fapeng.org
+  servername: fapeng.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: seribus.org
+      Host: fapeng.org
     path: linkvws
 - alterId: 1
   cipher: auto
@@ -520,14 +507,18 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
+  name: 16|🇺🇸US-38.93.202.253-5087
+  network: ws
+  port: 25431
+  server: 38.93.202.253
   servername: ''
   tls: false
   type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+  uuid: 6d8f6ae4-b831-43c2-aa39-8049eef8d8c7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /6d8f6ae4
 - alterId: 0
   cipher: auto
   name: 16|🇺🇸US-47.251.75.162-5341
@@ -544,29 +535,38 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 16|🇺🇸US-38.93.202.253-5087
-  network: ws
-  port: 25431
-  server: 38.93.202.253
+  name: '16|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
   servername: ''
   tls: false
   type: vmess
-  uuid: 6d8f6ae4-b831-43c2-aa39-8049eef8d8c7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /6d8f6ae4
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
-  name: 16|🇺🇸US-154.9.254.63-4971
+  name: 16|美国 v2rayfree.eu.org
   network: ws
-  port: 20521
-  server: 154.9.254.63
-  servername: ''
-  tls: false
+  port: 443
+  server: 23.162.200.227
+  tls: true
   type: vmess
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: '16|美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: seribus.org
+  servername: seribus.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: seribus.org
+    path: linkvws
