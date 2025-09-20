@@ -143,7 +143,7 @@ def get_latest_danmaifu_link():
 
         latest_file = None
         latest_date = None
-        pattern = re.compile(r"^v2ray-(\d{8})\.txt$")
+        pattern = re.compile(r"^clash-(\d{8})\.yaml$")
 
         for item in data:
             name = item.get("name", "")
