@@ -126,7 +126,7 @@ def changfengoss():
         "https://api.github.com/repos/changfengoss/pub/contents/data/%Y_%m_%d?ref=main")).json()
     return [_['download_url'] for _ in res]
 
-def get_latest_danmaifu_link(max_days: int = 3):
+def get_latest_danmaifu_link():
     url = "https://api.github.com/repos/danmaifu/mianfeijiedian/contents/feed?ref=main"
     headers = {"User-Agent": "danmaifu-fetcher"}
 
@@ -134,26 +134,39 @@ def get_latest_danmaifu_link(max_days: int = 3):
         res = requests.get(url, headers=headers, timeout=10)
         if res.status_code != 200:
             print(f"[{res.status_code}] Failed to fetch directory: {res.text}")
-            return None
+            return None, None
 
         data = res.json()
+        if not isinstance(data, list):
+            print("[ERROR] Unexpected API response format.")
+            return None, None
 
-        # 获取过去 N 天的日期字符串
-        for i in range(max_days):
-            day = (datetime.datetime.now() - datetime.timedelta(days=i)).strftime("%Y%m%d")
-            target_name = f"v2ray-{day}.txt"
+        latest_file = None
+        latest_date = None
+        pattern = re.compile(r"^v2ray-(\d{8})\.txt$")
 
-            for item in data:
-                if item.get("name") == target_name:
-                    print(f"[INFO] Found file: {target_name}")
-                    return item.get("download_url")
+        for item in data:
+            name = item.get("name", "")
+            m = pattern.match(name)
+            if m:
+                try:
+                    file_date = datetime.datetime.strptime(m.group(1), "%Y%m%d")
+                    if latest_date is None or file_date > latest_date:
+                        latest_date = file_date
+                        latest_file = item
+                except ValueError:
+                    continue
 
-        print("No matching file found in recent days.")
-        return None
+        if latest_file:
+            print(f"[INFO] Latest file: {latest_file['name']} -> {latest_file['download_url']}")
+            return latest_file["name"], latest_file["download_url"]
+
+        print("[INFO] No matching v2ray file found.")
+        return None, None
 
     except requests.RequestException as e:
-        print(f"Request failed: {e}")
-        return None
+        print(f"[ERROR] Request failed: {e}")
+        return None, None
 
 def vpn_fail():
     # The site has been closed
