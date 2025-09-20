@@ -1,4 +1,34 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '0,1,2|_US_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- name: '1|🇺🇸_US_美国 #1'
+  network: ws
+  port: 8880
+  server: 104.16.142.193
+  servername: SomeNotificationsChangeYourLife.EiNetwork.News.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 2a2f8790-99ab-4788-985c-0fe5627af2a9
+  ws-opts:
+    headers:
+      Host: SomeNotificationsChangeYourLife.EiNetwork.News.
+    path: /Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray
+- name: 2|_US__1
+  network: ws
+  port: 8880
+  server: 104.16.142.193
+  servername: SomeNotificationsChangeYourLife.EiNetwork.News.
+  type: vless
+  uuid: 2a2f8790-99ab-4788-985c-0fe5627af2a9
+  ws-opts:
+    headers:
+      host: SomeNotificationsChangeYourLife.EiNetwork.News.
+    path: /Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray
 - name: '10|美国 #1'
   network: ws
   port: 80
@@ -11,20 +41,13 @@ proxies:
     headers:
       Host: informed-location.seotoolsforyou.co.uk
     path: '%2F'
-- name: '10|美国 #2'
+- name: '10|美国 #3'
   network: tcp
-  port: 29495
+  port: 46822
   server: 89.44.242.222
   tls: false
   type: vless
-  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
-- name: '10|美国 #4'
-  network: tcp
-  port: 29500
-  server: 89.44.242.222
-  tls: false
-  type: vless
-  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
 - name: '10|美国 #7'
   network: ws
   port: 443
@@ -357,7 +380,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-XAa9x2cfsM.download.microsoft.com
+    host: 202509121565513-QOZnRQnbPm.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -421,34 +444,6 @@ proxies:
   type: vless
   udp: true
   uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-- alterId: 1
-  cipher: auto
-  name: 16|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: fapeng.org
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: '16|美国 CloudFlare节点 #1'
-  network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: seribus.org
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: 16|🇺🇸US-154.9.254.63-4971
@@ -465,41 +460,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '16|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 16|北美地区 v2rayfree.eu.org
+  name: 16|美国 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 134.195.198.147
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: inna.cfd
+      Host: ''
     path: /linkvws
-- alterId: 32
-  cipher: auto
-  name: 16|🇺🇸US-77.83.141.171-1131
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - alterId: 1
   cipher: auto
   name: 16|🇺🇸🌏 @customv2ray کانفیگ های بی...
@@ -514,16 +485,54 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 16|美国 v2rayfree.eu.org
+  name: 16|美国 CloudFlare节点
   network: ws
-  port: 443
-  server: 23.162.200.227
+  port: '443'
+  server: seribus.org
+  servername: seribus.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: seribus.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '16|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 1
+  cipher: auto
+  name: '16|美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 16|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws

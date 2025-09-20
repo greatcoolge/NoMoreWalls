@@ -48,30 +48,36 @@ proxies:
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 112.118.248.22
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  server: 1.64.115.53
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: 12,13|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 447
-  server: 160.16.63.16
-  skip-cert-verify: true
-  sni: www.baidu.com
+  server: 160.16.70.180
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-- alterId: 64
+- alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港7|@ripaojiedian
-  port: 52512
-  server: 183.240.180.47
+  name: 12,13|香港7|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 13|香港3|@ripaojiedian
@@ -82,16 +88,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
-- alterId: 64
-  cipher: auto
-  name: 13|香港7|@ripaojiedian
-  network: tcp
-  port: '52512'
-  server: 183.240.180.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 13|香港v2|@ripaojiedian
@@ -112,20 +108,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 16|🇭🇰HK-47.239.233.101-5270
-  network: ws
-  port: 11614
-  server: 47.239.233.101
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e63bf5b-1ecb-49c9-a53a-5e9f6d0f7d39
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: 16|🇭🇰HK-47.83.162.4-5020
   network: ws
   port: 40873
@@ -134,6 +116,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 3fd266bc-7691-43cf-a82f-0c9761a69bf0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-8.210.140.23-4901
+  network: ws
+  port: 54809
+  server: 8.210.140.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
     headers:
       Host: ''
@@ -166,30 +162,30 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
-- alterId: 2
-  cipher: auto
-  name: 16|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 16|🇭🇰HK-8.210.140.23-4901
+  name: 16|🇭🇰HK-47.239.233.101-5270
   network: ws
-  port: 54809
-  server: 8.210.140.23
+  port: 11614
+  server: 47.239.233.101
   servername: ''
   tls: false
   type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  uuid: 8e63bf5b-1ecb-49c9-a53a-5e9f6d0f7d39
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 16|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
     headers:
       Host: ''
