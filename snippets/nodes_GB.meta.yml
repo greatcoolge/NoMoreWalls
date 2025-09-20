@@ -1,12 +1,12 @@
 proxies:
 - cipher: aes-256-cfb
-  name: '0,1,2|_GB_ #1'
+  name: '1,2,3|_GB_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
 - cipher: aes-256-cfb
-  name: '0,1,2|_GB__2 #1'
+  name: '1,2,3|_GB__2 #1'
   obfs: plain
   obfs-param: ''
   password: f8f7aCzcPKbsF8p3
@@ -15,7 +15,7 @@ proxies:
   protocol-param: ''
   server: 62.100.205.48
   type: ssr
-- name: 1,2|_GB__1
+- name: 2,3|_GB__1
   network: ws
   port: 80
   server: 167.71.137.233
@@ -24,16 +24,12 @@ proxies:
   uuid: 586bb25e-30e7-4163-9d1b-79ffb263e090
   ws-opts:
     path: /zmnnzws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇬🇧'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- cipher: chacha20-ietf-poly1305
+  name: 11|英国
+  password: aE5rFdxzG8GQf5TAQhZhRA
+  port: 1080
+  server: 45.144.235.103
+  type: ss
 - alterId: 0
   cipher: auto
   name: 17|[🇬🇧]t.me/ConfigsHub
@@ -53,20 +49,6 @@ proxies:
   name: '17|[🇬🇧]t.me/ConfigsHub #1'
   network: ws
   port: '443'
-  server: 57.128.189.253
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|[🇬🇧]t.me/ConfigsHub #2'
-  network: ws
-  port: '443'
   server: 57.128.189.222
   servername: lammaland.org
   tls: true
@@ -76,3 +58,27 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇬🇧'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alterId: 0
+  cipher: auto
+  name: '17|[🇬🇧]t.me/ConfigsHub #2'
+  network: ws
+  port: '443'
+  server: 57.128.189.253
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws

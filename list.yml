@@ -1,4 +1,4 @@
-# Update: 2025-09-20 19:30
+# Update: 2025-09-20 19:40
 allow-lan: false
 dns:
   enable: true
@@ -19,14 +19,14 @@ mixed-port: 7890
 mode: rule
 proxies:
 - cipher: aes-256-cfb
-  name: '0,1,2|未命名 #1'
+  name: '1,2,3|未命名 #1'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.64
   type: ss
 - alterId: 2
   cipher: auto
-  name: '0,2|_CN_->_US_ #1'
+  name: '1,3|_CN_->_US_ #1'
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -40,7 +40,7 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '0,1,2|_AT_->_CN_ #1'
+  name: '1,2,3|_AT_->_CN_ #1'
   network: tcp
   port: 59956
   server: 46.29.34.205
@@ -48,20 +48,20 @@ proxies:
   type: vmess
   uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
 - cipher: aes-256-cfb
-  name: 0,1,2,14|US_speednode_0030
+  name: 1,2,3,15|US_speednode_0030
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '0,1,2|_GB_ #1'
+  name: '1,2,3|_GB_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
 - cipher: aes-256-cfb
-  name: '0,1,2|_GB__2 #1'
+  name: '1,2,3|_GB__2 #1'
   obfs: plain
   obfs-param: ''
   password: f8f7aCzcPKbsF8p3
@@ -71,21 +71,21 @@ proxies:
   server: 62.100.205.48
   type: ssr
 - cipher: aes-256-cfb
-  name: 0,2,14|SK_speednode_0026
+  name: 1,3,15|SK_speednode_0026
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '0,1,2|_SE_ #1'
+  name: '1,2,3|_SE_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.166.100
   type: ss
 - alterId: 2
   cipher: auto
-  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 2|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -97,11 +97,29 @@ proxies:
     headers:
       Host: v24.heduian.link
     path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_1
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_7
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 11|英国
+  password: aE5rFdxzG8GQf5TAQhZhRA
+  port: 1080
+  server: 45.144.235.103
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '10|美国 #28'
+  name: 11|美国_29
   network: ws
-  port: '443'
+  port: 443
   server: DdDDdddddDFrrrrrrRRy.IRan2035.dPDns.ORG
   servername: ddddddddddfrrrrrrrry.iran2035.dpdns.org
   tls: true
@@ -113,7 +131,7 @@ proxies:
     path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp
 - alterId: 1
   cipher: auto
-  name: 10,17|🏁RELAY-104.21.1.252-1209
+  name: 11,17|🏁RELAY-104.21.1.252-1209
   network: ws
   port: 443
   server: kampong.org
@@ -125,39 +143,42 @@ proxies:
     headers:
       Host: kampong.org
     path: linkvws
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_42
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
 - alterId: 64
   cipher: auto
-  name: '10|美国 #43'
+  name: 11|美国_44
   network: tcp
-  port: '34141'
+  port: 34141
   server: 183.240.180.3
   servername: ''
-  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '10|美国 #44'
+  name: 11|美国_45
   network: tcp
-  port: '47093'
+  port: 47093
   server: tunnel.gzcloud.shop
   servername: ''
-  tls: false
   type: vmess
   uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
 - alterId: 64
   cipher: auto
-  name: '10|美国 #45'
+  name: 11|美国_46
   network: tcp
-  port: '39595'
+  port: 39595
   server: 183.240.245.251
   servername: ''
-  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 12,13|香港|@ripaojiedian
+  name: 13,14|香港|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -172,7 +193,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: 13|🇭🇰 香港2|@ripaojiedian
   password: 2b5fad3874e5
   plugin: v2ray-plugin
   plugin-opts:
@@ -188,7 +209,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港3|@ripaojiedian
+  name: 13|🇭🇰 香港3|@ripaojiedian
   port: 21201
   server: 149.104.15.178
   skip-cert-verify: false
@@ -196,7 +217,7 @@ proxies:
   tls: false
   type: vmess
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
-- name: 12,13|香港4|@ripaojiedian
+- name: 13,14|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -206,7 +227,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港5|@ripaojiedian
+  name: 13|🇭🇰 香港5|@ripaojiedian
   network: http
   port: 47030
   server: 103.224.80.67
@@ -216,7 +237,7 @@ proxies:
   type: vmess
   udp: true
   uuid: b088a19a-70dd-4eb6-a9f1-e9cbba0a64c2
-- name: 12,13|香港6|@ripaojiedian
+- name: 13,14|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 447
@@ -226,7 +247,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港7|@ripaojiedian
+  name: 13|🇭🇰 香港7|@ripaojiedian
   network: http
   port: 25119
   server: 38.147.188.25
@@ -238,7 +259,7 @@ proxies:
   uuid: 361f1769-cac1-4dd1-adca-92592929b3de
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港8|@ripaojiedian
+  name: 13|🇭🇰 香港8|@ripaojiedian
   network: http
   port: 28210
   server: 38.147.188.53
@@ -250,7 +271,7 @@ proxies:
   uuid: b738a6b6-7b7d-41a9-87a5-f246256c5c95
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港9|@ripaojiedian
+  name: 13|🇭🇰 香港9|@ripaojiedian
   network: http
   port: 35436
   server: 103.30.78.138
@@ -262,7 +283,7 @@ proxies:
   uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港10|@ripaojiedian
+  name: 13|🇭🇰 香港10|@ripaojiedian
   network: http
   port: 32026
   server: 103.224.80.45
@@ -273,7 +294,7 @@ proxies:
   udp: true
   uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
 - cipher: rc4-md5
-  name: 12|🇯🇵 日本|@ripaojiedian
+  name: 13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -283,7 +304,7 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 12,13|日本3|@ripaojiedian
+- name: 13,14|日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 327
@@ -292,7 +313,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: aes-256-gcm
-  name: 12|🇯🇵 日本2|@ripaojiedian
+  name: 13|🇯🇵 日本2|@ripaojiedian
   password: 8808e9f11454
   plugin: v2ray-plugin
   plugin-opts:
@@ -306,7 +327,7 @@ proxies:
   server: 137.220.142.139
   tfo: false
   type: ss
-- name: 12,13|日本4|@ripaojiedian
+- name: 13,14|日本4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
@@ -314,7 +335,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 12,13|新加坡|@ripaojiedian
+- name: 13,14|新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2045
@@ -322,7 +343,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 12,13|新加坡2|@ripaojiedian
+- name: 13,14|新加坡2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4397
@@ -332,7 +353,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 12,13|新加坡3|@ripaojiedian
+  name: 13,14|新加坡3|@ripaojiedian
   network: ws
   port: '30839'
   server: v39.heduian.link
@@ -347,7 +368,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: rc4-md5
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -357,7 +378,7 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 12,13|美国3|@ripaojiedian
+- name: 13,14|美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3294
@@ -365,7 +386,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 12,13|美国4|@ripaojiedian
+- name: 13,14|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
@@ -375,7 +396,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 13|香港3|@ripaojiedian
+  name: 14|香港3|@ripaojiedian
   network: tcp
   port: '21201'
   server: 149.104.15.178
@@ -385,7 +406,7 @@ proxies:
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
 - alterId: 0
   cipher: auto
-  name: 13|香港5|@ripaojiedian
+  name: 14|香港5|@ripaojiedian
   network: tcp
   port: '47030'
   server: 103.224.80.67
@@ -395,7 +416,7 @@ proxies:
   uuid: b088a19a-70dd-4eb6-a9f1-e9cbba0a64c2
 - alterId: 0
   cipher: auto
-  name: 13|香港7|@ripaojiedian
+  name: 14|香港7|@ripaojiedian
   network: tcp
   port: '25119'
   server: 38.147.188.25
@@ -405,7 +426,7 @@ proxies:
   uuid: 361f1769-cac1-4dd1-adca-92592929b3de
 - alterId: 0
   cipher: auto
-  name: 13|香港8|@ripaojiedian
+  name: 14|香港8|@ripaojiedian
   network: tcp
   port: '28210'
   server: 38.147.188.53
@@ -415,7 +436,7 @@ proxies:
   uuid: b738a6b6-7b7d-41a9-87a5-f246256c5c95
 - alterId: 0
   cipher: auto
-  name: 13|香港9|@ripaojiedian
+  name: 14|香港9|@ripaojiedian
   network: tcp
   port: '35436'
   server: 103.30.78.138
@@ -425,7 +446,7 @@ proxies:
   uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
 - alterId: 0
   cipher: auto
-  name: 13|香港10|@ripaojiedian
+  name: 14|香港10|@ripaojiedian
   network: tcp
   port: '32026'
   server: 103.224.80.45
@@ -435,7 +456,7 @@ proxies:
   uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
 - alterId: 0
   cipher: auto
-  name: 13|香港v2|@ripaojiedian
+  name: 14|香港v2|@ripaojiedian
   network: kcp
   port: '28590'
   server: 47.239.183.87
@@ -445,7 +466,7 @@ proxies:
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - alterId: 0
   cipher: auto
-  name: 13|日本v2|@ripaojiedian
+  name: 14|日本v2|@ripaojiedian
   network: kcp
   port: '40916'
   server: 8.209.200.91
@@ -454,92 +475,12 @@ proxies:
   type: vmess
   uuid: af07bf42-c942-4085-a7cb-80f9bed88776
 - cipher: aes-256-cfb
-  name: 14|NO_speednode_0023
+  name: 15|NO_speednode_0023
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.213.23.226
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-47.239.233.101-5270
-  network: ws
-  port: 11614
-  server: 47.239.233.101
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e63bf5b-1ecb-49c9-a53a-5e9f6d0f7d39
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|[🇩🇪]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 57.129.28.64
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-47.239.117.202-5348
-  network: ws
-  port: 45979
-  server: 47.239.117.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
-  ws-opts:
-    headers:
-      Host: ''
-    path: /test
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇩🇪'
-  network: ws
-  port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇬🇧'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
-  name: 17|[🏁]t.me/ConfigsHub
-  network: ws
-  port: '58867'
-  server: 47.238.252.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7b80e36f-b082-46fc-ae59-6bb0dd17eee8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
   name: 17|🇺🇸US-154.9.254.63-4971
@@ -556,25 +497,39 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 17|🇻🇳VN-161.248.30.3-5234
+  name: 17|[🇩🇪]t.me/ConfigsHub
   network: ws
-  port: 20086
-  server: 161.248.30.3
-  servername: ''
-  tls: false
+  port: '443'
+  server: 57.129.28.64
+  servername: serkat.org
+  tls: true
   type: vmess
-  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: serkat.org
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 17|🇨🇦CA-15.235.50.172-1645
+  name: 17|[🇫🇷]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 141.94.155.228
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|法国 国际航空电讯集团公司(SITA)
   network: ws
   port: 443
-  server: 15.235.50.172
-  servername: ''
+  server: 57.129.28.69
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -582,16 +537,6 @@ proxies:
     headers:
       Host: baradiha.com
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇺🇸'
-  network: tcp
-  port: '29800'
-  server: 103.124.107.144
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
 - alterId: 0
   cipher: auto
   name: '17|[🇩🇪]t.me/ConfigsHub #1'
@@ -608,68 +553,54 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '17|[🏁]t.me/ConfigsHub #1'
-  network: ws
-  port: '20521'
-  server: 140.235.38.89
+  name: 17|@V2ray1_Ng
+  network: tcp
+  port: '41100'
+  server: 15.204.234.200
   servername: ''
   tls: false
   type: vmess
-  uuid: c65ef645-2172-44d1-909f-cb30a40bca1c
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-47.83.18.10-5029
-  network: ws
-  port: 36968
-  server: 47.83.18.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|法国 国际航空电讯集团公司(SITA)
+  name: 17|美国 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 57.129.24.125
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: ''
     path: /linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
+  name: 17|美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
   type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 17|0|--30
+  name: 17|0|--86
   network: ws
   port: 443
-  server: 38.99.82.193
+  server: 57.129.24.124
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: tilebani.com
+      Host: aveiror.com
     path: /linkvws
 - alterId: 1
   cipher: auto
@@ -685,72 +616,76 @@ proxies:
     headers:
       Host: jamekk.org
     path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|🪝ConfigV2RayNG
-  network: ws
-  port: '443'
-  server: masjide.org
-  servername: masjide.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: masjide.org
-    path: linkvws
-- alterId: 2
-  cipher: auto
-  name: 17|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇩🇪 #1'
+  name: 17|🇭🇰HK-47.239.204.193-1025
   network: ws
-  port: '443'
-  server: 57.129.28.65
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇹🇼TW-103.61.139.137-5418
-  network: ws
-  port: 20521
-  server: 103.61.139.137
+  port: 33611
+  server: 47.239.204.193
   servername: ''
   tls: false
   type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 17|[🇨🇦]t.me/ConfigsHub
-  network: tcp
-  port: '2201'
-  server: 23.162.200.125
+  name: 17|🇨🇦CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 86eab4ac-dbe2-4e2f-a490-4fccade87c35
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 17|🇩🇪DE-57.129.25.20-1271
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  network: ws
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|0|-https://t.me/MrXbin-97
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 17|🇩🇪DE-57.129.28.216-0916
@@ -767,18 +702,28 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 17|[🇫🇷]t.me/ConfigsHub
+  name: 17|🇭🇰HK-47.239.233.101-5270
   network: ws
-  port: '443'
-  server: 141.94.155.228
-  servername: kampong.org
-  tls: true
+  port: 11614
+  server: 47.239.233.101
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 8e63bf5b-1ecb-49c9-a53a-5e9f6d0f7d39
   ws-opts:
     headers:
-      Host: kampong.org
-    path: linkvws
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 64
   cipher: auto
   name: 17|🇸🇬SG-202.79.161.188-0996
@@ -793,96 +738,64 @@ proxies:
     headers:
       Host: www.32278117.xyz
     path: /path/170733132233
+- alterId: 0
+  cipher: auto
+  name: 17|🇩🇪DE-57.129.28.63-0926
+  network: ws
+  port: 443
+  server: 57.129.28.63
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|[🇨🇦]t.me/ConfigsHub
+  network: tcp
+  port: '2201'
+  server: 23.162.200.125
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 86eab4ac-dbe2-4e2f-a490-4fccade87c35
 - alterId: 1
   cipher: auto
-  name: 17|🏁RELAY-104.21.15.186-1220
-  network: ws
-  port: 443
-  server: serkat.org
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|[🇬🇧]t.me/ConfigsHub
+  name: '17|美国 CloudFlare节点 #1'
   network: ws
   port: '443'
-  server: 57.128.189.143
-  servername: lammaland.org
+  server: seribus.org
+  servername: seribus.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: lammaland.org
+      Host: seribus.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '17|法国 国际航空电讯集团公司(SITA) #1'
+  name: 17|🇨🇦CA-15.235.83.228-4945
   network: ws
   port: 443
-  server: 57.129.28.69
+  server: 15.235.83.228
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: baradiha.com
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-47.239.204.193-1025
-  network: ws
-  port: 33611
-  server: 47.239.204.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  name: '17|Channel id: @ShadowProxy66🇩🇪'
   network: ws
   port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|🏁RELAY-172.67.222.233-1861
-  network: ws
-  port: 443
-  server: yichueng.org
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|[🇬🇧]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 57.128.189.253
+  server: 57.129.28.65
   servername: kapelleng.com
   tls: true
   type: vmess
@@ -905,89 +818,20 @@ proxies:
     headers:
       Host: o.metuji.com
     path: /linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: fapeng.org
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 17|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇩🇪DE-57.129.28.213-0918
-  network: ws
-  port: 443
-  server: 57.129.28.213
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|0|--86
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇹🇼TW-103.229.124.3-5056
+  name: 17|🇹🇼TW-103.61.139.137-5418
   network: ws
   port: 20521
-  server: 103.229.124.3
+  server: 103.61.139.137
   servername: ''
   tls: false
   type: vmess
-  uuid: 292e9c90-25b3-4ff5-b98a-9ef5877714ab
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-opts:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '17|[🇬🇧]t.me/ConfigsHub #2'
-  network: ws
-  port: '443'
-  server: 57.128.189.222
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: '17|[🇫🇷]t.me/ConfigsHub #1'
@@ -1002,110 +846,20 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇮🇳'
-  network: tcp
-  port: '10534'
-  server: 94.136.185.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- alterId: 0
-  cipher: auto
-  name: 17|0|--32
-  network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: f.khilei.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|0|-https://t.me/MrXbin-97
-  network: ws
-  port: 443
-  server: 146.59.55.50
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇩🇪DE-57.129.28.63-0926
-  network: ws
-  port: 443
-  server: 57.129.28.63
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-8.210.140.23-4901
-  network: ws
-  port: 54809
-  server: 8.210.140.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
 - alterId: 1
   cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
-  network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: seribus.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|🇩🇪DE-57.129.25.20-1271
+  name: 17|🏁RELAY-172.67.222.233-1861
   network: ws
   port: 443
-  server: 57.129.25.20
+  server: yichueng.org
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 57.129.25.20
+      Host: yichueng.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|@V2ray1_Ng
-  network: tcp
-  port: '41100'
-  server: 15.204.234.200
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
 - alterId: 0
   cipher: auto
   name: 17|🇸🇬SG-202.79.161.192-0822
@@ -1122,18 +876,118 @@ proxies:
     path: path/170733132233
 - alterId: 0
   cipher: auto
-  name: 17|🇨🇦CA-15.235.83.228-4945
+  name: 17|[🇬🇧]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 57.128.189.143
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇹🇼TW-103.229.124.3-5056
+  network: ws
+  port: 20521
+  server: 103.229.124.3
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 292e9c90-25b3-4ff5-b98a-9ef5877714ab
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇮🇳'
+  network: tcp
+  port: '10534'
+  server: 94.136.185.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- alterId: 1
+  cipher: auto
+  name: 17|🏁RELAY-104.21.15.186-1220
   network: ws
   port: 443
-  server: 15.235.83.228
+  server: serkat.org
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|[🏁]t.me/ConfigsHub
+  network: ws
+  port: '20521'
+  server: 140.235.38.89
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c65ef645-2172-44d1-909f-cb30a40bca1c
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '17|[🇬🇧]t.me/ConfigsHub #1'
+  network: ws
+  port: '443'
+  server: 57.128.189.222
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|0|--30
+  network: ws
+  port: 443
+  server: 38.99.82.193
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: tilebani.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇬🇧'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
   name: 17|0|--38
@@ -1148,6 +1002,117 @@ proxies:
     headers:
       Host: mankadmu.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|0|--32
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: f.khilei.com
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 17|🪝ConfigV2RayNG
+  network: ws
+  port: '443'
+  server: masjide.org
+  servername: masjide.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: masjide.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰HK-47.83.18.10-5029
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|[🇬🇧]t.me/ConfigsHub #2'
+  network: ws
+  port: '443'
+  server: 57.128.189.253
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇻🇳VN-161.248.30.3-5234
+  network: ws
+  port: 20086
+  server: 161.248.30.3
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '17|法国 国际航空电讯集团公司(SITA) #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇩🇪DE-57.129.28.213-0918
+  network: ws
+  port: 443
+  server: 57.129.28.213
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -1159,100 +1124,100 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 17|🇹🇼TW-103.229.124.3-5056
-  - 17|🇨🇦CA-15.235.50.172-1645
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 17|🇺🇸US-154.9.254.63-4971
-  - 12|🇭🇰 香港7|@ripaojiedian
-  - '17|Channel id: @ShadowProxy66🇮🇳'
-  - 13|香港3|@ripaojiedian
-  - 17|🏁RELAY-104.21.95.147-1221
-  - '17|Channel id: @ShadowProxy66🇩🇪'
-  - 12|🇭🇰 香港10|@ripaojiedian
-  - '10|美国 #45'
-  - 17|美国 CloudFlare节点
-  - 12,13|美国4|@ripaojiedian
-  - '17|[🇩🇪]t.me/ConfigsHub #1'
-  - 17|[🏁]t.me/ConfigsHub
-  - '0,1,2|_GB_ #1'
-  - 13|日本v2|@ripaojiedian
-  - 17|🇭🇰HK-219.79.187.188-5056
-  - 13|香港7|@ripaojiedian
-  - 17|0|--32
-  - 12,13|新加坡|@ripaojiedian
-  - '17|[🏁]t.me/ConfigsHub #1'
-  - 17|[🇨🇦]t.me/ConfigsHub
-  - 17|法国 国际航空电讯集团公司(SITA)
-  - '17|法国 国际航空电讯集团公司(SITA) #1'
-  - 1|🇨🇳_CN_中国->🇺🇸_US_美国
-  - 12,13|香港4|@ripaojiedian
-  - 17|🇸🇬SG-202.79.161.188-0996
-  - '10|美国 #43'
-  - '17|美国 CloudFlare节点 #1'
-  - 17|🇭🇰HK-47.239.233.101-5270
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 12,13|新加坡2|@ripaojiedian
-  - 17|🇩🇪DE-57.129.25.20-1271
-  - 17|[🇬🇧]t.me/ConfigsHub
-  - 17|0|--38
-  - '0,1,2|未命名 #1'
-  - 17|0|-https://t.me/MrXbin-97
-  - 17|0|--26
-  - 17|美国 v2rayfree.eu.org
-  - 13|香港10|@ripaojiedian
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 0,2,14|SK_speednode_0026
-  - 17|🇩🇪DE-57.129.28.213-0918
-  - 12,13|日本3|@ripaojiedian
-  - 17|🇩🇪DE-57.129.28.63-0926
-  - '17|[🇬🇧]t.me/ConfigsHub #1'
-  - 0,1,2,14|US_speednode_0030
-  - 12|🇭🇰 香港9|@ripaojiedian
-  - 17|[🇫🇷]t.me/ConfigsHub
-  - 17|🇹🇼TW-103.61.139.137-5418
-  - 12,13|香港6|@ripaojiedian
-  - 17|🪝ConfigV2RayNG
-  - 17|[🇩🇪]t.me/ConfigsHub
-  - 12|🇭🇰 香港8|@ripaojiedian
-  - 12|🇭🇰 香港3|@ripaojiedian
-  - 17|0|--30
-  - 10,17|🏁RELAY-104.21.1.252-1209
-  - 13|香港9|@ripaojiedian
-  - '17|Channel id: @ShadowProxy66🇺🇸'
-  - 17|🇭🇰HK-47.239.204.193-1025
-  - 12,13|香港|@ripaojiedian
-  - '0,1,2|_GB__2 #1'
-  - '10|美国 #44'
-  - 17|🇩🇪DE-57.129.28.216-0916
-  - 12,13|新加坡3|@ripaojiedian
-  - 12,13|日本4|@ripaojiedian
-  - 13|香港v2|@ripaojiedian
-  - 17|🏁RELAY-172.67.222.233-1861
-  - 12|🇺🇸 美国2|@ripaojiedian
+  - 13,14|香港|@ripaojiedian
+  - 13,14|新加坡2|@ripaojiedian
+  - 14|香港8|@ripaojiedian
   - '17|Channel id: @ShadowProxy66🇩🇪 #1'
-  - 17|🇸🇬SG-202.79.161.192-0822
-  - 12,13|美国3|@ripaojiedian
-  - 17|🇭🇰HK-47.239.117.202-5348
+  - 17|美国 CloudFlare节点
+  - 17|🇸🇬SG-202.79.161.188-0996
+  - 17|🇭🇰HK-47.239.204.193-1025
+  - '17|Channel id: @ShadowProxy66🇺🇸'
   - 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  - '17|[🇫🇷]t.me/ConfigsHub #1'
+  - 17|[🇩🇪]t.me/ConfigsHub
+  - 17|🇩🇪DE-57.129.28.63-0926
+  - 14|日本v2|@ripaojiedian
+  - 17|0|-https://t.me/MrXbin-97
+  - 1,2,3,15|US_speednode_0030
+  - 17|🏁RELAY-104.21.95.147-1221
+  - 14|香港5|@ripaojiedian
+  - 13,14|日本4|@ripaojiedian
+  - 17|🪝ConfigV2RayNG
+  - '1,2,3|未命名 #1'
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 17|美国 v2rayfree.eu.org
+  - 13|🇯🇵 日本|@ripaojiedian
+  - 11|美国_7
+  - '1,2,3|_GB_ #1'
+  - 17|🇭🇰HK-47.239.233.101-5270
+  - 17|[🇨🇦]t.me/ConfigsHub
+  - 13|🇭🇰 香港10|@ripaojiedian
+  - 1,3,15|SK_speednode_0026
+  - 14|香港3|@ripaojiedian
+  - 13|🇭🇰 香港8|@ripaojiedian
   - 17|@V2ray1_Ng
-  - 13|香港5|@ripaojiedian
-  - 17|🇭🇰HK-8.210.140.23-4901
-  - '0,2|_CN_->_US_ #1'
-  - 17|🇭🇰HK-47.83.18.10-5029
-  - 17|🇨🇦CA-15.235.83.228-4945
-  - 17|🇻🇳VN-161.248.30.3-5234
-  - 13|香港8|@ripaojiedian
-  - 12|🇭🇰 香港2|@ripaojiedian
-  - '0,1,2|_SE_ #1'
-  - 17|0|--86
-  - 14|NO_speednode_0023
+  - 13,14|香港4|@ripaojiedian
+  - 17|🇩🇪DE-57.129.28.216-0916
   - '17|[🇬🇧]t.me/ConfigsHub #2'
+  - 17|🏁RELAY-172.67.222.233-1861
+  - 13|🇭🇰 香港9|@ripaojiedian
+  - 17|[🇫🇷]t.me/ConfigsHub
+  - 17|[🇬🇧]t.me/ConfigsHub
+  - 17|0|--32
+  - 17|0|--30
+  - 13|🇭🇰 香港7|@ripaojiedian
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 17|0|--38
+  - 17|🇹🇼TW-103.61.139.137-5418
+  - '1,2,3|_AT_->_CN_ #1'
+  - 17|🇩🇪DE-57.129.28.213-0918
+  - '1,2,3|_GB__2 #1'
+  - 17|🇭🇰HK-47.83.18.10-5029
+  - '17|Channel id: @ShadowProxy66🇮🇳'
+  - 13|🇯🇵 日本2|@ripaojiedian
+  - 17|🇹🇼TW-103.229.124.3-5056
   - '17|Channel id: @ShadowProxy66 🇬🇧'
+  - 17|🇨🇦CA-15.235.50.172-1645
+  - 11|美国_44
   - 17|🏁RELAY-104.21.15.186-1220
-  - '0,1,2|_AT_->_CN_ #1'
-  - '10|美国 #28'
+  - 13,14|新加坡3|@ripaojiedian
+  - 17|🇨🇦CA-15.235.83.228-4945
+  - '17|[🇫🇷]t.me/ConfigsHub #1'
+  - 11,17|🏁RELAY-104.21.1.252-1209
+  - '1,3|_CN_->_US_ #1'
+  - 11|英国
+  - 17|[🏁]t.me/ConfigsHub
+  - 11|美国_1
+  - 11|美国_46
+  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
+  - 17|🇩🇪DE-57.129.25.20-1271
+  - 17|法国 国际航空电讯集团公司(SITA)
+  - 11|美国_45
+  - 14|香港v2|@ripaojiedian
+  - 13,14|日本3|@ripaojiedian
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 17|🇺🇸US-154.9.254.63-4971
+  - 13,14|美国4|@ripaojiedian
+  - 13,14|香港6|@ripaojiedian
+  - 14|香港10|@ripaojiedian
+  - '17|美国 CloudFlare节点 #1'
+  - 15|NO_speednode_0023
+  - '1,2,3|_SE_ #1'
+  - 11|美国_42
+  - 14|香港7|@ripaojiedian
+  - 11|美国_29
+  - 17|🇻🇳VN-161.248.30.3-5234
+  - 17|0|--86
+  - 14|香港9|@ripaojiedian
   - '17|Channel id: @ShadowProxy66 🇺🇸'
+  - '17|[🇬🇧]t.me/ConfigsHub #1'
+  - '17|法国 国际航空电讯集团公司(SITA) #1'
+  - '17|[🇩🇪]t.me/ConfigsHub #1'
+  - 17|0|--26
+  - 13,14|新加坡|@ripaojiedian
+  - 17|🇸🇬SG-202.79.161.192-0822
+  - 13,14|美国3|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian
+  - '17|Channel id: @ShadowProxy66🇩🇪'
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1308,29 +1273,32 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 12|🇯🇵 日本|@ripaojiedian
-  - 12,13|日本3|@ripaojiedian
-  - 12|🇯🇵 日本2|@ripaojiedian
-  - 12,13|日本4|@ripaojiedian
-  - 13|日本v2|@ripaojiedian
+  - 13|🇯🇵 日本|@ripaojiedian
+  - 13,14|日本3|@ripaojiedian
+  - 13|🇯🇵 日本2|@ripaojiedian
+  - 13,14|日本4|@ripaojiedian
+  - 14|日本v2|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 0,1,2,14|US_speednode_0030
-  - '10|美国 #28'
-  - '10|美国 #43'
-  - '10|美国 #44'
-  - '10|美国 #45'
-  - 12|🇺🇸 美国2|@ripaojiedian
-  - 12,13|美国3|@ripaojiedian
-  - 12,13|美国4|@ripaojiedian
+  - 1,2,3,15|US_speednode_0030
+  - 11|美国_1
+  - 11|美国_7
+  - 11|美国_29
+  - 11|美国_42
+  - 11|美国_44
+  - 11|美国_45
+  - 11|美国_46
+  - 13|🇺🇸 美国2|@ripaojiedian
+  - 13,14|美国3|@ripaojiedian
+  - 13,14|美国4|@ripaojiedian
   - 17|🇺🇸US-154.9.254.63-4971
-  - '17|Channel id: @ShadowProxy66 🇺🇸'
-  - '17|Channel id: @ShadowProxy66🇺🇸'
-  - 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  - 17|美国 CloudFlare节点
   - 17|美国 v2rayfree.eu.org
+  - 17|美国 CloudFlare节点
+  - 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  - '17|Channel id: @ShadowProxy66🇺🇸'
   - '17|美国 CloudFlare节点 #1'
+  - '17|Channel id: @ShadowProxy66 🇺🇸'
   type: select
 - name: 🇨🇳 中国
   proxies:
@@ -1338,29 +1306,26 @@ proxy-groups:
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 12,13|香港|@ripaojiedian
-  - 12|🇭🇰 香港2|@ripaojiedian
-  - 12|🇭🇰 香港3|@ripaojiedian
-  - 12,13|香港4|@ripaojiedian
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 12,13|香港6|@ripaojiedian
-  - 12|🇭🇰 香港7|@ripaojiedian
-  - 12|🇭🇰 香港8|@ripaojiedian
-  - 12|🇭🇰 香港9|@ripaojiedian
-  - 12|🇭🇰 香港10|@ripaojiedian
-  - 13|香港3|@ripaojiedian
-  - 13|香港5|@ripaojiedian
-  - 13|香港7|@ripaojiedian
-  - 13|香港8|@ripaojiedian
-  - 13|香港9|@ripaojiedian
-  - 13|香港10|@ripaojiedian
-  - 13|香港v2|@ripaojiedian
-  - 17|🇭🇰HK-47.239.233.101-5270
-  - 17|🇭🇰HK-47.239.117.202-5348
-  - 17|🇭🇰HK-47.83.18.10-5029
-  - 17|🇭🇰HK-219.79.187.188-5056
+  - 13,14|香港|@ripaojiedian
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 13,14|香港4|@ripaojiedian
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 13,14|香港6|@ripaojiedian
+  - 13|🇭🇰 香港7|@ripaojiedian
+  - 13|🇭🇰 香港8|@ripaojiedian
+  - 13|🇭🇰 香港9|@ripaojiedian
+  - 13|🇭🇰 香港10|@ripaojiedian
+  - 14|香港3|@ripaojiedian
+  - 14|香港5|@ripaojiedian
+  - 14|香港7|@ripaojiedian
+  - 14|香港8|@ripaojiedian
+  - 14|香港9|@ripaojiedian
+  - 14|香港10|@ripaojiedian
+  - 14|香港v2|@ripaojiedian
   - 17|🇭🇰HK-47.239.204.193-1025
-  - 17|🇭🇰HK-8.210.140.23-4901
+  - 17|🇭🇰HK-47.239.233.101-5270
+  - 17|🇭🇰HK-47.83.18.10-5029
   type: select
 - name: ❔ 台湾
   proxies:
@@ -1375,27 +1340,28 @@ proxy-groups:
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - 10,17|🏁RELAY-104.21.1.252-1209
-  - 17|法国 国际航空电讯集团公司(SITA)
+  - 11,17|🏁RELAY-104.21.1.252-1209
   - 17|[🇫🇷]t.me/ConfigsHub
-  - '17|法国 国际航空电讯集团公司(SITA) #1'
+  - 17|法国 国际航空电讯集团公司(SITA)
   - '17|[🇫🇷]t.me/ConfigsHub #1'
+  - '17|法国 国际航空电讯集团公司(SITA) #1'
   type: select
 - name: 🇸🇬 新加坡
   proxies:
-  - 12,13|新加坡|@ripaojiedian
-  - 12,13|新加坡2|@ripaojiedian
-  - 12,13|新加坡3|@ripaojiedian
+  - 13,14|新加坡|@ripaojiedian
+  - 13,14|新加坡2|@ripaojiedian
+  - 13,14|新加坡3|@ripaojiedian
   - 17|🇸🇬SG-202.79.161.188-0996
   - 17|🇸🇬SG-202.79.161.192-0822
   type: select
 - name: 🇬🇧 英国
   proxies:
-  - '0,1,2|_GB_ #1'
-  - '0,1,2|_GB__2 #1'
-  - '17|Channel id: @ShadowProxy66 🇬🇧'
+  - '1,2,3|_GB_ #1'
+  - '1,2,3|_GB__2 #1'
+  - 11|英国
   - 17|[🇬🇧]t.me/ConfigsHub
   - '17|[🇬🇧]t.me/ConfigsHub #1'
+  - '17|Channel id: @ShadowProxy66 🇬🇧'
   - '17|[🇬🇧]t.me/ConfigsHub #2'
   type: select
 - name: 🇰🇷 韩国
@@ -1409,13 +1375,13 @@ proxy-groups:
 - name: 🇩🇪 德国
   proxies:
   - 17|[🇩🇪]t.me/ConfigsHub
-  - '17|Channel id: @ShadowProxy66🇩🇪'
   - '17|[🇩🇪]t.me/ConfigsHub #1'
-  - '17|Channel id: @ShadowProxy66🇩🇪 #1'
-  - 17|🇩🇪DE-57.129.28.216-0916
-  - 17|🇩🇪DE-57.129.28.213-0918
-  - 17|🇩🇪DE-57.129.28.63-0926
   - 17|🇩🇪DE-57.129.25.20-1271
+  - 17|🇩🇪DE-57.129.28.216-0916
+  - 17|🇩🇪DE-57.129.28.63-0926
+  - '17|Channel id: @ShadowProxy66🇩🇪'
+  - '17|Channel id: @ShadowProxy66🇩🇪 #1'
+  - 17|🇩🇪DE-57.129.28.213-0918
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站

@@ -1,16 +1,28 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0,1,2,14|US_speednode_0030
+  name: 1,2,3,15|US_speednode_0030
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_1
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_7
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '10|美国 #28'
+  name: 11|美国_29
   network: ws
-  port: '443'
+  port: 443
   server: DdDDdddddDFrrrrrrRRy.IRan2035.dPDns.ORG
   servername: ddddddddddfrrrrrrrry.iran2035.dpdns.org
   tls: true
@@ -20,39 +32,42 @@ proxies:
     headers:
       Host: ddddddddddfrrrrrrrry.iran2035.dpdns.org
     path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_42
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
 - alterId: 64
   cipher: auto
-  name: '10|美国 #43'
+  name: 11|美国_44
   network: tcp
-  port: '34141'
+  port: 34141
   server: 183.240.180.3
   servername: ''
-  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '10|美国 #44'
+  name: 11|美国_45
   network: tcp
-  port: '47093'
+  port: 47093
   server: tunnel.gzcloud.shop
   servername: ''
-  tls: false
   type: vmess
   uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
 - alterId: 64
   cipher: auto
-  name: '10|美国 #45'
+  name: 11|美国_46
   network: tcp
-  port: '39595'
+  port: 39595
   server: 183.240.245.251
   servername: ''
-  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -63,7 +78,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 12,13|美国3|@ripaojiedian
+  name: 13,14|美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3294
@@ -72,7 +87,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: 12,13|美国4|@ripaojiedian
+  name: 13,14|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
@@ -96,38 +111,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇺🇸'
-  network: tcp
-  port: '29800'
-  server: 103.124.107.144
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  name: 17|美国 v2rayfree.eu.org
   network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
+  port: 443
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: lammaland.org
-    path: linkvws
+      Host: ''
+    path: /linkvws
 - alterId: 1
   cipher: auto
   name: 17|美国 CloudFlare节点
@@ -142,19 +136,30 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 17|美国 v2rayfree.eu.org
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
   network: ws
-  port: 443
-  server: 23.162.200.227
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /linkvws
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 1
   cipher: auto
   name: '17|美国 CloudFlare节点 #1'
@@ -169,3 +174,13 @@ proxies:
     headers:
       Host: seribus.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
