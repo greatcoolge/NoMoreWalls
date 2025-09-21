@@ -1,23 +1,26 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1,2,3,15|US_speednode_0030
+  name: '1,2,3|_US_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
-  udp: true
-- name: '1,2,3|_US__1 #1'
+- name: 1,2,3,15|US_speednode_0020
   network: tcp
   password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
   port: 443
   server: mintaka.appagent.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__2 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0015
   network: tcp
   password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
   port: 18333
   server: kasheet.appagent.net
+  skip-cert-verify: false
   type: trojan
+  udp: true
 - name: 1,3|_US__3
   network: ws
   port: 80
@@ -27,48 +30,62 @@ proxies:
   uuid: 400e64e9-50bd-4d98-acab-10bb07436c05
   ws-opts:
     path: /kvvuuws
-- name: '1,2,3|_US__4 #1'
+- name: 1,2,3,15|US_speednode_0016
   network: tcp
   password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
   port: 28334
   server: sirens.isquirrel.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__5 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0021
   network: tcp
   password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
   port: 28331
   server: hanger.appagent.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__6 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0014
   network: tcp
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
   port: 18332
   server: blength.appagent.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__7 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0013
   network: tcp
   password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
   port: 443
   server: toaster.isquirrel.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__8 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0017
   network: tcp
   password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
   port: 28331
   server: seginus.appagent.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__9 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0019
   network: tcp
   password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
   port: 28333
   server: connect.appagent.net
+  skip-cert-verify: false
   type: trojan
-- name: '1,2,3|_US__10 #1'
+  udp: true
+- name: 1,2,3,15|US_speednode_0018
   network: tcp
   password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
   port: 443
   server: delight.appagent.net
+  skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: '2,3|_US__11 #1'
   password: f8f7aCzcPKbsF8p3
@@ -483,35 +500,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 15|US_speednode_0027
-  network: ws
-  port: 80
-  server: 104.18.109.147
-  servername: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: c29d39bd-92a4-45db-bb61-56013998617c
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-    path: /Telegram-XV2ry2?ed=2048
-- name: 15|US_speednode_0035
-  network: ws
-  packet-encoding: xudp
-  port: 2082
-  server: 159.112.235.174
-  servername: workerr.schodog1.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
-  ws-opts:
-    headers:
-      Host: workerr.schodog1.workers.dev
-    path: /?ed=2048
 - http-opts:
     headers:
       Host:
@@ -519,7 +507,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 15|US_speednode_0040
+  name: 15|US_speednode_0022
   network: http
   port: 33801
   server: m44a.vip784.com
@@ -529,64 +517,43 @@ proxies:
   type: vless
   udp: true
   uuid: 39c8e0d3-c932-4ff7-b3e3-83002647907b
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 15|US_speednode_0041
-  port: 443
+- client-fingerprint: firefox
+  name: 15|US_speednode_0023
+  port: 10001
   reality-opts:
-    public-key: Xd2u-uX0dhiJrB_ESaDSoQBmT6Jv1tEmqn3inOiYFDg
-    short-id: 207a3de5
-  server: 146.235.193.81
-  servername: iosapps.itunes.apple.com
+    public-key: 1ltSdo2K6D9EEwebaDQPCb5ypbURcXyO9HsX4RUbbUo
+    short-id: 1a24af87
+  server: 172.233.153.209
+  servername: yahoo.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 747c62da-109f-4add-8e67-c66e1af7d255
-- name: 15|US_speednode_0044
-  network: ws
-  port: 8080
-  server: cafearz.com
-  servername: shad.ir.de.test.digicyber.click.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 5218f249-128d-40bf-d9b9-64004622b502
-  ws-opts:
-    headers:
-      Host: shad.ir.de.test.digicyber.click.
-    path: /olem/ws?ed=1024
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 15|US_speednode_0045
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: 2020.dnss-mobile.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20d98fd8-b472-4574-eeae-b1ecc9082eb9
-  ws-opts:
-    headers:
-      Host: 2020.dnss-mobile.ir
-    path: /
+  uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
 - alterId: 0
   cipher: auto
-  name: 17|北美地区 v2rayfree.eu.org
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 1
+  cipher: auto
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
   network: ws
-  port: 443
-  server: 134.195.198.147
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: inna.cfd
-    path: /linkvws
+      Host: lammaland.org
+    path: linkvws
 - alterId: 1
   cipher: auto
   name: 17|美国 CloudFlare节点
@@ -601,57 +568,6 @@ proxies:
     headers:
       Host: seribus.org
     path: linkvws
-- alterId: 32
-  cipher: auto
-  name: 17|🇺🇸US-77.83.141.171-1131
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-154.9.254.63-4971
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 17|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 1
   cipher: auto
   name: '17|美国 CloudFlare节点 #1'
@@ -668,6 +584,33 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
+  name: 17|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-154.9.254.63-4971
+  network: ws
+  port: 20521
+  server: 154.9.254.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: '17|Channel id: @ShadowProxy66 🇺🇸'
   network: tcp
   port: '29800'
@@ -676,17 +619,30 @@ proxies:
   tls: false
   type: vmess
   uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
-- alterId: 1
+- alterId: 32
   cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  name: 17|🇺🇸US-77.83.141.171-1131
   network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 17|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: lammaland.org
-    path: linkvws
+      Host: ''
+    path: /linkvws
