@@ -21,7 +21,7 @@ proxies:
   port: 989
   server: 51.15.17.169
   type: ss
-- name: 15|GB_speednode_0012
+- name: 15|GB_speednode_0010
   network: ws
   port: 9931
   server: 132.145.65.20
@@ -34,24 +34,10 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
 - alterId: 0
   cipher: auto
   name: 17|[🇬🇧]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 57.128.189.222
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|[🇬🇧]t.me/ConfigsHub #1'
   network: ws
   port: '443'
   server: 57.128.189.253
@@ -63,6 +49,20 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|[🇬🇧]t.me/ConfigsHub #1'
+  network: ws
+  port: '443'
+  server: 57.128.189.143
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: '17|Channel id: @ShadowProxy66 🇬🇧'
@@ -78,7 +78,7 @@ proxies:
   name: '17|[🇬🇧]t.me/ConfigsHub #2'
   network: ws
   port: '443'
-  server: 57.128.189.143
+  server: 57.128.189.222
   servername: lammaland.org
   tls: true
   type: vmess
