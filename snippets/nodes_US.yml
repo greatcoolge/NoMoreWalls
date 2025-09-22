@@ -1,18 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '1,2,3|_US_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- name: 1,2,3,15|US_speednode_0020
-  network: tcp
-  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
-  port: 443
-  server: mintaka.appagent.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 1,2,3,15|US_speednode_0015
   network: tcp
   password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
@@ -21,6 +7,12 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
+- name: '1,2,3|_US__1 #1'
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 15.204.248.103
+  sni: rs3.freeguard.org
+  type: trojan
 - name: 1,2,3,15|US_speednode_0016
   network: tcp
   password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
@@ -29,14 +21,12 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,2,3,15|US_speednode_0021
+- name: '1,2,3|_US__3 #1'
   network: tcp
-  password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
-  port: 28331
-  server: hanger.appagent.net
-  skip-cert-verify: false
+  password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0
+  port: 28334
+  server: pricey.appagent.net
   type: trojan
-  udp: true
 - name: 1,2,3,15|US_speednode_0014
   network: tcp
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
@@ -45,22 +35,18 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,2,3,15|US_speednode_0013
+- cipher: aes-256-cfb
+  name: '1,3|_US__5 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- name: '1,2,3|_US__6 #1'
   network: tcp
-  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
-  port: 443
-  server: toaster.isquirrel.net
-  skip-cert-verify: false
+  password: OaFFcTDe9pSlez6x3SY8AARXwClzCRRDwSN8F3OqZAEYC0SE6F8gp3wCTCSTDYllcNceagCDD2C59S3
+  port: 28332
+  server: bolster.appagent.net
   type: trojan
-  udp: true
-- name: 1,2,3,15|US_speednode_0017
-  network: tcp
-  password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
-  port: 28331
-  server: seginus.appagent.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 1,2,3,15|US_speednode_0019
   network: tcp
   password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
@@ -69,86 +55,122 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,2,3,15|US_speednode_0018
-  network: tcp
-  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
-  port: 443
-  server: delight.appagent.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: '2,3|_US__11 #1'
+  name: '1,2,3|_US__8 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.165.233.93
+  server: 104.192.226.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 11|美国_1
-  password: Nk9asglDzHzjktVzTkvhaA
+- name: '1,2,3|_US__9 #1'
+  network: tcp
+  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
   port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 11|美国_7
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
+  server: metallic.isquirrel.net
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 11|美国_29
+  name: 11|🇺🇸_US_美国_1
   network: ws
-  port: 443
-  server: DdDDdddddDFrrrrrrRRy.IRan2035.dPDns.ORG
-  servername: ddddddddddfrrrrrrrry.iran2035.dpdns.org
-  tls: true
+  port: 2086
+  server: 104.26.5.103
+  skipCertVerify: true
+  sni: ''
   type: vmess
-  uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0
-  ws-opts:
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
     headers:
-      Host: ddddddddddfrrrrrrrry.iran2035.dpdns.org
-    path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: 11|美国_42
-  password: p78naCf2EfOlRSLTX0wFVx
+  name: 11|🇺🇸_US_美国_3
+  password: lWaGPVFjmnag
   port: 443
-  server: pupas-shirting-unsung.freesocks.work
+  server: 205.134.180.139
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 11|美国_44
-  network: tcp
-  port: 34141
-  server: 183.240.180.3
-  servername: ''
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 11|美国_45
-  network: tcp
-  port: 47093
-  server: tunnel.gzcloud.shop
-  servername: ''
+  name: 11|🇺🇸_US_美国_5
+  network: ws
+  port: 2086
+  server: 104.19.57.4
+  skipCertVerify: true
+  sni: ''
   type: vmess
-  uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
-- alterId: 64
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
   cipher: auto
-  name: 11|美国_46
-  network: tcp
-  port: 39595
-  server: 183.240.245.251
-  servername: ''
+  name: 11|🇺🇸_US_美国_10
+  network: ws
+  port: 2086
+  server: 172.64.175.213
+  skipCertVerify: true
+  sni: ''
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|🇺🇸_US_美国_11
+  network: ws
+  port: 2086
+  server: 104.26.12.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|🇺🇸_US_美国_13
+  network: ws
+  port: 2086
+  server: 104.26.5.145
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|🇺🇸_US_美国_19
+  network: ws
+  port: 2086
+  server: 104.26.13.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-ZEnxwmeIFT.download.microsoft.com
+    host: 202509121565513-Aja8hFXVWh.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -158,8 +180,8 @@ proxies:
   name: 13,14|美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3294
-  server: 153.121.73.102
+  port: 1700
+  server: 153.121.45.139
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -167,11 +189,46 @@ proxies:
   name: 13,14|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3296
-  server: 153.121.73.102
+  port: 3294
+  server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 15|US_speednode_0013
+  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
+  port: 443
+  server: toaster.isquirrel.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0017
+  password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
+  port: 28331
+  server: seginus.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0018
+  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
+  port: 443
+  server: delight.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0020
+  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
+  port: 443
+  server: mintaka.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0021
+  password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
+  port: 28331
+  server: hanger.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 17|美国 v2rayfree.eu.org
@@ -184,6 +241,43 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  network: ws
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 17|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -199,57 +293,9 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇺🇸'
-  network: tcp
-  port: '29800'
-  server: 103.124.107.144
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
 - alterId: 1
   cipher: auto
   name: 17|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: seribus.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
   network: ws
   port: '443'
   server: fapeng.org
@@ -260,4 +306,28 @@ proxies:
   ws-opts:
     headers:
       Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+- alterId: 1
+  cipher: auto
+  name: '17|美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: seribus.org
+  servername: seribus.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: seribus.org
     path: linkvws

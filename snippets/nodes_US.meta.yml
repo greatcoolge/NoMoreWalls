@@ -1,18 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '1,2,3|_US_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- name: 1,2,3,15|US_speednode_0020
-  network: tcp
-  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
-  port: 443
-  server: mintaka.appagent.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 1,2,3,15|US_speednode_0015
   network: tcp
   password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
@@ -21,15 +7,12 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,3|_US__3
-  network: ws
-  port: 80
-  server: 51.89.230.204
-  tls: false
-  type: vless
-  uuid: 400e64e9-50bd-4d98-acab-10bb07436c05
-  ws-opts:
-    path: /kvvuuws
+- name: '1,2,3|_US__1 #1'
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 15.204.248.103
+  sni: rs3.freeguard.org
+  type: trojan
 - name: 1,2,3,15|US_speednode_0016
   network: tcp
   password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
@@ -38,14 +21,12 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,2,3,15|US_speednode_0021
+- name: '1,2,3|_US__3 #1'
   network: tcp
-  password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
-  port: 28331
-  server: hanger.appagent.net
-  skip-cert-verify: false
+  password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0
+  port: 28334
+  server: pricey.appagent.net
   type: trojan
-  udp: true
 - name: 1,2,3,15|US_speednode_0014
   network: tcp
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
@@ -54,22 +35,18 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,2,3,15|US_speednode_0013
+- cipher: aes-256-cfb
+  name: '1,3|_US__5 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- name: '1,2,3|_US__6 #1'
   network: tcp
-  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
-  port: 443
-  server: toaster.isquirrel.net
-  skip-cert-verify: false
+  password: OaFFcTDe9pSlez6x3SY8AARXwClzCRRDwSN8F3OqZAEYC0SE6F8gp3wCTCSTDYllcNceagCDD2C59S3
+  port: 28332
+  server: bolster.appagent.net
   type: trojan
-  udp: true
-- name: 1,2,3,15|US_speednode_0017
-  network: tcp
-  password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
-  port: 28331
-  server: seginus.appagent.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 1,2,3,15|US_speednode_0019
   network: tcp
   password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
@@ -78,405 +55,122 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 1,2,3,15|US_speednode_0018
-  network: tcp
-  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
-  port: 443
-  server: delight.appagent.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: '2,3|_US__11 #1'
+  name: '1,2,3|_US__8 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.165.233.93
+  server: 104.192.226.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 11|美国_1
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-- encryption: none
-  name: 11|美国_2
-  network: ws
-  port: 80
-  server: informed-location.seotoolsforyou.co.uk
-  servername: informed-location.seotoolsforyou.co.uk
-  type: vless
-  uuid: 5c929ec5-5b1e-447a-950c-354c5d1ba1de
-  ws-opts:
-    headers:
-      Host: informed-location.seotoolsforyou.co.uk
-    path: /
-- encryption: none
-  name: 11|美国_3
+- name: '1,2,3|_US__9 #1'
   network: tcp
-  port: 29495
-  server: 89.44.242.222
-  type: vless
-  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
-- encryption: none
-  name: 11|美国_4
-  network: tcp
-  port: 46822
-  server: 89.44.242.222
-  type: vless
-  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
-- cipher: chacha20-ietf-poly1305
-  name: 11|美国_7
-  password: 9tqhMdIrTkgQ46PvhyAtMH
+  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
   port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-- encryption: none
-  name: 11|美国_8
-  network: ws
-  port: 443
-  server: backus1.dh03.shop
-  servername: backus1.dh03.shop
-  tls: true
-  type: vless
-  uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  ws-opts:
-    headers:
-      Host: backus1.dh03.shop
-    path: /higate
-- encryption: none
-  name: 11|美国_9
-  network: ws
-  port: 80
-  server: fierce-data.seotoolsforyou.co.uk
-  type: vless
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  ws-opts:
-    path: /?@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn----@Nethers_vpn
-- encryption: none
-  name: 11|美国_10
-  network: ws
-  port: 80
-  server: famous-danger.oneeat.co
-  type: vless
-  uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
-  ws-opts:
-    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
-- encryption: none
-  name: 11|美国_11
-  network: ws
-  port: 80
-  server: handsome-device.oneeat.co
-  type: vless
-  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
-  ws-opts:
-    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
-- encryption: none
-  name: 11|美国_12
-  network: ws
-  port: 80
-  server: famous-danger.oneeat.co
-  type: vless
-  uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_13
-  network: ws
-  port: 80
-  server: crazy-identity.oneeat.co
-  type: vless
-  uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_14
-  network: ws
-  port: 80
-  server: crazy-identity.oneeat.co
-  servername: crazy-identity.oneeat.co
-  type: vless
-  uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
-  ws-opts:
-    headers:
-      Host: crazy-identity.oneeat.co
-    path: /
-- encryption: none
-  name: 11|美国_17
-  network: ws
-  port: 80
-  server: light-presence.oneeat.co
-  servername: light-presence.oneeat.co
-  type: vless
-  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_16
-  network: ws
-  port: 80
-  server: sweet-combination.seotoolsforyou.co.uk
-  type: vless
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_18
-  network: ws
-  port: 80
-  server: handsome-device.oneeat.co
-  type: vless
-  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_19
-  network: ws
-  port: 80
-  server: light-presence.oneeat.co
-  servername: light-presence.oneeat.co
-  type: vless
-  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
-  ws-opts:
-    headers:
-      Host: light-presence.oneeat.co
-    path: /
-- encryption: none
-  name: 11|美国_20
-  network: ws
-  port: 80
-  server: sweet-combination.seotoolsforyou.co.uk
-  servername: sweet-combination.seotoolsforyou.co.uk
-  type: vless
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  ws-opts:
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-    path: /
-- encryption: none
-  name: 11|美国_21
-  network: ws
-  port: 80
-  server: narrow-passenger.oneeat.co
-  type: vless
-  uuid: 5a12794b-2125-46d7-a748-927a989faa04
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_22
-  network: ws
-  port: 80
-  server: informed-location.seotoolsforyou.co.uk
-  type: vless
-  uuid: 5c929ec5-5b1e-447a-950c-354c5d1ba1de
-  ws-opts:
-    path: /?Join---MARAMBASHI---Join---MARAMBASHI?ed=2560
-- encryption: none
-  name: 11|美国_23
-  network: ws
-  port: 80
-  server: informed-location.seotoolsforyou.co.uk
-  type: vless
-  uuid: 5c929ec5-5b1e-447a-950c-354c5d1ba1de
-  ws-opts:
-    path: /??ed/---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net/
-- encryption: none
-  name: 11|美国_24
-  network: ws
-  port: 80
-  server: light-presence.oneeat.co
-  type: vless
-  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
-  ws-opts:
-    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
-- encryption: none
-  name: 11|美国_25
-  network: ws
-  port: 80
-  server: fierce-data.seotoolsforyou.co.uk
-  servername: fierce-data.seotoolsforyou.co.uk
-  type: vless
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  ws-opts:
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
-    path: /
-- encryption: none
-  name: 11|美国_26
-  network: ws
-  port: 80
-  server: fearless-change.oneeat.co
-  type: vless
-  uuid: b055036a-2d81-4d46-ab18-4e1898b58cec
-  ws-opts:
-    path: /
-- encryption: none
-  name: 11|美国_27
-  network: tcp
-  port: 35048
-  server: 38.244.163.100
-  type: vless
-  uuid: 5690f021-86a7-4712-b143-7944c7380436
-- encryption: none
-  name: 11|美国_28
-  network: ws
-  port: 80
-  server: informed-location.seotoolsforyou.co.uk
-  type: vless
-  uuid: 5c929ec5-5b1e-447a-950c-354c5d1ba1de
-  ws-opts:
-    path: /
+  server: metallic.isquirrel.net
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 11|美国_29
+  name: 11|🇺🇸_US_美国_1
   network: ws
-  port: 443
-  server: DdDDdddddDFrrrrrrRRy.IRan2035.dPDns.ORG
-  servername: ddddddddddfrrrrrrrry.iran2035.dpdns.org
-  tls: true
+  port: 2086
+  server: 104.26.5.103
+  skipCertVerify: true
+  sni: ''
   type: vmess
-  uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0
-  ws-opts:
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
     headers:
-      Host: ddddddddddfrrrrrrrry.iran2035.dpdns.org
-    path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp
-- encryption: none
-  name: 11|美国_30
-  network: grpc
-  port: 443
-  server: 185.59.218.168
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- encryption: none
-  name: 11|美国_31
-  network: grpc
-  port: 443
-  server: 94.247.142.103
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- encryption: none
-  name: 11|美国_32
-  network: grpc
-  port: 443
-  server: 154.83.2.167
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- encryption: none
-  name: 11|美国_33
-  network: grpc
-  port: 443
-  server: 94.140.0.141
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alpn:
-  - h2
-  encryption: none
-  name: 11|美国_36
-  network: grpc
-  port: 443
-  server: all.tellmethetrue.shop
-  servername: pqh29v7.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alpn:
-  - h2
-  encryption: none
-  name: 11|美国_37
-  network: grpc
-  port: 443
-  server: 184.174.80.250
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alpn:
-  - h2
-  encryption: none
-  name: 11|美国_38
-  network: grpc
-  port: 443
-  server: 31.43.179.38
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- encryption: none
-  name: 11|美国_39
-  network: grpc
-  port: 443
-  server: 92.53.188.36
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- encryption: none
-  name: 11|美国_40
-  network: grpc
-  port: 443
-  server: 45.159.218.165
-  servername: pqh24v3.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- encryption: none
-  name: 11|美国_41
-  network: ws
-  port: 8443
-  server: 3h-unitedstates3.09vpn.com
-  servername: 3h-unitedstates3.09vpn.com
-  tls: true
-  type: vless
-  uuid: 48572af1-d091-457b-a86e-4a457e99927f
-  ws-opts:
-    path: /vless/
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: 11|美国_42
-  password: p78naCf2EfOlRSLTX0wFVx
+  name: 11|🇺🇸_US_美国_3
+  password: lWaGPVFjmnag
   port: 443
-  server: pupas-shirting-unsung.freesocks.work
+  server: 205.134.180.139
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 11|美国_44
-  network: tcp
-  port: 34141
-  server: 183.240.180.3
-  servername: ''
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 11|美国_45
-  network: tcp
-  port: 47093
-  server: tunnel.gzcloud.shop
-  servername: ''
+  name: 11|🇺🇸_US_美国_5
+  network: ws
+  port: 2086
+  server: 104.19.57.4
+  skipCertVerify: true
+  sni: ''
   type: vmess
-  uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
-- alterId: 64
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
   cipher: auto
-  name: 11|美国_46
-  network: tcp
-  port: 39595
-  server: 183.240.245.251
-  servername: ''
+  name: 11|🇺🇸_US_美国_10
+  network: ws
+  port: 2086
+  server: 172.64.175.213
+  skipCertVerify: true
+  sni: ''
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|🇺🇸_US_美国_11
+  network: ws
+  port: 2086
+  server: 104.26.12.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|🇺🇸_US_美国_13
+  network: ws
+  port: 2086
+  server: 104.26.5.145
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|🇺🇸_US_美国_19
+  network: ws
+  port: 2086
+  server: 104.26.13.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-ZEnxwmeIFT.download.microsoft.com
+    host: 202509121565513-Aja8hFXVWh.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -486,8 +180,8 @@ proxies:
   name: 13,14|美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3294
-  server: 153.121.73.102
+  port: 1700
+  server: 153.121.45.139
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -495,11 +189,46 @@ proxies:
   name: 13,14|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3296
-  server: 153.121.73.102
+  port: 3294
+  server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 15|US_speednode_0013
+  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
+  port: 443
+  server: toaster.isquirrel.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0017
+  password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
+  port: 28331
+  server: seginus.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0018
+  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
+  port: 443
+  server: delight.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0020
+  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
+  port: 443
+  server: mintaka.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 15|US_speednode_0021
+  password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
+  port: 28331
+  server: hanger.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - http-opts:
     headers:
       Host:
@@ -543,40 +272,6 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-154.9.254.63-4971
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇺🇸'
-  network: tcp
-  port: '29800'
-  server: 103.124.107.144
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 1
   cipher: auto
   name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
@@ -591,23 +286,46 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 17|美国 CloudFlare节点
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 17|北美地区 v2rayfree.eu.org
   network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
+  port: 443
+  server: 134.195.198.147
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: seribus.org
-    path: linkvws
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-154.9.254.63-4971
+  network: ws
+  port: 20521
+  server: 154.9.254.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 1
   cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
+  name: 17|美国 CloudFlare节点
   network: ws
   port: '443'
   server: fapeng.org
@@ -618,4 +336,28 @@ proxies:
   ws-opts:
     headers:
       Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+- alterId: 1
+  cipher: auto
+  name: '17|美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: seribus.org
+  servername: seribus.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: seribus.org
     path: linkvws
