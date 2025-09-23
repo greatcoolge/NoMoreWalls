@@ -1,69 +1,10 @@
 proxies:
-- name: '1,2,3|_US_ #1'
-  network: tcp
-  password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
-  port: 18333
-  server: kasheet.appagent.net
-  type: trojan
-- name: '1,2,3|_US__1 #1'
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 15.204.248.103
-  sni: rs3.freeguard.org
-  type: trojan
-- name: '1,2,3|_US__2 #1'
-  network: tcp
-  password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
-  port: 28334
-  server: sirens.isquirrel.net
-  type: trojan
-- name: 1,2,3,11|美国_7
-  network: tcp
-  password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0
-  port: 28334
-  server: pricey.appagent.net
-  tls: true
-  type: trojan
-- name: 1,2,3,11|美国_4
-  network: tcp
-  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
-  port: 18332
-  server: blength.appagent.net
-  tls: true
-  type: trojan
 - cipher: aes-256-cfb
-  name: '1,3|_US__5 #1'
+  name: '1,3|_US_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
-- name: 1,2,3,11|美国_2
-  network: tcp
-  password: OaFFcTDe9pSlez6x3SY8AARXwClzCRRDwSN8F3OqZAEYC0SE6F8gp3wCTCSTDYllcNceagCDD2C59S3
-  port: 28332
-  server: bolster.appagent.net
-  tls: true
-  type: trojan
-- name: 1,2,3,11|美国_6
-  network: tcp
-  password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
-  port: 28333
-  server: connect.appagent.net
-  tls: true
-  type: trojan
-- cipher: aes-256-cfb
-  name: '1,2,3|_US__8 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- name: 1,2,3,11|美国_3
-  network: tcp
-  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
-  port: 443
-  server: metallic.isquirrel.net
-  tls: true
-  type: trojan
 - name: 11|美国_1
   network: tcp
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
@@ -72,12 +13,47 @@ proxies:
   sni: blength.appagent.net
   tls: true
   type: trojan
+- name: 11|美国_2
+  network: tcp
+  password: OaFFcTDe9pSlez6x3SY8AARXwClzCRRDwSN8F3OqZAEYC0SE6F8gp3wCTCSTDYllcNceagCDD2C59S3
+  port: 28332
+  server: bolster.appagent.net
+  tls: true
+  type: trojan
+- name: 11|美国_3
+  network: tcp
+  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
+  port: 443
+  server: metallic.isquirrel.net
+  tls: true
+  type: trojan
+- name: 11|美国_4
+  network: tcp
+  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
+  port: 18332
+  server: blength.appagent.net
+  tls: true
+  type: trojan
 - name: 11|美国_5
   network: tcp
   password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
   port: 28333
   server: connect.appagent.net
   sni: connect.appagent.net
+  tls: true
+  type: trojan
+- name: 11|美国_6
+  network: tcp
+  password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
+  port: 28333
+  server: connect.appagent.net
+  tls: true
+  type: trojan
+- name: 11|美国_7
+  network: tcp
+  password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0
+  port: 28334
+  server: pricey.appagent.net
   tls: true
   type: trojan
 - name: 11|美国_8
@@ -154,13 +130,30 @@ proxies:
     headers:
       Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,14|美国|@ripaojiedian
+  network: ws
+  port: '41317'
+  server: a.lyazzz.online
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c76b20d5-7f82-4990-9687-4bde24397493
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-Aja8hFXVWh.download.microsoft.com
+    host: 202509121565513-d3qOpZwqIw.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -179,8 +172,8 @@ proxies:
   name: 13,14|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3294
-  server: 160.16.72.33
+  port: 3296
+  server: 160.16.117.182
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -244,30 +237,84 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
 - alterId: 1
   cipher: auto
-  name: 17|美国 CloudFlare节点
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
   network: ws
   port: '443'
-  server: fapeng.org
-  servername: fapeng.org
+  server: lammaland.org
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
+      Host: lammaland.org
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 17|美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: seribus.org
+  servername: seribus.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: seribus.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
+  name: 17|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
   type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|[🇺🇸]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
 - alterId: 32
   cipher: auto
   name: 17|🇺🇸US-77.83.141.171-1131
@@ -284,83 +331,14 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: 17|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|[🇺🇸]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
-  network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: seribus.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
   network: tcp
-  port: '29800'
-  server: 103.124.107.144
+  port: '15361'
+  server: 15.204.11.190
   servername: ''
   tls: false
   type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-154.9.254.63-4971
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
   name: 17|🇺🇸US-47.251.75.162-5341
@@ -375,3 +353,31 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-154.9.254.63-4971
+  network: ws
+  port: 20521
+  server: 154.9.254.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '17|美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
