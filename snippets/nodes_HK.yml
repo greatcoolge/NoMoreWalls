@@ -81,31 +81,30 @@ proxies:
   tls: false
   type: vmess
   uuid: f6c894a3-f326-4807-9270-f236da4120c1
-- alterId: 0
+- alterId: 2
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 15|HK_speednode_0031
-  network: http
-  port: 49432
-  server: 43.249.172.50
-  skip-cert-verify: false
+  name: 17|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
   tls: false
   type: vmess
-  udp: true
-  uuid: dd5406e0-af7f-416c-bc67-3e7bd78a8d7b
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-47.83.18.10-5029
+  name: 17|🇭🇰HK-8.210.140.23-4901
   network: ws
-  port: 36968
-  server: 47.83.18.10
+  port: 54809
+  server: 8.210.140.23
   servername: ''
   tls: false
   type: vmess
-  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
     headers:
       Host: ''
@@ -124,20 +123,6 @@ proxies:
     headers:
       Host: ''
     path: /test
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-47.239.204.193-1025
-  network: ws
-  port: 33611
-  server: 47.239.204.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
   name: 17|🇭🇰HK-47.83.162.4-5020
@@ -168,14 +153,28 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-8.210.140.23-4901
+  name: 17|🇭🇰HK-47.83.18.10-5029
   network: ws
-  port: 54809
-  server: 8.210.140.23
+  port: 36968
+  server: 47.83.18.10
   servername: ''
   tls: false
   type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰HK-47.239.204.193-1025
+  network: ws
+  port: 33611
+  server: 47.239.204.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
   ws-opts:
     headers:
       Host: ''
