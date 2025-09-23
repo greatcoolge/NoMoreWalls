@@ -1,19 +1,7 @@
 proxies:
-- client-fingerprint: chrome
-  name: 15|DE_speednode_0005
-  port: 443
-  reality-opts:
-    public-key: AdkdFL1GILtsxWSOcwdB-budJOiw2cXac8eIPxYIokw
-  server: 185.126.255.180
-  servername: www.speedtest.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 387d6d9a-5594-4b2a-a60d-5b2cb1f57638
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 15|DE_speednode_0006
+  name: 15|DE_speednode_0015
   port: 223
   reality-opts:
     public-key: 2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U
@@ -26,7 +14,7 @@ proxies:
   udp: true
   uuid: 8f0120f1-ba26-e137-5e06-a99b844741aa
 - client-fingerprint: chrome
-  name: 15|DE_speednode_0007
+  name: 15|DE_speednode_0016
   port: 6666
   reality-opts:
     public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
@@ -38,97 +26,53 @@ proxies:
   type: vless
   udp: true
   uuid: 0abf9050-c7be-464d-80af-24094c2b97de
-- alterId: 0
-  cipher: auto
-  name: 17|[🇩🇪]t.me/ConfigsHub
+- name: 15|DE_speednode_0017
   network: ws
-  port: '443'
-  server: 57.129.64.157
-  servername: lammaland.org
+  port: 2053
+  server: 89.169.53.131
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
   ws-opts:
     headers:
-      Host: lammaland.org
-    path: linkvws
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+- name: 15|DE_speednode_0018
+  network: ws
+  port: 443
+  server: 91.149.223.242
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+- client-fingerprint: chrome
+  name: 15|DE_speednode_0019
+  port: 443
+  reality-opts:
+    public-key: AdkdFL1GILtsxWSOcwdB-budJOiw2cXac8eIPxYIokw
+  server: 185.126.255.180
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 387d6d9a-5594-4b2a-a60d-5b2cb1f57638
 - alterId: 0
   cipher: auto
   name: '17|Channel id: @ShadowProxy66 🇩🇪'
   network: ws
   port: '443'
-  server: 57.129.59.199
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇩🇪 #1'
-  network: ws
-  port: '443'
   server: 57.129.28.212
   servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇩🇪 #2'
-  network: ws
-  port: '443'
-  server: 57.129.59.195
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66 🇩🇪 #3'
-  network: ws
-  port: '443'
-  server: 57.129.28.214
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇩🇪DE-57.129.28.216-0916
-  network: ws
-  port: 443
-  server: 57.129.28.216
-  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -152,7 +96,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '17|[🇩🇪]t.me/ConfigsHub #1'
+  name: 17|[🇩🇪]t.me/ConfigsHub
   network: ws
   port: '443'
   server: 57.129.59.201
@@ -178,20 +122,34 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇩🇪'
+  name: 17|🇩🇪DE-57.129.25.20-1271
   network: ws
-  port: '443'
-  server: 57.129.64.238
-  servername: kapelleng.com
+  port: 443
+  server: 57.129.25.20
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: kapelleng.com
-    path: /linkvws
+      Host: 57.129.25.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|[🇩🇪]t.me/ConfigsHub #1'
+  network: ws
+  port: '443'
+  server: 57.129.64.157
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: '17|[🇩🇪]t.me/ConfigsHub #2'
@@ -208,6 +166,76 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.28.214
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇩🇪 #2'
+  network: ws
+  port: '443'
+  server: 57.129.59.195
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇩🇪'
+  network: ws
+  port: '443'
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇩🇪 #3'
+  network: ws
+  port: '443'
+  server: 57.129.59.199
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '17|[🇩🇪]t.me/ConfigsHub #3'
   network: ws
   port: '443'
@@ -222,15 +250,15 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇩🇪 #1'
+  name: 17|🇩🇪DE-57.129.28.216-0916
   network: ws
-  port: '443'
-  server: 57.129.28.65
-  servername: kapelleng.com
+  port: 443
+  server: 57.129.28.216
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: kapelleng.com
-    path: /linkvws
+      Host: fapeng.org
+    path: linkvws
