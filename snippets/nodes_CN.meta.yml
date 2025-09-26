@@ -41,7 +41,7 @@ proxies:
   tls: false
   type: vless
   uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
-- name: 15|CN_speednode_0004
+- name: 15|CN_speednode_0005
   password: 2fd0d127-266d-4d0b-b453-f94659a132fc
   port: 12000
   server: 106.75.134.1
@@ -49,3 +49,18 @@ proxies:
   sni: aliyun.com
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 15|CN_speednode_0006
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
