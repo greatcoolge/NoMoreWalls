@@ -1,4 +1,9 @@
 proxies:
+- name: '1,2,3|_US_ #1'
+  password: 1ce1df7962f71c6f
+  port: 8443
+  server: uk-03.allhubb.info
+  type: trojan
 - name: 11|美国_1
   network: tcp
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
@@ -124,29 +129,17 @@ proxies:
     headers:
       Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国2|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509242154338-Zr8tJCX9sq.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: 13,14|美国3|@ripaojiedian
+  name: 13,14|美国|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
-  server: 153.121.45.139
+  server: 160.16.87.174
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: 13,14|美国4|@ripaojiedian
+  name: 13,14|美国2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
@@ -403,23 +396,61 @@ proxies:
     headers:
       Host: websocket.network.www.speedtest.net.flutter.dev.russia.python.js.elmahstyle.xyz.
     path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-192.3.233.216-4950
+  network: ws
+  port: 16556
+  server: 192.3.233.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 1
   cipher: auto
-  name: 17|美国 CloudFlare节点
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
   network: ws
   port: '443'
-  server: fapeng.org
-  servername: fapeng.org
+  server: lammaland.org
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66 🇺🇸'
+  network: tcp
+  port: '29800'
+  server: 103.124.107.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+- alterId: 0
+  cipher: auto
+  name: 17|[🇺🇸]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
+  name: 17|美国 CloudFlare节点
   network: ws
   port: '443'
   server: seribus.org
@@ -430,6 +461,57 @@ proxies:
   ws-opts:
     headers:
       Host: seribus.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-154.9.254.63-4971
+  network: ws
+  port: 20521
+  server: 154.9.254.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '17|美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -447,66 +529,14 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 17|美国 v2rayfree.eu.org
+  name: 17|北美地区 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 23.162.200.227
+  server: 134.195.198.147
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: inna.cfd
     path: /linkvws
-- alterId: 32
-  cipher: auto
-  name: 17|🇺🇸US-77.83.141.171-1131
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-192.3.233.216-4950
-  network: ws
-  port: 16556
-  server: 192.3.233.216
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
