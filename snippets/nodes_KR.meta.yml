@@ -5,7 +5,14 @@ proxies:
   port: 989
   server: 154.223.16.212
   type: ss
-- name: 15|KR_speednode_0024
+- cipher: aes-256-cfb
+  name: 15|KR_speednode_0022
+  password: qwerREWQ@@
+  port: 2520
+  server: 121.170.203.147
+  type: ss
+  udp: true
+- name: 15|KR_speednode_0023
   password: test.+
   port: 30446
   server: testkr3.ssv.vc
@@ -14,6 +21,13 @@ proxies:
   type: http
   udp: true
   username: test
+- cipher: aes-256-cfb
+  name: 15|KR_speednode_0024
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
 - name: 15|KR_speednode_0025
   network: ws
   port: 8443
@@ -28,45 +42,3 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-- name: 15|KR_speednode_0026
-  network: ws
-  port: 50000
-  server: 124.48.225.132
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-- name: 15|KR_speednode_0027
-  network: ws
-  port: 30067
-  server: 112.156.154.95
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 17|🇰🇷KR-45.141.139.109-0915
-  network: ws
-  port: 13311
-  server: 45.141.139.109
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6752e2c4-ff7c-4da5-a815-c307bf83ab48
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
