@@ -1,27 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '1,2|_GB__1 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
-- cipher: aes-256-cfb
-  name: 1,2,3|8J+HrPCfh6dHQi02Mi4xMDAuMjA1Lj...
-  obfs: plain
-  obfs-param: ''
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  protocol: origin
-  protocol-param: ''
-  server: 62.100.205.48
-  type: ssr
-- name: 2,3|未命名
-  network: tcp
-  port: 49881
-  server: sangarshakan.vip-sangar.sbs
-  tls: false
-  type: vless
-  uuid: 0559a3a8-9102-4cde-91cd-af091bbfb875
 - name: 15|GB_speednode_0008
   network: ws
   port: 2096
@@ -55,14 +32,14 @@ proxies:
   name: 17|[🇬🇧]t.me/ConfigsHub
   network: ws
   port: '443'
-  server: 57.128.189.211
-  servername: yichueng.org
+  server: 57.128.189.222
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: yichueng.org
+      Host: lammaland.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -79,32 +56,18 @@ proxies:
   name: '17|[🇬🇧]t.me/ConfigsHub #1'
   network: ws
   port: '443'
-  server: 57.128.189.143
-  servername: lammaland.org
+  server: 57.128.189.211
+  servername: yichueng.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: lammaland.org
+      Host: yichueng.org
     path: linkvws
 - alterId: 0
   cipher: auto
   name: '17|[🇬🇧]t.me/ConfigsHub #2'
-  network: ws
-  port: '443'
-  server: 57.128.189.222
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|[🇬🇧]t.me/ConfigsHub #3'
   network: ws
   port: '443'
   server: 57.128.189.253
@@ -116,3 +79,17 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '17|[🇬🇧]t.me/ConfigsHub #3'
+  network: ws
+  port: '443'
+  server: 57.128.189.143
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
