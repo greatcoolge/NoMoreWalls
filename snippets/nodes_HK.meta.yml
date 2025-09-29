@@ -1,4 +1,17 @@
 proxies:
+- encryption: none
+  name: 11|香港
+  network: ws
+  port: 2096
+  server: 154.206.12.49
+  servername: getsub.saas.classelivre.eu.org
+  tls: true
+  type: vless
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: getsub.saas.classelivre.eu.org
+    path: /snippets&freecodes@节点狂魔/?ed=2560
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -46,7 +59,7 @@ proxies:
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 221.128.195.239
+  server: 203.198.123.174
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -60,100 +73,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
-- alterId: 2
-  cipher: auto
-  name: 17|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-45.136.12.37-4936
+  name: 17|🇭🇰HK-47.76.157.234-5067
   network: ws
-  port: 20521
-  server: 45.136.12.37
+  port: 14479
+  server: 47.76.157.234
   servername: ''
   tls: false
   type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-8.217.187.15-5131
-  network: ws
-  port: 31254
-  server: 8.217.187.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 338938c6-4acd-413e-959c-cae13b21b9e6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-47.239.204.193-1025
-  network: ws
-  port: 33611
-  server: 47.239.204.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-47.76.118.235-5160
-  network: ws
-  port: 35407
-  server: 47.76.118.235
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b19fe95d-32ac-416a-9d46-d76d03f91873
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-8.210.140.23-4901
-  network: ws
-  port: 54809
-  server: 8.210.140.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰HK-8.217.220.30-5138
-  network: ws
-  port: 31123
-  server: 8.217.220.30
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 12f7164b-e3e1-4264-86cc-68028902cd19
+  uuid: 90606c14-cba4-43ff-9586-9edd8bef21a4
   ws-opts:
     headers:
       Host: ''
@@ -174,14 +103,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-8.218.8.84-5040
+  name: 17|🇭🇰HK-8.217.220.30-5138
   network: ws
-  port: 23326
-  server: 8.218.8.84
+  port: 31123
+  server: 8.217.220.30
   servername: ''
   tls: false
   type: vmess
-  uuid: 871d04df-fc58-470a-baca-daae28869164
+  uuid: 12f7164b-e3e1-4264-86cc-68028902cd19
   ws-opts:
     headers:
       Host: ''
@@ -202,14 +131,14 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-47.242.214.178-5100
+  name: 17|🇭🇰HK-8.210.230.179-5010
   network: ws
-  port: 24497
-  server: 47.242.214.178
+  port: 12125
+  server: 8.210.230.179
   servername: ''
   tls: false
   type: vmess
-  uuid: 0f62d166-39e5-4d3d-89b6-5c6490b4f4d4
+  uuid: 8b0c11be-1ffe-4074-afc5-e734fe985b22
   ws-opts:
     headers:
       Host: ''
@@ -244,32 +173,60 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-8.210.230.179-5010
+  name: 17|🇭🇰HK-8.218.8.84-5040
   network: ws
-  port: 12125
-  server: 8.210.230.179
+  port: 23326
+  server: 8.218.8.84
   servername: ''
   tls: false
   type: vmess
-  uuid: 8b0c11be-1ffe-4074-afc5-e734fe985b22
+  uuid: 871d04df-fc58-470a-baca-daae28869164
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 17|🇭🇰HK-47.76.157.234-5067
+  name: 17|🇭🇰HK-8.217.187.15-5131
   network: ws
-  port: 14479
-  server: 47.76.157.234
+  port: 31254
+  server: 8.217.187.15
   servername: ''
   tls: false
   type: vmess
-  uuid: 90606c14-cba4-43ff-9586-9edd8bef21a4
+  uuid: 338938c6-4acd-413e-959c-cae13b21b9e6
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰HK-8.210.140.23-4901
+  network: ws
+  port: 54809
+  server: 8.210.140.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 2
+  cipher: auto
+  name: 17|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 17|🇭🇰HK-47.83.162.4-5020
@@ -286,6 +243,48 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
+  name: 17|🇭🇰HK-47.76.118.235-5160
+  network: ws
+  port: 35407
+  server: 47.76.118.235
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b19fe95d-32ac-416a-9d46-d76d03f91873
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰HK-47.242.214.178-5100
+  network: ws
+  port: 24497
+  server: 47.242.214.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0f62d166-39e5-4d3d-89b6-5c6490b4f4d4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰HK-45.136.12.37-4936
+  network: ws
+  port: 20521
+  server: 45.136.12.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 17|🇭🇰HK-47.76.233.2-5074
   network: ws
   port: 33224
@@ -294,6 +293,20 @@ proxies:
   tls: false
   type: vmess
   uuid: ceb2fec2-90df-4cfe-a80d-e86168ba9b12
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰HK-47.239.204.193-1025
+  network: ws
+  port: 33611
+  server: 47.239.204.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
   ws-opts:
     headers:
       Host: ''
