@@ -80,19 +80,88 @@ proxies:
   tls: false
   type: vmess
   uuid: e47902b2-928b-41ec-a868-ed3d1d4bec76
-- alterId: 1
+- alterId: 32
   cipher: auto
-  name: 17|美国 CloudFlare节点
+  name: 17|🇺🇸US-77.83.141.171-1131
   network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 17|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: seribus.org
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|[🇺🇸]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-216.167.34.227-1169
+  network: ws
+  port: 45979
+  server: 216.167.34.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  ws-opts:
+    headers:
+      Host: ''
+    path: /test
+- alterId: 1
+  cipher: auto
+  name: 17|美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  network: ws
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -120,33 +189,6 @@ proxies:
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
-  name: 17|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
   name: 17|🇺🇸US-216.167.34.199-5162
   network: ws
   port: 45979
@@ -159,30 +201,17 @@ proxies:
     headers:
       Host: ''
     path: /test
-- alterId: 0
-  cipher: auto
-  name: 17|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 1
   cipher: auto
   name: '17|美国 CloudFlare节点 #1'
   network: ws
   port: '443'
-  server: fapeng.org
-  servername: fapeng.org
+  server: seribus.org
+  servername: seribus.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
+      Host: seribus.org
     path: linkvws
