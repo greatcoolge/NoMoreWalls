@@ -1,25 +1,25 @@
 proxies:
 - client-fingerprint: chrome
-  name: 10,11|日本2|@ripaojiedian
+  name: 13,14|日本2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1331
-  server: 160.16.138.24
+  port: 1806
+  server: 36.156.102.88
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: 10,11|日本3|@ripaojiedian
+  name: 13,14|日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 409
-  server: 153.121.51.29
+  port: 3160
+  server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 11|日本v2|@ripaojiedian
+  name: 14|日本v2|@ripaojiedian
   network: kcp
   port: '20932'
   server: 43.207.83.60
@@ -36,7 +36,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 12|JP_speednode_0029
+  name: 15|JP_speednode_0029
   network: http
   port: 80
   server: 45.77.178.67
@@ -47,21 +47,7 @@ proxies:
   uuid: b6009332-d81f-572d-9f4f-949b86adda5d
 - alterId: 0
   cipher: auto
-  name: 14|🇯🇵JP-47.74.10.111-5237
-  network: ws
-  port: 34029
-  server: 47.74.10.111
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2e80d0c8-16c8-420a-b86c-c2e7e2e4f764
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 14|🇯🇵JP-23.27.169.228-5290
+  name: 17|🇯🇵JP-23.27.169.228-5290
   network: ws
   port: 12604
   server: 23.27.169.228
@@ -69,6 +55,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c5e927e-926f-490d-a803-cbe4140eaab4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇯🇵JP-47.74.10.111-5237
+  network: ws
+  port: 34029
+  server: 47.74.10.111
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2e80d0c8-16c8-420a-b86c-c2e7e2e4f764
   ws-opts:
     headers:
       Host: ''
