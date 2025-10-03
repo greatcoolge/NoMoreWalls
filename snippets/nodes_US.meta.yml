@@ -1,51 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '1,2,3|_US__1 #1'
-  network: tcp
-  port: 21639
-  server: 65.109.218.238
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: f21c11fc-0762-4b56-ab98-79d0b8460e7b
-- name: 2,15|US_speednode_0036
-  network: ws
-  port: 80
-  server: mstr.fastly80.hosting-ip.com
-  servername: gm195.io
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d46fbe10-7982-4229-b461-4afef5c690fa
-  ws-opts:
-    headers:
-      Host: gm195.io
-    path: /admin
-- name: 2,3|_US__2
-  network: tcp
-  port: 8081
-  server: panel-tr.turkcloud.ir
-  tls: false
-  type: vless
-  uuid: 6b3a7034-39ec-f057-377d-cf6af57b4db4
-  ws-opts:
-    headers:
-      Host: cdn.jsdelivr.net---skypro_vpn---skypro_vpn---skypro_vpn---skypro_vpn---skypro_vpn---skypro_vpn---skypro_vpn---skypro_vpn---
-- name: 3|_US_
-  network: ws
-  port: 80
-  server: mstr.fastly80.hosting-ip.com
-  servername: gm195.io
-  type: vless
-  uuid: d46fbe10-7982-4229-b461-4afef5c690fa
-  ws-opts:
-    headers:
-      host: gm195.io
-    path: /admin
 - cipher: aes-256-gcm
   name: 11|美国_1
   password: 14837141-5001-4d21-9a25-52feb9967302
@@ -216,197 +169,20 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 15|US_speednode_0027
+- name: 15|US_speednode_0025
   network: ws
-  port: 443
-  server: 162.159.43.92
-  servername: juzi.634676.xyz
+  port: 2096
+  server: 72.167.25.253
+  servername: gaosir.unfeeling.sbs
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 0c0537c3-f0fb-40e6-bd59-f5038e1855ed
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: juzi.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|US_speednode_0028
-  port: 30227
-  reality-opts:
-    public-key: y0QO-mD8hrDE3rV7C8BX-gQiCANoasGKQlq2ReIVXkI
-  server: 216.133.149.235
-  servername: aws.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9a54bad8-538d-4744-b7bc-640629840490
-- client-fingerprint: randomized
-  name: 15|US_speednode_0029
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: conFiG-VOrteX55-AR5.pagES.deV
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48caa578-241e-43eb-817f-0854b84b0fb0
-  ws-opts:
-    headers:
-      Host: conFiG-VOrteX55-AR5.pagES.deV
-    path: /edrlz7qvRheKjll8/MTQ0LjI0LjkwLjEwNw==?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: 15|US_speednode_0030
-  network: ws
-  port: 2053
-  server: 104.21.48.1
-  servername: c6jH01dP783kNPD1yGxXwr4d0doe89O1.pAGEs.dEv
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3d4f244d-4860-4603-9546-184ee632083f
-  ws-opts:
-    headers:
-      Host: c6jh01dp783knpd1ygxxwr4d0doe89o1.pages.dev
-    path: /XJlWBmgB2NGaiV68?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: 15|US_speednode_0031
-  network: ws
-  port: 2087
-  server: 172.66.45.4
-  servername: WeekNDJOoN.PAgES.DEv
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3e9d9ee2-ba23-4269-8340-c8c8ac1455cb
-  ws-opts:
-    headers:
-      Host: weekndjoon.pages.dev
-    path: /Z0R9Nb1Hgd7OEULT?ed=2560
-- name: 15|US_speednode_0032
-  network: ws
-  password: T@_WvT8Ho@LW%w_,
-  port: 2053
-  server: nop-55q.pages.dev
-  skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: NOp-55q.pAgEs.dEv
-    path: /trGPZDfetEwuO25SAs?ed=2560
-- name: 15|US_speednode_0033
-  network: ws
-  port: 443
-  server: wwwopensignalcom-goodspeed-8xx.pages.dev.
-  servername: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
-    path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 15|US_speednode_0034
-  network: ws
-  port: 443
-  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
-  servername: smits.feronix.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44e16031-bde2-407a-b629-ae4b84e7e49f
-  ws-opts:
-    headers:
-      Host: smits.feronix.org
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|US_speednode_0035
-  port: 36678
-  reality-opts:
-    public-key: rrGm0NemTtGQ8Vrd2AzB7pSoW_kYtqYvhRxsx_MtwG0
-    short-id: 5d20
-  server: 192.210.183.136
-  servername: swdist.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf9b316d-31ac-42ee-b8a5-8dc795118917
-- alterId: 1
-  cipher: auto
-  name: 17|美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: seribus.org
-  servername: seribus.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: seribus.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-154.9.254.63-4971
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-64.81.24.115-5301
-  network: ws
-  port: 20521
-  server: 64.81.24.115
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c70f3fde-d792-4f1c-8559-c2308f97ffbe
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-47.253.70.234-5283
-  network: ws
-  port: 45979
-  server: 47.253.70.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
-  ws-opts:
-    headers:
-      Host: ''
-    path: /test
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram
 - alterId: 0
   cipher: auto
   name: 17|🇺🇸US-38.92.10.226-5279
@@ -423,43 +199,6 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
-  name: 17|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-31.58.87.99-5232
-  network: ws
-  port: 36989
-  server: 31.58.87.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d90bef15-1403-4e79-92cc-90f6cc697603
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: 17|美国 v2rayfree.eu.org
   network: ws
   port: 443
@@ -473,31 +212,31 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 17|🇺🇸US-66.253.7.254-5310
+  name: 17|🇺🇸US-154.9.254.63-4971
   network: ws
-  port: 45979
-  server: 66.253.7.254
+  port: 20521
+  server: 154.9.254.63
   servername: ''
   tls: false
   type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
   ws-opts:
     headers:
       Host: ''
-    path: /test
+    path: /
 - alterId: 1
   cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
+  name: 17|美国 CloudFlare节点
   network: ws
   port: '443'
-  server: fapeng.org
-  servername: fapeng.org
+  server: seribus.org
+  servername: seribus.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
+      Host: seribus.org
     path: linkvws
 - alterId: 1
   cipher: auto
@@ -515,6 +254,16 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
   name: 17|[🇺🇸]t.me/ConfigsHub
   network: ws
   port: '443'
@@ -527,17 +276,30 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 17|🇺🇸US-192.3.233.216-4950
+  name: '17|美国 CloudFlare节点 #1'
   network: ws
-  port: 16556
-  server: 192.3.233.216
-  servername: ''
-  tls: false
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
   type: vmess
-  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
