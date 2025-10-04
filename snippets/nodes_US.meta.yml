@@ -178,23 +178,102 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 15|US_speednode_0025
-  network: ws
-  port: 2096
-  server: 72.167.25.253
-  servername: gaosir.unfeeling.sbs
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15|US_speednode_0021
+  port: 36678
+  reality-opts:
+    public-key: rrGm0NemTtGQ8Vrd2AzB7pSoW_kYtqYvhRxsx_MtwG0
+    short-id: 5d20
+  server: 192.210.183.136
+  servername: swdist.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  uuid: bf9b316d-31ac-42ee-b8a5-8dc795118917
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-31.58.87.99-5232
+  network: ws
+  port: 36989
+  server: 31.58.87.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d90bef15-1403-4e79-92cc-90f6cc697603
   ws-opts:
     headers:
-      Host: gaosir.unfeeling.sbs
-    path: /Telegram
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '17|Channel id: @ShadowProxy66🇺🇸'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 1
+  cipher: auto
+  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
+  network: ws
+  port: '443'
+  server: lammaland.org
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
 - alterId: 1
   cipher: auto
   name: 17|美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸US-192.3.233.216-4950
+  network: ws
+  port: 16556
+  server: 192.3.233.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 17|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: '17|美国 CloudFlare节点 #1'
   network: ws
   port: '443'
   server: seribus.org
@@ -220,62 +299,6 @@ proxies:
     headers:
       Host: ''
     path: /test
-- alterId: 1
-  cipher: auto
-  name: 17|🇺🇸🌏 @customv2ray کانفیگ های بی...
-  network: ws
-  port: '443'
-  server: lammaland.org
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: '17|美国 CloudFlare节点 #1'
-  network: ws
-  port: '443'
-  server: fapeng.org
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|[🇺🇸]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸US-192.3.233.216-4950
-  network: ws
-  port: 16556
-  server: 192.3.233.216
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 17|🇺🇸US-154.9.254.63-4971
@@ -292,29 +315,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 17|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '17|Channel id: @ShadowProxy66🇺🇸'
-  network: tcp
-  port: '15361'
-  server: 15.204.11.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
-- alterId: 0
-  cipher: auto
   name: 17|🇺🇸US-47.253.70.234-5283
   network: ws
   port: 45979
@@ -329,18 +329,18 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: 17|🇺🇸US-31.58.87.99-5232
+  name: 17|[🇺🇸]t.me/ConfigsHub
   network: ws
-  port: 36989
-  server: 31.58.87.99
-  servername: ''
-  tls: false
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
   type: vmess
-  uuid: d90bef15-1403-4e79-92cc-90f6cc697603
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /arki?ed=2048
+      Host: lammaland.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 17|🇺🇸US-66.253.7.254-5310
