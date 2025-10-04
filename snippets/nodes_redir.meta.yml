@@ -1,34 +1,69 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '1,2,3|_GB_->_unKnow_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_CN_->_US_ #1'
+  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
+  port: 19583
+  server: mm.huawei-api.top
   type: ss
+- alterId: 2
+  cipher: auto
+  name: '1|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '1|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '2,3|_CN_->_US__1 #1'
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v24.heduian.link
+    path: /oooo
 - cipher: aes-256-cfb
-  name: '1,2,3|_MD_->_RU_ #1'
+  name: '2,3|_MD_->_RU_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
-- name: 2|🇺🇸_US_美国->🇨🇳_CN_中国
+- alterId: 2
+  cipher: auto
+  name: '2,3|_CN_->_US__2 #1'
   network: ws
-  port: 8080
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: Fi.Parsashonam.CfD.
-    path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
-- name: 3|_US_->_CN_
-  network: ws
-  port: 8080
-  server: 104.17.147.22
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: Fi.Parsashonam.CfD.
-    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
+      host: ocbc.com
+    path: /oooo
