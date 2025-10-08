@@ -57,7 +57,7 @@ proxies:
   type: vmess
   uuid: 6990d803-ccc0-49fb-b73d-55c913bc7e85
 - client-fingerprint: chrome
-  name: 13,14|香港4|@ripaojiedian
+  name: 13,14,15|JP_speednode_0032
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -65,6 +65,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -105,8 +106,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 15|HK_speednode_0024
+  network: http
+  port: 31212
+  server: 47.242.90.210
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0012
+  name: 15|HK_speednode_0025
   port: 443
   reality-opts:
     public-key: flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY
