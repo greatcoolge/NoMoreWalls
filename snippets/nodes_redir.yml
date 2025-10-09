@@ -1,70 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: '1,2|_CN_->_US_ #1'
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v24.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US__1 #1'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US__2 #1'
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v5.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: '23185'
-  server: 212.192.15.244
-  tls: false
-  type: vmess
-  uuid: 5115c9e9-a90c-4f9f-a38d-5985a5e52ebd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 3|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: '30824'
-  server: v24.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -76,16 +13,38 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
+- cipher: aes-256-cfb
+  name: '1,2,3|_GB_->_HU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- cipher: aes-256-cfb
+  name: '1,2,3|_MD_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_CN_->_IN_ #1'
+  network: tcp
+  port: 10002
+  server: 36.139.201.35
+  tls: false
+  type: vmess
+  uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
 - alterId: 2
   cipher: auto
-  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '2,3|_CN_->_US_ #1'
   network: ws
-  port: '30805'
-  server: v5.heduian.link
-  tls: false
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v5.heduian.link
+      host: v8.heduian.link
     path: /oooo

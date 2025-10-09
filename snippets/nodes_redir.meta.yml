@@ -1,108 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: '1,2|_CN_->_US_ #1'
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v24.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US__1 #1'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US__2 #1'
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v5.heduian.link
-    path: /oooo
-- name: 1|_IR_->_IQ_
-  network: ws
-  port: 443
-  server: 91.98.47.45
-  type: vless
-  uuid: d4803c0d-c9f3-4c9c-a034-342a71ef03a0
-  ws-opts:
-    headers:
-      host: 91.98.47.45
-    path: /linkws?ed
-- alterId: 0
-  cipher: auto
-  name: 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: '23185'
-  server: 212.192.15.244
-  tls: false
-  type: vmess
-  uuid: 5115c9e9-a90c-4f9f-a38d-5985a5e52ebd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 1|_US_->_FR_
-  network: ws
-  port: 80
-  server: mstr.fastly80.hosting-ip.com
-  servername: Gn8656.io
-  type: vless
-  uuid: 857b7905-8b11-4987-994d-09bcbf7979df
-  ws-opts:
-    headers:
-      host: Gn8656.io
-    path: /admin
-- name: 1|_US_->_IQ_
-  network: ws
-  port: 7035
-  server: 37.156.45.229
-  type: vless
-  uuid: f391c9f6-87af-47c9-b838-39c50c0992ca
-  ws-opts:
-    headers:
-      host: filimo.com
-    path: /
-- name: 1,3|🇨🇳_CN_中国->🇮🇶_IQ_伊拉克
-  network: tcp
-  port: 29500
-  server: 89.44.242.222
-  tls: false
-  type: vless
-  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
-- alterId: 2
-  cipher: auto
-  name: 3|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: '30824'
-  server: v24.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -114,31 +13,7 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '3|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
-  network: ws
-  port: '30805'
-  server: v5.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v5.heduian.link
-    path: /oooo
-- name: 3|🇮🇷_IR_伊朗->🇮🇶_IQ_伊拉克
-  network: ws
-  port: 443
-  server: 91.98.47.45
-  tls: false
-  type: vless
-  uuid: d4803c0d-c9f3-4c9c-a034-342a71ef03a0
-  ws-opts:
-    headers:
-      Host: 91.98.47.45
-    path: /linkws?ed
-- name: 3,15|US_speednode_0073
+- name: 1,15|US_speednode_0073
   network: ws
   port: 80
   server: mstr.fastly80.hosting-ip.com
@@ -152,14 +27,49 @@ proxies:
     headers:
       Host: Gn8656.io
     path: /admin
-- name: 3|🇺🇸_US_美国->🇮🇶_IQ_伊拉克
-  network: ws
-  port: 7035
-  server: 37.156.45.229
+- cipher: aes-256-cfb
+  name: '1,2,3|_GB_->_HU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- cipher: aes-256-cfb
+  name: '1,2,3|_MD_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_CN_->_IN_ #1'
+  network: tcp
+  port: 10002
+  server: 36.139.201.35
   tls: false
-  type: vless
-  uuid: f391c9f6-87af-47c9-b838-39c50c0992ca
+  type: vmess
+  uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
+- alterId: 2
+  cipher: auto
+  name: '2,3|_CN_->_US_ #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: filimo.com
-    path: '%2F'
+      host: v8.heduian.link
+    path: /oooo
+- name: 2|_US_->_FR_
+  network: ws
+  port: 80
+  server: mstr.fastly80.hosting-ip.com
+  servername: Gn8656.io
+  type: vless
+  uuid: 857b7905-8b11-4987-994d-09bcbf7979df
+  ws-opts:
+    headers:
+      host: Gn8656.io
+    path: /admin

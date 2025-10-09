@@ -1,1 +1,42 @@
-proxies: []
+proxies:
+- alterId: 2
+  cipher: auto
+  name: 1|🇨🇳_CN_中国
+  network: ws
+  port: '30805'
+  server: v5.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '2,3|_CN_ #1'
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- name: 15|CN_speednode_0017
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1572
+  server: 36.156.102.88
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: 15|CN_speednode_0018
+  password: 253bc477d4e43c209f2d427272968280
+  port: 6752
+  server: 36.156.102.88
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
