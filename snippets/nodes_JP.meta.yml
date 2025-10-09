@@ -1,4 +1,43 @@
 proxies:
+- encryption: none
+  name: 11|日本_1
+  network: ws
+  port: 2096
+  server: 103.245.228.32
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets
+- encryption: none
+  name: 11|日本_2
+  network: ws
+  port: 2096
+  server: 103.245.229.61
+  servername: vless.hubp.de
+  tls: true
+  type: vless
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /snippets
+- encryption: none
+  name: 11|日本_3
+  network: ws
+  port: 2096
+  server: 103.116.7.61
+  servername: vless.hubp.de
+  tls: true
+  type: vless
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /snippets
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome

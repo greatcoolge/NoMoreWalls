@@ -28,11 +28,11 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 1,11|美国_6
   network: ws
   port: 30808
   server: v8.heduian.link
-  servername: ''
+  servername: v8.heduian.link
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -64,10 +64,11 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '1,2,3|_CN_->_IN_ #1'
+  name: 1,2,3,11|美国_1
   network: tcp
   port: 10002
   server: 36.139.201.35
+  servername: ''
   tls: false
   type: vmess
   uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
@@ -117,20 +118,107 @@ proxies:
     headers:
       host: v8.heduian.link
     path: /oooo
-- cipher: aes-256-gcm
-  name: 11|美国_1
-  password: 14837141-5001-4d21-9a25-52feb9967302
-  port: 21004
-  server: iaplsg.91king.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
+  name: 11|美国_2
+  network: ws
+  port: 8443
+  server: digitalocean.com
+  servername: bpca2.catimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: bpca2.catimecsgo.xyz
+    path: /hkz7hea3xiaco2j/ca1
+- alterId: 0
+  cipher: auto
   name: 11|美国_3
+  network: ws
+  port: 8443
+  server: 141.193.213.60
+  servername: bpca2.catimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: bpca2.catimecsgo.xyz
+    path: /hkz7hea3xiaco2j/ca1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_4
+  network: ws
+  port: 8443
+  server: 141.193.213.135
+  servername: bpca2.catimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: bpca2.catimecsgo.xyz
+    path: /hkz7hea3xiaco2j/ca1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_7
+  network: ws
+  port: 443
+  server: digitalocean.com
+  servername: iicduazc1nh3jt0t.sgtimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: iicduazc1nh3jt0t.sgtimecsgo.xyz
+    path: /bpjc/sg1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_8
+  network: ws
+  port: 443
+  server: 141.193.213.107
+  servername: iicduazc1nh3jt0t.sgtimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: iicduazc1nh3jt0t.sgtimecsgo.xyz
+    path: /bpjc/sg1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_9
+  network: ws
+  port: 443
+  server: 141.193.213.199
+  servername: b3ho27p7k3fyzbym.uktimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: b3ho27p7k3fyzbym.uktimecsgo.xyz
+    path: /bpjc/uk1
+- alterId: 0
+  cipher: auto
+  name: 11|加拿大
+  network: tcp
+  port: 27691
+  server: 74.48.194.7
+  servername: ''
+  type: vmess
+  uuid: 56520f0d-2bbc-4b8b-f438-82e151d66f96
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_12
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 11|美国_4
+  name: 11|美国_14
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work

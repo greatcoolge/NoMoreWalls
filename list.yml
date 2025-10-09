@@ -1,4 +1,4 @@
-# Update: 2025-10-09 14:38
+# Update: 2025-10-09 17:27
 allow-lan: false
 dns:
   enable: true
@@ -47,11 +47,11 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 1|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 1,11|美国_6
   network: ws
   port: 30808
   server: v8.heduian.link
-  servername: ''
+  servername: v8.heduian.link
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -83,10 +83,11 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '1,2,3|_CN_->_IN_ #1'
+  name: 1,2,3,11|美国_1
   network: tcp
   port: 10002
   server: 36.139.201.35
+  servername: ''
   tls: false
   type: vmess
   uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
@@ -136,20 +137,107 @@ proxies:
     headers:
       host: v8.heduian.link
     path: /oooo
-- cipher: aes-256-gcm
-  name: 11|美国_1
-  password: 14837141-5001-4d21-9a25-52feb9967302
-  port: 21004
-  server: iaplsg.91king.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
+  name: 11|美国_2
+  network: ws
+  port: 8443
+  server: digitalocean.com
+  servername: bpca2.catimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: bpca2.catimecsgo.xyz
+    path: /hkz7hea3xiaco2j/ca1
+- alterId: 0
+  cipher: auto
   name: 11|美国_3
+  network: ws
+  port: 8443
+  server: 141.193.213.60
+  servername: bpca2.catimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: bpca2.catimecsgo.xyz
+    path: /hkz7hea3xiaco2j/ca1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_4
+  network: ws
+  port: 8443
+  server: 141.193.213.135
+  servername: bpca2.catimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: bpca2.catimecsgo.xyz
+    path: /hkz7hea3xiaco2j/ca1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_7
+  network: ws
+  port: 443
+  server: digitalocean.com
+  servername: iicduazc1nh3jt0t.sgtimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: iicduazc1nh3jt0t.sgtimecsgo.xyz
+    path: /bpjc/sg1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_8
+  network: ws
+  port: 443
+  server: 141.193.213.107
+  servername: iicduazc1nh3jt0t.sgtimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: iicduazc1nh3jt0t.sgtimecsgo.xyz
+    path: /bpjc/sg1
+- alterId: 0
+  cipher: auto
+  name: 11|美国_9
+  network: ws
+  port: 443
+  server: 141.193.213.199
+  servername: b3ho27p7k3fyzbym.uktimecsgo.xyz
+  tls: true
+  type: vmess
+  uuid: 621514d0-46de-47ea-9063-21eaea0999c7
+  ws-opts:
+    headers:
+      Host: b3ho27p7k3fyzbym.uktimecsgo.xyz
+    path: /bpjc/uk1
+- alterId: 0
+  cipher: auto
+  name: 11|加拿大
+  network: tcp
+  port: 27691
+  server: 74.48.194.7
+  servername: ''
+  type: vmess
+  uuid: 56520f0d-2bbc-4b8b-f438-82e151d66f96
+- cipher: chacha20-ietf-poly1305
+  name: 11|美国_12
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 11|美国_4
+  name: 11|美国_14
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
@@ -538,61 +626,67 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 15|VN_speednode_0086
-  - 15|VN_speednode_0081
-  - 13,14|日本3|@ripaojiedian
-  - '2,3|_US_ #1'
-  - 15|JP_speednode_0034
-  - 15|VN_speednode_0087
-  - 13,14|香港4|@ripaojiedian
-  - 14|香港7|@ripaojiedian
-  - '2,3|_CN_ #1'
-  - '1,2,3|_GB_->_HU_ #1'
-  - 13,14|新加坡2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13|🇭🇰 香港7|@ripaojiedian
-  - 15|VN_speednode_0078
-  - 15|KR_speednode_0035
-  - 15|VN_speednode_0083
-  - 15|NL_speednode_0047
-  - '1,2,3|_MD_->_RU_ #1'
-  - 14|香港3|@ripaojiedian
-  - 15|SG_speednode_0050
-  - 1|🇨🇳_CN_中国
-  - '2,3|_CN_->_US_ #1'
-  - 15|VN_speednode_0085
-  - 13,14|日本2|@ripaojiedian
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 13,14|新加坡|@ripaojiedian
-  - 13,14|日本|@ripaojiedian
-  - 15|CN_speednode_0018
-  - '2,3|未命名 #1'
-  - 15|HK_speednode_0024
-  - 15|KR_speednode_0037
-  - 15|US_speednode_0072
   - 15|US_speednode_0074
-  - 1|🇨🇳_CN_中国->🇺🇸_US_美国
-  - 13,14|香港5|@ripaojiedian
-  - 15|VN_speednode_0080
-  - 15|VN_speednode_0082
-  - 11|美国_1
-  - '1,2,3|_CN_->_IN_ #1'
-  - 15|CN_speednode_0017
-  - 15|VN_speednode_0075
-  - 13,14|香港|@ripaojiedian
   - 11|美国_3
-  - 15|JP_speednode_0032
-  - 13,14|美国|@ripaojiedian
-  - 15|CA_speednode_0012
-  - 15|VN_speednode_0077
-  - 15|VN_speednode_0076
-  - 15|VN_speednode_0079
+  - 15|HK_speednode_0024
+  - 13,14|香港4|@ripaojiedian
+  - 15|US_speednode_0072
+  - 15|VN_speednode_0087
+  - 11|美国_7
+  - 15|NL_speednode_0047
+  - 11|美国_14
+  - '2,3|_US_ #1'
+  - 13,14|日本|@ripaojiedian
+  - 13,14|日本2|@ripaojiedian
+  - 13,14|新加坡2|@ripaojiedian
+  - 15|VN_speednode_0078
+  - 15|VN_speednode_0080
+  - '2,3|_CN_->_US_ #1'
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 1,11|美国_6
+  - 15|VN_speednode_0085
+  - 15|KR_speednode_0035
+  - 11|美国_8
+  - 15|KR_speednode_0037
+  - 13|🇭🇰 香港7|@ripaojiedian
+  - 13,14|日本3|@ripaojiedian
   - 1|未知
-  - 11|美国_4
+  - 11|美国_2
+  - 15|VN_speednode_0075
+  - '1,2,3|_MD_->_RU_ #1'
+  - 15|VN_speednode_0077
+  - 15|VN_speednode_0086
+  - 15|SG_speednode_0050
+  - 15|CN_speednode_0017
   - 15|VN_speednode_0084
-  - 13,14|香港6|@ripaojiedian
+  - 13,14|香港5|@ripaojiedian
+  - 15|VN_speednode_0076
+  - 15|JP_speednode_0034
+  - 15|VN_speednode_0079
+  - 11|美国_4
+  - 14|香港3|@ripaojiedian
+  - '2,3|_CN_ #1'
+  - 15|VN_speednode_0082
+  - 15|CN_speednode_0018
+  - 13,14|新加坡|@ripaojiedian
+  - 11|美国_9
+  - 11|加拿大
+  - 13,14|美国|@ripaojiedian
+  - '2,3|未命名 #1'
+  - 11|美国_12
+  - 15|VN_speednode_0083
+  - 13,14|美国2|@ripaojiedian
+  - '1,2,3|_GB_->_HU_ #1'
+  - 14|香港7|@ripaojiedian
   - '1,2,3|_GB_ #1'
   - 13|🇭🇰 香港2|@ripaojiedian
+  - 1|🇨🇳_CN_中国
+  - 15|CA_speednode_0012
+  - 15|JP_speednode_0032
+  - 13,14|香港|@ripaojiedian
+  - 13,14|香港6|@ripaojiedian
+  - 1,2,3,11|美国_1
+  - 15|VN_speednode_0081
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -657,9 +751,14 @@ proxy-groups:
 - name: 🇺🇸 美国
   proxies:
   - '2,3|_US_ #1'
-  - 11|美国_1
+  - 11|美国_2
   - 11|美国_3
   - 11|美国_4
+  - 11|美国_7
+  - 11|美国_8
+  - 11|美国_9
+  - 11|美国_12
+  - 11|美国_14
   - 13,14|美国|@ripaojiedian
   - 13,14|美国2|@ripaojiedian
   - 15|US_speednode_0072
@@ -691,6 +790,7 @@ proxy-groups:
   type: select
 - name: 🇨🇦 加拿大
   proxies:
+  - 11|加拿大
   - 15|CA_speednode_0012
   type: select
 - name: 🇫🇷 法国
