@@ -1,4 +1,11 @@
 proxies:
+- name: '1,2,3|_CN_->_US_ #1'
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1572
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 1,11|美国_6
@@ -13,64 +20,58 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- name: 1,15|US_speednode_0073
+- name: 1|🇺🇸_US_美国->🇳🇱_NL_荷兰
   network: ws
-  port: 80
-  server: mstr.fastly80.hosting-ip.com
-  servername: Gn8656.io
-  skip-cert-verify: false
+  port: 443
+  server: 65.109.208.115
   tls: false
   type: vless
-  udp: true
-  uuid: 857b7905-8b11-4987-994d-09bcbf7979df
+  uuid: 557ae2a8-23bb-4386-b220-7387c4b2108f
   ws-opts:
-    headers:
-      Host: Gn8656.io
-    path: /admin
+    path: '%2Ffotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip%3Fed%3D2048'
 - cipher: aes-256-cfb
-  name: '1,2,3|_GB_->_HU_ #1'
+  name: '1,2,3|_GB_->_IQ_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.23.63
   type: ss
-- cipher: aes-256-cfb
-  name: '1,2,3|_MD_->_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 1,2,3,11|美国_1
-  network: tcp
-  port: 10002
-  server: 36.139.201.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
 - alterId: 2
   cipher: auto
-  name: '2,3|_CN_->_US_ #1'
+  name: '2,3|_CN_->_US__1 #1'
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v8.heduian.link
+      host: v29.heduian.link
     path: /oooo
-- name: 2|_US_->_FR_
+- cipher: aes-256-cfb
+  name: '2,3|_MD_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '2,3|_CN_->_US__2 #1'
   network: ws
-  port: 80
-  server: mstr.fastly80.hosting-ip.com
-  servername: Gn8656.io
-  type: vless
-  uuid: 857b7905-8b11-4987-994d-09bcbf7979df
+  port: 30808
+  server: v8.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: Gn8656.io
-    path: /admin
+      host: v8.heduian.link
+    path: /oooo
+- name: 3|_US_->_NL_
+  network: ws
+  port: 443
+  server: 65.109.208.115
+  type: vless
+  uuid: 557ae2a8-23bb-4386-b220-7387c4b2108f
+  ws-opts:
+    path: /fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip?ed=2048
