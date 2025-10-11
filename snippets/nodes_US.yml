@@ -1,16 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '2,3|_US_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-- cipher: aes-256-cfb
-  name: '2,3|_US__1 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -117,21 +105,27 @@ proxies:
   server: pupas-shirting-unsung.freesocks.work
   type: ss
 - client-fingerprint: chrome
-  name: 13,14,15|US_speednode_0080
+  name: 13,14|美国|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 23.227.194.19
+  port: 2381
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: 13,14,15|CN_speednode_0024
+  name: 13,14|美国2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 6752
-  server: 36.156.102.84
+  port: 1572
+  server: 160.16.196.59
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 15|US_speednode_0080
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 23.227.194.19
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
