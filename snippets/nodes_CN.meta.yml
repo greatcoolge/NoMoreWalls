@@ -1,4 +1,53 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: '1,2|_CN_ #1'
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- name: '2,3|🇨🇳_CN_中国 #1'
+  network: tcp
+  port: 46822
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+- client-fingerprint: chrome
+  name: '2,3|🇨🇳_CN_中国 #2'
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- name: '2,3|🇨🇳_CN_中国 #3'
+  network: tcp
+  port: 29500
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+- alterId: 2
+  cipher: auto
+  name: 3|🇨🇳_CN_中国
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
+    path: /oooo
 - name: 15|CN_speednode_0003
   password: 80c9752a41
   port: 20443
