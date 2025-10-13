@@ -1,4 +1,4 @@
-# Update: 2025-10-13 20:54
+# Update: 2025-10-13 23:26
 allow-lan: false
 dns:
   enable: true
@@ -18,6 +18,176 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
+- name: '1,2,3|_CN_->_US_ #1'
+  password: 253bc477d4e43c209f2d427272968280
+  port: 6752
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 1|_US_->_unKnow_
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: Fi.Parsashonam.CfD.
+    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
+- cipher: aes-256-cfb
+  name: '1,3|_MD_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
+- name: 1,2,3,13,14|美国|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 24673
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- name: 1,2|🇨🇳_CN_中国
+  network: tcp
+  port: 46822
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+  ws-opts:
+    path: '%2F'
+- cipher: aes-256-cfb
+  name: '1,3|_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '1,3|_NL_ #1'
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
+- name: '1,2|🇨🇳_CN_中国 #1'
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- cipher: aes-256-cfb
+  name: '1,2,3|_SK_->_unKnow_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- cipher: aes-256-cfb
+  name: '1,3|_DE_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '1,3|_CN_->_US__2 #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- cipher: aes-256-cfb
+  name: '1,2,3|_IS_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.168
+  type: ss
+- name: '1,2|🇨🇳_CN_中国 #2'
+  network: tcp
+  port: 29500
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+- alterId: 2
+  cipher: auto
+  name: '1,3|_CN_->_US__3 #1'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v29.heduian.link
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: '1,3|_TR_->_CH_ #1'
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 193.135.174.135
+  type: ss
+- name: 1,2,3,13,14|美国2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: '1,3|_GB_->_CN_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- name: 2|🇺🇸_US_美国->🏳️_unKnow_未知
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Fi.Parsashonam.CfD.
+    path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
+- alterId: 2
+  cipher: auto
+  name: 2,11|美国_6
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: v8.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v29.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -69,19 +239,6 @@ proxies:
     headers:
       Host: bpca2.catimecsgo.xyz
     path: /hkz7hea3xiaco2j/ca1
-- alterId: 2
-  cipher: auto
-  name: 11|美国_6
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: v8.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 11|美国_7
@@ -811,22 +968,6 @@ proxies:
   server: 5.44.249.43
   tfo: false
   type: ss
-- name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 24673
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- name: 13,14|美国2|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2381
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
 - cipher: aes-256-cfb
   name: 13|🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -1194,103 +1335,120 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 15|IR_speednode_0010
-  - 11|美国_4
-  - 11|法国_3
-  - 11|美国_32
-  - 15|US_speednode_0027
-  - 11|美国_25
-  - 11|美国_8
-  - 13|🇯🇵 日本2|@ripaojiedian
-  - 11|美国_38
-  - 15|RU_speednode_0016
-  - 13|🇻🇳 越南|@ripaojiedian
-  - 15|SG_speednode_0020
-  - 11|美国_6
-  - 15|US_speednode_0026
-  - 11|英国_2
-  - 11|美国_37
-  - 13,14|美国|@ripaojiedian
-  - 11|日本_3
-  - 14|香港6|@ripaojiedian
-  - 11|美国_35
-  - 15|NL_speednode_0014
-  - 11|美国_28
-  - 15|DE_speednode_0008
-  - 15|US_speednode_0028
-  - 11|法国_4
-  - 11|日本_2
-  - 11|日本_1
-  - 15|KZ_speednode_0012
-  - 11|德国_2
-  - 11|美国_31
-  - 13|🇰🇷 韩国|@ripaojiedian
-  - 15|US_speednode_0024
-  - 11|美国_29
-  - 11|美国_42
-  - 15|RU_speednode_0017
-  - 11|美国_26
-  - 11|美国_17
-  - 11|美国_19
-  - 11|美国_45
-  - 15|CA_speednode_0002
-  - 15|HK_speednode_0009
-  - 11|美国_30
-  - 14|香港3|@ripaojiedian
-  - 13,14|日本3|@ripaojiedian
-  - 11|美国_27
-  - 11|美国_20
-  - 11|美国_40
-  - 11|美国_41
-  - 11|英国_3
-  - 15|SG_speednode_0019
-  - 11|美国_22
-  - 13,14|新加坡2|@ripaojiedian
-  - 11|美国_43
+  - 1,2,3,13,14|美国|@ripaojiedian
+  - '1,3|_CN_->_US__3 #1'
   - 11|美国_36
-  - 11|美国_15
-  - 15|KR_speednode_0011
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 15|MD_speednode_0013
-  - 11|美国_9
-  - 11|英国_1
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 11|美国_2
-  - 15|CN_speednode_0003
-  - 11|美国_39
-  - 13|🇸🇬 新加坡3|@ripaojiedian
-  - 11|德国_1
-  - 11|美国_12
-  - 14|美国3|@ripaojiedian
-  - 15|AE_speednode_0001
-  - 13,14|日本|@ripaojiedian
-  - 11|美国_1
-  - 11|美国_16
+  - 11|法国_3
+  - 13|🇯🇵 日本2|@ripaojiedian
+  - 14|香港3|@ripaojiedian
   - 15|PL_speednode_0015
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - 15|SG_speednode_0018
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 15|DE_speednode_0006
-  - 13,14|美国2|@ripaojiedian
-  - 14|香港4|@ripaojiedian
-  - 11|美国_18
-  - 11|美国_14
-  - 14|日本2|@ripaojiedian
-  - 11|美国_23
-  - 15|DE_speednode_0007
-  - 15|CN_speednode_0004
-  - 15|ZA_speednode_0029
-  - 11|美国_34
-  - 11|美国_24
+  - 11|美国_19
+  - 11|美国_26
+  - 11|美国_32
+  - 2,11|美国_6
+  - '1,2,3|_CN_->_US_ #1'
+  - 14|香港6|@ripaojiedian
+  - 11|德国_1
+  - 11|美国_16
+  - 11|美国_31
+  - 15|MD_speednode_0013
+  - 11|美国_3
+  - 14|美国3|@ripaojiedian
   - 13,14|新加坡|@ripaojiedian
+  - 11|美国_38
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 11|美国_45
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 11|美国_17
+  - 15|US_speednode_0028
+  - 1|_US_->_unKnow_
+  - 15|CN_speednode_0003
+  - 15|US_speednode_0026
+  - 11|美国_34
+  - '2|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  - 15|DE_speednode_0007
   - 13,14|香港|@ripaojiedian
+  - '1,2,3|_SK_->_unKnow_ #1'
+  - 11|英国_1
+  - 11|美国_18
+  - 11|美国_42
+  - 11|美国_30
+  - 15|SG_speednode_0019
+  - 15|AE_speednode_0001
+  - 11|美国_35
+  - 11|美国_24
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_14
+  - '1,3|_GB_->_CN_ #1'
+  - 11|美国_12
+  - 11|美国_41
+  - 15|IR_speednode_0010
+  - 11|美国_8
+  - 11|美国_28
+  - 13,14|日本|@ripaojiedian
+  - 15|CA_speednode_0002
+  - '1,3|_TR_->_CH_ #1'
+  - 15|SG_speednode_0018
+  - 11|美国_15
+  - 1,2|🇨🇳_CN_中国
   - 11|加拿大
+  - 15|ZA_speednode_0029
+  - 15|SG_speednode_0020
+  - 11|英国_2
+  - 11|日本_1
+  - 13,14|日本3|@ripaojiedian
+  - 11|美国_29
+  - 15|HK_speednode_0009
+  - 11|美国_4
+  - 13|🇰🇷 韩国|@ripaojiedian
+  - '1,2|🇨🇳_CN_中国 #2'
+  - 11|英国_3
+  - 11|美国_39
+  - 11|美国_43
+  - 11|美国_27
+  - 14|日本2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
+  - 11|美国_1
+  - '1,3|_DE_ #1'
+  - 11|日本_2
+  - 11|澳洲
+  - 11|美国_37
+  - 11|美国_21
+  - 15|DE_speednode_0008
+  - 15|US_speednode_0027
+  - 15|RU_speednode_0016
+  - '1,3|_CN_->_US__2 #1'
+  - 14|香港4|@ripaojiedian
+  - 11|美国_22
+  - 15|RU_speednode_0017
+  - '1,3|_NL_ #1'
+  - 11|美国_25
+  - 15|US_speednode_0024
   - 11|美国_33
+  - 15|CN_speednode_0004
+  - '1,2,3|_IS_ #1'
+  - 2|🇺🇸_US_美国->🏳️_unKnow_未知
+  - 13|🇸🇬 新加坡3|@ripaojiedian
+  - 11|德国_2
+  - '1,3|_MD_ #1'
+  - 15|KZ_speednode_0012
+  - 11|法国_4
+  - 13,14|新加坡2|@ripaojiedian
+  - 11|美国_2
+  - 11|美国_20
+  - 13|🇻🇳 越南|@ripaojiedian
+  - 1,2,3,13,14|美国2|@ripaojiedian
+  - '1,3|_RU_ #1'
+  - 11|美国_23
+  - '1,2|🇨🇳_CN_中国 #1'
   - 11|美国_44
   - 11|美国_7
-  - 11|澳洲
-  - 11|美国_21
-  - 11|美国_3
+  - 15|KR_speednode_0011
+  - 11|美国_9
+  - 11|日本_3
+  - 15|NL_speednode_0014
+  - 11|美国_40
+  - 15|DE_speednode_0006
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1360,7 +1518,6 @@ proxy-groups:
   - 11|美国_2
   - 11|美国_3
   - 11|美国_4
-  - 11|美国_6
   - 11|美国_7
   - 11|美国_8
   - 11|美国_9
@@ -1397,8 +1554,6 @@ proxy-groups:
   - 11|美国_43
   - 11|美国_44
   - 11|美国_45
-  - 13,14|美国|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
   - 14|美国3|@ripaojiedian
   - 15|US_speednode_0024
   - 15|US_speednode_0026
@@ -1407,6 +1562,10 @@ proxy-groups:
   type: select
 - name: 🇨🇳 中国
   proxies:
+  - 1,2|🇨🇳_CN_中国
+  - '1,2|🇨🇳_CN_中国 #1'
+  - '1,2|🇨🇳_CN_中国 #2'
+  - 1,2,3,13,14|美国2|@ripaojiedian
   - 15|CN_speednode_0003
   - 15|CN_speednode_0004
   type: select
@@ -1458,11 +1617,13 @@ proxy-groups:
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
+  - '1,3|_RU_ #1'
   - 15|RU_speednode_0016
   - 15|RU_speednode_0017
   type: select
 - name: 🇩🇪 德国
   proxies:
+  - '1,3|_DE_ #1'
   - 11|德国_1
   - 11|德国_2
   - 15|DE_speednode_0006

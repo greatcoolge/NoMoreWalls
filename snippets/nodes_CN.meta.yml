@@ -1,4 +1,37 @@
 proxies:
+- client-fingerprint: chrome
+  name: 1,2|🇨🇳_CN_中国
+  network: tcp
+  port: 46822
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+  ws-opts:
+    path: '%2F'
+- name: '1,2|🇨🇳_CN_中国 #1'
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- name: '1,2|🇨🇳_CN_中国 #2'
+  network: tcp
+  port: 29500
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+- client-fingerprint: chrome
+  name: 1,2,3,13,14|美国2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
 - name: 15|CN_speednode_0003
   password: 80c9752a41
   port: 20443
