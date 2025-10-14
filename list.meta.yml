@@ -1,4 +1,4 @@
-# Update: 2025-10-14 14:38
+# Update: 2025-10-14 17:28
 allow-lan: false
 dns:
   enable: true
@@ -18,6 +18,256 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT_ #1'
+  network: tcp
+  port: 26177
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: f0a035e8-9793-4e74-e947-03c32325ba41
+- cipher: aes-256-cfb
+  name: '1,2,3|_SE_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_CN_ #1'
+  network: tcp
+  port: 31625
+  server: 154.83.95.26
+  tls: false
+  type: vmess
+  uuid: 8ad52ea0-e2b2-4c72-c6a7-e823b4d75dd9
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__1 #1'
+  network: tcp
+  port: 54812
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: afd29a15-a791-43d0-c0fb-8441f7af1ea3
+- cipher: aes-256-cfb
+  name: '1,2,3|未命名 #2'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.64
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__2 #1'
+  network: tcp
+  port: 15580
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: 11b1af02-9fcd-4681-b94e-eb330b1a2d5e
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__3 #1'
+  network: tcp
+  port: 22014
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: b76a7b55-953a-442f-92cb-5d0be5eb9612
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__4 #1'
+  network: tcp
+  port: 56660
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: f86aeda1-2635-4c6c-ada0-79541ae3b937
+- cipher: aes-256-cfb
+  name: '1,3|_DE_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__5 #1'
+  network: tcp
+  port: 25387
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: f6c88808-77b8-459c-b3df-84f8884cdddc
+- cipher: aes-256-cfb
+  name: '1,3|_GB_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__6 #1'
+  network: tcp
+  port: 14598
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: ba2dd90b-6cc4-4d2d-e569-760fe1a8aae0
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_GB__1 #1'
+  network: ws
+  port: 55256
+  server: 8.208.79.244
+  tls: false
+  type: vmess
+  uuid: 0c98868b-d4a2-43f0-876b-064377446d92
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 2
+  cipher: auto
+  name: '1,3|_CN_->_US_ #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '1,3|_CN_->_US__1 #1'
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__7 #1'
+  network: tcp
+  port: 48219
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: 3a58e86f-90e5-47b3-db49-6503c7fa20f4
+- cipher: aes-256-cfb
+  name: '1,3|_MD_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__8 #1'
+  network: tcp
+  port: 43990
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: 5fbaae09-f11e-4a7e-fc58-6c8dce1072a6
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__9 #1'
+  network: tcp
+  port: 20227
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: 763e55c4-f939-405a-aac0-ee366977fa48
+- cipher: aes-256-cfb
+  name: '1,2,3|_IS_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.168
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,2,3|_LT__10 #1'
+  network: tcp
+  port: 12407
+  server: 176.223.131.167
+  tls: false
+  type: vmess
+  uuid: fc45ae37-17da-4da4-cf6e-9223cf95cb9b
+- name: 2,3|_CN__1
+  network: tcp
+  port: 46822
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+- name: 2|🇺🇸_US_美国
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Fi.Parsashonam.CfD.
+    path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
+- alterId: 2
+  cipher: auto
+  name: 2,11|美国_6
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: v8.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: '30805'
+  server: v5.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
+    path: /oooo
+- name: 2,3|_CN__2
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- name: 2,3|_CN__3
+  network: tcp
+  port: 29500
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+- name: 3|_US_
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: Fi.Parsashonam.CfD.
+    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -69,19 +319,6 @@ proxies:
     headers:
       Host: bpca2.catimecsgo.xyz
     path: /hkz7hea3xiaco2j/ca1
-- alterId: 2
-  cipher: auto
-  name: 11|美国_6
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: v8.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 11|美国_7
@@ -1149,97 +1386,124 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 15|HK_speednode_0009
-  - 13,14|新加坡2|@ripaojiedian
-  - 11|美国_45
-  - 11|美国_3
-  - 11|美国_22
-  - 11|美国_8
-  - 15|KR_speednode_0011
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 11|美国_17
-  - 11|美国_34
-  - 11|加拿大
-  - 11|美国_35
-  - 11|德国_1
-  - 11|美国_15
-  - 15|CA_speednode_0002
-  - 11|美国_28
-  - 15|RU_speednode_0017
-  - 11|美国_31
-  - 11|美国_14
-  - 11|美国_21
-  - 11|美国_24
-  - 11|美国_1
-  - 11|美国_18
-  - 15|NL_speednode_0014
-  - 11|美国_6
-  - 15|US_speednode_0027
-  - 15|US_speednode_0028
-  - 11|日本_3
-  - 15|SG_speednode_0019
-  - 13,14|日本|@ripaojiedian
-  - 13,14|新加坡|@ripaojiedian
-  - 11|美国_7
-  - 11|美国_9
-  - 11|美国_42
-  - 11|美国_41
-  - 11|美国_30
-  - 15|DE_speednode_0008
-  - 11|美国_2
-  - 11|澳洲
-  - 11|法国_4
-  - 11|日本_2
-  - 11|美国_40
-  - 11|美国_26
-  - 15|MD_speednode_0013
-  - 11|德国_2
-  - 13,14|美国2|@ripaojiedian
-  - 11|美国_43
-  - 13,14|日本3|@ripaojiedian
-  - 11|美国_39
-  - 13,14|香港4|@ripaojiedian
+  - '1,2,3|_CN_ #1'
   - 11|美国_25
-  - 15|DE_speednode_0006
-  - 15|AE_speednode_0001
-  - 11|美国_19
+  - 15|HK_speednode_0009
+  - 11|美国_12
+  - 15|US_speednode_0027
   - 11|英国_3
-  - 15|IR_speednode_0010
-  - 11|日本_1
-  - 15|DE_speednode_0007
-  - 11|美国_29
-  - 11|美国_32
-  - 11|美国_37
-  - 15|RU_speednode_0016
+  - 11|德国_2
+  - '1,2,3|未命名 #2'
+  - 15|US_speednode_0024
+  - '1,2,3|_LT__1 #1'
+  - 11|美国_16
+  - 15|CN_speednode_0003
+  - 13,14|日本|@ripaojiedian
+  - 2,11|美国_6
+  - 13,14|新加坡2|@ripaojiedian
+  - 15|DE_speednode_0006
+  - 11|美国_15
+  - 11|澳洲
+  - '2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  - 11|美国_41
+  - 11|日本_3
   - 15|US_speednode_0026
-  - 15|PL_speednode_0015
-  - 15|KZ_speednode_0012
-  - 11|美国_27
+  - 11|美国_42
+  - 11|法国_4
+  - 11|美国_45
+  - 11|美国_22
+  - 11|美国_37
+  - '1,2,3|_LT__4 #1'
+  - 11|美国_4
+  - 15|AE_speednode_0001
+  - 15|RU_speednode_0017
+  - 14|香港3|@ripaojiedian
+  - 11|美国_24
+  - 11|美国_33
+  - 15|SG_speednode_0019
+  - 13,14|日本2|@ripaojiedian
   - 15|CN_speednode_0004
   - 15|ZA_speednode_0029
-  - 13,14|香港|@ripaojiedian
-  - 11|英国_2
-  - 15|US_speednode_0024
-  - 13,14|美国|@ripaojiedian
-  - 11|美国_12
-  - 11|美国_44
+  - 11|美国_19
+  - '1,3|_GB_ #1'
+  - 11|美国_31
+  - 11|美国_43
+  - 13,14|日本3|@ripaojiedian
+  - 15|DE_speednode_0007
+  - '1,2,3|_LT_ #1'
   - 15|SG_speednode_0018
-  - 13,14|日本2|@ripaojiedian
-  - 13|🇸🇬 新加坡3|@ripaojiedian
-  - 11|法国_3
-  - 15|CN_speednode_0003
+  - 2|🇺🇸_US_美国
+  - 15|KR_speednode_0011
+  - 11|美国_21
+  - 15|NL_speednode_0014
+  - 11|美国_35
   - 11|美国_23
-  - 14|香港3|@ripaojiedian
-  - 11|美国_36
-  - 15|SG_speednode_0020
+  - 11|美国_44
+  - 11|美国_7
+  - 11|美国_9
   - 13,14|香港6|@ripaojiedian
-  - 11|美国_20
-  - 11|美国_33
-  - 11|美国_16
-  - 11|英国_1
-  - 13|🇭🇰 香港3|@ripaojiedian
+  - 11|美国_14
+  - 11|法国_3
+  - '1,2,3|_LT__5 #1'
   - 11|美国_38
-  - 11|美国_4
+  - 11|美国_29
+  - '1,2,3|_LT__7 #1'
+  - 13,14|新加坡|@ripaojiedian
+  - 2,3|_CN__2
+  - 3|_US_
+  - '1,2,3|_LT__8 #1'
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_26
+  - 11|美国_1
+  - 15|SG_speednode_0020
+  - 11|英国_2
+  - '1,2,3|_LT__10 #1'
+  - 11|日本_1
+  - '1,3|_DE_ #1'
+  - 11|美国_28
+  - 11|美国_20
+  - 15|IR_speednode_0010
+  - 15|MD_speednode_0013
+  - 2,3|_CN__1
+  - 15|CA_speednode_0002
+  - 11|德国_1
+  - 11|美国_34
+  - 13,14|美国|@ripaojiedian
+  - 11|美国_3
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 11|美国_27
+  - '1,3|_CN_->_US__1 #1'
+  - '1,3|_MD_->_RU_ #1'
+  - 13|🇸🇬 新加坡3|@ripaojiedian
+  - 11|美国_40
+  - 11|美国_39
+  - 11|美国_32
+  - '1,3|_CN_->_US_ #1'
+  - 15|KZ_speednode_0012
+  - 11|美国_2
+  - 13,14|香港4|@ripaojiedian
+  - '1,2,3|_GB__1 #1'
+  - 2,3|_CN__3
+  - 15|RU_speednode_0016
+  - 11|美国_30
+  - 11|日本_2
+  - '1,2,3|_LT__9 #1'
+  - 11|美国_36
+  - 15|DE_speednode_0008
+  - 15|US_speednode_0028
+  - 11|英国_1
+  - 15|PL_speednode_0015
+  - '1,2,3|_LT__3 #1'
+  - 11|美国_17
+  - 11|美国_8
+  - '1,2,3|_LT__2 #1'
+  - 11|美国_18
+  - '1,2,3|_IS_ #1'
+  - 11|加拿大
+  - '1,2,3|_LT__6 #1'
+  - '1,2,3|_SE_ #1'
+  - 13,14|美国2|@ripaojiedian
+  - 13,14|香港|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1304,11 +1568,12 @@ proxy-groups:
   type: select
 - name: 🇺🇸 美国
   proxies:
+  - 2|🇺🇸_US_美国
+  - 3|_US_
   - 11|美国_1
   - 11|美国_2
   - 11|美国_3
   - 11|美国_4
-  - 11|美国_6
   - 11|美国_7
   - 11|美国_8
   - 11|美国_9
@@ -1354,6 +1619,9 @@ proxy-groups:
   type: select
 - name: 🇨🇳 中国
   proxies:
+  - '1,2,3|_CN_ #1'
+  - 2,3|_CN__2
+  - 2,3|_CN__3
   - 15|CN_speednode_0003
   - 15|CN_speednode_0004
   type: select
@@ -1392,6 +1660,8 @@ proxy-groups:
   type: select
 - name: 🇬🇧 英国
   proxies:
+  - '1,3|_GB_ #1'
+  - '1,2,3|_GB__1 #1'
   - 11|英国_1
   - 11|英国_2
   - 11|英国_3
@@ -1407,6 +1677,7 @@ proxy-groups:
   type: select
 - name: 🇩🇪 德国
   proxies:
+  - '1,3|_DE_ #1'
   - 11|德国_1
   - 11|德国_2
   - 15|DE_speednode_0006
