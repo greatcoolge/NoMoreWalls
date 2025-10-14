@@ -104,14 +104,21 @@ proxies:
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
-- name: 14|美国3|@ripaojiedian
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  sni: hsdgbuys.pages.dev
+- client-fingerprint: chrome
+  name: 13,14|美国|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 24673
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: '%2F'
+- client-fingerprint: chrome
+  name: 13,14|美国2|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan

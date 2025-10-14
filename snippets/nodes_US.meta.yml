@@ -1,4 +1,25 @@
 proxies:
+- name: 2|🇺🇸_US_美国
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Fi.Parsashonam.CfD.
+    path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
+- name: 3|_US_
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: Fi.Parsashonam.CfD.
+    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -507,17 +528,24 @@ proxies:
     headers:
       Host: vless.hubp.de
     path: /snippets
-- name: 14|美国3|@ripaojiedian
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  sni: hsdgbuys.pages.dev
+- client-fingerprint: chrome
+  name: 13,14|美国|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 24673
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: '%2F'
+- client-fingerprint: chrome
+  name: 13,14|美国2|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
 - alpn:
   - h3
   client-fingerprint: random
