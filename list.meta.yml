@@ -1,4 +1,4 @@
-# Update: 2025-10-15 23:25
+# Update: 2025-10-16 02:37
 allow-lan: false
 dns:
   enable: true
@@ -1081,31 +1081,25 @@ proxies:
   type: vmess
   uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - flow: xtls-rprx-vision
-  name: 15|AE_speednode_0001
-  port: 443
+  name: 15|AT_speednode_0001
+  port: 25801
   reality-opts:
-    public-key: RDAZYkEO3l0_jrv5O5edQ6zsMYrxKLp1GPV339ZTDSk
-    short-id: ec7212a8
-  server: 38.180.26.205
-  servername: nspk.ru
+    public-key: iC7qQK0Yu8sQsiIj5JPTGDVTrFkZDoesDUn24pDwgQk
+  server: mengying.eu.org
+  servername: updates.cdn-apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-- flow: xtls-rprx-vision
-  name: 15|CA_speednode_0002
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 132.145.108.97
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  uuid: 4c7f66da-af49-4e6d-b60c-f6a0eaa00919
+- name: 15|CN_speednode_0002
+  password: e531d1bc-a56f-4e1a-a295-1442369a19c1
+  port: 26004
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
   udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - name: 15|CN_speednode_0003
   password: 80c9752a41
   port: 20443
@@ -1115,93 +1109,19 @@ proxies:
   type: http
   udp: true
   username: dd247fc262
-- alterId: 2
-  cipher: auto
-  name: 15|CN_speednode_0004
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
-- name: 15|DE_speednode_0006
-  port: 48769
+- name: 15|DE_speednode_0004
+  port: 6666
   reality-opts:
-    public-key: 7nXyxyyn6fSlJzPO1DFmIEUV8LAmoP58-_1zP_MKo2E
-    short-id: 177f438f
-  server: fast7.hvitrin.ir
-  servername: miro.com
+    public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+    short-id: b525ecd2fc
+  server: 188.68.53.100
+  servername: Tgju.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f8806934-15d7-4194-9c35-ec7a140bb6f6
-- flow: xtls-rprx-vision
-  name: 15|DE_speednode_0007
-  port: 8443
-  reality-opts:
-    public-key: NvdLgcQKj0XeAmqIpCEdvcsgfNrtSyfGnQYNdZ7eTFE
-    short-id: 3be8ba17d00eb522
-  server: de.monkeyisland.life
-  servername: www.stackoverflow.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd71044e-127b-429c-9f4a-bd2432e473be
-- name: 15|DE_speednode_0008
-  network: ws
-  port: 443
-  server: net2026.zanddynastyofpersia.org
-  servername: net2026.zanddynastyofpersia.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
-  ws-opts:
-    headers:
-      Host: net2026.zanddynastyofpersia.org
-    path: /eJsVXFVZ6iavNx1EFxOyH861WH
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 15|HK_speednode_0009
-  network: http
-  port: 31212
-  server: 47.242.90.210
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
-- http-opts:
-    headers:
-      Host:
-      - Telewebion.com
-    method: GET
-    path:
-    - /
-  name: 15|IR_speednode_0010
-  network: http
-  port: 20532
-  server: 94.182.137.12
-  servername: Telewebion.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
-- name: 15|KR_speednode_0011
+  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- name: 15|KR_speednode_0005
   password: test.+
   port: 30446
   server: testkr3.ssv.vc
@@ -1210,56 +1130,19 @@ proxies:
   type: http
   udp: true
   username: test
-- name: 15|KZ_speednode_0012
-  port: 8080
+- name: 15|NL_speednode_0006
+  port: 32155
   reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 38.107.234.93
-  servername: yandex.com
+    public-key: 6-b7u_t7wG_jbda_lucHW4Au9biBl1E0tA2Zkqm8mSw
+    short-id: 737af772
+  server: 31.207.44.210
+  servername: yahoo.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-- flow: xtls-rprx-vision
-  name: 15|MD_speednode_0013
-  port: 443
-  reality-opts:
-    public-key: llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws
-    short-id: 8453e5fd9af927
-  server: rus-0001-xr.packet-drop-society.net
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71f0ddd-8ae5-437b-8d59-582779757296
-- name: 15|NL_speednode_0014
-  port: 8080
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 77.246.100.169
-  servername: yandex.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-- name: 15|PL_speednode_0015
-  port: 8080
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 77.83.245.220
-  servername: yandex.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-- name: 15|RU_speednode_0016
+  uuid: 2e23b585-a486-4541-83d8-5832a1409c6e
+- name: 15|RU_speednode_0007
   network: ws
   port: 2096
   server: 188.42.145.253
@@ -1273,35 +1156,8 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 15|RU_speednode_0017
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 15|SG_speednode_0018
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 15|SG_speednode_0019
+  name: 15|SG_speednode_0008
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -1312,79 +1168,14 @@ proxies:
   server: 5.44.249.42
   type: ss
   udp: true
-- name: 15|SG_speednode_0020
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 15|US_speednode_0024
-  network: ws
-  port: 2083
-  server: 162.159.142.252
-  servername: fei.634676.xyz
-  skip-cert-verify: false
+- name: 15|TW_speednode_0009
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 15|US_speednode_0026
-  network: ws
-  port: 2096
-  server: 72.167.25.253
-  servername: gaosir.unfeeling.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /Telegram
-- name: 15|US_speednode_0027
-  network: ws
-  port: 2082
-  server: www.speedtest.net
-  servername: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e6ac850f-c81a-482d-ab54-c3fa3b327e4e
-  ws-opts:
-    headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-- name: 15|US_speednode_0028
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 375e6eaa-d849-40e4-b4f7-102e6ee0fe87
-  ws-opts:
-    headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- cipher: chacha20-ietf-poly1305
-  name: 15|ZA_speednode_0029
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 156.38.168.58
-  type: ss
-  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -1396,128 +1187,113 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 2,3|_US__2
-  - 11|英国_1
-  - 13,14|香港|@ripaojiedian
-  - 11|日本_3
-  - 11|美国_16
-  - '1,2,3|_US_->_DE_ #1'
-  - '1,2,3|_IR_ #1'
-  - '1,2,3|_CN_->_JP_ #1'
-  - 11|美国_24
-  - 11|法国_4
-  - 13,14|新加坡2|@ripaojiedian
-  - 11|美国_37
-  - 11|美国_1
-  - '1,3|_GB_ #1'
-  - 11|美国_43
-  - 2,3|_CN__2
-  - 15|DE_speednode_0008
-  - 11|美国_15
-  - '1,3|_MD_->_RU_ #1'
-  - 11|美国_19
-  - 11|美国_22
-  - '1,2,3|_CA_ #1'
-  - 11|美国_21
-  - 11|美国_32
-  - '1,2,3|_US__1 #1'
-  - 15|NL_speednode_0014
-  - 11|美国_30
-  - 11|美国_41
-  - '1,2,3|_DE__1 #1'
-  - 11|美国_25
-  - 15|SG_speednode_0018
-  - '1,2,3|_DE__4 #1'
   - '1,2,3|_DE__2 #1'
-  - 11|美国_33
-  - 11|美国_35
-  - '1,2,3|_DE__5 #1'
-  - 15|RU_speednode_0016
-  - 13|🇸🇬 新加坡4|@ripaojiedian
-  - 15|SG_speednode_0019
-  - 15|US_speednode_0027
-  - 13,14|香港4|@ripaojiedian
-  - 13|🇸🇬 新加坡3|@ripaojiedian
-  - '1,2,3|_AU_ #1'
-  - 11|日本_2
-  - 15|HK_speednode_0009
-  - 2|🇺🇸_US_美国
-  - 15|MD_speednode_0013
-  - 14|新加坡4|@ripaojiedian
-  - 15|US_speednode_0028
-  - 11|澳洲
-  - '1,2,3|_CN_->_US_ #1'
-  - 3|_US_
-  - 13,14|日本2|@ripaojiedian
-  - 11|美国_8
-  - '1,2,3|_IR_->_NL_ #1'
-  - 15|CN_speednode_0003
-  - 11|美国_23
-  - 11|美国_38
-  - 15|US_speednode_0024
-  - 15|AE_speednode_0001
-  - 15|PL_speednode_0015
-  - 15|KR_speednode_0011
+  - 2,3|_CN__2
   - '1,2,3|_DE_ #1'
-  - 11|美国_45
   - 11|加拿大
-  - 11|美国_17
-  - 2,11|美国_6
-  - 11|英国_3
-  - 11|美国_27
-  - 11|美国_28
-  - 15|US_speednode_0026
-  - 11|美国_18
-  - '1,3|_MD_ #1'
-  - 11|法国_3
-  - 11|美国_29
-  - 13,14|美国|@ripaojiedian
-  - 11|美国_3
-  - '1,2,3|_IN_ #1'
-  - 2,3|_IR_->_DE_
-  - '1,2,3|_SE_ #1'
-  - 13,14|新加坡|@ripaojiedian
-  - 11|德国_2
-  - 11|美国_2
-  - 11|美国_34
-  - 11|美国_44
-  - '1,2,3|_IR_->_NL__1 #1'
-  - 11|美国_26
-  - 11|美国_14
-  - 15|CN_speednode_0004
-  - 11|美国_4
-  - 11|美国_31
-  - 13,14|日本3|@ripaojiedian
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 11|美国_9
-  - 15|IR_speednode_0010
-  - '1,2,3|_DE__3 #1'
-  - '1,3|_CN_->_US__1 #1'
-  - 15|CA_speednode_0002
-  - 11|美国_40
-  - 11|美国_12
-  - 11|美国_39
-  - 13,14|日本|@ripaojiedian
-  - 11|美国_42
-  - 15|RU_speednode_0017
-  - 11|美国_36
-  - 11|美国_7
-  - 11|日本_1
-  - 15|DE_speednode_0007
+  - 11|美国_33
+  - 13,14|香港|@ripaojiedian
+  - 11|美国_45
   - 14|香港3|@ripaojiedian
-  - '1,2,3|_CN_->_DE_ #1'
-  - 1,2,3,13,14|美国2|@ripaojiedian
-  - 2,3|_CN_
-  - 15|KZ_speednode_0012
-  - 15|SG_speednode_0020
-  - 15|ZA_speednode_0029
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 15|DE_speednode_0006
-  - 11|德国_1
-  - 11|美国_20
-  - 13,14|香港6|@ripaojiedian
-  - 2,3|_CN__1
+  - 11|美国_38
+  - 11|美国_3
+  - '1,2,3|_CN_->_US_ #1'
+  - 11|美国_44
+  - '1,3|_MD_ #1'
+  - 11|美国_16
+  - 11|美国_40
+  - 11|日本_2
+  - 11|美国_42
+  - 2,11|美国_6
+  - 11|美国_29
+  - 15|TW_speednode_0009
+  - 13|🇸🇬 新加坡3|@ripaojiedian
   - 11|英国_2
+  - 15|CN_speednode_0002
+  - 11|美国_41
+  - 11|美国_34
+  - 15|AT_speednode_0001
+  - 15|RU_speednode_0007
+  - 15|CN_speednode_0003
+  - '1,2,3|_IR_ #1'
+  - 11|美国_22
+  - 2,3|_US__2
+  - 13,14|新加坡|@ripaojiedian
+  - 11|澳洲
+  - '1,2,3|_US_->_DE_ #1'
+  - 11|美国_14
+  - '1,2,3|_SE_ #1'
+  - '1,2,3|_CA_ #1'
+  - 11|美国_25
+  - 11|美国_35
+  - 11|美国_15
+  - 2|🇺🇸_US_美国
+  - 11|美国_32
+  - 13,14|新加坡2|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
+  - 11|美国_27
+  - '1,2,3|_DE__1 #1'
+  - 11|美国_43
+  - 11|法国_3
+  - 11|美国_36
+  - 15|SG_speednode_0008
+  - 11|美国_39
+  - 11|美国_21
+  - 11|法国_4
+  - 13,14|日本2|@ripaojiedian
+  - 13,14|日本3|@ripaojiedian
+  - 11|美国_31
+  - 11|英国_3
+  - 13,14|日本|@ripaojiedian
+  - 1,2,3,13,14|美国2|@ripaojiedian
+  - 11|美国_26
+  - 15|NL_speednode_0006
+  - 13|🇸🇬 新加坡4|@ripaojiedian
+  - 11|美国_12
+  - '1,2,3|_IN_ #1'
+  - '1,3|_CN_->_US__1 #1'
+  - '1,2,3|_CN_->_JP_ #1'
+  - 11|美国_7
+  - 11|美国_4
+  - 13,14|香港6|@ripaojiedian
+  - 11|美国_37
+  - '1,2,3|_DE__5 #1'
+  - '1,2,3|_IR_->_NL_ #1'
+  - 2,3|_IR_->_DE_
+  - 2,3|_CN_
+  - 11|美国_18
+  - '1,3|_GB_ #1'
+  - 14|新加坡4|@ripaojiedian
+  - 11|美国_28
+  - 13,14|香港4|@ripaojiedian
+  - '1,2,3|_DE__4 #1'
+  - 15|DE_speednode_0004
+  - 11|美国_24
+  - '1,2,3|_CN_->_DE_ #1'
+  - 11|德国_2
+  - '1,2,3|_US__1 #1'
+  - 11|美国_30
+  - 11|美国_20
+  - '1,2,3|_IR_->_NL__1 #1'
+  - 11|美国_1
+  - 11|美国_19
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 2,3|_CN__1
+  - 11|美国_17
+  - 11|德国_1
+  - 11|日本_1
+  - '1,2,3|_AU_ #1'
+  - 15|KR_speednode_0005
+  - 11|美国_9
+  - 3|_US_
+  - 11|美国_23
+  - '1,3|_MD_->_RU_ #1'
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_8
+  - '1,2,3|_DE__3 #1'
+  - 11|美国_2
+  - 11|日本_3
+  - 11|英国_1
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1627,18 +1403,14 @@ proxy-groups:
   - 11|美国_44
   - 11|美国_45
   - 13,14|美国|@ripaojiedian
-  - 15|US_speednode_0024
-  - 15|US_speednode_0026
-  - 15|US_speednode_0027
-  - 15|US_speednode_0028
   type: select
 - name: 🇨🇳 中国
   proxies:
   - 2,3|_CN_
   - 2,3|_CN__1
   - 2,3|_CN__2
+  - 15|CN_speednode_0002
   - 15|CN_speednode_0003
-  - 15|CN_speednode_0004
   type: select
 - name: 🇭🇰 香港
   proxies:
@@ -1648,17 +1420,15 @@ proxy-groups:
   - 13,14|香港4|@ripaojiedian
   - 13,14|香港6|@ripaojiedian
   - 14|香港3|@ripaojiedian
-  - 15|HK_speednode_0009
   type: select
 - name: ❔ 台湾
   proxies:
-  - REJECT
+  - 15|TW_speednode_0009
   type: select
 - name: 🇨🇦 加拿大
   proxies:
   - '1,2,3|_CA_ #1'
   - 11|加拿大
-  - 15|CA_speednode_0002
   type: select
 - name: 🇫🇷 法国
   proxies:
@@ -1672,9 +1442,7 @@ proxy-groups:
   - 13|🇸🇬 新加坡3|@ripaojiedian
   - 13|🇸🇬 新加坡4|@ripaojiedian
   - 14|新加坡4|@ripaojiedian
-  - 15|SG_speednode_0018
-  - 15|SG_speednode_0019
-  - 15|SG_speednode_0020
+  - 15|SG_speednode_0008
   type: select
 - name: 🇬🇧 英国
   proxies:
@@ -1685,12 +1453,11 @@ proxy-groups:
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - 15|KR_speednode_0011
+  - 15|KR_speednode_0005
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - 15|RU_speednode_0016
-  - 15|RU_speednode_0017
+  - 15|RU_speednode_0007
   type: select
 - name: 🇩🇪 德国
   proxies:
@@ -1702,9 +1469,7 @@ proxy-groups:
   - '1,2,3|_DE__5 #1'
   - 11|德国_1
   - 11|德国_2
-  - 15|DE_speednode_0006
-  - 15|DE_speednode_0007
-  - 15|DE_speednode_0008
+  - 15|DE_speednode_0004
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站
