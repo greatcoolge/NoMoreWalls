@@ -1,85 +1,125 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT_ #1'
+- name: '1,2,3|_DE_ #1'
   network: tcp
-  port: 26177
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: f0a035e8-9793-4e74-e947-03c32325ba41
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 139.162.180.57
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- name: '1,2,3|_CN_->_DE_ #1'
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 205.198.95.254
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- name: '1,2,3|_DE__1 #1'
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 139.162.144.54
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- name: '1,2,3|_US_->_DE_ #1'
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52155
+  server: 46.3.36.215
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
 - cipher: aes-256-cfb
-  name: '1,2,3|_SE_ #1'
+  name: '1,3|_MD_->_RU_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 192.71.166.100
+  server: 185.153.197.5
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_CN_ #1'
-  network: tcp
-  port: 31625
-  server: 154.83.95.26
-  tls: false
-  type: vmess
-  uuid: 8ad52ea0-e2b2-4c72-c6a7-e823b4d75dd9
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__1 #1'
-  network: tcp
-  port: 54812
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: afd29a15-a791-43d0-c0fb-8441f7af1ea3
 - cipher: aes-256-cfb
-  name: '1,2,3|未命名 #2'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.64
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__2 #1'
-  network: tcp
-  port: 15580
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: 11b1af02-9fcd-4681-b94e-eb330b1a2d5e
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__3 #1'
-  network: tcp
-  port: 22014
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: b76a7b55-953a-442f-92cb-5d0be5eb9612
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__4 #1'
-  network: tcp
-  port: 56660
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: f86aeda1-2635-4c6c-ada0-79541ae3b937
-- cipher: aes-256-cfb
-  name: '1,3|_DE_ #1'
+  name: '1,3|_MD_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 46.183.184.60
+  server: 91.132.94.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_DE__2 #1'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.193
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_IR_ #1'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.152
+  type: ss
+- name: '1,2,3|_CN_->_US_ #1'
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 24673
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_IR_->_NL_ #1'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.142
   type: ss
 - alterId: 0
   cipher: auto
-  name: '1,2,3|_LT__5 #1'
-  network: tcp
-  port: 25387
-  server: 176.223.131.167
+  name: '1,2,3|_CA_ #1'
+  network: ws
+  port: 52449
+  server: 74.48.194.126
+  servername: ''
+  sni: ''
   tls: false
   type: vmess
-  uuid: f6c88808-77b8-459c-b3df-84f8884cdddc
+  uuid: a68840da-f202-4ab5-9c4a-237bff985814
+  ws-opts:
+    path: /a68840da-f202-4ab5-9c4a-237bff985814
+- cipher: aes-256-cfb
+  name: '1,2,3|_AU_ #1'
+  password: amazonskr05
+  port: 443
+  server: 3.25.225.79
+  type: ss
+- name: '1,2,3|_CN_->_JP_ #1'
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 2173
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 1,2,3,13,14|美国2|@ripaojiedian
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_DE__3 #1'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.197
+  type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: '1,2,3|_US__1 #1'
+  network: tcp
+  port: 12449
+  server: 45.13.226.116
+  servername: ''
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: b1053a67-88b9-4550-b5fb-826735adc045
 - cipher: aes-256-cfb
   name: '1,3|_GB_ #1'
   password: f8f7aCzcPKbsF8p3
@@ -88,116 +128,101 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '1,2,3|_LT__6 #1'
+  fingerprint: ''
+  name: '1,2,3|_DE__4 #1'
   network: tcp
-  port: 14598
-  server: 176.223.131.167
+  port: 80
+  server: 78.47.12.94
+  servername: ''
+  sni: ''
   tls: false
   type: vmess
-  uuid: ba2dd90b-6cc4-4d2d-e569-760fe1a8aae0
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_GB__1 #1'
-  network: ws
-  port: 55256
-  server: 8.208.79.244
-  tls: false
-  type: vmess
-  uuid: 0c98868b-d4a2-43f0-876b-064377446d92
-  ws-opts:
-    path: /arki?ed=2048
+  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
+- cipher: aes-256-cfb
+  name: '1,2,3|_SE_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_IR_->_NL__1 #1'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.133
+  type: ss
+- cipher: aes-256-cfb
+  name: '1,2,3|_IN_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.209.147.198
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '1,2,3|_DE__5 #1'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.174
+  type: ss
 - alterId: 2
   cipher: auto
-  name: '1,3|_CN_->_US_ #1'
+  name: '1,3|_CN_->_US__1 #1'
   network: ws
   port: 30808
   server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: v8.heduian.link
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '1,3|_CN_->_US__1 #1'
+- name: 2|🇺🇸_US_美国
   network: ws
-  port: 30805
-  server: v5.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  port: 2095
+  server: test2.amin8263.ir
+  tls: false
+  type: vless
+  uuid: 519ee767-a49c-45c1-b86c-d98f6dd6744e
   ws-opts:
     headers:
-      host: v5.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__7 #1'
-  network: tcp
-  port: 48219
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: 3a58e86f-90e5-47b3-db49-6503c7fa20f4
-- cipher: aes-256-cfb
-  name: '1,3|_MD_->_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__8 #1'
-  network: tcp
-  port: 43990
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: 5fbaae09-f11e-4a7e-fc58-6c8dce1072a6
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__9 #1'
-  network: tcp
-  port: 20227
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: 763e55c4-f939-405a-aac0-ee366977fa48
-- cipher: aes-256-cfb
-  name: '1,2,3|_IS_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.168
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_LT__10 #1'
-  network: tcp
-  port: 12407
-  server: 176.223.131.167
-  tls: false
-  type: vmess
-  uuid: fc45ae37-17da-4da4-cf6e-9223cf95cb9b
-- name: 2,3|_CN__1
+      Host: test3.amin8263.ir
+    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
+- name: 2,3|_CN_
   network: tcp
   port: 46822
   server: 89.44.242.222
   tls: false
   type: vless
   uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
-- name: 2|🇺🇸_US_美国
+  ws-opts:
+    path: '%2F'
+- name: 2,3|_IR_->_DE_
   network: ws
-  port: 8080
-  server: 104.17.147.22
+  port: 10000
+  server: 94.183.156.156
   tls: false
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Fi.Parsashonam.CfD.
-    path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
+  uuid: 647a2a23-1b49-45c3-bfb8-9adefee43de7
+  ws-opts: {}
+- name: 2,3|_CN__1
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- name: 2,3|_CN__2
+  network: tcp
+  port: 29500
+  server: 89.44.242.222
+  tls: false
+  type: vless
+  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+- name: 2,3|_US__2
+  network: tcp
+  port: 2002
+  server: 31.40.204.182
+  tls: false
+  type: vless
+  uuid: 9ec86e00-22c6-4838-8e8e-1cf6f2a9ec4f
 - alterId: 2
   cipher: auto
   name: 2,11|美国_6
@@ -212,43 +237,16 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: ws
-  port: '30805'
-  server: v5.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v5.heduian.link
-    path: /oooo
-- name: 2,3|_CN__2
-  network: tcp
-  port: 29495
-  server: 89.44.242.222
-  tls: false
-  type: vless
-  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
-- name: 2,3|_CN__3
-  network: tcp
-  port: 29500
-  server: 89.44.242.222
-  tls: false
-  type: vless
-  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
 - name: 3|_US_
   network: ws
-  port: 8080
-  server: 104.17.147.22
+  port: 2095
+  server: test2.amin8263.ir
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 519ee767-a49c-45c1-b86c-d98f6dd6744e
   ws-opts:
     headers:
-      host: Fi.Parsashonam.CfD.
-    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
+      host: test3.amin8263.ir
+    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -952,27 +950,19 @@ proxies:
   uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
 - name: 13,14|香港4|@ripaojiedian
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 4400
-  server: 221.128.195.222
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 443
+  server: 60.82.70.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|香港6|@ripaojiedian
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
+  password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
   server: 58.152.53.162
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
-  type: trojan
-- name: 13,14|日本2|@ripaojiedian
-  network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 1920
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
   type: trojan
 - alterId: 2
   cipher: auto
@@ -990,28 +980,36 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
+- name: 13,14|日本2|@ripaojiedian
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 3272
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 13,14|日本3|@ripaojiedian
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 3271
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 1806
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|新加坡|@ripaojiedian
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 2173
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 2283
   server: 36.156.102.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|新加坡2|@ripaojiedian
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 5321
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 1085
   server: 36.156.102.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
@@ -1025,18 +1023,20 @@ proxies:
   server: 5.44.249.43
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 13|🇸🇬 新加坡4|@ripaojiedian
+  port: 22433
+  server: 47.245.106.193
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - name: 13,14|美国|@ripaojiedian
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 24673
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- name: 13,14|美国2|@ripaojiedian
-  network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 2381
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 6752
   server: 36.156.102.84
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
@@ -1051,6 +1051,16 @@ proxies:
   tls: false
   type: vmess
   uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡4|@ripaojiedian
+  network: tcp
+  port: '22433'
+  server: 47.245.106.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - flow: xtls-rprx-vision
   name: 15|AE_speednode_0001
   port: 443

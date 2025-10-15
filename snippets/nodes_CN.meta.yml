@@ -1,21 +1,22 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '1,2,3|_CN_ #1'
+- client-fingerprint: chrome
+  name: 2,3|_CN_
   network: tcp
-  port: 31625
-  server: 154.83.95.26
+  port: 46822
+  server: 89.44.242.222
   tls: false
-  type: vmess
-  uuid: 8ad52ea0-e2b2-4c72-c6a7-e823b4d75dd9
-- name: 2,3|_CN__2
+  type: vless
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+  ws-opts:
+    path: '%2F'
+- name: 2,3|_CN__1
   network: tcp
   port: 29495
   server: 89.44.242.222
   tls: false
   type: vless
   uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
-- name: 2,3|_CN__3
+- name: 2,3|_CN__2
   network: tcp
   port: 29500
   server: 89.44.242.222
