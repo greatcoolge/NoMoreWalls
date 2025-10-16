@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '1,2,3|_DE_ #1'
+  name: 1,2,3,11|德国_1
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 45.87.175.155
@@ -11,32 +11,12 @@ proxies:
   port: 8080
   server: 45.87.175.177
   type: ss
-- encryption: none
-  name: 11|德国_1
-  network: ws
-  port: 2096
-  server: 5.10.214.44
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  uuid: 12345678-1234-1234-1234-123456789123
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets
-- encryption: none
+- cipher: chacha20-ietf-poly1305
   name: 11|德国_2
-  network: ws
-  port: 2096
-  server: 5.175.141.43
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.174
+  type: ss
 - client-fingerprint: chrome
   name: 15|DE_speednode_0002
   port: 6666
