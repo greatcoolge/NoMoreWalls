@@ -1,44 +1,16 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '1,2,3|_US__1 #1'
-  network: tcp
-  port: 12449
-  server: 45.13.226.116
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: b1053a67-88b9-4550-b5fb-826735adc045
-- name: 2|🇺🇸_US_美国
-  network: ws
-  port: 2095
-  server: test2.amin8263.ir
-  tls: false
-  type: vless
-  uuid: 519ee767-a49c-45c1-b86c-d98f6dd6744e
-  ws-opts:
-    headers:
-      Host: test3.amin8263.ir
-    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
-- name: 2,3|_US__2
-  network: tcp
-  port: 2002
-  server: 31.40.204.182
-  tls: false
-  type: vless
-  uuid: 9ec86e00-22c6-4838-8e8e-1cf6f2a9ec4f
-- name: 3|_US_
-  network: ws
-  port: 2095
-  server: test2.amin8263.ir
-  type: vless
-  uuid: 519ee767-a49c-45c1-b86c-d98f6dd6744e
-  ws-opts:
-    headers:
-      host: test3.amin8263.ir
-    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
+- cipher: aes-256-cfb
+  name: '1,2,3|_US_ #1'
+  password: amazonskr05
+  port: 443
+  server: 54.82.229.122
+  type: ss
+- cipher: aes-256-cfb
+  name: '1,3|_US__1 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.39.112.103
+  type: ss
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -551,8 +523,17 @@ proxies:
   name: 13,14|美国|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 6752
-  server: 36.156.102.84
+  port: 2381
+  server: 160.16.144.208
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 13,14|美国2|@ripaojiedian
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 24673
+  server: 160.16.124.55
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
