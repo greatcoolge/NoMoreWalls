@@ -1,4 +1,4 @@
-# Update: 2025-10-16 11:39
+# Update: 2025-10-16 14:37
 allow-lan: false
 dns:
   enable: true
@@ -1090,27 +1090,7 @@ proxies:
   tls: false
   type: vmess
   uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
-- flow: xtls-rprx-vision
-  name: 15|AT_speednode_0001
-  port: 25801
-  reality-opts:
-    public-key: iC7qQK0Yu8sQsiIj5JPTGDVTrFkZDoesDUn24pDwgQk
-  server: mengying.eu.org
-  servername: updates.cdn-apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4c7f66da-af49-4e6d-b60c-f6a0eaa00919
-- name: 15|CN_speednode_0002
-  password: e531d1bc-a56f-4e1a-a295-1442369a19c1
-  port: 26004
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|CN_speednode_0003
+- name: 15|CN_speednode_0001
   password: 80c9752a41
   port: 20443
   server: nat-hk-37465.strongpipe.cloud
@@ -1119,7 +1099,7 @@ proxies:
   type: http
   udp: true
   username: dd247fc262
-- name: 15|DE_speednode_0004
+- name: 15|DE_speednode_0002
   port: 6666
   reality-opts:
     public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
@@ -1131,7 +1111,61 @@ proxies:
   type: vless
   udp: true
   uuid: 0abf9050-c7be-464d-80af-24094c2b97de
-- name: 15|KR_speednode_0005
+- flow: xtls-rprx-vision
+  name: 15|GR_speednode_0003
+  port: 443
+  reality-opts:
+    public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
+    short-id: 0fa84b90
+  server: 185.39.207.121
+  servername: vk.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- alterId: 2
+  cipher: auto
+  name: 15|HK_speednode_0004
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 15|HK_speednode_0005
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 15|HK_speednode_0006
+  network: http
+  port: 31212
+  server: 47.242.90.210
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+- name: 15|KR_speednode_0008
   password: test.+
   port: 30446
   server: testkr3.ssv.vc
@@ -1140,19 +1174,7 @@ proxies:
   type: http
   udp: true
   username: test
-- name: 15|NL_speednode_0006
-  port: 32155
-  reality-opts:
-    public-key: 6-b7u_t7wG_jbda_lucHW4Au9biBl1E0tA2Zkqm8mSw
-    short-id: 737af772
-  server: 31.207.44.210
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2e23b585-a486-4541-83d8-5832a1409c6e
-- name: 15|RU_speednode_0007
+- name: 15|RU_speednode_0009
   network: ws
   port: 2096
   server: 188.42.145.253
@@ -1167,7 +1189,7 @@ proxies:
       Host: gaosir.unfeeling.sbs
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 15|SG_speednode_0008
+  name: 15|SG_speednode_0010
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -1178,7 +1200,7 @@ proxies:
   server: 5.44.249.42
   type: ss
   udp: true
-- name: 15|TW_speednode_0009
+- name: 15|TW_speednode_0011
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -1186,6 +1208,19 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- flow: xtls-rprx-vision
+  name: 15|US_speednode_0012
+  port: 443
+  reality-opts:
+    public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+    short-id: f8c64c7a
+  server: 212.18.104.19
+  servername: nspk.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -1197,112 +1232,114 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 11|日本_1
-  - 11|美国_16
-  - 11|日本_2
-  - 11|美国_23
-  - 11|美国_42
-  - 11|美国_28
   - '2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  - 11|美国_34
-  - 2,3|_CN__1
-  - 11|美国_26
-  - 11|美国_27
-  - 11|美国_38
-  - 15|NL_speednode_0006
-  - 2,3|_CN__2
-  - 11|美国_19
-  - '1,2,3|_US_->_IN_ #1'
-  - 11|澳洲
-  - 13,14|新加坡|@ripaojiedian
-  - '1,3|_CN_->_US__1 #1'
-  - 11|加拿大
-  - 3|_IR__2
-  - 11|美国_36
-  - '1,3|_GB_ #1'
-  - '1,2,3|_DE_ #1'
-  - 11|美国_31
-  - '1,2,3|_CN__3 #1'
-  - '1,3|_CN_->_US_ #1'
-  - 11|美国_18
-  - 11|美国_35
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - '1,2,3|_RU_ #1'
-  - 11|美国_33
-  - 11|美国_15
-  - 11|法国_4
-  - '2|未知 #1'
-  - '1,2,3|_DE_->_US__1 #1'
-  - 15|DE_speednode_0004
-  - 11|美国_32
-  - 11|美国_43
+  - 15|HK_speednode_0005
+  - 11|美国_8
   - '1,2,3|_DE_->_unKnow_ #1'
-  - 11|美国_2
-  - 13,14|香港4|@ripaojiedian
-  - 2,3|_CN_
-  - 11|美国_14
-  - '1,2,3|_IR_ #1'
-  - 13,14|日本2|@ripaojiedian
-  - '1,2,3|未命名 #1'
-  - 11|美国_39
-  - 14|新加坡3|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 11|美国_30
-  - 11|美国_4
   - 11|英国_3
-  - '1,2,3|_IE_->_US_ #1'
-  - '1,2,3|_IR__1 #1'
-  - 11|美国_1
-  - 11|美国_45
-  - 13,14|日本3|@ripaojiedian
-  - 13,14|新加坡2|@ripaojiedian
-  - 15|CN_speednode_0003
-  - 11|美国_40
-  - 15|TW_speednode_0009
-  - 11|德国_1
-  - 11|英国_1
-  - 11|美国_24
-  - '1,3|_IS_ #1'
-  - 15|RU_speednode_0007
-  - 13,14|美国2|@ripaojiedian
-  - 15|SG_speednode_0008
-  - 11|英国_2
-  - 11|美国_9
-  - '1,2,3|_US_ #1'
-  - 11|美国_25
   - '1,3|_IR_->_NL_ #1'
-  - '1,3|_DE__1 #1'
+  - 11|美国_42
+  - 11|美国_23
+  - '1,3|_CN_->_US__1 #1'
+  - 2,11|美国_6
+  - 11|英国_1
+  - 11|法国_4
+  - 11|美国_20
+  - 3|_DE_->_US_
+  - 11|美国_16
+  - 13,14|日本2|@ripaojiedian
+  - 15|HK_speednode_0004
   - 11|美国_12
   - 13|🇸🇬 新加坡3|@ripaojiedian
-  - 15|KR_speednode_0005
-  - 3|_DE_->_US_
-  - 13,14|香港|@ripaojiedian
-  - 13|🇸🇬 新加坡4|@ripaojiedian
-  - 11|美国_29
+  - 11|日本_2
+  - 11|德国_2
+  - 11|美国_17
+  - '1,2,3|_IR__1 #1'
+  - 2|🇩🇪_DE_德国->🇺🇸_US_美国
+  - 2,3|_CN__2
+  - 11|美国_32
+  - '1,3|_US__1 #1'
+  - 11|日本_1
+  - 11|美国_31
+  - '1,2,3|_IE_->_US_ #1'
+  - 11|美国_15
+  - '1,3|_GB_ #1'
+  - 13,14|香港4|@ripaojiedian
+  - 2,3|_CN__1
+  - 13,14|新加坡|@ripaojiedian
+  - 3|_IR__2
+  - '1,3|_DE__1 #1'
+  - 11|美国_28
+  - 11|美国_45
+  - 11|美国_40
+  - '1,2,3|_US_->_IN_ #1'
+  - 11|美国_30
   - 11|日本_3
+  - 11|美国_43
+  - 15|DE_speednode_0002
+  - '1,2,3|_CN__3 #1'
+  - 11|美国_29
+  - 2,3|_CN_
+  - '1,2,3|_IR_ #1'
+  - 11|美国_1
+  - 14|新加坡3|@ripaojiedian
+  - 11|美国_2
+  - 13,14|美国2|@ripaojiedian
+  - 11|美国_21
+  - 14|新加坡4|@ripaojiedian
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_37
+  - 13,14|香港|@ripaojiedian
+  - 11|德国_1
+  - '1,3|_AU_->_MD_ #1'
+  - 11|加拿大
+  - 13,14|日本3|@ripaojiedian
+  - '2|未知 #1'
+  - 11|美国_19
+  - 11|美国_34
+  - '1,3|_IS_ #1'
   - 11|美国_44
+  - '1,2,3|_US_ #1'
+  - 11|美国_9
+  - 13,14|新加坡2|@ripaojiedian
+  - 15|KR_speednode_0008
+  - 11|美国_22
+  - 11|澳洲
+  - 15|HK_speednode_0006
+  - 11|美国_24
+  - 11|美国_33
+  - 11|美国_36
+  - '1,2,3|_DE_ #1'
   - '1,3|_1 #1'
   - 11|法国_3
-  - 11|美国_22
-  - 11|德国_2
-  - '1,3|_US__1 #1'
-  - 11|美国_21
-  - '2|🇮🇷_IR_伊朗 #2'
-  - 15|CN_speednode_0002
-  - 2|🇩🇪_DE_德国->🇺🇸_US_美国
-  - 13,14|香港6|@ripaojiedian
-  - 11|美国_41
-  - 14|新加坡4|@ripaojiedian
-  - 11|美国_3
-  - 11|美国_20
-  - 2,11|美国_6
-  - 11|美国_8
+  - '1,2,3|_RU_ #1'
+  - 11|美国_27
   - 11|美国_7
-  - 11|美国_17
+  - 15|RU_speednode_0009
+  - 11|美国_39
+  - 15|TW_speednode_0011
+  - '1,3|_CN_->_US_ #1'
+  - '2|🇮🇷_IR_伊朗 #2'
+  - 11|美国_26
+  - 11|美国_25
+  - 15|GR_speednode_0003
+  - 15|US_speednode_0012
+  - 13|🇸🇬 新加坡4|@ripaojiedian
+  - 15|SG_speednode_0010
+  - '1,2,3|_DE_->_US__1 #1'
+  - '1,2,3|未命名 #1'
+  - 11|美国_3
+  - 11|美国_18
+  - 11|美国_38
+  - 13,14|香港6|@ripaojiedian
+  - 11|美国_35
+  - 15|CN_speednode_0001
+  - 11|美国_41
+  - 11|英国_2
+  - 13,14|美国|@ripaojiedian
+  - 11|美国_4
   - 13,14|香港3|@ripaojiedian
-  - 11|美国_37
-  - '1,3|_AU_->_MD_ #1'
-  - 15|AT_speednode_0001
+  - 11|美国_14
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1410,6 +1447,7 @@ proxy-groups:
   - 11|美国_45
   - 13,14|美国|@ripaojiedian
   - 13,14|美国2|@ripaojiedian
+  - 15|US_speednode_0012
   type: select
 - name: 🇨🇳 中国
   proxies:
@@ -1417,8 +1455,7 @@ proxy-groups:
   - 2,3|_CN_
   - 2,3|_CN__1
   - 2,3|_CN__2
-  - 15|CN_speednode_0002
-  - 15|CN_speednode_0003
+  - 15|CN_speednode_0001
   type: select
 - name: 🇭🇰 香港
   proxies:
@@ -1427,10 +1464,13 @@ proxy-groups:
   - 13,14|香港3|@ripaojiedian
   - 13,14|香港4|@ripaojiedian
   - 13,14|香港6|@ripaojiedian
+  - 15|HK_speednode_0004
+  - 15|HK_speednode_0005
+  - 15|HK_speednode_0006
   type: select
 - name: ❔ 台湾
   proxies:
-  - 15|TW_speednode_0009
+  - 15|TW_speednode_0011
   type: select
 - name: 🇨🇦 加拿大
   proxies:
@@ -1449,7 +1489,7 @@ proxy-groups:
   - 13|🇸🇬 新加坡4|@ripaojiedian
   - 14|新加坡3|@ripaojiedian
   - 14|新加坡4|@ripaojiedian
-  - 15|SG_speednode_0008
+  - 15|SG_speednode_0010
   type: select
 - name: 🇬🇧 英国
   proxies:
@@ -1460,12 +1500,12 @@ proxy-groups:
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - 15|KR_speednode_0005
+  - 15|KR_speednode_0008
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
   - '1,2,3|_RU_ #1'
-  - 15|RU_speednode_0007
+  - 15|RU_speednode_0009
   type: select
 - name: 🇩🇪 德国
   proxies:
@@ -1473,7 +1513,7 @@ proxy-groups:
   - '1,3|_DE__1 #1'
   - 11|德国_1
   - 11|德国_2
-  - 15|DE_speednode_0004
+  - 15|DE_speednode_0002
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站
