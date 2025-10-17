@@ -1,4 +1,4 @@
-# Update: 2025-10-17 14:37
+# Update: 2025-10-17 17:27
 allow-lan: false
 dns:
   enable: true
@@ -343,16 +343,18 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇸🇬 新加坡3|@ripaojiedian
+  name: 13,15|SG_speednode_0048
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
     host: 4a81070:6193
     mode: tls
+    tls: false
   port: 2377
   server: 5.44.249.42
   tfo: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 13|🇸🇬 新加坡4|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -401,49 +403,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 230938d9-ae9d-49e7-b3cb-9f44168f89e8
-- alterId: 2
-  cipher: auto
-  name: 15|HK_speednode_0004
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 15|HK_speednode_0005
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 15|HK_speednode_0006
-  network: http
-  port: 31212
-  server: 47.242.90.210
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
 - cipher: chacha20-ietf-poly1305
-  name: 15|SG_speednode_0010
+  name: 15|SG_speednode_0047
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -452,6 +413,96 @@ proxies:
     tls: false
   port: 2377
   server: 5.44.249.42
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0049
+  password: 35ee1ac4-e3b2-43f0-b6d6-46e154b6d98d
+  port: 10003
+  server: 36.234.107.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0050
+  password: 0bfc669b-a127-4511-a5ac-61f9ed04777b
+  port: 10043
+  server: 36.234.111.35
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0051
+  password: d69d0fae-160d-4c97-9c73-d64ffc222efe
+  port: 10054
+  server: 1.165.114.124
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0052
+  password: c6e2a9f1-70e1-4dda-a58c-8331c8f06ef6
+  port: 10022
+  server: 125.230.11.163
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0053
+  password: 5def005d-9d7e-4b22-8046-ae9b9b2e21a4
+  port: 10072
+  server: 114.46.121.31
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0054
+  password: d69d0fae-160d-4c97-9c73-d64ffc222efe
+  port: 10066
+  server: 59.126.32.59
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0055
+  password: 5def005d-9d7e-4b22-8046-ae9b9b2e21a4
+  port: 10069
+  server: 118.170.196.147
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0056
+  password: 35ee1ac4-e3b2-43f0-b6d6-46e154b6d98d
+  port: 10068
+  server: 36.234.65.154
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|TW_speednode_0057
+  password: c4b65474-b965-40ec-b5b1-223427bdf615
+  port: 10036
+  server: 118.170.224.245
+  type: ss
+  udp: true
+- name: 15|US_speednode_0065
+  network: ws
+  password: d0728e94-82c2-456b-b5d4-eeab540599df
+  port: 443
+  server: 172.67.192.215
+  skip-cert-verify: false
+  sni: joss.krikkrik.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.krikkrik.xyz
+    path: /Free-VPN-CF-Geo-Project/AE5
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0066
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.32
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0067
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.40
   type: ss
   udp: true
 proxy-groups:
@@ -465,51 +516,60 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 13,14|香港3|@ripaojiedian
-  - '1,2|_DE_ #1'
-  - 11|美国_39
-  - 13,14|香港|@ripaojiedian
-  - 11|美国_2
-  - '1,2|_IS_ #1'
-  - 11|德国_1
-  - 11|美国_40
-  - '1,2|_MD_->_RU_ #1'
   - 13,14|香港6|@ripaojiedian
-  - 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  - 11|美国_5
-  - 13|🇸🇬 新加坡5|@ripaojiedian
-  - 15|HK_speednode_0004
-  - 15|HK_speednode_0005
-  - 13,14|新加坡2|@ripaojiedian
-  - 11|美国_11
-  - 15|HK_speednode_0006
   - '1,2|_MD_ #1'
-  - 14|香港5|@ripaojiedian
-  - 15|SG_speednode_0010
-  - 11|德国_2
-  - 11|德国_3
-  - 13|🇭🇰 香港5|@ripaojiedian
-  - 13,14|日本3|@ripaojiedian
-  - 13,14|新加坡|@ripaojiedian
-  - 13|🇸🇬 新加坡3|@ripaojiedian
-  - 11|美国_7
-  - '1,2|_RU__4 #1'
-  - 13,14|日本2|@ripaojiedian
   - '1,2|_US_ #1'
-  - 11|美国_41
-  - 11|美国_1
-  - 11|美国_8
-  - 11|美国_38
-  - 11|美国_4
-  - 13,14|美国2|@ripaojiedian
-  - 11|美国_10
-  - 11|美国_42
-  - 11|美国_12
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 13|🇸🇬 新加坡4|@ripaojiedian
-  - 13,14|香港4|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|美国_11
+  - 13,14|香港3|@ripaojiedian
+  - 11|德国_3
+  - 15|TW_speednode_0053
+  - 11|德国_2
+  - '1,2|_IS_ #1'
+  - '1,2|_MD_->_RU_ #1'
+  - 13,14|香港|@ripaojiedian
   - 11|美国_3
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 15|TW_speednode_0056
+  - 15|VN_speednode_0067
+  - 11|德国_1
+  - 13,14|新加坡|@ripaojiedian
+  - 13,14|新加坡2|@ripaojiedian
+  - 14|香港5|@ripaojiedian
+  - 11|美国_41
+  - 11|美国_2
+  - '1,2|_DE_ #1'
+  - 11|美国_5
+  - 15|TW_speednode_0052
+  - 15|TW_speednode_0049
+  - 11|美国_39
+  - 13,14|日本2|@ripaojiedian
+  - 15|TW_speednode_0050
+  - 15|TW_speednode_0057
+  - 13|🇸🇬 新加坡4|@ripaojiedian
+  - 15|US_speednode_0065
+  - 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 11|美国_38
+  - 13,14|美国2|@ripaojiedian
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_10
+  - 11|美国_1
+  - 11|美国_12
+  - 13,14|日本3|@ripaojiedian
+  - 15|SG_speednode_0047
+  - 11|美国_4
+  - 13,14|美国|@ripaojiedian
+  - 13|🇸🇬 新加坡5|@ripaojiedian
+  - 15|TW_speednode_0051
+  - 11|美国_42
+  - 15|TW_speednode_0054
+  - 13,14|香港4|@ripaojiedian
+  - 15|TW_speednode_0055
+  - 13,15|SG_speednode_0048
+  - 15|VN_speednode_0066
+  - '1,2|_RU__4 #1'
+  - 11|美国_40
+  - 11|美国_8
+  - 11|美国_7
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -588,6 +648,7 @@ proxy-groups:
   - 11|美国_42
   - 13,14|美国|@ripaojiedian
   - 13,14|美国2|@ripaojiedian
+  - 15|US_speednode_0065
   type: select
 - name: 🇨🇳 中国
   proxies:
@@ -602,13 +663,18 @@ proxy-groups:
   - 13|🇭🇰 香港5|@ripaojiedian
   - 13,14|香港6|@ripaojiedian
   - 14|香港5|@ripaojiedian
-  - 15|HK_speednode_0004
-  - 15|HK_speednode_0005
-  - 15|HK_speednode_0006
   type: select
 - name: ❔ 台湾
   proxies:
-  - REJECT
+  - 15|TW_speednode_0049
+  - 15|TW_speednode_0050
+  - 15|TW_speednode_0051
+  - 15|TW_speednode_0052
+  - 15|TW_speednode_0053
+  - 15|TW_speednode_0054
+  - 15|TW_speednode_0055
+  - 15|TW_speednode_0056
+  - 15|TW_speednode_0057
   type: select
 - name: 🇨🇦 加拿大
   proxies:
@@ -622,10 +688,10 @@ proxy-groups:
   proxies:
   - 13,14|新加坡|@ripaojiedian
   - 13,14|新加坡2|@ripaojiedian
-  - 13|🇸🇬 新加坡3|@ripaojiedian
+  - 13,15|SG_speednode_0048
   - 13|🇸🇬 新加坡4|@ripaojiedian
   - 13|🇸🇬 新加坡5|@ripaojiedian
-  - 15|SG_speednode_0010
+  - 15|SG_speednode_0047
   type: select
 - name: 🇬🇧 英国
   proxies:
