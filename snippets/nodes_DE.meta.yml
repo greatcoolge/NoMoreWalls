@@ -1,21 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,3,11|德国_1
+  name: '1,2|_DE_ #1'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.193
+  type: ss
+- client-fingerprint: chrome
+  name: 2,3|🇩🇪_DE_德国
+  network: tcp
+  port: 10200
+  server: 157.180.123.212
+  tls: false
+  type: vless
+  uuid: 026c61c2-4969-479a-9046-539af105ff4a
+  ws-opts:
+    path: '%2F'
+- cipher: chacha20-ietf-poly1305
+  name: 11|德国_1
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 45.87.175.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '1,3|_DE__1 #1'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.177
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 11|德国_2
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 45.87.175.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 11|德国_3
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.197
   type: ss
 - client-fingerprint: chrome
   name: 15|DE_speednode_0002
