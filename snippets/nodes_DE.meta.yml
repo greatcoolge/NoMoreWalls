@@ -1,20 +1,39 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '1,2|_DE_ #1'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.193
-  type: ss
-- client-fingerprint: chrome
-  name: 2,3|🇩🇪_DE_德国
-  network: tcp
-  port: 10200
-  server: 157.180.123.212
+- name: 1|🇩🇪_DE_德国
+  network: ws
+  port: 443
+  server: 49.13.29.218
   tls: false
   type: vless
-  uuid: 026c61c2-4969-479a-9046-539af105ff4a
+  uuid: c332c262-b173-4bb2-aba0-cca85eebc5f6
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: 49.13.29.218
+    path: /linkws?ed
+- name: 1,2|_DE__1
+  network: tcp
+  port: 25670
+  server: 18.199.224.216
+  tls: false
+  type: vless
+  uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
+- name: 1,2|_DE__2
+  network: tcp
+  port: 25670
+  server: 18.193.86.253
+  tls: false
+  type: vless
+  uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
+- name: 2|_DE_
+  network: ws
+  port: 443
+  server: 49.13.29.218
+  type: vless
+  uuid: c332c262-b173-4bb2-aba0-cca85eebc5f6
+  ws-opts:
+    headers:
+      host: 49.13.29.218
+    path: /linkws?ed
 - cipher: chacha20-ietf-poly1305
   name: 11|德国_1
   password: k1dBOmOB4oqi7Ump37a1bQ

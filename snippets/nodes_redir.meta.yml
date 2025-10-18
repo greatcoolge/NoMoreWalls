@@ -1,29 +1,17 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '1,2|_MD_->_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: '27123'
-  server: 212.192.15.176
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 9d93dfcd-50a9-4722-a8e3-eb0ef276cdb1
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- name: 2,3|🇸🇦_SA_沙特阿拉伯->🇩🇪_DE_德国
+- client-fingerprint: chrome
+  name: 1,2|_SA_->_RU_
   network: tcp
   port: 666
   server: 213.165.56.19
   tls: false
   type: vless
   uuid: 13e824c8-46a7-458a-b9d5-24ab4058acae
+  ws-opts:
+    path: '%2F'
+- cipher: aes-256-cfb
+  name: '2,3|_MD_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
