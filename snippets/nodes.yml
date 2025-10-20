@@ -251,13 +251,14 @@ proxies:
   server: 36.151.195.112
   skip-cert-verify: true
   type: trojan
-- name: 13,14|日本|@ripaojiedian
+- name: 13,14,15|CN_speednode_0009
   network: tcp
   password: BxceQaOe
   port: 811
   server: 36.151.251.18
   skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 13,14|日本2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -305,13 +306,14 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 13,14|美国3|@ripaojiedian
+- name: 13,14,15|CN_speednode_0008
   network: tcp
   password: BxceQaOe
   port: 26876
   server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -322,17 +324,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-- cipher: aes-256-gcm
-  name: 15|CN_speednode_0002
-  password: 455ecab1-a8ea-4b89-a2d8-fafc70130e2d
-  port: 16004
-  server: 2nosbobo.1010.jscpai.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|MA_speednode_0024
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 188.214.157.30
-  type: ss
-  udp: true

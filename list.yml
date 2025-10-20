@@ -1,4 +1,4 @@
-# Update: 2025-10-20 14:39
+# Update: 2025-10-20 17:30
 allow-lan: false
 dns:
   enable: true
@@ -270,13 +270,14 @@ proxies:
   server: 36.151.195.112
   skip-cert-verify: true
   type: trojan
-- name: 13,14|日本|@ripaojiedian
+- name: 13,14,15|CN_speednode_0009
   network: tcp
   password: BxceQaOe
   port: 811
   server: 36.151.251.18
   skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 13,14|日本2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -324,13 +325,14 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 13,14|美国3|@ripaojiedian
+- name: 13,14,15|CN_speednode_0008
   network: tcp
   password: BxceQaOe
   port: 26876
   server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -341,20 +343,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-- cipher: aes-256-gcm
-  name: 15|CN_speednode_0002
-  password: 455ecab1-a8ea-4b89-a2d8-fafc70130e2d
-  port: 16004
-  server: 2nosbobo.1010.jscpai.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|MA_speednode_0024
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 188.214.157.30
-  type: ss
-  udp: true
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -366,42 +354,40 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - '1,2|_CN_->_US_ #1'
-  - 11|美国_7
-  - 15|MA_speednode_0024
-  - 11|美国_3
-  - 11|美国_4
-  - 13,14|香港5|@ripaojiedian
-  - 11|美国_40
-  - 11|美国_12
-  - 11|美国_2
-  - 13,14|日本2|@ripaojiedian
-  - 11|美国_39
-  - 11|德国_2
   - 11|美国_1
-  - 11|美国_38
-  - 15|CN_speednode_0002
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 11|美国_41
-  - 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  - 13,14|日本|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 14|香港3|@ripaojiedian
-  - 11|德国_1
   - 3,11|美国_8
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 13,14|新加坡|@ripaojiedian
+  - 13,14,15|CN_speednode_0009
   - 11|美国_5
-  - 13,14|美国3|@ripaojiedian
-  - 13,14|日本3|@ripaojiedian
-  - 11|美国_42
+  - 11|美国_7
+  - 11|美国_41
   - 11|美国_11
-  - 11|德国_3
-  - 13,14|新加坡2|@ripaojiedian
-  - 13,14|新加坡3|@ripaojiedian
+  - 14|香港3|@ripaojiedian
   - 13,14|香港|@ripaojiedian
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 11|美国_42
+  - 11|德国_2
+  - 13,14|日本3|@ripaojiedian
+  - 13,14|美国2|@ripaojiedian
+  - 11|美国_39
+  - 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 11|德国_1
+  - 11|美国_40
   - 11|美国_10
+  - 13,14|新加坡3|@ripaojiedian
+  - 11|美国_38
+  - 13,14,15|CN_speednode_0008
+  - 13,14|美国|@ripaojiedian
+  - 13,14|新加坡2|@ripaojiedian
+  - 13,14|香港5|@ripaojiedian
+  - 11|美国_3
+  - 13,14|日本2|@ripaojiedian
+  - 11|美国_12
+  - 13,14|新加坡|@ripaojiedian
+  - 11|德国_3
+  - 11|美国_4
+  - 11|美国_2
+  - '1,2|_CN_->_US_ #1'
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -457,7 +443,7 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 13,14|日本|@ripaojiedian
+  - 13,14,15|CN_speednode_0009
   - 13,14|日本2|@ripaojiedian
   - 13,14|日本3|@ripaojiedian
   type: select
@@ -478,11 +464,11 @@ proxy-groups:
   - 11|美国_41
   - 11|美国_42
   - 13,14|美国2|@ripaojiedian
-  - 13,14|美国3|@ripaojiedian
+  - 13,14,15|CN_speednode_0008
   type: select
 - name: 🇨🇳 中国
   proxies:
-  - 15|CN_speednode_0002
+  - REJECT
   type: select
 - name: 🇭🇰 香港
   proxies:
