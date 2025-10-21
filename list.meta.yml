@@ -1,4 +1,4 @@
-# Update: 2025-10-21 05:23
+# Update: 2025-10-21 10:00
 allow-lan: false
 dns:
   enable: true
@@ -28,28 +28,6 @@ proxies:
     headers:
       host: Fi.Parsashonam.CfD.
     path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
-- name: 1|_US_->_CN_
-  network: ws
-  port: 80
-  server: 172.66.156.81
-  type: vless
-  uuid: 01cea818-a80b-4945-a883-f5164cde4ad3
-  ws-opts:
-    headers:
-      host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US_ #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
 - name: 1|_US_->_GB_
   network: ws
   port: 8880
@@ -60,22 +38,21 @@ proxies:
     headers:
       host: Fi.Parsashonam.CfD.
     path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
-- alterId: 0
-  cipher: auto
-  name: 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: '25169'
-  server: 212.192.15.176
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 566bf452-a086-41f0-a474-d7ae067956ee
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 3|🇺🇸_US_美国
+- name: 1,2,3,13,14,15|CN_speednode_0008
+  network: tcp
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: '1,2,3|_US__1 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.38.44.116
+  type: ss
+- name: 2|🇺🇸_US_美国
   network: ws
   port: 8080
   server: 104.17.147.22
@@ -86,32 +63,7 @@ proxies:
     headers:
       Host: Fi.Parsashonam.CfD.
     path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
-- name: 3|🇺🇸_US_美国->🇨🇳_CN_中国
-  network: ws
-  port: 80
-  server: 172.66.156.81
-  tls: false
-  type: vless
-  uuid: 01cea818-a80b-4945-a883-f5164cde4ad3
-  ws-opts:
-    headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- alterId: 2
-  cipher: auto
-  name: 3,11|美国_8
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ocbc.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- name: 3|🇺🇸_US_美国->🇬🇧_GB_英国
+- name: 2|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 8880
   server: 104.17.147.22
@@ -184,6 +136,19 @@ proxies:
   ws-opts:
     headers:
       Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 11|美国_8
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  servername: ocbc.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
     path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 11|美国_11
@@ -609,84 +574,109 @@ proxies:
   tls: false
   type: vmess
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-- name: 13,14|美国|@ripaojiedian
+- name: 13,14|香港4|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2381
-  server: 202.181.103.235
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 443
+  server: 203.198.122.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 4556
-  server: 36.151.195.112
+  port: 4451
+  server: 36.150.215.138
   skip-cert-verify: true
   type: trojan
-- name: 13,14,15|CN_speednode_0009
+- name: 13,14|日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 811
+  port: 2145
   server: 36.151.251.18
   skip-cert-verify: true
   type: trojan
-  udp: true
 - name: 13,14|日本2|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1331
-  server: 160.16.57.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 4452
+  server: 160.16.136.130
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - name: 13,14|日本3|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 3161
-  server: 160.16.57.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 1331
+  server: 160.16.136.130
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - name: 13,14|新加坡|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 5041
-  server: 202.181.103.246
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 5321
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|新加坡2|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
+  password: ea39fa94f1ee00999337ea1fd3318e69
   port: 2283
   server: 202.181.103.246
   skip-cert-verify: true
-  sni: www.nintendogames.net
+  sni: www.baidu.com
   type: trojan
 - name: 13,14|新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 44095
+  port: 2088
   server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
-- name: 13,14|美国2|@ripaojiedian
+- alterId: 2
+  cipher: auto
+  name: 13,14|新加坡4|@ripaojiedian
+  network: ws
+  port: '30839'
+  server: v39.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- name: 13,14|美国|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
+  password: ea39fa94f1ee00999337ea1fd3318e69
   port: 2467
-  server: 202.181.103.235
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 13,14,15|CN_speednode_0008
+- name: 13,14|美国2|@ripaojiedian
   network: tcp
-  password: BxceQaOe
-  port: 26876
-  server: 36.156.102.115
-  skip-cert-verify: true
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 2381
+  server: 160.16.68.250
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  port: 47083
+  server: 124.236.46.114
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fd49381f-9fd8-4403-8698-48331a4d775d
 - alterId: 0
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -697,6 +687,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
+- alterId: 0
+  cipher: auto
+  name: 14|美国4|@ripaojiedian
+  network: tcp
+  port: '47083'
+  server: 124.236.46.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd49381f-9fd8-4403-8698-48331a4d775d
 - name: 15|AE_speednode_0001
   network: ws
   port: 2053
@@ -720,6 +720,13 @@ proxies:
   type: http
   udp: true
   username: dd247fc262
+- name: 15|CN_speednode_0009
+  password: BxceQaOe
+  port: 811
+  server: 36.151.251.18
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 15|GB_speednode_0010
@@ -1150,102 +1157,104 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 15|KR_speednode_0024
-  - 11|美国_31
-  - 15|HK_speednode_0011
-  - 11|美国_10
-  - 15|KR_speednode_0029
-  - 11|美国_11
-  - 11|美国_1
-  - 13,14|新加坡|@ripaojiedian
-  - 15|KR_speednode_0019
-  - 11|美国_18
-  - 15|KR_speednode_0016
-  - 15|KR_speednode_0021
-  - 11|德国_1
-  - 13,14|香港5|@ripaojiedian
-  - 11|美国_33
-  - 11|德国_2
-  - 15|IL_speednode_0013
-  - 15|KR_speednode_0033
-  - 11|美国_39
-  - 11|美国_32
-  - 11|美国_16
-  - 11|美国_20
-  - 15|HK_speednode_0012
-  - 11|美国_21
-  - 13,14|香港|@ripaojiedian
-  - 15|KR_speednode_0031
-  - 11|美国_17
-  - 11|美国_15
-  - 3|🇺🇸_US_美国->🇬🇧_GB_英国
-  - 15|KR_speednode_0023
-  - 15|KR_speednode_0017
-  - 11|美国_5
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 11|美国_42
-  - 11|德国_3
-  - 15|KR_speednode_0018
+  - 11|美国_8
+  - 13,14|日本|@ripaojiedian
+  - 15|CN_speednode_0005
   - 13,14|日本2|@ripaojiedian
-  - 15|KR_speednode_0025
-  - 15|KR_speednode_0015
-  - 15|KR_speednode_0030
-  - 15|KR_speednode_0020
-  - 11|美国_22
-  - 13,14,15|CN_speednode_0008
-  - 11|美国_29
-  - 15|KR_speednode_0035
-  - 15|US_speednode_0039
-  - 3|🇺🇸_US_美国
-  - 11|美国_27
-  - 11|美国_26
-  - 11|美国_25
-  - 11|美国_30
-  - 3,11|美国_8
-  - 3|🇺🇸_US_美国->🇨🇳_CN_中国
-  - 11|美国_35
-  - 13,14|新加坡3|@ripaojiedian
+  - 13,14|新加坡4|@ripaojiedian
+  - 11|美国_17
+  - 11|美国_34
+  - '1,2,3|_US__1 #1'
+  - 13,14|新加坡2|@ripaojiedian
+  - 11|美国_32
+  - 11|美国_7
+  - 15|GB_speednode_0010
   - 13,14|美国2|@ripaojiedian
-  - 1|_US_
-  - 11|美国_14
+  - 15|KR_speednode_0019
+  - 15|KR_speednode_0016
+  - 11|美国_23
+  - 15|CN_speednode_0009
+  - 15|KR_speednode_0028
+  - 11|德国_2
+  - 15|KR_speednode_0026
+  - 11|美国_38
+  - 13,14|新加坡3|@ripaojiedian
+  - 11|德国_1
+  - 15|KR_speednode_0023
+  - 11|美国_22
   - 11|美国_12
   - 11|美国_19
-  - 15|KR_speednode_0027
-  - 11|美国_41
-  - 11|美国_4
-  - 13,14,15|CN_speednode_0009
-  - 15|AE_speednode_0001
-  - 15|US_speednode_0038
-  - 13,14|新加坡2|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 15|KR_speednode_0028
-  - 15|GB_speednode_0010
-  - 15|KR_speednode_0032
-  - 11|美国_36
+  - 13,14|新加坡|@ripaojiedian
   - 15|TW_speednode_0036
-  - 1|_US_->_CN_
-  - 14|香港3|@ripaojiedian
-  - 11|美国_34
-  - 11|美国_2
-  - 15|KR_speednode_0026
-  - 11|美国_37
-  - 11|美国_3
-  - 11|美国_23
-  - 15|CN_speednode_0005
-  - 15|KR_speednode_0022
-  - 11|美国_38
-  - 11|美国_28
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - '1,2|_CN_->_US_ #1'
-  - 15|KR_speednode_0034
-  - 11|美国_13
   - 1|_US_->_GB_
-  - 15|IR_speednode_0014
-  - 11|美国_40
-  - 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  - 13,14|日本3|@ripaojiedian
-  - 11|美国_7
+  - 11|美国_29
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_1
+  - 11|美国_31
+  - 15|KR_speednode_0032
+  - 15|KR_speednode_0030
+  - 11|美国_37
+  - 15|KR_speednode_0024
+  - 11|美国_30
+  - 11|美国_41
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 2|🇺🇸_US_美国->🇬🇧_GB_英国
+  - 15|KR_speednode_0027
+  - 11|美国_16
+  - 11|美国_26
+  - 11|美国_28
+  - 11|美国_36
+  - 15|AE_speednode_0001
+  - 11|美国_18
+  - 11|美国_2
+  - 15|KR_speednode_0029
   - 15|UA_speednode_0037
+  - 11|美国_10
+  - 14|美国4|@ripaojiedian
+  - 15|HK_speednode_0012
+  - 13,14|日本3|@ripaojiedian
+  - 15|KR_speednode_0035
+  - 15|KR_speednode_0020
+  - 11|美国_5
+  - 11|美国_20
+  - 15|KR_speednode_0015
+  - 13,14|香港5|@ripaojiedian
+  - 11|德国_3
+  - 15|KR_speednode_0033
+  - 11|美国_3
+  - 15|US_speednode_0039
+  - 15|IL_speednode_0013
+  - 11|美国_39
+  - 11|美国_40
+  - 2|🇺🇸_US_美国
+  - 11|美国_4
+  - 14|香港3|@ripaojiedian
+  - 15|KR_speednode_0017
+  - 13,14|美国|@ripaojiedian
+  - 11|美国_21
+  - 11|美国_35
+  - 13,14|香港|@ripaojiedian
+  - 15|US_speednode_0038
+  - 11|美国_42
+  - 11|美国_13
+  - 15|IR_speednode_0014
+  - 15|HK_speednode_0011
+  - 1,2,3,13,14,15|CN_speednode_0008
+  - 15|KR_speednode_0022
+  - 15|KR_speednode_0025
+  - 11|美国_25
+  - 11|美国_11
+  - 11|美国_15
+  - 11|美国_14
+  - 15|KR_speednode_0018
+  - 11|美国_33
+  - 11|美国_27
+  - 15|KR_speednode_0034
+  - 13,14|香港4|@ripaojiedian
+  - 1|_US_
+  - 13|🇺🇸 美国4|@ripaojiedian
+  - 15|KR_speednode_0021
+  - 15|KR_speednode_0031
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1301,20 +1310,22 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 13,14,15|CN_speednode_0009
+  - 13,14|日本|@ripaojiedian
   - 13,14|日本2|@ripaojiedian
   - 13,14|日本3|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
   - 1|_US_
-  - 3|🇺🇸_US_美国
+  - '1,2,3|_US__1 #1'
+  - 2|🇺🇸_US_美国
   - 11|美国_1
   - 11|美国_2
   - 11|美国_3
   - 11|美国_4
   - 11|美国_5
   - 11|美国_7
+  - 11|美国_8
   - 11|美国_11
   - 11|美国_10
   - 11|美国_12
@@ -1347,21 +1358,24 @@ proxy-groups:
   - 11|美国_40
   - 11|美国_41
   - 11|美国_42
+  - 13,14|美国|@ripaojiedian
   - 13,14|美国2|@ripaojiedian
-  - 13,14,15|CN_speednode_0008
+  - 13|🇺🇸 美国4|@ripaojiedian
+  - 14|美国4|@ripaojiedian
   - 15|US_speednode_0038
   - 15|US_speednode_0039
   type: select
 - name: 🇨🇳 中国
   proxies:
   - 15|CN_speednode_0005
+  - 15|CN_speednode_0009
   type: select
 - name: 🇭🇰 香港
   proxies:
   - 13,14|香港|@ripaojiedian
   - 13|🇭🇰 香港2|@ripaojiedian
   - 13|🇭🇰 香港3|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 13,14|香港4|@ripaojiedian
   - 13,14|香港5|@ripaojiedian
   - 14|香港3|@ripaojiedian
   - 15|HK_speednode_0011
@@ -1384,6 +1398,7 @@ proxy-groups:
   - 13,14|新加坡|@ripaojiedian
   - 13,14|新加坡2|@ripaojiedian
   - 13,14|新加坡3|@ripaojiedian
+  - 13,14|新加坡4|@ripaojiedian
   type: select
 - name: 🇬🇧 英国
   proxies:

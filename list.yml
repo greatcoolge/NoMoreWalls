@@ -1,4 +1,4 @@
-# Update: 2025-10-21 05:23
+# Update: 2025-10-21 10:00
 allow-lan: false
 dns:
   enable: true
@@ -18,47 +18,20 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- alterId: 2
-  cipher: auto
-  name: '1,2|_CN_->_US_ #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: '25169'
-  server: 212.192.15.176
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 566bf452-a086-41f0-a474-d7ae067956ee
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 3,11|美国_8
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ocbc.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
+- name: 1,2,3,13,14,15|CN_speednode_0008
+  network: tcp
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: '1,2,3|_US__1 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.38.44.116
+  type: ss
 - alterId: 0
   cipher: auto
   name: 11|美国_1
@@ -121,6 +94,19 @@ proxies:
   ws-opts:
     headers:
       Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 11|美国_8
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  servername: ocbc.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
     path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 11|美国_11
@@ -255,84 +241,109 @@ proxies:
   tls: false
   type: vmess
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-- name: 13,14|美国|@ripaojiedian
+- name: 13,14|香港4|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2381
-  server: 202.181.103.235
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 443
+  server: 203.198.122.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 4556
-  server: 36.151.195.112
+  port: 4451
+  server: 36.150.215.138
   skip-cert-verify: true
   type: trojan
-- name: 13,14,15|CN_speednode_0009
+- name: 13,14|日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 811
+  port: 2145
   server: 36.151.251.18
   skip-cert-verify: true
   type: trojan
-  udp: true
 - name: 13,14|日本2|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1331
-  server: 160.16.57.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 4452
+  server: 160.16.136.130
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - name: 13,14|日本3|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 3161
-  server: 160.16.57.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 1331
+  server: 160.16.136.130
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - name: 13,14|新加坡|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 5041
-  server: 202.181.103.246
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 5321
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 13,14|新加坡2|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
+  password: ea39fa94f1ee00999337ea1fd3318e69
   port: 2283
   server: 202.181.103.246
   skip-cert-verify: true
-  sni: www.nintendogames.net
+  sni: www.baidu.com
   type: trojan
 - name: 13,14|新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 44095
+  port: 2088
   server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
-- name: 13,14|美国2|@ripaojiedian
+- alterId: 2
+  cipher: auto
+  name: 13,14|新加坡4|@ripaojiedian
+  network: ws
+  port: '30839'
+  server: v39.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- name: 13,14|美国|@ripaojiedian
   network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
+  password: ea39fa94f1ee00999337ea1fd3318e69
   port: 2467
-  server: 202.181.103.235
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 13,14,15|CN_speednode_0008
+- name: 13,14|美国2|@ripaojiedian
   network: tcp
-  password: BxceQaOe
-  port: 26876
-  server: 36.156.102.115
-  skip-cert-verify: true
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 2381
+  server: 160.16.68.250
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  port: 47083
+  server: 124.236.46.114
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fd49381f-9fd8-4403-8698-48331a4d775d
 - alterId: 0
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -343,6 +354,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
+- alterId: 0
+  cipher: auto
+  name: 14|美国4|@ripaojiedian
+  network: tcp
+  port: '47083'
+  server: 124.236.46.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+- name: 15|CN_speednode_0009
+  password: BxceQaOe
+  port: 811
+  server: 36.151.251.18
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -354,40 +382,44 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 14|香港3|@ripaojiedian
-  - 11|美国_10
-  - 13,14|香港|@ripaojiedian
-  - 11|美国_11
-  - 11|美国_1
-  - 11|美国_2
-  - 3,11|美国_8
-  - 11|美国_3
-  - 13,14|新加坡|@ripaojiedian
+  - 11|美国_8
+  - 13,14|日本|@ripaojiedian
   - 13,14|新加坡3|@ripaojiedian
-  - 11|美国_5
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 11|美国_42
-  - 11|德国_3
-  - 13,14|美国2|@ripaojiedian
-  - 11|美国_38
-  - 13,14|日本2|@ripaojiedian
-  - 11|美国_12
-  - 11|美国_41
-  - 11|美国_4
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 13,14,15|CN_speednode_0009
-  - '1,2|_CN_->_US_ #1'
-  - 13,14,15|CN_speednode_0008
   - 11|德国_1
-  - 13,14|香港5|@ripaojiedian
+  - 13,14|日本2|@ripaojiedian
+  - 13,14|新加坡4|@ripaojiedian
+  - 11|美国_12
+  - 13,14|香港|@ripaojiedian
+  - 13,14|新加坡|@ripaojiedian
+  - 13|🇺🇸 美国4|@ripaojiedian
+  - 11|美国_2
+  - '1,2,3|_US__1 #1'
+  - 11|美国_42
   - 13,14|新加坡2|@ripaojiedian
-  - 11|美国_40
-  - 13,14|美国|@ripaojiedian
-  - 1,2,3|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  - 11|德国_2
+  - 11|美国_10
+  - 14|美国4|@ripaojiedian
+  - 1,2,3,13,14,15|CN_speednode_0008
   - 13,14|日本3|@ripaojiedian
   - 11|美国_7
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 11|美国_1
+  - 11|美国_5
+  - 13,14|美国2|@ripaojiedian
+  - 11|美国_11
+  - 13,14|香港5|@ripaojiedian
+  - 11|德国_3
+  - 11|美国_3
   - 11|美国_39
+  - 14|香港3|@ripaojiedian
+  - 11|美国_40
+  - 11|美国_41
+  - 13,14|香港4|@ripaojiedian
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 15|CN_speednode_0009
+  - 11|美国_4
+  - 11|德国_2
+  - 13,14|美国|@ripaojiedian
+  - 11|美国_38
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -443,18 +475,20 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 13,14,15|CN_speednode_0009
+  - 13,14|日本|@ripaojiedian
   - 13,14|日本2|@ripaojiedian
   - 13,14|日本3|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
+  - '1,2,3|_US__1 #1'
   - 11|美国_1
   - 11|美国_2
   - 11|美国_3
   - 11|美国_4
   - 11|美国_5
   - 11|美国_7
+  - 11|美国_8
   - 11|美国_11
   - 11|美国_10
   - 11|美国_12
@@ -463,19 +497,21 @@ proxy-groups:
   - 11|美国_40
   - 11|美国_41
   - 11|美国_42
+  - 13,14|美国|@ripaojiedian
   - 13,14|美国2|@ripaojiedian
-  - 13,14,15|CN_speednode_0008
+  - 13|🇺🇸 美国4|@ripaojiedian
+  - 14|美国4|@ripaojiedian
   type: select
 - name: 🇨🇳 中国
   proxies:
-  - REJECT
+  - 15|CN_speednode_0009
   type: select
 - name: 🇭🇰 香港
   proxies:
   - 13,14|香港|@ripaojiedian
   - 13|🇭🇰 香港2|@ripaojiedian
   - 13|🇭🇰 香港3|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 13,14|香港4|@ripaojiedian
   - 13,14|香港5|@ripaojiedian
   - 14|香港3|@ripaojiedian
   type: select
@@ -496,6 +532,7 @@ proxy-groups:
   - 13,14|新加坡|@ripaojiedian
   - 13,14|新加坡2|@ripaojiedian
   - 13,14|新加坡3|@ripaojiedian
+  - 13,14|新加坡4|@ripaojiedian
   type: select
 - name: 🇬🇧 英国
   proxies:
