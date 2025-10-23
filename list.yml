@@ -1,4 +1,4 @@
-# Update: 2025-10-23 20:56
+# Update: 2025-10-23 23:27
 allow-lan: false
 dns:
   enable: true
@@ -270,13 +270,112 @@ proxies:
   server: lazy.rsqpq.cn
   skip-cert-verify: true
   type: trojan
-- name: 15|CN_speednode_0004
-  password: BxceQaOe
-  port: 4451
-  server: 36.150.215.138
-  skip-cert-verify: true
-  sni: 36.150.215.138
+- cipher: aes-256-cfb
+  name: 15|FR_speednode_0003
+  password: amazonskr05
+  port: 443
+  server: 13.38.71.74
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|IN_speednode_0006
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.209.147.198
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 15|JP_speednode_0008
+  port: 14760
+  server: 45.32.45.45
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
+- cipher: aes-256-cfb
+  name: 15|US_speednode_0028
+  password: amazonskr05
+  port: 443
+  server: 184.72.209.232
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|US_speednode_0029
+  password: vrV64r9gL2RlG96kd9YOkM
+  port: 6579
+  server: 172.237.82.96
+  type: ss
+  udp: true
+- name: 15|US_speednode_0031
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: 2053
+  server: nop-55q.pages.dev
+  skip-cert-verify: false
+  sni: NOp-55q.pAgEs.dEv
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: NOp-55q.pAgEs.dEv
+    path: /trGPZDfetEwuO25SAs
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0038
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.191
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0039
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.213
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0040
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.156
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0041
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.190
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0042
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.69
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0043
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.211
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0044
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.204
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15|VN_speednode_0045
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.85
+  type: ss
   udp: true
 proxy-groups:
 - name: 🚀 选择代理
@@ -290,34 +389,47 @@ proxy-groups:
   name: ♻ 自动选择
   proxies: &id001
   - 14|台湾|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 14|新加坡4|@ripaojiedian
-  - 13|🇯🇵 日本4|@ripaojiedian
-  - 13,14|新加坡|@ripaojiedian
-  - '1,3|_CN_->_US_ #1'
-  - 13,14|日本|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 11|美国_2
-  - 11|美国_5
-  - 13,14|香港6|@ripaojiedian
-  - 14|日本4|@ripaojiedian
-  - 13|🇸🇬 新加坡4|@ripaojiedian
-  - 15|CN_speednode_0004
-  - 13,14|香港5|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 13,14|日本3|@ripaojiedian
-  - 11|美国_1
+  - 15|JP_speednode_0008
   - 13,14|美国3|@ripaojiedian
-  - 13|🇹🇼 台湾|@ripaojiedian
-  - 13,14|香港4|@ripaojiedian
-  - 11|美国_3
-  - '1,2,3|_MD_->_RU_ #1'
-  - 13,14|新加坡2|@ripaojiedian
   - 13,14|日本2|@ripaojiedian
-  - 13,14|新加坡3|@ripaojiedian
-  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
+  - 14|新加坡4|@ripaojiedian
+  - 15|VN_speednode_0044
+  - 15|VN_speednode_0039
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - '1,3|_CN_->_US_ #1'
+  - 13,14|香港5|@ripaojiedian
+  - 15|VN_speednode_0041
+  - 15|VN_speednode_0040
+  - 15|VN_speednode_0042
+  - 11|美国_5
   - '1,2,3|_CN_->_JP_ #1'
+  - 13,14|美国2|@ripaojiedian
+  - 13,14|新加坡|@ripaojiedian
+  - 15|VN_speednode_0043
+  - 15|FR_speednode_0003
+  - 15|IN_speednode_0006
+  - 13|🇹🇼 台湾|@ripaojiedian
+  - 13,14|新加坡3|@ripaojiedian
+  - '1,2,3|_MD_->_RU_ #1'
+  - 15|US_speednode_0028
+  - 13,14|美国|@ripaojiedian
+  - 13,14|新加坡2|@ripaojiedian
+  - 15|US_speednode_0031
+  - 13,14|香港|@ripaojiedian
+  - 13,14|香港6|@ripaojiedian
+  - 11|美国_1
+  - 13|🇸🇬 新加坡4|@ripaojiedian
+  - 15|US_speednode_0029
+  - 13,14|日本3|@ripaojiedian
+  - 15|VN_speednode_0038
+  - 13|🇯🇵 日本4|@ripaojiedian
+  - 11|美国_2
+  - 15|VN_speednode_0045
+  - 13,14|日本|@ripaojiedian
+  - 11|美国_3
+  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
+  - 14|日本4|@ripaojiedian
+  - 13,14|香港4|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -378,6 +490,7 @@ proxy-groups:
   - 13,14|日本3|@ripaojiedian
   - 13|🇯🇵 日本4|@ripaojiedian
   - 14|日本4|@ripaojiedian
+  - 15|JP_speednode_0008
   type: select
 - name: 🇺🇸 美国
   proxies:
@@ -388,10 +501,13 @@ proxy-groups:
   - 13,14|美国|@ripaojiedian
   - 13,14|美国2|@ripaojiedian
   - 13,14|美国3|@ripaojiedian
+  - 15|US_speednode_0028
+  - 15|US_speednode_0029
+  - 15|US_speednode_0031
   type: select
 - name: 🇨🇳 中国
   proxies:
-  - 15|CN_speednode_0004
+  - REJECT
   type: select
 - name: 🇭🇰 香港
   proxies:
@@ -412,7 +528,7 @@ proxy-groups:
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - REJECT
+  - 15|FR_speednode_0003
   type: select
 - name: 🇸🇬 新加坡
   proxies:
