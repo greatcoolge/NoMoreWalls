@@ -1,4 +1,4 @@
-# Update: 2025-10-28 11:43
+# Update: 2025-10-28 14:39
 allow-lan: false
 dns:
   enable: true
@@ -18,104 +18,6 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- name: '1,2,3|_CN_->_JP_ #1'
-  password: BxceQaOe
-  port: 26876
-  server: 36.156.102.115
-  skip-cert-verify: true
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '1,3|_CN_->_US_ #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: '1,2,3|_MD_->_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- name: 2|🇩🇪_DE_德国
-  network: ws
-  port: 80
-  server: sub.turboo-server.com.co
-  tls: false
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: '%2F'
-- name: 2|🇺🇸_US_美国->🇬🇧_GB_英国
-  network: ws
-  port: 8880
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Fi.Parsashonam.CfD.
-    path: '%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam%3Fed%3D2056'
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- name: 2|🇷🇺_RU_俄罗斯
-  network: ws
-  port: 2087
-  server: ne1.tunnelx.space
-  tls: false
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: ws.ne1.tunnelx.space
-    path: /assets/img/banner_v3.webp/
-- name: 3|_DE_
-  network: ws
-  port: 80
-  server: sub.turboo-server.com.co
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /
-- name: 3|_US_->_GB_
-  network: ws
-  port: 8880
-  server: 104.17.147.22
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: Fi.Parsashonam.CfD.
-    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
-- name: 3|_RU_
-  network: ws
-  port: 2087
-  server: ne1.tunnelx.space
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: ws.ne1.tunnelx.space
-    path: /assets/img/banner_v3.webp/
 - cipher: chacha20-ietf-poly1305
   name: 11|美国_31
   password: 9tqhMdIrTkgQ46PvhyAtMH
@@ -754,68 +656,58 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 15|RU_speednode_0024
-  - 15|US_speednode_0036
-  - 3|_US_->_GB_
-  - 15|HK_speednode_0008
-  - 15|RU_speednode_0022
-  - 15|KR_speednode_0014
-  - 15|RU_speednode_0026
-  - 15|US_speednode_0034
-  - 15|RU_speednode_0021
-  - 15|HK_speednode_0007
-  - 15|TW_speednode_0033
-  - 3|_DE_
-  - 13|🇭🇰 香港2|@ripaojiedian
-  - 15|HK_speednode_0006
-  - '1,2,3|_MD_->_RU_ #1'
-  - 15|CN_speednode_0001
-  - 13,14|香港|@ripaojiedian
   - 15|KR_speednode_0016
-  - 13,14|美国3|@ripaojiedian
-  - 15|KR_speednode_0015
-  - 15|RU_speednode_0017
-  - 13,14|新加坡2|@ripaojiedian
-  - 15|RU_speednode_0028
-  - 15|TW_speednode_0032
-  - 13,14|香港5|@ripaojiedian
-  - 11|美国_30
-  - 15|US_speednode_0037
-  - 15|HK_speednode_0010
-  - 15|RU_speednode_0029
   - 13,14|香港6|@ripaojiedian
-  - 15|RU_speednode_0025
-  - '1,2,3|_CN_->_JP_ #1'
   - 15|HK_speednode_0012
-  - 13,14|日本3|@ripaojiedian
-  - 13|🇭🇰 香港3|@ripaojiedian
-  - 15|SG_speednode_0031
-  - 13,14|美国2|@ripaojiedian
-  - 11|美国_32
-  - 15|RU_speednode_0023
-  - 2|🇺🇸_US_美国->🇬🇧_GB_英国
-  - 13,14|新加坡|@ripaojiedian
-  - 15|HK_speednode_0009
-  - 2|🇩🇪_DE_德国
-  - 13,14|美国|@ripaojiedian
-  - 13,14|日本|@ripaojiedian
-  - 15|HK_speednode_0011
-  - 15|RU_speednode_0018
-  - 15|RU_speednode_0019
-  - 13,14,15|CN_speednode_0002
-  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
+  - 15|RU_speednode_0024
+  - 15|RU_speednode_0026
+  - 15|TW_speednode_0032
+  - 15|RU_speednode_0025
   - 11|美国_31
-  - 13,14|香港7|@ripaojiedian
-  - 14|香港3|@ripaojiedian
-  - 2|🇷🇺_RU_俄罗斯
-  - 15|JP_speednode_0013
-  - 3|_RU_
+  - 13,14|新加坡2|@ripaojiedian
+  - 13,14|日本3|@ripaojiedian
+  - 15|HK_speednode_0010
+  - 15|RU_speednode_0023
+  - 15|RU_speednode_0028
+  - 13,14|美国2|@ripaojiedian
+  - 13,14|美国3|@ripaojiedian
+  - 13,14,15|CN_speednode_0002
+  - 15|CN_speednode_0001
+  - 15|HK_speednode_0011
+  - 13,14|新加坡|@ripaojiedian
+  - 13,14|日本|@ripaojiedian
+  - 15|TW_speednode_0033
+  - 15|US_speednode_0034
+  - 13|🇭🇰 香港3|@ripaojiedian
   - 15|RU_speednode_0027
+  - 15|HK_speednode_0007
   - 13,14|日本2|@ripaojiedian
-  - '1,3|_CN_->_US_ #1'
+  - 13,14|香港5|@ripaojiedian
+  - 15|RU_speednode_0018
   - 15|RU_speednode_0020
-  - 15|SG_speednode_0030
   - 15|US_speednode_0035
+  - 15|RU_speednode_0022
+  - 15|HK_speednode_0009
+  - 11|美国_32
+  - 15|KR_speednode_0014
+  - 13,14|香港7|@ripaojiedian
+  - 15|JP_speednode_0013
+  - 15|KR_speednode_0015
+  - 15|US_speednode_0036
+  - 15|RU_speednode_0029
+  - 11|美国_30
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 15|HK_speednode_0008
+  - 15|RU_speednode_0021
+  - 14|香港3|@ripaojiedian
+  - 13,14|香港|@ripaojiedian
+  - 15|SG_speednode_0030
+  - 13,14|美国|@ripaojiedian
+  - 15|RU_speednode_0017
+  - 15|SG_speednode_0031
+  - 15|US_speednode_0037
+  - 15|RU_speednode_0019
+  - 15|HK_speednode_0006
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -943,8 +835,6 @@ proxy-groups:
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - 2|🇷🇺_RU_俄罗斯
-  - 3|_RU_
   - 15|RU_speednode_0017
   - 15|RU_speednode_0018
   - 15|RU_speednode_0019
@@ -961,8 +851,7 @@ proxy-groups:
   type: select
 - name: 🇩🇪 德国
   proxies:
-  - 2|🇩🇪_DE_德国
-  - 3|_DE_
+  - REJECT
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站
