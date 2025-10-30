@@ -52,7 +52,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 12|US_speednode_0008
+  name: 12|US_speednode_0006
   port: 25599
   reality-opts:
     public-key: SsbeZ_JdMe3r2IqTESBWRSUMrcm3PdpFzlab5xrKUlU
@@ -63,23 +63,69 @@ proxies:
   type: vless
   udp: true
   uuid: ff06f97b-09f6-4b8b-8a12-7d2f51b28a75
+- cipher: aes-256-gcm
+  name: 12|US_speednode_0007
+  password: dada0801
+  port: 80
+  server: 54.90.226.121
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|US_speednode_0008
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: usa84.freednet.org
+  servername: www.utexas.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f2f5905b-e814-4a9f-beae-8b1353f25a06
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|US_speednode_0009
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: usa102.unlockspace.org
+  servername: www.utexas.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c9f0284-a8da-40f0-9bca-da9a98049fb0
 - alterId: 0
   cipher: auto
-  name: 14|[🇺🇸]t.me/ConfigsHub
+  name: '14|Channel id: @ShadowProxy66 🇺🇸'
   network: ws
   port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
+  server: 15.204.64.214
+  servername: yichueng.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: lammaland.org
+      Host: yichueng.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  name: 14|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|[🇺🇸]t.me/ConfigsHub
   network: tcp
   port: '30002'
   server: 38.12.83.217
@@ -103,28 +149,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇺🇸'
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
   network: ws
   port: '443'
-  server: 15.204.64.214
-  servername: yichueng.org
+  server: 15.204.103.7
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: yichueng.org
+      Host: lammaland.org
     path: linkvws
