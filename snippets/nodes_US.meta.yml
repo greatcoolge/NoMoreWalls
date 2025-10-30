@@ -52,7 +52,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 12|US_speednode_0066
+  name: 12|US_speednode_0008
   port: 25599
   reality-opts:
     public-key: SsbeZ_JdMe3r2IqTESBWRSUMrcm3PdpFzlab5xrKUlU
@@ -63,20 +63,44 @@ proxies:
   type: vless
   udp: true
   uuid: ff06f97b-09f6-4b8b-8a12-7d2f51b28a75
-- name: 12|US_speednode_0067
+- alterId: 0
+  cipher: auto
+  name: 14|[🇺🇸]t.me/ConfigsHub
   network: ws
-  port: 8880
-  server: wangcai215.000444.cn
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: db2c8a95-f751-46e3-b05e-d2def66850fb
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ayanamirei.11160321.xyz
-    path: /Telegram🇨🇳 @WangCai2
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  network: tcp
+  port: '30002'
+  server: 38.12.83.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|🇺🇸US-192.3.233.216-4950
+  network: ws
+  port: 16556
+  server: 192.3.233.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 14|美国 v2rayfree.eu.org
@@ -92,16 +116,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 14|[🇺🇸]t.me/ConfigsHub
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: '14|Channel id: @ShadowProxy66 🇺🇸'
   network: ws
   port: '443'
@@ -113,18 +127,4 @@ proxies:
   ws-opts:
     headers:
       Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
     path: linkvws
