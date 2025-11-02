@@ -75,34 +75,32 @@ proxies:
   name: 10,11|美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 43567
-  server: 36.156.102.74
+  port: 53743
+  server: 36.151.251.47
   skip-cert-verify: true
   type: trojan
+- cipher: aes-256-cfb
+  name: 12|US_speednode_0029
+  password: amazonskr05
+  port: 443
+  server: 16.52.166.161
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 14|[🇺🇸]t.me/ConfigsHub
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 12|US_speednode_0031
+  network: http
+  port: 32301
+  server: 104.168.94.41
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
+  udp: true
+  uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
 - alterId: 0
   cipher: auto
   name: 14|🇺🇸US-192.3.233.216-4950
@@ -119,6 +117,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 14|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '14|Channel id: @ShadowProxy66 🇺🇸'
   network: ws
   port: '443'
@@ -133,17 +144,28 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|美国 v2rayfree.eu.org
+  name: 14|[🇺🇸]t.me/ConfigsHub
   network: ws
-  port: 443
-  server: 23.162.200.227
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /linkvws
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  network: tcp
+  port: '30002'
+  server: 38.12.83.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 32
   cipher: auto
   name: 14|🇺🇸US-77.83.141.171-1131
