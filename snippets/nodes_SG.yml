@@ -16,6 +16,18 @@ proxies:
   server: 36.150.215.236
   skip-cert-verify: true
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 12|SG_speednode_0030
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: aac01b5.dl.nintendo.jp:170735
+    mode: tls
+    tls: false
+  port: 2377
+  server: aac01b5.s3.glados-config.net
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14|🇸🇬SG-45.76.181.246-0312
@@ -29,4 +41,18 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡5|@ripaojiedian
+  network: ws
+  port: '443'
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: sgal.dagrate.eu.org
     path: /

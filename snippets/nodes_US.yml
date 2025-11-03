@@ -79,34 +79,34 @@ proxies:
   server: 36.151.251.47
   skip-cert-verify: true
   type: trojan
+- cipher: aes-256-cfb
+  name: 12|US_speednode_0082
+  password: amazonskr05
+  port: 443
+  server: 18.188.227.100
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 12|US_speednode_0089
+  password: amazonskr05
+  port: 443
+  server: 16.52.153.7
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 14|[🇺🇸]t.me/ConfigsHub
+  name: 14|🇺🇸US-192.3.233.216-4950
   network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
-  tls: true
+  port: 16556
+  server: 192.3.233.216
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
   ws-opts:
     headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 32
-  cipher: auto
-  name: 14|🇺🇸US-77.83.141.171-1131
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 14|🇺🇸US-148.135.33.227-0194
@@ -135,6 +135,30 @@ proxies:
     headers:
       Host: yichueng.org
     path: linkvws
+- alterId: 32
+  cipher: auto
+  name: 14|🇺🇸US-77.83.141.171-1131
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 14|[🇺🇸]t.me/ConfigsHub
+  network: tcp
+  port: '30002'
+  server: 38.12.83.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 14|美国 v2rayfree.eu.org
@@ -151,10 +175,14 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '14|[🇺🇸]t.me/ConfigsHub #1'
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
+  network: ws
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
