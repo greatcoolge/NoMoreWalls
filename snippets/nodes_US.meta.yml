@@ -56,8 +56,8 @@ proxies:
 - client-fingerprint: chrome
   name: 10,11|美国|@ripaojiedian
   network: tcp
-  password: ea39fa94f1ee00999337ea1fd3318e69
-  port: 2467
+  password: e4e262d453466988575c397a30562337
+  port: 4553
   server: 117.172.176.24
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -65,8 +65,8 @@ proxies:
 - client-fingerprint: chrome
   name: 10,11|美国2|@ripaojiedian
   network: tcp
-  password: ea39fa94f1ee00999337ea1fd3318e69
-  port: 2381
+  password: e4e262d453466988575c397a30562337
+  port: 3777
   server: 117.172.176.24
   skip-cert-verify: true
   sni: www.nintendogames.net
@@ -76,7 +76,7 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 53743
-  server: 36.151.251.47
+  server: 36.150.215.239
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
@@ -162,6 +162,61 @@ proxies:
     headers:
       Host: cdn-node-oss-63.paofu.de
     path: /profile/sharenode
+- alterId: 0
+  cipher: auto
+  name: '14|Channel id: @ShadowProxy66 🇺🇸'
+  network: ws
+  port: '443'
+  server: 15.204.64.214
+  servername: yichueng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|[🇺🇸]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇺🇸US-192.3.233.216-4950
+  network: ws
+  port: 16556
+  server: 192.3.233.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 64
   cipher: auto
   name: 14|🇺🇸US-148.135.33.227-0194
@@ -178,20 +233,7 @@ proxies:
     path: /path/1711117237722
 - alterId: 0
   cipher: auto
-  name: 14|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|[🇺🇸]t.me/ConfigsHub
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
   network: tcp
   port: '30002'
   server: 38.12.83.217
@@ -199,17 +241,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 32
   cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  name: 14|🇺🇸US-77.83.141.171-1131
   network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: lammaland.org
-    path: linkvws
+      Host: vc.fly.dev
+    path: /vc
