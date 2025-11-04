@@ -1,15 +1,46 @@
 proxies:
 - name: 8|🇨🇳_CN_中国
   network: tcp
-  password: BxceQaOe
-  port: 2088
-  server: 36.150.215.197
-  skip-cert-verify: true
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  sni: dingding-doc.com
+  tls: true
   type: trojan
 - name: 8|🇨🇳_CN_中国_1
   network: tcp
   password: BxceQaOe
   port: 194
-  server: 36.156.102.72
+  server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
+- client-fingerprint: chrome
+  name: 8,10,11|香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4556
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
+- client-fingerprint: chrome
+  name: 8,10,11|新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 24392
+  server: 36.150.215.239
+  skip-cert-verify: true
+  type: trojan
+- client-fingerprint: chrome
+  name: 8,10,11|美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 53743
+  server: 36.150.215.239
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf
+  name: 8|🇨🇳_CN_中国_7
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
