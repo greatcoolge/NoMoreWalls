@@ -19,18 +19,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|🇸🇬SG-45.76.181.246-0312
-  network: ws
-  port: 12345
-  server: 45.76.181.246
-  servername: ''
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 12|SG_speednode_0043
+  network: http
+  port: 30344
+  server: 1.32.216.163
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  udp: true
+  uuid: f3c3251b-463c-4ffb-b030-7f8c07ab608c
 - alterId: 0
   cipher: auto
   name: 14|新加坡5|@ripaojiedian
@@ -44,4 +45,18 @@ proxies:
   ws-opts:
     headers:
       Host: sgal.dagrate.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇸🇬SG-45.76.181.246-0312
+  network: ws
+  port: 12345
+  server: 45.76.181.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
+  ws-opts:
+    headers:
+      Host: ''
     path: /
