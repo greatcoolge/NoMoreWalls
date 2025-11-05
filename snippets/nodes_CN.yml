@@ -1,12 +1,14 @@
 proxies:
-- name: 8|🇨🇳_CN_中国
+- name: 8,12|CN_speednode_0002
   network: tcp
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
   port: 20021
   server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: false
   sni: dingding-doc.com
   tls: true
   type: trojan
+  udp: true
 - name: 8|🇨🇳_CN_中国_1
   network: tcp
   password: BxceQaOe
@@ -14,24 +16,21 @@ proxies:
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 8,10,11|香港4|@ripaojiedian
+- name: 8|🇨🇳_CN_中国_2
   network: tcp
   password: BxceQaOe
   port: 4556
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 8,10,11|新加坡3|@ripaojiedian
+- name: 8|🇨🇳_CN_中国_3
   network: tcp
   password: BxceQaOe
   port: 24392
   server: 36.150.215.239
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 8,10,11|美国3|@ripaojiedian
+- name: 8|🇨🇳_CN_中国_4
   network: tcp
   password: BxceQaOe
   port: 53743
@@ -44,3 +43,10 @@ proxies:
   port: 8388
   server: 103.36.91.32
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|CN_speednode_0001
+  password: 403c8b4f-05cc-4609-9ad5-a46cf84327b1
+  port: 23204
+  server: future.chenyi.pw
+  type: ss
+  udp: true
