@@ -66,30 +66,20 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 32
-  cipher: auto
-  name: 14|🇺🇸US-77.83.141.171-1131
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - alterId: 0
   cipher: auto
   name: 14|[🇺🇸]t.me/ConfigsHub
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
+  network: ws
+  port: '443'
+  server: 15.204.103.7
+  servername: lammaland.org
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: '14|Channel id: @ShadowProxy66 🇺🇸'
@@ -106,20 +96,6 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 15.204.103.7
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
   name: 14|美国 v2rayfree.eu.org
   network: ws
   port: 443
@@ -131,3 +107,13 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  network: tcp
+  port: '30002'
+  server: 38.12.83.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
