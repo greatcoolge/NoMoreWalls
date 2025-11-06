@@ -1,9 +1,18 @@
 proxies:
 - client-fingerprint: chrome
-  name: 10,11|新加坡2|@ripaojiedian
+  name: 10,11|新加坡|@ripaojiedian
   network: tcp
   password: e4e262d453466988575c397a30562337
   port: 2283
+  server: 117.172.176.23
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: 10,11|新加坡2|@ripaojiedian
+  network: tcp
+  password: e4e262d453466988575c397a30562337
+  port: 2173
   server: 117.172.176.23
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -34,20 +43,6 @@ proxies:
   uuid: f3c3251b-463c-4ffb-b030-7f8c07ab608c
 - alterId: 0
   cipher: auto
-  name: 14|🇸🇬SG-45.76.181.246-0312
-  network: ws
-  port: 12345
-  server: 45.76.181.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 14|新加坡5|@ripaojiedian
   network: ws
   port: '443'
@@ -59,4 +54,18 @@ proxies:
   ws-opts:
     headers:
       Host: sgal.dagrate.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇸🇬SG-45.76.181.246-0312
+  network: ws
+  port: 12345
+  server: 45.76.181.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
+  ws-opts:
+    headers:
+      Host: ''
     path: /
