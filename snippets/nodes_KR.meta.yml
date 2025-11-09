@@ -20,10 +20,18 @@ proxies:
   tls: false
   type: vmess
   uuid: c74f0304-5b43-3772-852a-2b108c423d23
-- cipher: aes-256-cfb
-  name: 12|KR_speednode_0019
-  password: qwerREWQ@@
-  port: 37008
-  server: 221.139.79.57
-  type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 12|KR_speednode_0024
+  network: http
+  port: 80
+  server: 152.70.92.69
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
