@@ -39,34 +39,22 @@ proxies:
     headers:
       Host: nixian.pages.dev
     path: /?ed=2560/?Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-
-- client-fingerprint: chrome
-  name: 10,11|美国|@ripaojiedian
-  network: tcp
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 5097
-  server: 153.121.44.99
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: 10,11|美国2|@ripaojiedian
+- name: 10,11|美国2|@ripaojiedian
   network: tcp
   password: e4e262d453466988575c397a30562337
-  port: 4173
-  server: 117.172.176.22
+  port: 674
+  server: 160.16.138.24
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  name: 10,11,12|CN_speednode_0012
+- name: 10,11|美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 38799
-  server: 36.151.251.38
+  port: 4569
+  server: 116.49.237.130
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
 - name: 12|US_speednode_0028
   password: telegram-id-directvpn
   port: 22223
@@ -92,12 +80,26 @@ proxies:
   cipher: auto
   name: 14|[🇺🇸]t.me/ConfigsHub
   network: tcp
-  port: '59674'
-  server: 43.162.114.137
+  port: '30002'
+  server: 38.12.83.217
   servername: ''
   tls: false
   type: vmess
-  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 14|🇺🇸US-148.135.33.226-4071
+  network: ws
+  port: 443
+  server: 148.135.33.226
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/1710685091418
 - alterId: 0
   cipher: auto
   name: '14|Channel id: @ShadowProxy66 🇺🇸'
@@ -114,20 +116,17 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  network: tcp
+  port: '59674'
+  server: 43.162.114.137
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
 - alterId: 0
   cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
+  name: '14|[🇺🇸]t.me/ConfigsHub #2'
   network: ws
   port: '443'
   server: 15.204.103.7
@@ -141,11 +140,14 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #2'
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
+  name: 14|美国 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
