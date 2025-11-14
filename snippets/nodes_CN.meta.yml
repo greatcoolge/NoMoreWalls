@@ -1,43 +1,38 @@
 proxies:
 - name: 8|🇨🇳_CN_中国
   network: tcp
-  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
-  port: 20021
-  server: oss-cn-shanghai.letssepub.com
-  sni: dingding-doc.com
-  tls: true
+  password: BxceQaOe
+  port: 518
+  server: 116.49.237.130
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
   type: trojan
 - name: 8|🇨🇳_CN_中国_1
   network: tcp
   password: BxceQaOe
-  port: 194
-  server: 36.151.192.242
+  port: 4094
+  server: 116.49.237.130
   skip-cert-verify: true
+  sni: t.me/ripaojiedian
   type: trojan
-- name: 8|🇨🇳_CN_中国_2
+- alterId: 2
+  cipher: auto
+  name: 8|🇨🇳CN-144.48.180.186-7884
+  network: ws
+  port: 30812
+  server: v12.heduian.link
+  servername: ocbc.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- name: 8,10,11|香港3|@ripaojiedian
   network: tcp
-  password: BxceQaOe
-  port: 4556
-  server: 36.151.192.242
-  skip-cert-verify: true
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 443
+  server: 58.152.110.9
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-- name: 8|🇨🇳_CN_中国_3
-  network: tcp
-  password: BxceQaOe
-  port: 24392
-  server: 36.150.215.239
-  skip-cert-verify: true
-  type: trojan
-- name: 8|🇨🇳_CN_中国_4
-  network: tcp
-  password: BxceQaOe
-  port: 53743
-  server: 36.150.215.239
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf
-  name: 8|🇨🇳_CN_中国_7
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
