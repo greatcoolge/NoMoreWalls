@@ -1,4 +1,4 @@
-# Update: 2025-11-15 05:24
+# Update: 2025-11-15 10:00
 allow-lan: false
 dns:
   enable: true
@@ -44,12 +44,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 8,11|日本4|@ripaojiedian
+  name: 8|🇯🇵 日本4|@ripaojiedian
   network: tcp
-  port: '47083'
+  port: 47083
   server: 114.98.183.61
-  servername: ''
-  tls: false
   type: vmess
   uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
 - name: 8|🇺🇸_US_美国_1
@@ -92,12 +90,11 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: 8,10,11|香港3|@ripaojiedian
+- name: 8|🇨🇳_CN_中国_2
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 443
   server: 58.152.110.9
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 8,12|NL_speednode_0036
@@ -171,11 +168,19 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
+- name: 10,11|香港3|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 443
+  server: 58.152.110.216
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 10,11|香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 443
-  server: 203.198.122.97
+  server: 58.152.110.20
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -183,24 +188,25 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 443
-  server: 219.77.239.35
+  server: 112.120.34.55
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 10|🇭🇰 香港7|@ripaojiedian
-  port: 25007
-  server: onecat-jp.03ezhg0qsa.download
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 69749298-6821-3358-b6d3-1d18d8642cba
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇹🇼 台湾|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: e221b75:110505
+    mode: tls
+  port: 2377
+  server: 60.249.35.3
+  type: ss
 - name: 10,11|日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 4011
-  server: 36.150.215.246
+  port: 1924
+  server: 160.16.227.93
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -208,7 +214,7 @@ proxies:
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 1334
-  server: 160.16.132.158
+  server: 160.16.57.238
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -216,13 +222,71 @@ proxies:
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 3169
-  server: 160.16.196.59
+  server: 202.181.103.235
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '10|🇯🇵 日本4|@ripaojiedian #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: e221b75:110505
+    mode: tls
+  port: 2377
+  server: 172.105.217.136
+  type: ss
+- name: 10,11|新加坡|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 5552
+  server: 160.16.236.32
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 10,11|新加坡2|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 127
+  server: 153.121.51.29
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 10,11|新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 38.180.191.251
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 10,11|美国|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 2890
+  server: 160.16.229.223
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 10,11|美国2|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 4211
+  server: 160.16.57.238
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 10,11|美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4569
+  server: us.wyau.cn
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 10,12|CN_speednode_0007
+  name: 12|CN_speednode_0007
   port: 47083
   server: 114.98.183.61
   skip-cert-verify: false
@@ -232,81 +296,13 @@ proxies:
   uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
 - alterId: 0
   cipher: auto
-  name: 10,12|CN_speednode_0008
+  name: 12|CN_speednode_0008
   port: 47093
   server: 114.98.183.61
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
-- name: 10,11|新加坡|@ripaojiedian
-  network: tcp
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 2760
-  server: 160.16.81.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 10,11|新加坡2|@ripaojiedian
-  network: tcp
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 5553
-  server: 160.16.124.55
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 10,11|新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 2753
-  server: 116.49.237.130
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 10,11|美国|@ripaojiedian
-  network: tcp
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 4211
-  server: 160.16.107.37
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 10,11|美国2|@ripaojiedian
-  network: tcp
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 4054
-  server: 117.172.176.25
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 10,11|美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4094
-  server: 116.49.237.130
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 11|香港7|@ripaojiedian
-  network: tcp
-  port: '25007'
-  server: onecat-jp.03ezhg0qsa.download
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 69749298-6821-3358-b6d3-1d18d8642cba
-- alterId: 0
-  cipher: auto
-  name: 11|韩国|@ripaojiedian
-  network: tcp
-  port: '47093'
-  server: 114.98.183.61
-  servername: ''
-  tls: false
-  type: vmess
   uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
 - name: 12|DE_speednode_0010
   password: telegram-id-directvpn
@@ -417,38 +413,107 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/77.221.141.207=443
 - alterId: 0
   cipher: auto
-  name: 14|🇩🇪DE-57.129.24.131-0814
+  name: 14|🇫🇷FR-57.128.189.240-4828
   network: ws
   port: 443
-  server: 57.129.24.131
+  server: 57.128.189.240
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: kampong.org
-    path: linkvws
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇨🇦CA-15.235.85.147-1224
+  name: 14|美国 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 15.235.85.147
-  servername: ''
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: pelang.org
-    path: linkvws
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 14|[🇺🇸]t.me/ConfigsHub
+  name: 14|[🇬🇧]t.me/ConfigsHub
   network: ws
   port: '443'
-  server: 15.204.103.7
+  server: 57.128.189.211
+  servername: yichueng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇩🇪DE-57.129.28.216-0916
+  network: ws
+  port: 443
+  server: 57.129.28.216
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|0|--86
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|0|-https://t.me/MrXbin-97
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 2
+  cipher: auto
+  name: 14|🇭🇰HK-219.79.187.188-5056
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '14|[🇬🇧]t.me/ConfigsHub #1'
+  network: ws
+  port: '443'
+  server: 57.128.189.143
   servername: lammaland.org
   tls: true
   type: vmess
@@ -459,34 +524,38 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇩🇪'
+  name: 14|🇭🇰HK-47.243.168.211-5638
   network: ws
-  port: '443'
-  server: 57.129.28.212
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|♟️21@oneclickvpnkeys
-  network: tcp
-  port: '11074'
-  server: 66.42.63.36
+  port: 24680
+  server: 47.243.168.211
   servername: ''
   tls: false
   type: vmess
-  uuid: a432f27e-68d2-45a0-ab42-47606d4da983
+  uuid: 33cb9737-88a5-4372-9db0-84255e243c1d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 14|[🇫🇷]t.me/ConfigsHub
+  name: 14|🇲🇾MY-47.250.45.234-5663
+  network: ws
+  port: 43063
+  server: 47.250.45.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '14|Channel id: @ShadowProxy66 🇩🇪'
   network: ws
   port: '443'
-  server: 141.94.155.228
+  server: 57.129.59.195
   servername: kampong.org
   tls: true
   type: vmess
@@ -497,17 +566,31 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇫🇷FR-91.134.8.100-0905
+  name: 14|[🇫🇷]t.me/ConfigsHub
   network: ws
-  port: 443
-  server: 91.134.8.100
-  servername: ''
+  port: '443'
+  server: 91.134.8.92
+  servername: yichueng.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: kampong.org
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|[🇨🇦]t.me/ConfigsHub
+  network: ws
+  port: '443'
+  server: 148.113.176.192
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -525,60 +608,70 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇩🇪DE-57.129.28.213-0918
+  name: 14|🇨🇦CA-15.235.85.147-1224
   network: ws
   port: 443
-  server: 57.129.28.213
+  server: 15.235.85.147
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: fapeng.org
+      Host: pelang.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|新加坡5|@ripaojiedian
+  name: 14|🇺🇸US-107.172.82.41-5543
   network: ws
-  port: '443'
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
+  port: 11814
+  server: 107.172.82.41
+  servername: ''
   tls: true
   type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  uuid: 4f34f242-b5a7-48c1-c258-f019be3bf9c7
   ws-opts:
     headers:
-      Host: sgal.dagrate.eu.org
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|🇲🇾MY-47.250.112.93-5670
+  name: 14|🇫🇷FR-146.59.85.226-1223
   network: ws
-  port: 20522
-  server: 47.250.112.93
+  port: 443
+  server: 146.59.85.226
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 65ffb070-d263-4e0d-b8c1-2c04a643d29b
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /telegram_@sswia
+      Host: pelang.org
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇭🇰HK-47.239.102.115-5549
+  name: '14|Channel id: @ShadowProxy66 🇺🇸'
   network: ws
-  port: 5361
-  server: 47.239.102.115
+  port: '443'
+  server: 15.204.64.214
+  servername: yichueng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|[🇺🇸]t.me/ConfigsHub
+  network: tcp
+  port: '30002'
+  server: 38.12.83.217
   servername: ''
   tls: false
   type: vmess
-  uuid: a053682e-9373-4fe7-8277-1de3f8d1eacd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '14|[🇩🇪]t.me/ConfigsHub #1'
@@ -595,74 +688,32 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇭🇰HK-8.218.152.97-5977
+  name: '14|[🇩🇪]t.me/ConfigsHub #2'
   network: ws
-  port: 15815
-  server: 8.218.152.97
+  port: '443'
+  server: 57.129.28.215
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇭🇰HK-8.210.52.211-5525
+  network: ws
+  port: 20522
+  server: 8.210.52.211
   servername: ''
   tls: false
   type: vmess
-  uuid: ece5c3d7-9c77-407a-9f89-993159f76ea5
+  uuid: 37827036-1fc5-41ea-9fc5-111af1db49dc
   ws-opts:
     headers:
       Host: ''
-    path: /arki?ed=2048
-- alterId: 1
-  cipher: auto
-  name: 14|🇩🇪DE-57.129.25.20-1271
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|[🇬🇧]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 57.128.189.143
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇬🇧]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 57.128.189.222
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇩🇪@vpn_ioss ♻️ عضو شو
-  network: ws
-  port: '443'
-  server: 15.235.85.156
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
+    path: /telegram_@sswia
 - alterId: 0
   cipher: auto
   name: 14|0|--32
@@ -679,38 +730,51 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇩🇪]t.me/ConfigsHub #2'
+  name: 14|🇲🇾MY-47.250.112.93-5670
   network: ws
-  port: '443'
-  server: 57.129.25.26
-  servername: yichueng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇫🇷FR-57.128.189.240-4828
-  network: ws
-  port: 443
-  server: 57.128.189.240
+  port: 20522
+  server: 47.250.112.93
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 65ffb070-d263-4e0d-b8c1-2c04a643d29b
   ws-opts:
     headers:
       Host: ''
+    path: /telegram_@sswia
+- alterId: 0
+  cipher: auto
+  name: 14|🥎26@ConfigV2RayNG
+  network: ws
+  port: '443'
+  server: 15.204.64.211
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🌀37@ConfigV2RayNG
+  name: 14|🌀57@ConfigV2RayNG
   network: ws
   port: '443'
-  server: 141.94.155.224
+  server: 91.134.8.101
   servername: fapeng.org
   tls: true
   type: vmess
@@ -735,166 +799,32 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇭🇰HK-8.218.175.64-5678
+  name: 14|🇭🇰HK-8.218.26.234-5569
   network: ws
-  port: 51377
-  server: 8.218.175.64
+  port: 15233
+  server: 8.218.26.234
   servername: ''
   tls: false
   type: vmess
-  uuid: 45bfcaaa-f3db-4e93-8164-4203eaa2a2cc
+  uuid: 8a638047-8de4-4034-9b24-d8bf9fb18fa4
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 14|0|--38
+  name: 14|🌀84@oneclickvpnkeys
   network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  port: '443'
+  server: 57.128.216.125
+  servername: kampong.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: mankadmu.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #1'
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 14|🇩🇪DE-57.129.25.23-0755
-  network: ws
-  port: 443
-  server: 57.129.25.23
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
+      Host: kampong.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇫🇷FR-146.59.85.226-1223
-  network: ws
-  port: 443
-  server: 146.59.85.226
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|法国 国际航空电讯集团公司(SITA)
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇨🇦CA-15.235.83.228-4945
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|0|--86
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇭🇰HK-8.217.21.237-5466
-  network: ws
-  port: 26998
-  server: 8.217.21.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248b7151-e940-4a68-b734-e206b0fa1d9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 14|0|--26
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇭🇰HK-47.239.252.30-5555
-  network: ws
-  port: 23540
-  server: 47.239.252.30
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2d5ad251-8bc3-41c4-8880-d57ef7f36759
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 14|北美地区 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 14|🇭🇰HK-8.217.92.110-5523
@@ -911,11 +841,39 @@ proxies:
     path: /telegram_@sswia
 - alterId: 0
   cipher: auto
-  name: 14|🇩🇪DE-57.129.28.63-0926
+  name: 14|🇩🇪DE-57.129.64.199-0962
   network: ws
   port: 443
-  server: 57.129.28.63
+  server: 57.129.64.199
   servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇩🇪]t.me/ConfigsHub #3'
+  network: ws
+  port: '443'
+  server: 57.129.25.26
+  servername: yichueng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|Channel id: @ShadowProxy66 🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.28.212
+  servername: fapeng.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -925,24 +883,10 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇨🇦CA-15.235.50.172-1645
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇩🇪 #1'
+  name: '14|Channel id: @ShadowProxy66 🇩🇪 #2'
   network: ws
   port: '443'
-  server: 57.129.59.199
+  server: 57.129.28.214
   servername: kampong.org
   tls: true
   type: vmess
@@ -953,10 +897,53 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|美国 v2rayfree.eu.org
+  name: 14|🇭🇰HK-47.239.102.115-5549
+  network: ws
+  port: 5361
+  server: 47.239.102.115
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a053682e-9373-4fe7-8277-1de3f8d1eacd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 14|🇭🇰HK-47.239.252.30-5555
+  network: ws
+  port: 23540
+  server: 47.239.252.30
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2d5ad251-8bc3-41c4-8880-d57ef7f36759
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 14|🇩🇪DE-57.129.25.23-0755
   network: ws
   port: 443
-  server: 23.162.200.227
+  server: 57.129.25.23
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇨🇦CA-15.235.83.228-4945
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -978,236 +965,26 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '14|[🇩🇪]t.me/ConfigsHub #3'
-  network: ws
-  port: '443'
-  server: 57.129.28.215
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇩🇪]t.me/ConfigsHub #4'
-  network: ws
-  port: '443'
-  server: 57.129.64.157
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 2
-  cipher: auto
-  name: 14|🇭🇰HK-219.79.187.188-5056
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 14|0|--30
+  name: 14|🇩🇪DE-57.129.25.20-1271
   network: ws
   port: 443
-  server: 38.99.82.193
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: tilebani.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇩🇪]t.me/ConfigsHub #5'
-  network: ws
-  port: '443'
-  server: 57.129.28.64
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🌀84@oneclickvpnkeys
-  network: ws
-  port: '443'
-  server: 57.128.216.125
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇫🇷]t.me/ConfigsHub #1'
-  network: ws
-  port: '443'
-  server: 91.134.8.102
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇩🇪 #2'
-  network: ws
-  port: '443'
-  server: 57.129.59.202
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🏮3@ConfigV2RayNG
-  network: ws
-  port: '443'
-  server: 148.113.153.109
-  servername: yichueng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇭🇰HK-8.218.140.27-5580
-  network: ws
-  port: 13589
-  server: 8.218.140.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9297b311-b73a-4332-9016-bb25cbe475ee
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66🇩🇪 #1'
-  network: ws
-  port: '443'
-  server: 57.129.28.65
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇸🇬SG-45.76.181.246-0312
-  network: ws
-  port: 12345
-  server: 45.76.181.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14|🌀77ConfigV2RayNG
-  network: ws
-  port: '443'
-  server: 146.59.70.146
-  servername: yichueng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🌀57@ConfigV2RayNG
-  network: ws
-  port: '443'
-  server: 91.134.8.101
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇫🇷FR-91.134.8.93-1222
-  network: ws
-  port: 443
-  server: 91.134.8.93
+  server: 57.129.25.20
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: pelang.org
+      Host: 57.129.25.20
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇬🇧]t.me/ConfigsHub #2'
+  name: '14|[🇺🇸]t.me/ConfigsHub #1'
   network: ws
   port: '443'
-  server: 57.128.189.211
-  servername: yichueng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇨🇵@vpn_ioss ♻️ عضو شو
-  network: ws
-  port: '443'
-  server: 91.134.8.88
+  server: 15.204.103.7
   servername: lammaland.org
   tls: true
   type: vmess
@@ -1218,32 +995,24 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇫🇷FR-141.94.155.229-1206
-  network: ws
-  port: 443
-  server: 141.94.155.229
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇭🇰HK-47.243.168.211-5638
-  network: ws
-  port: 24680
-  server: 47.243.168.211
+  name: 14|♟️21@oneclickvpnkeys
+  network: tcp
+  port: '11074'
+  server: 66.42.63.36
   servername: ''
   tls: false
   type: vmess
-  uuid: 33cb9737-88a5-4372-9db0-84255e243c1d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
+  uuid: a432f27e-68d2-45a0-ab42-47606d4da983
+- alterId: 0
+  cipher: auto
+  name: '14|[🇺🇸]t.me/ConfigsHub #2'
+  network: tcp
+  port: '59674'
+  server: 43.162.114.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
 - alterId: 0
   cipher: auto
   name: 14|🇭🇰HK-47.238.247.69-5613
@@ -1260,18 +1029,59 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 14|0|-https://t.me/MrXbin-97
+  name: '14|[🇫🇷]t.me/ConfigsHub #1'
   network: ws
-  port: 443
-  server: 146.59.55.50
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  port: '443'
+  server: 91.134.8.102
+  servername: serkat.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: o.metuji.com
+      Host: serkat.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇩🇪]t.me/ConfigsHub #4'
+  network: ws
+  port: '443'
+  server: 57.129.28.64
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇧🇷BR-45.231.132.46-5615
+  network: ws
+  port: 45979
+  server: 45.231.132.46
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  ws-opts:
+    headers:
+      Host: ''
+    path: /test
 - alterId: 0
   cipher: auto
   name: '14|法国 国际航空电讯集团公司(SITA) #1'
@@ -1288,203 +1098,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇲🇾MY-47.250.45.234-5663
-  network: ws
-  port: 43063
-  server: 47.250.45.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 14|[🇨🇦]t.me/ConfigsHub
-  network: ws
-  port: '443'
-  server: 148.113.176.192
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|@ConfigV2RayNG
-  network: ws
-  port: '54100'
-  server: 8.218.113.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b401fe8-7a80-4c9d-8126-e29407a6032c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '14|[🇩🇪]t.me/ConfigsHub #6'
-  network: ws
-  port: '443'
-  server: 57.129.59.193
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇫🇷]t.me/ConfigsHub #2'
-  network: ws
-  port: '443'
-  server: 91.134.8.92
-  servername: yichueng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|[🇬🇧]t.me/ConfigsHub #3'
-  network: ws
-  port: '443'
-  server: 57.128.189.253
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🥎26@ConfigV2RayNG
-  network: ws
-  port: '443'
-  server: 15.204.64.211
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇺🇸'
-  network: ws
-  port: '443'
-  server: 15.204.64.214
-  servername: yichueng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|[🇯🇵]t.me/ConfigsHub
-  network: tcp
-  port: '14760'
-  server: 45.32.45.45
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
-- alterId: 0
-  cipher: auto
-  name: 14|🇲🇾MY-45.89.107.51-5095
-  network: ws
-  port: 20521
-  server: 45.89.107.51
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '14|[🇩🇪]t.me/ConfigsHub #7'
-  network: ws
-  port: '443'
-  server: 57.129.24.130
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇩🇪DE-57.129.64.199-0962
+  name: 14|🇫🇷FR-91.134.8.100-0905
   network: ws
   port: 443
-  server: 57.129.64.199
+  server: 91.134.8.100
   servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇩🇪 #3'
-  network: ws
-  port: '443'
-  server: 57.129.28.214
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 14|🇭🇰HK-8.218.26.234-5569
-  network: ws
-  port: 15233
-  server: 8.218.26.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8a638047-8de4-4034-9b24-d8bf9fb18fa4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇩🇪 #4'
-  network: ws
-  port: '443'
-  server: 57.129.59.195
-  servername: kampong.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1508,14 +1126,192 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇺🇸]t.me/ConfigsHub #2'
-  network: tcp
-  port: '59674'
-  server: 43.162.114.137
+  name: '14|[🇫🇷]t.me/ConfigsHub #2'
+  network: ws
+  port: '443'
+  server: 141.94.155.228
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|Channel id: @ShadowProxy66 🇩🇪 #3'
+  network: ws
+  port: '443'
+  server: 57.129.59.199
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇩🇪]t.me/ConfigsHub #5'
+  network: ws
+  port: '443'
+  server: 57.129.59.193
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇩🇪DE-57.129.28.213-0918
+  network: ws
+  port: 443
+  server: 57.129.28.213
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇭🇰HK-47.244.120.197-5532
+  network: ws
+  port: 36703
+  server: 47.244.120.197
   servername: ''
   tls: false
   type: vmess
-  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 14|0|--38
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: mankadmu.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|[🇯🇵]t.me/ConfigsHub
+  network: tcp
+  port: '14760'
+  server: 45.32.45.45
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
+- alterId: 0
+  cipher: auto
+  name: 14|🌀77ConfigV2RayNG
+  network: ws
+  port: '443'
+  server: 146.59.70.146
+  servername: yichueng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🦀23@oneclickvpnkeys
+  network: tcp
+  port: '45228'
+  server: lt.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: '14|Channel id: @ShadowProxy66 🇩🇪 #4'
+  network: ws
+  port: '443'
+  server: 57.129.59.202
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇨🇦CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇭🇰HK-8.218.140.27-5580
+  network: ws
+  port: 13589
+  server: 8.218.140.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9297b311-b73a-4332-9016-bb25cbe475ee
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '14|[🇬🇧]t.me/ConfigsHub #2'
+  network: ws
+  port: '443'
+  server: 57.128.189.222
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|0|--30
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 14|🇭🇰HK-47.243.39.173-5644
@@ -1532,160 +1328,412 @@ proxies:
     path: /telegram_@sswia
 - alterId: 0
   cipher: auto
-  name: 14|🇭🇰HK-47.244.120.197-5532
+  name: 14|🇭🇰HK-8.218.152.97-5977
   network: ws
-  port: 36703
-  server: 47.244.120.197
+  port: 15815
+  server: 8.218.152.97
   servername: ''
   tls: false
   type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: ece5c3d7-9c77-407a-9f89-993159f76ea5
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
-- name: '15|IEPL+·+美国US+·+88+·+深港IEPL #8'
-  password: a5kJy0LOt
-  port: 28109
-  server: 120.233.151.18
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #15'
-  password: eEEjrJYqi
-  port: 28175
-  server: 120.197.94.136
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+88+·+沪港IEPL #8'
-  password: FIxSN3ULT
-  port: 28109
-  server: 120.197.94.136
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+日本JP+·+V8+·+深港IEPL #8'
-  password: FX9yrfu0L
-  port: 28107
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #16'
-  password: eEEjrJYqi
+- alterId: 0
+  cipher: auto
+  name: 14|0|--26
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇫🇷FR-91.134.8.93-1222
+  network: ws
+  port: 443
+  server: 91.134.8.93
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇩🇪]t.me/ConfigsHub #6'
+  network: ws
+  port: '443'
+  server: 57.129.64.157
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇲🇾MY-45.89.107.51-5095
+  network: ws
+  port: 20521
+  server: 45.89.107.51
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇫🇷FR-141.94.155.229-1206
+  network: ws
+  port: 443
+  server: 141.94.155.229
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|@ConfigV2RayNG
+  network: ws
+  port: '54100'
+  server: 8.218.113.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9b401fe8-7a80-4c9d-8126-e29407a6032c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '14|Channel id: @ShadowProxy66🇩🇪 #1'
+  network: ws
+  port: '443'
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇩🇪DE-57.129.24.131-0814
+  network: ws
+  port: 443
+  server: 57.129.24.131
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🌀37@ConfigV2RayNG
+  network: ws
+  port: '443'
+  server: 141.94.155.224
+  servername: fapeng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇸🇬SG-45.76.181.246-0312
+  network: ws
+  port: 12345
+  server: 45.76.181.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇭🇰HK-8.218.175.64-5678
+  network: ws
+  port: 51377
+  server: 8.218.175.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 45bfcaaa-f3db-4e93-8164-4203eaa2a2cc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 14|🏮3@ConfigV2RayNG
+  network: ws
+  port: '443'
+  server: 148.113.153.109
+  servername: yichueng.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇭🇰HK-45.136.12.37-4936
+  network: ws
+  port: 20521
+  server: 45.136.12.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇨🇵@vpn_ioss ♻️ عضو شو
+  network: ws
+  port: '443'
+  server: 91.134.8.88
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇬🇧]t.me/ConfigsHub #3'
+  network: ws
+  port: '443'
+  server: 57.128.189.253
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇩🇪DE-57.129.28.63-0926
+  network: ws
+  port: 443
+  server: 57.129.28.63
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|🇩🇪@vpn_ioss ♻️ عضو شو
+  network: ws
+  port: '443'
+  server: 15.235.85.156
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇩🇪]t.me/ConfigsHub #7'
+  network: ws
+  port: '443'
+  server: 57.129.24.130
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #33'
+  password: 8Ax1fAle7
   port: 28117
   server: 120.197.94.136
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+V8+·+沪港IEPL #8'
-  password: FX9yrfu0L
-  port: 28107
-  server: 120.197.94.136
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #2'
-  password: a5kJy0LOt
-  port: 28175
-  server: 120.233.151.18
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+36+·+深港IEPL #3'
+- name: '15|IEPL+·+美国US+·+36+·+沪港IEPL #16'
   password: a5kJy0LOt
   port: 28136
-  server: 120.233.151.18
+  server: 120.197.94.136
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #9'
-  password: o60kHROn5
-  port: 28117
-  server: 163.177.46.177
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #17'
-  password: FX9yrfu0L
-  port: 28175
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+日本JP+·+V8+·+深港IEPL #7'
+- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #23'
   password: smwY09rJy
-  port: 28107
+  port: 28175
   server: 120.233.151.18
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+美国US+·+88+·+深港IEPL #7'
-  password: o6jyFtOQg
-  port: 28109
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+36+·+沪港IEPL #8'
-  password: a5kJy0LOt
-  port: 28136
+- name: '15|IEPL+·+日本JP+·+V8+·+沪港IEPL #16'
+  password: QILbgRAFk
+  port: 28107
   server: 120.197.94.136
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+23+·+深港IEPL #6'
-  password: o60kHROn5
-  port: 28113
-  server: 163.177.46.177
+- name: '15|IEPL+·+日本JP+·+V8+·+深港IEPL #13'
+  password: o6jyFtOQg
+  port: 28107
+  server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+美国US+·+36+·+深港IEPL #4'
+- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #33'
+  password: oHlxQK51I
+  port: 28175
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+23+·+深港IEPL #16'
+  password: xGaExf8Xq
+  port: 28113
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+美国US+·+36+·+深港IEPL #16'
+  password: oHlxQK51I
+  port: 28136
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+美国US+·+36+·+深港IEPL #11'
   password: OwMBTfmbT
   port: 28136
   server: 163.177.46.177
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #17'
-  password: eEEjrJYqi
-  port: 28117
+- name: '15|IEPL+·+美国US+·+88+·+沪港IEPL #16'
+  password: 8Ax1fAle7
+  port: 28109
+  server: 120.197.94.136
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+美国US+·+88+·+深港IEPL #16'
+  password: QILbgRAFk
+  port: 28109
   server: 59.42.247.76
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+23+·+沪港IEPL #8'
-  password: smwY09rJy
+- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #32'
+  password: oHlxQK51I
+  port: 28175
+  server: 120.197.94.136
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+23+·+沪港IEPL #16'
+  password: xGaExf8Xq
   port: 28113
   server: 120.197.94.136
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+V8+·+深港IEPL #6'
+- name: '15|IEPL+·+美国US+·+36+·+深港IEPL #14'
+  password: 8Ax1fAle7
+  port: 28136
+  server: 120.233.151.18
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #32'
+  password: FIxSN3ULT
+  port: 28117
+  server: 59.42.247.76
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+美国US+·+88+·+深港IEPL #13'
+  password: OwMBTfmbT
+  port: 28109
+  server: 163.177.46.177
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #27'
+  password: o60kHROn5
+  port: 28175
+  server: 163.177.46.177
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #28'
+  password: WdrrbbN4E
+  port: 28117
+  server: 120.233.151.18
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #31'
+  password: 2DfpqqjfY
+  port: 28117
+  server: 163.177.46.177
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+23+·+深港IEPL #15'
+  password: o60kHROn5
+  port: 28113
+  server: 163.177.46.177
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+美国US+·+88+·+深港IEPL #11'
+  password: 8Ax1fAle7
+  port: 28109
+  server: 120.233.151.18
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+23+·+深港IEPL #10'
+  password: 8Ax1fAle7
+  port: 28113
+  server: 120.233.151.18
+  skip-cert-verify: true
+  type: trojan
+- name: '15|IEPL+·+日本JP+·+V8+·+深港IEPL #16'
   password: xZ8GDRxLV
   port: 28107
   server: 163.177.46.177
   skip-cert-verify: true
   type: trojan
-- name: '15|IEPL+·+日本JP+·+23+·+深港IEPL #8'
-  password: smwY09rJy
-  port: 28113
+- name: '15|IEPL+·+日本JP+·+V8+·+深港IEPL #15'
+  password: WdrrbbN4E
+  port: 28107
   server: 120.233.151.18
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+88+·+深港IEPL #6'
-  password: o60kHROn5
-  port: 28109
-  server: 163.177.46.177
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+日本JP+·+23+·+深港IEPL #7'
-  password: o6jyFtOQg
-  port: 28113
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+36+·+深港IEPL #8'
-  password: o6jyFtOQg
-  port: 28136
-  server: 59.42.247.76
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #15'
-  password: a5kJy0LOt
-  port: 28117
-  server: 120.233.151.18
-  skip-cert-verify: true
-  type: trojan
-- name: '15|IEPL+·+美国US+·+A250+·+Netflix美国... #16'
-  password: xZ8GDRxLV
-  port: 28175
-  server: 163.177.46.177
   skip-cert-verify: true
   type: trojan
 proxy-groups:
@@ -1699,152 +1747,156 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 14|🇭🇰HK-8.218.152.97-5977
-  - '14|Channel id: @ShadowProxy66🇩🇪 #1'
-  - 10,11|香港5|@ripaojiedian
-  - 10,11|美国2|@ripaojiedian
-  - 14|🥎26@ConfigV2RayNG
-  - 14|🇭🇰HK-8.218.175.64-5678
-  - 10,11|新加坡|@ripaojiedian
-  - '15|IEPL+·+美国US+·+36+·+深港IEPL #8'
-  - 14|[🇩🇪]t.me/ConfigsHub
-  - 14|🇭🇰HK-47.238.247.69-5613
-  - '15|IEPL+·+美国US+·+36+·+沪港IEPL #8'
-  - 14|0|--38
-  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #17'
-  - 14|♟️21@oneclickvpnkeys
-  - 14|🇩🇪DE-57.129.25.20-1271
-  - 14|0|--26
-  - '14|[🇬🇧]t.me/ConfigsHub #3'
-  - '15|IEPL+·+美国US+·+88+·+深港IEPL #8'
-  - 14|🇲🇾MY-45.89.107.51-5095
-  - 10,11|日本3|@ripaojiedian
   - '14|[🇩🇪]t.me/ConfigsHub #3'
-  - '14|[🇺🇸]t.me/ConfigsHub #1'
-  - '15|IEPL+·+日本JP+·+V8+·+沪港IEPL #8'
-  - 14|🇩🇪DE-57.129.24.131-0814
-  - 14|美国 v2rayfree.eu.org
-  - 14|🇩🇪DE-57.129.64.199-0962
-  - 10,12|CN_speednode_0007
-  - 10,11|美国3|@ripaojiedian
-  - '15|IEPL+·+美国US+·+88+·+深港IEPL #6'
-  - 14|🇭🇰HK-8.218.26.234-5569
-  - 14|🌀37@ConfigV2RayNG
-  - 8,11|日本4|@ripaojiedian
-  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #15'
-  - '14|Channel id: @ShadowProxy66 🇺🇸'
-  - 11|香港7|@ripaojiedian
-  - 10|🇭🇰 香港2|@ripaojiedian
-  - 14|🇩🇪DE-57.129.28.213-0918
-  - 14|🇭🇰HK-47.243.39.173-5644
-  - '14|Channel id: @ShadowProxy66 🇩🇪 #3'
-  - '15|IEPL+·+日本JP+·+V8+·+深港IEPL #8'
-  - 8|🇨🇳CN-144.48.180.186-7884
-  - 14|0|-https://t.me/MrXbin-97
-  - 8|🇷🇺_RU_俄罗斯
-  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #15'
-  - 12|IL_speednode_0021
-  - '15|IEPL+·+美国US+·+88+·+深港IEPL #7'
-  - '14|Channel id: @ShadowProxy66 🇩🇪'
-  - 14|🇨🇦CA-15.235.83.228-4945
-  - 12|RU_speednode_0044
-  - '14|[🇫🇷]t.me/ConfigsHub #2'
-  - 12|NL_speednode_0037
-  - 14|0|--32
-  - 14|🇭🇰HK-8.217.21.237-5466
-  - 12|SE_speednode_0046
+  - 14|🇭🇰HK-8.218.152.97-5977
+  - 14|0|--26
+  - 14|♟️21@oneclickvpnkeys
   - 10,11|新加坡2|@ripaojiedian
-  - 14|[🇫🇷]t.me/ConfigsHub
-  - 10,11|新加坡3|@ripaojiedian
-  - 8|🇺🇸_US_美国_1
-  - 8,12|PL_speednode_0038
-  - '14|[🇩🇪]t.me/ConfigsHub #6'
-  - 14|🇲🇾MY-47.250.45.234-5663
-  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #16'
-  - 14|[🇯🇵]t.me/ConfigsHub
-  - 14|🌀77ConfigV2RayNG
-  - '14|Channel id: @ShadowProxy66 🇩🇪 #4'
-  - 8|🇨🇳_CN_中国_1
-  - 14|🇲🇾MY-47.250.112.93-5670
-  - '15|IEPL+·+日本JP+·+23+·+深港IEPL #6'
-  - 8|🇨🇳_CN_中国
-  - '15|IEPL+·+日本JP+·+V8+·+深港IEPL #6'
-  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #16'
-  - 14|🇫🇷FR-91.134.8.93-1222
-  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #9'
-  - 14|🏮3@ConfigV2RayNG
-  - '14|法国 国际航空电讯集团公司(SITA) #1'
-  - 14|🇩🇪DE-57.129.28.63-0926
-  - 12|DE_speednode_0010
-  - 14|🇭🇰HK-47.244.120.197-5532
-  - 14|🇭🇰HK-8.217.92.110-5523
-  - 14|🇭🇰HK-47.239.102.115-5549
-  - '14|Channel id: @ShadowProxy66 🇩🇪 #1'
-  - 10,11|香港|@ripaojiedian
-  - 14|🇫🇷FR-141.94.155.229-1206
-  - '15|IEPL+·+美国US+·+36+·+深港IEPL #3'
-  - 8,10,11|香港3|@ripaojiedian
-  - 14|🌀57@ConfigV2RayNG
-  - 14|🇩🇪DE-57.129.25.23-0755
-  - 10,11|日本2|@ripaojiedian
-  - 8|🇸🇪_SE_瑞典
-  - 14|[🇬🇧]t.me/ConfigsHub
-  - '14|[🇩🇪]t.me/ConfigsHub #2'
-  - '14|[🇬🇧]t.me/ConfigsHub #2'
-  - 10,12|CN_speednode_0008
-  - 11|韩国|@ripaojiedian
-  - '14|[🇬🇧]t.me/ConfigsHub #1'
-  - 14|🇭🇰HK-47.243.168.211-5638
-  - '14|[🇫🇷]t.me/ConfigsHub #1'
-  - 14|🇸🇬SG-45.76.181.246-0312
-  - 14|🇨🇦CA-15.235.50.172-1645
-  - '14|[🇩🇪]t.me/ConfigsHub #5'
-  - 14|🇨🇦CA-15.235.85.147-1224
-  - 14|🇭🇰HK-219.79.187.188-5056
-  - 8|🇺🇸_US_美国_8
-  - 14|🇫🇷FR-57.128.189.240-4828
-  - 14|新加坡5|@ripaojiedian
-  - 14|🌀84@oneclickvpnkeys
-  - 8|🇰🇷_KR_韩国
-  - 14|北美地区 v2rayfree.eu.org
-  - 12|DK_speednode_0011
-  - 14|🇬🇸@vpn_ioss ♻️ عضو شو
-  - 12|PL_speednode_0039
-  - 14|🇨🇵@vpn_ioss ♻️ عضو شو
-  - 14|0|--30
-  - '14|[🇺🇸]t.me/ConfigsHub #2'
-  - '14|Channel id: @ShadowProxy66 🇩🇪 #2'
-  - '15|IEPL+·+美国US+·+36+·+深港IEPL #4'
-  - '14|Channel id: @ShadowProxy66🇩🇪'
-  - 10,11|香港4|@ripaojiedian
-  - 10,11|美国|@ripaojiedian
-  - 14|0|--86
-  - '15|IEPL+·+日本JP+·+23+·+深港IEPL #8'
-  - 8,12|NL_speednode_0036
-  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #2'
-  - 14|🇫🇷FR-91.134.8.100-0905
-  - '15|IEPL+·+美国US+·+88+·+沪港IEPL #8'
-  - 10,11|日本|@ripaojiedian
-  - 10|🇭🇰 香港7|@ripaojiedian
-  - 14|[🇺🇸]t.me/ConfigsHub
-  - '14|[🇩🇪]t.me/ConfigsHub #4'
-  - 14|[🇨🇦]t.me/ConfigsHub
-  - '14|[🇩🇪]t.me/ConfigsHub #7'
-  - 14|🇭🇰HK-47.239.252.30-5555
-  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #17'
-  - '15|IEPL+·+日本JP+·+23+·+沪港IEPL #8'
-  - '15|IEPL+·+日本JP+·+23+·+深港IEPL #7'
   - '14|[🇩🇪]t.me/ConfigsHub #1'
-  - 14|🇭🇰HK-8.218.140.27-5580
-  - 14|🇨🇦@vpn_ioss ♻️ عضو شو
-  - 14|@ConfigV2RayNG
-  - '15|IEPL+·+日本JP+·+V8+·+深港IEPL #7'
-  - 14|🇩🇪@vpn_ioss ♻️ عضو شو
-  - 12|HK_speednode_0019
+  - 14|🇭🇰HK-47.238.247.69-5613
   - 12|IT_speednode_0031
-  - 14|🇫🇷FR-146.59.85.226-1223
-  - 8|🇺🇸US²_2|0.6MB/s|18%|GPT|YT-CN|...
+  - 14|[🇯🇵]t.me/ConfigsHub
+  - 14|北美地区 v2rayfree.eu.org
   - 14|法国 国际航空电讯集团公司(SITA)
+  - 10|🇹🇼 台湾|@ripaojiedian
+  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #33'
+  - '14|[🇫🇷]t.me/ConfigsHub #2'
+  - 14|🇭🇰HK-8.217.92.110-5523
+  - '14|Channel id: @ShadowProxy66🇩🇪 #1'
+  - '14|[🇺🇸]t.me/ConfigsHub #2'
+  - 14|🇭🇰HK-8.218.175.64-5678
+  - '15|IEPL+·+美国US+·+88+·+沪港IEPL #16'
+  - '15|IEPL+·+日本JP+·+V8+·+深港IEPL #15'
+  - 14|🇲🇾MY-45.89.107.51-5095
+  - '14|Channel id: @ShadowProxy66 🇩🇪 #2'
+  - 10,11|香港3|@ripaojiedian
+  - '14|[🇬🇧]t.me/ConfigsHub #1'
+  - 8|🇺🇸_US_美国_1
+  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #33'
+  - 14|🇨🇦CA-15.235.50.172-1645
+  - '15|IEPL+·+日本JP+·+V8+·+深港IEPL #13'
+  - '15|IEPL+·+美国US+·+88+·+深港IEPL #11'
+  - 14|0|-https://t.me/MrXbin-97
+  - 14|🌀77ConfigV2RayNG
+  - '15|IEPL+·+美国US+·+36+·+沪港IEPL #16'
+  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #32'
+  - 12|IL_speednode_0021
+  - 8|🇺🇸US²_2|0.6MB/s|18%|GPT|YT-CN|...
+  - 10,11|日本2|@ripaojiedian
+  - 14|🌀37@ConfigV2RayNG
+  - '15|IEPL+·+美国US+·+36+·+深港IEPL #16'
+  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #28'
+  - 10,11|香港|@ripaojiedian
+  - 12|NL_speednode_0037
+  - 14|🇭🇰HK-8.218.26.234-5569
+  - 14|0|--32
+  - 14|🇭🇰HK-8.218.140.27-5580
+  - 14|[🇬🇧]t.me/ConfigsHub
+  - 12|CN_speednode_0007
+  - 14|🇫🇷FR-91.134.8.93-1222
+  - 14|🇩🇪DE-57.129.24.131-0814
+  - '14|Channel id: @ShadowProxy66 🇩🇪'
+  - 14|美国 v2rayfree.eu.org
+  - 14|0|--38
+  - 14|[🇩🇪]t.me/ConfigsHub
+  - 8|🇺🇸_US_美国_8
+  - 14|🇩🇪DE-57.129.25.20-1271
+  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #32'
+  - 14|🇩🇪DE-57.129.28.63-0926
+  - 14|🌀84@oneclickvpnkeys
+  - '15|IEPL+·+美国US+·+36+·+深港IEPL #11'
+  - '14|[🇬🇧]t.me/ConfigsHub #2'
+  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #27'
+  - 14|🇩🇪DE-57.129.64.199-0962
+  - 10,11|新加坡3|@ripaojiedian
+  - 10,11|美国2|@ripaojiedian
+  - 14|[🇫🇷]t.me/ConfigsHub
+  - '15|IEPL+·+美国US+·+88+·+深港IEPL #13'
+  - 10,11|美国|@ripaojiedian
+  - 12|HK_speednode_0019
+  - 14|🇨🇵@vpn_ioss ♻️ عضو شو
+  - 14|🇭🇰HK-219.79.187.188-5056
+  - '15|IEPL+·+日本JP+·+23+·+深港IEPL #10'
+  - '15|IEPL+·+美国US+·+36+·+深港IEPL #14'
+  - '14|Channel id: @ShadowProxy66🇩🇪'
+  - 14|🥎26@ConfigV2RayNG
+  - '15|IEPL+·+日本JP+·+V8+·+深港IEPL #16'
+  - 10,11|香港5|@ripaojiedian
+  - '14|[🇬🇧]t.me/ConfigsHub #3'
+  - 14|🏮3@ConfigV2RayNG
+  - 12|SE_speednode_0046
+  - 8|🇨🇳CN-144.48.180.186-7884
+  - 10,11|香港4|@ripaojiedian
+  - 14|🇺🇸US-107.172.82.41-5543
+  - 14|🇧🇷BR-45.231.132.46-5615
+  - '15|IEPL+·+日本JP+·+23+·+深港IEPL #16'
+  - 14|🇩🇪@vpn_ioss ♻️ عضو شو
+  - 14|0|--86
+  - 14|🇨🇦CA-15.235.85.147-1224
+  - 14|🇫🇷FR-91.134.8.100-0905
+  - 8|🇨🇳_CN_中国_2
+  - 14|🇨🇦@vpn_ioss ♻️ عضو شو
+  - 12|RU_speednode_0044
+  - '15|IEPL+·+美国US+·+88+·+深港IEPL #16'
+  - 14|🇩🇪DE-57.129.28.216-0916
+  - 14|🇩🇪DE-57.129.28.213-0918
+  - 14|🦀23@oneclickvpnkeys
+  - '14|Channel id: @ShadowProxy66 🇺🇸'
+  - 10,11|美国3|@ripaojiedian
+  - '14|[🇩🇪]t.me/ConfigsHub #6'
+  - 8|🇷🇺_RU_俄罗斯
+  - '14|Channel id: @ShadowProxy66 🇩🇪 #4'
+  - 14|🇭🇰HK-45.136.12.37-4936
+  - '14|[🇩🇪]t.me/ConfigsHub #7'
+  - 14|🇨🇦CA-15.235.83.228-4945
+  - '14|[🇺🇸]t.me/ConfigsHub #1'
+  - '14|[🇩🇪]t.me/ConfigsHub #5'
+  - '15|IEPL+·+日本JP+·+23+·+沪港IEPL #16'
+  - 8|🇰🇷_KR_韩国
+  - 12|PL_speednode_0039
+  - 14|🇭🇰HK-47.244.120.197-5532
+  - 14|0|--30
+  - '15|IEPL+·+美国US+·+A250+·+Netflix美国... #23'
+  - 10,11|日本|@ripaojiedian
+  - '15|IEPL+·+日本JP+·+A140+·+Netflix日本... #31'
+  - 14|🇬🇸@vpn_ioss ♻️ عضو شو
+  - 14|🇫🇷FR-146.59.85.226-1223
+  - 14|🇫🇷FR-141.94.155.229-1206
+  - 10,11|新加坡|@ripaojiedian
+  - 14|🇫🇷FR-57.128.189.240-4828
+  - '14|Channel id: @ShadowProxy66 🇩🇪 #1'
+  - 14|🇩🇪DE-57.129.25.23-0755
+  - 14|🇭🇰HK-47.243.39.173-5644
+  - 14|🇭🇰HK-47.243.168.211-5638
+  - 14|[🇺🇸]t.me/ConfigsHub
+  - 14|🇸🇬SG-45.76.181.246-0312
+  - '14|[🇩🇪]t.me/ConfigsHub #4'
+  - 10|🇭🇰 香港2|@ripaojiedian
+  - 14|🇭🇰HK-47.239.102.115-5549
+  - 8|🇯🇵 日本4|@ripaojiedian
+  - 8|🇸🇪_SE_瑞典
+  - 8|🇨🇳_CN_中国
+  - 8,12|PL_speednode_0038
+  - 14|🇭🇰HK-47.239.252.30-5555
+  - '14|法国 国际航空电讯集团公司(SITA) #1'
+  - '15|IEPL+·+日本JP+·+V8+·+沪港IEPL #16'
+  - 8|🇨🇳_CN_中国_1
+  - 12|DE_speednode_0010
+  - '15|IEPL+·+日本JP+·+23+·+深港IEPL #15'
+  - '14|[🇩🇪]t.me/ConfigsHub #2'
+  - 14|🇲🇾MY-47.250.112.93-5670
+  - 14|🇲🇾MY-47.250.45.234-5663
+  - 14|🌀57@ConfigV2RayNG
+  - 12|DK_speednode_0011
+  - 8,12|NL_speednode_0036
+  - '14|[🇫🇷]t.me/ConfigsHub #1'
+  - '14|Channel id: @ShadowProxy66 🇩🇪 #3'
+  - 14|@ConfigV2RayNG
+  - 10,11|日本3|@ripaojiedian
+  - 12|CN_speednode_0008
+  - 14|🇭🇰HK-8.210.52.211-5525
+  - 14|[🇨🇦]t.me/ConfigsHub
+  - '10|🇯🇵 日本4|@ripaojiedian #1'
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -1900,11 +1952,11 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
-  - 8,11|日本4|@ripaojiedian
+  - 8|🇯🇵 日本4|@ripaojiedian
   - 10,11|日本|@ripaojiedian
   - 10,11|日本2|@ripaojiedian
   - 10,11|日本3|@ripaojiedian
-  - 10,12|CN_speednode_0007
+  - '10|🇯🇵 日本4|@ripaojiedian #1'
   - 14|[🇯🇵]t.me/ConfigsHub
   type: select
 - name: 🇺🇸 美国
@@ -1914,11 +1966,12 @@ proxy-groups:
   - 10,11|美国|@ripaojiedian
   - 10,11|美国2|@ripaojiedian
   - 10,11|美国3|@ripaojiedian
-  - 14|[🇺🇸]t.me/ConfigsHub
-  - '14|[🇺🇸]t.me/ConfigsHub #1'
-  - 14|北美地区 v2rayfree.eu.org
   - 14|美国 v2rayfree.eu.org
+  - 14|🇺🇸US-107.172.82.41-5543
   - '14|Channel id: @ShadowProxy66 🇺🇸'
+  - 14|[🇺🇸]t.me/ConfigsHub
+  - 14|北美地区 v2rayfree.eu.org
+  - '14|[🇺🇸]t.me/ConfigsHub #1'
   - '14|[🇺🇸]t.me/ConfigsHub #2'
   type: select
 - name: 🇨🇳 中国
@@ -1926,62 +1979,63 @@ proxy-groups:
   - 8|🇨🇳_CN_中国
   - 8|🇨🇳_CN_中国_1
   - 8|🇨🇳CN-144.48.180.186-7884
-  - 8,10,11|香港3|@ripaojiedian
+  - 8|🇨🇳_CN_中国_2
+  - 12|CN_speednode_0007
+  - 12|CN_speednode_0008
   type: select
 - name: 🇭🇰 香港
   proxies:
   - 10,11|香港|@ripaojiedian
   - 10|🇭🇰 香港2|@ripaojiedian
+  - 10,11|香港3|@ripaojiedian
   - 10,11|香港4|@ripaojiedian
   - 10,11|香港5|@ripaojiedian
-  - 10|🇭🇰 香港7|@ripaojiedian
-  - 11|香港7|@ripaojiedian
   - 12|HK_speednode_0019
+  - 14|🇭🇰HK-219.79.187.188-5056
+  - 14|🇭🇰HK-47.243.168.211-5638
+  - 14|🇭🇰HK-8.210.52.211-5525
+  - 14|🇭🇰HK-8.218.26.234-5569
+  - 14|🇭🇰HK-8.217.92.110-5523
   - 14|🇭🇰HK-47.239.102.115-5549
+  - 14|🇭🇰HK-47.239.252.30-5555
+  - 14|🇭🇰HK-47.238.247.69-5613
+  - 14|🇭🇰HK-47.244.120.197-5532
+  - 14|🇭🇰HK-8.218.140.27-5580
+  - 14|🇭🇰HK-47.243.39.173-5644
   - 14|🇭🇰HK-8.218.152.97-5977
   - 14|🇭🇰HK-8.218.175.64-5678
-  - 14|🇭🇰HK-8.217.21.237-5466
-  - 14|🇭🇰HK-47.239.252.30-5555
-  - 14|🇭🇰HK-8.217.92.110-5523
-  - 14|🇭🇰HK-219.79.187.188-5056
-  - 14|🇭🇰HK-8.218.140.27-5580
-  - 14|🇭🇰HK-47.243.168.211-5638
-  - 14|🇭🇰HK-47.238.247.69-5613
-  - 14|🇭🇰HK-8.218.26.234-5569
-  - 14|🇭🇰HK-47.243.39.173-5644
-  - 14|🇭🇰HK-47.244.120.197-5532
+  - 14|🇭🇰HK-45.136.12.37-4936
   type: select
 - name: ❔ 台湾
   proxies:
-  - REJECT
+  - 10|🇹🇼 台湾|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
   proxies:
+  - 14|[🇨🇦]t.me/ConfigsHub
   - 14|🇨🇦CA-15.235.85.147-1224
   - 14|🇨🇦CA-15.235.83.228-4945
-  - 14|🇨🇦CA-15.235.50.172-1645
-  - 14|[🇨🇦]t.me/ConfigsHub
   - 14|🇨🇦@vpn_ioss ♻️ عضو شو
+  - 14|🇨🇦CA-15.235.50.172-1645
   type: select
 - name: 🇫🇷 法国
   proxies:
-  - 14|[🇫🇷]t.me/ConfigsHub
-  - 14|🇫🇷FR-91.134.8.100-0905
   - 14|🇫🇷FR-57.128.189.240-4828
+  - 14|[🇫🇷]t.me/ConfigsHub
   - 14|🇫🇷FR-146.59.85.226-1223
-  - 14|法国 国际航空电讯集团公司(SITA)
   - '14|[🇫🇷]t.me/ConfigsHub #1'
+  - 14|法国 国际航空电讯集团公司(SITA)
+  - '14|法国 国际航空电讯集团公司(SITA) #1'
+  - 14|🇫🇷FR-91.134.8.100-0905
+  - '14|[🇫🇷]t.me/ConfigsHub #2'
   - 14|🇫🇷FR-91.134.8.93-1222
   - 14|🇫🇷FR-141.94.155.229-1206
-  - '14|法国 国际航空电讯集团公司(SITA) #1'
-  - '14|[🇫🇷]t.me/ConfigsHub #2'
   type: select
 - name: 🇸🇬 新加坡
   proxies:
   - 10,11|新加坡|@ripaojiedian
   - 10,11|新加坡2|@ripaojiedian
   - 10,11|新加坡3|@ripaojiedian
-  - 14|新加坡5|@ripaojiedian
   - 14|🇸🇬SG-45.76.181.246-0312
   type: select
 - name: 🇬🇧 英国
@@ -1994,8 +2048,6 @@ proxy-groups:
 - name: 🇰🇷 韩国
   proxies:
   - 8|🇰🇷_KR_韩国
-  - 10,12|CN_speednode_0008
-  - 11|韩国|@ripaojiedian
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
@@ -2005,28 +2057,29 @@ proxy-groups:
 - name: 🇩🇪 德国
   proxies:
   - 12|DE_speednode_0010
-  - 14|🇩🇪DE-57.129.24.131-0814
+  - 14|🇩🇪DE-57.129.28.216-0916
   - '14|Channel id: @ShadowProxy66 🇩🇪'
   - 14|[🇩🇪]t.me/ConfigsHub
-  - 14|🇩🇪DE-57.129.28.213-0918
   - '14|[🇩🇪]t.me/ConfigsHub #1'
-  - 14|🇩🇪DE-57.129.25.20-1271
-  - 14|🇩🇪@vpn_ioss ♻️ عضو شو
   - '14|[🇩🇪]t.me/ConfigsHub #2'
-  - 14|🇩🇪DE-57.129.25.23-0755
-  - 14|🇩🇪DE-57.129.28.63-0926
-  - '14|Channel id: @ShadowProxy66 🇩🇪 #1'
-  - '14|Channel id: @ShadowProxy66🇩🇪'
-  - '14|[🇩🇪]t.me/ConfigsHub #3'
-  - '14|[🇩🇪]t.me/ConfigsHub #4'
-  - '14|[🇩🇪]t.me/ConfigsHub #5'
-  - '14|Channel id: @ShadowProxy66 🇩🇪 #2'
-  - '14|Channel id: @ShadowProxy66🇩🇪 #1'
-  - '14|[🇩🇪]t.me/ConfigsHub #6'
-  - '14|[🇩🇪]t.me/ConfigsHub #7'
   - 14|🇩🇪DE-57.129.64.199-0962
+  - '14|[🇩🇪]t.me/ConfigsHub #3'
+  - '14|Channel id: @ShadowProxy66 🇩🇪 #1'
+  - '14|Channel id: @ShadowProxy66 🇩🇪 #2'
+  - 14|🇩🇪DE-57.129.25.23-0755
+  - '14|Channel id: @ShadowProxy66🇩🇪'
+  - 14|🇩🇪DE-57.129.25.20-1271
+  - '14|[🇩🇪]t.me/ConfigsHub #4'
   - '14|Channel id: @ShadowProxy66 🇩🇪 #3'
+  - '14|[🇩🇪]t.me/ConfigsHub #5'
+  - 14|🇩🇪DE-57.129.28.213-0918
   - '14|Channel id: @ShadowProxy66 🇩🇪 #4'
+  - '14|[🇩🇪]t.me/ConfigsHub #6'
+  - '14|Channel id: @ShadowProxy66🇩🇪 #1'
+  - 14|🇩🇪DE-57.129.24.131-0814
+  - 14|🇩🇪DE-57.129.28.63-0926
+  - 14|🇩🇪@vpn_ioss ♻️ عضو شو
+  - '14|[🇩🇪]t.me/ConfigsHub #7'
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站
