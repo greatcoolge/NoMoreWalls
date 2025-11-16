@@ -1,4 +1,19 @@
 proxies:
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|GB_speednode_0002
+  port: 443
+  reality-opts:
+    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+  server: 217.154.218.42
+  servername: azure.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b0b98be-fdaf-40cc-a953-cc4091c838e1
 - alterId: 0
   cipher: auto
   name: 14|[🇬🇧]t.me/ConfigsHub
@@ -18,6 +33,20 @@ proxies:
   name: '14|[🇬🇧]t.me/ConfigsHub #1'
   network: ws
   port: '443'
+  server: 57.128.189.222
+  servername: lammaland.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '14|[🇬🇧]t.me/ConfigsHub #2'
+  network: ws
+  port: '443'
   server: 57.128.189.211
   servername: yichueng.org
   tls: true
@@ -29,24 +58,10 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '14|[🇬🇧]t.me/ConfigsHub #2'
-  network: ws
-  port: '443'
-  server: 57.128.189.143
-  servername: lammaland.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
   name: '14|[🇬🇧]t.me/ConfigsHub #3'
   network: ws
   port: '443'
-  server: 57.128.189.222
+  server: 57.128.189.143
   servername: lammaland.org
   tls: true
   type: vmess
