@@ -83,15 +83,15 @@ proxies:
   network: tcp
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
   port: 2890
-  server: 52.196.180.54
+  server: 160.16.138.24
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 10,11|美国2|@ripaojiedian
   network: tcp
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
-  port: 4211
-  server: 160.16.117.182
+  port: 2053
+  server: 160.16.130.66
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -103,19 +103,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 14|美国 v2rayfree.eu.org
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 14|[🇺🇸]t.me/ConfigsHub
@@ -132,31 +119,31 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 14|北美地区 v2rayfree.eu.org
+  name: 14|美国 v2rayfree.eu.org
   network: ws
   port: 443
-  server: 134.195.198.147
+  server: 23.162.200.227
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: inna.cfd
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 14|🇺🇸US-107.172.82.41-5543
+  name: '14|Channel id: @ShadowProxy66 🇺🇸'
   network: ws
-  port: 11814
-  server: 107.172.82.41
-  servername: ''
+  port: '443'
+  server: 15.204.64.214
+  servername: yichueng.org
   tls: true
   type: vmess
-  uuid: 4f34f242-b5a7-48c1-c258-f019be3bf9c7
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: yichueng.org
+    path: linkvws
 - alterId: 32
   cipher: auto
   name: 14|🇺🇸US-77.83.141.171-1131
@@ -173,15 +160,28 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: '14|Channel id: @ShadowProxy66 🇺🇸'
+  name: 14|🇺🇸US-107.172.82.41-5543
   network: ws
-  port: '443'
-  server: 15.204.64.214
-  servername: yichueng.org
+  port: 11814
+  server: 107.172.82.41
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 4f34f242-b5a7-48c1-c258-f019be3bf9c7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|北美地区 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 134.195.198.147
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: yichueng.org
-    path: linkvws
+      Host: inna.cfd
+    path: /linkvws
