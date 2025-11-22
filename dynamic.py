@@ -8,7 +8,7 @@ from fetch import raw2fastly, session, LOCAL
 from bs4 import BeautifulSoup
 import datetime as dt
 from typing import Optional
-
+from typing import Callable, List, Union, Iterable
 # def kkzui():
 #     if LOCAL: return
 #     res = session.get("https://kkzui.com/jd?orderby=modified")
