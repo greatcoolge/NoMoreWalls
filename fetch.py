@@ -196,7 +196,7 @@ class Node:
                 if isinstance(alpn, list):
                     alpn = ','.join(alpn)
             
-                path += '@' + alpn + '@' + data.get('password', '') + data.get('uuid', '')
+            path += '@' + alpn + '@' + data.get('password', '') + data.get('uuid', '')
             hashstr = f"{self.type}:{data['server']}:{data['port']}:{path}"
             return hash(hashstr)
         except Exception:
