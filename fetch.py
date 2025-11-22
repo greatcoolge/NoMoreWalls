@@ -1139,106 +1139,71 @@ def main():
     
     
     # Clash & Meta
-    global_fp: Optional[str] = conf.get('global-client-fingerprint', None)
-    proxies: List[Node.DATA_TYPE] = []
-    proxies_meta: List[Node.DATA_TYPE] = []
-    ctg_base: Dict[str, Any] = conf['proxy-groups'][3].copy()
-    names_clash: Union[Set[str], List[str]] = set()
-    names_clash_meta: Union[Set[str], List[str]] = set()
-    for p in merged.values():
-        if p.supports_meta():
-            if ('client-fingerprint' in p.data and
-                    p.data['client-fingerprint'] == global_fp):
-                del p.data['client-fingerprint']
-            proxies_meta.append(p.clash_data)
-            names_clash_meta.add(p.data['name'])
-            if p.supports_clash():
-                proxies.append(p.clash_data)
-                names_clash.add(p.data['name'])
-    names_clash = list(names_clash)
-    names_clash_meta = list(names_clash_meta)
-    conf_meta = copy.deepcopy(conf)
-
-    # Clash
-    conf['proxies'] = proxies
-    for group in conf['proxy-groups']:
-        if not group['proxies']:
-            group['proxies'] = names_clash
-    if snip_conf:
-        conf['proxy-groups'][-1]['proxies'] = []
-        ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
-        ctg_disp: Dict[str, str] = snip_conf['categories_disp']
-        for ctg, payload in ctg_nodes.items():
-            if ctg in ctg_disp:
-                disp = ctg_base.copy()
-                disp['name'] = ctg_disp[ctg]
-                if not payload: disp['proxies'] = ['REJECT']
-                else: disp['proxies'] = [_['name'] for _ in payload]
-                conf['proxy-groups'].append(disp)
-                ctg_selects.append(disp['name'])
-    try:
-        dns_mode: Optional[str] = conf['dns']['enhanced-mode']
-    except:
-        dns_mode: Optional[str] = None
-    else:
-        conf['dns']['enhanced-mode'] = 'fake-ip'
-    # with open("list.yml", 'w', encoding="utf-8") as f:
-    #     f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
-    #     f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
-    # with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
-    #     f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))
-
-    # Meta
-    conf = conf_meta
-    conf['proxies'] = proxies_meta
-    for group in conf['proxy-groups']:
-        if not group['proxies']:
-            group['proxies'] = names_clash_meta
-    if snip_conf:
-        conf['proxy-groups'][-1]['proxies'] = []
-        ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
-        ctg_disp: Dict[str, str] = snip_conf['categories_disp']
-        for ctg, payload in ctg_nodes_meta.items():
-            if ctg in ctg_disp:
-                disp = ctg_base.copy()
-                disp['name'] = ctg_disp[ctg]
-                if not payload: disp['proxies'] = ['REJECT']
-                else: disp['proxies'] = [_['name'] for _ in payload]
-                conf['proxy-groups'].append(disp)
-                ctg_selects.append(disp['name'])
-    if dns_mode:
-        conf['dns']['enhanced-mode'] = dns_mode
-    with open("list.meta.yml", 'w', encoding="utf-8") as f:
-        f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
-        f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
-    with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:
-        f.write(yaml.dump({'proxies': proxies_meta}, allow_unicode=True).replace('!!str ',''))
-
-    if snip_conf:
-        print("正在写出配置片段...")
-        name_map: Dict[str, str] = snip_conf['name-map']
-        snippets: Dict[str, List[str]] = {}
-        for rpolicy in name_map.values(): snippets[rpolicy] = []
-        for rule, rpolicy in rules.items():
-            if ',' in rpolicy: rpolicy = rpolicy.split(',')[0]
-            if rpolicy in name_map:
-                snippets[name_map[rpolicy]].append(rule)
-        for name, payload in snippets.items():
-            with open("snippets/"+name+".yml", 'w', encoding="utf-8") as f:
-                yaml.dump({'payload': payload}, f, allow_unicode=True)
-
-    print("正在写出统计信息...")
-    out = "序号,链接,节点数\n"
-    for i, source in enumerate(sources_obj):
-        out += f"{i},{source.url},"
-        try: out += f"{len(source.sub)}"
-        except: out += '0'
-        out += '\n'
-    out += f"\n总计,,{len(merged)}\n"
-    open("list_result.csv",'w').write(out)
-
-    print("写出完成！")
-
-if __name__ == '__main__':
-    from dynamic import AUTOURLS, AUTOFETCH
-    main()
+    # 只输出节点列表,不包含规则和配置  
+    print("\n正在写出节点列表...")  
+  
+    proxies: List[Node.DATA_TYPE] = []  
+    proxies_meta: List[Node.DATA_TYPE] = []  
+  
+    for p in merged.values():  
+        if p.supports_meta():  
+            proxies_meta.append(p.clash_data)  
+            if p.supports_clash():  
+                proxies.append(p.clash_data)  
+  
+    # 输出标准 Clash 节点列表  
+    with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:  
+        f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))  
+  
+    # 输出 Clash Meta 节点列表  
+    with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:  
+        f.write(yaml.dump({'proxies': proxies_meta}, allow_unicode=True).replace('!!str ',''))  
+  
+    # 可选: 按地区分类输出  
+    if os.path.exists("snippets/_config.yml"):  
+        try:  
+            with open("snippets/_config.yml", encoding="utf-8") as f:  
+                snip_conf = yaml.full_load(f)  
+            categories: Dict[str, List[str]] = snip_conf['categories']  
+            ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}  
+            ctg_nodes_meta: Dict[str, List[Node.DATA_TYPE]] = {}  
+          
+            for ctg in categories:  
+                ctg_nodes[ctg] = []  
+                ctg_nodes_meta[ctg] = []  
+          
+            for node in merged.values():  
+                if node.supports_meta():  
+                    for ctg, keys in categories.items():  
+                        for key in keys:  
+                            if key in node.name:  
+                                if node.supports_clash():  
+                                    ctg_nodes[ctg].append(node.clash_data)  
+                                ctg_nodes_meta[ctg].append(node.clash_data)  
+                                break  
+          
+            for ctg, proxies in ctg_nodes.items():  
+                with open(f"snippets/nodes_{ctg}.yml", 'w', encoding="utf-8") as f:  
+                    yaml.dump({'proxies': proxies}, f, allow_unicode=True)  
+          
+            for ctg, proxies in ctg_nodes_meta.items():  
+                with open(f"snippets/nodes_{ctg}.meta.yml", 'w', encoding="utf-8") as f:  
+                    yaml.dump({'proxies': proxies}, f, allow_unicode=True)  
+        except:  
+            print("地区分类配置读取失败,跳过")  
+  
+    print("正在写出统计信息...")  
+    out = "序号,链接,节点数\n"  
+    for i, source in enumerate(sources_obj):  
+        out += f"{i},{source.url},"  
+        try: out += f"{len(source.sub)}"  
+        except: out += '0'  
+        out += '\n'  
+    out += f"\n总计,,{len(merged)}\n"  
+    open("list_result.csv",'w').write(out)  
+  
+    print("写出完成！")  
+  
+    if __name__ == '__main__':  
+        from dynamic import AUTOURLS, AUTOFETCH  
+        main()
