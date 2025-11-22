@@ -21,7 +21,7 @@ import os
 import copy
 from types import FunctionType as function
 from typing import Set, List, Dict, Union, Callable, Any, Optional, Iterable
-from dynamic import AUTOURLS, AUTOFETCH
+# from dynamic import AUTOURLS, AUTOFETCH
 
 try: PROXY = open("local_proxy.conf").read().strip()
 except FileNotFoundError: LOCAL = False; PROXY = None
