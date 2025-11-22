@@ -923,7 +923,8 @@ def merge(source_obj: Source, sourceId=-1):
             if hashn not in merged:
                 merged[hashn] = n
             else:
-                merged[hashn].update(n)
+                merged[hashn].data.update(n.data)  # ✅ 更新节点的 data 字典
+                # merged[hashn].update(n)
             if hashn not in used:
                 used[hashn] = {}
             used[hashn][sourceId] = n.name
@@ -1066,82 +1067,31 @@ def main():
                 p.data['name'] = src+'|'+p.data['name']
 
     print("\n正在写出 V2Ray 订阅...")
-    txt = ""
-    unsupports = 0
-    for hashp, p in merged.items():
-        try:
-            if p.supports_ray():
-                try:
-                    txt += p.url + '\n'
-                except UnsupportedType as e:
-                    print(f"不支持的类型：{e}")
-            else: unsupports += 1
-        except: traceback.print_exc()
-    for p in unknown:
-        txt += p+'\n'
-    print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
+    txt = ""  
+    unsupports = 0  
+    for hashp, p in merged.items():  
+        try:  
+            if p.supports_ray():  
+                try:  
+                    txt += p.url + '\n'  
+                except UnsupportedType as e:  
+                    print(f"不支持的类型：{e}")  
+            else: unsupports += 1  
+        except: traceback.print_exc()  
+    for p in unknown:  
+        txt += p+'\n'  
+    print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",  
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
-
-    with open("list_raw.txt", 'w', encoding="utf-8") as f:
-        f.write(txt)
-    with open("list.txt", 'w', encoding="utf-8") as f:
-        f.write(b64encodes(txt))
-    print("写出完成！")
-
-    with open("config.yml", encoding="utf-8") as f:
-        conf: Dict[str, Any] = yaml.full_load(f)
-
-    rules: Dict[str, str] = {}
-    # if DEBUG_NO_ADBLOCK:
-        # !!! JUST FOR DEBUGING !!!
-    #     print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
-    # else:
-    #     merge_adblock(conf['proxy-groups'][-2]['name'], rules)
-
-    snip_conf: Dict[str, Dict[str, Any]] = {}
-    ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
-    ctg_nodes_meta: Dict[str, List[Node.DATA_TYPE]] = {}
-    categories: Dict[str, List[str]] = {}
-    try:
-        snip_conf = conf['NoMoreWalls']
-    except KeyError:
-        print("未设置片段配置：", file=sys.stderr)
-        traceback.print_exc()
-    else:
-        del conf['NoMoreWalls']
-        print("正在按地区分类节点...")
-        categories = snip_conf['categories']
-        for ctg in categories:
-            ctg_nodes[ctg] = []
-            ctg_nodes_meta[ctg] = []
-        for node in merged.values():
-            if node.supports_meta():
-                ctgs: List[str] = []
-                for ctg, keys in categories.items():
-                    for key in keys:
-                        if key in node.name:
-                            ctgs.append(ctg)
-                            break
-                    if ctgs and keys[-1] == 'OVERALL':
-                        break
-                if len(ctgs) == 1:
-                    if node.supports_clash():
-                        ctg_nodes[ctgs[0]].append(node.clash_data)
-                    ctg_nodes_meta[ctgs[0]].append(node.clash_data)
-        for ctg, proxies in ctg_nodes.items():
-            with open("snippets/nodes_"+ctg+".yml", 'w', encoding="utf-8") as f:
-                yaml.dump({'proxies': proxies}, f, allow_unicode=True)
-        for ctg, proxies in ctg_nodes_meta.items():
-            with open("snippets/nodes_"+ctg+".meta.yml", 'w', encoding="utf-8") as f:
-                yaml.dump({'proxies': proxies}, f, allow_unicode=True)
-
     
-    
-    
-    # Clash & Meta
-    # 只输出节点列表,不包含规则和配置  
-    print("\n正在写出节点列表...")  
+    # V2Ray 订阅输出  
+    with open("list_raw.txt", 'w', encoding="utf-8") as f:  
+        f.write(txt)  
+    with open("list.txt", 'w', encoding="utf-8") as f:  
+        f.write(b64encodes(txt))  
+    print("写出完成！")  
   
+    # 直接输出主节点列表,不按地区分类  
+    print("\n正在写出节点列表...")  
     proxies: List[Node.DATA_TYPE] = []  
     proxies_meta: List[Node.DATA_TYPE] = []  
   
@@ -1151,59 +1101,11 @@ def main():
             if p.supports_clash():  
                 proxies.append(p.clash_data)  
   
-    # 输出标准 Clash 节点列表  
+    # 输出节点文件  
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:  
-        f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))  
+        yaml.dump({'proxies': proxies}, f, allow_unicode=True)  
   
-    # 输出 Clash Meta 节点列表  
     with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:  
-        f.write(yaml.dump({'proxies': proxies_meta}, allow_unicode=True).replace('!!str ',''))  
+        yaml.dump({'proxies': proxies_meta}, f, allow_unicode=True)  
   
-    # 可选: 按地区分类输出  
-    if os.path.exists("snippets/_config.yml"):  
-        try:  
-            with open("snippets/_config.yml", encoding="utf-8") as f:  
-                snip_conf = yaml.full_load(f)  
-            categories: Dict[str, List[str]] = snip_conf['categories']  
-            ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}  
-            ctg_nodes_meta: Dict[str, List[Node.DATA_TYPE]] = {}  
-          
-            for ctg in categories:  
-                ctg_nodes[ctg] = []  
-                ctg_nodes_meta[ctg] = []  
-          
-            for node in merged.values():  
-                if node.supports_meta():  
-                    for ctg, keys in categories.items():  
-                        for key in keys:  
-                            if key in node.name:  
-                                if node.supports_clash():  
-                                    ctg_nodes[ctg].append(node.clash_data)  
-                                ctg_nodes_meta[ctg].append(node.clash_data)  
-                                break  
-          
-            for ctg, proxies in ctg_nodes.items():  
-                with open(f"snippets/nodes_{ctg}.yml", 'w', encoding="utf-8") as f:  
-                    yaml.dump({'proxies': proxies}, f, allow_unicode=True)  
-          
-            for ctg, proxies in ctg_nodes_meta.items():  
-                with open(f"snippets/nodes_{ctg}.meta.yml", 'w', encoding="utf-8") as f:  
-                    yaml.dump({'proxies': proxies}, f, allow_unicode=True)  
-        except:  
-            print("地区分类配置读取失败,跳过")  
-  
-    print("正在写出统计信息...")  
-    out = "序号,链接,节点数\n"  
-    for i, source in enumerate(sources_obj):  
-        out += f"{i},{source.url},"  
-        try: out += f"{len(source.sub)}"  
-        except: out += '0'  
-        out += '\n'  
-    out += f"\n总计,,{len(merged)}\n"  
-    open("list_result.csv",'w').write(out)  
-  
-    print("写出完成！")  
-  
-    if __name__ == '__main__':  
-        from dynamic import AUTOURLS, AUTOFETCH  
-        main()
+    print(f"已输出 {len(proxies)} 个 Clash 节点和 {len(proxies_meta)} 个 Meta 节点")
