@@ -207,6 +207,70 @@ def w1770946466():
                 subs.add(sub)
     return subs
 
+def singbox_converter():  
+    """从 JSON 订阅获取并转换为 Clash 格式"""  
+    # 获取 JSON 订阅  
+    url = "https://your-singbox-subscription-url.com/config.json"  
+    res = session.get(url)  
+      
+    nodes = []  
+    try:  
+        config = res.json()  
+          
+        # 处理单个节点配置  
+        if isinstance(config, dict) and 'server' in config:  
+            node = _convert_singbox_node(config)  
+            if node:  
+                nodes.append(node)  
+          
+        # 处理节点列表  
+        elif isinstance(config, list):  
+            for item in config:  
+                node = _convert_singbox_node(item)  
+                if node:  
+                    nodes.append(node)  
+    except:  
+        pass  
+      
+    return nodes  
+  
+def _convert_singbox_node(config: dict) -> dict:  
+    """将 Sing-Box JSON 节点转换为 Clash 字典格式"""  
+    # 解析服务器地址和端口  
+    server_str = config.get('server', '')  
+    if server_str.startswith('[') and ']:' in server_str:  
+        # IPv6 格式: [2001:bc8:32d7:302::11]:20088  
+        server = server_str.split(']')[0][1:]  
+        port = int(server_str.split(':')[-1])  
+    elif ':' in server_str:  
+        # IPv4 格式  
+        parts = server_str.rsplit(':', 1)  
+        server = parts[0]  
+        port = int(parts[1])  
+    else:  
+        return None  
+      
+    # 构建 Clash 格式节点  
+    node = {  
+        'type': 'hysteria2',  # 根据实际协议调整  
+        'server': server,  
+        'port': port,  
+        'password': config.get('auth', ''),  
+        'name': config.get('name', f'{server}:{port}')  
+    }  
+      
+    # 处理 TLS 配置  
+    if 'tls' in config:  
+        tls = config['tls']  
+        if 'sni' in tls:  
+            node['sni'] = tls['sni']  
+        if 'insecure' in tls:  
+            node['skip-cert-verify'] = tls['insecure']  
+      
+    # 忽略客户端专用字段: quic, transport, bandwidth, fastOpen, lazy, socks5  
+      
+    return node
+
 def peasoft():
     return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/417c1d6a75a53d6c197448762e7c97852d34787f/-").text
 
