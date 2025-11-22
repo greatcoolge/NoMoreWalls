@@ -81,12 +81,6 @@ FETCH_TIMEOUT = (6, 5)
 
 BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8g5L2/5YqyIOWKsiDliqrlipsg5Yqg5rK5IOWlsyDmnYMg6L+Q5YqoIG9uZ3RhaXdhbg==').split()
 
-d = datetime.datetime.now()
-if STOP or ((d.month, d.day) in ((6, 4), (7, 1), (10, 1)) and not (LOCAL or PROXY)):
-    DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = STOP = True
-    NAME_SHOW_TYPE = NAME_NO_FLAGS = NAME_SHOW_SRC = False
-    BANNED_WORDS = []
-
 session = requests.Session()
 session.trust_env = False
 if PROXY and not PROXY == 'NONE':
@@ -680,10 +674,7 @@ class Node:
 
     def supports_ray(self) -> bool:
         if self.isfake: return False
-        # if self.type == 'ss':
-        #     if 'plugin' in self.data and self.data['plugin']: return False
-        # elif self.type == 'ssr':
-        #     return False
+        
         if self.type == 'socks5' and self.data.get('tls'):
             return False
         return True
