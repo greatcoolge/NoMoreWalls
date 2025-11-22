@@ -35,12 +35,17 @@ jobs:
       run: |                   
         git config --local user.email "actions@github.com"  
         git config --local user.name "GitHub Actions"  
-        git pull origin NoMoreWalls1  
+        git pull origin NoMoreWalls1  # 改为您的分支名  
         git add list*  
         git add snippets/  
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"  
-          
+        # 只有在有变更时才提交  
+        if git diff --staged --quiet; then  
+          echo "没有变更,跳过提交"  
+        else  
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"  
+        fi  
+      
     - name: 推送更改  
       uses: ad-m/github-push-action@master  
       with:  
-        branch: NoMoreWalls1
+        branch: NoMoreWalls1  # 改为您的分支名
