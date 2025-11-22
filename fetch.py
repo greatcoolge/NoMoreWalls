@@ -887,11 +887,8 @@ def raw2fastly(url: str) -> str:
 
 
 
-AUTOURLS: List[Callable] = []  
-AUTOFETCH: List[Callable] = []
-
 def main():
-    global merged, FETCH_TIMEOUT, AUTOURLS, AUTOFETCH
+    global merged, AUTOURLS, AUTOFETCH
 
     # 读取 sources.list
     sources = open("sources.list", encoding="utf-8").read().strip().splitlines()
@@ -905,8 +902,7 @@ def main():
         except requests.exceptions.RequestException:
             print("失败！")
         except:
-            print("错误：")
-            traceback.print_exc()
+            print("错误："); traceback.print_exc()
         else:
             if url:
                 if isinstance(url, str):
@@ -922,26 +918,20 @@ def main():
     sources_final: Set[str] = set()
     airports: Set[str] = set()
     for source in sources:
-        if not source or source == 'EOF' or source[0] == '#':
+        if not source or source[0] == '#' or source == 'EOF':
             continue
-
         sub = source
-        if sub[0] == '*':
-            isairport = True
+        isairport = sub.startswith('*')
+        if isairport:
             sub = sub[1:]
-        else:
-            isairport = False
-
-        if sub[0] == '+':
+            airports.add(sub)
+        elif sub.startswith('+'):
             tags = sub.split()
             sub = tags.pop()
             sub = ' '.join(tags) + ' ' + raw2fastly(sub)
         else:
             sub = raw2fastly(sub)
-
-        if isairport:
-            airports.add(sub)
-        else:
+        if not isairport:
             sources_final.add(sub)
 
     # 抓取机场列表
@@ -966,77 +956,61 @@ def main():
                         sources_final.add(url)
                     print("完成！")
 
-    # 最终整理
-    print("正在整理链接...")
     sources_final = list(sources_final)
     sources_final.sort()
     sources_obj = [Source(url) for url in (sources_final + AUTOFETCH)]
 
-    # 开始抓取
+    # 抓取节点
     print("开始抓取！")
     threads = [threading.Thread(target=_.get, daemon=True) for _ in sources_obj]
     for thread in threads:
         thread.start()
-
-    for i, src in enumerate(sources_obj):
+    for i, source in enumerate(sources_obj):
         try:
             for t in range(1, FETCH_TIMEOUT[0]+1):
-                print(f"抓取 '{src.url}'... ", end='', flush=True)
+                print("抓取 '"+source.url+"'... ", end='', flush=True)
                 threads[i].join(timeout=FETCH_TIMEOUT[1])
                 if not threads[i].is_alive():
                     break
                 print(f"{5*t}s")
-            if threads[i].is_alive():
+            else:
                 print("超时！")
                 continue
-
-            res = src.content
-            if isinstance(res, int):
-                if res < 0:
-                    print("抓取失败！")
-                else:
-                    print(res)
-            else:
+            res = source.content
+            if not isinstance(res, int):
                 print("正在合并... ", end='', flush=True)
                 try:
-                    merge(src, sourceId=i)
+                    merge(source, sourceId=i)
                 except KeyboardInterrupt:
                     print("正在退出...")
                     break
                 except:
-                    print("失败！")
-                    traceback.print_exc()
+                    print("失败！"); traceback.print_exc()
                 else:
                     print("完成！")
-
-            for exc in src.exc_queue:
+            for exc in source.exc_queue:
                 print(exc)
-            src.exc_queue = []
-
+            source.exc_queue = []
         except KeyboardInterrupt:
             print("正在退出...")
             break
 
-    # 写出 V2Ray 订阅
+    # 输出 V2Ray 订阅
     print("\n正在写出 V2Ray 订阅...")
     txt = ""
     unsupports = 0
     for p in merged.values():
         try:
             if p.supports_ray():
-                try:
-                    txt += p.url + '\n'
-                except UnsupportedType as e:
-                    print(f"不支持的类型：{e}")
+                txt += p.url + '\n'
             else:
                 unsupports += 1
         except:
             traceback.print_exc()
-
     for p in unknown:
-        txt += p + '\n'
+        txt += p+'\n'
 
-    print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共 {len(merged)+len(unknown)} 个。{unsupports} 个节点不被 V2Ray 支持。")
+    print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析节点，共 {len(merged)+len(unknown)} 个，{unsupports} 个不支持 V2Ray。")
 
     with open("list_raw.txt", 'w', encoding="utf-8") as f:
         f.write(txt)
@@ -1044,7 +1018,7 @@ def main():
         f.write(b64encodes(txt))
     print("写出完成！")
 
-    # 输出节点列表
+    # 输出 Clash & Meta 节点列表
     print("\n正在写出节点列表...")
     proxies: List[Node.DATA_TYPE] = []
     proxies_meta: List[Node.DATA_TYPE] = []
@@ -1056,11 +1030,28 @@ def main():
                 proxies.append(p.clash_data)
 
     os.makedirs("snippets", exist_ok=True)
-
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
         yaml.dump({'proxies': proxies}, f, allow_unicode=True)
-
     with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:
         yaml.dump({'proxies': proxies_meta}, f, allow_unicode=True)
 
     print(f"已输出 {len(proxies)} 个 Clash 节点和 {len(proxies_meta)} 个 Meta 节点")
+
+    # 输出抓取统计
+    print("正在写出统计信息...")
+    out = "序号,链接,节点数\n"
+    for i, source in enumerate(sources_obj):
+        out += f"{i},{source.url},"
+        try:
+            out += f"{len(source.sub)}"
+        except:
+            out += '0'
+        out += '\n'
+    out += f"\n总计,,{len(merged)}\n"
+    with open("list_result.csv",'w', encoding="utf-8") as f:
+        f.write(out)
+    print("写出完成！")
+
+if __name__ == '__main__':
+    from dynamic import AUTOURLS, AUTOFETCH
+    main()
