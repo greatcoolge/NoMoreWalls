@@ -21,6 +21,7 @@ import os
 import copy
 from types import FunctionType as function
 from typing import Set, List, Dict, Union, Callable, Any, Optional, Iterable
+from dynamic import AUTOURLS, AUTOFETCH
 
 try: PROXY = open("local_proxy.conf").read().strip()
 except FileNotFoundError: LOCAL = False; PROXY = None
@@ -399,7 +400,8 @@ class Node:
             'username': parsed.username,
             'password': parsed.password
         }
-        self.data = {k:v for k,v in self.data.items() if v == None}
+        self.data = {k:v for k,v in self.data.items() if v != None}  # ✅ 保留非 None 的值
+        # self.data = {k:v for k,v in self.data.items() if v == None}
 
     _load_http = _load__legacy
     _load_https = _load__legacy
@@ -407,7 +409,8 @@ class Node:
 
     def update(self, node: 'Node'):
         self.data.update(node.data)
-        self.names.union(node.names)
+        self.names = self.names.union(node.names)  # ✅ 正确的方式
+        # self.names.union(node.names)
 
     @property
     def name(self):
@@ -902,6 +905,8 @@ def raw2fastly(url: str) -> str:
     return url
 
 
+AUTOURLS: List[Callable] = []  
+AUTOFETCH: List[Callable] = []
 def main():
     global merged, FETCH_TIMEOUT, ABFURLS, AUTOURLS, AUTOFETCH
     sources = open("sources.list", encoding="utf-8").read().strip().splitlines()
@@ -1061,6 +1066,7 @@ def main():
             if p.supports_clash():  
                 proxies.append(p.clash_data)  
   
+    os.makedirs("snippets", exist_ok=True)
     # 输出节点文件  
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:  
         yaml.dump({'proxies': proxies}, f, allow_unicode=True)  
