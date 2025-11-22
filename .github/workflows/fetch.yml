@@ -45,12 +45,12 @@ jobs:
         git config --local user.name "GitHub Actions"
         git add list* snippets/
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点" || echo "No changes to commit"
-        git push origin master
+        git push origin NoMoreWalls1
 
     - name: 计算要清除缓存的文件
       id: purge_urls
       run: |
-        baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
+        baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.ref_name }}"
         urls=""
         for f in $(find snippets -name "*.yml" -type f); do
           urls+="${baseUrl}/${f},"
