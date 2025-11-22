@@ -39,6 +39,11 @@ jobs:
     - name: 执行任务
       run: python ./fetch.py
 
+    - name: 查看生成的文件
+      run: |
+        echo "--- 工作区文件列表 ---"
+        ls -R .
+    
     - name: 提交更改
       run: |
         git config --local user.email "actions@github.com"
