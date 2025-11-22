@@ -374,28 +374,28 @@ class Node:
             elif k == 'fp': self.data['fingerprint'] = v
 
     def _load__legacy(self, url: str, dt: str):
-    parsed = urlparse(url)
+        parsed = urlparse(url)
 
-    # 没有 host 直接报错，不生成假节点
-    if not parsed.hostname:
-        raise NotANode(f"节点 URL 没有 host: {url}")
+        # 没有 host 直接报错，不生成假节点
+        if not parsed.hostname:
+            raise NotANode(f"节点 URL 没有 host: {url}")
 
-    # 根据协议设置默认端口
-    default_port = 443 if parsed.scheme == 'https' else 80
-    port = parsed.port or default_port
+        # 根据协议设置默认端口
+        default_port = 443 if parsed.scheme == 'https' else 80
+        port = parsed.port or default_port
 
-    self.data = {
-        'name': unquote(parsed.fragment) or 'Unnamed',
-        'type': 'socks5' if getattr(self, 'type', '') == 'socks5' else 'http',
-        'tls': parsed.scheme == 'https',
-        'server': parsed.hostname,
-        'port': port,
-        'username': parsed.username,
-        'password': parsed.password
-    }
+        self.data = {
+            'name': unquote(parsed.fragment) or 'Unnamed',
+            'type': 'socks5' if getattr(self, 'type', '') == 'socks5' else 'http',
+            'tls': parsed.scheme == 'https',
+            'server': parsed.hostname,
+            'port': port,
+            'username': parsed.username,
+            'password': parsed.password
+        }
 
-    # 只保留非 None 的字段
-    self.data = {k: v for k, v in self.data.items() if v is not None}
+        # 只保留非 None 的字段
+        self.data = {k: v for k, v in self.data.items() if v is not None}
         # self.data = {k:v for k,v in self.data.items() if v == None}
 
     _load_http = _load__legacy
