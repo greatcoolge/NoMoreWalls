@@ -846,47 +846,7 @@ class Source():
         except: self.exc_queue.append(
                 "在解析 '"+self.url+"' 时发生错误：\n"+traceback.format_exc())
 
-class DomainTree:
-    def __init__(self) -> None:
-        self.children: Dict[str, __class__] = {}
-        self.here: bool = False
 
-    def insert(self, domain: str):
-        segs = domain.split('.')
-        segs.reverse()
-        self._insert(segs)
-
-    def _insert(self, segs: List[str]):
-        if not segs:
-            self.here = True
-            return
-        if segs[0] not in self.children:
-            self.children[segs[0]] = __class__()
-        child = self.children[segs[0]]
-        del segs[0]
-        child._insert(segs)
-
-    def remove(self, domain: str):
-        segs = domain.split('.')
-        segs.reverse()
-        self._remove(segs)
-
-    def _remove(self, segs: List[str]):
-        self.here = False
-        if not segs:
-            self.children.clear()
-            return
-        if segs[0] in self.children:
-            child = self.children[segs[0]]
-            del segs[0]
-            child._remove(segs)
-
-    def get(self) -> List[str]:
-        ret: List[str] = []
-        for name, child in self.children.items():
-            if child.here: ret.append(name)
-            else: ret.extend([_+'.'+name for _ in child.get()])
-        return ret
 
 def extract(url: str) -> Union[Set[str], int]:
     global session
