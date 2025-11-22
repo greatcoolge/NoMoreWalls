@@ -859,30 +859,38 @@ def extract(url: str) -> Union[Set[str], int]:
 merged: Dict[int, Node] = {}
 unknown: Set[str] = set()
 used: Dict[int, Dict[int, str]] = {}
-def merge(source_obj: Source, sourceId=-1):
-    global merged, unknown
-    sub = source_obj.sub
-    if not sub: print("空订阅，跳过！", end='', flush=True); return
-    for p in sub:
-        if isinstance(p, str) and '://' not in p: continue
-        try: n = Node(p)
-        except KeyboardInterrupt: raise
-        except UnsupportedType as e:
-            if len(e.args) == 1:
-                print(f"不支持的类型：{e}")
-            unknown.add(p)
-        except: traceback.print_exc()
-        else:
-            n.format_name()
-            Node.gNames.add(n.data['name'])
-            hashn = hash(n)
-            if hashn not in merged:
-                merged[hashn] = n
-            else:
-                # merged[hashn].data.update(n.data)  # ✅ 更新节点的 data 字典
-                merged[hashn].update(n)
-            if hashn not in used:
-                used[hashn] = {}
+def merge(source_obj: Source, sourceId=-1):  
+    global merged, unknown  
+    sub = source_obj.sub  
+    if not sub:  
+        print("空订阅，跳过！", end='', flush=True)  
+        return  
+    for p in sub:  
+        if isinstance(p, str) and '://' not in p:  
+            continue  
+        try:  
+            n = Node(p)  
+        except KeyboardInterrupt:  
+            raise  
+        except UnsupportedType as e:  
+            if len(e.args) == 1:  
+                print(f"不支持的类型：{e}")  
+            unknown.add(p)  
+        except NotANode as e:  
+            print(f"跳过不支持节点: {e}", file=sys.stderr)  
+            continue  
+        except Exception:  
+            traceback.print_exc()  
+        else:  
+            n.format_name()  
+            Node.gNames.add(n.data['name'])  
+            hashn = hash(n)  
+            if hashn not in merged:  
+                merged[hashn] = n  
+            else:  
+                merged[hashn].update(n)  
+            if hashn not in used:  
+                used[hashn] = {}  
             used[hashn][sourceId] = n.name
 
 def raw2fastly(url: str) -> str:
