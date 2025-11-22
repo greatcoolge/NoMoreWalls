@@ -883,8 +883,8 @@ def merge(source_obj: Source, sourceId=-1):
             if hashn not in merged:
                 merged[hashn] = n
             else:
-                merged[hashn].data.update(n.data)  # ✅ 更新节点的 data 字典
-                # merged[hashn].update(n)
+                # merged[hashn].data.update(n.data)  # ✅ 更新节点的 data 字典
+                merged[hashn].update(n)
             if hashn not in used:
                 used[hashn] = {}
             used[hashn][sourceId] = n.name
