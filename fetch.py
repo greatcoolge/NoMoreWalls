@@ -905,6 +905,7 @@ def raw2fastly(url: str) -> str:
     return url
 
 
+
 AUTOURLS: List[Callable] = []  
 AUTOFETCH: List[Callable] = []
 
@@ -913,17 +914,11 @@ def main():
 
     # 读取 sources.list
     sources = open("sources.list", encoding="utf-8").read().strip().splitlines()
-    if DEBUG_NO_NODES:
-        print("!!! 警告：您已启用无节点调试，程序产生的配置不能被直接使用 !!!")
-        sources = []
-    if DEBUG_NO_DYNAMIC:
-        print("!!! 警告：您已选择不抓取动态节点 !!!")
-        AUTOURLS = AUTOFETCH = []
 
     # 生成动态链接
     print("正在生成动态链接...")
     for auto_fun in AUTOURLS:
-        print(f"正在生成 '{auto_fun.__name__}'... ", end='', flush=True)
+        print("正在生成 '"+auto_fun.__name__+"'... ", end='', flush=True)
         try:
             url = auto_fun()
         except requests.exceptions.RequestException:
@@ -945,19 +940,17 @@ def main():
     print("正在整理链接...")
     sources_final: Set[str] = set()
     airports: Set[str] = set()
-
     for source in sources:
-        if source == 'EOF': break
-        if not source or source[0] == '#': continue
-        sub = source
-        isairport = False
+        if not source or source == 'EOF' or source[0] == '#':
+            continue
 
-        if sub[0] == '!':
-            if LOCAL: continue
-            sub = sub[1:]
+        sub = source
         if sub[0] == '*':
             isairport = True
             sub = sub[1:]
+        else:
+            isairport = False
+
         if sub[0] == '+':
             tags = sub.split()
             sub = tags.pop()
@@ -974,7 +967,7 @@ def main():
     if airports:
         print("正在抓取机场列表...")
         for sub in airports:
-            print(f"合并 '{sub}'... ", end='', flush=True)
+            print("合并 '"+sub+"'... ", end='', flush=True)
             try:
                 res = extract(sub)
             except KeyboardInterrupt:
@@ -992,7 +985,7 @@ def main():
                         sources_final.add(url)
                     print("完成！")
 
-    # 转成对象列表
+    # 最终整理
     print("正在整理链接...")
     sources_final = list(sources_final)
     sources_final.sort()
@@ -1001,19 +994,16 @@ def main():
     # 开始抓取
     print("开始抓取！")
     threads = [threading.Thread(target=_.get, daemon=True) for _ in sources_obj]
-    for thread in threads: thread.start()
+    for thread in threads:
+        thread.start()
 
     for i, src in enumerate(sources_obj):
         try:
             for t in range(1, FETCH_TIMEOUT[0]+1):
                 print(f"抓取 '{src.url}'... ", end='', flush=True)
-                try:
-                    threads[i].join(timeout=FETCH_TIMEOUT[1])
-                except KeyboardInterrupt:
-                    print("正在退出...")
-                    FETCH_TIMEOUT = (1, 0)
+                threads[i].join(timeout=FETCH_TIMEOUT[1])
+                if not threads[i].is_alive():
                     break
-                if not threads[i].is_alive(): break
                 print(f"{5*t}s")
             if threads[i].is_alive():
                 print("超时！")
@@ -1021,8 +1011,10 @@ def main():
 
             res = src.content
             if isinstance(res, int):
-                if res < 0: print("抓取失败！")
-                else: print(res)
+                if res < 0:
+                    print("抓取失败！")
+                else:
+                    print(res)
             else:
                 print("正在合并... ", end='', flush=True)
                 try:
@@ -1044,16 +1036,9 @@ def main():
             print("正在退出...")
             break
 
-    # 显示来源名
-    if NAME_SHOW_SRC:
-        for hashp, p in merged.items():
-            if hashp in used:
-                src = ','.join([str(_) for _ in sorted(list(used[hashp]))])
-                p.data['name'] = src + '|' + p.data['name']
-
     # 写出 V2Ray 订阅
     print("\n正在写出 V2Ray 订阅...")
-    txt = ""  
+    txt = ""
     unsupports = 0
     for p in merged.values():
         try:
@@ -1066,6 +1051,7 @@ def main():
                 unsupports += 1
         except:
             traceback.print_exc()
+
     for p in unknown:
         txt += p + '\n'
 
@@ -1077,7 +1063,7 @@ def main():
         f.write(b64encodes(txt))
     print("写出完成！")
 
-    # 输出 Clash / Meta 节点
+    # 输出节点列表
     print("\n正在写出节点列表...")
     proxies: List[Node.DATA_TYPE] = []
     proxies_meta: List[Node.DATA_TYPE] = []
@@ -1089,8 +1075,10 @@ def main():
                 proxies.append(p.clash_data)
 
     os.makedirs("snippets", exist_ok=True)
+
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
         yaml.dump({'proxies': proxies}, f, allow_unicode=True)
+
     with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:
         yaml.dump({'proxies': proxies_meta}, f, allow_unicode=True)
 
