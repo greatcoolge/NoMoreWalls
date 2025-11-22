@@ -5,40 +5,7 @@ STOP = False              # 暂停抓取节点
 NAME_SHOW_TYPE = False    # 在节点名称前添加如 [Vmess] 的标签
 NAME_NO_FLAGS  = False    # 将节点名称中的地区旗帜改为文本地区码
 NAME_SHOW_SRC  = False    # 在节点名称前显示所属订阅编号 (订阅见 list_result.csv)
-ABFURLS = (           # Adblock 规则黑名单
-    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
-    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
-    "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
-    # "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
-    # "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt",
-    # "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
-    # "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    # "https://anti-ad.net/adguard.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
-    "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
-    # "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-    # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
-    # "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt",
-    "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
-    # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt",
-)
-ABFWHITE = (          # Adblock 规则白名单
-    "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt",
-    "file:///./abpwhite.txt",
-)
-# ========== User Configs End ==========
 
-# pyright: reportConstantRedefinition = none
-# pyright: reportMissingTypeStubs = none
-# pyright: reportRedeclaration = none
-# pyright: reportMissingParameterType = none
-# pyright: reportUnnecessaryIsInstance = none
-# pyright: reportUnknownVariableType = none
-# pyright: reportUnknownMemberType = none
-# pyright: reportUnknownArgumentType = none
-# pyright: reportArgumentType = none
-# pyright: reportAttributeAccessIssue = none
-# pyright: reportGeneralTypeIssues = none
 import yaml
 import json
 import base64
@@ -1201,11 +1168,11 @@ def main():
         conf: Dict[str, Any] = yaml.full_load(f)
 
     rules: Dict[str, str] = {}
-    if DEBUG_NO_ADBLOCK:
+    # if DEBUG_NO_ADBLOCK:
         # !!! JUST FOR DEBUGING !!!
-        print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
-    else:
-        merge_adblock(conf['proxy-groups'][-2]['name'], rules)
+    #     print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
+    # else:
+    #     merge_adblock(conf['proxy-groups'][-2]['name'], rules)
 
     snip_conf: Dict[str, Dict[str, Any]] = {}
     ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
@@ -1244,41 +1211,9 @@ def main():
             with open("snippets/nodes_"+ctg+".meta.yml", 'w', encoding="utf-8") as f:
                 yaml.dump({'proxies': proxies}, f, allow_unicode=True)
 
-    print("正在写出 Clash & Meta 订阅...")
-    keywords: List[str] = []
-    suffixes: List[str] = []
-    match_rule = None
-    for rule in conf['rules']:
-        rule: str
-        tmp = rule.strip().split(',')
-        if len(tmp) == 2 and tmp[0] == 'MATCH':
-            match_rule = rule
-            break
-        if len(tmp) == 3:
-            rtype, rargument, rpolicy = tmp
-            if rtype == 'DOMAIN-KEYWORD':
-                keywords.append(rargument)
-            elif rtype == 'DOMAIN-SUFFIX':
-                suffixes.append(rargument)
-        elif len(tmp) == 4:
-            rtype, rargument, rpolicy, rresolve = tmp
-            rpolicy += ','+rresolve
-        else: print("规则 '"+rule+"' 无法被解析！"); continue
-        for kwd in keywords:
-            if kwd in rargument and kwd != rargument:
-                print(rargument, "已被 KEYWORD", kwd, "命中")
-                break
-        else:
-            for sfx in suffixes:
-                if ('.'+rargument).endswith('.'+sfx) and sfx != rargument:
-                    print(rargument, "已被 SUFFIX", sfx, "命中")
-                    break
-            else:
-                k = rtype+','+rargument
-                if k not in rules:
-                    rules[k] = rpolicy
-    conf['rules'] = [','.join(_) for _ in rules.items()]+[match_rule]
-
+    
+    
+    
     # Clash & Meta
     global_fp: Optional[str] = conf.get('global-client-fingerprint', None)
     proxies: List[Node.DATA_TYPE] = []
@@ -1323,11 +1258,11 @@ def main():
         dns_mode: Optional[str] = None
     else:
         conf['dns']['enhanced-mode'] = 'fake-ip'
-    with open("list.yml", 'w', encoding="utf-8") as f:
-        f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
-        f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
-    with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
-        f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))
+    # with open("list.yml", 'w', encoding="utf-8") as f:
+    #     f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
+    #     f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
+    # with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
+    #     f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))
 
     # Meta
     conf = conf_meta
