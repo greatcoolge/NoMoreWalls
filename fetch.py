@@ -1,4 +1,33 @@
 #!/usr/bin/env python3
+# ========== User Configs Begin ==========
+# 以下是可以自定义的配置：
+STOP = False              # 暂停抓取节点
+NAME_SHOW_TYPE = False    # 在节点名称前添加如 [Vmess] 的标签
+NAME_NO_FLAGS  = False    # 将节点名称中的地区旗帜改为文本地区码
+NAME_SHOW_SRC  = False    # 在节点名称前显示所属订阅编号 (订阅见 list_result.csv)
+ABFURLS = (           # Adblock 规则黑名单
+    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
+    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
+    "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
+    # "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
+    # "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt",
+    # "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
+    # "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    # "https://anti-ad.net/adguard.txt",
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
+    "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
+    # "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
+    # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
+    # "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt",
+    "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
+    # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt",
+)
+ABFWHITE = (          # Adblock 规则白名单
+    "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt",
+    "file:///./abpwhite.txt",
+)
+# ========== User Configs End ==========
+
 # pyright: reportConstantRedefinition = none
 # pyright: reportMissingTypeStubs = none
 # pyright: reportRedeclaration = none
@@ -24,7 +53,7 @@ import sys
 import os
 import copy
 from types import FunctionType as function
-from typing import Set, List, Dict, Tuple, Union, Callable, Any, Optional, no_type_check
+from typing import Set, List, Dict, Union, Callable, Any, Optional, Iterable
 
 try: PROXY = open("local_proxy.conf").read().strip()
 except FileNotFoundError: LOCAL = False; PROXY = None
@@ -52,14 +81,20 @@ def b64decodes_safe(s: str):
     except UnicodeDecodeError: raise
     except binascii.Error: raise
 
+def resolveRelFile(url: str):
+    if url.startswith('file://'):
+        basedir = os.path.dirname(os.path.abspath(__file__))
+        return url.replace('/./', '/'+basedir.lstrip('/').replace(os.sep, '/')+'/')
+    return url
+
 DEFAULT_UUID = '8'*8+'-8888'*3+'-'+'8'*12
 
-CLASH2VMESS = {'name': 'ps', 'server': 'add', 'port': 'port', 'uuid': 'id', 
+CLASH2VMESS = {'name': 'ps', 'server': 'add', 'port': 'port', 'uuid': 'id',
               'alterId': 'aid', 'cipher': 'scy', 'network': 'net', 'servername': 'sni'}
 VMESS2CLASH: Dict[str, str] = {}
 for k,v in CLASH2VMESS.items(): VMESS2CLASH[v] = k
 
-VMESS_EXAMPLE = {
+VMESS_TEMPLATE = {
     "v": "2", "ps": "", "add": "0.0.0.0", "port": "0", "aid": "0", "scy": "auto",
     "net": "tcp", "type": "none", "tls": "", "id": DEFAULT_UUID
 }
@@ -71,64 +106,46 @@ CLASH_CIPHER_SS = "aes-128-gcm aes-192-gcm aes-256-gcm aes-128-cfb aes-192-cfb \
 CLASH_SSR_OBFS = "plain http_simple http_post random_head tls1.2_ticket_auth tls1.2_ticket_fastauth".split()
 CLASH_SSR_PROTOCOL = "origin auth_sha1_v4 auth_aes128_md5 auth_aes128_sha1 auth_chain_a auth_chain_b".split()
 
-ABFURLS = (
-    #"https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
-    #"https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
-    #"https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
-    # "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
-    # "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt",
-    # "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
-    # "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    # "https://anti-ad.net/adguard.txt",
-    #"https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
-    #"https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
-    # "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-    # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
-    # "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt",
-    #"https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
-    # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt",
-)
-
-ABFWHITE = (
-    #"https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt",
-    #"file:///abpwhite.txt",
-)
-
 FAKE_IPS = "8.8.8.8; 8.8.4.4; 4.2.2.2; 4.2.2.1; 114.114.114.114; 127.0.0.1; 0.0.0.0".split('; ')
 FAKE_DOMAINS = ".google.com .github.com".split()
 
 FETCH_TIMEOUT = (6, 5)
 
-BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8gb25ndGFpd2Fu').split()
+BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8g5L2/5YqyIOWKsiDliqrlipsg5Yqg5rK5IOWlsyDmnYMg6L+Q5YqoIG9uZ3RhaXdhbg==').split()
 
 # !!! JUST FOR DEBUGING !!!
 DEBUG_NO_NODES = os.path.exists("local_NO_NODES")
 DEBUG_NO_DYNAMIC = os.path.exists("local_NO_DYNAMIC")
 DEBUG_NO_ADBLOCK = os.path.exists("local_NO_ADBLOCK")
-STOP = False
+
+STOP_FAKE_NODES = """vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NjU0Rlx1NjExRlx1NjVGNlx1NjcxRlx1RkYwQ1x1NjZGNFx1NjVCMFx1NjY4Mlx1NTA1QyIsDQogICJhZGQiOiAiMC4wLjAuMCIsDQogICJwb3J0IjogIjEiLA0KICAiaWQiOiAiODg4ODg4ODgtODg4OC04ODg4LTg4ODgtODg4ODg4ODg4ODg4IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ0Y3AiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiIiwNCiAgInBhdGgiOiAiIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIndlYi41MS5sYSIsDQogICJhbHBuIjogImh0dHAvMS4xIiwNCiAgImZwIjogImNocm9tZSINCn0=
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NTk4Mlx1NjcwOVx1OTcwMFx1ODk4MVx1RkYwQ1x1ODFFQVx1ODg0Q1x1NjQyRFx1NUVGQSIsDQogICJhZGQiOiAiMC4wLjAuMCIsDQogICJwb3J0IjogIjIiLA0KICAiaWQiOiAiODg4ODg4ODgtODg4OC04ODg4LTg4ODgtODg4ODg4ODg4ODg4IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ0Y3AiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiIiwNCiAgInBhdGgiOiAiIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIndlYi41MS5sYSIsDQogICJhbHBuIjogImh0dHAvMS4xIiwNCiAgImZwIjogImNocm9tZSINCn0=
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NUU4Nlx1Nzk1RFx1NEUyRFx1NTM0RVx1NEVCQVx1NkMxMVx1NTE3MVx1NTQ4Q1x1NTZGRFx1NjIxMFx1N0FDQjc2XHU1NDY4XHU1RTc0XHVGRjAxIiwNCiAgImFkZCI6ICIwLjAuMC4wIiwNCiAgInBvcnQiOiAiMyIsDQogICJpZCI6ICI4ODg4ODg4OC04ODg4LTg4ODgtODg4OC04ODg4ODg4ODg4ODgiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogInRjcCIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAid2ViLjUxLmxhIiwNCiAgImFscG4iOiAiaHR0cC8xLjEiLA0KICAiZnAiOiAiY2hyb21lIg0KfQ==
+"""
+
+d = datetime.datetime.now()
+if STOP or ((d.month, d.day) in ((6, 4), (7, 1), (10, 1)) and not (LOCAL or PROXY)):
+    DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = STOP = True
+    NAME_SHOW_TYPE = NAME_NO_FLAGS = NAME_SHOW_SRC = False
+    BANNED_WORDS = []
+
+session = requests.Session()
+session.trust_env = False
+if PROXY and not PROXY == 'NONE':
+    session.proxies = {'http': PROXY, 'https': PROXY}
+session.headers["User-Agent"] = 'Mozilla/5.0 (X11; Linux x86_64) Clash-verge/v2.4.2 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0'
+session.mount('file://', FileAdapter())
 
 class UnsupportedType(Exception): pass
 class NotANode(Exception): pass
 
-session = requests.Session()
-session.trust_env = False
-if PROXY: session.proxies = {'http': PROXY, 'https': PROXY}
-session.headers["User-Agent"] = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.58'
-session.mount('file://', FileAdapter())
-    
-exc_queue: List[str] = []
-
-d = datetime.datetime.now()
-if (d.month, d.day) in set():
-    DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = STOP = True
-
 class Node:
-    names: Set[str] = set()
+    gNames: Set[str] = set()
     DATA_TYPE = Dict[str, Any]
 
     def __init__(self, data: Union[DATA_TYPE, str]) -> None:
         if isinstance(data, dict):
-            self.data: __class__.DATA_TYPE = data
+            self.data: Node.DATA_TYPE = data
             self.type = data['type']
         elif isinstance(data, str):
             self.load_url(data)
@@ -138,7 +155,7 @@ class Node:
         if 'password' in self.data:
             self.data['password'] = str(self.data['password'])
         self.data['type'] = self.type
-        self.name: str = self.data['name']
+        self.names: Set[str] = {self.data['name']}
 
     def __str__(self):
         return self.url
@@ -192,267 +209,295 @@ class Node:
                 path += data.get('obfs-password', '')+':'
                 # print(self.url)
                 # return hash(self.url)
-                alpn = data.get('alpn', '')
-                if isinstance(alpn, list):
-                    alpn = ','.join(alpn)
-            
-                path += '@' + alpn + '@' + data.get('password', '') + data.get('uuid', '')
+            path += '@'+','.join(data.get('alpn', []))+'@'+data.get('password', '')+data.get('uuid', '')
             hashstr = f"{self.type}:{data['server']}:{data['port']}:{path}"
             return hash(hashstr)
         except Exception:
             print("节点 Hash 计算失败！", file=sys.stderr)
             traceback.print_exc(file=sys.stderr)
-            return hash('__ERROR__')
-    
+            return hash(self.url)
+
     def __eq__(self, other: Union['Node', Any]):
         if isinstance(other, self.__class__):
             return hash(self) == hash(other)
         else:
             return False
 
-    def load_url(self, url: str) -> None:
-        try:
-            self.type, dt = url.split("://", 1)
-        except ValueError: 
-            raise NotANode(url)
+    def load_url(self, url: str):
+        try: self.type, dt = url.split("://", 1)
+        except ValueError: raise NotANode(url)
         # === Fix begin ===
         if not self.type.isascii():
             self.type = ''.join([_ for _ in self.type if _.isascii()])
             url = self.type+'://'+url.split("://")[1]
         if self.type == 'hy2': self.type = 'hysteria2'
         # === Fix end ===
-        if self.type == 'vmess':
-            v = VMESS_EXAMPLE.copy()
-            try: v.update(json.loads(b64decodes(dt)))
-            except Exception:
-                raise UnsupportedType('vmess', 'SP')
-            self.data = {}
-            for key, val in v.items():
-                if key in VMESS2CLASH:
-                    self.data[VMESS2CLASH[key]] = val
-            self.data['tls'] = (v['tls'] == 'tls')
-            self.data['alterId'] = int(self.data['alterId'])
-            if v['net'] == 'ws':
-                opts = {}
-                if 'path' in v:
-                    opts['path'] = v['path']
-                if 'host' in v:
-                    opts['headers'] = {'Host': v['host']}
-                self.data['ws-opts'] = opts
-            elif v['net'] == 'h2':
-                opts = {}
-                if 'path' in v:
-                    opts['path'] = v['path']
-                if 'host' in v:
-                    opts['host'] = v['host'].split(',')
-                self.data['h2-opts'] = opts
-            elif v['net'] == 'grpc' and 'path' in v:
-                self.data['grpc-opts'] = {'grpc-service-name': v['path']}
+        loader: Optional[Callable[[str, str], None]] = \
+                getattr(self, '_load_'+self.type, None)
+        if loader: loader(url, dt)
+        else: raise UnsupportedType(self.type)
 
-        elif self.type == 'ss':
-            info = url.split('@')
-            if len(info) < 2:
-                raise UnsupportedType('ss', f'Invalid SS URL: missing user@server part: {url}')
+    def _load_vmess(self, url: str, dt: str):
+        v = VMESS_TEMPLATE.copy()
+        try: v.update(json.loads(b64decodes(dt)))
+        except Exception:
+            raise UnsupportedType('vmess', 'SP')
+        self.data = {}
+        for key, val in v.items():
+            if key in VMESS2CLASH:
+                self.data[VMESS2CLASH[key]] = val
+        self.data['tls'] = (v['tls'] == 'tls')
+        self.data['alterId'] = int(self.data['alterId'])
+        if v['net'] == 'ws':
+            opts = {}
+            if 'path' in v:
+                opts['path'] = v['path']
+            if 'host' in v:
+                opts['headers'] = {'Host': v['host']}
+            self.data['ws-opts'] = opts
+        elif v['net'] == 'h2':
+            opts = {}
+            if 'path' in v:
+                opts['path'] = v['path']
+            if 'host' in v:
+                opts['host'] = v['host'].split(',')
+            self.data['h2-opts'] = opts
+        elif v['net'] == 'grpc' and 'path' in v:
+            self.data['grpc-opts'] = {'grpc-service-name': v['path']}
 
-            srvname = info.pop()
-            if '#' in srvname:
-                srv, name = srvname.split('#', 1)
+    def _load_ss(self, url: str, dt: str):
+        info = url.split('@')
+        srvname = info.pop()
+        if '#' in srvname:
+            srv, name = srvname.split('#')
+        else:
+            srv = srvname
+            name = ''
+        server, port = srv.split(':')
+        try:
+            port = int(port)
+        except ValueError:
+            raise UnsupportedType('ss', 'SP')
+        info = '@'.join(info)
+        if not ':' in info:
+            info = b64decodes_safe(info)
+        if ':' in info:
+            cipher, passwd = info.split(':')
+        else:
+            cipher = info
+            passwd = ''
+        self.data = {'name': unquote(name), 'server': server,
+                'port': port, 'type': 'ss', 'password': passwd, 'cipher': cipher}
+
+    def _load_ssr(self, url: str, dt: str):
+        if '?' in url:
+            parts = dt.split(':')
+        else:
+            parts = b64decodes_safe(dt).split(':')
+        try:
+            passwd, info = parts[-1].split('/?')
+        except: raise
+        passwd = b64decodes_safe(passwd)
+        self.data = {'type': 'ssr', 'server': parts[0], 'port': parts[1],
+                'protocol': parts[2], 'cipher': parts[3], 'obfs': parts[4],
+                'password': passwd, 'name': ''}
+        for kv in info.split('&'):
+            k_v = kv.split('=', 1)
+            if len(k_v) != 2:
+                k = k_v[0]
+                v = ''
+            else: k,v = k_v
+            if k == 'remarks':
+                self.data['name'] = v
+            elif k == 'group':
+                self.data['group'] = v
+            elif k == 'obfsparam':
+                self.data['obfs-param'] = v
+            elif k == 'protoparam':
+                self.data['protocol-param'] = v
+
+    def _load_trojan(self, url: str, dt: str):
+        parsed = urlparse(url)
+        self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname,
+                'port': parsed.port, 'type': 'trojan', 'password': unquote(parsed.username)}
+        if not parsed.query: return
+        for kv in parsed.query.split('&'):
+            k,v = kv.split('=', 1)
+            if k in ('allowInsecure', 'insecure'):
+                self.data['skip-cert-verify'] = (v != '0')
+            elif k == 'sni': self.data['sni'] = v
+            elif k == 'alpn':
+                self.data['alpn'] = unquote(v).split(',')
+            elif k == 'type':
+                self.data['network'] = v
+            elif k == 'serviceName':
+                if 'grpc-opts' not in self.data:
+                    self.data['grpc-opts'] = {}
+                self.data['grpc-opts']['grpc-service-name'] = v
+            elif k == 'host':
+                if 'ws-opts' not in self.data:
+                    self.data['ws-opts'] = {}
+                if 'headers' not in self.data['ws-opts']:
+                    self.data['ws-opts']['headers'] = {}
+                self.data['ws-opts']['headers']['Host'] = v
+            elif k == 'path':
+                if 'ws-opts' not in self.data:
+                    self.data['ws-opts'] = {}
+                self.data['ws-opts']['path'] = v
+
+    def _load_vless(self, url: str, dt: str):
+        parsed = urlparse(url)
+        self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname,
+                'port': parsed.port, 'type': 'vless', 'uuid': unquote(parsed.username)}
+        self.data['tls'] = False
+        if not parsed.query: return
+        for kv in parsed.query.split('&'):
+            k,v = kv.split('=', 1)
+            if k in ('allowInsecure', 'insecure'):
+                self.data['skip-cert-verify'] = (v != '0')
+            elif k == 'sni': self.data['servername'] = v
+            elif k == 'alpn':
+                self.data['alpn'] = unquote(v).split(',')
+            elif k == 'type':
+                self.data['network'] = v
+            elif k == 'serviceName':
+                if 'grpc-opts' not in self.data:
+                    self.data['grpc-opts'] = {}
+                self.data['grpc-opts']['grpc-service-name'] = v
+            elif k == 'host':
+                if 'ws-opts' not in self.data:
+                    self.data['ws-opts'] = {}
+                if 'headers' not in self.data['ws-opts']:
+                    self.data['ws-opts']['headers'] = {}
+                self.data['ws-opts']['headers']['Host'] = v
+            elif k == 'path':
+                if 'ws-opts' not in self.data:
+                    self.data['ws-opts'] = {}
+                self.data['ws-opts']['path'] = v
+            elif k == 'flow':
+                if v.endswith('-udp443'):
+                    self.data['flow'] = v
+                else: self.data['flow'] = v+'!'
+            elif k == 'fp': self.data['client-fingerprint'] = v
+            elif k == 'security' and v == 'tls':
+                self.data['tls'] = True
+            elif k == 'pbk':
+                if 'reality-opts' not in self.data:
+                    self.data['reality-opts'] = {}
+                self.data['reality-opts']['public-key'] = v
+            elif k == 'sid':
+                if 'reality-opts' not in self.data:
+                    self.data['reality-opts'] = {}
+                self.data['reality-opts']['short-id'] = v
+            # TODO: Unused key encryption
+
+    def _load_hysteria2(self, url: str, dt: str):
+        parsed = urlparse(url)
+        self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname,
+                'type': 'hysteria2', 'password': unquote(parsed.username)}
+        if ':' in parsed.netloc:
+            ports = parsed.netloc.split(':')[1]
+            if ',' in ports:
+                _, self.data['ports'] = ports.split(',',1)
             else:
-                srv = srvname
-                name = ''
-
-            if ':' not in srv:
-                raise UnsupportedType('ss', f'Invalid server:port format in: {srv}')
-
-            server, port = srv.split(':', 1)
-            try:
-                port = int(port)
-            except ValueError:
-                raise UnsupportedType('ss', f'Invalid port number: {port}')
-
-            userinfo = '@'.join(info)
-            if ':' not in userinfo:
-                userinfo = b64decodes_safe(userinfo)
-
-            if ':' in userinfo:
-                cipher, passwd = userinfo.split(':', 1)
+                self.data['port'] = ports
+            try: self.data['port'] = int(self.data['port'])
+            except ValueError: self.data['port'] = 443
+        else:
+            self.data['port'] = 443
+        self.data['tls'] = False
+        if not parsed.query: return
+        k = v = ''
+        for kv in parsed.query.split('&'):
+            if '=' in kv:
+                k,v = kv.split('=', 1)
             else:
-                cipher = userinfo
-                passwd = ''
+                v += '&' + kv
+            if k == 'insecure':
+                self.data['skip-cert-verify'] = (v != '0')
+            elif k == 'alpn':
+                self.data['alpn'] = unquote(v).split(',')
+            elif k in ('sni', 'obfs', 'obfs-password'):
+                self.data[k] = v
+            elif k == 'fp': self.data['fingerprint'] = v
 
-            self.data = {
-                'name': unquote(name),
-                'server': server,
-                'port': port,
-                'type': 'ss',
-                'password': passwd,
-                'cipher': cipher
-            }
-        elif self.type == 'ssr':
-            if '?' in url:
-                parts = dt.split(':')
-            else:
-                parts = b64decodes_safe(dt).split(':')
-            try:
-                passwd, info = parts[-1].split('/?')
-            except: raise
-            passwd = b64decodes_safe(passwd)
-            self.data = {'type': 'ssr', 'server': parts[0], 'port': parts[1],
-                    'protocol': parts[2], 'cipher': parts[3], 'obfs': parts[4],
-                    'password': passwd, 'name': ''}
-            for kv in info.split('&'):
-                if '=' in kv:
-                    k, v = kv.split('=', 1)
-                else:
-                    k, v = kv, ''  # 没有 = 的情况，值设为空字符串
+    def _load__legacy(self, url: str, dt: str):
+        parsed = urlparse(url)
+        self.data = {
+            'name': unquote(parsed.fragment),
+            'type': 'socks5' if self.type == 'socks5' else 'http',
+            'tls': parsed.scheme == 'https',
+            'server': parsed.hostname,
+            'port': parsed.port,
+            'username': parsed.username,
+            'password': parsed.password
+        }
+        self.data = {k:v for k,v in self.data.items() if v == None}
 
-                if k == 'remarks':
-                    self.data['name'] = v
-                elif k == 'group':
-                    self.data['group'] = v
-                elif k == 'obfsparam':
-                    self.data['obfs-param'] = v
-                elif k == 'protoparam':
-                    self.data['protocol-param'] = v
+    _load_http = _load__legacy
+    _load_https = _load__legacy
+    _load_socks5 = _load__legacy
 
-        elif self.type == 'trojan':
-            parsed = urlparse(url)
-            self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname, 
-                    'port': parsed.port, 'type': 'trojan', 'password': unquote(parsed.username)} # type: ignore
-            if parsed.query:
-                for kv in parsed.query.split('&'):
-                    if '=' not in kv:
-                        continue  # 跳过不包含 = 的项，避免出错
-                    k, v = kv.split('=', 1)
-                    if k in ('allowInsecure', 'insecure'):
-                        self.data['skip-cert-verify'] = (v != '0')
-                    elif k == 'sni': self.data['sni'] = v
-                    elif k == 'alpn':
-                        self.data['alpn'] = unquote(v).split(',')
-                    elif k == 'type':
-                        self.data['network'] = v
-                    elif k == 'serviceName':
-                        if 'grpc-opts' not in self.data:
-                            self.data['grpc-opts'] = {}
-                        self.data['grpc-opts']['grpc-service-name'] = v
-                    elif k == 'host':
-                        if 'ws-opts' not in self.data:
-                            self.data['ws-opts'] = {}
-                        if 'headers' not in self.data['ws-opts']:
-                            self.data['ws-opts']['headers'] = {}
-                        self.data['ws-opts']['headers']['Host'] = v
-                    elif k == 'path':
-                        if 'ws-opts' not in self.data:
-                            self.data['ws-opts'] = {}
-                        self.data['ws-opts']['path'] = v
+    def update(self, node: 'Node'):
+        self.data.update(node.data)
+        self.names.union(node.names)
 
-        elif self.type == 'vless':
-            parsed = urlparse(url)
-            self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname, 
-                    'port': parsed.port, 'type': 'vless', 'uuid': unquote(parsed.username)} # type: ignore
-            self.data['tls'] = False
-            if parsed.query:
-                for kv in parsed.query.split('&'):
-                    if '=' not in kv:
-                        continue  # 跳过不包含 = 的项，避免出错
-                    k, v = kv.split('=', 1)
-                    if k in ('allowInsecure', 'insecure'):
-                        self.data['skip-cert-verify'] = (v != '0')
-                    elif k == 'sni': self.data['servername'] = v
-                    elif k == 'alpn':
-                        self.data['alpn'] = unquote(v).split(',')
-                    elif k == 'type':
-                        self.data['network'] = v
-                    elif k == 'serviceName':
-                        if 'grpc-opts' not in self.data:
-                            self.data['grpc-opts'] = {}
-                        self.data['grpc-opts']['grpc-service-name'] = v
-                    elif k == 'host':
-                        if 'ws-opts' not in self.data:
-                            self.data['ws-opts'] = {}
-                        if 'headers' not in self.data['ws-opts']:
-                            self.data['ws-opts']['headers'] = {}
-                        self.data['ws-opts']['headers']['Host'] = v
-                    elif k == 'path':
-                        if 'ws-opts' not in self.data:
-                            self.data['ws-opts'] = {}
-                        self.data['ws-opts']['path'] = v
-                    elif k == 'flow':
-                        if v.endswith('-udp443'):
-                            self.data['flow'] = v
-                        else: self.data['flow'] = v+'!'
-                    elif k == 'fp': self.data['client-fingerprint'] = v
-                    elif k == 'security' and v == 'tls':
-                        self.data['tls'] = True
-                    elif k == 'pbk':
-                        if 'reality-opts' not in self.data:
-                            self.data['reality-opts'] = {}
-                        self.data['reality-opts']['public-key'] = v
-                    elif k == 'sid':
-                        if 'reality-opts' not in self.data:
-                            self.data['reality-opts'] = {}
-                        self.data['reality-opts']['short-id'] = v
-                    # TODO: Unused key encryption
+    @property
+    def name(self):
+        def rate(name: str):
+            r = 0
+            if name.startswith('@'):
+                r -= 5
+            if any(127462<=ord(c)<=127487 for c in name):
+                r += 6
+            if '\N{RIGHT-TO-LEFT MARK}' in name:
+                r -= 3
+            if any(word in name for word in BANNED_WORDS):
+                r -= 100
+            return r
+        return sorted(list(self.names), key=rate)[0]
 
-        elif self.type == 'hysteria2':
-            parsed = urlparse(url)
-            self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname, 
-                         'type': 'hysteria2', 'password': unquote(parsed.username)} # type: ignore
-
-            if ':' in parsed.netloc:
-                try:
-                    ports = parsed.netloc.split(':', 1)[1]
-                    if ',' in ports:
-                        p1, p2 = ports.split(',', 1)
-                        self.data['port'] = int(p1)
-                        self.data['ports'] = p2
-                    else:
-                        self.data['port'] = int(ports)
-                except Exception:
-                    self.data['port'] = 443
-            else:
-                self.data['port'] = 443
-
-            self.data['tls'] = False
-
-            if parsed.query:
-                for kv in parsed.query.split('&'):
-                    if '=' not in kv:
-                        continue
-                    k, v = kv.split('=', 1)
-                    if k == 'insecure':
-                        self.data['skip-cert-verify'] = (v != '0')
-                    elif k == 'alpn':
-                        self.data['alpn'] = unquote(v).split(',')
-                    elif k in ('sni', 'obfs', 'obfs-password'):
-                        self.data[k] = v
-                    elif k == 'fp':
-                        self.data['fingerprint'] = v
-                    # 可选扩展，支持 reality-opts.server-name
-                    elif k == 'server-name':
-                        if 'reality-opts' not in self.data:
-                            self.data['reality-opts'] = {}
-                        self.data['reality-opts']['server-name'] = v
-
-        else: 
-            raise UnsupportedType(self.type)
-
-    def format_name(self, max_len=30) -> None:
-        self.data['name'] = self.name
+    def format_name(self, max_len=30):
+        name = [ord(c) for c in self.name]
+        for ch in '\N{MATHEMATICAL BOLD CAPITAL A}\N{MATHEMATICAL SANS-SERIF BOLD CAPITAL A}':
+            name = [
+                c - ord(ch) + ord('A') if ord(ch) <= c < ord(ch)+26 else c
+                for c in name
+            ]
+        for ch in ('\N{MATHEMATICAL BOLD SMALL A}\N{MATHEMATICAL SANS-SERIF BOLD SMALL A}'
+                    +'\N{REGIONAL INDICATOR SYMBOL LETTER A}'*NAME_NO_FLAGS):
+            name = [
+                c - ord(ch) + ord('a') if ord(ch) <= c < ord(ch)+26 else c
+                for c in name
+            ]
+        name = ''.join([chr(c) for c in name])
+        name = name.replace(chr(10144), '->')
         for word in BANNED_WORDS:
-            self.data['name'] = self.data['name'].replace(word, '*'*len(word))
-        if len(self.data['name']) > max_len:
-            self.data['name'] = self.data['name'][:max_len]+'...'
-        if self.data['name'] in Node.names:
+            name = name.replace(word, '*'*len(word))
+        if len(name) > max_len:
+            name = name[:max_len]
+            if '\N{RIGHT-TO-LEFT MARK}' in name:
+                name += '\N{LEFT-TO-RIGHT MARK}'
+                print(name)
+            name += '...'
+        if NAME_SHOW_TYPE:
+            if self.type in ('ss', 'ssr', 'vless', 'tuic'):
+                tp = self.type.upper()
+            else:
+                tp = self.type.title()
+            name = f'[{tp}] ' + name
+        if name in Node.gNames:
             i = 0
-            new: str = self.data['name']
-            while new in Node.names:
+            new = name
+            while new in Node.gNames:
                 i += 1
-                new = f"{self.data['name']} #{i}"
-            self.data['name'] = new
-        
+                new = f"{name} #{i}"
+            name = new
+        self.data['name'] = name
+
     @property
     def isfake(self) -> bool:
+        if STOP: return False
         try:
             if 'server' not in self.data: return True
             if '.' not in self.data['server']: return True
@@ -464,6 +509,9 @@ class Node:
             # TODO: Fake UUID
             # if self.type == 'vmess' and len(self.data['uuid']) != len(DEFAULT_UUID):
             #     return True
+            if 'sni' in self.data and 'google.com' in self.data['sni'].lower():
+                # That's not designed for China
+                self.data['sni'] = 'www.bing.com'
         except Exception:
             print("无法验证的节点！", file=sys.stderr)
             traceback.print_exc(file=sys.stderr)
@@ -471,130 +519,146 @@ class Node:
 
     @property
     def url(self) -> str:
-        data = self.data
-        if self.type == 'vmess':
-            v = VMESS_EXAMPLE.copy()
-            for key,val in data.items():
-                if key in CLASH2VMESS:
-                    v[CLASH2VMESS[key]] = val
-            if v['net'] == 'ws':
+        handler: Optional[Callable[[Node.DATA_TYPE], str]] = \
+                getattr(self, '_url_'+self.type, None)
+        if handler: return handler(self.data)
+        else: raise UnsupportedType(self.type)
+
+    def _url_vmess(self, data: DATA_TYPE) -> str:
+        v = VMESS_TEMPLATE.copy()
+        for key, val in data.items():
+            if key in CLASH2VMESS:
+                v[CLASH2VMESS[key]] = val
+        if v['net'] == 'ws':
+            if 'ws-opts' in data:
+                try:
+                    v['host'] = data['ws-opts']['headers']['Host']
+                except KeyError: pass
+                if 'path' in data['ws-opts']:
+                    v['path'] = data['ws-opts']['path']
+        elif v['net'] == 'h2':
+            if 'h2-opts' in data:
+                if 'host' in data['h2-opts']:
+                    v['host'] = ','.join(data['h2-opts']['host'])
+                if 'path' in data['h2-opts']:
+                    v['path'] = data['h2-opts']['path']
+        elif v['net'] == 'grpc':
+            if 'grpc-opts' in data:
+                if 'grpc-service-name' in data['grpc-opts']:
+                    v['path'] = data['grpc-opts']['grpc-service-name']
+        if data.get('tls'):
+            v['tls'] = 'tls'
+        return 'vmess://'+b64encodes(json.dumps(v, ensure_ascii=False))
+
+    def _url_ss(self, data: DATA_TYPE) -> str:
+        passwd = b64encodes_safe(data['cipher']+':'+data['password'])
+        return f"ss://{passwd}@{data['server']}:{data['port']}#{quote(data['name'])}"
+
+    def _url_ssr(self, data: DATA_TYPE) -> str:
+        ret = (':'.join([str(data[_]) for _ in ('server','port',
+                                    'protocol','cipher','obfs')]) +
+                b64encodes_safe(data['password']) +
+                f"remarks={b64encodes_safe(data['name'])}")
+        for k, urlk in (('obfs-param','obfsparam'), ('protocol-param','protoparam'), ('group','group')):
+            if k in data:
+                ret += '&'+urlk+'='+b64encodes_safe(data[k])
+        return "ssr://"+ret
+
+    def _url_trojan(self, data: DATA_TYPE) -> str:
+        passwd = quote(data['password'])
+        name = quote(data['name'])
+        ret = f"trojan://{passwd}@{data['server']}:{data['port']}?"
+        if 'skip-cert-verify' in data:
+            ret += f"allowInsecure={int(data['skip-cert-verify'])}&"
+        if 'sni' in data:
+            ret += f"sni={data['sni']}&"
+        if 'alpn' in data:
+            ret += f"alpn={quote(','.join(data['alpn']))}&"
+        if 'network' in data:
+            if data['network'] == 'grpc':
+                ret += f"type=grpc&serviceName={data['grpc-opts']['grpc-service-name']}"
+            elif data['network'] == 'ws':
+                ret += f"type=ws&"
                 if 'ws-opts' in data:
                     try:
-                        v['host'] = data['ws-opts']['headers']['Host']
+                        ret += f"host={data['ws-opts']['headers']['Host']}&"
                     except KeyError: pass
                     if 'path' in data['ws-opts']:
-                        v['path'] = data['ws-opts']['path']
-            elif v['net'] == 'h2':
-                if 'h2-opts' in data:
-                    if 'host' in data['h2-opts']:
-                        v['host'] = ','.join(data['h2-opts']['host'])
-                    if 'path' in data['h2-opts']:
-                        v['path'] = data['h2-opts']['path']
-            elif v['net'] == 'grpc':
-                if 'grpc-opts' in data:
-                    if 'grpc-service-name' in data['grpc-opts']:
-                        v['path'] = data['grpc-opts']['grpc-service-name']
-            if ('tls' in data) and data['tls']:
-                v['tls'] = 'tls'
-            return 'vmess://'+b64encodes(json.dumps(v, ensure_ascii=False))
+                        ret += f"path={data['ws-opts']['path']}"
+        ret = ret.rstrip('&')+'#'+name
+        return ret
 
-        if self.type == 'ss':
-            passwd = b64encodes_safe(data['cipher']+':'+data['password'])
-            return f"ss://{passwd}@{data['server']}:{data['port']}#{quote(data['name'])}"
-        if self.type == 'ssr':
-            ret = (':'.join([str(self.data[_]) for _ in ('server','port',
-                                        'protocol','cipher','obfs')]) +
-                    b64encodes_safe(self.data['password']) +
-                    f"remarks={b64encodes_safe(self.data['name'])}")
-            for k, urlk in (('obfs-param','obfsparam'), ('protocol-param','protoparam'), ('group','group')):
-                if k in self.data:
-                    ret += '&'+urlk+'='+b64encodes_safe(self.data[k])
-            return "ssr://"+ret
+    def _url_vless(self, data: DATA_TYPE) -> str:
+        passwd = quote(data['uuid'])
+        name = quote(data['name'])
+        ret = f"vless://{passwd}@{data['server']}:{data['port']}?"
+        if 'skip-cert-verify' in data:
+            ret += f"allowInsecure={int(data['skip-cert-verify'])}&"
+        if 'servername' in data:
+            ret += f"sni={data['servername']}&"
+        if 'alpn' in data:
+            ret += f"alpn={quote(','.join(data['alpn']))}&"
+        if 'network' in data:
+            if data['network'] == 'grpc':
+                ret += f"type=grpc&"
+                try:
+                    ret += f"serviceName={data['grpc-opts']['grpc-service-name']}&"
+                except KeyError: pass
+            elif data['network'] == 'ws':
+                ret += f"type=ws&"
+                if 'ws-opts' in data:
+                    try:
+                        ret += f"host={data['ws-opts']['headers']['Host']}&"
+                    except KeyError: pass
+                    if 'path' in data['ws-opts']:
+                        ret += f"path={data['ws-opts']['path']}"
+        if 'flow' in data:
+            flow: str = data['flow']
+            if flow.endswith('!'):
+                ret += f"flow={flow[:-1]}&"
+            else: ret += f"flow={flow}-udp443&"
+        if 'client-fingerprint' in data:
+            ret += f"fp={data['client-fingerprint']}&"
+        if data.get('tls'):
+            ret += f"security=tls&"
+        elif 'reality-opts' in data:
+            opts: Dict[str, str] = data['reality-opts']
+            ret += f"security=reality&pbk={opts.get('public-key','')}&sid={opts.get('short-id','')}&"
+        ret = ret.rstrip('&')+'#'+name
+        return ret
 
-        if self.type == 'trojan':
-            passwd = quote(data['password'])
-            name = quote(data['name'])
-            ret = f"trojan://{passwd}@{data['server']}:{data['port']}?"
-            if 'skip-cert-verify' in data:
-                ret += f"allowInsecure={int(data['skip-cert-verify'])}&"
-            if 'sni' in data:
-                ret += f"sni={data['sni']}&"
-            if 'alpn' in data:
-                ret += f"alpn={quote(','.join(data['alpn']))}&"
-            if 'network' in data:
-                if data['network'] == 'grpc':
-                    grpc_opts = data.get('grpc-opts', {})
-                    service_name = grpc_opts.get('grpc-service-name', '')
-                    ret += f"type=grpc&serviceName={service_name}"
-                elif data['network'] == 'ws':
-                    ret += f"type=ws&"
-                    if 'ws-opts' in data:
-                        try:
-                            ret += f"host={data['ws-opts']['headers']['Host']}&"
-                        except KeyError: pass
-                        if 'path' in data['ws-opts']:
-                            ret += f"path={data['ws-opts']['path']}"
-            ret = ret.rstrip('&')+'#'+name
-            return ret
+    def _url_hysteria2(self, data: DATA_TYPE) -> str:
+        passwd = quote(data['password'])
+        name = quote(data['name'])
+        ret = f"hysteria2://{passwd}@{data['server']}:{data['port']}"
+        if 'ports' in data:
+            ret += ','+data['ports']
+        ret += '?'
+        if 'skip-cert-verify' in data:
+            ret += f"insecure={int(data['skip-cert-verify'])}&"
+        if 'alpn' in data:
+            ret += f"alpn={quote(','.join(data['alpn']))}&"
+        if 'fingerprint' in data:
+            ret += f"fp={data['fingerprint']}&"
+        for k in ('sni', 'obfs', 'obfs-password'):
+            if k in data:
+                ret += f"{k}={data[k]}&"
+        ret = ret.rstrip('&')+'#'+name
+        return ret
 
-        if self.type == 'vless':
-            passwd = quote(data['uuid'])
-            name = quote(data['name'])
-            ret = f"vless://{passwd}@{data['server']}:{data['port']}?"
-            if 'skip-cert-verify' in data:
-                ret += f"allowInsecure={int(data['skip-cert-verify'])}&"
-            if 'servername' in data:
-                ret += f"sni={data['servername']}&"
-            if 'alpn' in data:
-                ret += f"alpn={quote(','.join(data['alpn']))}&"
-            if 'network' in data:
-                if data['network'] == 'grpc':
-                    grpc_opts = data.get('grpc-opts', {})
-                    service_name = grpc_opts.get('grpc-service-name', '')
-                    ret += f"type=grpc&serviceName={service_name}"
-                elif data['network'] == 'ws':
-                    ret += f"type=ws&"
-                    if 'ws-opts' in data:
-                        try:
-                            ret += f"host={data['ws-opts']['headers']['Host']}&"
-                        except KeyError: pass
-                        if 'path' in data['ws-opts']:
-                            ret += f"path={data['ws-opts']['path']}"
-            if 'flow' in data:
-                flow: str = data['flow']
-                if flow.endswith('!'):
-                    ret += f"flow={flow[:-1]}&"
-                else: ret += f"flow={flow}-udp443&"
-            if 'client-fingerprint' in data:
-                ret += f"fp={data['client-fingerprint']}&"
-            if 'tls' in data and data['tls']:
-                ret += f"security=tls&"
-            elif 'reality-opts' in data:
-                opts: Dict[str, str] = data['reality-opts']
-                ret += f"security=reality&pbk={opts.get('public-key','')}&sid={opts.get('short-id','')}&"
-            ret = ret.rstrip('&')+'#'+name
-            return ret
+    def _url__legacy(self, data: DATA_TYPE) -> str:
+        tp = 'https' if self.type == 'http' and data.get('tls') else self.type
+        part = ''
+        if 'username' in data:
+            part += data['username']
+        if 'password' in data:
+            part += ':' + data['password']
+        if part: part += '@'
+        return f"{tp}://{part}{data['server']}:{data['port']}"
 
-        if self.type == 'hysteria2':
-            passwd = quote(data['password'])
-            name = quote(data['name'])
-            ret = f"hysteria2://{passwd}@{data['server']}:{data['port']}"
-            if 'ports' in data:
-                ret += ','+data['ports']
-            ret += '?'
-            if 'skip-cert-verify' in data:
-                ret += f"insecure={int(data['skip-cert-verify'])}&"
-            if 'alpn' in data:
-                ret += f"alpn={quote(','.join(data['alpn']))}&"
-            if 'fingerprint' in data:
-                ret += f"fp={data['fingerprint']}&"
-            for k in ('sni', 'obfs', 'obfs-password'):
-                if k in data:
-                    ret += f"{k}={data[k]}&"
-            ret = ret.rstrip('&')+'#'+name
-            return ret
-
-        raise UnsupportedType(self.type)
+    _url_http = _url__legacy
+    _url_https = _url__legacy
+    _url_socks5 = _url__legacy
 
     @property
     def clash_data(self) -> DATA_TYPE:
@@ -614,17 +678,23 @@ class Node:
         if 'alpn' in ret and isinstance(ret['alpn'], str):
             # 'alpn' is not a slice
             ret['alpn'] = ret['alpn'].replace(' ','').split(',')
+        # A temporary fix for mihomo-party's `invalid REALITY short ID` error.
+        if 'reality-opts' in ret and 'short-id' in ret['reality-opts']:
+            ret['reality-opts']['short-id'] = '!!str '+ret['reality-opts']['short-id']
         return ret
 
-    def supports_meta(self, noMeta=False) -> bool:
+    def supports_clash(self, meta=False) -> bool:
         if self.isfake: return False
+        if 'obfs' in self.data and 'obfs-password' not in self.data:
+            return False
         if self.type == 'vmess':
             supported = CLASH_CIPHER_VMESS
         elif self.type == 'ss' or self.type == 'ssr':
             supported = CLASH_CIPHER_SS
         elif self.type == 'trojan': return True
-        elif noMeta: return False
+        elif not meta: return False
         else: return True
+        # Vmess / SS / SSR
         if 'network' in self.data and self.data['network'] in ('h2','grpc'):
             # A quick fix for #2
             self.data['tls'] = True
@@ -644,12 +714,9 @@ class Node:
             traceback.print_exc(file=sys.stderr)
             return False
         return True
-    
-    def supports_clash(self, meta=False) -> bool:
-        if meta: return self.supports_meta()
-        if self.type == 'vless': return False
-        if self.data['type'] == 'vless': return False
-        return self.supports_meta(noMeta=True)
+
+    def supports_meta(self) -> bool:
+        return self.supports_clash(meta=True)
 
     def supports_ray(self) -> bool:
         if self.isfake: return False
@@ -657,27 +724,30 @@ class Node:
         #     if 'plugin' in self.data and self.data['plugin']: return False
         # elif self.type == 'ssr':
         #     return False
+        if self.type == 'socks5' and self.data.get('tls'):
+            return False
         return True
 
 class Source():
-    @no_type_check
     def __init__(self, url: Union[str, function]) -> None:
+        self.url_source: Union[str, function, None]
         if isinstance(url, function):
             self.url: str = "dynamic://"+url.__name__
-            self.url_source: function = url
+            self.url_source = url
         elif url.startswith('+'):
-            self.url_source: str = url
+            self.url_source = url
             self.date = datetime.datetime.now()# + datetime.timedelta(days=1)
             self.gen_url()
         else:
             self.url: str = url
-            self.url_source: None = None
-        self.content: Union[str, List[str], int] = None
+            self.url_source = None
+        self.content: Union[str, Iterable[str], int] = None
         self.sub: Union[List[str], List[Dict[str, str]]] = None
         self.cfg: Dict[str, Any] = {}
+        self.exc_queue: List[str] = []
 
-    def gen_url(self) -> None:
-        self.url_source: str
+    def gen_url(self):
+        assert isinstance(self.url_source, str)
         tags = self.url_source.split()
         url = tags.pop()
         while tags:
@@ -688,13 +758,12 @@ class Source():
                 self.date -= datetime.timedelta(days=1)
         self.url = url
 
-    @no_type_check
     def get(self, depth=2) -> None:
-        global exc_queue
         if self.content: return
         try:
             if self.url.startswith("dynamic:"):
-                self.content: Union[str, List[str]] = self.url_source()
+                assert isinstance(self.url_source, function)
+                self.content: Union[str, Iterable[str]] = self.url_source()
             else:
                 global session
                 if '#' in self.url:
@@ -704,18 +773,18 @@ class Source():
                         try:
                             self.cfg['max'] = int(self.cfg['max'])
                         except ValueError:
-                            exc_queue.append("最大节点数限制不是整数！")
+                            self.exc_queue.append("最大节点数限制不是整数！")
                             del self.cfg['max']
                     if 'ignore' in self.cfg:
                         self.cfg['ignore'] = [_ for _ in self.cfg['ignore'].split(',') if _.strip()]
                     self.url = '#'.join(segs[:-1])
-                with session.get(self.url, stream=True) as r:
+                with session.get(resolveRelFile(self.url), stream=True) as r:
                     if r.status_code != 200:
                         if depth > 0 and isinstance(self.url_source, str):
                             exc = f"'{self.url}' 抓取时 {r.status_code}"
                             self.gen_url()
                             exc += "，重新生成链接：\n\t"+self.url
-                            exc_queue.append(exc)
+                            self.exc_queue.append(exc)
                             self.get(depth-1)
                         else:
                             self.content = r.status_code
@@ -727,34 +796,34 @@ class Source():
         except:
             self.content = -2
             exc = "在抓取 '"+self.url+"' 时发生错误：\n"+traceback.format_exc()
-            exc_queue.append(exc)
+            self.exc_queue.append(exc)
         else:
             self.parse()
 
     def _download(self, r: requests.Response) -> str:
-        content: str = ""
+        content = bytes()
         tp = None
         pending = None
         early_stop = False
         for chunk in r.iter_content():
             if early_stop: pending = None; break
             chunk: bytes
-            if pending is not None:
+            if tp == 'sub':
+                content += chunk
+                continue
+            if pending != None:
                 chunk = pending + chunk
                 pending = None
-            if tp == 'sub':
-                content += chunk.decode(errors='ignore')
-                continue
-            lines: List[bytes] = chunk.splitlines()
-            if lines and lines[-1] and chunk and lines[-1][-1] == chunk[-1]:
+            lines = chunk.splitlines()
+            if lines and lines[-1] and chunk.endswith(lines[-1]):
                 pending = lines.pop()
             while lines:
-                line = lines.pop(0).rstrip().decode(errors='ignore').replace('\\r','')
+                lineb = lines.pop(0)
+                line = lineb.decode().replace('\\r','').rstrip()
                 if not line: continue
                 if not tp:
                     if ': ' in line:
-                        kv = line.split(': ')
-                        if len(kv) == 2 and kv[0].isalpha():
+                        if line.count(': ') == 1 and line.isalpha():
                             tp = 'yaml'
                     elif line[0] == '#': pass
                     else: tp = 'sub'
@@ -762,16 +831,23 @@ class Source():
                     if content:
                         if line in ("proxy-groups:", "rules:", "script:"):
                             early_stop=True; break
-                        content += line+'\n'
+                        content += lineb + b'\n'
                     elif line == "proxies:":
-                        content = line+'\n'
+                        content = lineb + b'\n'
                 elif tp == 'sub':
-                    content = chunk.decode(errors='ignore')
-        if pending is not None: content += pending.decode(errors='ignore')
-        return content
+                    content = chunk
+                    pending = None
+                    break
+        if pending != None: content += pending
+        try:
+            ret = content.decode()
+        except UnicodeDecodeError:
+            exc = "在抓取 '"+self.url+"' 时发生错误：\n"+traceback.format_exc()
+            self.exc_queue.append(exc)
+            ret = content.decode('ignore')
+        return ret
 
-    def parse(self) -> None:
-        global exc_queue
+    def parse(self):
         try:
             text = self.content
             if isinstance(text, str):
@@ -785,10 +861,12 @@ class Source():
                 else:
                     # V2Ray Sub
                     sub = b64decodes(text.strip()).strip().splitlines()
+            elif not isinstance(text, (list, tuple)):
+                sub = list(text)
             else: sub = text # 动态节点抓取后直接传入列表
 
             if 'max' in self.cfg and len(sub) > self.cfg['max']:
-                exc_queue.append(f"此订阅有 {len(sub)} 个节点，最大限制为 {self.cfg['max']} 个，忽略此订阅。")
+                self.exc_queue.append(f"此订阅有 {len(sub)} 个节点，最大限制为 {self.cfg['max']} 个，忽略此订阅。")
                 self.sub = []
             elif sub and 'ignore' in self.cfg:
                 if isinstance(sub[0], str):
@@ -798,7 +876,7 @@ class Source():
                 else: self.sub = sub
             else: self.sub = sub
         except KeyboardInterrupt: raise
-        except: exc_queue.append(
+        except: self.exc_queue.append(
                 "在解析 '"+self.url+"' 时发生错误：\n"+traceback.format_exc())
 
 class DomainTree:
@@ -806,12 +884,12 @@ class DomainTree:
         self.children: Dict[str, __class__] = {}
         self.here: bool = False
 
-    def insert(self, domain: str) -> None:
+    def insert(self, domain: str):
         segs = domain.split('.')
         segs.reverse()
         self._insert(segs)
 
-    def _insert(self, segs: List[str]) -> None:
+    def _insert(self, segs: List[str]):
         if not segs:
             self.here = True
             return
@@ -821,12 +899,12 @@ class DomainTree:
         del segs[0]
         child._insert(segs)
 
-    def remove(self, domain: str) -> None:
+    def remove(self, domain: str):
         segs = domain.split('.')
         segs.reverse()
         self._remove(segs)
 
-    def _remove(self, segs: List[str]) -> None:
+    def _remove(self, segs: List[str]):
         self.here = False
         if not segs:
             self.children.clear()
@@ -848,51 +926,42 @@ def extract(url: str) -> Union[Set[str], int]:
     res = session.get(url)
     if res.status_code != 200: return res.status_code
     urls: Set[str] = set()
-    for line in res.text:
+    mark = '#'+url.split('#', 1)[1] if '#' in url else ''
+    for line in res.text.strip().splitlines():
+        line = line.strip()
         if line.startswith("http"):
-            urls.add(line)
+            urls.add(line+mark)
     return urls
 
 merged: Dict[int, Node] = {}
 unknown: Set[str] = set()
 used: Dict[int, Dict[int, str]] = {}
-def merge(source_obj: Source, sourceId=-1) -> None:
+def merge(source_obj: Source, sourceId=-1):
     global merged, unknown
     sub = source_obj.sub
     if not sub: print("空订阅，跳过！", end='', flush=True); return
     for p in sub:
-        if isinstance(p, str):
-            if '://' not in p: continue
-            ok = True
-            for ch in '!|`()[]{} ':
-                if ch in p:
-                    ok = False; break
-            if not ok: continue
+        if isinstance(p, str) and '://' not in p: continue
         try: n = Node(p)
         except KeyboardInterrupt: raise
         except UnsupportedType as e:
             if len(e.args) == 1:
                 print(f"不支持的类型：{e}")
-            unknown.add(p) # type: ignore
+            unknown.add(p)
         except: traceback.print_exc()
         else:
             n.format_name()
-            Node.names.add(n.data['name'])
+            Node.gNames.add(n.data['name'])
             hashn = hash(n)
             if hashn not in merged:
                 merged[hashn] = n
             else:
-                merged[hashn].data.update(n.data)
+                merged[hashn].update(n)
             if hashn not in used:
                 used[hashn] = {}
             used[hashn][sourceId] = n.name
 
 def raw2fastly(url: str) -> str:
-    # 由于 Fastly CDN 不好用，因此换成 ghproxy.net，见 README。
-    # 2023/06/27: ghproxy.com 比 ghproxy.net 稳定性更好，为避免日后代码失效，进行修改
-    # 2023/06/28: ghproxy.com 似乎有速率或并发限制，改回原来的镜像
-    # 2023/10/01: ghproxy.net tcping 有大量丢包，且之前出现过证书未续期的问题，改掉
-    # 2023/12/23: 全都废了
     if not LOCAL: return url
     url: Union[str, List[str]]
     if url.startswith("https://raw.githubusercontent.com/"):
@@ -901,17 +970,17 @@ def raw2fastly(url: str) -> str:
         # del url[2]
         # url = "https://fastly.jsdelivr.net/gh/"+('/'.join(url))
         # return url
-        return "https://mirror.ghproxy.com/"+url
+        return "https://ghproxy.cfd/"+url
     return url
 
-def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
+def merge_adblock(adblock_name: str, rules: Dict[str, str]):
     print("正在解析 Adblock 列表... ", end='', flush=True)
     blocked: Set[str] = set()
     unblock: Set[str] = set()
     for url in ABFURLS:
         url = raw2fastly(url)
         try:
-            res = session.get(url)
+            res = session.get(resolveRelFile(url))
         except requests.exceptions.RequestException as e:
             try:
                 print(f"{url} 下载失败：{e.args[0].reason}")
@@ -934,7 +1003,7 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
     for url in ABFWHITE:
         url = raw2fastly(url)
         try:
-            res = session.get(url)
+            res = session.get(resolveRelFile(url))
         except requests.exceptions.RequestException as e:
             try:
                 print(f"{url} 下载失败：{e.args[0].reason}")
@@ -982,16 +1051,16 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
     print(f"共有 {len(rules)} 条规则")
 
 def main():
-    global exc_queue, merged, FETCH_TIMEOUT, ABFURLS, AUTOURLS, AUTOFETCH
+    global merged, FETCH_TIMEOUT, ABFURLS, AUTOURLS, AUTOFETCH
     sources = open("sources.list", encoding="utf-8").read().strip().splitlines()
     if DEBUG_NO_NODES:
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已启用无节点调试，程序产生的配置不能被直接使用 !!!")
-        sources = ["https://gist.githubusercontent.com/PangTouY00/2efa3f1165304204299a6e091eee070f/raw/ecde221dcb6b24d11f48b0eacf5cce43abf95ff6/clash.yaml"]
-    elif DEBUG_NO_DYNAMIC:
+        sources = []
+    if DEBUG_NO_DYNAMIC:
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已选择不抓取动态节点 !!!")
-        AUTOURLS = AUTOFETCH = [lambda: "https://gist.githubusercontent.com/PangTouY00/2efa3f1165304204299a6e091eee070f/raw/ecde221dcb6b24d11f48b0eacf5cce43abf95ff6/clash.yaml"]
+        AUTOURLS = AUTOFETCH = []
     print("正在生成动态链接...")
     for auto_fun in AUTOURLS:
         print("正在生成 '"+auto_fun.__name__+"'... ", end='', flush=True)
@@ -1009,14 +1078,10 @@ def main():
     print("正在整理链接...")
     sources_final: Union[Set[str], List[str]] = set()
     airports: Set[str] = set()
-    
     for source in sources:
         if source == 'EOF': break
-        if not source.strip():
-            print(f"[调试] 发现空或空白行，跳过: {repr(source)}")
-            continue
-        if source.lstrip().startswith("#"):  # 更严谨地跳过注释行
-            continue
+        if not source: continue
+        if source[0] == '#': continue
         sub = source
         if sub[0] == '!':
             if LOCAL: continue
@@ -1034,12 +1099,6 @@ def main():
         if isairport: airports.add(sub)
         else: sources_final.add(sub)
 
-    print("[调试] 所有链接：")
-    for x in sorted(sources_final):
-        if not x.strip():
-            print("-《空链接⚠️》")
-        else:
-            print(f"-《{x}》")
     if airports:
         print("正在抓取机场列表...")
         for sub in airports:
@@ -1063,9 +1122,6 @@ def main():
     print("正在整理链接...")
     sources_final = list(sources_final)
     sources_final.sort()
-    # 在这里打印准备抓取的链接
-    for url in sources_final:
-        print(f"准备抓取的链接: '{url}'") 
     sources_obj = [Source(url) for url in (sources_final + AUTOFETCH)]
 
     print("开始抓取！")
@@ -1100,26 +1156,29 @@ def main():
                     print("失败！")
                     traceback.print_exc()
                 else: print("完成！")
+            for exc in sources_obj[i].exc_queue:
+                print(exc)
+            sources_obj[i].exc_queue = []
         except KeyboardInterrupt:
             print("正在退出...")
             break
-        while exc_queue:
-            print(exc_queue.pop(0), file=sys.stderr, flush=True)
 
     if STOP:
-        merged = {
-            1: Node("vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIjEg5pWP5oSf5pe25pyf77yM5pu05paw5pqC5YGc77yM5aaC5pyJ6ZyA6KaB77yM6Ieq6KGM5pCt5bu6IiwNCiAgImFkZCI6ICJjZDAwMS53d3cuZHViYS5uZXQiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNDQ0NDQ0NDQtNDQ0NC00NDQ0LTQ0NDQtNDQ0NDQ0NDQ0NDQ0NCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAiaHR0cCIsDQogICJob3N0IjogImNkMDAxLnd3dy5kdWJhLm5ldCIsDQogICJwYXRoIjogIi9kdWJhL2luc3RhbGwvcGFja2FnZXMvZXZlci9kdWJhXzEwMF8xMDAuZXhlIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogImNkMDAxLnd3dy5kdWJhLm5ldCIsDQogICJhbHBuIjogImh0dHAvMS4xIiwNCiAgImZwIjogIjM2MCINCn0="),
-            2: Node("vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIjIg5pWP5oSf5pe25pyf77yM5pu05paw5pqC5YGc77yM5aaC5pyJ6ZyA6KaB77yM6Ieq6KGM5pCt5bu6IiwNCiAgImFkZCI6ICJjZDAwMS53d3cuZHViYS5uZXQiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNDQ0NDQ0NDQtNDQ0NC00NDQ0LTQ0NDQtNDQ0NDQ0NDQ0NDQ0NCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIiIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJjZDAwMS53d3cuZHViYS5uZXQiLA0KICAiYWxwbiI6ICJodHRwLzEuMSIsDQogICJmcCI6ICIzNjAiDQp9")
-        }
+        merged = {}
+        for nid, nd in enumerate(STOP_FAKE_NODES.splitlines()):
+            merged[nid] = Node(nd)
+
+    elif NAME_SHOW_SRC:
+        for hashp, p in merged.items():
+            if hashp in used:
+                src = ','.join([str(_) for _ in sorted(list(used[hashp]))])
+                p.data['name'] = src+'|'+p.data['name']
 
     print("\n正在写出 V2Ray 订阅...")
     txt = ""
     unsupports = 0
     for hashp, p in merged.items():
         try:
-            if hashp in used:
-                # 注意：这一步也会影响到下方的 Clash 订阅，不用再执行一遍！
-                p.data['name'] = ','.join([str(_) for _ in sorted(list(used[hash(p)]))])+'|'+p.data['name']
             if p.supports_ray():
                 try:
                     txt += p.url + '\n'
@@ -1140,7 +1199,7 @@ def main():
 
     with open("config.yml", encoding="utf-8") as f:
         conf: Dict[str, Any] = yaml.full_load(f)
-    
+
     rules: Dict[str, str] = {}
     if DEBUG_NO_ADBLOCK:
         # !!! JUST FOR DEBUGING !!!
@@ -1153,12 +1212,12 @@ def main():
     ctg_nodes_meta: Dict[str, List[Node.DATA_TYPE]] = {}
     categories: Dict[str, List[str]] = {}
     try:
-        with open("snippets/_config.yml", encoding="utf-8") as f:
-            snip_conf = yaml.full_load(f)
-    except (OSError, yaml.error.YAMLError):
-        print("片段配置读取失败：")
+        snip_conf = conf['NoMoreWalls']
+    except KeyError:
+        print("未设置片段配置：", file=sys.stderr)
         traceback.print_exc()
     else:
+        del conf['NoMoreWalls']
         print("正在按地区分类节点...")
         categories = snip_conf['categories']
         for ctg in categories:
@@ -1322,28 +1381,5 @@ def main():
     print("写出完成！")
 
 if __name__ == '__main__':
-    from dynamic import AUTOURLS, AUTOFETCH # type: ignore
-    AUTOFUNTYPE = Callable[[], Union[str, List[str], Tuple[str], Set[str], None]]
-    AUTOURL: List[AUTOFUNTYPE]
-    AUTOFETCH: List[AUTOFUNTYPE]
+    from dynamic import AUTOURLS, AUTOFETCH
     main()
-
-
-'''python
-print("正在抓取 Google IP 列表... ", end='', flush=True)
-proxy_name: str = conf['proxy-groups'][0]['name']
-try:
-    prefixes: List[Dict[str,str]] = session.get("https://www.gstatic.com/ipranges/goog.json").json()['prefixes']
-    for prefix in prefixes:
-        for tp, ip in prefix.items():
-            if tp.startswith('ipv4'):
-                rules['IP-CIDR,'+ip] = proxy_name
-            elif tp.startswith('ipv6'):
-                rules['IP-CIDR6,'+ip] = proxy_name
-except requests.exceptions.RequestException:
-    print("抓取失败！")
-except Exception:
-    print("解析失败！")
-    traceback.print_exc()
-else: print("解析成功！")
-'''
